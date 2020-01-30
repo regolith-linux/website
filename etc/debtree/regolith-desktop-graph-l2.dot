@@ -1,0 +1,103 @@
+digraph "regolith-desktop" {
+	rankdir=LR;
+	concentrate=true;
+	node [shape=box];
+	"regolith-desktop" -> "gnome-control-center" [color=blue];
+	"regolith-desktop" -> "gnome-flashback" [color=blue];
+	"regolith-desktop" -> "gnome-screensaver" [color=blue];
+	"regolith-desktop" -> "gnome-settings-daemon" [color=blue];
+	"regolith-desktop" -> "i3-gaps-wm" [color=blue];
+	"regolith-desktop" -> "i3-snapshot" [color=blue];
+	"regolith-desktop" -> "i3xrocks" [color=blue];
+	"regolith-desktop" -> "nautilus" [color=blue];
+	"regolith-desktop" -> "alt1" [color=blue];
+	"alt1":"regolith-compositor-compton-glx" -> "compton" [color=blue];
+	"alt1":"regolith-compositor-compton-glx" -> "alt1":"regolith-compositor" [color=red];
+	"alt1":"regolith-compositor-compton-glx" -> "regolith-compton-config" [color=red];
+	"alt1":"regolith-compositor-compton-glx" -> "alt1":"regolith-compositor" [color=red];
+	"alt1":"regolith-compositor-compton-glx" -> "alt1":"regolith-compositor-compton-glx" [color=red];
+	"alt1":"regolith-compositor-compton-glx" -> "regolith-compton-config" [color=red];
+	"alt1":"regolith-compositor" -> "Pr_regolith-compositor" [label="-3-",dir=back,arrowtail=inv,color=green];
+	"Pr_regolith-compositor" [label="...",style=rounded];
+	"regolith-desktop" -> "regolith-gnome-flashback" [color=blue];
+	"regolith-gnome-flashback" -> "coreutils" [color=blue];
+	"regolith-gnome-flashback" -> "dbus" [color=blue];
+	"regolith-gnome-flashback" -> "gnome-flashback" [color=blue];
+	"regolith-gnome-flashback" -> "gnome-session-bin" [color=blue];
+	"regolith-gnome-flashback" -> "regolith-i3-gaps-config" [color=blue];
+	"regolith-gnome-flashback" -> "regolith-styles" [color=blue];
+	"regolith-gnome-flashback" -> "x11-xserver-utils" [color=blue];
+	"regolith-gnome-flashback" -> "xrescat" [color=blue];
+	"regolith-gnome-flashback" -> "session-shortcuts" [color=red];
+	"regolith-gnome-flashback" -> "session-shortcuts" [color=red];
+	"regolith-gnome-flashback" -> "regolith-gnome-flashback" [color=red];
+	"regolith-desktop" -> "regolith-i3-gaps-config" [color=blue];
+	"regolith-i3-gaps-config" -> "i3-gaps-wm" [color=blue];
+	"regolith-i3-gaps-config" -> "i3-snapshot" [color=blue];
+	"regolith-i3-gaps-config" -> "alt1":"regolith-compositor" [color=blue];
+	"regolith-i3-gaps-config" -> "regolith-ftue" [color=blue];
+	"regolith-i3-gaps-config" -> "regolith-rofication" [color=blue];
+	"regolith-i3-gaps-config" -> "regolith-i3-wm" [color=red];
+	"regolith-i3-gaps-config" -> "regolith-i3-gaps-config" [color=red];
+	"regolith-desktop" -> "regolith-i3xrocks-config" [color=blue];
+	"regolith-i3xrocks-config" -> "sysstat" [color=blue];
+	"regolith-i3xrocks-config" -> "network-manager" [color=blue];
+	"regolith-i3xrocks-config" -> "xrescat" [color=blue];
+	"regolith-i3xrocks-config" -> "regolith-rofication" [color=blue];
+	"regolith-i3xrocks-config" -> "regolith-i3xrocks-config" [color=red];
+	"regolith-desktop" -> "regolith-look-cahuella" [color=blue];
+	"regolith-look-cahuella" -> "regolith-styles" [color=blue];
+	"regolith-look-cahuella" -> "paper-icon-theme" [color=blue];
+	"regolith-look-cahuella" -> "cahuella" [color=blue];
+	"regolith-look-cahuella" -> "fonts-materialdesignicons-webfont" [color=blue];
+	"regolith-look-cahuella" -> "fonts-source-code-pro-ttf" [color=blue];
+	"regolith-look-cahuella" -> "regolith-look-cahuella" [color=red];
+	"regolith-desktop" -> "regolith-rofi-config" [color=blue];
+	"regolith-rofi-config" -> "regolith-rofi-config" [color=red];
+	"regolith-desktop" -> "regolith-st" [color=blue];
+	"regolith-desktop" -> "regolith-styles" [color=blue];
+	"regolith-styles" -> "regolith-styles" [color=red];
+	"regolith-desktop" -> "rofi" [color=blue];
+	"regolith-desktop" -> "software-properties-gtk" [color=blue];
+	"regolith-desktop" -> "unclutter-xfixes" [color=blue];
+	"regolith-desktop" -> "update-manager" [color=blue];
+	"regolith-desktop" -> "xrescat" [color=blue];
+	"xrescat" -> "xrescat" [color=red];
+	"regolith-desktop" -> "regolith-desktop" [color=red];
+	"regolith-desktop" [style="setlinewidth(2)"]
+	"regolith-i3-wm" [style=filled,fillcolor=oldlace];
+	alt1 [
+		shape = "record"
+		label = "<regolith-compositor-compton-glx> regolith-compositor-compton-glx | <regolith-compositor> regolith-compositor"
+	]
+	"cahuella" [shape=diamond];
+	"compton" [shape=diamond];
+	"coreutils" [shape=diamond];
+	"dbus" [shape=diamond];
+	"fonts-materialdesignicons-webfont" [shape=diamond];
+	"fonts-source-code-pro-ttf" [shape=diamond];
+	"gnome-control-center" [shape=diamond];
+	"gnome-flashback" [shape=diamond];
+	"gnome-screensaver" [shape=diamond];
+	"gnome-session-bin" [shape=diamond];
+	"gnome-settings-daemon" [shape=diamond];
+	"i3-gaps-wm" [shape=diamond];
+	"i3-snapshot" [shape=diamond];
+	"i3xrocks" [shape=diamond];
+	"nautilus" [shape=diamond];
+	"network-manager" [shape=diamond];
+	"paper-icon-theme" [shape=diamond];
+	"regolith-ftue" [shape=diamond];
+	"regolith-rofication" [shape=diamond];
+	"regolith-st" [shape=diamond];
+	"rofi" [shape=diamond];
+	"software-properties-gtk" [shape=diamond];
+	"sysstat" [shape=diamond];
+	"unclutter-xfixes" [shape=diamond];
+	"update-manager" [shape=diamond];
+	"x11-xserver-utils" [shape=diamond];
+}
+// Excluded dependencies:
+// libc6 libx11-6
+// total size of all shown packages: 14273536
+// download size of all shown packages: 14056924

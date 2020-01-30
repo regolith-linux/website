@@ -1,0 +1,13 @@
+gnome-control-center
+nautilus
+gnome-screensaver
+gnome-settings-daemon
+gnome-flashback
+unclutter-xfixes
+i3xrocks
+rofi
+i3-snapshot
+i3-gaps-wm
+software-properties-gtk
+regolith-st
+update-manager

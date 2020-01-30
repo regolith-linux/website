@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<a class="td-offset-anchor"></a>
+<section class="row td-box td-box--1 position-relative td-box--gradient td-box--height-auto">
+	<div class="container text-center td-arrow-down">
+		<span class="h4 mb-0">
+<h1>Interact with the {{ .Site.Title }} project</h1>
+
+</span>
+	</div>
+</section>
+{{ partial "community_links.html" . }}
+
+<div class="td-content">
+{{ .Content }}
+</div>
+
+{{ end }}

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+  <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138654070-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138654070-1');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      动机 &middot; Regolith Linux
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  
+
+</head>
+
+
+  <body>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Regolith Linux is a distro for people that prefer a spartan interface with polished and consistent system management.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">🇬🇧 English (en)</a>
+    <a class="sidebar-nav-item" href="/cn">🇨🇳 中文 (cn)</a>
+    <a class="sidebar-nav-item" href="/it">🇮🇹 Italiano (it)</a>
+    <a class="sidebar-nav-item" href="/sv">🇸🇪 Svenska (sv)</a>
+    <a class="sidebar-nav-item" href="/de">🇩🇪 Deutsch (de)</a>
+    <a class="sidebar-nav-item" href="/fr">🇫🇷 Français (fr)</a>
+    <a class="sidebar-nav-item" href="/pt_br">🇧🇷 Português (br)</a>
+    <a class="sidebar-nav-item" href="/hu">🇭🇺 Magyarország (hu)</a>
+    <a class="sidebar-nav-item" href="https://github.com/search?utf8=✓&q=org%3Aregolith-linux+HowTo+in%3Atitle&type=Wikis">How To</a>
+    <a class="sidebar-nav-item" href="https://github.com/regolith-linux/regolith-desktop/wiki">Wiki</a>
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+	<a class="sidebar-nav-item" href="/cn/getting_started.html">入门</a>
+        
+      
+    
+      
+        
+	<a class="sidebar-nav-item" href="/cn/internals.html">内部构成</a>
+        
+      
+    
+      
+        
+	<a class="sidebar-nav-item active" href="/cn/motivations.html">动机</a>
+        
+      
+    
+      
+        
+	<a class="sidebar-nav-item" href="/cn/policies.html">条款</a>
+        
+      
+    
+      
+        
+	<a class="sidebar-nav-item" href="/cn/troubleshooting.html">常见问题解决</a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+      
+    
+
+    <a class="sidebar-nav-item" href="https://sourceforge.net/projects/regolith-linux/">Download</a>
+    <a class="sidebar-nav-item" href="https://github.com/regolith-linux">Project Source</a>
+    <a class="sidebar-nav-item" href="https://regolith-linux.herokuapp.com">Slack Channel</a>
+    <span class="sidebar-nav-item">Currently v12-07-2019</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2019. All rights reserved.
+    </p>
+  </div>
+</div>
+
+    <div class="lang-selector">
+      <ul class="lang-list">
+        <li class="lang-list-item"><a class="lang-icon" href="/">🇬🇧</a></li>
+        <li class="lang-list-item"><a class="lang-icon" href="/cn">🇨🇳</a></li>
+        <li class="lang-list-item"><a class="lang-icon" href="/it">🇮🇹</a></li>
+        <li class="lang-list-item"><a class="lang-icon" href="/sv">🇸🇪</a></li>
+        <li class="lang-list-item"><a class="lang-icon" href="/de">🇩🇪</a></li>
+        <li class="lang-list-item"><a class="lang-icon" href="/fr">🇫🇷</a></li>
+        <li class="lang-list-item"><a class="lang-icon" href="/pt_br">🇧🇷</a></li>
+        <li class="lang-list-item"><a class="lang-icon" href="/hu">🇭🇺</a></li>
+      </ul>
+    </div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap"></div>
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+		  <a href="/" title="Home"><img src="/assets/regolith-title.png" alt="Regolith Linux"></img></a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="page">
+  <h1 class="page-title">动机</h1>
+  <p>以下描述了一些创建Regolith背后的原因和想法。</p>
+<p align="center"> *** </p>
+<p>2016年，苹果公司发布了新一款没有功能键的“PRO” 笔记本电脑。 代替功能键的是一个小的LCD触屏 - 触控栏。 触控栏会随着你正在使用的 app 而变化。
+作为一个写软件的人， 我每天的工作中都非常依赖这些消失的功能键。 看起来是苹果犯的一个很明显的错误。 我想当然的认为苹果公司会另外发布一款高性能但拥有功能键的机型。
+但这些并没有发生。 所以我买了市面上性能最高的拥有功能键的机型。 最后发现这个机型仍然无法满足我的需要，而且它的键盘很容易让我打错字， 使我的工作效率降低很多。
+我认为花大价在过去10年中转成苹果用户是一个很大的错误。 我被困于单一的硬件和软件供应商。 苹果很明显并没有把我和我的打字习惯作为他们设计“Pro” 笔记本的主要对象。
+我不得不对其它的系统做很多的学习和适应工作来将我自己“拔”出来。 一开始，我很认真的看了一些Linux Distribution 和兼容Linux的硬件， 希望之前的事不再发生。
+因为Linux有很多不同的变种， 在不同的硬件供应商的产品都能够运行，所以我觉得这个赌打的很值得。 然而， 这个选择也有它一些不足的地方。</p>
+<p align="center"> *** </p>
+<p>在一个软件小组工作时， 我经常会到同事的电脑上一起解决问题。 有时候我发现他们操作他们自己的电脑时效率不高。 在他们的屏幕上， 很多的窗口叠加在一起，手会经常在键盘和鼠标间移动，
+很大的图形组件充满了他们的屏幕。 我对他们每天以这种方式工作感到很诧异。 在重新设置电脑时，为了提高工作效率， 我尽可能的移除了屏幕上很多不必要的图形组件 （比如说任务栏）。
+我意识到频繁的切换窗口，调整窗口大小， 组织窗口位置费掉很多时间。 另外， 当切换应用程序时， 我总是会因为一些零碎的东西显示出来或者不能准确找到我想找的程序而使我失去我当前的思路。
+尽管我自定义了一些Mac的界面， 我还是在微控我的电脑上花费了很多精力和时间。 这时候我想起来多年前我的同事给我看了一下他的电脑桌面环境设置 --- 一种很奇怪的东西叫做 “平铺式窗口管理（tiling window manager）”。
+在那个时候我觉得这就是一个“书呆子赶流行”的东西， 真正工作中使用的话太麻烦了。 现在我发现这种平铺窗口管理软件还存在。 我对此非常兴奋，因为它就是这个现代化杂乱无章的电脑桌面的完美解药。
+但是， 这些组件必须得从源码编译而且默认的样子十分难看。</p>
+<p align="center"> *** </p>
+<p>差不多一年前， 我发现&quot;油管&quot;(Youtube) 上有很多像我一样的技术狂热者发布的一些视频。 我这样在80年代使用像Commodore 64 和 Amiga 500 这样的机器编程的人， 看到很多这样的“老”机器仍然在被使用。
+看着这些视频并回想差我的童年， 我意识到计算机的乐趣在当今的精密复杂的内容和广告的一层一层包裹中渐渐流失。 有一些还是有用的， 比如说切换语言， 设置显示器。 有一些则是没用的，
+比如说过大的用来启动你可能永远不会用的程序的图标， 短消息提醒， 屏幕上的东西到处跳动， 杂乱无章的界面小部件等等。 简单的打开终端的这种事情都需要点好几下鼠标， 而这样的终端的默认功能也是非常差的体验。
+早期的电脑往往一开机就是编程环境。 “不啰嗦”，直奔主题（工作）！ 我希望把这些简约的东西带回我的日常编程工作中来。</p>
+<p align="center"> *** </p>
+<p>当我在研究平铺窗口管理系统时， 最初的反应是它们通常在默认的情况下都很丑。 往往设计它们的人都比较在乎功能而不是外观。 当然，把它们设置成比较好看的样式也并非难事。
+比如说， 我会经常到<a href="https://www.reddit.com/r/unixporn/">Reddit, 一种美国流行的论坛</a> 看一看其它人改动“平铺式窗口系统”后的桌面截图。 我对这些人愿意花这么多精力和时间来把电脑界面改的如此漂亮，整洁的事感到非常惊讶。
+我被这些深深的吸引住了。 然而， 这样的自定义更改也有他的不足： 这些都是针对个人喜好的自定义。 他们都是根据他们自己的特殊的系统来做的这些修改。 我想要我的工作机器和我的家用机器拥有一致的体验。
+我希望能够做到在一个地方更新， 我所有的机器都能得到更新。 有一种比较简单的方法可以做到这一点： 用程序包系统(Package System)。 所以我决定把我的自定义系统打包，这样我就能够做到快捷的安装并保持所有系统的体验一致。
+我在我的全职工作中使用Linux， 只要它是Ubuntu。 所以， 我学会了如何把我的自定义系统打包成Ubuntu程序包。</p>
+<p align="center"> *** </p>
+<p>总得来说， 针对专业人士的Mac的功能退化使我意识到苹果的“就是好用”的价值远远比控制自己的电脑界面的价值要小很多。 这个创新的电脑桌面自宝义社区教会我了一个道理：
+任何人都可以创造自己想要的简洁高效的界面。 把我的自定义桌面整合成Ubuntu 程序包， 我就真正做到了自给自足。</p>
+
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+    <script src="/js/jquery.min.js"></script>
+    <style>
+.lightbox {width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0,0,0,0.85); z-index: 9999999; line-height: 0; cursor: pointer;}
+.lightbox .img {
+	position: relative; 
+	top: 50%;
+	left: 50%;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	max-width: 100%;
+	max-height: 100%;
+}
+.lightbox .img img {opacity: 0; pointer-events: none; width: auto;}
+@media screen and (min-width: 1200px) {
+    .lightbox .img {
+		max-width: 1200px;
+    }
+}
+@media screen and (min-height: 1200px) {
+    .lightbox img {
+		max-height: 1200px;
+	}
+}
+.lightbox span {display: block; position: fixed; bottom: 13px; height: 1.5em; line-height: 1.4em; width: 100%; text-align: center; color: white; text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+
+
+
+
+
+.lightbox .videoWrapperContainer {
+	position: relative; 
+	top: 50%;
+	left: 50%;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	max-width: 900px;
+	max-height: 100%;
+}
+.lightbox .videoWrapperContainer .videoWrapper {
+	height: 0;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	padding-bottom: 56.333%; /* custom */
+	background: black;
+} 
+.lightbox .videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	display: block;
+}   
+.lightbox #prev, .lightbox #next {height: 50px; line-height: 36px; display: none; margin-top: -25px; position: fixed; top: 50%; padding: 0 15px; cursor: pointer; text-decoration: none; z-index: 99; color: white; font-size: 60px;}
+.lightbox.gallery #prev, .lightbox.gallery #next {display: block;}
+.lightbox #prev {left: 0;}
+.lightbox #next {right: 0;}
+.lightbox #close {height: 50px; width: 50px; position: fixed; cursor: pointer; text-decoration: none; z-index: 99; right: 0; top: 0;}
+.lightbox #close:after, .lightbox #close:before {position: absolute; margin-top: 22px; margin-left: 14px; content: ""; height: 3px; background: white; width: 23px;
+-webkit-transform-origin: 50% 50%;
+-moz-transform-origin: 50% 50%;
+-o-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+/* Safari */
+-webkit-transform: rotate(-45deg);
+/* Firefox */
+-moz-transform: rotate(-45deg);
+/* IE */
+-ms-transform: rotate(-45deg);
+/* Opera */
+-o-transform: rotate(-45deg);
+}
+.lightbox #close:after {
+/* Safari */
+-webkit-transform: rotate(45deg);
+/* Firefox */
+-moz-transform: rotate(45deg);
+/* IE */
+-ms-transform: rotate(45deg);
+/* Opera */
+-o-transform: rotate(45deg);
+}
+.lightbox, .lightbox * {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+</style>
+		
+<script>
+function is_youtubelink(url) {
+  var p = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
+  return (url.match(p)) ? RegExp.$1 : false;
+}
+function is_imagelink(url) {
+	var p = /([a-z\-_0-9\/\:\.]*\.(jpg|jpeg|png|gif))/i;
+	return (url.match(p)) ? true : false;
+}
+function is_vimeolink(url,el) {
+	var id = false;
+	$.ajax({
+	  url: 'https://vimeo.com/api/oembed.json?url='+url,
+	  async: true,
+	  success: function(response) {
+		if(response.video_id) {
+		  id = response.video_id;
+		  $(el).addClass('lightbox-vimeo').attr('data-id',id);
+		}
+	  }
+	});
+}
+
+$(document).ready(function() {
+	//add classes to links to be able to initiate lightboxes
+	$("a").each(function(){
+		var url = $(this).attr('href');
+		if(url) {
+			if(url.indexOf('vimeo') !== -1 && !$(this).hasClass('no-lightbox')) is_vimeolink(url,$(this));
+			if(is_youtubelink(url) && !$(this).hasClass('no-lightbox')) $(this).addClass('lightbox-youtube').attr('data-id',is_youtubelink(url));
+			if(is_imagelink(url) && !$(this).hasClass('no-lightbox')) {
+				$(this).addClass('lightbox-image');
+				var href = $(this).attr('href');
+				var filename = href.split('/').pop();
+				var split = filename.split(".");
+				var name = split[0];
+				$(this).attr('title',name);
+			}
+		}
+	});
+	//remove the clicked lightbox
+	$("body").on("click", ".lightbox", function(event){
+		if($(this).hasClass('gallery')) {
+			$(this).remove();
+			if($(event.target).attr('id')=='next') {
+				//next item
+				if($("a.gallery.current").nextAll("a.gallery:first").length) $("a.gallery.current").nextAll("a.gallery:first").click();
+				else $("a.gallery.current").parent().find("a.gallery").first().click();
+			}
+			else if ($(event.target).attr('id')=='prev') {
+				//prev item
+				if($("a.gallery.current").prevAll("a.gallery:first").length) $("a.gallery.current").prevAll("a.gallery:first").click();
+				else $("a.gallery.current").parent().find("a.gallery").last().click();
+			}
+			else {
+				$("a.gallery").removeClass('gallery');
+			}
+		}
+		else $(this).remove();
+	});
+	//prevent image from being draggable (for swipe)
+	$("body").on('dragstart', ".lightbox img", function(event) { event.preventDefault(); });
+	//add the youtube lightbox on click
+	$("a.lightbox-youtube").click(function(event){
+		event.preventDefault();
+		$('<div class="lightbox"><a id="close"></a><a id="next">&rsaquo;</a><a id="prev">&lsaquo;</a><div class="videoWrapperContainer"><div class="videoWrapper"><iframe src="https://www.youtube.com/embed/'+$(this).attr('data-id')+'?autoplay=1&showinfo=0&rel=0"></iframe></div></div></div>').appendTo('body');
+	});
+	//add the image lightbox on click
+	$("a.lightbox-image").click(function(event){
+		event.preventDefault();
+		$('<div class="lightbox"><a id="close"></a><a id="next">&rsaquo;</a><a id="prev">&lsaquo;</a><div class="img" style="background: url('+$(this).attr('href')+') center center / contain no-repeat;" title="'+$(this).attr('title')+'" ><img src="'+$(this).attr('href')+'" alt="'+$(this).attr('title')+'" /></div><span>'+$(this).attr('title')+'</span></div>').appendTo('body');
+	});
+	//add the vimeo lightbox on click
+	$("body").on("click", "a.lightbox-vimeo", function(event){
+		event.preventDefault();
+		$('<div class="lightbox"><a id="close"></a><a id="next">&rsaquo;</a><a id="prev">&lsaquo;</a><div class="videoWrapperContainer"><div class="videoWrapper"><iframe src="https://player.vimeo.com/video/'+$(this).attr('data-id')+'/?autoplay=1&byline=0&title=0&portrait=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div></div>').appendTo('body');
+	});
+
+	$("body").on("click", "a[class*='lightbox-']", function(){
+		var link_elements = $(this).parent().find("a[class*='lightbox-']");
+		$(link_elements).removeClass('current');
+		for (var i=0; i<link_elements.length; i++) {
+			if($(this).attr('href') == $(link_elements[i]).attr('href')) {
+				$(link_elements[i]).addClass('current');
+			}
+		}
+		if(link_elements.length>1) {
+			$('.lightbox').addClass('gallery');
+			$(link_elements).addClass('gallery');
+		}
+	});
+
+	
+});
+
+$(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+        $("#prev").click();
+        break;
+        case 39: // right
+        $("#next").click();
+        break;
+	case 27: // esc
+        $("#close").click();
+        break;
+        default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+});
+
+  /*===========================
+  Swipe-it v1.4.1
+  An event listener for swiping gestures with vanilla js.
+  https://github.com/tri613/swipe-it#readme
+ 
+  @Create 2016/09/22
+  @Update 2017/08/11
+  @Author Trina Lu
+  ===========================*/
+  "use strict";var _slicedToArray=function(){function n(n,t){var e=[],i=!0,o=!1,r=void 0;try{for(var u,c=n[Symbol.iterator]();!(i=(u=c.next()).done)&&(e.push(u.value),!t||e.length!==t);i=!0);}catch(n){o=!0,r=n}finally{try{!i&&c.return&&c.return()}finally{if(o)throw r}}return e}return function(t,e){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return n(t,e);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}();!function(n,t,e){function i(n){function e(){o("touchstart",m,w),o("touchmove",d,w),o("touchend",p,w),E.mouseEvent&&o("mousedown",s,w)}function i(){y=!1,D=!1,A=!1,b=!1,a=!1}function s(n){a=this,y=n.clientX,D=n.clientY,o("mousemove",l,v),o("mouseup",h,v)}function l(n){n.preventDefault(),y&&D&&(A=n.clientX,b=n.clientY)}function h(n){r("mousemove",l,v),r("mouseup",h,v),p(n)}function m(n){a=this,y=n.touches[0].clientX,D=n.touches[0].clientY}function d(n){A=n.touches[0].clientX,b=n.touches[0].clientY}function p(n){if(y&&D&&A&&b){var t=y-A,e=D-b,o=[t,e].map(Math.abs),r=_slicedToArray(o,2),c=r[0],s=r[1],v=E.minDistance;if(c>v){var f=y<A?"swipeRight":"swipeLeft";u(f,a,{distance:t,start:y,end:A})}if(s>v){var l=D>b?"swipeUp":"swipeDown";u(l,a,{distance:e,start:D,end:b})}(c>v||s>v)&&u("swipe",a)}i()}var E=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},w=c(t.querySelectorAll(n)),y=void 0,D=void 0,A=void 0,b=void 0;E.mouseEvent=void 0===E.mouseEvent?f.mouseEvent:E.mouseEvent,E.minDistance=void 0===E.minDistance?f.minDistance:E.minDistance,i(),e(),this.on=function(n,t){return o(n,t,w),this}}function o(n,t,e){s(e).forEach(function(e){return e.addEventListener(n,t)})}function r(n,t,e){s(e).forEach(function(e){return e.removeEventListener(n,t)})}function u(n,e){var i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{},o=t.createEvent("Event");o.initEvent(n,!0,!0),o.swipe=i,s(e).forEach(function(n){return n.dispatchEvent(o)})}function c(n){for(var t=[],e=0;e<n.length;e++)t.push(n[e]);return t}function s(n){return Array.isArray(n)?n:[n]}var a=!1,v=[n],f={mouseEvent:!0,minDistance:30};n[e]=i}(window,document,"SwipeIt");
+
+var mySwipeIt = new SwipeIt('body');
+mySwipeIt.on('swipeLeft',function(e){
+	//check if lightbox is present
+	if($('.lightbox').length >  0 ) {
+		$("#next").click();
+	}
+}).on('swipeRight',function(e){
+	//check if lightbox is present
+	if($('.lightbox').length >  0 ) {
+		$("#prev").click();
+	}
+});
+</script>
+
+  </body>
+</html>
