@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/regolith-linux/regolith-linux.github.io.git
+	branch = master
