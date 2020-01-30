@@ -27,7 +27,7 @@ $ sudo apt install regolith-desktop
 </pre>
 3. Reboot the computer, and when logging in select the "Regolith" session in the gear menu (⚙️):
 
-![Ubuntu Login Screen](/r13-dev-site/regolith-screenshot-login.png)
+![Ubuntu Login Screen](/regolith-screenshot-login.png)
 
 ## Reinstallation
 
