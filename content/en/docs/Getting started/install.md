@@ -33,11 +33,11 @@ $ sudo apt install regolith-desktop
 
 In the case that the Regolith desktop environment becomes corrupted or otherwise unbootable, follow these steps to reset it.  No user files will be removed as part of this process:
 
-1. Login to the stock Ubuntu session.  If this session is not available, install it with `sudo apt install ubuntu-session`.
+1. Login to the stock Ubuntu session.  If this session is not available, install it with `sudo apt install ubuntu-session`.  After installing this, you will have the option to select the `Ubuntu` session type in the login screen.
 2. Uninstall Regolith from within the Ubuntu session:
 ```bash
 $ sudo apt remove regolith-*
-* sudo apt autoremove
+$ sudo apt autoremove
 ```
 3. Verify that no regolith packages are still installed with `apt list --installed | grep -i regolith`.  The command should not return any packages.  If it does, manually uninstall them with `sudo apt remove <package>`.
 4. Reinstall Regolith:
