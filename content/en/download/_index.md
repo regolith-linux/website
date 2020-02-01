@@ -25,7 +25,7 @@ Starting from scratch or simply want to try Regolith out in a VM or LiveUSB envi
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fas fa-box-open" title="Regolith Desktop PPA" %}}
-Add the <a href="https://launchpad.net/~regolith-linux/+archive/ubuntu/stable">Regolith PPA</a> to your existing Ubuntu system and install the regolith-desktop package with the following terminal commands:
+Add the <a href="https://launchpad.net/~regolith-linux/+archive/ubuntu/release">Regolith PPA</a> to your existing Ubuntu system and install the regolith-desktop package with the following terminal commands:
 <pre class="text-left border rounded p-2">
 $ sudo add-apt-repository ppa:regolith-linux/release
 $ sudo apt install regolith-desktop
