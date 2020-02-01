@@ -21,8 +21,7 @@ Upon session start, Regolith loads configuration files in the following order:
 1. `/usr/bin/i3-gnome-flashback` executes after successful login
 2. Load Xresource file `~/.Xresources` if it exists.
 3. Load Xresource file `~/.Xresources-regolith` if it exists.
-4. Load first i3 config file found from following list: `~/.config/regolith/i3/confg`, `/etc/regolith/i3/config`, `/etc/i3/config`.
 5. If first time session has loaded, initialize system.
 6. Compare current Xresource db against last saved hash, if different, reload GNOME settings from Xresources.
-7. Execute i3
-8. i3 executes the UI components Rofi, i3xrocks, unclutter, regolith-compositor, Rofication, and regolith-ftue 
+7. Execute i3 with first config file found from following list: `~/.config/regolith/i3/confg`, `/etc/regolith/i3/config`, `/etc/i3/config`.
+8. i3 executes the UI components [Rofi](https://github.com/davatorium/rofi), [i3xrocks](https://github.com/regolith-linux/i3xrocks), [unclutter](https://github.com/Airblader/unclutter-xfixes), regolith-compositor, [Rofication](), and [regolith-ftue](https://github.com/regolith-linux/regolith-ftue).
