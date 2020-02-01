@@ -137,7 +137,7 @@ linkTitle = "Regolith Linux"
 - Relies on <a href="https://snapcraft.io/store">Ubuntu's app store</a> and <a href="https://packages.ubuntu.com/">package repositories</a> for a large, high quality selection of software.
 - Built to be taken apart. <a href="docs/customize/components/">Swap in UI components</a> of your choosing easily.
 - Ships with a toggle overlay of basic <a href="docs/reference/keybindings/">keybindings</a> to make getting started easier.
-- Provides a <a href="https://github.com/regolith-linux/regolith-builder/blob/master/build.sh">build script</a> and <a href="https://github.com/regolith-linux/regolith-builder/blob/master/package-model.json">package metadata</a> to allow users to easily fork the desktop environment and distribution.
+- Provides a <a href="https://github.com/regolith-linux/regolith-builder/blob/master/build.sh">build script</a> and <a href="https://github.com/regolith-linux/regolith-builder/blob/master/package-model-R1.3.json">package metadata</a> to allow users to easily fork the desktop environment and distribution.
 {{< /blocks/section >}}
 {{< blocks/section color="white">}}
 ### <i class="fas fa-user-friends pr-3"></i>Thanks to...
