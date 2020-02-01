@@ -8,6 +8,10 @@ description: >
 
 As an [open source project](https://github.com/regolith-linux), Regolith is open to anyone to extend, fork, or modify as they see fit.  Additionally, we welcome people to join as [contributors](https://github.com/orgs/regolith-linux/people) to the project. If you already have something in mind, please file an issue describing the change you're planning to make to Regolith, or discuss in the [Slack channel](https://regolith-linux.herokuapp.com/).  This ensures work isn't duplicated or effort wasted.  If you're interested in seeing what work is available to start with, take a look at the [list of issues looking for help](https://github.com/regolith-linux/regolith-desktop/labels/help%20wanted) to see what is needed.  To get a picture of the future, check [the roadmap](https://regolith-linux.org/news.html#roadmap). Regolith is a young project with much potential for improvement!
 
+## Financial Support
+
+As of the 1.3 release, Regolith has joined [Open Collective](https://opencollective.com/) as a way of receiving financial contributions from users. Financial contributions are vital to pay for infrastructure costs and fund future development of both Regolith itself as well as the upstream components that Regolith is composed of.  [Go here to contribute to Regolith](https://opencollective.com/regolith/donate).
+
 ## Join our Slack channel
 
 Click [this link](https://regolith-linux.herokuapp.com/) to join our Slack channel, which allows you to communicate with the developers of Regolith and other users. Here is where we brainstorm about new features, ways to improve current features, and fix bugs. 

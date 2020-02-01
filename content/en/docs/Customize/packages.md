@@ -37,10 +37,18 @@ Regolith packages can be built, signed, and staged from the `regolith-builder` r
 
 ## Package Δ between Stock Ubuntu and Regolith Linux
 
-When installing Regolith via PPA, the user has control and visibility over all package changes via their package installation tool of choice, likely `apt`, `dpkg`, or `synaptic`.  However when installing Regolith via the Ubuntu Installer, the user does not see what packages are installed as part of that process.  For Regolith 1.2, the following packages are removed from stock Ubuntu:
+When installing Regolith via PPA, the user has control and visibility over all package changes via their package installation tool of choice, likely `apt`, `dpkg`, or `synaptic`.  However when installing Regolith via the Ubuntu Installer, the user does not see what packages are installed as part of that process.  To cut down the size of the installer download, some packages were removed from the Ubuntu installer.
+
+### Regolith 1.2
+
+For Regolith 1.2, the following packages are removed from stock Ubuntu:
 
 * ubuntu-session
 * libreoffice-*
 * rythmbox-*
 
-Of course, any of these packages can be re-added by the user after installation using a variety of tools including the app store.
+Of course, any of these packages can be re-added by the user after installation using a variety of tools including the app store.  
+
+### Regolith 1.3
+
+For the 1.3 release of Regolith, changes from baseline Ubuntu are [documented here](https://regolith-linux.org/docs/reference/releases/regolith-1.3-release-notes/#iso-generation).
