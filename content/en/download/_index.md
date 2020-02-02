@@ -13,7 +13,7 @@ menu:
 		<span class="h4 mb-0">
 <h1><i class="fas fa-cloud-download-alt ml-2 "></i> Get Regolith</h1>
 
-<p>Regolith is available as a <b>stand-alone ISO</b> that can be installed as a complete Linux operating system and as a "<b>personal package archive</b>" (PPA) that installs the Regolith desktop into an existing Ubuntu desktop.</p>
+<p>Regolith is available as a <b>stand-alone ISO</b> that can be installed as a complete Linux operating system and as a "<b>personal package archive</b>" (PPA) that installs the Regolith desktop into an existing Ubuntu 18.04 or 19.10 system.</p>
 </span>
 	</div>
 </section>
