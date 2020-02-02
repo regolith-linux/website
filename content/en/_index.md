@@ -79,7 +79,7 @@ linkTitle = "Regolith Linux"
     </div>
     <div class="row pb-5">
       <div class="col d-flex my-auto border rounded p-3">
-        <p>Easily switch to <a href="https://ethanschoonover.com/solarized">Solarized</a> or other looks with the `regolith-look` command. Because <b>looks</b> utilize the package manager, you only store theme resources that you're using.</p>
+        <p>Easily switch to <a href="https://ethanschoonover.com/solarized">Solarized</a> or other looks with the <code>regolith-look</code> command. Because <b>looks</b> utilize the package manager, you only store theme resources that you're using.</p>
       </div>
       <div class="col d-flex mt-3">
         <p>{{< screenshot regolith-screenshot-solarized.png "Solarized" >}}</p>
