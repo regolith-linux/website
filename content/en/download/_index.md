@@ -13,15 +13,14 @@ menu:
 		<span class="h4 mb-0">
 <h1><i class="fas fa-cloud-download-alt ml-2 "></i> Get Regolith</h1>
 
-<p>Regolith is available in two forms; as a <b>stand-alone ISO</b> that can be installed as a complete Linux operating system, and as a "<b>personal package archive</b>" (PPA) that installs the Regolith desktop into an existing Ubuntu desktop.
-<p>Both installation methods result in the same Regolith experience. Both are offered for your convienence.</p>
+<p>Regolith is available as a <b>stand-alone ISO</b> that can be installed as a complete Linux operating system and as a "<b>personal package archive</b>" (PPA) that installs the Regolith desktop into an existing Ubuntu desktop.</p>
 </span>
 	</div>
 </section>
 {{< blocks/section color="white">}}
 
 {{% blocks/feature icon="fas fa-compact-disc" title="Regolith Linux ISO Installer" url="https://sourceforge.net/projects/regolith-linux/files/regolith-linux-r1.3/" url_text="Download" %}}
-Starting from scratch or simply want to try Regolith out in a VM or LiveUSB environment? <a href="https://sourceforge.net/projects/regolith-linux/files/regolith-linux-r1.3/">Download the ISO <i class="fas fa-cloud-download-alt"></i></a> and write it to a USB flash drive to install or test drive Regolith as an operating system.  To learn how, visit the <a class="text-warning"  href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntu installer tutorial</a>.
+Starting from scratch or simply want to try Regolith out in a VM or LiveUSB environment? <a href="https://sourceforge.net/projects/regolith-linux/files/regolith-linux-r1.3/">Download the ISO <i class="fas fa-cloud-download-alt"></i></a> and write it to a USB flash drive to install or test drive Regolith as an operating system.  To learn how, visit the <a class="text-warning"  href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntu installer tutorial</a>.  This ISO is a customization of the Ubuntu installer from Canonical, with [some optional packages removed and Regolith packages added](http://regolith-linux.org/docs/reference/releases/regolith-1.3-release-notes/#iso-generation).
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fas fa-box-open" title="Regolith Desktop PPA" %}}

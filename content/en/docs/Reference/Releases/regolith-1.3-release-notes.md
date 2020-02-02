@@ -83,7 +83,7 @@ Following R1.2, the 1.3 release focused on usability issues reported by users an
 
 ## ISO Generation
 
-The following commands were applied to the Regolith Install ISO in the [Cubic tool](https://launchpad.net/cubic):
+The following commands were applied via the [Cubic tool](https://launchpad.net/cubic) to the stock Ubuntu 18.04 and 19.10 installer images to generate the Regolith Install ISO:
 ```bash
 $ sudo add-apt-repository universe && sudo add-apt-repository ppa:regolith-linux/release
 $ sudo apt remove aisleriot branding-ubuntu cheese* gnome-mahjongg gnome-sudoku gnome-mines gnome-todo* gnome-video-* libchees* libgnome-games* libreoffice* remmina* rhythmbox* shotwell* thunderbird* totem* ure ubuntu-session ubuntu-web-launchers
