@@ -35,7 +35,7 @@ description: >
 |Configure Wifi|`⊞ Win`-`w`|
 |Enter Window Resize Mode|`⊞ Win`-`r`|
 |Change Window Size in Resize Mode|`⊞ Win`-`arrow keys`|
-|Increase or Decrease Window Gaps|`+` and `-`|
+|Increase or Decrease Window Gaps in Resize Mode|`+` and `-`|
 |Exit Resize Mode|`Escape` or `Enter`|
 |Kill Focused Window|`⊞ Win`-`Shift`-`q`|
 |Close Terminal|`Ctrl`-`d`|
