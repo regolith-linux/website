@@ -36,4 +36,4 @@ Regolith is a volunteer effort, and so there are no specific expectations regard
 * To learn about and contribute to the future roadmap, [see here](https://github.com/orgs/regolith-linux/projects) for project planning.
 * As a young project, there are a lot of rough edges so if you want to work in fixes that's great but also if you're interested in new features that's fine too.
 * Help with release planning.  We try for a release every 3 - 4 months.  Besides feature development and bug fixes, documentation and testing are needed.
-* For new features, it is recommended to create a "request for comment" issue ([example](https://github.com/regolith-linux/regolith-i3-gaps-config/issues/6))and allow some time for user feedback.  These RfCs will be advertised via the mailing list and official Twitter account.
+* For new features, it is recommended to create a "request for comment" issue ([example](https://github.com/regolith-linux/regolith-i3-gaps-config/issues/6)) and allow some time for user feedback.  These RfCs will be advertised via the mailing list and official Twitter account.
