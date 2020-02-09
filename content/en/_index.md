@@ -28,7 +28,6 @@ linkTitle = "Regolith Linux"
   </div>
 {{< /blocks/cover >}}
 
-### <i class="fas fa-info-circle pr-3 mt-3"></i>Visual Tour
 <div class="container mt-3">
   <div class="row pb-5">
     <div class="col-8 my-auto"><p>Upon first login, an overlay (toggled anytime via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">?</span></span>) presents the most important keybindings used with i3-wm.</p></div>
