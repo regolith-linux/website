@@ -18,7 +18,7 @@ set $i3xrocks_config /etc/regolith/i3xrocks/config
 2. Stage your own i3 config file [(tutorial)](../stage-configs), then open `~/.config/regolith/i3/config` in your editor of choice.
 3. Edit the line that sets the `i3xrocks_config` variable to point to your new config file:
 ```
-set $i3xrocks_config /home/<username>/.config/regolith/i3xrocks.confg
+set $i3xrocks_config /home/<username>/.config/regolith/i3xrocks.config
 ```
 4. Now let's edit `~/.config/regolith/i3xrocks.config`.  You'll notice sections are commented out, such as a `memory` section.  Enable the memory blocklet:
 ```
