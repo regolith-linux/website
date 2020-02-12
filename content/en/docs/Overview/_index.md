@@ -6,7 +6,7 @@ description: >
   What is Regolith?
 ---
 
-Regolith is a collection of open source components that together form a desktop environment. Many of the UI components that are used to build Regolith are independent open source projects that have simply been integrated, packaged, and configured for a specific workflow and visual aesthetic. Most computer desktop environments are optimized for ease-of-use and familiarity with commercial operating systems such as Microsoft Windows or Apple's OS X. In contrast, Regolith provides a way of interacting with a computer that is **optimized for user productivity** and does not attempt to mimic legacy UI paradigmns for familiarity.
+Regolith is a collection of open source components that together form a desktop environment. Many of the UI components that are used to build Regolith are independent open source projects that have simply been integrated, packaged, and configured for a specific workflow and visual aesthetic. Most computer desktop environments are optimized for ease-of-use and familiarity with commercial operating systems such as Microsoft Windows or Apple's OS X. In contrast, Regolith provides a way of interacting with a computer that is **optimized for user productivity** and does not attempt to mimic legacy UI paradigms for familiarity.
 
 ## The Keyboard, the Mouse, and the Monitor
 
