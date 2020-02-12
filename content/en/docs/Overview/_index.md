@@ -16,7 +16,7 @@ But this benefit comes with a one-time cost: learning the keybindings.  In excha
 
 ## Tiling Windows
 
-Perhaps the most user-impacting component in Regolith is the window manager, an open source project called <code>i3-gaps</code> (which is a customization of <code>i3-wm</code>).  This program organizes windows into tiles.  By default, i3-gaps strives to fill the entire screen with tiles.  If only one program is presenting a window, then that window occupies the entire screen.  For two windows, both get an equal portion of the screen, and so on.  By using keybindings, the user can tell i3-gaps to resize, move, and otherwise organize windows in other ways. A key advantage to this approach is that the user is freed from micro managing window layouts (at the cost of having to learn the keybindings).
+Perhaps the most user-impacting component in Regolith is the window manager, an open source project called <code>i3-gaps</code> (which is a customization of <code>i3-wm</code>).  This program organizes windows into tiles.  By default, `i3-gaps` divides the screen into sections for each window, all of which add up to the entire screen.  If only one program is presenting a window, then that window occupies the entire screen.  For two windows, both get an equal portion of the screen, and so on.  By using keybindings, the user can tell `i3-gaps` to resize, move, and otherwise organize windows in other ways. A key advantage to this approach is that the user is freed from micro managing window layouts (at the cost of having to learn the keybindings).
 
 ## Launching Applications
 
@@ -30,9 +30,9 @@ In addition to the transient system information provided on the bar, the system 
 
 ### Configuration Files
 
-While most of the common tasks of system management and administration are handled by graphical interfaces such as `Settings`, lower-level configuration is done by editing configuration files that are installed as part of Regolith.  For example, to change what information is presented on the bar, or to tweak the border width of windows, editing configuration files is required.  These customizations are covered in the [customization section](https://regolith-linux.org/docs/customize/).
+While most of the common tasks of system management and administration are handled by graphical interfaces such as `Settings`, lower-level configuration is done by editing configuration files that are installed as part of Regolith.  For example, to change what information is presented on the bar, or to tweak the border width of windows, editing configuration files is required.  These customizations are covered in the [customization section](/docs/customize/).
 
-## Where should I go next?
+## Where next?
 
 * [Getting Started](../getting-started/): Get started with Regolith
 * [The Interface](../interface/): Understand how to perform actions in Regolith
