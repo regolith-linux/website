@@ -12,6 +12,10 @@ As stated in the [repo readme](https://github.com/regolith-linux/regolith-styles
 
 To maximize the re-use of theme information in Regolith, Xresources are divided into two categories of files: definition files and application files.  The definition files make heavy use of the `define` directive.  They essentially bind an abstract key, such as "blue" or "terminal font" to a literal value, such as `#0000FF` or `Source Code Pro Medium`.  In making changes to files, it's expected that these defines will change.  The user may wish to specify a different icon set, or typeface, and would do so by modifying or creating a new definition file.  Once this file is created, it needs to be referenced by a top-level Xresource file in `~/Xresource-regolith`. 
 
+{{% pageinfo %}}
+Note that when referencing other files in Xresources via the `#include` directive, shortcuts like `$HOME` and `~/` are not available.  Absolute paths are required.
+{{% /pageinfo %}}
+
 ## Application Xresource files
 
 As mentioned previously, in `/etc/regolith/styles` lives a number of Xresources, including those for specific applications such as `st` or `i3-wm`.  Opening these files will show a mapping of the abstract keys provided by the defines files to application specific keys.  In this way, the general description of the look can be mapped to any UI component or application that can read from Xresources.

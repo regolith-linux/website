@@ -10,7 +10,7 @@ menu:
 
 This site contains the information to use the Regolith desktop environment.  The content is structured in an order intended for new users, but feel free to skip around as you see fit.  Feedback is always welcome and we appreciate any tips on how the documentation can be more complete, easy to read, and effective.
 
-## Terminology
+## Terms
 
 Before diving in it's good to define some terms to avoid confusion.
 
