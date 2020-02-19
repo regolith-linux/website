@@ -6,7 +6,7 @@ description: >
   Learn the most important parts of Regolith first.
 ---
 
-While we'll cover everything in greater detail in other areas of the documentation, this page covers the very basic users need to know in order to use Regolith.
+While we'll cover everything in greater detail in other areas of the documentation, this page covers the very basics.
 
 ## The Super Key
 
@@ -15,6 +15,8 @@ Most keybindings you'll be using with Regolith start with the <span class="badge
 ## Launch an Application
 
 After logging in, you'll be at a blank screen with the bar at the bottom and some keyboard shortcuts on the right.  To launch an application, press <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span> and a menu will be presented with all of the applications installed on the system.  If you begin typing the name of the application you wish to launch, the list will filter down to only matching names.  You can also scroll through the list with the arrow keys.
+
+<img class="shadow" src="../screenshot-launcher.png" width="640px"/>
 
 ### Terminal
 
@@ -38,6 +40,12 @@ The preferred browser is also special, and can be launched with <span class="tex
 ## Switching Workspaces
 
 A primary way of managing how applications occupy the screen is by the usage of workspaces.  A workspace is in essence a group of zero or more applications that all present windows on the same physical display.  Users can switch workspaces to "gain" more space for applications to occupy.  Windows can be moved across workspaces.  Workspaces can be tied to physical display or be moved to other displays as needed.  To switch workspaces, hold down the <span class="badge badge-warning">super</span> key and press one of the number keys.  This will navigate to that workspace.  If any windows exist in a given workspace, it will show in the bar as being active. Thus, by referring to the bar the user can known of which workspaces active applications live.
+
+## Configuring the System
+
+The `Settings` app (also known as `gnome-control-center`) is the primary interface for common configuration tasks, such as changing the desktop wallpaper, configuring wifi and bluetooth, configuring app associations, and setting up users.  This app can be launched via the <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span> keybinding or from the Launcher via the `Settings` app.
+
+<img class="shadow" src="../regolith-control-panel.png" width="640px"/>
 
 ## Further Reading
 
