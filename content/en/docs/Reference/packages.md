@@ -24,6 +24,7 @@ description: >
 |regolith-rofication | A customization of the Rofication project. |
 |regolith-st | The st-term with some patches applied. |
 |regolith-styles | Metadata that describes the UI look in Regolith including several binary packages for specific looks. |
+|remontoire | A GTK+ keybinding viewer that integrates with i3. |
 |xrescat | `cat` for Xresources. |
 
 ## Diving Deeper
