@@ -1,7 +1,7 @@
-baseURL = "http://regolith-linux.org/regolith-site-r13"
-title = "Regolith Linux - R1.3"
+baseURL = "https://regolith-linux.org"
+title = "Regolith Linux"
 
-enableRobotsTXT = false
+enableRobotsTXT = true
 
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
 theme = ["docsy"]
