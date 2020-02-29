@@ -45,7 +45,7 @@ R1.3.1 is a quick followup to R1.3 that adds polish and usability features.  Hea
         <tr>
             <td>Locale used for date/time Format</td>
             <td></td>
-            <td>For those not using the US date and time formats, the bar clock will now automatically use the GNOME hour format and the <code>locale</code> <code>LC_TIME</code> setting to automatically display time in the preferred form without configuration.</td>
+            <td>For those not using the US date and time formats, the bar clock will now automatically use the GNOME hour format and the <code>locale</code> <code>LC_TIME</code> setting to automatically display date and time in the regional form without configuration.</td>
         </tr>
         <tr>
             <td>UI Tweaks and Polish</td>

@@ -9,7 +9,7 @@ linkTitle = "Regolith Linux"
 <p class="lead m-5">Regolith is a modern desktop environment that saves you time by reducing the clutter and ceremony that stand between you and your work. Built on top of Ubuntu and GNOME, Regolith stands on a well-supported and consistent foundation.</p>
 
 <div class="row">
-  <div class="col-sm-8 mb-5">{{< img screenshot-title.png "Regolith Linux" >}}</div>
+  <div class="col-sm-8 mb-5">{{< img regolith-screenshot-r1.3.1-busy.png "Regolith Linux" >}}</div>
   <div class="col-sm-4">
     <div class="mx-auto">
     <a class="btn btn-lg btn-secondary mr-3 mb-4" href="{{< relref "/download" >}}">
@@ -58,8 +58,8 @@ linkTitle = "Regolith Linux"
     <div class="col-4 my-auto border rounded p-1">{{< screenshot regolith-screenshot-solarized.png "Solarized" >}}</div>    
   </div>
   <div class="row pb-5">
-    <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-transmission.png "Downloads" >}}</div>
-    <div class="col-8 my-auto"><p>Launch Transmission via the app launcher <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span> and manage files with Nautilus <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">N</span></span>.</p></div>    
+    <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-updates.png "System Updates" >}}</div>
+    <div class="col-8 my-auto"><p>Regolith is built on Ubuntu, providing a system that's up to date and stable.</p></div>    
   </div>
   <div class="row pb-5">
     <div class="col-8 my-auto"><p>Got a lot going on?  Quickly find the window you're looking for via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> or navigate over workspaces with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">[0 - 19]</span></span>.</p></div>
@@ -70,12 +70,12 @@ linkTitle = "Regolith Linux"
     <div class="col-8 my-auto"><p>Waste no space on frivolous UI and take advantage of every pixel without micro-managing your window layouts.</p></div>    
   </div>
   <div class="row pb-5">
-    <div class="col-8 my-auto"><p>Manage your notifications with an on-screen dialog by pressing <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">n</span></span>.</p></div>
+    <div class="col-8 my-auto"><p>Desktop notifications do not compete for your attention, but rather can be managed via an on-screen dialog by pressing <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">n</span></span>.</p></div>
     <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-notifications.png "Notifications" >}}</div>    
   </div>
   <div class="row pb-5">
     <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-updates.png "System Updates" >}}</div>
-    <div class="col-8 my-auto"><p>Regolith is built on Ubuntu, providing a system that's up to date and stable.</p></div>    
+    <div class="col-8 my-auto"><p>Regolith is built on Ubuntu, providing a system that's up-to-date, stable, and well documented.</p></div>    
   </div>
 </div>
 
