@@ -67,11 +67,13 @@ weight = 1
 # Everything below this are Site Params
 
 [params]
+author = "Ken Gilmer"
+description = "Regolith is a modern desktop environment that lets you work faster by reducing unnecessary clutter and ceremony."
+site_description = "Regolith is a modern desktop environment that lets you work faster by reducing unnecessary clutter and ceremony."
+images = ["https://regolith-linux.org/screenshot-float.png"]
+
 copyright = "Ken Gilmer"
 privacy_policy = "https://regolith-linux.org/docs/policy-and-process/privacy/"
-
-# First one is picked as the Twitter card image if not set on page.
-# images = ["images/project-illustration.png"]
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.

@@ -10,6 +10,10 @@ Based on your preferred installation method, follow one of the following two sec
 
 ## Option 1: Ubuntu Installer
 
+{{% pageinfo %}}
+ISO installers are not yet available for the R1.3.1 release.  Until available, the R1.3 release can be installed and updates will bring the system up to R1.3.1 automatically.
+{{% /pageinfo %}}
+
 1. Download an [ISO image <i class="fas fa-cloud-download-alt"></i>](https://sourceforge.net/projects/regolith-linux/files/regolith-linux-r1.3/) (both the Ubuntu LTS 18.04 and most recent 19.10 bases are available) and then use an OS installation tool such as USB Creator to write the downloaded file into a USB device. Here are Ubuntu guides for performing this action in [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0), [Mac](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), and [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0).
 2. Reboot the computer and select the USB flash drive to boot from.
 3. Install or run the live environment by providing information when prompted during the setup process.  See [this tutorial](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop) to learn more about the installation process.
