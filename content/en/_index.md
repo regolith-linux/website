@@ -73,10 +73,6 @@ linkTitle = "Regolith Linux"
     <div class="col-8 my-auto"><p>Desktop notifications do not compete for your attention, but rather can be managed via an on-screen dialog by pressing <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">n</span></span>.</p></div>
     <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-notifications.png "Notifications" >}}</div>    
   </div>
-  <div class="row pb-5">
-    <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-updates.png "System Updates" >}}</div>
-    <div class="col-8 my-auto"><p>Regolith is built on Ubuntu, providing a system that's up-to-date, stable, and well documented.</p></div>    
-  </div>
 </div>
 
 {{< blocks/section color="white">}}
