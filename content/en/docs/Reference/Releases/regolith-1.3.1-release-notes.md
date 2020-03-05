@@ -8,6 +8,10 @@ description: >
 
 R1.3.1 is a quick followup to R1.3 that adds polish and usability features.  Headlining features include a more concise way of overriding Xresource defaults and several enhancements to the Remontoire keybinding viewer.
 
+{{% pageinfo %}}
+If you maintain your own i3 config file, note that the copy shipped in Regolith 1.3.1 has changed in that the comment format has been modified to be readable by Remontoire ([example](https://github.com/regolith-linux/regolith-i3-gaps-config/blob/master/config#L37)).  Without updating your copy i3 config comments, you will not see any keybindings.
+{{% /pageinfo %}}
+
 ## Features
 
 <table class="table">
@@ -60,16 +64,3 @@ R1.3.1 is a quick followup to R1.3 that adds polish and usability features.  Hea
 * Debian package dependencies for various Regolith Looks have been fixed.
 * Layout issues with Remontoire have been addressed.
 * Compton configuration cleaned up 
-
-## ISO Generation
-
-The following commands were applied via the [Cubic tool](https://launchpad.net/cubic) to the stock Ubuntu 18.04 and 19.10 installer images to generate the Regolith Install ISO:
-```bash
-$ sudo add-apt-repository universe && sudo add-apt-repository ppa:regolith-linux/release
-$ sudo apt remove aisleriot branding-ubuntu cheese* gnome-mahjongg gnome-sudoku gnome-mines gnome-todo* gnome-video-* libchees* libgnome-games* libreoffice* remmina* rhythmbox* shotwell* thunderbird* totem* ure ubuntu-session ubuntu-web-launchers
-$ apt install regolith-desktop regolith-gdm3-theme
-$ sudo apt autoremove
-$ cp /usr/share/backgrounds/lucas-bellator-C0OD8OM-oM0-unsplash.jpg /usr/share/backgrounds/warty-final-ubuntu.png
-```
-
-The purpose of removing several packages such as games and libreoffice was to reduce the ISO size.  All packages removed in the ISO are installable via the `apt` tool or via the Ubuntu app store.

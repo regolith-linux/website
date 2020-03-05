@@ -4,9 +4,8 @@ linkTitle = "Regolith Linux"
 
 +++
 {{< blocks/cover image_anchor="top" height="full" >}}
-{{< img regolith-title.png "Regolith Linux" >}}
 
-<p class="lead m-5">Regolith is a modern desktop environment that lets you work faster by reducing unnecessary clutter and ceremony. Built on top of Ubuntu, GNOME, and i3, Regolith stands on a well-supported and consistent foundation.</p>
+<h2 class="m-5">Regolith is a modern desktop environment designed to let you work faster by reducing unnecessary clutter and ceremony. Built on top of Ubuntu, GNOME, and i3, Regolith stands on a well-supported and consistent foundation.</h2>
 
 <div class="row">
   <div class="col-sm-8 mb-5">{{< img regolith-screenshot-r1.3.1-busy.png "Regolith Linux" >}}</div>
