@@ -22,15 +22,22 @@ As mentioned previously, in `/etc/regolith/styles` lives a number of Xresources,
 
 ## Loading Order
 
-The `i3-gnome-flashback` session init script will check for an Xresources file in the following order:
+The `i3-gnome-flashback` session init script will check for the first Xresources file it finds in the following order:
 1. `~/.Xresources-regolith`
 2. `/etc/regolith/styles/root`
 
 In addition to a Regolith Xresources file, `~/.Xresources` will also be loaded if it exists upon session start.
 
+After loading a root Xresource file, the session init script then merges any entries found in the `~/.config/regolith/Xresources` file.  This file provides a quick way of simply overriding a few values without having to copy the entire set of resource definitions.
+
 ## Reloading Xresources
 
-The `xrdb` command can be used to refresh Xresource values after they have changed.  For example, to reload the user Xresource file run:
+The `regolith-look` command can be used to reload all Xresource entries as they are loaded upon session initialization:
+```bash
+$ regolith-look refresh
+```
+
+Alternatively, the `xrdb` command can be used to refresh specific Xresource files after they have changed.  For example, to reload the user Xresource file run:
 ```bash
 $ xrdb -merge ~/.Xresources-regolith
 ```
