@@ -42,6 +42,7 @@ In the case that the Regolith desktop environment becomes corrupted or otherwise
 ```bash
 $ sudo apt remove regolith-*
 $ sudo apt autoremove
+$ rm -Rf ~/.config/regolith/flags
 ```
 3. Verify that no regolith packages are still installed with `apt list --installed | grep -i regolith`.  The command should not return any packages.  If it does, manually uninstall them with `sudo apt remove <package>`.
 4. Reinstall Regolith:
@@ -67,7 +68,7 @@ $ sudo add-apt-repository --remove ppa:regolith-linux/release
 ```bash 
 $ source ~/.regolith-gnome-backup
 ```
-5. You can safely delete the file `~/.config/regolith`.
+5. You can safely delete the directory `~/.config/regolith`.
 
 ## PPA Sources
 

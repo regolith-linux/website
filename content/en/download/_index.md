@@ -36,6 +36,7 @@ To upgrade your existing 1.1 or 1.2 version of Regolith to 1.3, simply move to t
 <pre class="text-left border rounded p-2">
 $ sudo add-apt-repository --remove ppa:kgilmer/regolith-stable
 $ sudo add-apt-repository ppa:regolith-linux/release
+$ rm -Rf ~/.config/regolith/flags
 $ sudo apt dist-upgrade
 </pre>
 If you have made customizations to i3wm or your styles, it's recommended to use the defaults upon login and then manually integrate your changes back in.  To ensure that the defaults are loaded, move your changes and then log back in.
