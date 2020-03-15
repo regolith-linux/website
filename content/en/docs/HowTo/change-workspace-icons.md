@@ -17,9 +17,9 @@ You can browse the icon font using the [Gnome Character Map](https://wiki.gnome.
 2. Select your icon font in the top left combo.
 3. In the _script_ pane select _Common_.
 4. Scroll down the characters pane until you find the icons.
-5. Double click on the icon you looking to use and press the _Copy_ button (bottom right).
+5. Double click on the icon you are looking to use and press the _Copy_ button (bottom right).
 
-**Tip:** the icons are order alphabetically.
+**Tip:** the icons are ordered alphabetically.
 
 ### Staging files and changing icons
 
