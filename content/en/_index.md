@@ -27,6 +27,7 @@ linkTitle = "Regolith Linux"
   </div>
 {{< /blocks/cover >}}
 
+<a name="td-block-1"><h3 class="text-center p-5" >Visual Tour</h3></a>
 <div class="container mt-3">
   <div class="row pb-5">
     <div class="col-8 my-auto"><p>Upon first login, an overlay (toggled anytime via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">?</span></span>) presents the most important keybindings used with i3-wm.</p></div>
@@ -74,22 +75,24 @@ linkTitle = "Regolith Linux"
   </div>
 </div>
 
-{{< blocks/section color="white">}}
-### <i class="fas fa-info-circle pr-3"></i>What Makes Regolith Different
-- Delivers a desktop with a functional yet minimal user interface that can be <a href="docs/customize/">customized</a> and expanded as needed.
-- Combines GNOME's system management features with <a href="https://i3wm.org/">i3-wm</a>'s productive workflow.
-- Enables new users a fast and fun way to try out a <a href="https://opensource.com/article/18/8/i3-tiling-window-manager">tiling window manager</a>.
-- Supports <a href="https://github.com/regolith-linux/regolith-desktop/wiki/Customize">easy customization</a> and <a href="https://www.reddit.com/r/unixporn">ricing</a> via a consistent <a href="https://github.com/regolith-linux/regolith-styles/blob/master/Xresources/root">Xresource configuration</a>.
-- Relies on <a href="https://snapcraft.io/store">Ubuntu's app store</a> and <a href="https://packages.ubuntu.com/">package repositories</a> for a large, high quality selection of software.
-- Built to be taken apart. <a href="docs/customize/components/">Swap in UI components</a> of your choosing easily.
-- Ships with a toggle overlay of basic <a href="docs/reference/keybindings/">keybindings</a> to make getting started easier.
-- Provides a <a href="https://github.com/regolith-linux/regolith-builder/blob/master/build.sh">build script</a> and <a href="https://github.com/regolith-linux/regolith-builder/blob/master/package-model-R1.3.json">package metadata</a> to allow users to easily fork the desktop environment and distribution.
-{{< /blocks/section >}}
+<a name="td-block-2"><h3 class="text-center p-5" ><i class="fas fa-info-circle pr-3"></i>What Makes Regolith Different</h3></a>
+<div class="container">
+<ul>
+<li>Delivers a desktop with a functional yet minimal user interface that can be <a href="docs/customize/">customized</a> and expanded as needed.</li>
+<li>Combines GNOME's system management features with <a href="https://i3wm.org/">i3-wm</a>'s productive workflow.</li>
+<li>Enables new users a fast and fun way to try out a <a href="https://opensource.com/article/18/8/i3-tiling-window-manager">tiling window manager</a>.</li>
+<li>Supports <a href="https://github.com/regolith-linux/regolith-desktop/wiki/Customize">easy customization</a> and <a href="https://www.reddit.com/r/unixporn">ricing</a> via a consistent <a href="https://github.com/regolith-linux/regolith-styles/blob/master/Xresources/root">Xresource configuration</a>.</li>
+<li>Relies on <a href="https://snapcraft.io/store">Ubuntu's app store</a> and <a href="https://packages.ubuntu.com/">package repositories</a> for a large, high quality selection of software.</li>
+<li>Built to be taken apart. <a href="docs/customize/components/">Swap in UI components</a> of your choosing easily.</li>
+<li>Ships with a toggle overlay of basic <a href="docs/reference/keybindings/">keybindings</a> to make getting started easier.</li>
+<li>Provides a <a href="https://github.com/regolith-linux/regolith-builder/blob/master/build.sh">build script</a> and <a href="https://github.com/regolith-linux/regolith-builder/blob/master/package-model-R1.3.json">package metadata</a> to allow users to easily fork the desktop environment and distribution.</li>
+</ul>
+</div>
 
-### <i class="fas fa-user-friends pr-3"></i>Thanks to...
+<a name="td-block-3"><h3 class="text-center p-5" ><i class="fas fa-user-friends pr-3"></i>Thanks to...</h3></a>
 <div class="container-fluid mb-3">
-  <div class="row pl-0 align-items-center">
-    <div class="col-5 col-md-0">
+  <div class="row pl-0 align-top">
+    <div class="col-3 col-md-0">
       Regolith is more curation than creation.  Here are some of the notable people and entities that produced unaffiliated work independently from which Regolith is based.
     </div>
     <div class="col-6 border rounded p-3">
