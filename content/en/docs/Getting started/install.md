@@ -54,6 +54,19 @@ $ sudo rm -Rf /etc/regolith/i3 # be sure to backup any important changes
 $ sudo apt install regolith-i3-gaps-config
 ```
 
+## Upgrading Ubuntu
+
+Upgrading from Ubuntu 18.04, 18.10, or 19.04 to 19.10 requires that the Regolith PPA be re-added once the Ubuntu upgrade completes.
+
+1. If the standard Ubuntu session is not installed, install it:<br/>`$ sudo apt install ubuntu-session`.  (If you have it already installed this should cause no harm.)
+2. Perform the upgrade to 19.10.
+3. After rebooting, log into the stock Ubuntu session, not Regolith.
+4. Add the R1.3+ PPA, as the installation process removed PPAs:<br/>`$ sudo add-apt-repository ppa:regolith-linux/release`
+5. Upgrade Regolith to the latest version:<br/>`$ sudo apt upgrade && sudo apt install regolith-desktop`
+6. Reboot, and now select the Regolith session at the login screen.
+
+NOTE: Some users have reported that `regolith-desktop` is automatically uninstalled during the upgrade.  If this happens, simply run `sudo apt install --reinstall regolith-desktop` after the upgrade completes to restore the Regolith desktop session.
+
 ## Reinstallation
 
 In the case that the Regolith desktop environment becomes corrupted or otherwise unbootable, follow these steps to reset it.  No user files will be removed as part of this process:
