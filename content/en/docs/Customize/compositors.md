@@ -29,6 +29,10 @@ At least the following three compositors should be available:
 
 ## Installing a Compositor
 
+{{% pageinfo %}}
+Due to the way that the compositor is managed by i3-wm, you must log out and back in for compositor changes to take effect.  Restarting i3 is not sufficient.
+{{% /pageinfo %}}
+
 Run the following package install command to swap out the compositor.  In this case we'll run `xcompmgr`:
 ```bash
 $ apt install regolith-compositor-xcompmgr

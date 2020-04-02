@@ -33,6 +33,27 @@ $ sudo apt install regolith-desktop
 
 ![Ubuntu Login Screen](/regolith-screenshot-login.png)
 
+## Upgrades
+
+When updating from a major or minor version (eg 1.2 to 1.3), it is often the case that new Xresource values and other config files have been updated.  Existing Xresource and config files such as the i3 config file will need to be updated in order for the upgrade to function properly.  If you've customized any Regolith config files or created a stand-alone Xresource file (`~/.Xresources-regolith`), these will need to be updated to take the upgraded files into account.  A simple approach to doing this is to move them elsewhere, perform the upgrade, and then reintegrate any desired customizations into the new files:
+
+```bash
+$ mkdir ~/regolith-backup
+$ cp ~/.Xresources-regolith ~/regolith-backup
+$ cp -r ~/.config/regolith/i3* ~/regolith-backup
+$ rm -Rf ~/.config/regolith/flags
+```
+
+### Edits to `root`-owned files
+
+If you've taken shortcuts and manually edited files owned by `root` in `/etc/regolith` or elsewhere, the packaging tool may not update the files, nor mention that stale files have been left.  Even removing the package via `apt remove ...` may not result in a clean system.  In this case, use the purge command to remove the package and manually delete any left over files.  For example, to clean up the i3 config file:
+
+```bash
+$ sudo apt purge regolith-i3-gaps-config
+$ sudo rm -Rf /etc/regolith/i3 # be sure to backup any important changes
+$ sudo apt install regolith-i3-gaps-config
+```
+
 ## Reinstallation
 
 In the case that the Regolith desktop environment becomes corrupted or otherwise unbootable, follow these steps to reset it.  No user files will be removed as part of this process:
