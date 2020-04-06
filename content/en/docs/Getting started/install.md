@@ -86,11 +86,11 @@ In the case that the Regolith desktop environment becomes corrupted or otherwise
 1. Login to the stock Ubuntu session.  If this session is not available, install it with `sudo apt install ubuntu-session`.  If you are unable to login, type <span class="text-nowrap"><span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">F2</span></span> to access a TTY.  After installing `ubuntu-session`, you will have the option to select the `Ubuntu` session type in the login screen.
 2. Uninstall Regolith from within the Ubuntu session:
 ```bash
-$ sudo apt remove regolith-*
+$ sudo apt purge regolith-*
 $ sudo apt autoremove
 $ rm -Rf ~/.config/regolith/flags
 ```
-3. Verify that no regolith packages are still installed with `apt list --installed | grep -i regolith`.  The command should not return any packages.  If it does, manually uninstall them with `sudo apt remove <package>`.
+3. Verify that no regolith packages are still installed with `apt list --installed | grep -i regolith`.  The command should not return any packages.  If it does, manually uninstall them with `sudo apt purge <package>`.
 4. Reinstall Regolith:
 ```
 $ sudo apt install regolith-desktop
@@ -104,7 +104,7 @@ Simply follow these steps to remove Regolith from your system:
 1. Log out of the Regolith session and into the default Ubuntu session.
 2. Open a terminal and run: 
 ```bash
-$ sudo apt remove regolith-desktop regolith-st && sudo apt autoremove
+$ sudo apt purge regolith-desktop regolith-st && sudo apt autoremove
 ``` 
 3. Now remove the PPA:  
 ```bash
@@ -114,7 +114,7 @@ $ sudo add-apt-repository --remove ppa:regolith-linux/release
 ```bash 
 $ source ~/.regolith-gnome-backup
 ```
-5. You can safely delete the directory `~/.config/regolith`.
+5. You can now safely delete the directory `~/.config/regolith`.
 
 ## PPA Sources
 
