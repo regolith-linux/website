@@ -18,6 +18,18 @@ After logging in, you'll be at a blank screen with the bar at the bottom and som
 
 <img class="shadow" src="../screenshot-launcher.png" width="640px"/>
 
+## Navigate to a Window
+
+To focus on a running application, the <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> keybinding can be used to show a dialog of all running windows.  Simply select the desired window and the system will move to the window's containing workspace and set it's focus.
+
+<img class="shadow" src="../regolith-screenshot-window-nav2.png" width="640px"/>
+
+## Find a File
+
+Searching your local computer for a specific file can be achieved in a variety of ways.  Regolith provides a file search dialog via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">space</span></span> to quickly seek and optionally load a file with it's default application.  If the file path exceeds the width of the dialog, <span class="text-nowrap"><span class="badge badge-warning">alt</span> <span class="badge badge-warning">.</span></span> will toggle text justification.  Pressing enter on a selection will cause the file to be invoked with the <code>xdg-open</code> command.
+
+<img class="shadow" src="../regolith-file-search.png" width="640px"/>
+
 ### Terminal
 
 The terminal is a special application that has it's own keybinding, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span>.
@@ -28,18 +40,13 @@ The preferred browser is also special, and can be launched with <span class="tex
 
 ## Quit an Application.
 
-<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">q</span></span> will send the `kill` signal to the focused application.  Additionally, depending on the app, one of the following keybindings may cause it to exit:
-
-* <span class="text-nowrap"><span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">w</span></span>
-* <span class="text-nowrap"><span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">W</span></span>
-* <span class="text-nowrap"><span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">q</span></span>
-* <span class="text-nowrap"><span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">Q</span></span>
-* <span class="text-nowrap"><span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">d</span></span>
-* <span class="text-nowrap"><span class="badge badge-warning">alt</span> <span class="badge badge-warning">F4</span></span>
+<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">q</span></span> will quit the focused application.  For misbehaving apps, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">q</span></span> will force quit the focused application, but note that any unsaved data will likely be lost.
 
 ## Switching Workspaces
 
 A primary way of managing how applications occupy the screen is by the usage of workspaces.  A workspace is in essence a group of zero or more applications that all present windows on the same physical display.  Users can switch workspaces to "gain" more space for applications to occupy.  Windows can be moved across workspaces.  Workspaces can be tied to physical display or be moved to other displays as needed.  To switch workspaces, hold down the <span class="badge badge-warning">super</span> key and press one of the number keys.  This will navigate to that workspace.  If any windows exist in a given workspace, it will show in the bar as being active. Thus, by referring to the bar the user can known of which workspaces active applications live.
+
+Workspaces can also be paged forward and backward via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">tab</span></span> and <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">tab</span></span>.
 
 ## Configuring the System
 
