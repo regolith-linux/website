@@ -6,7 +6,7 @@ description: >
   Release notes for Regolith 1.4.
 ---
 
-Regolith R1.4 is a major feature release which includes several big changes.  The ISO-based installer is now based from the Xubuntu image, and moves from the gdm3 display manager to LightDM.  This means less resource consumption and dramatically smaller download size.  This does **not** mean that Regolith uses XFCE4 or any other aspect of Xubuntu other than the install image.  A new look, `ayu-mirage-regolith` and file search dialog round out the major new features.  Read below for more details.
+Regolith R1.4 is a major feature release which includes several improvements and optimizations.  Regolith is now smaller and more efficient.  The ISO-based installer is now based from the Xubuntu image, and moves from the gdm3 display manager to LightDM.  This allows for less resource consumption at runtime and dramatically smaller download size[1]. A new look, `ayu-mirage-regolith` and file search dialog round out the major new features.  Read below for more details.
 
 {{% pageinfo %}}
 If you maintain your own i3 config file, note that the copy shipped in Regolith 1.4 has changed in that it reads more configuration from Xresources.  The intention of this change is to require a full copy of the i3 config file <b>less often</b>, by allowing users to customize the system via Xresource overrides instead of copy/edit of the i3 config file.  Merging changes from version to version can be error-prone and confusing for some users.
@@ -30,19 +30,19 @@ Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @bal
             </td>
         </tr>
         <tr>
-            <td>New default look: TBD</td>
+            <td>New default look: Lascaille</td>
             <td>TBD</td>
-            <td>A new look with a bolder typeface (JetBrains Mono) and a darker, higher constrast color theme (Ayu Mirage) complement Regolith's default look in 1.4.  Cahuella, and other looks are still available.</td>
+            <td>A new look with [a bolder, tighter typeface](https://www.jetbrains.com/lp/mono/) and a [darker, higher contrast color theme](https://github.com/ayu-theme/ayu-colors) become Regolith's default look in 1.4.  Cahuella, and other looks continue to be available and can be installed with a few commands.</td>
         </tr>
         <tr>
             <td>New File Search Dialog</td>
             <td>TBD</td>
-            <td>Based on Rofi and mlocate, users can now quickly find files and launch their default editors from a global dialog.</td>
+            <td>Based on [Rofi](https://github.com/davatorium/rofi-scripts/tree/master/rofi-finder) and mlocate, users can now quickly find files and launch their default editors from a global dialog.</td>
         </tr>
         <tr>
             <td>Easier Customization</td>
             <td></td>
-            <td>Virtually everything exportable from the i3 config can now be overridden directly with Xresources declarations, from changing the meta key to specifying the command that launches the app search dialog.  Additionally, up to 3 user configured programs can be set to be loaded upon start.  All of this is possible without creating a user copy of the i3 config file.</td>
+            <td>Virtually everything exportable from the i3 config can now be overridden directly with Xresources declarations, from changing the meta key to specifying the command that launches the app search dialog.  Additionally, up to 3 user configured programs can be set to be loaded upon start.  All of this is possible without creating a user copy of the i3 config file, but rather by overriding a specific Xresource value.</td>
         </tr>
         <tr>
             <td>i3xrocks supports conf.d style configuration</td>
@@ -62,7 +62,7 @@ Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @bal
         <tr>
             <td>Time and Space Optimizations in ISO release</td>
             <td>TBD</td>
-            <td>By switching from gdm3 to LightDM, Regolith avoids loading some unnecessary desktop components into RAM, resulting in between 200MB to 300MB savings on cold start.  Additionally, the LiveCD installer is now based on the Xubuntu LiveCD which dramatically lowers the size of the installer and install image of the system.  The trade-off is that users need to install more of the software they require after installation.</td>
+            <td>By switching from GDM3 to LightDM, Regolith avoids loading some unnecessary desktop components into RAM, resulting in between 200MB to 300MB savings on cold start.  Additionally, the LiveCD installer is now based on the Xubuntu LiveCD which dramatically lowers the size of the installer and install image of the system[2].  Finally, with more fine-grained control of the bar status blocks, only the blocks you've installed will run.</td>
         </tr>
         <tr>
             <td>Pluggable Desktop Notification Components</td>
@@ -85,3 +85,7 @@ Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @bal
 ## Fixes
 
 Have a look at the R1.4 project page for a [list of bug fixes](https://github.com/orgs/regolith-linux/projects/11).
+
+
+1: This does **not** mean that Regolith uses XFCE4 or any other aspect of Xubuntu other than the install image.
+2: The trade-off is that users need to install more of the software they require after installation.
