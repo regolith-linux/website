@@ -23,6 +23,7 @@ description: >
 |gnome.wm.theme | GNOME Window Manager Theme |
 |i3-wm.bar.background.color | Bar Background Color |
 |i3-wm.bar.font | Bar Font |
+|i3-wm.bar.trayoutput | Enable and describe screen on which to display [app tray](https://i3wm.org/docs/userguide.html#_tray_output). |
 |i3-wm.bar.position | Bar Screen Position |
 |i3-wm.bar.separator.color | |
 |i3-wm.bar.statusline.color | |
