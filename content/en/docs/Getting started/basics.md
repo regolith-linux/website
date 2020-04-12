@@ -38,7 +38,7 @@ The terminal is a special application that has it's own keybinding, <span class=
 
 The preferred browser is also special, and can be launched with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">enter</span></span>.
 
-## Quit an Application.
+## Quit an Application
 
 <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">q</span></span> will quit the focused application.  For misbehaving apps, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">q</span></span> will force quit the focused application, but note that any unsaved data will likely be lost.
 
