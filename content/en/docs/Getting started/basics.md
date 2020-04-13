@@ -16,19 +16,19 @@ Most keybindings you'll be using with Regolith start with the <span class="badge
 
 After logging in, you'll be at a blank screen with the bar at the bottom and some keyboard shortcuts on the right.  To launch an application, press <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span> and a menu will be presented with all of the applications installed on the system.  If you begin typing the name of the application you wish to launch, the list will filter down to only matching names.  You can also scroll through the list with the arrow keys.
 
-<img class="shadow" src="../screenshot-launcher.png" width="640px"/>
+<img class="shadow m-5" src="../screenshot-launcher.png" width="640px"/>
 
 ## Navigate to a Window
 
 To focus on a running application, the <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> keybinding can be used to show a dialog of all running windows.  Simply select the desired window and the system will move to the window's containing workspace and set it's focus.
 
-<img class="shadow" src="../regolith-screenshot-window-nav2.png" width="640px"/>
+<img class="shadow m-5" src="../regolith-screenshot-window-nav2.png" width="640px"/>
 
 ## Find a File
 
 Searching your local computer for a specific file can be achieved in a variety of ways.  Regolith provides a file search dialog via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">space</span></span> to quickly seek and optionally load a file with it's default application.  If the file path exceeds the width of the dialog, <span class="text-nowrap"><span class="badge badge-warning">alt</span> <span class="badge badge-warning">.</span></span> will toggle text justification.  Pressing enter on a selection will cause the file to be invoked with the <code>xdg-open</code> command.
 
-<img class="shadow" src="../regolith-file-search.png" width="640px"/>
+<img class="shadow m-5" src="../regolith-file-search.png" width="640px"/>
 
 ### Terminal
 
@@ -52,7 +52,7 @@ Workspaces can also be paged forward and backward via <span class="text-nowrap">
 
 The `Settings` app (also known as `gnome-control-center`) is the primary interface for common configuration tasks, such as changing the desktop wallpaper, configuring wifi and bluetooth, configuring app associations, and setting up users.  This app can be launched via the <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span> keybinding or from the Launcher via the `Settings` app.
 
-<img class="shadow" src="../regolith-control-panel.png" width="640px"/>
+<img class="shadow m-5" src="../regolith-control-panel.png" width="640px"/>
 
 ## Further Reading
 
