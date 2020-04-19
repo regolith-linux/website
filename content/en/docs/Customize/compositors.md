@@ -42,3 +42,9 @@ Log back in and the new compositor should be loaded.  You can verify by checking
 ```bash
 $ ps aux | grep xcompmgr
 ```
+
+## Overriding a Compositor Configuration
+
+### Compton/Picom
+
+To provide your own Compton/Picom compositor config, copy the default or create your own and save it as `~/.config/regolith/compton/config`.  Upon next session it will be loaded instead of the default config `/etc/regolith/compton/config`.

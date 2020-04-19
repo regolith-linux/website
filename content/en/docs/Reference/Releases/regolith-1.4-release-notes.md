@@ -12,7 +12,7 @@ Regolith R1.4 is a major feature release which includes several improvements and
 If you maintain your own i3 config file, note that the copy shipped in Regolith 1.4 has changed in that it reads more configuration from Xresources.  The intention of this change is to require a full copy of the i3 config file <b>less often</b>, by allowing users to customize the system via Xresource overrides instead of copy/edit of the i3 config file.  Merging changes from version to version can be error-prone and confusing for some users.
 {{% /pageinfo %}}
 
-Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @baldrailers, @ivomarino, @Josh-Letts, @LawZava, @SkyyySi, @tomster, @gdeflaux, @appelgriebsch, and @MrKovar for their time and attention.  Also thanks to all that helped to test and filed issues for bugs and feature requests!
+Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @baldrailers, @ivomarino, @Josh-Letts, @LawZava, @SkyyySi, @tomster, @gdeflaux, @appelgriebsch, @farsil, and @MrKovar for their time and attention.  Also thanks to all that helped to test and filed issues for bugs and feature requests!
 
 ## Features
 
@@ -26,23 +26,24 @@ Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @bal
             <li>Can render keybindings from i3 over socket or from any file.</li>
             <li>Can be configured to display on any screen edge.</li>
             <li>Visual updates and bug fixes.</li>
+            <li>Presentation changeable via CSS.</li>
             </ul>
             </td>
         </tr>
         <tr>
             <td>New default look: Lascaille</td>
-            <td>TBD</td>
-            <td>A new look with [a bolder, tighter typeface](https://www.jetbrains.com/lp/mono/) and a [darker, higher contrast color theme](https://github.com/ayu-theme/ayu-colors) become Regolith's default look in 1.4.  Cahuella, and other looks continue to be available and can be installed with a few commands.</td>
+            <td><a href="../regolith-screenshot-lascaille.png"><img class="shadow" src="../regolith-screenshot-lascaille.png"/></a></td>
+            <td>A new look with <a href="https://www.jetbrains.com/lp/mono/">a bolder, tighter typeface</a> and a <a href="https://github.com/ayu-theme/ayu-colors">darker, higher contrast color theme</a> become Regolith's default look in 1.4.  Cahuella, and other looks continue to be available and can be installed with a few commands.</td>
         </tr>
         <tr>
             <td>New File Search Dialog</td>
-            <td>TBD</td>
-            <td>Based on [Rofi](https://github.com/davatorium/rofi-scripts/tree/master/rofi-finder) and mlocate, users can now quickly find files and launch their default editors from a global dialog.</td>
+            <td><a href="../regolith-screenshot-file-search.png"><img class="shadow" src="../regolith-screenshot-file-search.png"/></a></td>
+            <td>Based on <a href="https://github.com/davatorium/rofi-scripts/tree/master/rofi-finder">Rofi</a> and <code>mlocate</code>, users can now quickly find files and launch their default editors from a global dialog.</td>
         </tr>
         <tr>
-            <td>Easier Customization</td>
+            <td>Faster, Easier Customization</td>
             <td></td>
-            <td>Virtually everything exportable from the i3 config can now be overridden directly with Xresources declarations, from changing the meta key to specifying the command that launches the app search dialog.  Additionally, up to 3 user configured programs can be set to be loaded upon start.  All of this is possible without creating a user copy of the i3 config file, but rather by overriding a specific Xresource value.</td>
+            <td>Virtually everything exportable from the i3 config can now be overridden directly with Xresources declarations, from changing the meta key to specifying the command that launches the app search dialog.  Additionally, up to 3 user configured programs can be set to be loaded upon start.  All of this is possible without creating a user copy of the i3 config file, but rather by overriding a specific Xresource.</td>
         </tr>
         <tr>
             <td>i3xrocks supports conf.d style configuration</td>
@@ -53,6 +54,11 @@ Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @bal
             <td>New architecture support: <code>arm64</code></td>
             <td></td>
             <td>With testing done on a Raspberry Pi 4, Regolith now is installable via PPA when using Ubuntu on arm64 devices with the necessary hardware support.</td>
+        </tr>
+        <tr>
+            <td>Rewrite of Rofication</td>
+            <td></td>
+            <td>Rofication has been rewritten to require less dependencies and be more stable by Regolith contributor @farsil.</td>
         </tr>
         <tr>
             <td>New Ubuntu release support: Focal Fossa</td>
@@ -66,9 +72,14 @@ Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @bal
         </tr>
         <tr>
             <td>Pluggable Desktop Notification Components</td>
-            <td>TBD</td>
+            <td></td>
             <td>Users can now cleanly switch between desktop notification implementations such as dunst and notify-osd, in addition to Rofication without resorting to hacks.</td>
-        </tr>        
+        </tr>
+        <tr>
+            <td>Integrate <code>gnome-terminal</code> over <code>st-term</code> by Default</td>
+            <td><a href="../regolith-screenshot-gnome-terminal.png"><img class="shadow" src="../regolith-screenshot-gnome-terminal.png"/></a></td>
+            <td>Regolith 1.4 uses <code>gnome-terminal</code> with a dynamically generated profile to overcome some character encoding and input devices.  <code>st</code> is still available, simply by installing the <code>regolith-st</code> package.</td>
+        </tr>
         <tr>
             <td>Picom (Compton) config can be overriden by user</td>
             <td></td>
@@ -78,7 +89,12 @@ Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @bal
             <td>i3 reload becomes Regolith reload</td>
             <td></td>
             <td>Refreshing the UI (look, colors, fonts, etc.) after making changes is now as easy as <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">r</span></span>.</td>
-        </tr>   
+        </tr>
+        <tr>
+            <td>Polish, polish, polish</td>
+            <td></td>
+            <td>Just as in previous releases, many tiny fixes and enhancements were added to Regolith in version 1.4.</td>
+        </tr>
     </tbody>
 </table>
 
@@ -87,5 +103,5 @@ Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @bal
 Have a look at the R1.4 project page for a [list of bug fixes](https://github.com/orgs/regolith-linux/projects/11).
 
 
-1: This does **not** mean that Regolith uses XFCE4 or any other aspect of Xubuntu other than the install image.
-2: The trade-off is that users need to install more of the software they require after installation.
+<p>1: This does **not** mean that Regolith uses XFCE4 or any other aspect of Xubuntu other than the install image.</p>
+<p>2: The trade-off is that users need to install more of the software they require after installation.</p>
