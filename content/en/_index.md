@@ -8,7 +8,7 @@ linkTitle = "Regolith Linux"
 <h2 class="m-5">Regolith is a modern desktop environment designed to let you work faster by reducing unnecessary clutter and ceremony. Built on top of Ubuntu, GNOME, and i3, Regolith stands on a well-supported and consistent foundation.</h2>
 
 <div class="row">
-  <div class="col-sm-8 mb-5">{{< img regolith-screenshot-r1.3.1-busy.png "Regolith Linux" >}}</div>
+  <div class="col-sm-8 mb-5">{{< img regolith-screenshot-intro.png "Regolith Linux" >}}</div>
   <div class="col-sm-4">
     <div class="mx-auto">
     <a class="btn btn-lg btn-secondary mr-3 mb-4" href="{{< relref "/download" >}}">

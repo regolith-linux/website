@@ -12,19 +12,23 @@ While we'll cover everything in greater detail in other areas of the documentati
 
 Most keybindings you'll be using with Regolith start with the <span class="badge badge-warning">super</span> key.  This key typically says "WIN" or has a MS Windows logo on it.  On a Mac it is the Command <span class="badge badge-warning">⌘</span> key.  Going forward, this key will simply be referred to as <span class="badge badge-warning">super</span> but keep in mind that you can change which physical button <span class="badge badge-warning">super</span> maps to in your configuration if you choose to.
 
-## Launch an Application
+## Launchers
+
+Regolith provides several launchers are a primary way of interacting with your system.  Each of these launchers has a consistent look and feel but provides access to a specific entity.  Default launchers are provided for applications <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>, commands <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">space</span></span>, notifications <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">n</span></span>, windows <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span>, and files <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">space</span></span>.
+
+### Launch an Application
 
 After logging in, you'll be at a blank screen with the bar at the bottom and some keyboard shortcuts on the right.  To launch an application, press <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span> and a menu will be presented with all of the applications installed on the system.  If you begin typing the name of the application you wish to launch, the list will filter down to only matching names.  You can also scroll through the list with the arrow keys.
 
 <img class="shadow m-5" src="../screenshot-launcher.png" width="640px"/>
 
-## Navigate to a Window
+### Navigate to a Window
 
 To focus on a running application, the <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> keybinding can be used to show a dialog of all running windows.  Simply select the desired window and the system will move to the window's containing workspace and set it's focus.
 
 <img class="shadow m-5" src="../regolith-screenshot-window-nav2.png" width="640px"/>
 
-## Find a File
+### Find and Launch a File
 
 Searching your local computer for a specific file can be achieved in a variety of ways.  Regolith provides a file search dialog via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">space</span></span> to quickly seek and optionally load a file with it's default application.  If the file path exceeds the width of the dialog, <span class="text-nowrap"><span class="badge badge-warning">alt</span> <span class="badge badge-warning">.</span></span> will toggle text justification.  Pressing enter on a selection will cause the file to be invoked with the <code>xdg-open</code> command.
 

@@ -11,7 +11,7 @@ Based on your preferred installation method, follow one of the following two sec
 ## Option 1: Ubuntu Installer
 
 {{% pageinfo %}}
-ISO installers are not available for the R1.3.1 release.  The R1.3 release can be installed and updates will bring the system up to R1.3.1 automatically.
+The ISO installer for Ubuntu 20.04 Focal Fossa will be released shortly after Ubuntu is released.
 {{% /pageinfo %}}
 
 1. Download an [ISO image <i class="fas fa-cloud-download-alt"></i>](https://sourceforge.net/projects/regolith-linux/files/regolith-linux-r1.3/) (both the Ubuntu LTS 18.04 and most recent 19.10 bases are available) and then use an OS installation tool such as USB Creator to write the downloaded file into a USB device. Here are Ubuntu guides for performing this action in [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0), [Mac](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), and [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0).
@@ -23,7 +23,7 @@ ISO installers are not available for the R1.3.1 release.  The R1.3 release can b
 
 1. See below about [PPA sources](#ppa-sources), and add your chosen PPA to your system:
 <pre>
-$ sudo add-apt-repository ppa:regolith-linux/release
+$ sudo add-apt-repository ppa:regolith-linux/stable
 </pre>
 2. Install the Regolith desktop package:
 <pre>
@@ -68,12 +68,12 @@ $ sudo apt install regolith-i3-gaps-config
 
 ## Upgrading Ubuntu
 
-Upgrading from Ubuntu 18.04, 18.10, or 19.04 to 19.10 requires that the Regolith PPA be re-added once the Ubuntu upgrade completes.
+Upgrading from Ubuntu 18.04, 18.10, 19.04, or 19.10 to 20.04 requires that the Regolith PPA be re-added once the Ubuntu upgrade completes.
 
 1. If the standard Ubuntu session is not installed, install it:<br/>`$ sudo apt install ubuntu-session`.  (If you have it already installed this should cause no harm.)
-2. Perform the upgrade to 19.10.
+2. Perform the upgrade to 20.04.
 3. After rebooting, log into the stock Ubuntu session, not Regolith.
-4. Add the R1.3+ PPA, as the installation process removed PPAs:<br/>`$ sudo add-apt-repository ppa:regolith-linux/release`
+4. Add the Regolith PPA, as the installation process removed PPAs:<br/>`$ sudo add-apt-repository ppa:regolith-linux/stable`
 5. Upgrade Regolith to the latest version:<br/>`$ sudo apt upgrade && sudo apt install regolith-desktop`
 6. Reboot, and now select the Regolith session at the login screen.
 
@@ -118,7 +118,7 @@ $ source ~/.regolith-gnome-backup
 
 ## PPA Sources
 
-There are 4 sources for Regolith packages for release 1.3.  The `release` PPA is recommended for most users, but another may be better for you based on your needs.  Here is a description of each PPA.
+There are 4 sources for Regolith packages.  The `release` PPA is recommended for most users, but another may be better for you based on your needs.  Here is a description of each PPA.
 
 | Name | PPA URI | Freshness | Stability | Description |
 |------|---------|-----------|-----------|-------------|
