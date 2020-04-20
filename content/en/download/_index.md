@@ -19,8 +19,8 @@ menu:
 </section>
 {{< blocks/section color="white">}}
 
-{{% blocks/feature icon="fas fa-compact-disc" title="Regolith Linux ISO Installer" url="https://sourceforge.net/projects/regolith-linux/files/regolith-linux-r1.3/" url_text="Download" %}}
-Starting from scratch or simply want to try Regolith out in a VM or LiveUSB environment? <a href="https://sourceforge.net/projects/regolith-linux/files/regolith-linux-r1.3/">Download the ISO <i class="fas fa-cloud-download-alt"></i></a> and write it to a USB flash drive to install or test drive Regolith as an operating system.  To learn how, visit the <a class="text-warning"  href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntu installer tutorial</a>.  This ISO is a customization of the Ubuntu installer from Canonical, with [some optional packages removed and Regolith packages added](http://regolith-linux.org/docs/reference/releases/regolith-1.3-release-notes/#iso-generation).
+{{% blocks/feature icon="fas fa-compact-disc" title="Regolith Linux ISO Installer" url="https://github.com/regolith-linux/regolith-desktop/releases/tag/1.4-b1" url_text="Download" %}}
+Starting from scratch or simply want to try Regolith out in a VM or LiveUSB environment? <a href="https://github.com/regolith-linux/regolith-desktop/releases/tag/1.4-b1">Download the ISO <i class="fas fa-cloud-download-alt"></i></a> and write it to a USB flash drive to install or test drive Regolith as an operating system.  To learn how, visit the <a class="text-warning"  href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntu installer tutorial</a>.  This ISO is a customization of the Xubuntu installer from the Xubuntu project, with  some optional packages removed and Regolith packages added.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fas fa-box-open" title="Regolith Desktop PPA" %}}
