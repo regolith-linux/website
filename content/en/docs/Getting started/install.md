@@ -3,15 +3,15 @@ title: "Installation"
 linkTitle: "Installation"
 weight: 1
 description: >
-  Install Regolith on your computer.
+  Install Regolith onto your computer.
 ---
 
-Based on your preferred installation method, follow one of the following two sections to install Regolith:
+Based on your preferred installation method, follow one of the following two sections to install Regolith.  Unlike previous versions of Regolith, PPA and ISO installs result in different configurations.  The PPA install favors coexistence with the existing Ubuntu desktop, while the ISO release optimizes for less resource utilization.  Specifically, the ISO install is roughly 1Gb smaller and cold start RAM usage is reduced by about 200Mb as compared to the PPA installation.
 
 ## Option 1: Ubuntu Installer
 
 {{% pageinfo %}}
-The ISO installer for Ubuntu 20.04 Focal Fossa will be released shortly after Ubuntu is released.
+The ISO installer for Ubuntu 20.04 Focal Fossa will be released shortly after Canonical releases Focal.
 {{% /pageinfo %}}
 
 1. Download an ISO image of [Regolith R1.4 Beta](https://github.com/regolith-linux/regolith-desktop/releases/tag/1.4-b1)<i class="fas fa-cloud-download-alt"></i> and then use an OS installation tool such as USB Creator to write the downloaded file into a USB device. Here are Ubuntu guides for performing this action in [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0), [Mac](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), and [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0).
@@ -35,6 +35,22 @@ $ sudo apt install regolith-desktop
 
 ## Upgrades
 
+### Regolith 1.3 -> Regolith 1.4
+
+The Unstable PPA `ppa:regolith-linux/stable` is currently hosting Regolith 1.4 Beta version packages.  To upgrade an existing system to the 1.4 Beta, update the package manager to source Regolith packages from the `stable` PPA:
+
+```bash
+$ apt policy | grep regolith
+# Some info w/ URLs will be returned.  Assuming http://ppa.launchpad.net/regolith-linux/release/ubuntu is returned:
+$ sudo add-apt-repository --remove ppa:regolith-linux/release # remove release PPA
+$ sudo add-apt-repository ppa:regolith-linux/stable
+$ sudo apt dist-upgrade
+```
+
+After performing the update, log back in to your system.  However, if you have staged your own i3 config file or Xresources root, read the below section `Upgrading with Customizations`.
+
+### Regolith 1.0 - 1.2 -> Regolith 1.4
+
 To upgrade from Regolith 1.0 - 1.2, the PPA URL must be changed and then new package versions are applied by the package manager:
 ```bash
 $ sudo add-apt-repository --remove ppa:kgilmer/regolith-stable
@@ -56,7 +72,7 @@ $ rm -Rf ~/.config/regolith/flags
 
 Once these steps are performed, logging back in should result in a "stock" instance of Regolith.  From there, any changes desired to be reintegrated can be done by editing the new versions of the Regolith config files that exist in the `/etc/regolith` directory.
 
-### Edits to `root`-owned files
+### Edits to `/etc/regolith/...` files
 
 If you've taken shortcuts and manually edited files owned by `root` in `/etc/regolith` or elsewhere, the packaging tool may not update the files, nor mention that stale files have been left.  Even removing the package via `apt remove ...` may not result in a clean system.  In this case, use the purge command to remove the package and manually delete any left over files.  For example, to clean up the i3 config file:
 
