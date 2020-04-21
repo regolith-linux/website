@@ -8,7 +8,7 @@ description: >
 
 | Xresource Key | Description |
 |-------------|-------------|
-|St.color0 - St.color15 | 	Color definitions for st-term |
+|St.color0 - St.color15 | 	Color definitions for terminal |
 |St.font | 	Font definition for st-term |
 |Xcursor.size | X cursor size |
 |Xcursor.theme | X cursor theme |
@@ -19,14 +19,17 @@ description: >
 |Xft.rgba | X	rgb setting |
 |gnome.gtk.theme | GTK Theme |
 |gnome.icon.theme | GTK Icon Theme |
+|gnome.terminal.font | Font definition for gnome-terminal |
+|gnome.terminal.scrollbar | Flag to enable/disable scrollbar (`never | always`) |
 |gnome.wallpaper | GNOME Wallpaper (can be overridden in Settings) |
-|gnome.wm.theme | GNOME Window Manager Theme |
+|gnome.wm.theme | GNOME Window Manager Theme (unused) |
 |i3-wm.bar.background.color | Bar Background Color |
 |i3-wm.bar.font | Bar Font |
 |i3-wm.bar.trayoutput | Enable and describe screen on which to display [app tray](https://i3wm.org/docs/userguide.html#_tray_output). |
 |i3-wm.bar.position | Bar Screen Position |
 |i3-wm.bar.separator.color | |
 |i3-wm.bar.statusline.color | |
+|i3-wm.bar.trayoutput | Enable or disable the [app tray](https://i3wm.org/docs/userguide.html#_tray_output) in i3bar |
 |i3-wm.bar.workspace.active.background.color | |
 |i3-wm.bar.workspace.active.border.color | |
 |i3-wm.bar.workspace.active.text.color | |
@@ -65,7 +68,6 @@ description: >
 |i3-wm.gaps.outer.size | 	Default gap size at screen edge |
 |i3-wm.window.border.size | Default border size |
 |i3-wm.workspace.01.name .. i3-wm.workspace.19.name | Workspace Labels |
-|i3xrocks.critical.color | Color for bar module in critical mode |
 |i3xrocks.error.color | Color for bar module in error mode |
 |i3xrocks.label.battery0 | Bar icon glyph |
 |i3xrocks.label.battery100 |  Bar icon glyph |
@@ -78,6 +80,7 @@ description: >
 |i3xrocks.label.capslock |  Bar icon glyph |
 |i3xrocks.label.color | 	 Bar icon glyph |
 |i3xrocks.label.cpu |  Bar icon glyph |
+|i3xrocks.label.disk | Bar icon glyph |
 |i3xrocks.label.dn |  Bar icon glyph |
 |i3xrocks.label.help |  Bar icon glyph |
 |i3xrocks.label.mediapaused |  Bar icon glyph |
@@ -107,4 +110,3 @@ description: >
 |rofi.show-icons | |
 |rofi.theme | Rofi theme file |
 |rofi.window-format | |
-
