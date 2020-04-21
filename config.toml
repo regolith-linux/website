@@ -53,7 +53,7 @@ id = "UA-138654070-2"
 
 [languages]
 [languages.en]
-title = "Regolith"
+title = "Regolith - 1.4 Beta"
 description = "Regolith Linux website"
 languageName ="English"
 # Weight used for sorting.
@@ -126,32 +126,32 @@ no = 'Sorry to hear that. Please <a href="https://github.com/regolith-linux/rego
 	name = "Announcement mailing list"
 	url = "https://www.freelists.org/list/regolith-linux"
 	icon = "fa fa-envelope"
-        desc = "Get notified of new features and bug fixes."
+        desc = "Get notified of new features and bug fixes"
 [[params.links.user]]
 	name ="Twitter"
 	url = "https://twitter.com/RegolithL"
 	icon = "fab fa-twitter"
-        desc = "Follow us on Twitter to get the latest news!"
+        desc = "Follow us on Twitter to get the latest news"
 [[params.links.user]]
 	name ="Github Issues"
 	url = "https://github.com/regolith-linux/regolith-desktop/issues"
 	icon = "fab fa-github"
-        desc = "Check for existing or create new bug reports and feature requests."
+        desc = "Check for existing or create new bug reports and feature requests"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
 	name = "GitHub"
 	url = "https://github.com/regolith-linux"
 	icon = "fab fa-github"
-        desc = "Development takes place here!"
+        desc = "Development takes place here"
 [[params.links.developer]]
 	name = "Slack"
 	url = "https://regolith-linux.herokuapp.com/"
 	icon = "fab fa-slack"
-        desc = "Chat with other users."
+        desc = "Chat with contributors and users"
 
 # Versions
 [[params.versions]]
-  version = "1.4"
+  version = "1.4 Beta 1"
   url = "http://regolith-linux.org/regolith-site-r14-beta"
 
 [[params.versions]]
