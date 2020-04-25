@@ -87,6 +87,12 @@ $ sudo rm -Rf /etc/regolith/i3 # be sure to backup any important changes
 $ sudo apt install regolith-i3-gaps-config
 ```
 
+### Troubleshooting
+
+#### Blocks Missing after Upgrade
+
+Regolith 1.4 changes the way in which blocks are installed and configured.  This change is necessary to cleanly support the `arm64` architecture and make it simple to swap out components like the notification subsystem.  From 1.4 onward, blocks are installed by the package manager.  See [this HowTo](../../howto/add-remove-blocklets) on adding and configuring blocks.
+
 ## Upgrading Ubuntu
 
 Upgrading from Ubuntu 18.04, 18.10, 19.04, or 19.10 to 20.04 requires that the Regolith PPA be re-added once the Ubuntu upgrade completes.

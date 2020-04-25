@@ -5,6 +5,23 @@ description: >
   Make changes to the status indicators in the bar.
 ---
 
+# Adding or Removing status indicators
+
+## Finding Status Indicators
+
+```bash
+$ apt search i3xrocks-
+```
+
+## Installing a Status Indicator
+
+```bash
+$ sudo apt install i3xrocks-memory
+$ regolith-look refresh
+```
+
+# Customization of bar
+
 For customization of the bar, for example to change the polling interval of the weather block, or to change the order of elements on the bar, the configuration can be copied from `/etc/regolith/i3xrocks/conf.d` to `~/.config/regolith/i3xrocks/conf.d` and then modified in the user directory.  For example, to change the order of the battery and net traffic blocks on the bar and not display notifications, perform the following steps:
 
 ```bash
