@@ -1,5 +1,5 @@
 ---
-title: "Stage config files"
+title: "Stage Config Files"
 weight: 2
 description: >
   Learn how to stage user copies of Regolith configuration files.

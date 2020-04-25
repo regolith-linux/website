@@ -1,18 +1,14 @@
 ---
-title: "Change the bar date/time format"
+title: "Change the Bar Date and Time Format"
 weight: 4
 description: >
   Change the date/time format used in the bar.
 ---
 
-In this example we'll override the clock to show only hour and minute.
+The time format (12 or 24 hour) can be specified in Settings:
+<img class="shadow m-5" src="../regolith-screenshot-settings-time-format.png" width="640px"/>
 
-1. Create or add the following value to your `~/.config/regolith/Xresources` file:
-```bash
-i3xrocks.date.format2: + %H:%M
-```
-2. Reload the Xresource configuration:
-```bash
-$ regolith-look refresh
-```
-3. The bar clock should update within a minute with the new format.
+The date format can be specified by selecting the appropriate region in Settings.  A preview of the date format is provided, and logging back in is required for changes to take effect.
+<img class="shadow m-5" src="../regolith-screenshot-settings-region.png" width="640px"/>
+
+The date and time formats can also be explicitly set via Xresources.  To do so, override the `i3xrocks.date.format2` Xresource key.  See [Xresource overrides](../override-xres) for details.

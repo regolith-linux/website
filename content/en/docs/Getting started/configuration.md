@@ -14,28 +14,9 @@ The wallpaper can be changed via `Settings`, or <span class="text-nowrap"><span 
 
 ## Status Bar Indicators
 
-Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages.  For example, to show a status indicator for your laptop battery simply run `sudo apt install i3xrocks-battery` and then refresh the session.  To get an up date list of what's available, run `apt list | grep ^i3xrocks-` or search for "i3xrocks-" in your favorite package manager GUI, such as [Synaptic](https://help.ubuntu.com/community/SynapticHowto).
+Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages.  For example, to show a status indicator for your laptop battery simply run `sudo apt install i3xrocks-battery` and then refresh the session.  To find what indicators are available, run `apt list | grep ^i3xrocks-` or search for "i3xrocks-" in your favorite package manager GUI, such as [Synaptic](https://help.ubuntu.com/community/SynapticHowto).
 
 <img class="shadow m-5" src="../regolith-screenshot-synaptic-search.png" width="480px"/>
-
-For further customization of the bar, for example to change the polling interval of the weather block, or to change the order of elements on the bar, the configuration can be copied from `/etc/regolith/i3xrocks/conf.d` to `~/.config/regolith/i3xrocks/conf.d` and then modified in the user directory.  For example, to change the order of the battery and net traffic blocks on the bar and not display notifications, perform the following steps:
-
-```bash
-$ ls /etc/regolith/i3xrocks/conf.d
-01_setup  
-30_net-traffic  
-80_battery
-80_rofication     
-90_time
-$ mkdir -p ~/.config/regolith/i3xrocks/conf.d
-$ cd /etc/regolith/i3xrocks/conf.d
-$ cp 01_setup ~/.config/regolith/i3xrocks/conf.d/01_setup
-$ cp 80_battery ~/.config/regolith/i3xrocks/conf.d/30_battery
-$ cp 30_net-traffic ~/.config/regolith/i3xrocks/conf.d/80_net-traffic
-$ regolith-look refresh
-```
-
-If any block configuration exists in the user directory `~/.config/regolith/i3xrocks/conf.d`, then the defaults in `/etc/regolith/i3xrocks/conf.d` will be ignored.
 
 ## Looks
 
@@ -63,6 +44,8 @@ i3-wm.alt: Mod4
 To change other keybindings, creating a user copy of the i3 config file is necessary.  See the [staging configs HowTo](../../howto/stage-configs) to learn more.
 
 Note: GNOME also has it's own set of keybindings.  When the Regolith session is first initialized, the conflicting GNOME keybindings are removed from the user settings.  GNOME keybindings can be managed in `Settings`.
+
+<img class="shadow m-5" src="../regolith-screenshot-settings-keybindings.png" width="640px"/>
 
 ## Almost Everything Else
 

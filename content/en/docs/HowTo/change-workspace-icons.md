@@ -1,5 +1,5 @@
 ---
-title: "Change workspace icons"
+title: "Change Workspace Icons"
 weight: 7
 description: >
   Learn how to set custom icons for each workspace.

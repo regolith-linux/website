@@ -20,13 +20,4 @@ Users can navigate to windows via <span class="text-nowrap"><span class="badge b
 
 ## Quit an Application.
 
-Unfortunately in Linux there is no convention that all applications follow for how to quit.  In traditional desktop environments, users often rely on the close box of the window or a global menu system.  Because Regolith has a reduced UI, depending on the application these common mouse-driven ways of exiting apps may not be available.  Depending on the app, one of the following keybindings may cause it to exit:
-
-* <span class="text-nowrap"><span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">w</span></span>
-* <span class="text-nowrap"><span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">W</span></span>
-* <span class="text-nowrap"><span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">q</span></span>
-* <span class="text-nowrap"><span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">Q</span></span>
-* <span class="text-nowrap"><span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">d</span></span>
-* <span class="text-nowrap"><span class="badge badge-warning">alt</span> <span class="badge badge-warning">F4</span></span>
-
-If none of these commands work, it may be that the application has crashed and is not responding to requests from the window manager.  In this case you can kill the focused application with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">q</span></span>
+Any application can be safely closed via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">q</span></span>.  Crashed or otherwise unresponsive apps can be killed via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">q</span></span>.

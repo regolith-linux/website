@@ -6,7 +6,7 @@ description: >
   What is Regolith?
 ---
 
-Regolith is a collection of open source components that together form a general-purpose interface for using a computer, also known as a *desktop environment*. Many of the UI components that are used to build Regolith are independent open source projects that have simply been integrated, packaged, and configured for a specific workflow and visual aesthetic. Most computer desktop environments are optimized for ease-of-use and familiarity with commercial operating systems such as Microsoft Windows or Apple's OS X. In contrast, Regolith provides a way of interacting with a computer that is **optimized for user productivity** and does not attempt to mimic legacy UI paradigms for familiarity.
+Regolith is a collection of open source components that together form a general-purpose interface for using a computer, also known as a *desktop environment* [[1]](#footnotes). Many of the UI components that are used to build Regolith are independent open source projects [[2]](#footnotes) that have simply been integrated, packaged, and configured for a specific workflow and visual aesthetic. Most computer desktop environments are optimized for ease-of-use and familiarity with commercial operating systems such as Microsoft Windows or Apple's OS X. In contrast, Regolith provides a way of interacting with a computer that is **optimized for user productivity** and does not attempt to mimic legacy UI paradigms for familiarity.
 
 ## The Keyboard, the Mouse, and the Monitor
 
@@ -37,3 +37,9 @@ While most of the common tasks of system management and administration are handl
 * [Getting Started](../getting-started/): Get started with Regolith
 * [The Interface](../interface/): Understand how to perform actions in Regolith
 * [Keybindings](../reference/keybindings/): Learn the keybindings
+
+### Footnotes 
+
+1: The term came from a time when computers were large and were used on desks. That is no longer the case but we still use the term.  A *desktop environment* is generally applicable to any computer with a keyboard, display, and some type of pointing device.
+
+2: See [the interface page](../interface/) for specifics about the component Regolith is composed of.

@@ -6,13 +6,13 @@ description: >
   Release notes for Regolith 1.4.
 ---
 
-Regolith R1.4 is a major feature release which includes several improvements and optimizations.  Regolith is now smaller and more efficient.  The ISO-based installer is now based from the Xubuntu image, and moves from the gdm3 display manager to LightDM.  This allows for less resource consumption at runtime and dramatically smaller download size[1]. A new look, `ayu-mirage-regolith` and file search dialog round out the major new features.  Read below for more details.
+Regolith R1.4 is a major feature release which includes several improvements and optimizations.  Regolith is now smaller and more efficient.  The ISO-based installer is now based from the Xubuntu image, and moves from the gdm3 display manager to LightDM.  This allows for less resource consumption at runtime and dramatically smaller download size[1]. A new look, `lascaille` and file search dialog round out the major new features.  Read below for more details.
 
 {{% pageinfo %}}
 If you maintain your own i3 config file, note that the copy shipped in Regolith 1.4 has changed in that it reads more configuration from Xresources.  The intention of this change is to require a full copy of the i3 config file <b>less often</b>, by allowing users to customize the system via Xresource overrides instead of copy/edit of the i3 config file.  Merging changes from version to version can be error-prone and confusing for some users.
 {{% /pageinfo %}}
 
-Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @baldrailers, @ivomarino, @Josh-Letts, @LawZava, @SkyyySi, @tomster, @gdeflaux, @appelgriebsch, @farsil, and @MrKovar for their time and attention.  Also thanks to all that helped to test and filed issues for bugs and feature requests!
+For R1.4 in particular @ploum has provided many of the ideas and validation.  Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @baldrailers, @ivomarino, @Josh-Letts, @LawZava, @SkyyySi, @tomster, @gdeflaux, @appelgriebsch, @farsil, and @MrKovar for their time and attention.  Also thanks to all that helped to test and filed issues for bugs and feature requests!
 
 ## Features
 
@@ -62,12 +62,12 @@ Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @bal
         </tr>
         <tr>
             <td>New Ubuntu release support: Focal Fossa</td>
-            <td>TBD</td>
+            <td><a href="../regolith-screenshot-focal.png"><img class="shadow" src="../regolith-screenshot-focal.png"/></a></td>
             <td>Regolith runs as a desktop environment in Canonical's latest release of Ubuntu: 20.04.</td>
         </tr>
         <tr>
             <td>Time and Space Optimizations in ISO release</td>
-            <td>TBD</td>
+            <td></td>
             <td>By switching from GDM3 to LightDM, Regolith avoids loading some unnecessary desktop components into RAM, resulting in between 200MB to 300MB savings on cold start.  Additionally, the LiveCD installer is now based on the Xubuntu LiveCD which dramatically lowers the size of the installer and install image of the system[2].  Finally, with more fine-grained control of the bar status blocks, only the blocks you've installed will run.</td>
         </tr>
         <tr>

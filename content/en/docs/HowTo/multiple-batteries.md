@@ -1,5 +1,5 @@
 ---
-title: "Support multiple batteries"
+title: "Support Multiple Batteries"
 weight: 3
 description: >
   Display status of the batteries per instance.
