@@ -1,5 +1,5 @@
-baseURL = "https://regolith-linux.org/regolith-site-r14-beta"
-title = "Regolith Linux - R1.4 Beta"
+baseURL = "https://regolith-linux.org"
+title = "Regolith Linux"
 
 enableRobotsTXT = true
 
@@ -53,7 +53,7 @@ id = "UA-138654070-2"
 
 [languages]
 [languages.en]
-title = "Regolith - 1.4 Beta"
+title = "Regolith"
 description = "Regolith Linux website"
 languageName ="English"
 # Weight used for sorting.
@@ -151,12 +151,12 @@ no = 'Sorry to hear that. Please <a href="https://github.com/regolith-linux/rego
 
 # Versions
 [[params.versions]]
-  version = "1.4 Beta 1"
-  url = "http://regolith-linux.org/regolith-site-r14-beta"
+  version = "1.4"
+  url = "http://regolith-linux.org"
 
 [[params.versions]]
   version = "1.3.1"
-  url = "http://regolith-linux.org/regolith-site-r131"
+  url = "http://regolith-linux.org/regolith-site-r131/"
 
 [[params.versions]]
   version = "1.3"
