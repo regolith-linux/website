@@ -1,5 +1,5 @@
 ---
-title: "Change the terminal font size"
+title: "Change the Terminal Font Size"
 weight: 14
 description: >
   Change the font used in the terminal.
@@ -7,7 +7,7 @@ description: >
 
 1. Create or add the following value to your `~/.config/regolith/Xresources` file:
 ```bash
-St.font: Source Code Pro:pixelsize=24:antialias=true:autohint=true
+gnome.terminal.font:	JetBrains Mono 14
 ```
 2. Reload the Xresource configuration:
 ```bash

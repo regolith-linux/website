@@ -6,15 +6,15 @@ description: >
   Customize Regolith to suit you.
 ---
 
-Regolith, as a set of components, lacks a uniform configuration file, format, or set of conventions.  However efforts have been made to create as much consistency as possible by utilizing a simple session-wide key-value configuration facility known as [Xresources](https://wiki.debian.org/Xresources).  Interface preferences such as colors and typeface are defined in Xresource files and then read by components such as st-term and i3-wm.  For the most part, Xresources can be used for higher level changes.  Lower level changes, for example swap out i3bar for polybar, or drun for Rofi, require more fundamental changes.
+Regolith, as a set of components, lacks a uniform configuration file, format, or set of conventions.  However efforts have been made to create as much consistency as possible by utilizing a simple session-wide key-value configuration facility known as [Xresources](https://wiki.debian.org/Xresources).  Interface preferences such as colors and typeface are defined in Xresource files and then read by components such as `Rofi` and `i3-wm`.  For the most part, Xresources can be used for higher level changes.  Lower level changes, for example swap out `i3bar` for `polybar` or `drun` for `Rofi` require the removal, installation, and configuration of other packages.
 
 {{% pageinfo %}}
-In addition to the content in this section, refer to the tutorials for step-by-step examples of how to customize Regolith.
+In addition to the content in this section, refer to the [tutorials](../howto) for step-by-step examples of how to customize Regolith.
 {{% /pageinfo %}}
 
 ## Look
 
-The highest level change in the way Regolith looks is called a "look".  This ties together color, typeface, GTK theme and icons into a packagable unit known as a <code>look</code>.  A few looks ship in the Regolith PPA, the default for R1.3 being called Cahuella.
+The highest level change in the way Regolith looks is called a "look".  This ties together color, typeface, GTK theme and icons into a packagable unit known as a <code>look</code>.  A few looks ship in the Regolith PPA, the default for R1.4 being called `lascaille`.
 
 ## Styles
 

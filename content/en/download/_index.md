@@ -26,7 +26,7 @@ Starting from scratch or simply want to try Regolith out in a VM or LiveUSB envi
 {{% blocks/feature icon="fas fa-box-open" title="Regolith Desktop PPA" %}}
 Add the <a href="https://launchpad.net/~regolith-linux/+archive/ubuntu/stable">Regolith PPA</a> to your existing Ubuntu system and install the regolith-desktop package with the following terminal commands:
 <pre class="text-left border rounded p-2">
-$ sudo add-apt-repository ppa:regolith-linux/stable
+$ sudo add-apt-repository ppa:regolith-linux/release
 $ sudo apt install regolith-desktop
 </pre>After installation, Regolith will appear as a desktop session on the login screen.  Learn more about <a href="https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories">adding PPAs here</a>.
 {{% /blocks/feature %}}
@@ -36,7 +36,7 @@ To upgrade your existing 1.1, 1.2, or 1.3 to version of Regolith to 1.4, simply 
 <pre class="text-left border rounded p-2">
 $ sudo add-apt-repository --remove ppa:kgilmer/regolith-stable # Required for Regolith 1.2 and earlier.
 $ sudo add-apt-repository --remove ppa:regolith-linux/release # Required for Regolith 1.3 - 1.3.1.
-$ sudo add-apt-repository ppa:regolith-linux/stable
+$ sudo add-apt-repository ppa:regolith-linux/release
 $ rm -Rf ~/.config/regolith/flags
 $ sudo apt dist-upgrade
 </pre>

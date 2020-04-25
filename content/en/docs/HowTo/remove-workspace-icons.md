@@ -1,5 +1,5 @@
 ---
-title: "Change workspace labels"
+title: "Change Workspace Labels"
 weight: 7
 description: >
   Change the workspace names as displayed in the bar.
