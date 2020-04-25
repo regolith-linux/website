@@ -20,7 +20,6 @@ menu:
 <div class="container">
   <div class="row">
     <div class="col-sm p-5">
-<!--
 				<h2><i class="fas fa-compact-disc"></i> Regolith Linux ISO</h2>
 				<p>
 					Regolith can be installed as a stand-alone operating system, like other linux Distributions.  It is based on Ubuntu but is greatly reduced in terms of installed packages.  Gnome-shell, gdm3, and snapd are not installed by default, but could be added later if desired.  Regolith Linux is a good option for the following scenarios:
@@ -29,11 +28,10 @@ menu:
 						<li>Once installed, all defaults and packages are in a known good state.</li>
 						<li>Provides more Regolith branding.</li>
 					</ul>
-				<a href="https://github.com/regolith-linux/regolith-desktop/releases/tag/1.4-b1">Download the ISO </a> and write it to a USB flash drive to install or test drive Regolith as an operating system.  To learn how, visit the <a class="text-warning"  href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntu installer tutorial</a>.</p>
-				<div class="d-flex justify-content-center"><a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/regolith-linux/regolith-desktop/releases/tag/1.4-b1">
+				<a href="https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4">Download the ISO </a> and write it to a USB flash drive to install or test drive Regolith as an operating system.  To learn how, visit the <a class="text-warning"  href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntu installer tutorial</a>.</p>
+				<div class="d-flex justify-content-center"><a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4">
       Download Regolith <i class="fas fa-cloud-download-alt ml-2 "></i></a></div>				
 			</th>
--->
     </div>
     <div class="col-sm p-5">
 			<h2><i class="fas fa-download"></i> Regolith Desktop PPA</h2>
