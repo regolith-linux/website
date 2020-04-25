@@ -72,6 +72,13 @@ $ echo "gnome.gtk.theme:	Adwaita" >> ~/.config/regolith/Xresources
 $ regolith-look refresh
 ```
 
+## Example - Enable System Tray
+
+```bash
+$ echo "i3-wm.bar.trayoutput:	primary" >> ~/.config/regolith/Xresources
+$ regolith-look refresh
+```
+
 {{% pageinfo %}}
 Regolith generates many of these values from a canonical set of definitions.  See [this readme](https://github.com/regolith-linux/regolith-styles) for more details.  If you find yourself updating many values, it may be more concise to create your own look instead.
 {{% /pageinfo %}}
