@@ -122,7 +122,7 @@ Simply follow these steps to remove Regolith from your system:
 1. Log out of the Regolith session and into the default Ubuntu session.
 2. Open a terminal and run: 
 ```bash
-$ sudo apt purge regolith-desktop regolith-st && sudo apt autoremove
+$ sudo apt purge regolith-desktop && sudo apt autoremove
 ``` 
 3. Now remove the PPA:  
 ```bash

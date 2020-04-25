@@ -6,8 +6,6 @@ menu:
   main:
     weight: 20
 ---
-
-
 <section class="row td-box td-box--1 position-relative td-box--gradient td-box--height-auto">
 	<div class="container text-center td-arrow-down">
 		<span class="h4 mb-0">
@@ -17,53 +15,40 @@ menu:
 </span>
 	</div>
 </section>
-{{< blocks/section color="white">}}
 
-{{% blocks/feature icon="fas fa-compact-disc" title="Regolith Linux ISO Installer" url="https://github.com/regolith-linux/regolith-desktop/releases/tag/1.4-b1" url_text="Download" %}}
-Starting from scratch or simply want to try Regolith out in a VM or LiveUSB environment? <a href="https://github.com/regolith-linux/regolith-desktop/releases/tag/1.4-b1">Download the ISO <i class="fas fa-cloud-download-alt"></i></a> and write it to a USB flash drive to install or test drive Regolith as an operating system.  To learn how, visit the <a class="text-warning"  href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntu installer tutorial</a>.  This ISO is a customization of the Xubuntu installer from the Xubuntu project, with  some optional packages removed and Regolith packages added.
-{{% /blocks/feature %}}
 
-{{% blocks/feature icon="fas fa-box-open" title="Regolith Desktop PPA" %}}
-Add the <a href="https://launchpad.net/~regolith-linux/+archive/ubuntu/stable">Regolith PPA</a> to your existing Ubuntu system and install the regolith-desktop package with the following terminal commands:
-<pre class="text-left border rounded p-2">
+<div class="container">
+  <div class="row">
+    <div class="col-sm p-5">
+				<h2><i class="fas fa-compact-disc"></i> Regolith Linux ISO</h2>
+				<p>
+					Regolith can be installed as a stand-alone operating system, like other linux Distributions.  It is based on Ubuntu but is greatly reduced in terms of installed packages.  Gnome-shell, gdm3, and snapd are not installed by default, but could be added later if desired.  Regolith Linux is a good option for the following scenarios:
+					<ul>
+						<li>Minimal system, small install size, less RAM usage</li>
+						<li>Once installed, all defaults and packages are in a known good state.</li>
+						<li>Provides more Regolith branding.</li>
+					</ul>
+				<a href="https://github.com/regolith-linux/regolith-desktop/releases/tag/1.4-b1">Download the ISO </a> and write it to a USB flash drive to install or test drive Regolith as an operating system.  To learn how, visit the <a class="text-warning"  href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntu installer tutorial</a>.</p>
+				<div class="d-flex justify-content-center"><a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/regolith-linux/regolith-desktop/releases/tag/1.4-b1">
+      Download Regolith <i class="fas fa-cloud-download-alt ml-2 "></i></a></div>				
+			</th>
+    </div>
+    <div class="col-sm p-5">
+			<h2><i class="fas fa-download"></i> Regolith Desktop PPA</h2>
+			<p>
+					Regolith can be installed in an Existing Ubuntu 18.04 or 20.04 system, by adding a Regolith PPA and installing the <code>regolith-desktop</code> package.  Advantages to Regolith via PPA:
+					<ul>
+						<li>More compatibility with standard Ubuntu</li>
+						<li>Easy interop with other installed desktop environments</li>
+						<li>Keep existing system installation</li>
+						<li>Less risk, easy to remove and return to other desktop environments</li>
+					</ul>
+					To install Regolith Desktop from the <code>release</code> PPA:
+					<pre class="border rounded p-2">
 $ sudo add-apt-repository ppa:regolith-linux/release
-$ sudo apt install regolith-desktop
-</pre>After installation, Regolith will appear as a desktop session on the login screen.  Learn more about <a href="https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories">adding PPAs here</a>.
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fas fa-external-link-alt" title="Upgrade from earlier version" %}}
-To upgrade your existing 1.1, 1.2, or 1.3 to version of Regolith to 1.4, simply move to the new PPA and perform a <code>dist-upgrade</code>:
-<pre class="text-left border rounded p-2">
-$ sudo add-apt-repository --remove ppa:kgilmer/regolith-stable # Required for Regolith 1.2 and earlier.
-$ sudo add-apt-repository --remove ppa:regolith-linux/release # Required for Regolith 1.3 - 1.3.1.
-$ sudo add-apt-repository ppa:regolith-linux/release
-$ rm -Rf ~/.config/regolith/flags
-$ sudo apt dist-upgrade
-</pre>
-<b>NOTE</b>: If you have made customizations to i3wm or your styles, it's recommended to use the defaults upon login and then manually integrate your changes back in.  To ensure that the defaults are loaded, move your changes and then log back in.
-<pre class="text-left border rounded p-2">
-$ mv ~/.config/regolith ~/old-regolith-config
-$ mv ~/.Xresources-regolith ~/old-regolith-styles
-</pre>
-After running these commands, log out and back in for the default Regolith 1.4 experience.
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fas fa-snowplow" title="Remove Regolith Desktop" %}}
-If you decide Regolith isn't what you're looking for, restore your previous GNOME settings and completely remove Regolith by logging in to the standard Ubuntu session and executing the following commands from a terminal:<pre class="text-left border rounded p-2">
-$ sudo add-apt-repository --remove ppa:regolith-linux/release
-$ sudo apt remove regolith-*
-$ sudo apt autoremove
-$ source ~/.regolith-gnome-backup
-$ rm -Rf ~/.regolith-gnome-backup ~/.config/regolith
-</pre>
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fas fa-backward" title="Earlier Releases" %}}
-While Regolith is a young project, it already has a few releases behind it.  You can find [earlier ISO installer releases on SourceForge.net](https://sourceforge.net/projects/regolith-linux/).
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fas fa-question-circle" title="More Help" %}}
-Care for more details? Another version of these installation instructions are available in [the user documentation](../docs/getting-started/install).
-{{% /blocks/feature %}}
-
-{{< /blocks/section >}}
+$ sudo apt install regolith-desktop</pre>
+					Learn more about <a href="https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories">adding PPAs here</a>.
+				</p>
+    </div>
+  </div>
+</div>
