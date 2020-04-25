@@ -12,7 +12,7 @@ description: >
 | Xresources | `/etc/regolith/styles/root` | `~/.Xresources-regolith` (Global override)<br/>`~/.config/regolith/Xresources` (Override)<br/>`~/.config/regolith/Xresources.d` (User files) | `~/.Xresources` is also loaded but intended for properties that may also be required in other desktop sessions. |
 | Rofi | `/etc/regolith/styles/cahuella/rofi.rasi` | Defined in the `theme` style file. | This can also be overridden directly in the i3 file if preferred.
 | Bar Workspace Labels | `/etc/regolith/styles/i3-wm` | User defined | |
-| Bar status indicators | `/etc/regolith/i3xrocks/config` | User defined (i3 config) | |
+| Bar status indicators | `/etc/regolith/i3xrocks/conf.d` | `~/.config/regolith/i3xrocks/conf.d` | Each block has it's own file.  Filename determines ordering. |
 | Picom (Compton) Compositor | `/etc/regolith/compton/config` | `~/.config/regolith/compton/config` | User config added in 1.4
 
 ## Load Sequence

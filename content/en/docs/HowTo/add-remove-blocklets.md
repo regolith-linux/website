@@ -40,3 +40,7 @@ $ regolith-look refresh
 ```
 
 If any block configuration exists in the user directory `~/.config/regolith/i3xrocks/conf.d`, then the defaults in `/etc/regolith/i3xrocks/conf.d` will be ignored.
+
+# Further Reading
+
+See the [reference page for configrations](../../reference/configurations) for more details about config files in Regolith.

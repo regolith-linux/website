@@ -7,7 +7,7 @@ description: >
 
 Out of the box the primary battery status will be displayed in the i3-bar. For some laptops that has multiple batteries e.g. _ThinkPad_, you want to have both batteries displayed. To do so, follow the steps:
 
-1. Stage your own i3 config file [(tutorial)](../stage-configs), then open `~/.config/regolith/i3xrocks/config` in your editor of choice.
+1. Stage your own i3 config file [(tutorial)](../stage-configs), then open `~/.config/regolith/i3xrocks/conf.d/80_battery` in your editor of choice.
 2. Find the line that pertains to the battery blocklet:
 ```conf
 ...
@@ -38,3 +38,7 @@ instance=BAT0
 interval=30
 instance=BAT1
 ```
+
+## Further Reading
+
+See the [reference page for configrations](../../reference/configurations) for more details about config files in Regolith.

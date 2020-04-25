@@ -9,23 +9,5 @@ Regolith ships with a notification system called [Rofication](https://github.com
 
 For this exercise we'll use [dunst](https://dunst-project.org/) but similar steps can be used for other notification components.
 
-1. Stage your own i3 config file [(tutorial)](../stage-configs) and i3xrocks config file.
-2. Disable the Rofication backend by removing or commenting out the following line from `~/.config/regolith/i3/config`:
-```
-# exec --no-startup-id /usr/share/rofication/rofication-daemon.py
-```
-3. Disable the Rofication front end by editing `~/.config/regolith/i3xrocks/config` and commenting out the rofication blocklet:
-```conf
-...
-# Rofication
-#
-# Displays notifications.
-#[rofication]
-#command=/usr/share/i3xrocks/rofication-statusi3blocks.py
-
-```
-4. Install `dunst`:
-```bash
-$ sudo apt install dunst
-```
-5. Log out and back in.  Test your notifications with `notify-send test123`.  You should see a pop-up from `dunst`.
+1. Install dunst: `sudo apt install dunst`.  This should cause `rofication` to be uninstalled.
+2. Log out and back in.  Test your notifications with `notify-send test123`.  You should see a pop-up from `dunst`.

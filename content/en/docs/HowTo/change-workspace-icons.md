@@ -39,3 +39,7 @@ Atom:
 
 - Append the name of the icon font to `Settings > Editor > Font Familly`.
 - Example: `Menlo, Consolas, DejaVu Sans Mono, monospace, Material Design Icons`
+
+# Further Reading
+
+See the [reference page for configrations](../../reference/configurations) for more details about config files in Regolith.

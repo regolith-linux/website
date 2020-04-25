@@ -17,3 +17,7 @@ i3-wm.gaps.inner.size: 20
 ```bash
 $ regolith-look refresh
 ```
+
+# Further Reading
+
+See the [reference page for configrations](../../reference/configurations) for more details about config files in Regolith.

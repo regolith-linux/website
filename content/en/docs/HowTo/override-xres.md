@@ -82,3 +82,7 @@ $ regolith-look refresh
 {{% pageinfo %}}
 Regolith generates many of these values from a canonical set of definitions.  See [this readme](https://github.com/regolith-linux/regolith-styles) for more details.  If you find yourself updating many values, it may be more concise to create your own look instead.
 {{% /pageinfo %}}
+
+# Further Reading
+
+See the [reference page for configrations](../../reference/configurations) for more details about config files in Regolith.
