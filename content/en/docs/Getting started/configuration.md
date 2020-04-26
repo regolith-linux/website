@@ -14,7 +14,7 @@ The wallpaper can be changed via `Settings`, or <span class="text-nowrap"><span 
 
 ## Status Bar Indicators
 
-Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages.  For example, to show a status indicator for your laptop battery simply run `sudo apt install i3xrocks-battery` and then refresh the session.  To find what indicators are available, run `apt list | grep ^i3xrocks-` or search for "i3xrocks-" in your favorite package manager GUI, such as [Synaptic](https://help.ubuntu.com/community/SynapticHowto).
+Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages.  For example, to show a status indicator for your laptop battery simply run `sudo apt install i3xrocks-battery` and then refresh the session.  To find what indicators are available, run `apt search ^i3xrocks-` or search for "i3xrocks-" in your favorite package manager GUI, such as [Synaptic](https://help.ubuntu.com/community/SynapticHowto).  Learn more about configuring status indicators in this HowTo.
 
 <img class="shadow m-5" src="../regolith-screenshot-synaptic-search.png" width="480px"/>
 
@@ -23,7 +23,7 @@ Status indicators such as CPU load, date and time, notifications, weather, and o
 Colors, wallpaper, window and bar layouts, and other visual factors are bundled together in Regolith and called "looks".  Looks provide a simple way of changing the entire look of the desktop with a few commands.  At this time, looks can only be configured on the command line, but there is a script that manages the details for you.  Like status bar indicators, looks are packaged and are installed and removed like any other software package.  By convention, Look packages use the following naming format `regolith-look-<name>`.  `apt` or a GUI package manager can be used to search for available looks.  The tool `regolith-look` can be used to change looks and refresh the active session with the selected look.  Here's an example that switches to the `cahuella` look that shipped by default in Regolith 1.3:
 
 ```bash
-$ apt list | grep ^regolith-look-
+$ apt search ^regolith-look-
 ...
 regolith-look-cahuella/bionic,now 2.4.9 amd64
 ...

@@ -25,7 +25,12 @@ $ sudo add-apt-repository ppa:regolith-linux/release
 <pre>
 $ sudo apt install regolith-desktop
 </pre>
-3. Reboot the computer, and when logging in select the "Regolith" session in the gear menu (⚙️):
+3. (Optional) install status indicators as default in Regolith 1.3
+<pre>
+$ sudo apt install i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time
+$ sudo apt install i3xrocks-battery # for laptops
+</pre>
+4. Reboot the computer, and when logging in select the "Regolith" session in the gear menu (⚙️):
 
 ![Ubuntu Login Screen](/regolith-screenshot-login.png)
 

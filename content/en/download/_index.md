@@ -46,7 +46,7 @@ menu:
 					To install Regolith Desktop from the <code>release</code> PPA:
 					<pre class="border rounded p-2">
 $ sudo add-apt-repository ppa:regolith-linux/release
-$ sudo apt install regolith-desktop</pre>
+$ sudo apt install regolith-desktop i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time</pre>
 					Learn more about <a href="https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories">adding PPAs here</a>, and more about <a href="../docs/getting-started/install/#ppa-sources">PPAs that Regolith provides here</a>.
 				</p>
     </div>

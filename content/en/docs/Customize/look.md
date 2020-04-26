@@ -12,7 +12,7 @@ Looks provided by Regolith have the package prefix <code>regolith-look-</code>. 
 ## Finding Looks
 All <code>look</code> packages using this naming scheme can be found via the following command:
 ```bash
-$ apt list | grep regolith-look
+$ apt search ^regolith-look-
 ```
 
 ## Installing a Look

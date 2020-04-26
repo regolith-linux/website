@@ -16,7 +16,7 @@ As mentioned previously, a compositor is a UI component that visual effects to w
 
 The following command will list all compositors configured to work with Regolith:
 ```bash
-apt list | grep regolith-compositor-
+apt search regolith-compositor-
 ```
 
 At least the following three compositors should be available:
