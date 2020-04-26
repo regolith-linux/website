@@ -36,7 +36,7 @@ menu:
     <div class="col-sm p-5">
 			<h2><i class="fas fa-download"></i> Regolith Desktop PPA</h2>
 			<p>
-					Regolith can be installed in an Existing Ubuntu 18.04 or 20.04 system, by adding a Regolith PPA and installing the <code>regolith-desktop</code> package.  Advantages to Regolith via PPA:
+					Regolith can be installed in an existing Ubuntu 18.04 or 20.04 system by adding a Regolith PPA and installing the <code>regolith-desktop</code> package.  Advantages to Regolith via PPA:
 					<ul>
 						<li>More compatibility with standard Ubuntu</li>
 						<li>Easy interop with other installed desktop environments</li>
@@ -47,7 +47,7 @@ menu:
 					<pre class="border rounded p-2">
 $ sudo add-apt-repository ppa:regolith-linux/release
 $ sudo apt install regolith-desktop</pre>
-					Learn more about <a href="https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories">adding PPAs here</a>.
+					Learn more about <a href="https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories">adding PPAs here</a>, and more about <a href="../docs/getting-started/install/#ppa-sources">PPAs that Regolith provides here</a>.
 				</p>
     </div>
   </div>
