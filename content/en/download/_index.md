@@ -22,11 +22,11 @@ menu:
     <div class="col-sm p-5">
 				<h2><i class="fas fa-compact-disc"></i> Regolith Linux ISO</h2>
 				<p>
-					Regolith can be installed as a stand-alone operating system, like other linux Distributions.  It is based on Ubuntu but is greatly reduced in terms of installed packages.  Gnome-shell, gdm3, and snapd are not installed by default, but could be added later if desired.  Regolith Linux is a good option for the following scenarios:
+					Regolith can be installed as a stand-alone operating system, and is a good option for the following scenarios:
 					<ul>
 						<li>Minimal system, small install size, less RAM usage</li>
-						<li>Once installed, all defaults and packages are in a known good state.</li>
-						<li>Provides more Regolith branding.</li>
+						<li>Once installed, all defaults and packages are in a known good state</li>
+						<li>Provides more Regolith branding</li>
 					</ul>
 				<a href="https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4">Download the ISO </a> and write it to a USB flash drive to install or test drive Regolith as an operating system.  To learn how, visit the <a class="text-warning"  href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntu installer tutorial</a>.</p>
 				<div class="d-flex justify-content-center"><a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4">
@@ -41,7 +41,7 @@ menu:
 						<li>More compatibility with standard Ubuntu</li>
 						<li>Easy interop with other installed desktop environments</li>
 						<li>Keep existing system installation</li>
-						<li>Less risk, easy to remove and return to other desktop environments</li>
+						<li>Easy to remove and return to other desktop environments</li>
 					</ul>
 					To install Regolith Desktop from the <code>release</code> PPA:
 					<pre class="border rounded p-2">
