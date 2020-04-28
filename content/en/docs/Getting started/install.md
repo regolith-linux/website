@@ -47,7 +47,8 @@ $ apt policy | grep regolith
 # Some info w/ URLs will be returned.  Assuming http://ppa.launchpad.net/regolith-linux/release/ubuntu is returned:
 $ sudo add-apt-repository --remove ppa:regolith-linux/release # remove release PPA
 $ sudo add-apt-repository ppa:regolith-linux/release
-$ sudo apt dist-upgrade
+$ sudo apt update && sudo apt dist-upgrade
+$ sudo apt install i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time #also consider i3xrocks-battery i3xrocks-memory i3xrocks-weather
 ```
 
 After performing the update, log back in to your system.  However, if you have staged your own i3 config file or Xresources root, read the below section `Upgrading with Customizations`.
