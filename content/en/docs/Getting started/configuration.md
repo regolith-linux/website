@@ -53,4 +53,4 @@ Note: GNOME also has it's own set of keybindings.  When the Regolith session is 
 
 ## Further Reading
 
-To dig deeper checkout the section on [Customization](../../customize), find what [HotTos](../../howto) are available, or read the [Xresource reference](../../reference/xresources).  Become an i3 power user by reading the [user guide](https://i3wm.org/docs/userguide.html).
+To dig deeper checkout the section on [Customization](../../customize), find what [HowTos](../../howto) are available, or read the [Xresource reference](../../reference/xresources).  Become an i3 power user by reading the [user guide](https://i3wm.org/docs/userguide.html).
