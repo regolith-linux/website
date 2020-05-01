@@ -24,10 +24,9 @@ description: >
 |gnome.wallpaper | GNOME Wallpaper (can be overridden in Settings) |
 |gnome.wm.theme | GNOME Window Manager Theme (unused) |
 |i3-wm.bar.background.color | Bar Background Color |
-|i3-wm.bar.font | Bar Font |
-|i3-wm.bar.trayoutput | Enable and describe screen on which to display [app tray](https://i3wm.org/docs/userguide.html#_tray_output). |
+|i3-wm.bar.font | Bar Font | Pango font specification for font(s) rendered on the bar |
 |i3-wm.bar.position | Bar Screen Position |
-|i3-wm.bar.separator.color | |
+|i3-wm.bar.separator.color | Color of seperator between blocks |
 |i3-wm.bar.statusline.color | |
 |i3-wm.bar.trayoutput | Enable or disable the [app tray](https://i3wm.org/docs/userguide.html#_tray_output) in i3bar |
 |i3-wm.bar.workspace.active.background.color | |
@@ -62,11 +61,11 @@ description: >
 |i3-wm.client.urgent.color.child_border | |
 |i3-wm.client.urgent.color.indicator | |
 |i3-wm.client.urgent.color.text | |
-|i3-wm.floatingwindow.border.size | |
+|i3-wm.floatingwindow.border.size | Window border size in pixels for floating windows |
 |i3-wm.font | Window Manager Font |
-|i3-wm.gaps.inner.size | Default gap size between windows |
-|i3-wm.gaps.outer.size | 	Default gap size at screen edge |
-|i3-wm.window.border.size | Default border size |
+|i3-wm.gaps.inner.size | Default gap size between windows in pixels |
+|i3-wm.gaps.outer.size | 	Default gap size at screen edge in pixels |
+|i3-wm.window.border.size | Default border size in pixels |
 |i3-wm.workspace.01.name .. i3-wm.workspace.19.name | Workspace Labels |
 |i3xrocks.error.color | Color for bar module in error mode |
 |i3xrocks.label.battery0 | Bar icon glyph |
@@ -107,6 +106,33 @@ description: >
 |rofi.drun-icon-theme | Rofi icon theme |
 |rofi.font | Rofi font |
 |rofi.modi | Rofi modes |
-|rofi.show-icons | |
-|rofi.theme | Rofi theme file |
+|rofi.show-icons | true if the Rofi dialog should render app icons, false otherwise |
+|rofi.theme | Path to the Rofi theme file |
 |rofi.window-format | |
+
+# Optional Xresource keys
+
+The following Xresource keys are undefined by default but can be used by users to change behavior as desired.
+
+| Xresource Key | Description |
+|-------------|-------------|
+|rofi.search.help | Show help text on the file search dialog, defaults to `true` |
+|rofi.search.limit | Total number of items to return from an `mlocate` search, default: 64 |
+|i3-wm.program.launcher.app | Command i3 executes from the app launcher keybinding |
+|i3-wm.program.launcher.cmd | Command i3 executes from the command launcher keybinding |
+|i3-wm.program.launcher.window | Command i3 executes for the window navigation keybinding |
+|i3-wm.program.help | Command to launch from the help keybinding |
+|i3-wm.program.file_search | Command to launch from the file search keybinding |
+|i3-wm.program.refresh_ui | Command to launch from the session refresh keybinding |
+|i3-wm.program.logout | Command to launch from the logout keybinding |
+|i3-wm.program.reboot | Command to launch from the reboot keybinding |
+|i3-wm.program.shutdown | Command to launch from the shutdown keybinding |
+|i3-wm.program.lock | Command to launch from the lock screen keybinding |
+|i3-wm.program.sleep | Command to launch from the sleep keybinding |
+|i3-wm.program.settings | Command to launch from the Control Panel keybinding |
+|i3-wm.program.display | Command to launch from the Display Settings keybinding |
+|i3-wm.program.wifi | Command to launch from the Wifi Settings keybinding |
+|i3-wm.program.bluetooth | Command to launch from the Bluetooth Settings keybinding |
+|i3-wm.program.files | Command to launch from the file browser keybinding |
+|i3-wm.program.notification_ui | Command to launch from the notification UI keybinding |
+|i3-wm.program.1...i3-wm.program.3 | Optional programs to start with i3 |
