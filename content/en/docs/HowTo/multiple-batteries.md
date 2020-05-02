@@ -14,7 +14,7 @@ Out of the box the primary battery status will be displayed in the i3-bar. For s
 # Battery indicator
 #
 # Displays total percentage charge left of specified battery.
-[battery3]
+[battery]
 interval=30
 # instance=BAT0
 ```
@@ -30,11 +30,11 @@ ls /sys/class/power_supply/
 # Battery indicator
 #
 # Displays total percentage charge left of specified battery.
-[battery3]
+[battery]
 interval=30
 instance=BAT0
 
-[battery3]
+[battery]
 interval=30
 instance=BAT1
 ```
