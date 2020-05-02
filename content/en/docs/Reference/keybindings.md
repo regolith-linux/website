@@ -21,7 +21,6 @@ description: >
 |Focused Window Float Toggle|`⊞ Win`-`Shift`-`F`|
 |Toggle Keybinding Helper|`⊞ Win`-`Shift`-`?`|
 |Toggle the bar|`⊞ Win`-`i`|
-|Focused Window Floating Toggle|`⊞ Win`-`Shift`-`F`|
 |Move to Workspace 1 - 10|`⊞ Win`-`1 - 0`|
 |Move to Workspace 10 - 19|`⊞ Win`-`Ctrl`-`1 - 9`|
 |Take to Workspace 1 - 10|`⊞ Win`-`Alt`-`1 - 0`|
