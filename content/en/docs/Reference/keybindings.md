@@ -8,39 +8,53 @@ description: >
 
 | Action | Key Binding |
 |-------------|-------------|
-|Launch Terminal|`⊞ Win`-`Enter`|
-|Launch Browser|`⊞ Win`-`Shift`-`Enter`|
-|App Launcher|`⊞ Win`-`Space`|
-|Command Launcher|`⊞ Win`-`Shift`-`Space`|
-|Launch File Browser|`⊞ Win`-`Shift`-`n`|
-|Window Navigate|`⊞ Win`-`Ctrl`-`Space`|
-|Move between Windows|`⊞ Win`-`Arrow Keys` or vim keys|
-|Move Windows|`⊞ Win`-`Shift`-`Arrow Keys` or vim keys|
-|Toggle Vertical and Horizontal Layout Mode|`⊞ Win`-`Backspace`|
-|Focused Window Fullscreen Toggle|`⊞ Win`-`f`|
-|Focused Window Float Toggle|`⊞ Win`-`Shift`-`F`|
-|Toggle Keybinding Helper|`⊞ Win`-`Shift`-`?`|
-|Toggle the bar|`⊞ Win`-`i`|
-|Move to Workspace 1 - 10|`⊞ Win`-`1 - 0`|
-|Move to Workspace 10 - 19|`⊞ Win`-`Ctrl`-`1 - 9`|
-|Take to Workspace 1 - 10|`⊞ Win`-`Alt`-`1 - 0`|
-|Take to Workspace 10 - 19|`⊞ Win`-`Ctrl`-`Alt`-`1 - 9`|
-|Move to Next Workspace|`⊞ Win`-`Tab`|
-|Move to Previous Workspace|`⊞ Win`-`Shift`-`Tab`|
-|Layout Toggle (tabbed, horizontal, vertical)|`⊞ Win`-`t`
-|Reload i3 Config|`⊞ Win`-`Shift`-`C`|
-|Control Panel|`⊞ Win`-`c`|
-|Configure Bluetooth|`⊞ Win`-`b`|
-|Configure Wifi|`⊞ Win`-`w`|
-|Enter Window Resize Mode|`⊞ Win`-`r`|
-|Change Window Size in Resize Mode|`⊞ Win`-`arrow keys`|
-|Increase or Decrease Window Gaps in Resize Mode|`+` and `-`|
-|Exit Resize Mode|`Escape` or `Enter`|
-|Kill Focused Window|`⊞ Win`-`Shift`-`q`|
-|Close Terminal|`Ctrl`-`d`|
-|Close (Some) Windows|`Ctrl`-`w`|
-|Exit (Some) Apps|`Ctrl`-`q`|
-|Exit Session|`⊞ Win`-`Shift`-`E`|
-|Suspend Computer|`⊞ Win`-`Shift`-`S`|
-|Reboot Computer|`⊞ Win`-`Shift`-`B`|
-|Power Off Computer|`⊞ Win`-`Shift`-`P`|
+| Launch Terminal | `⊞ Win` `Enter` |
+| Launch Browser | `⊞ Win` `Shift` `Enter` |
+| Launch Application | `⊞ Win` `Space` |
+| Launch Command | `⊞ Win` `Shift` `Space` |
+| Launch Help Dialog | `⊞ Win` `Shift` ? |
+| Launch File Search | `⊞ Win` `Alt` `Space` |
+| Launch File Browser | `⊞ Win` `Shift` n |
+| Launch Notification Viewer | `⊞ Win` n |
+| Navigate to Window by Name | `⊞ Win` `Ctrl` `Space` |
+| Navigate to Relative Window | `⊞ Win` ↑ ↓ ← → |
+| Navigate to Relative Window | `⊞ Win` k j h l |
+| Navigate to Workspaces 1-10 | `⊞ Win` 0..9 |
+| Navigate to Workspace 11 - 19 | `⊞ Win` `Ctrl` 0..9 |
+| Navigate to Next Workspace | `⊞ Win` `Tab` |
+| Navigate to Next Workspace | `⊞ Win` `Alt` → |
+| Navigate to Previous Workspace | `⊞ Win` `Shift` `Tab` |
+| Navigate to Previous Workspace | `⊞ Win` `Alt` ← |
+| Navigate to Scratchpad | `⊞ Win` `Ctrl` a |
+| Modify Window Position | `⊞ Win` `Shift` ↑ ↓ ← → |
+| Modify Window Position | `⊞ Win` `Shift` k j h l |
+| Modify Containing Workspace | `⊞ Win` `Ctrl` `Shift` ↑ ↓ ← → |
+| Modify Next Window Orientation | `⊞ Win` `Backspace` |
+| Modify Window Fullscreen Toggle | `⊞ Win` f |
+| Modify Window Floating Toggle | `⊞ Win` `Shift` f |
+| Move Focused Window to Scratchpad | `⊞ Win` `Ctrl` m |
+| Modify Tile/Float Focus Toggle | `⊞ Win` `Shift` t |
+| Modify Window Layout Mode | `⊞ Win` t |
+| Move Window to Workspace 1 - 10 | `⊞ Win` `Shift` 0..9 |
+| Move Window to Workspace 11 - 19| `⊞ Win` `Ctrl` `Shift` 0..9 |
+| Carry Window to Workspace 1 - 10| `⊞ Win` `Alt` 0..9 |
+| Carry Window to Workspace 11 - 19 | `⊞ Win` `Alt` `Ctrl` 0..9 |
+| Exit App | `⊞ Win` `Shift` q |
+| Terminate App | `⊞ Win` `Alt` q |
+| Reload i3 Config | `⊞ Win` `Shift` c |
+| Refresh Session | `⊞ Win` `Shift` r |
+| Restart i3 | `⊞ Win` `Ctrl` r |
+| Logout | `⊞ Win` `Shift` e |
+| Reboot | `⊞ Win` `Shift` b |
+| Power Down | `⊞ Win` `Shift` p |
+| Lock Screen | `⊞ Win` `Escape` |
+| Sleep | `⊞ Win` `Shift` s |
+| Settings | `⊞ Win` c |
+| Display Settings | `⊞ Win` d |
+| Wifi Settings | `⊞ Win` w |
+| Bluetooth Settings | `⊞ Win` b |
+| Save Window Layout | `⊞ Win` , |
+| Load Window Layout | `⊞ Win` . |
+| Toggle Bar | `⊞ Win` i |
+| Enter Resize Mode | `⊞ Win` r |
+| Exit Resize Mode | `Enter` or `Escape` |
