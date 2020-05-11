@@ -70,7 +70,7 @@ When updating from a major or minor version (eg 1.2 to 1.3), it is often the cas
 ```bash
 $ mkdir ~/regolith-backup
 $ mv ~/.Xresources-regolith ~/regolith-backup
-$ mv -r ~/.config/regolith ~/regolith-backup
+$ mv ~/.config/regolith ~/regolith-backup
 ```
 
 Once these steps are performed, logging back in should result in a "stock" instance of Regolith.  From there, any changes desired to be reintegrated can be done by editing the new versions of the Regolith config files that exist in the `/etc/regolith` directory.
