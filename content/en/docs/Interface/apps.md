@@ -10,7 +10,7 @@ As mentioned in the [Getting Started](../../getting-started/basics) section, <sp
 
 ## Window Layout
 
-<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">backspace</span></span> can be used to toggle between horizontal and vertical layout modes, which will apply to the *next launched application*.  In this way, windows in a workspace can divide the screen into portions relative to the desired importance of the user.
+<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">backspace</span></span> can be used to toggle between horizontal and vertical layout modes, which will apply to the *next launched application*.  In this way, windows in a workspace can divide the screen into portions relative to the desired importance of the user. A blue border will appear on the bottom or right of the window to indicate the current layout mode.
 
 In addition to toggling layout orientation, existing windows can be moved relative to their neighbors with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">↑ ↓ ← →</span></span> (arrow keys) or VIM-style arrow keys <span class="badge badge-warning">k j h l</span>.  Or, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">tab</span></span> and <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">tab</span></span> can be used to move back and forth between active workspaces.
 
