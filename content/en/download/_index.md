@@ -28,9 +28,10 @@ menu:
 						<li>Once installed, all defaults and packages are in a known good state</li>
 						<li>Provides more Regolith branding</li>
 					</ul>
-				<a href="https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4">Download the ISO </a> and write it to a USB flash drive to install or test drive Regolith as an operating system.  To learn how, visit the <a class="text-warning"  href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntu installer tutorial</a>.</p>
+				<a href="https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1">Download the ISO </a> and write it to a USB flash drive to install or test drive Regolith as an operating system.  To learn how, visit the <a class="text-warning"  href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntu installer tutorial</a>.</p>
 				<div class="d-flex justify-content-center"><a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4">
-      Download Regolith <i class="fas fa-cloud-download-alt ml-2 "></i></a></div>				
+      Download Regolith 1.4.1<i class="fas fa-cloud-download-alt ml-2 "></i></a><a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
+      Learn More <i class="fas fa-book-reader ml-2"></i></a></div>				
 			</th>
     </div>
     <div class="col-sm p-5">
