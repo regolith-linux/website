@@ -156,6 +156,10 @@ no = 'Sorry to hear that. Please <a href="https://github.com/regolith-linux/rego
 
 # Versions
 [[params.versions]]
+  version = "1.4.1"
+  url = "http://regolith-linux.org"
+
+[[params.versions]]
   version = "1.4"
   url = "http://regolith-linux.org"
 
