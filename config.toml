@@ -10,7 +10,7 @@ theme = ["docsy"]
 enableGitInfo = true
 
 # Language settings
-contentDir = "content/en"
+contentDir = "content"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
@@ -55,9 +55,18 @@ id = "UA-138654070-2"
 [languages.en]
 title = "Regolith"
 description = "Regolith Linux website"
+contentDir = "content/en"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
+
+[languages.de]
+title = "Regolith"
+description = "Regolith Linux Webseite"
+contentDir = "content/de"
+languageName ="Deutsch"
+# Weight used for sorting.
+weight = 2
 
 [markup]
   [markup.goldmark]
