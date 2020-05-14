@@ -1,5 +1,5 @@
 ---
-title: Interact
+title: Beteiligen
 menu:
   main:
     weight: 40
@@ -7,12 +7,12 @@ menu:
 
 {{< blocks/section color="light">}}
 
-{{% blocks/feature icon="fas fa-hands-helping" title="Issues Looking for Help" url="https://github.com/regolith-linux/regolith-desktop/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22" url_text="Issues"%}}
-If you'd like to get involved with the development of Regolith, have a look at this list of issues that need help. For any issue that lacks detail or is otherwise ambiguous, just comment in the issue with questions and we'll do what we can to fill in the gaps.
+{{% blocks/feature icon="fas fa-hands-helping" title="Issues, die Hilfe brauchen" url="https://github.com/regolith-linux/regolith-desktop/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22" url_text="Issues"%}}
+Wenn Sie sich an der Entwicklung von Regolith beteiligen möchten, werfen Sie einen Blick auf diese Liste von Themen, die Hilfe benötigen. Bei jedem Thema, das nicht detailliert oder anderweitig zweideutig ist, kommentieren Sie einfach in dem Issue mit Fragen, und wir werden tun, was wir können, um die Lücken zu füllen.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fas fa-fast-forward" title="Future Projects" url="https://github.com/orgs/regolith-linux/projects" url_text="Open Projects"%}}
-To get a sense of where we are headed, checkout the upcoming projects on GitHub.
+{{% blocks/feature icon="fas fa-fast-forward" title="Zukünftige Projekte" url="https://github.com/orgs/regolith-linux/projects" url_text="Weitere Projekte"%}}
+Um einen Eindruck davon zu bekommen, wohin wir uns bewegen, sehen Sie sich die kommenden Projekte auf GitHub an.
 {{% /blocks/feature %}}
 
 {{< /blocks/section>}}
