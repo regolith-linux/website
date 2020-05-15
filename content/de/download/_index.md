@@ -30,7 +30,7 @@ menu:
 					</ul>
 				<a href="https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1">Laden Sie die ISO </a> herunter und schreiben Sie es auf einen USB-Stick um Regolith als Betriebssystem zu installieren oder zu testen.  Um zu erfahren, wie das geht, besuchen Sie das <a class="text-warning" href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntu-Installationsprogramm-Tutorial</a>.</p>
 				<div class="d-flex justify-content-center"><a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1">
-      Herunterladen Regolith 1.4.1<i class="fas fa-cloud-download-alt ml-2 "></i></a><a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
+      Regolith 1.4.1 herunterladen <i class="fas fa-cloud-download-alt ml-2 "></i></a><a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
       Mehr erfahren <i class="fas fa-book-reader ml-2"></i></a></div>
 			</th>
     </div>
