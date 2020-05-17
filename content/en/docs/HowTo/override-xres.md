@@ -37,8 +37,10 @@ gnome.wm.theme:	Ayu-Mirage-Dark
 ...
 ```
 
+## Examples
+Note that the commands presented below append text to a file.  So, running the command more than once will result in duplicate lines in the file.
 
-## Example - Update the UI for High DPI Screens
+### Example - Update the UI for High DPI Screens
 
 By using the `~/.config/regolith/Xresources` override file, we will only need to specify the values we wish to change.  The `xrdb` tool can be used to determine what current values are set to.
 
@@ -54,7 +56,7 @@ $ regolith-look refresh
 
 <sub>192 is just an example value, please adjust as needed.</sub>
 
-## Example - Change i3 bar position
+### Example - Change i3 bar position
 
 ```bash
 $ xrdb -query | grep position
@@ -63,7 +65,7 @@ $ echo "i3-wm.bar.position:	bottom" >> ~/.config/regolith/Xresources
 $ regolith-look refresh
 ```
 
-## Example - Change GTK Theme
+### Example - Change GTK Theme
 
 ```bash
 $ xrdb -query | grep gtk
@@ -72,7 +74,7 @@ $ echo "gnome.gtk.theme:	Adwaita" >> ~/.config/regolith/Xresources
 $ regolith-look refresh
 ```
 
-## Example - Enable System Tray
+### Example - Enable System Tray
 
 ```bash
 $ echo "i3-wm.bar.trayoutput:	primary" >> ~/.config/regolith/Xresources
@@ -82,6 +84,15 @@ $ regolith-look refresh
 {{% pageinfo %}}
 Regolith generates many of these values from a canonical set of definitions.  See [this readme](https://github.com/regolith-linux/regolith-styles) for more details.  If you find yourself updating many values, it may be more concise to create your own look instead.
 {{% /pageinfo %}}
+
+## Example - Use Alt instead of Win as Super
+
+```bash
+$ echo "i3-wm-mod: Mod1" >> ~/.config/regolith/Xresources
+$ echo "i3-wm-alt: Mod4" >> ~/.config/regolith/Xresources
+```
+
+Then Reload i3 for the change to take effect.
 
 # Further Reading
 

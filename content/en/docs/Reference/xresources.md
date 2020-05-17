@@ -23,6 +23,7 @@ description: >
 |gnome.terminal.scrollbar | Flag to enable/disable scrollbar (`never | always`) |
 |gnome.wallpaper | GNOME Wallpaper (can be overridden in Settings) |
 |gnome.wm.theme | GNOME Window Manager Theme (unused) |
+|i3-wm.alt | Key mapping for Alt key.  See the [i3 User Guide](https://i3wm.org/docs/userguide.html#_using_i3) for details. |
 |i3-wm.bar.background.color | Bar Background Color |
 |i3-wm.bar.font | Bar Font | Pango font specification for font(s) rendered on the bar |
 |i3-wm.bar.position | Bar Screen Position |
@@ -65,6 +66,7 @@ description: >
 |i3-wm.font | Window Manager Font |
 |i3-wm.gaps.inner.size | Default gap size between windows in pixels |
 |i3-wm.gaps.outer.size | 	Default gap size at screen edge in pixels |
+|i3-wm.mod | Key mapping for Super key.  See the [i3 User Guide](https://i3wm.org/docs/userguide.html#_using_i3) for details. |
 |i3-wm.window.border.size | Default border size in pixels |
 |i3-wm.workspace.01.name .. i3-wm.workspace.19.name | Workspace Labels |
 |i3xrocks.error.color | Color for bar module in error mode |
