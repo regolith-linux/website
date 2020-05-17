@@ -74,7 +74,14 @@ description = "Siteweb de Regolith Linux"
 contentDir = "content/fr"
 languageName ="Français"
 # Weight used for sorting.
-weight = 3
+
+[languages.es]
+title = "Regolith"
+description = "Sitio Web de Regolith Linux"
+contentDir = "content/es"
+languageName ="Español"
+# Weight used for sorting.
+weight = 4
 
 [markup]
   [markup.goldmark]
