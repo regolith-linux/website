@@ -40,7 +40,7 @@ From this point, please proceed to the next section, [configuration](../configur
 
 ### Regolith 1.3 -> Regolith 1.4
 
-The Unstable PPA `ppa:regolith-linux/release` is currently hosting Regolith 1.4 Beta version packages.  To upgrade an existing system to the 1.4 Beta, update the package manager to source Regolith packages from the `stable` PPA:
+The Unstable PPA `ppa:regolith-linux/release` is currently hosting Regolith 1.4.1 version packages.  To upgrade an existing system to 1.4.1, update the package manager to source Regolith packages from the `stable` PPA:
 
 ```bash
 $ apt policy | grep regolith
