@@ -8,7 +8,7 @@ menu:
     weight: 20
 ---
 
-Este sitio contiene la información para usar el entorno de escritorio Regolith. El contenido está estructurado en un orden destinado a nuevos usuarios, pero sientete libre de saltearlo de la manera más adecuada para ti. El feedback siempre es bienvenido y apreciamos cualquier consejo de como la documentación pueda ser más completa, fácil de leer, y efectiva.
+Este sitio contiene la información para usar el entorno de escritorio Regolith. El contenido está estructurado en un orden destinado a nuevos usuarios, pero sientete libre de saltearlo de la manera más adecuada para tí. El feedback siempre es bienvenido y apreciamos cualquier consejo de como la documentación pueda ser más completa, fácil de leer, y efectiva.
 
 ## Términos
 
