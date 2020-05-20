@@ -1,71 +1,71 @@
 ---
-title: "Installation"
-linkTitle: "Installation"
+title: "Instalación"
+linkTitle: "Instalación"
 weight: 1
 description: >
-  Install Regolith onto your computer.
+  Instala Regolith en tu computadora.
 ---
 
-Based on your preferred installation method, follow one of the following two sections to install Regolith.  Unlike previous versions of Regolith, PPA and ISO installs result in different configurations.  The PPA install favors coexistence with the existing Ubuntu desktop, while the ISO release optimizes for less resource utilization.  Specifically, the ISO install is roughly 1Gb smaller and cold start RAM usage is reduced by about 200Mb as compared to the PPA installation.
+Basandote en tu método de instalación preferido, sigue una de las dos secciones siguientes para instalar Regolith. A diferencia de versiones anteriores de REgolith, las instalaciones a traves de PPA e ISO resultan en configuraciones distintas. La instalación PPA favorece la coexistencia con los ya existentes escritorios de Ubuntu, mientras que el ISO está optimizado para la menor utilización de recursos. Especificamente, la instalación a traves del ISO es apenas 1Gb más pequeña y el uso de RAM en frio es reducido por aproximadamente 200Mb en comparación con la instalación PPA.
 
-## Option 1: Ubuntu Installer
+## Opción 1: Instalador de Ubuntu
 
-1. Download an ISO image of [Regolith R1.4](https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1) <i class="fas fa-cloud-download-alt"></i> and then use an OS installation tool such as USB Creator to write the downloaded file into a USB device. Here are Ubuntu guides for performing this action in [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0), [Mac](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), and [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0).
-2. Reboot the computer and select the USB flash drive to boot from.
-3. Install or run the live environment by providing information when prompted during the setup process.  See [this tutorial](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop) to learn more about the installation process.
-4. When prompted, reboot the computer and login to your new Regolith environment!
+1. Descarga una imagen ISO de [Regolith R1.4](https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1) <i class="fas fa-cloud-download-alt"></i> y luego usa una herramienta de instalación de SO tal como USB Creator para inscribir el archivo descargado en un dispositivo USB. Aquí hay algunas guías de Ubuntu para llevarlo a cabo en [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0), [Mac](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), y [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0).
+2. Reinicia la computadora y seleccione el dispositivo USB como dispositivo de arranque.
+3. Instala o corre el entorno en vivo proveyendo la información necesaria cuando la linea de comandos lo solicite durante el proceso de instalación. Mira [este tutorial](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop) para aprender más sobre el proceso de instalación.
+4. Cuando la linea de comandos lo solicite, reinicia la computadora y ¡Logueate en tu nuevo entorno Regolith!
 
-## Option 2: PPA
+## Opción 2: PPA
 
-1. See below about [PPA sources](#ppa-sources), and add your chosen PPA to your system:
+1. Mira más abajo sobre [fuentes PPA](#ppa-sources), y agrega la PPA que hayas elegido a tu sistema:
 <pre>
 $ sudo add-apt-repository ppa:regolith-linux/release
 </pre>
-2. Install the Regolith desktop package:
+2. Instala el paquete de escritorio Regolith:
 <pre>
 $ sudo apt install regolith-desktop
 </pre>
-3. (Optional) install status indicators as default in Regolith 1.3
+3. (Opcional) instala los indicadores de estado como están en Regolith 1.3 por defecto.
 <pre>
 $ sudo apt install i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time
 $ sudo apt install i3xrocks-battery # for laptops
 </pre>
-4. Reboot the computer, and when logging in select the "Regolith" session in the gear menu (⚙️):
+4. Reinicia la computadora, y cuando estes ingresando selecciona la sesión "Regolith" en el menú de engranaje (⚙️):
 
 ![Ubuntu Login Screen](/regolith-screenshot-login.png)
 
-From this point, please proceed to the next section, [configuration](../configuration) to learn about the most common changes people like to make to Regolith.
+A partir de este punto, por favor continúa en la próxima sección, [configuration](../configuration) para aprender sobre los cambios más comunes que a la gente le gusta realizar a Regolith.
 
-## Upgrades
+## Actualizaciones
 
 ### Regolith 1.3 -> Regolith 1.4
 
-The Unstable PPA `ppa:regolith-linux/release` is currently hosting Regolith 1.4.1 version packages.  To upgrade an existing system to 1.4.1, update the package manager to source Regolith packages from the `stable` PPA:
+El PPA inestable `ppa:regolith-linux/release` está actualmente alojando los paquetes de la versión 1.4.1 de Regolith. Para actualizar un sistema ya existente a 1.41, actualiza el gestor de paquetes para que supla los paquetes de Regolith desde el PPA `stable`:
 
 ```bash
 $ apt policy | grep regolith
-# Some info w/ URLs will be returned.  Assuming http://ppa.launchpad.net/regolith-linux/release/ubuntu is returned:
-$ sudo add-apt-repository --remove ppa:regolith-linux/release # remove release PPA
+# Va a retornar alguna información con URLs. Asumiendo que devuelva http://ppa.launchpad.net/regolith-linux/release/ubuntu :
+$ sudo add-apt-repository --remove ppa:regolith-linux/release # elimina el PPA de release
 $ sudo add-apt-repository ppa:regolith-linux/release
 $ sudo apt update && sudo apt dist-upgrade
-$ sudo apt install i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time #also consider i3xrocks-battery i3xrocks-memory i3xrocks-weather
+$ sudo apt install i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time #también considera i3xrocks-battery i3xrocks-memory i3xrocks-weather
 ```
 
-After performing the update, log back in to your system.  However, if you have staged your own i3 config file or Xresources root, read the below section `Upgrading with Customizations`.
+Luego de realizar la actualización, vuelve a ingresar en el sistema. En cualquier caso, si tenías tu propio archivo de configuración i3 o raiz Xresources, lee la sección `Actualizando con Personalizaciones` más abajo.
 
 ### Regolith 1.0 - 1.2 -> Regolith 1.4
 
-To upgrade from Regolith 1.0 - 1.2, the PPA URL must be changed and then new package versions are applied by the package manager:
+Para actualizar de Regolith 1.0 a 1.2, la URL del PPA tiene que ser cambiada y recien allí las nuevas versiones de paquetes van a ser aplicadas por el gestor de paquetes:
 ```bash
 $ sudo add-apt-repository --remove ppa:kgilmer/regolith-stable
 $ sudo add-apt-repository ppa:regolith-linux/release
 $ sudo apt update && sudo apt dist-upgrade
 ```
-After performing these steps, you'll need to log out and back again.
+Luego de realizar estos pasos, necesitarás cerrar la sesión e ingresar nuevamente.
 
-### Upgrading with Customizations
+### Actualizando con Personalizaciones
 
-When updating from a major or minor version (eg 1.2 to 1.3), it is often the case that new Xresource values and other config files have been updated.  Existing Xresource and config files such as the i3 config file will need to be updated in order for the upgrade to function properly.  If you've customized any Regolith config files or created a stand-alone Xresource file (`~/.Xresources-regolith`), these may need to be updated to take the upgraded files into account.  A simple approach to doing this is to move them elsewhere, perform the upgrade, and then reintegrate any desired customizations into the new files:
+Cuando se actualiza de una version mayor o menor (ejemplo 1.2 a 1.3), es frecuente el caso de que nuevos valores de Xresource y otros archivos de configuración hayan cambiado. Los existentes Xresource y archivos de configuracion tales como el archivo `config` de i3 necesitarán ser actualizados en orden para que la actualización funcione apropiadamente. Si has modificado cualquier archivo de configuración de Regolith o creado un archivo Xresource aislado (`~/.Xresources-regolith`), esos seguramente necesiten ser actualizados para que sean tomados en cuenta. La manera más simple de lograr esto es moverlos a otro lugar, realizar la actualización, y luego reintegrar cualquier personalización deseada en los nuevos archivos:
 
 ```bash
 $ mkdir ~/regolith-backup
@@ -73,85 +73,85 @@ $ mv ~/.Xresources-regolith ~/regolith-backup
 $ mv ~/.config/regolith ~/regolith-backup
 ```
 
-Once these steps are performed, logging back in should result in a "stock" instance of Regolith.  From there, any changes desired to be reintegrated can be done by editing the new versions of the Regolith config files that exist in the `/etc/regolith` directory.
+Una vez realizados estos pasos, ingresando nuevamente debería resultar en una instancia de "stock" de Regolith. A partir de allí, cualquier cambio que desee reintegrar puede lograrse editando las nuevas versiones de los archivos de configuración de Regolith que se encuentran en el directorio `/etc/regolith`.
 
-### Edits to `/etc/regolith/...` files
+### Ediciones a los archivos `/etc/regolith/...`
 
-If you've taken shortcuts and manually edited files owned by `root` in `/etc/regolith` or elsewhere, the packaging tool may not update the files, nor mention that stale files have been left.  Even removing the package via `apt remove ...` may not result in a clean system.  In this case, use the purge command to remove the package and manually delete any left over files.  For example, to clean up the i3 config file:
+Si tomaste atajos y editaste manualmente los archivos poseidos por `root` en `/etc/regolith` o cualquier otro lado, la herramienta de empaquetado quizás no actualice los archivos, sin mencionar los archivos anticuados que hayan quedado. Incluso eliminando el paquete a traves de `apt remove ...` quizas no resulte en un sistema limpio. En este caso, hay que usar el comando `purge` para eliminar el paquete y manualmente eliminar cualquier archivo que quede. Por ejemplo, para limpiar los archivos de configuración de i3:
 
 ```bash
 $ sudo apt purge regolith-i3-gaps-config
-$ sudo rm -Rf /etc/regolith/i3 # be sure to backup any important changes
+$ sudo rm -Rf /etc/regolith/i3 # asegurate de hacer un respaldo de cualquier cambio importante
 $ sudo apt install regolith-i3-gaps-config
 ```
 
-### Troubleshooting
+### Resolución de Problemas
 
-#### Blocks Missing after Upgrade
+#### Bloques Faltantes Luego de Actualizar
 
-Regolith 1.4 changes the way in which blocks are installed and configured.  This change is necessary to cleanly support the `arm64` architecture and make it simple to swap out components like the notification subsystem.  From 1.4 onward, blocks are installed by the package manager.  See [this HowTo](../../howto/add-remove-blocklets) on adding and configuring blocks.
+Regolith 1.4 cambia la manera en la que los bloques osn instalados y configurados. Este cambio es necesario para sustentar la arquitectura `arm64` y hacer simple intercambiar componentes como el subsistema de notificaciones. A partir de 1.4 y en adelante, los bloques son instalados por el gestor de paquetes. Mira [este How-To](../../howto/add-remove-blocklets) de cómo agregar y configurar bloques.
 
-## Upgrading Ubuntu
+## Actualizando Ubuntu
 
-Upgrading from Ubuntu 18.04, 18.10, 19.04, or 19.10 to 20.04 requires that the Regolith PPA be re-added once the Ubuntu upgrade completes.
+Actualizando desde Ubuntu 18.04, 18.10, 19.04, o 19.10 a 20.04 requiere que el PPA de Regolith sea re-agregado una vez que la actualización de Ubuntu se complete.
 
-1. If the standard Ubuntu session is not installed, install it:<br/>`$ sudo apt install ubuntu-session`.  (If you have it already installed this should cause no harm.)
-2. Perform the upgrade to 20.04.
-3. After rebooting, log into the stock Ubuntu session, not Regolith.
-4. Add the Regolith PPA, as the installation process removed PPAs:<br/>`$ sudo add-apt-repository ppa:regolith-linux/release`
-5. Upgrade Regolith to the latest version:<br/>`$ sudo apt upgrade && sudo apt install regolith-desktop`
-6. Reboot, and now select the Regolith session at the login screen.
+1. Si la sesión estándar de Ubuntu no está instalada, instalala: <br/>`$ sudo apt install ubuntu-session`.  (Si ya se encuentra instalada esto no generará ningún problema)
+2. Realice la actualización a 20.04.
+3. Luego de reiniciar, ingrese en la sesión de stock de Ubuntu, no a Regolith.
+4. Agrega el PPA de Regolith, ya que el proceso de instalación borró los PPAs:<br/>`$ sudo add-apt-repository ppa:regolith-linux/release`
+5. Actualiza Regolith a la última versión:<br/>`$ sudo apt upgrade && sudo apt install regolith-desktop`
+6. Reinicia, y ahora selecciona la sesión Regolith en la pantalla de ingreso.
 
-NOTE: Some users have reported that `regolith-desktop` is automatically uninstalled during the upgrade.  If this happens, simply run `sudo apt install --reinstall regolith-desktop` after the upgrade completes to restore the Regolith desktop session.
+NOTA: Algunos usuarios reportaron que `regolith-desktop` es automaticamente desinstalada durante la actualización. Si esto sucede, simplemente corra `sudo apt install --reinstall regolith-desktop` luego de que que la actualización se complete para restaurar la sesión de escritorio Regolith.
 
-## Reinstallation
+## Reinstalación
 
-In the case that the Regolith desktop environment becomes corrupted or otherwise unbootable, follow these steps to reset it.  No user files will be removed as part of this process:
+En el caso de que el entorno de escritorio Regolith se corrompa o sea imposible de cargar, siga los siguientes pasos para restaurarlo. Ningún archivo de usuario va a ser eliminado como parte de este proceso:
 
-1. Login to the stock Ubuntu session.  If this session is not available, install it with `sudo apt install ubuntu-session`.  If you are unable to login, type <span class="text-nowrap"><span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">F2</span></span> to access a TTY.  After installing `ubuntu-session`, you will have the option to select the `Ubuntu` session type in the login screen.
-2. Uninstall Regolith from within the Ubuntu session:
+1. Ingrese en la sesión de stock de Ubuntu. Si esta sesión no se encuentra disponible, instalala con `sudo apt install ubuntu-session`. Si no es capaz de ingresar, tipea <span class="text-nowrap"><span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">F2</span></span> para acceder a TTY. Luego de instalar `ubuntu-session`, va a tener la opción de seleccionar el tipo de sesión `Ubuntu` en la pantalla de ingreso.
+2. Desinstala Regolith desde la sesión Ubuntu:
 ```bash
 $ sudo apt purge regolith-*
 $ sudo apt autoremove
 $ rm -Rf ~/.config/regolith/flags
 ```
-3. Verify that no regolith packages are still installed with `apt list --installed | grep -i regolith`.  The command should not return any packages.  If it does, manually uninstall them with `sudo apt purge <package>`.
-4. Reinstall Regolith:
+3. Verifica que ningún paquete de Regolith siga instalado con `apt list --installed | grep -i regolith`. El comando no debería devolver ningún paquete. Si lo hace, desinstalalos manualmente con `sudo apt purge <paquete>`.
+4. Reinstala Regolith:
 ```
 $ sudo apt install regolith-desktop
 ```
-5. Reboot the computer, and when logging in select the "Regolith" session in the gear menu.  At this point you can remove or keep `ubuntu-session`.
+5. Reinicia la computadora, y cuando ingreses selecciona la sesión "Regolith" en el menú del engranaje. En este punto puedes mantener o eliminar `ubuntu-session`.
 
-## Uninstallation of `regolith-desktop`
+## Desinstalación de `regolith-desktop`
 
-Simply follow these steps to remove Regolith from your system:
+Simplemente sigue estos pasos para eliminar Regolith de tu sistema:
 
-1. Log out of the Regolith session and into the default Ubuntu session.
-2. Open a terminal and run: 
+1. Cierra la sesión de Regolith e ingresa con la sesión por defecto de Ubuntu.
+2. Abre un terminal y corre:
 ```bash
 $ sudo apt purge regolith-desktop && sudo apt autoremove
 ``` 
-3. Now remove the PPA:  
+3. Ahora elimina el PPA:  
 ```bash
 $ sudo add-apt-repository --remove ppa:regolith-linux/release
 ```
-4. To restore your GNOME settings, run: 
+4. Para restaurar tus ajustes de GNOME, corre: 
 ```bash 
 $ source ~/.regolith-gnome-backup
 ```
-5. You can now safely delete the directory `~/.config/regolith`.
+5. Ahora puedes eliminar de manera segura el directorio `~/.config/regolith`.
 
-## PPA Sources
+## Fuentes PPA
 
-There are 4 sources for Regolith packages.  The `release` PPA is recommended for most users, but another may be better for you based on your needs.  Here is a description of each PPA.
+Hay 4 fuentes para los paquetes de Regolith. El PPA `release` es recomendado para la mayoría de los usuarios, pero otro puede ser mejor para ti basado en tus necesidades. Aquí dejamos una descripción de cada PPA.
 
-| Name | PPA URI | Freshness | Stability | Description |
+| Nombre | URI del PPA | Frescura | Estabilidad | Descripción |
 |------|---------|-----------|-----------|-------------|
-| Unstable | <span class="text-nowrap">`ppa:regolith-linux/unstable`</span> | <span class="badge badge-primary">Very High</span> | <span class="badge badge-secondary">Low</span> | The `unstable` PPA is recommended for project developers and anyone that's alright with troubleshooting their own system and doesn't mind some problems from time to time. |
-| Stable | `ppa:regolith-linux/stable` | <span class="badge badge-primary">High</span> | <span class="badge badge-secondary">Medium</span> | The `stable` PPA is for those that would like the latest features, even between official releases. |
-| Release | <span class="text-nowrap">`ppa:regolith-linux/release`</span> | <span class="badge badge-primary">Low</span> | <span class="badge badge-secondary">High</span> | The `release` PPA provides bug fixes as they occur and feature updates upon release. |
-| r1.3 | `ppa:regolith-linux/r1.3` | <span class="badge badge-primary">Very Low</span> | <span class="badge badge-secondary">Very High</span> | The `r1.3` PPA is locked to the 1.3 release and will not be updated except for critical bug fixes. |
+| Unstable | <span class="text-nowrap">`ppa:regolith-linux/unstable`</span> | <span class="badge badge-primary">Muy Alta</span> | <span class="badge badge-secondary">Baja</span> | El PPA `unstable` es recomendado para desarrolladores del proyecto y todo aquel que se sienta a gusto con resolver sus propios problemas con el sistema y no le importe tener un problema de vez en cuando. |
+| Stable | `ppa:regolith-linux/stable` | <span class="badge badge-primary">Alta</span> | <span class="badge badge-secondary">Media</span> | El PPA `stable` es para aquellos que quieran las últimas funcionalidades, incluso entre versiones oficiales. |
+| Release | <span class="text-nowrap">`ppa:regolith-linux/release`</span> | <span class="badge badge-primary">Baja</span> | <span class="badge badge-secondary">Alta</span> | El PPA `release` provee arreglos de bugs a medida que van sucediendo y actualizaciones de funcionalidades al momento de la publicación. |
+| r1.3 | `ppa:regolith-linux/r1.3` | <span class="badge badge-primary">Muy Baja</span> | <span class="badge badge-secondary">Muy Alta</span> | El PPA `r1.3` está fijado en la versión 1.3 y no va a ser actualizado excepto por errores críticos. |
 
-## ARM support
+## Soporte ARM
 
-Regolith packages are built for `i386`, `amd64`, and `arm64` architectures.  A stand-alone installer is not available for ARM-based systems such as the Rasberry Pi, however Regolith can be installed via PPA into an existing Ubuntu system.  [See above](#option-2-ppa) about installing Regolith via PPA.
+Los paquetes Regolith son desarrollados para arquitecturas `i386`, `amd64`, y `arm64`. No hay disponible un instalador individual para sistemas tales como Raspberry Pi, sin embargo Regolith puede ser instalado a traves de PPA en un sistema Ubuntu ya existente. [Ver más arriba](#option-2-ppa) sobre instalar Regolith a traves de PPA.
