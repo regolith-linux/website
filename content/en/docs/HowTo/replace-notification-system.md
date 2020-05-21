@@ -9,5 +9,10 @@ Regolith ships with a notification system called [Rofication](https://github.com
 
 For this exercise we'll use [dunst](https://dunst-project.org/) but similar steps can be used for other notification components.
 
-1. Install dunst: `sudo apt install dunst`.  This should cause `rofication` to be uninstalled.
-2. Log out and back in.  Test your notifications with `notify-send test123`.  You should see a pop-up from `dunst`.
+1. Replace `rofication` with `dunst`:
+```bash
+$ sudo apt install dunst
+$ sudo apt purge regolith-rofication
+```
+2. Log out and back in.  
+3. Test your notifications with `notify-send test123`.  You should see a pop-up from `dunst`.
