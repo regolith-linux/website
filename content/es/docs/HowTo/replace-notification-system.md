@@ -5,9 +5,17 @@ description: >
   Disable Rofication and add another notification system.
 ---
 
-Regolith ships with a notification system called [Rofication](https://github.com/DaveDavenport/Rofication).  This system is designed to work in the background and not use pop-ups as a way of alerting the user to a new notification.  Rather, a small bar item displays the current number of unread notifications and a dialog can be loaded to view and delete them.  This page is allows you to enable a more traditional notification UI.
+Regolith ships with a notification system called [Rofication](https://github.com/DaveDavenport/Rofication).  This system is designed to work in the background and not use pop-ups as a way of alerting the user to a new notification.  Rather, a small bar item displays the current number of unread notifications and a dialog can activated to interact with the content of the current notifications. This page describes a way to install an alternative notification system which works in a more traditional, expected way.
 
-For this exercise we'll use [dunst](https://dunst-project.org/) but similar steps can be used for other notification components.
+We will use [dunst](https://dunst-project.org/) as an example but similar steps can be used with pretty much any other notification component.
 
-1. Install dunst: `sudo apt install dunst`.  This should cause `rofication` to be uninstalled.
-2. Log out and back in.  Test your notifications with `notify-send test123`.  You should see a pop-up from `dunst`.
+1. Remove the current notification system:
+```
+$ sudo apt remove --purge regolith-rofication
+```
+2. Install dunst:
+```
+$ sudo apt install dunst
+```
+3. Log out and back in.
+4. Test your notifications with `notify-send test123`.  You should see a pop-up from `dunst`.
