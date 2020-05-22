@@ -5,7 +5,12 @@ description: >
   Learn how to stage user copies of Regolith configuration files.
 ---
 
-Regolith relies on the Xresource system to provide a consolidated interface configuration.  By changing Xresource values, Regolith can be customized in ways such as updating the user interface, specifying custom behaviors, or defining a specific format for the clock.
+Regolith relies on the Xresource system to provide a consolidated interface configuration.  By changing Xresource values, Regolith can be customized in ways such as updating the user interface, specifying custom behaviors, or defining a specific format for the clock.  
+
+{{% pageinfo %}}
+In Regolith, Xresource values can be changed via two methods: supplying your own Xresource files, and overriding the existing Xresource values.  The latter approach is strongly recommended, as it makes upgrading to newer versions of Regolith less likely to break.  If you copy the Xresource tree completely, you'll need to integrate any breaking changes in future versions manually.
+{{% /pageinfo %}}
+
 
 ## Initialization
 
@@ -22,12 +27,10 @@ It is recommended to use `~/.config/regolith/Xresources` for customization as it
 
 ## Determining what values can be changed
 
-The `xrdb` tool can be used to list the existing Xresource values.  See [here for a table of existing values](../../reference/xresources) in the R1.3.1 release.  Example:
+The `xrdb` tool can be used to list the existing Xresource values.  See [here for a table of existing values](../../reference/xresources) in the R1.4.1 release.  Example:
 
 ```bash
 $ xrdb -query 
-...
-St.font:	JetBrains Mono:pixelsize=16:antialias=true:autohint=true
 ...
 gnome.icon.theme:	Moka
 gnome.terminal.font:	JetBrains Mono 12
@@ -37,8 +40,10 @@ gnome.wm.theme:	Ayu-Mirage-Dark
 ...
 ```
 
+## Examples
+Note that the commands presented below append text to a file.  So, running the command more than once will result in duplicate lines in the file.
 
-## Example - Update the UI for High DPI Screens
+### Example - Update the UI for High DPI Screens
 
 By using the `~/.config/regolith/Xresources` override file, we will only need to specify the values we wish to change.  The `xrdb` tool can be used to determine what current values are set to.
 
@@ -54,7 +59,7 @@ $ regolith-look refresh
 
 <sub>192 is just an example value, please adjust as needed.</sub>
 
-## Example - Change i3 bar position
+### Example - Change i3 bar position
 
 ```bash
 $ xrdb -query | grep position
@@ -63,7 +68,7 @@ $ echo "i3-wm.bar.position:	bottom" >> ~/.config/regolith/Xresources
 $ regolith-look refresh
 ```
 
-## Example - Change GTK Theme
+### Example - Change GTK Theme
 
 ```bash
 $ xrdb -query | grep gtk
@@ -72,12 +77,31 @@ $ echo "gnome.gtk.theme:	Adwaita" >> ~/.config/regolith/Xresources
 $ regolith-look refresh
 ```
 
-## Example - Enable System Tray
+### Example - Enable System Tray
 
 ```bash
 $ echo "i3-wm.bar.trayoutput:	primary" >> ~/.config/regolith/Xresources
 $ regolith-look refresh
 ```
+
+### Example - Use Alt instead of Win as Super
+
+```bash
+$ echo "i3-wm-mod: Mod1" >> ~/.config/regolith/Xresources
+$ echo "i3-wm-alt: Mod4" >> ~/.config/regolith/Xresources
+```
+
+Then Reload i3 for the change to take effect.
+
+### Example - Launch `nm-applet` when i3 starts
+
+Some users prefer to use the `nm-applet` program to configure and manage their wireless network.  i3 config file can be updated to launch any arbitrary program at start time.  But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file.  For this to work, also make sure that the system tray is enabled (see above).
+
+```bash
+$ echo "i3-wm.program.1: /usr/bin/nm-applet"
+```
+
+This change requires you to log back in before the change takes effect.
 
 {{% pageinfo %}}
 Regolith generates many of these values from a canonical set of definitions.  See [this readme](https://github.com/regolith-linux/regolith-styles) for more details.  If you find yourself updating many values, it may be more concise to create your own look instead.
