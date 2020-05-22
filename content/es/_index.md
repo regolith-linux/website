@@ -35,10 +35,10 @@ linkTitle = "Regolith Linux"
   </div>
   <div class="row pb-5">
     <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-terminal.png "Una Terminal" >}}</div>
-    <div class="col-8 my-auto"><p>Para aquellos que trabajan en la terminal, apretar <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span> es todo lo que necesita para poner manos a la obra.</p></div>    
+    <div class="col-8 my-auto"><p>Para aquellos que trabajan en la terminal, presionar <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span> es todo lo que necesita para poner manos a la obra.</p></div>    
   </div>
   <div class="row pb-5">
-    <div class="col-8 my-auto"><p>Un sencillo lanzador de aplicaciones global está disponible instantaneamente desde cualquier lugar para correr tus programas via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>.</p></div>
+    <div class="col-8 my-auto"><p>Un sencillo lanzador de aplicaciones global estará disponible instantaneamente desde cualquier lugar para correr tus programas via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>.</p></div>
     <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-launcher.png "Lanzador" >}}</div>    
   </div>
   <div class="row pb-5">
@@ -54,7 +54,7 @@ linkTitle = "Regolith Linux"
     <div class="col-8 my-auto"><p>Gnome Flashback provee una administración del sistema consistente y simple. Modifica tu IU, monta automaticamente tus discos USB, conectate a redes inalambricas. Lanza el panel de control con <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span>.</p></div>    
   </div>
   <div class="row pb-5">
-    <div class="col-8 my-auto"><p>Cambia facilmente a <a href="https://ethanschoonover.com/solarized">Solarized</a> u otros looks con el comando <code>regolith-look</code>. Como <b>looks</b> utiliza el administrador de paquetes, solamente guardaras recursos de temas que estes usando.</p></div>
+    <div class="col-8 my-auto"><p>Cambia facilmente a <a href="https://ethanschoonover.com/solarized">Solarized</a> u otros looks con el comando <code>regolith-look</code>. Como <b>looks</b> utiliza el administrador de paquetes, solamente guardaras los recursos de temas que estes usando.</p></div>
     <div class="col-4 my-auto border rounded p-1">{{< screenshot regolith-screenshot-solarized.png "Solarized" >}}</div>    
   </div>
   <div class="row pb-5">
@@ -81,11 +81,11 @@ linkTitle = "Regolith Linux"
 <li>Entrega un escritorio con una interfaz de usuario funcional pero sencilla que puede ser <a href="docs/customize/">modificada</a> y expandida todo lo que se necesite.</li>
 <li>Combina caracteristicas de la administración de sistema de GNOME con el flujo de trabajo productivo de <a href="https://i3wm.org/">i3-wm</a>.</li>
 <li>Le permite a los nuevos usuarios una manera rapida y divertida de probar un <a href="https://opensource.com/article/18/8/i3-tiling-window-manager">Tiling Window Manager</a>.</li>
-<li>Soporta una <a href="https://github.com/regolith-linux/regolith-desktop/wiki/Customize">fácil personalización</a> y <a href="https://www.reddit.com/r/unixporn">mejoras</a> via una consistente <a href="https://github.com/regolith-linux/regolith-styles/blob/master/Xresources/root">configuración Xresource</a>.</li>
+<li>Soporta una <a href="https://github.com/regolith-linux/regolith-desktop/wiki/Customize">fácil personalización</a> y <a href="https://www.reddit.com/r/unixporn">mejoras</a> a traves de una consistente <a href="https://github.com/regolith-linux/regolith-styles/blob/master/Xresources/root">configuración Xresource</a>.</li>
 <li>Se apoya en la <a href="https://snapcraft.io/store">Tienda de Aplicaciones de Ubuntu</a> y <a href="https://packages.ubuntu.com/">Repositorios de Paquetes</a> para una larga selección de software de alta calidad.</li>
 <li>Construido para ser desarmado. <a href="docs/customize/components/">Incorpora componentes de IU</a> de tu preferencia facilmente.</li>
 <li>Empacado con una variedad de <a href="docs/reference/keybindings/">atajos</a> básicos para que comenzar sea más fácil.</li>
-<li>Provee un <a href="https://github.com/regolith-linux/regolith-builder/blob/master/build.sh">build script</a> y <a href="https://github.com/regolith-linux/regolith-builder/blob/master/package-model-R1.3.json">metadata de paquete</a> para fácilmente permitirle a los usuarios hacer un fork del entorno de escritorio y su distribución.</li>
+<li>Provee un <a href="https://github.com/regolith-linux/regolith-builder/blob/master/build.sh">build script</a> y <a href="https://github.com/regolith-linux/regolith-builder/blob/master/package-model-R1.3.json">metadata de paquete</a> para permitirle fácilmente a los usuarios hacer un fork del entorno de escritorio y su distribución.</li>
 </ul>
 </div>
 
