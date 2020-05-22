@@ -1,29 +1,29 @@
 ---
-title: "Getting Started"
-linkTitle: "Getting Started"
+title: "Primeros Pasos"
+linkTitle: "Primeros Pasos"
 weight: 2
 description: >
-  Summary of installation methods for Regolith.
+  Sumario de los métodos de instalación para Regolith.
 ---
 
-This section contains the information necessary to get Regolith running on a computer.  There are two primary ways of installing Regolith; via an Ubuntu-based installer and via a Personal Package Archive (PPA).  Either of these methods will result in essentially the same user experience, although installing via the Ubuntu installer will result in a package selection that is different from installing vanilla Ubuntu. However by adding and removing specific packages a vanilla Ubuntu system can be configured.
+Esta sección contiene la información necesaria para lograr correr Regolith en tu computadora. Hay dos maneras principales de instalar Regolith; a traves de un instalador basado en Ubuntu y a traves de un Personal Package Archive (PPA). Cualquiera de esos dos metodos tendrá como resultado esencialmente la misma experiencia de usuario, a pesar de que la instalación a traves del instalador de Ubuntu resultara en una colección de paquetes que es diferente a la de una instalación vainilla de Ubuntu. De todas maneras agregando y eliminando paquetes especificos, se puede configurar un sistema vainilla de Ubuntu.
 
-## Prerequisites
+## Pre-requisitos
 
-### Ubuntu Installer
+### Instalador de Ubuntu
 
-* A [modern computer](https://help.ubuntu.com/community/Installation/SystemRequirements) that can boot from a USB flash drive.
-* Free space on a local drive.  The installer will allow for managing existing partitions or installing on an empty volume.
-* An internet connection to install updates during and after installation.
-* A monitor with at least VGA (1024 x 768) resolution.  Regolith is optimized for FHD (1920 x 1080) screens.
-* An empty USB flash drive with at least 4 Gb of storage space.
+* Una [computadora moderna](https://help.ubuntu.com/community/Installation/SystemRequirements) que pueda arrancar desde un dispositovo USB.
+* Espacio libre en el disco local. El instalador le permitirá elegir entre administrar particiones existentes o instalar en un volumen vacio.
+* Una conexión a internet para instalar actualizaciones durante y luego de la instalación.
+* Un monitor con al menos una resolución de VGA (1024 x 768). Regolith está optimizado para pantallas FHD (1920 x 1080).
+* Una memoria USB vacia con al menos 4Gb de espacio de almacenamiento.
 
 ### PPA
 
-* An existing Ubuntu installation with admin rights, version 18.04 or 20.04.
-* 100Mb of free storage space to install the Regolith desktop environment.
-* An internet connection to install updates during and after installation.
+* Una instalación de Ubuntu previa con privilegios de administrador, versión 18.04 o 20.04.
+* 100Mb de espacio libre para instalar el entorno de escritorio Regolith.
+* Una conexión de internet para instalar actualizaciones durante y luego de la instalación.
 
-## Deciding on Installation Method
+## Decidiendo el Método de Instalación
 
-If you already have an Ubuntu system of a supported version, than adding Regolith via PPA is the faster and less disruptive method.  The Ubuntu installer method is better for starting from scratch, installing into a virtual machine, or just ensuring that any existing software is not conflicting with Regolith.  Some users have had some issues with getting Regolith to work properly with other Ubuntu derivative desktop environments.  Installing a fresh instance can sidestep these potential issues.
+Si ya tienes un sistema Ubuntu de una versión soportada, entonces agregar agregar Regolith a traves de su PPA es el método más rápido y menos disruptivo. El método del instalador de Ubuntu es mejor para empezar de cero, instalarlo en una máquina virtual, o simplemente para asegurarse de que cualquier software ya existente no esté en conflicto con Regolith. Algunos usuarios han tenido algunos problemas logrando que Regolith corra de manera correcta con otros entornos de escritorio derivados de Ubuntu. Instalando una instancia nueva puede dejar de lado esos potenciales problemas.

@@ -1,45 +1,48 @@
 ---
-title: "Overview"
-linkTitle: "Overview"
+title: "Introducción"
+linkTitle: "Introducción"
 weight: 1
 description: >
-  What is Regolith?
+  ¿Qué es Regolith?
 ---
 
-Regolith is a collection of open source components that together form a general-purpose interface for using a computer, also known as a *desktop environment* [[1]](#footnotes). Many of the UI components that are used to build Regolith are independent open source projects [[2]](#footnotes) that have simply been integrated, packaged, and configured for a specific workflow and visual aesthetic. Most computer desktop environments are optimized for ease-of-use and familiarity with commercial operating systems such as Microsoft Windows or Apple's OS X. In contrast, Regolith provides a way of interacting with a computer that is **optimized for user productivity** and does not attempt to mimic legacy UI paradigms for familiarity.
+Regolith es una colección de componentes open-source que todos juntos forman una interfaz de propositos generales para usar una computadora, también conocida como *entorno de escritorio* [[1]](#footnotes). Muchos de los componentes de IU que se usan para construir Regolith son proyectos open-source independientes [[2]](#footnotes) que simplemente fueron integrados, empacados, y configurados para un flujo de trabajo y estética visual especificos. La mayoría de los entornos de escritorio estan optimizados para la facilidad-de-uso y familiaridad con sistemas opreativos comerciales tales como Windows de Microsoft o OS X de Apple. En contraste, Regolith provee una manera de interactuar con la computadora que está **optimizada para aumentar la productividad del usuario** y no intenta copiar viejos paradigmas de IU para familiaridad.
 
-## The Keyboard, the Mouse, and the Monitor
+## El teclado, el mouse, y el monitor
 
-Regolith places emphasis on the keyboard input device over the mouse, in relation to most other desktop environments.  This is for one reason: productivity.  Specifically, the amount of time it takes to press a keybinding on the keyboard is less than the amount of time it takes your hand to move from the keyboard to the mouse, execute a series of clicks to get to a desired action, and then get your hands back on the keyboard.  While this time difference is small, it adds up quickly due to frequent interactions.  
+Regolith pone énfasis en el dispositivo del teclado por encima del mouse, en relación a la mayoría de los otros entornos de escritorio. Esto es por una razón: Productividad. Especificamente, la cantidad de tiempo que toma presionar un atajo en el teclado es menor a la cantidad de tiempo que toma llevar tu mano del teclado al mouse, ejecutar una serie de clicks para obtener la acción deseada, y volver a situar tus manos en el teclado. Si bien esta diferencia de tiempo es pequeña, se acumula rápidamente debido a las interacciones frecuentes.
 
-But this benefit comes with a one-time cost: learning the keybindings.  In exchange for this up-front cost, the user is subsequently able to perform general computer actions faster and with less foreground thought.  Additionally, by pushing more of the computer actions into the user's memory, more of the computer's visual interface can be devoted to the user's applications.  Put another way, the Regolith interface devotes more bandwidth to the user's application and less to the general management of the computer.  And because ultimately the productive output of the user is a result of interaction with *applications*, the general productivity of the user is increased. This is a subjective benefit, and may be more or less important to the user.
+Pero este beneficio viene con un costo de una sola vez: Aprender los atajos. A cambio de este visible costo, el usuario es subsecuentemente capaz de realizar acciones generales de la computadora de manera más rápida y con menos pensamiento en primer plano. Adicionalmente, al empujar más de las acciones de la computadora en la memoria del usuario, más de la interfaz visual de la computadora puede ser dedicada a las aplicaciones del usuario. Puesto de otra manera, la interfaz de Regolith dedica más ancho de banda a la aplicación del usuario y menos a la administración en general de la computadora. Y debido a que en ultima instancia la productividad del usuario es un resultado de la interacción con *aplicaciones*, la productividad general del usuario es aumentada. Este es un beneficio subjetivo, y puede ser más o menos importante para el usuario.
 
-## Tiling Windows
+## Ventanas Tiling
 
-Perhaps the most user-impacting component in Regolith is the window manager, an open source project called <code>i3-gaps</code> (which is a customization of <code>i3-wm</code>).  This program organizes windows into tiles.  By default, `i3-gaps` divides the screen into sections for each window, all of which add up to the entire screen.  If only one program is presenting a window, then that window occupies the entire screen.  For two windows, both get an equal portion of the screen, and so on.  By using keybindings, the user can tell `i3-gaps` to resize, move, and otherwise organize windows in other ways. A key advantage to this approach is that the user is freed from micro managing window layouts (at the cost of having to learn the keybindings).
+Quizás el componente más impactante para el usuario en Regolith es el administrador de ventanas, un proyecto open-source llamado `i3-gaps` (que es una personalización de `i3-wm`). Este programa organiza las ventanas en *tiles* [[3]](#footnotes). Por defecto, `i3-gaps` divide la pantalla en secciones para cada ventana, las cuales ocupan la totalidad de la pantalla. Para 2 ventanas, a ambas se le asigna una porción igual de la pantalla, y así subsecuentemente. Usando atajos, el usuario puede decirle a `i3-gaps` que les cambie el tamaño, mueva, y organizar las ventanas en otras maneras. Una ventaja clave de este acercamiento es que el usuario esta liberado del micro manejo de la disposición de las ventanas (al costo de tener que aprender los atajos).
 
-## Launching Applications
+## Lanzar Aplicaciones
 
-It is common for desktop environments to display application launchers throughout the user interface, in the form of icons and text.  Folders, docks, and context menus are used to present a form of menu to the user.  Despite them appearing visually different, they are have one function: to launch an application.  As with keybindings, in Regolith this user interface of launching apps is refined and minimized.  Desktop icons, panels, and docks are not used.  Rather, the user invokes the application launcher which presents a menu of applications sorted by frequency of usage.  The user may begin typing the name or function of the application they intend to load and the list is filtered accordingly.  In addition, frequently used applications such as terminal and browser have specific keybindings.  With this UI treatment, there is no fixed overhead on the display for the presentation of application launchers.  This provides the user benefit of more screen space devoted to the user's applications.
+Es común para los entornos de escritorio mostrar los lanzadores de aplicaciones a traves de la intefaz de usuario, en la forma de iconos y texto. Carpetas, puertos, y menues de contexto son usados para presentar una forma de menú al usuario. A pesar de parecer visualmente distintos, tienen una sola funcion: Lanzar una aplicación. Como con los atajos, en Regolith esta interfaz de usuario de lanzar aplicaciones está refinada y minimizada. Iconos de escritorio, paneles, y puertos no son usados. En su lugar, el usuario invoca el lanzador de aplicaciones que presenta un menú de aplicaciones ordenadas por su frecuencia de uso. El usuario puede comenzar a tipear el nombre o la función de la aplicación que tiene intención de cargar y la lista es filtrada acorde a lo que tipea. También, las aplicaciones frecuentemente usadas como la Terminal y el Navegador tienen atajos especificos. Con este tratamiento de la IU, no hay una sobrecarga fija en la pantalla para la presentación de los lanzadores de aplicaciones. Esto provee al usuario del beneficio de tener más espacio de pantalla dedicado a las aplicaciones.
 
-## System Management
 
-Modern computers are complex machines with many observable attributes. For the day-to-day operation however, most of these can be ignored.  Each user has a specific subset of system state they care about, and so there is no one perfect configuration for every user.  By default Regolith provides on-screen state information on the bar for the user's workspaces, keybindings help, network and CPU utilization, notifications, and the system time.  More or less items can be configured by the user as needed. 
+## Administración del Sistema
 
-In addition to the transient system information provided on the bar, the system configuration can be changed by the user via the <code>Settings</code> application.  This configuration system is part of GNOME, and provides a rich set of UI pages to configure WiFi networks, Bluetooth devices, displays, and other devices.
+Las computadoras modernas son máquinas complejas con muchos atributos observables. Sin embargo para la operación día-a-día, muchos de ellos pueden ser ignorados. Cada usuario tiene un subconjunto especifico de estados del sistema que le interesan, entonces no hay una sola configuración perfecta para todos los usuarios. Por defecto Regolith provee información de estado en-pantalla en la barra de tareas de los espacios de trabajo del usuario, ayuda de los atajos, utilización del CPU y la red, notificaciones, y la hora del sistema. El usuario puede configurar más o menos items a medida que lo necesite.
 
-### Configuration Files
+Sumado a la información transitoria del sistema provista en la barra, la configuración del sistema puede ser cambiada por el usuario a traves de la aplicación `Settings`. Este sistema de configuración es parte de GNOME, y provee un generoso conjunto de páginas de IU para configurar redes WI-FI, dispositivos Bluetooth, pantallas, y otros dispositivos.
 
-While most of the common tasks of system management and administration are handled by graphical interfaces such as `Settings`, lower-level configuration is done by editing configuration files that are installed as part of Regolith.  For example, to change what information is presented on the bar, or to tweak the border width of windows, editing configuration files is required.  These customizations are covered in the [customization section](/docs/customize/).
+### Archivos de Configuración
 
-## Where next?
+Mientras que la mayoría de las tareas más comunes del manejo y administración del sistema se gestionan mediante interfaces gráficas tales como `Settings`, las configuraciónes de bajo-nivel se realizan editando los archivos de configuración que son instalados como parte de Regolith. Por ejemplo, para cambiar que información es mostrada en la barra, o retocar el ancho del borde de las ventanas, se requiere editar los archivos de configuración. Esas personalizaciones están cubiertas en la [sección de personalización](/docs/customize/).
 
-* [Getting Started](../getting-started/): Get started with Regolith
-* [The Interface](../interface/): Understand how to perform actions in Regolith
-* [Keybindings](../reference/keybindings/): Learn the keybindings
+## ¿Y ahora a donde?
+
+* [Primeros Pasos](../getting-started/): Da tus primeros pasos con Regolith
+* [La Interfaz](../interface/): Entiende como llevar a cabo acciones en Regolith
+* [Atajos](../reference/keybindings/): Aprende los atajos
 
 ### Footnotes 
 
-1: The term came from a time when computers were large and were used on desks. That is no longer the case but we still use the term.  A *desktop environment* is generally applicable to any computer with a keyboard, display, and some type of pointing device.
+1: El termino viene de un tiempo en el que las computadoras eran enormes y eran usadas en escritorios. Ya no es el caso, pero seguimos usando el término. Un *entorno de escritorio* es aplicable generalmente a cualquier computadora con un teclado, pantalla, y algún tipo de dispositivo para apuntar.
 
-2: See [the interface page](../interface/) for specifics about the component Regolith is composed of.
+2: Ver [la página de interfaz](../interface/) para detalles especificos de como el componente de Regolith está compuesto.
+
+3: No hay una traducción semánticamente correcta para lo que *tile* desea expresar. En el sentido literal significa *baldoza*, *placa*, *azulejo*, ó incluso *ficha*. 
