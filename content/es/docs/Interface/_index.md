@@ -1,20 +1,20 @@
 
 ---
-title: "The Interface"
-linkTitle: "Interface"
+title: "La Interfaz"
+linkTitle: "Interfaz"
 weight: 3
 description: >
-  Details about the Regolith interface.
+  Detalles sobre la interfaz de Regolith.
 ---
 
-The Regolith UI is composed of the following open source projects, and their respective transitive dependencies:
+La IU de Regolith esta compuesta por los siguientes proyectos open-source, y sus respectivas dependencias transitivas:
 
-* Xorg X display server
-* i3-gaps window manager
-* Rofi application launcher
-* i3bar bar
-* i3xrocks bar script scheduler, based on i3blocks
-* Rofication notification system
-* Remontoire shortcut window
-* gdm3 desktop session manager
-* gnome-flashback GNOME session manager
+* Servidor de pantalla Xorg X
+* Gestor de ventanas i3-gaps
+* Lanzador de aplicaciones Rofi
+* Barra i3bar
+* Organizador de scripts de barra i3xrocks, basado en i3blocks.
+* Sitema de notifiaciones Rofication
+* Ventana de atajos Remontoire
+* Gestor de sesiones de escritorio gdm3
+* Gestor de sesión GNOME gnome-flashback
