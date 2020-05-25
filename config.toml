@@ -76,6 +76,14 @@ languageName ="Español"
 # Weight used for sorting.
 weight = 3
 
+[languages.hu]
+title = "Regolith"
+description = "Regolith Linux Weboldal"
+contentDir = "content/hu"
+languageName ="magyar"
+# Weight used for sorting.
+weight = 4
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
