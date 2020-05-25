@@ -110,7 +110,7 @@ linkTitle = "Regolith Linux"
           <div class="col-sm">Desktop UI</div>
         </div>
         <div class="row">
-          <div class="col-lg"><a href="https://wiki.gnome.org/Projects/GnomeFlashback">Alberts Muktupāvels</a></div>
+          <div class="col-lg"><a href="https://wiki.gnome.org/Projects/GnomeFlashback">Alberts Muktupāvels and Dmitry Shachnev</a></div>
           <div class="col-sm">Desktop UI</div>
         </div>
         <div class="row">
@@ -122,7 +122,7 @@ linkTitle = "Regolith Linux"
           <div class="col-sm">Desktop UI</div>
         </div>
         <div class="row">
-          <div class="col-lg"><a href="https://github.com/arcticicestudio">Arctic Ice Studio</a> and <a href="https://ethanschoonover.com/solarized/">Ethan Schoonover</a></div>
+          <div class="col-lg"><a href="https://github.com/arcticicestudio">Arctic Ice Studio</a> and <a href="https://ethanschoonover.com/solarized/">Ethan Schoonover</a> and <a href="https://github.com/ayu-theme">Ayu Theme</a></div>
           <div class="col-sm">Colors</div>
         </div>
         <div class="row">
@@ -136,10 +136,6 @@ linkTitle = "Regolith Linux"
         <div class="row">
           <div class="col-lg"><a href="https://snwh.org/paper">Sam Hewitt</a></div>
           <div class="col-sm">Icons</div>
-        </div>
-        <div class="row">
-          <div class="col-lg"><a href="https://st.suckless.org">suckless.org</a></div>
-          <div class="col-sm">Terminal</div>
         </div>
         <div class="row">
           <div class="col-lg"><a href="http://wallpaper-site.webflow.io/">Psiu Puxa</a>,<a href="https://unsplash.com/photos/C0OD8OM-oM0">Lucas Bellator</a>, and <a href="https://unsplash.com/photos/xnqVGsbXgV4">Luca Bravo</a></div>
