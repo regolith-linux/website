@@ -1,5 +1,5 @@
 ---
-title: Interact
+title: Interagir
 menu:
   main:
     weight: 40
@@ -8,11 +8,11 @@ menu:
 {{< blocks/section color="light">}}
 
 {{% blocks/feature icon="fas fa-hands-helping" title="Issues Looking for Help" url="https://github.com/regolith-linux/regolith-desktop/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22" url_text="Issues"%}}
-If you'd like to get involved with the development of Regolith, have a look at this list of issues that need help. For any issue that lacks detail or is otherwise ambiguous, just comment in the issue with questions and we'll do what we can to fill in the gaps.
+Si vous souhaitez vous impliquer dans le développement de Regolith, vous pouvez peut être aider sur une des issues de la liste. Si une issue manque de détail ou si la description est ambigue, il vous suffit d'ajouter un commentaire avec votre question et nous essaierons de vous apporter des précisions.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fas fa-fast-forward" title="Future Projects" url="https://github.com/orgs/regolith-linux/projects" url_text="Open Projects"%}}
-To get a sense of where we are headed, checkout the upcoming projects on GitHub.
+Pour avoir une idée sur ce qui est prévu, jetez un oeil les projets à venir sur Github.
 {{% /blocks/feature %}}
 
 {{< /blocks/section>}}
