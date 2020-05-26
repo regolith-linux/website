@@ -1,35 +1,36 @@
 ---
-title: "System Configuration"
-linkTitle: "System Configuration"
+title: "Configuración de Sistema"
+linkTitle: "Configuración de Sistema"
 weight: 3
 description: >
-  Learn how to change settings in the Regolith desktop.
+  Aprende cómo cambiar ajustes en el escritorio Regolith.
 ---
 
-## GNOME control center (also known as <code>Settings</code>).
+## Centro de Control GNOME (también conocido como <code>Configuración</code>).
 
-A key difference between Regolith and other environments described as minimal is the integration of the GNOME settings backend.  This provides a well-tested, consistent, and friendly way of configuring your environment and computer.  To load the settings app, launch "Settings" from Rofi or press <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span>.  
+Una diferencia clave entre Regolith y otros ambientes descriptos como minimalistas es la integración del backend de ajustes GNOME. Esto provee una manera bien testeada, consistente, y amigable de configurar tu ambiente y computadora. Para cargar la aplicación de configuración, lanza "Configuración" desde Rofi o presiona <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span>.
 
-Settings is a special app in Regolith in that it is launched in floating mode.  This is because typically when loading settings a user is looking to make a specific change and then exit back to their work. Once loaded use the tab sections on the left of the window to select which item you wish to configure.
+Configuración es una aplicación especial en Regolith que se lanza en modo flotante. Esto es porque típicamente cuando se cargan las configuraciones el usuario está enfocado en hacer un cambio especifico y luego volver a su trabajo. Una vez cargada usa las pestañas de selección a la izquierda de la ventana para seleccionar qué item deseas configurar.
 
-## i3-wm
+## i3-wm (Gestor de Ventanas)
 
-The i3 window manager is not part of GNOME and so it's configuration is not viewable or changable from the GNOME control center.  Rather, the user must edit the config file and reload i3 to make changes.  In Regolith, the i3 config file is at <code>/etc/regolith/i3/config</code> and users can supply their own copy that will override this default if placed at <code>~/.config/regolith/i3/config</code>.
+El gestor de ventanas i3 no es parte de GNOME y tampoco está disponible ver o cambiar su configuración desde el panel de control GNOME. En su lugar, el usuario debe editar el archivo `config` y recargar i3 para hacer los cambios. En Regolith, el archivo de configuración i3 está en <code>/etc/regolith/i3/config</code> y los usuarios pueden crear su propia copia del archivo que invalidará la que toma por defecto si la colocan en <code>~/.config/regolith/i3/config</code>.
 
-Many things about Regolith can be configured in the i3 config file.  It is best to read the [i3 user guide](https://i3wm.org/docs/userguide.html) to understand what and how to modify this file.
+Muchas cosas sobre Regolith pueden ser configuradas en el archivo de configuración de i3. Lo mejor es leer la [guía de usuario i3](https://i3wm.org/docs/userguide.html) para entender qué y cómo modificar este archivo.
 
 {{% pageinfo %}}
-Maintaining a user copy of the i3 config file requires more work when upgrading Regolith, as changes have to managed from the defaults into the user config to support new features in subsequent versions. If possible, it is better to rely on [Xresource overrides](../../howto/override-xres) to customize i3.  
+
+Conservar a una copia del usuario del archivo de configuración i3 requiere más trabajo cuando se actualiza Regolith, ya que los cambios tienen que ser gestionados desde los archivos por defecto a la configuración del usuario para soportar las nuevas características en las versiones subsecuentes. Si es posible, es mejor basarse en la [sobreescritura de Xresource](../../howto/override-xres) para personalizar i3.
 {{% /pageinfo %}}
 
-## i3bar
+## i3bar (Barra de Estado)
 
-The i3bar configuration is defined in the i3 config file listed directly above, but the i3bar has it's own configuration for status items.  To change which information is displayed in the bar, the config directory is <code>/etc/regolith/i3xrocks/conf.d</code>.  There is one file in this directory for every status item, plus `01_setup`.  The prefixed number defines the order in which the blocks are displayed on the bar.  [See here](../../howto/add-remove-blocklets) for information about customization.
+La configuración de i3bar está definida en el archivo de configuración i3 listado aquí arriba, pero la i3bar tiene su propia configuración para los items de estado. Para cambiar que información se muestra en la barra, el directorio de configuración es <code>/etc/regolith/i3xrocks/conf.d</code>. En este directorio hay un archivo por cada uno de los items de estado, aparte de `01_setup`. El número del prefijo indica en qué orden van a ser mostrados los bloques en la barra. [Mira aquí](../../howto/add-remove-blocklets) para información sobre personalizaciones.
 
-## Look
+## Aspecto
 
-The look of Regolith is configured via Xresources, that live in <code>/etc/regolith/styles/</code>.  This topic is covered in detail in the [Customize](../../customize/) section of the documentation.
+El aspecto de Regolith es configurado a través de Xresources, que se aloja en <code>/etc/regolith/styles/</code>. Este tópico se cubrirá en detalle en la sección de [Personalización](../../customize/) de la documentación.
 
-## Session
+## Sesión
 
-When Regolith is initially loaded, a script is run that configures the system and launches <code>i3-wm</code>.  While it is not recommended to modify this script, it can provide details about how Regolith is structured and what policy it implements when loading configuration.  This file is readable at <code>/usr/bin/i3-gnome-flashback</code>.  In fact, this script could be considered the initial seed of the Regolith project and was taken from the [i3-gnome-flashback](https://github.com/deuill/i3-gnome-flashback) project.
+Cuando inicialmente se carga Regolith, se corre un script que configura el sistema y lanza el <code>i3-wm</code>. Si bien no se recomienda modificar este script, puede proveer detalles de cómo está estructurado Regolith y cual es la política que implementa cuando carga la configuración. Este archivo puede ser visto en <code>/usr/bin/i3-gnome-flashback</code>. De hecho, este script puede ser considerado la semilla inicial de el proyecto Regolith y fue tomado de el proyecto [i3-gnome-flashback](https://github.com/deuill/i3-gnome-flashback).
