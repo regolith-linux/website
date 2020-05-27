@@ -1,0 +1,310 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regolith – Customize</title>
+    <link>https://regolith-linux.org/de/docs/customize/</link>
+    <description>Recent content in Customize on Regolith</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://regolith-linux.org/de/docs/customize/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Look</title>
+      <link>https://regolith-linux.org/de/docs/customize/look/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/de/docs/customize/look/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Looks provided by Regolith have the package prefix &lt;code&gt;regolith-look-&lt;/code&gt;.  For example, another look sporting the Solarized color palette and a different GTK theme and icon set is called &lt;code&gt;regolith-look-solarized-dark&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;finding-looks&#34;&gt;Finding Looks&lt;/h2&gt;
+&lt;p&gt;All &lt;code&gt;look&lt;/code&gt; packages using this naming scheme can be found via the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt search ^regolith-look-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;installing-a-look&#34;&gt;Installing a Look&lt;/h2&gt;
+&lt;p&gt;Looks can be installed via the &lt;code&gt;apt&lt;/code&gt; tool or with any tool that can install Debian packages on the system, such as &lt;code&gt;synaptic&lt;/code&gt;.  For example, this command will install the &lt;code&gt;Ubuntu&lt;/code&gt; look:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install regolith-look-ubuntu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you pay attention to the output of &lt;code&gt;apt&lt;/code&gt; you may notice that in addition to installing the look, &lt;code&gt;fonts-font-awesome&lt;/code&gt; will also be installed. As a feature, looks are able to depend on any resources or artifacts they require as packages.  This ensures that once a &lt;code&gt;look&lt;/code&gt; is installed, the user does not need to care about what other things that &lt;code&gt;look&lt;/code&gt; make require to function properly.  It&amp;rsquo;s taken care of by the package manager.&lt;/p&gt;
+&lt;h2 id=&#34;switching-to-a-look&#34;&gt;Switching to a Look&lt;/h2&gt;
+&lt;p&gt;Once a &lt;code&gt;look&lt;/code&gt; has been installed, a utility command called &lt;code&gt;regolith-look&lt;/code&gt; can be used to enable it.  To enable the &lt;code&gt;ubuntu&lt;/code&gt; &lt;code&gt;look&lt;/code&gt; installed in the previous step, try the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; ubuntu
+$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The command will mention that it created a file in your user directory.  This file is an Xresource file, and it&amp;rsquo;s stored in a specific path such that &lt;code&gt;i3-gnome-flashback&lt;/code&gt; will look for it upon session start.  Let&amp;rsquo;s have a look at the file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ cat ~/.Xresources-regolith
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/ubuntu/root&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In essence, our Xresource file is simply pointing to another Xresource file.  Lets look there:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ cat /etc/regolith/styles/ubuntu/root
+! -- Styles - Colors
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/ubuntu/color&amp;#34;&lt;/span&gt;
+
+! -- Styles - Fonts
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/ubuntu/typeface&amp;#34;&lt;/span&gt;
+
+! -- Styles - Theme
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/ubuntu/theme&amp;#34;&lt;/span&gt;
+
+! -- Applications
+! These files map values defined above into specific app settings.
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/st-term&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/i3-wm&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/i3xrocks&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/rofi&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/gnome&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here we can see that there are separate Xresource files that define color, typeface and theme (icon, GTK), and these are loaded and then applied to the UI components integrated by Regolith: st (terminal), i3-wm, i3xrocks, rofi, and GNOME.&lt;/p&gt;
+&lt;h2 id=&#34;refreshing-a-look&#34;&gt;Refreshing a Look&lt;/h2&gt;
+&lt;p&gt;There may be times that the UI of the system and the Regolith look get out of sync.  For example, if a program sets the wallpaper or icon theme externally, this will not be reflected in the Xresource settings.  Regolith will only update itself upon login if it detects of Xresource changes have been made.  If you wish to force Regolith to reload the UI based on the Xresource settings, run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;learning-more&#34;&gt;Learning More&lt;/h2&gt;
+&lt;p&gt;To dig deeper, read about &lt;code&gt;Styles&lt;/code&gt; in the following page and have a look at the &lt;a href=&#34;https://github.com/regolith-linux/regolith-styles&#34;&gt;&lt;code&gt;regolith-styles&lt;/code&gt; README&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Styles</title>
+      <link>https://regolith-linux.org/de/docs/customize/styles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/de/docs/customize/styles/</guid>
+      <description>
+        
+        
+        &lt;p&gt;As stated in the &lt;a href=&#34;https://github.com/regolith-linux/regolith-styles&#34;&gt;repo readme&lt;/a&gt;, Regolith styles are a convention by which a set of files which define key/value pairs are loaded into memory and can be queried by &lt;code&gt;xrdb&lt;/code&gt; or &lt;code&gt;xrescat&lt;/code&gt;.  Xresources employes the &lt;a href=&#34;https://en.wikipedia.org/wiki/C_preprocessor&#34;&gt;C preprocessor&lt;/a&gt; to allow for complex behaviors such as including more files, defining constants, and conditional expressions.  In Regolith, only two preprocessor directives are used: &lt;code&gt;#include&lt;/code&gt; and &lt;code&gt;#define&lt;/code&gt;.  &lt;code&gt;#include&lt;/code&gt; statements are used to reference other files.  Collections of files called &lt;code&gt;looks&lt;/code&gt; were covered in the previous section of this guide.  &lt;code&gt;#define&lt;/code&gt; statements simply allow for a symbolic value to be replaced by a literal value, like defining a variable.&lt;/p&gt;
+&lt;h2 id=&#34;defines&#34;&gt;Defines&lt;/h2&gt;
+&lt;p&gt;To maximize the re-use of theme information in Regolith, Xresources are divided into two categories of files: definition files and application files.  The definition files make heavy use of the &lt;code&gt;define&lt;/code&gt; directive.  They essentially bind an abstract key, such as &amp;ldquo;blue&amp;rdquo; or &amp;ldquo;terminal font&amp;rdquo; to a literal value, such as &lt;code&gt;#0000FF&lt;/code&gt; or &lt;code&gt;Source Code Pro Medium&lt;/code&gt;.  In making changes to files, it&amp;rsquo;s expected that these defines will change.  The user may wish to specify a different icon set, or typeface, and would do so by modifying or creating a new definition file.  Once this file is created, it needs to be referenced by a top-level Xresource file in &lt;code&gt;~/Xresource-regolith&lt;/code&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Note that when referencing other files in Xresources via the &lt;code&gt;#include&lt;/code&gt; directive, shortcuts like &lt;code&gt;$HOME&lt;/code&gt; and &lt;code&gt;~/&lt;/code&gt; are not available.  Absolute paths are required.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;application-xresource-files&#34;&gt;Application Xresource files&lt;/h2&gt;
+&lt;p&gt;As mentioned previously, in &lt;code&gt;/etc/regolith/styles&lt;/code&gt; lives a number of Xresources, including those for specific applications such as &lt;code&gt;st&lt;/code&gt; or &lt;code&gt;i3-wm&lt;/code&gt;.  Opening these files will show a mapping of the abstract keys provided by the defines files to application specific keys.  In this way, the general description of the look can be mapped to any UI component or application that can read from Xresources.&lt;/p&gt;
+&lt;h2 id=&#34;loading-order&#34;&gt;Loading Order&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;i3-gnome-flashback&lt;/code&gt; session init script will check for the first Xresources file it finds in the following order:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;~/.Xresources-regolith&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/regolith/styles/root&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In addition to a Regolith Xresources file, &lt;code&gt;~/.Xresources&lt;/code&gt; will also be loaded if it exists upon session start.&lt;/p&gt;
+&lt;p&gt;After loading a root Xresource file, the session init script then merges any entries found in the &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; file.  This file provides a quick way of simply overriding a few values without having to copy the entire set of resource definitions.&lt;/p&gt;
+&lt;h2 id=&#34;reloading-xresources&#34;&gt;Reloading Xresources&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;regolith-look&lt;/code&gt; command can be used to reload all Xresource entries as they are loaded upon session initialization:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Alternatively, the &lt;code&gt;xrdb&lt;/code&gt; command can be used to refresh specific Xresource files after they have changed.  For example, to reload the user Xresource file run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ xrdb -merge ~/.Xresources-regolith
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;verification&#34;&gt;Verification&lt;/h3&gt;
+&lt;p&gt;You can test that a change has been made to your Xresources file by querying it from the command line.  If a change was made to key &lt;code&gt;foo.bar&lt;/code&gt; then the following command will return it&amp;rsquo;s current value, or &lt;code&gt;empty&lt;/code&gt; if unset:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ xrescat foo.bar empty
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Compositors</title>
+      <link>https://regolith-linux.org/de/docs/customize/compositors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/de/docs/customize/compositors/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Pay special attention to this section if you are experiencing odd visual glitches or slow graphics performance.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;As mentioned previously, a compositor is a UI component that visual effects to windows before they are rendered on-screen.  Many desktop environments integrate a compositor directly into the window manager, making it difficult to switch out or disable.  In Regolith, the compositor is defined as a pluggable &amp;ldquo;extension point&amp;rdquo; in the packaging system. This means that compositors can be switched out simply by installing the packages that contain them.  The underlying packaging system will ensure there are no conflicts and that all the dependencies of a given compositor are also installed.&lt;/p&gt;
+&lt;h2 id=&#34;finding-available-compositors&#34;&gt;Finding Available Compositors&lt;/h2&gt;
+&lt;p&gt;The following command will list all compositors configured to work with Regolith:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;apt search regolith-compositor-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;At least the following three compositors should be available:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Package Name&lt;/th&gt;
+&lt;th&gt;Backend&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-compositor-compton-glx&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/yshui/picom&#34;&gt;Compton&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The default compositor for Regolith.  This compositor is modern, maintained, and handles screen tearing.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-compositor-xcompmgr&lt;/td&gt;
+&lt;td&gt;xcompmgr&lt;/td&gt;
+&lt;td&gt;An early compositor that may offer more consistent performance if &lt;code&gt;compton-glx&lt;/code&gt; is promblematic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-compositor-none&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;A no-op package that does not run a Compositor. Best for absolute UI performance, at the cost of visual effects.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;installing-a-compositor&#34;&gt;Installing a Compositor&lt;/h2&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Due to the way that the compositor is managed by i3-wm, you must log out and back in for compositor changes to take effect.  Restarting i3 is not sufficient.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Run the following package install command to swap out the compositor.  In this case we&amp;rsquo;ll run &lt;code&gt;xcompmgr&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt install regolith-compositor-xcompmgr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Log back in and the new compositor should be loaded.  You can verify by checking the process list for &lt;code&gt;xcompmgr&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ ps aux &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; grep xcompmgr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;overriding-a-compositor-configuration&#34;&gt;Overriding a Compositor Configuration&lt;/h2&gt;
+&lt;h3 id=&#34;comptonpicom&#34;&gt;Compton/Picom&lt;/h3&gt;
+&lt;p&gt;To provide your own Compton/Picom compositor config, copy the default or create your own and save it as &lt;code&gt;~/.config/regolith/compton/config&lt;/code&gt;.  Upon next session it will be loaded instead of the default config &lt;code&gt;/etc/regolith/compton/config&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Components</title>
+      <link>https://regolith-linux.org/de/docs/customize/components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/de/docs/customize/components/</guid>
+      <description>
+        
+        
+        &lt;p&gt;As previously mentioned, Regolith is a collection of existing open source components that are integrated into a desktop environment.  Due to standards regarding the way UI components should communicate and years of integration between components, for the most part is simple to swap out parts of the UI for others.&lt;/p&gt;
+&lt;p&gt;The following table lists each UI component and notes regarding it&amp;rsquo;s mutability:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;UI Component&lt;/th&gt;
+&lt;th&gt;Alternatives&lt;/th&gt;
+&lt;th&gt;Swappable&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Xorg&lt;/td&gt;
+&lt;td&gt;Unknown&lt;/td&gt;
+&lt;td&gt;Unknown&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-gaps&lt;/td&gt;
+&lt;td&gt;i3-wm, others&lt;/td&gt;
+&lt;td&gt;Difficult but possible&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3bar&lt;/td&gt;
+&lt;td&gt;Polybar, lemonbar, many others.&lt;/td&gt;
+&lt;td&gt;Yes, the i3 config file is changed to load a different bar.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks&lt;/td&gt;
+&lt;td&gt;i3blocks, barista, many others.&lt;/td&gt;
+&lt;td&gt;Yes, the i3 config file is changed to load a different status program.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Rofication&lt;/td&gt;
+&lt;td&gt;Dunst, gnome-flashback&lt;/td&gt;
+&lt;td&gt;Yes, the i3 config file is configured to load the Notification backend and Rofi UI, and i3xrocks is configured to load the blocklet.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Remontoire&lt;/td&gt;
+&lt;td&gt;Conky&lt;/td&gt;
+&lt;td&gt;Yes, the i3 config file is changed to load a different help program.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gdm3&lt;/td&gt;
+&lt;td&gt;lightdm, sddm, xdm, others.&lt;/td&gt;
+&lt;td&gt;This is configured in Ubuntu. Installing an alternative session manager should present a prompt to specify which to use.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gnome-flashback&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Due to the breadth of the topic, more details are not available here.  Experimenting with different UI components is a fun way to learn more about the internals of the operating system.  It is recommended to first experiment in a VM running Regolith to avoid breaking your working environment.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Packages</title>
+      <link>https://regolith-linux.org/de/docs/customize/packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/de/docs/customize/packages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The following graph generated by &lt;code&gt;debtree&lt;/code&gt; provides the dependency relationships of Regolith packages and some of their notable upstream dependencies:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://regolith-linux.org/regolith-desktop-graph-l2.png&#34; alt=&#34;Package Dependency Graph&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;source&#34;&gt;Source&lt;/h2&gt;
+&lt;h3 id=&#34;packages&#34;&gt;Packages&lt;/h3&gt;
+&lt;p&gt;Regolith&amp;rsquo;s packages are hosted on PPAs provided by launchpad.net:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;PPA&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Launchpad URL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ppa:regolith-linux/unstable&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Packages staged for developer testing.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://launchpad.net/~regolith-linux/+archive/ubuntu/unstable&#34;&gt;https://launchpad.net/~regolith-linux/+archive/ubuntu/unstable&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ppa:regolith-linux/stable&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Packages that have been tested but have not been committed to a release.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://launchpad.net/~regolith-linux/+archive/ubuntu/stable&#34;&gt;https://launchpad.net/~regolith-linux/+archive/ubuntu/stable&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ppa:regolith-linux/release&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Packages as provided by the current Regolith release&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://launchpad.net/~regolith-linux/+archive/ubuntu/release&#34;&gt;https://launchpad.net/~regolith-linux/+archive/ubuntu/release&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ppa:kgilmer/speed-ricer&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;General purpose packages that Regolith depends on that are not currently available via Ubuntu&amp;rsquo;s repos.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://launchpad.net/~kgilmer/+archive/ubuntu/speed-ricer&#34;&gt;https://launchpad.net/~kgilmer/+archive/ubuntu/speed-ricer&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;git-repositories&#34;&gt;Git Repositories&lt;/h3&gt;
+&lt;p&gt;The source code associated with Regolith packages is hosted on &lt;a href=&#34;https://github.com/regolith-linux&#34;&gt;Regolith Linux&amp;rsquo;s GitHub organization&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;installer-isos&#34;&gt;Installer ISOs&lt;/h3&gt;
+&lt;p&gt;The installer is produced using the &lt;a href=&#34;https://launchpad.net/cubic&#34;&gt;Cubic tool&lt;/a&gt; and providing the target ISO files as manual uploads to the Regolith Linux GitHub org.  The &lt;a href=&#34;https://github.com/regolith-linux/regolith-cubic-config&#34;&gt;README in &lt;code&gt;regolith-cubic-conf&lt;/code&gt;&lt;/a&gt; has more details.&lt;/p&gt;
+&lt;h2 id=&#34;build&#34;&gt;Build&lt;/h2&gt;
+&lt;p&gt;Regolith packages can be built, signed, and staged from the &lt;code&gt;regolith-builder&lt;/code&gt; repository.  See the &lt;a href=&#34;https://github.com/regolith-linux/regolith-builder&#34;&gt;project&amp;rsquo;s README&lt;/a&gt; for details.&lt;/p&gt;
+&lt;h2 id=&#34;package-δ-between-stock-ubuntu-and-regolith-linux&#34;&gt;Package Δ between Stock Ubuntu and Regolith Linux&lt;/h2&gt;
+&lt;p&gt;When installing Regolith via PPA, the user has control and visibility over all package changes via their package installation tool of choice, likely &lt;code&gt;apt&lt;/code&gt;, &lt;code&gt;dpkg&lt;/code&gt;, or &lt;code&gt;synaptic&lt;/code&gt;.  However when installing Regolith via the Ubuntu Installer, the user does not see what packages are installed as part of that process.  To cut down the size of the installer download, some packages were removed from the Ubuntu installer.&lt;/p&gt;
+&lt;h3 id=&#34;regolith-12&#34;&gt;Regolith 1.2&lt;/h3&gt;
+&lt;p&gt;For Regolith 1.2, the following packages are removed from stock Ubuntu:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ubuntu-session&lt;/li&gt;
+&lt;li&gt;libreoffice-*&lt;/li&gt;
+&lt;li&gt;rythmbox-*&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of course, any of these packages can be re-added by the user after installation using a variety of tools including the app store.&lt;/p&gt;
+&lt;h3 id=&#34;regolith-13&#34;&gt;Regolith 1.3&lt;/h3&gt;
+&lt;p&gt;For the 1.3 release of Regolith, changes from baseline Ubuntu are &lt;a href=&#34;https://regolith-linux.org/docs/reference/releases/regolith-1.3-release-notes/#iso-generation&#34;&gt;documented here&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

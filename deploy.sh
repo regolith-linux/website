@@ -1,25 +1,44 @@
-#!/bin/sh
+#!/bin/bash
 
-# If a command fails then the deploy stops
-set -e
+set -Eeu -o pipefail
 
-printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
+GIT_URL="git@github.com:regolith-linux/regolith-linux.github.io.git"
+GIT_REMOTE="${GIT_REMOVE:-origin}"
+GIT_BRANCH="${GIT_BRANCH:-master}"
+HUGO_ENV="${HUGO_ENV:-production}"
+
+echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+
+push_git() {
+  msg="Rebuilding site $(date)"
+
+  if [ $# -eq 1 ] ; then
+    msg="${1}"
+  fi
+
+  # Commit changes.
+  git commit -m "$msg"
+
+  # Push source and build repos.
+  git push -u "${GIT_REMOTE}" "${GIT_BRANCH}"
+  git subtree push --prefix public "${GIT_URL}" "${GIT_BRANCH}"
+}
+
+# Make sure there are no remnants behind
+rm -rf public/*
 
 # Build the project.
-env HUGO_ENV="production" hugo
-
-# Go To Public folder
-cd public
+hugo
 
 # Add changes to git.
-git add .
+git add --all
+git diff --staged --stat
 
-# Commit changes.
-msg="rebuilding site $(date)"
-if [ -n "$*" ]; then
-	msg="$*"
-fi
-git commit -m "$msg"
-
-# Push source and build repos.
-git push origin master
+while true; do
+    read -rp "Do you wish to push these changes? " yn
+    case $yn in
+        [Yy]* ) push_git "$@"; break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
