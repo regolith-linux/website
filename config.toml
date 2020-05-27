@@ -12,9 +12,9 @@ enableGitInfo = true
 # Language settings
 contentDir = "content"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 # Useful when translating.
-enableMissingTranslationPlaceholders = true
+enableMissingTranslationPlaceholders = false
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
