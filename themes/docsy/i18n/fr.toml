@@ -9,14 +9,14 @@ other = "Précédent"
 other = "Suivant"
 
 [ui_read_more]
-other = "Lire plus"
+other = "Lire la suite"
 
 [ui_search]
-other = "Chercher sur le site..."
+other = "Recherche..."
 
 # Used in sentences such as "Posted in News"
 [ui_in]
-other = "in"
+other = "dans"
 
 # Footer text
 [footer_all_rights_reserved]
@@ -36,8 +36,8 @@ other = "Dernière modification"
 [post_edit_this]
 other = "Modifier cette page"
 [post_create_issue]
-other = "Créer une issue de documentation"
+other = "Créer un ticket pour la documentation"
 [post_create_project_issue]
-other = "Créer une issue de projet"
+other = "Créer une ticket pour le projet"
 [post_posts_in]
 other = "Entrées dans"

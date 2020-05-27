@@ -98,7 +98,7 @@ linkTitle = "Regolith Linux"
     <div class="col-6 border rounded p-3">
       <div class="container">
         <div class="row">
-          <div class="col-lg"><a href="https://i3wm.org">Michael Stapelberg</a> and <a href="https://github.com/Airblader/i3">Ingo Bürk</a></div>
+          <div class="col-lg"><a href="https://i3wm.org">Michael Stapelberg</a> et <a href="https://github.com/Airblader/i3">Ingo Bürk</a></div>
           <div class="col-sm">IU de bureau</div>
         </div>
         <div class="row">
@@ -110,11 +110,11 @@ linkTitle = "Regolith Linux"
           <div class="col-sm">IU de bureau</div>
         </div>
         <div class="row">
-          <div class="col-lg"><a href="https://wiki.gnome.org/Projects/GnomeFlashback">Alberts Muktupāvels and Dmitry Shachnev</a></div>
+          <div class="col-lg"><a href="https://wiki.gnome.org/Projects/GnomeFlashback">Alberts Muktupāvels et Dmitry Shachnev</a></div>
           <div class="col-sm">IU de bureau</div>
         </div>
         <div class="row">
-          <div class="col-lg"><a href="https://github.com/jcstr">Jesús Castro</a> and <a href="https://github.com/deuill">Alex Palaistras</a></div>
+          <div class="col-lg"><a href="https://github.com/jcstr">Jesús Castro</a> et <a href="https://github.com/deuill">Alex Palaistras</a></div>
           <div class="col-sm">IU de bureau</div>
         </div>
         <div class="row">
@@ -122,7 +122,7 @@ linkTitle = "Regolith Linux"
           <div class="col-sm">IU de bureau</div>
         </div>
         <div class="row">
-          <div class="col-lg"><a href="https://github.com/arcticicestudio">Arctic Ice Studio</a> and <a href="https://ethanschoonover.com/solarized/">Ethan Schoonover</a> and <a href="https://github.com/ayu-theme">Ayu Theme</a></div>
+          <div class="col-lg"><a href="https://github.com/arcticicestudio">Arctic Ice Studio</a> et <a href="https://ethanschoonover.com/solarized/">Ethan Schoonover</a> et <a href="https://github.com/ayu-theme">Ayu Theme</a></div>
           <div class="col-sm">Couleurs</div>
         </div>
         <div class="row">
@@ -138,7 +138,7 @@ linkTitle = "Regolith Linux"
           <div class="col-sm">Icônes</div>
         </div>
         <div class="row">
-          <div class="col-lg"><a href="http://wallpaper-site.webflow.io/">Psiu Puxa</a>,<a href="https://unsplash.com/photos/C0OD8OM-oM0">Lucas Bellator</a>, and <a href="https://unsplash.com/photos/xnqVGsbXgV4">Luca Bravo</a></div>
+          <div class="col-lg"><a href="http://wallpaper-site.webflow.io/">Psiu Puxa</a>,<a href="https://unsplash.com/photos/C0OD8OM-oM0">Lucas Bellator</a>, et <a href="https://unsplash.com/photos/xnqVGsbXgV4">Luca Bravo</a></div>
           <div class="col-sm">Oeuvres graphiques</div>
         </div>
         <div class="row">
@@ -146,7 +146,7 @@ linkTitle = "Regolith Linux"
           <div class="col-sm">Infrastructure</div>
         </div>
         <div class="row">
-          <div class="col-lg"><a href="https://canonical.com">Canonical</a> and <a href="https://github.com">GitHub</a></div>
+          <div class="col-lg"><a href="https://canonical.com">Canonical</a> et <a href="https://github.com">GitHub</a></div>
           <div class="col-sm">Infrastructure</div>
         </div>
       </div>
