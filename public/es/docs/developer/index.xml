@@ -1,28 +1,57 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith – Developer</title><link>https://regolith-linux.org/es/docs/developer/</link><description>Recent content in Developer on Regolith</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://regolith-linux.org/es/docs/developer/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Looks</title><link>https://regolith-linux.org/es/docs/developer/looks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/es/docs/developer/looks/</guid><description>
-&lt;p>Looks are a combination of Xresource definitions and associated resources such as wallpapers, GTK themes, and icons that as a whole provide the user with a distinctive user interface, all expressed as a collection of files. The default looks that ship with Regolith are natural starting points for creating new ones, but it&amp;rsquo;s also possible to start from scratch as long as the required Xresource entries are defined. Ideally, looks are packaged as Debian packages with all required resources either provided by the look or added as a package dependency. By using the OS packaging system, required files and resources are ensured to be installed and available.&lt;/p>
-&lt;h2 id="required-files">Required Files&lt;/h2>
-&lt;p>Starting from scratch, the only mandatory file for a Look as a single Xresource definition file. This file must specify entries for Regolith&amp;rsquo;s required values, &lt;a href="../../reference/xresources">defined on this page&lt;/a>. However, it&amp;rsquo;s recommended to simply copy an existing look as a basis for customization, due to the compositional nature that Looks use.&lt;/p>
-&lt;h3 id="suggested-file-layout">Suggested File Layout&lt;/h3>
-&lt;p>It is suggested that a look be installed in &lt;code>/etc/regolith/styles/&amp;lt;look name&amp;gt;&lt;/code> and that the primary (or only) Xresource file is named &lt;code>root&lt;/code>. Existing Regolith Looks decompose the Xresources into types of resources and any config specific to a UI component. For example the Cahuella Look provides definitions for GNOME (theme), color, and typeface and a specific theme for Rofi since it&amp;rsquo;s configuration cannot be completely expressed via Xresource key/value pairs:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ find /etc/regolith/styles/cahuella -type f
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regolith – Developer</title>
+    <link>https://regolith-linux.org/es/docs/developer/</link>
+    <description>Recent content in Developer on Regolith</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://regolith-linux.org/es/docs/developer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Looks</title>
+      <link>https://regolith-linux.org/es/docs/developer/looks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/es/docs/developer/looks/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Looks are a combination of Xresource definitions and associated resources such as wallpapers, GTK themes, and icons that as a whole provide the user with a distinctive user interface, all expressed as a collection of files.  The default looks that ship with Regolith are natural starting points for creating new ones, but it&amp;rsquo;s also possible to start from scratch as long as the required Xresource entries are defined.  Ideally, looks are packaged as Debian packages with all required resources either provided by the look or added as a package dependency.  By using the OS packaging system, required files and resources are ensured to be installed and available.&lt;/p&gt;
+&lt;h2 id=&#34;required-files&#34;&gt;Required Files&lt;/h2&gt;
+&lt;p&gt;Starting from scratch, the only mandatory file for a Look as a single Xresource definition file.  This file must specify entries for Regolith&amp;rsquo;s required values, &lt;a href=&#34;../../reference/xresources&#34;&gt;defined on this page&lt;/a&gt;.  However, it&amp;rsquo;s recommended to simply copy an existing look as a basis for customization, due to the compositional nature that Looks use.&lt;/p&gt;
+&lt;h3 id=&#34;suggested-file-layout&#34;&gt;Suggested File Layout&lt;/h3&gt;
+&lt;p&gt;It is suggested that a look be installed in &lt;code&gt;/etc/regolith/styles/&amp;lt;look name&amp;gt;&lt;/code&gt; and that the primary (or only) Xresource file is named &lt;code&gt;root&lt;/code&gt;.  Existing Regolith Looks decompose the Xresources into types of resources and any config specific to a UI component.  For example the Cahuella Look provides definitions for GNOME (theme), color, and typeface and a specific theme for Rofi since it&amp;rsquo;s configuration cannot be completely expressed via Xresource key/value pairs:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ find /etc/regolith/styles/cahuella -type f
 /etc/regolith/styles/cahuella/theme
 /etc/regolith/styles/cahuella/color
 /etc/regolith/styles/cahuella/typeface
 /etc/regolith/styles/cahuella/root
 /etc/regolith/styles/cahuella/rofi.rasi
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="initialization">Initialization&lt;/h2>
-&lt;p>When the Regolith session loads upon login, the initialization script looks &lt;a href="../../customize/styles/#loading-order">in a few places&lt;/a> for Xresource file definitions. The &lt;code>regolith-look&lt;/code> tool provides the ability for users to change looks by creating an Xresource file that simply redirects to another file via the &lt;code>#include&lt;/code> directive provided by the Xresources subsystem. In this way, a Look is enabled in Regolith by providing this link between a well-known Xresource file entry point to the files specific to the custom Look.&lt;/p>
-&lt;h2 id="packaging">Packaging&lt;/h2>
-&lt;p>The ideal user experience is to install a look via a package manager tool, and then using the &lt;code>regolith-look&lt;/code> tool to set it. For example:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sudo apt install regolith-look-ubuntu
-$ regolith-look &lt;span style="color:#204a87">set&lt;/span> ubuntu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;initialization&#34;&gt;Initialization&lt;/h2&gt;
+&lt;p&gt;When the Regolith session loads upon login, the initialization script looks &lt;a href=&#34;../../customize/styles/#loading-order&#34;&gt;in a few places&lt;/a&gt; for Xresource file definitions.  The &lt;code&gt;regolith-look&lt;/code&gt; tool provides the ability for users to change looks by creating an Xresource file that simply redirects to another file via the &lt;code&gt;#include&lt;/code&gt; directive provided by the Xresources subsystem.  In this way, a Look is enabled in Regolith by providing this link between a well-known Xresource file entry point to the files specific to the custom Look.&lt;/p&gt;
+&lt;h2 id=&#34;packaging&#34;&gt;Packaging&lt;/h2&gt;
+&lt;p&gt;The ideal user experience is to install a look via a package manager tool, and then using the &lt;code&gt;regolith-look&lt;/code&gt; tool to set it.  For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install regolith-look-ubuntu
+$ regolith-look &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; ubuntu
 $ regolith-look refresh
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>In order to achieve this flow, all runtime dependencies (fonts, GTK themes, wallpapers, etc.) must be included in the package or defined as a Debian package dependency in a &lt;code>debian/control&lt;/code> file. See the &lt;a href="https://github.com/regolith-linux/regolith-styles/tree/master/debian">&lt;code>regolith-styles&lt;/code> package&lt;/a> for further information on Debian metadata. If you&amp;rsquo;re new to Debian packaging, here is &lt;a href="https://wiki.debian.org/BuildingTutorial">an introduction&lt;/a>.&lt;/p>
-&lt;h2 id="testing">Testing&lt;/h2>
-&lt;p>Once you have a Look ready for testing, copy the containing directory for your files into &lt;code>/etc/regolith/styles&lt;/code>, for example for a Look called &lt;code>orange&lt;/code>, you may have this file layout:&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">/etc/regolith/styles/orange/theme
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In order to achieve this flow, all runtime dependencies (fonts, GTK themes, wallpapers, etc.) must be included in the package or defined as a Debian package dependency in a &lt;code&gt;debian/control&lt;/code&gt; file.  See the &lt;a href=&#34;https://github.com/regolith-linux/regolith-styles/tree/master/debian&#34;&gt;&lt;code&gt;regolith-styles&lt;/code&gt; package&lt;/a&gt; for further information on Debian metadata.  If you&amp;rsquo;re new to Debian packaging, here is &lt;a href=&#34;https://wiki.debian.org/BuildingTutorial&#34;&gt;an introduction&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;testing&#34;&gt;Testing&lt;/h2&gt;
+&lt;p&gt;Once you have a Look ready for testing, copy the containing directory for your files into &lt;code&gt;/etc/regolith/styles&lt;/code&gt;, for example for a Look called &lt;code&gt;orange&lt;/code&gt;, you may have this file layout:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;/etc/regolith/styles/orange/theme
 /etc/regolith/styles/orange/color
 /etc/regolith/styles/orange/typeface
 /etc/regolith/styles/orange/root
 /etc/regolith/styles/orange/rofi.rasi
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then run &lt;code>regolith-look set orange &amp;amp;&amp;amp; regolith-look refresh&lt;/code>. The UI should be updated with your new look.&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then run &lt;code&gt;regolith-look set orange &amp;amp;&amp;amp; regolith-look refresh&lt;/code&gt;.  The UI should be updated with your new look.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

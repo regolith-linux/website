@@ -1,1 +1,17 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith – Herunterladen</title><link>https://regolith-linux.org/de/download/</link><description>Recent content in Herunterladen on Regolith</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://regolith-linux.org/de/download/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regolith – Herunterladen</title>
+    <link>https://regolith-linux.org/de/download/</link>
+    <description>Recent content in Herunterladen on Regolith</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://regolith-linux.org/de/download/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

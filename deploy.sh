@@ -28,7 +28,7 @@ push_git() {
 rm -rf public/*
 
 # Build the project.
-hugo --minify
+hugo
 
 # Set the CNAME?
 echo "regolith-linux.org" > public/CNAME
