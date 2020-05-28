@@ -28,7 +28,7 @@ push_git() {
 rm -rf public/*
 
 # Build the project.
-hugo
+hugo --minify
 
 # Add changes to git.
 git add --all

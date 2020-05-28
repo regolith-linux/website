@@ -1,497 +1,298 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Regolith – How To</title>
-    <link>https://regolith-linux.org/hu/docs/howto/</link>
-    <description>Recent content in How To on Regolith</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Jan 2017 00:00:00 +0000</lastBuildDate>
-    
-	  <atom:link href="https://regolith-linux.org/hu/docs/howto/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
-    <item>
-      <title>Docs: Override Xresources</title>
-      <link>https://regolith-linux.org/hu/docs/howto/override-xres/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/howto/override-xres/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Regolith relies on the Xresource system to provide a consolidated interface configuration.  By changing Xresource values, Regolith can be customized in ways such as updating the user interface, specifying custom behaviors, or defining a specific format for the clock.&lt;/p&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;In Regolith, Xresource values can be changed via two methods: supplying your own Xresource files, and overriding the existing Xresource values.  The latter approach is strongly recommended, as it makes upgrading to newer versions of Regolith less likely to break.  If you copy the Xresource tree completely, you&amp;rsquo;ll need to integrate any breaking changes in future versions manually.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&#34;initialization&#34;&gt;Initialization&lt;/h2&gt;
-&lt;p&gt;When a Regolith session is started, Xresources are loaded in the following order:&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;File&lt;/th&gt;
-&lt;th&gt;Optional&lt;/th&gt;
-&lt;th&gt;Notes&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;~/.Xresources&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Y&lt;/td&gt;
-&lt;td&gt;Intended for non-Regolith settings&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;~/.Xresources-regolith&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Y&lt;/td&gt;
-&lt;td&gt;A global override to replace all Regolith settings&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;/etc/regolith/styles/root&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;N&lt;/td&gt;
-&lt;td&gt;The default Regolith Xresource file if &lt;code&gt;~/.Xresources-regolith&lt;/code&gt; does not exist&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Y&lt;/td&gt;
-&lt;td&gt;Applies specific overrides to Xresource defaults&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;It is recommended to use &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; for customization as it requires the specification of no redundant settings, and is easier to maintain over time.&lt;/p&gt;
-&lt;h2 id=&#34;determining-what-values-can-be-changed&#34;&gt;Determining what values can be changed&lt;/h2&gt;
-&lt;p&gt;The &lt;code&gt;xrdb&lt;/code&gt; tool can be used to list the existing Xresource values.  See &lt;a href=&#34;../../reference/xresources&#34;&gt;here for a table of existing values&lt;/a&gt; in the R1.4.1 release.  Example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ xrdb -query 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith – How To</title><link>https://regolith-linux.org/hu/docs/howto/</link><description>Recent content in How To on Regolith</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 04 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://regolith-linux.org/hu/docs/howto/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Override Xresources</title><link>https://regolith-linux.org/hu/docs/howto/override-xres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/howto/override-xres/</guid><description>
+&lt;p>Regolith relies on the Xresource system to provide a consolidated interface configuration. By changing Xresource values, Regolith can be customized in ways such as updating the user interface, specifying custom behaviors, or defining a specific format for the clock.&lt;/p>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>In Regolith, Xresource values can be changed via two methods: supplying your own Xresource files, and overriding the existing Xresource values. The latter approach is strongly recommended, as it makes upgrading to newer versions of Regolith less likely to break. If you copy the Xresource tree completely, you&amp;rsquo;ll need to integrate any breaking changes in future versions manually.&lt;/p>
+&lt;/div>
+&lt;h2 id="initialization">Initialization&lt;/h2>
+&lt;p>When a Regolith session is started, Xresources are loaded in the following order:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>File&lt;/th>
+&lt;th>Optional&lt;/th>
+&lt;th>Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>~/.Xresources&lt;/code>&lt;/td>
+&lt;td>Y&lt;/td>
+&lt;td>Intended for non-Regolith settings&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>~/.Xresources-regolith&lt;/code>&lt;/td>
+&lt;td>Y&lt;/td>
+&lt;td>A global override to replace all Regolith settings&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>/etc/regolith/styles/root&lt;/code>&lt;/td>
+&lt;td>N&lt;/td>
+&lt;td>The default Regolith Xresource file if &lt;code>~/.Xresources-regolith&lt;/code> does not exist&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>~/.config/regolith/Xresources&lt;/code>&lt;/td>
+&lt;td>Y&lt;/td>
+&lt;td>Applies specific overrides to Xresource defaults&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>It is recommended to use &lt;code>~/.config/regolith/Xresources&lt;/code> for customization as it requires the specification of no redundant settings, and is easier to maintain over time.&lt;/p>
+&lt;h2 id="determining-what-values-can-be-changed">Determining what values can be changed&lt;/h2>
+&lt;p>The &lt;code>xrdb&lt;/code> tool can be used to list the existing Xresource values. See &lt;a href="../../reference/xresources">here for a table of existing values&lt;/a> in the R1.4.1 release. Example:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ xrdb -query
 ...
-gnome.icon.theme:	Moka
-gnome.terminal.font:	JetBrains Mono &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;12&lt;/span&gt;
-gnome.terminal.scrollbar:	never
-gnome.wallpaper:	/usr/share/backgrounds/ESP_016895_1525_desktop.jpg
-gnome.wm.theme:	Ayu-Mirage-Dark
+gnome.icon.theme: Moka
+gnome.terminal.font: JetBrains Mono &lt;span style="color:#0000cf;font-weight:bold">12&lt;/span>
+gnome.terminal.scrollbar: never
+gnome.wallpaper: /usr/share/backgrounds/ESP_016895_1525_desktop.jpg
+gnome.wm.theme: Ayu-Mirage-Dark
 ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-&lt;p&gt;Note that the commands presented below append text to a file.  So, running the command more than once will result in duplicate lines in the file.&lt;/p&gt;
-&lt;h3 id=&#34;example---update-the-ui-for-high-dpi-screens&#34;&gt;Example - Update the UI for High DPI Screens&lt;/h3&gt;
-&lt;p&gt;By using the &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; override file, we will only need to specify the values we wish to change.  The &lt;code&gt;xrdb&lt;/code&gt; tool can be used to determine what current values are set to.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create or add the following value to your &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; file:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;Xft.dpi: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;192&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Reload the Xresource configuration:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Open a new terminal to see the change take effect.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;sub&gt;192 is just an example value, please adjust as needed.&lt;/sub&gt;&lt;/p&gt;
-&lt;h3 id=&#34;example---change-i3-bar-position&#34;&gt;Example - Change i3 bar position&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ xrdb -query &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; grep position
-i3-wm.bar.position:	bottom
-$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm.bar.position:	bottom&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="examples">Examples&lt;/h2>
+&lt;p>Note that the commands presented below append text to a file. So, running the command more than once will result in duplicate lines in the file.&lt;/p>
+&lt;h3 id="example---update-the-ui-for-high-dpi-screens">Example - Update the UI for High DPI Screens&lt;/h3>
+&lt;p>By using the &lt;code>~/.config/regolith/Xresources&lt;/code> override file, we will only need to specify the values we wish to change. The &lt;code>xrdb&lt;/code> tool can be used to determine what current values are set to.&lt;/p>
+&lt;ol>
+&lt;li>Create or add the following value to your &lt;code>~/.config/regolith/Xresources&lt;/code> file:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">Xft.dpi: &lt;span style="color:#0000cf;font-weight:bold">192&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
+&lt;li>Reload the Xresource configuration:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ regolith-look refresh
+&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;li>Open a new terminal to see the change take effect.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;sub>192 is just an example value, please adjust as needed.&lt;/sub>&lt;/p>
+&lt;h3 id="example---change-i3-bar-position">Example - Change i3 bar position&lt;/h3>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ xrdb -query &lt;span style="color:#000;font-weight:bold">|&lt;/span> grep position
+i3-wm.bar.position: bottom
+$ &lt;span style="color:#204a87">echo&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;i3-wm.bar.position: bottom&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith/Xresources
 $ regolith-look refresh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;example---change-gtk-theme&#34;&gt;Example - Change GTK Theme&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ xrdb -query &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; grep gtk
-gnome.gtk.theme:	Ayu-Mirage-Dark
-$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;gnome.gtk.theme:	Adwaita&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="example---change-gtk-theme">Example - Change GTK Theme&lt;/h3>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ xrdb -query &lt;span style="color:#000;font-weight:bold">|&lt;/span> grep gtk
+gnome.gtk.theme: Ayu-Mirage-Dark
+$ &lt;span style="color:#204a87">echo&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;gnome.gtk.theme: Adwaita&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith/Xresources
 $ regolith-look refresh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;example---enable-system-tray&#34;&gt;Example - Enable System Tray&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm.bar.trayoutput:	primary&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="example---enable-system-tray">Example - Enable System Tray&lt;/h3>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ &lt;span style="color:#204a87">echo&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;i3-wm.bar.trayoutput: primary&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith/Xresources
 $ regolith-look refresh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;example---use-alt-instead-of-win-as-super&#34;&gt;Example - Use Alt instead of Win as Super&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm-mod: Mod1&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
-$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm-alt: Mod4&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then Reload i3 for the change to take effect.&lt;/p&gt;
-&lt;h3 id=&#34;example---launch-nm-applet-when-i3-starts&#34;&gt;Example - Launch &lt;code&gt;nm-applet&lt;/code&gt; when i3 starts&lt;/h3&gt;
-&lt;p&gt;Some users prefer to use the &lt;code&gt;nm-applet&lt;/code&gt; program to configure and manage their wireless network.  i3 config file can be updated to launch any arbitrary program at start time.  But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file.  For this to work, also make sure that the system tray is enabled (see above).&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm.program.1: /usr/bin/nm-applet&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This change requires you to log back in before the change takes effect.&lt;/p&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;Regolith generates many of these values from a canonical set of definitions.  See &lt;a href=&#34;https://github.com/regolith-linux/regolith-styles&#34;&gt;this readme&lt;/a&gt; for more details.  If you find yourself updating many values, it may be more concise to create your own look instead.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;h1 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h1&gt;
-&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configrations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Stage Config Files</title>
-      <link>https://regolith-linux.org/hu/docs/howto/stage-configs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/howto/stage-configs/</guid>
-      <description>
-        
-        
-        
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;Staging configs is no longer required as of Regolith R1.3.1 if you only wish to override or provide new Xresource values.  See &lt;a href=&#34;../override-xres&#34;&gt;this page&lt;/a&gt; for more details.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Regolith uses a number of files in &lt;code&gt;/etc/regolith&lt;/code&gt; to determine the behavior and look of various components.  While it&amp;rsquo;s possible to simply edit these files directly, users who do so run the risk of having their configurations overwritten upon future updates.  The Debian packaging system should ask users if they wish to take updates or keep the existing files, but this may have unintended side effects if users take partial updates of files.  As such Regolith, upon login, will look for user-staged version of configuration files and load those &lt;em&gt;instead of the defaults&lt;/em&gt; if they exist.  This is recommended over editing the files in &lt;code&gt;/etc/regolith&lt;/code&gt; directly as it gives the user more control over their configuration. This page describes how to create these files.&lt;/p&gt;
-&lt;p&gt;Depending on what you wish to change, you may need your own copy if the i3 config file, Xresources, or both.  If you&amp;rsquo;re looking to change the way Regolith looks, Xresources may be all you need.  If you want to update or add keybindings or swap out components, you&amp;rsquo;ll most likely need to stage the i3 config file.&lt;/p&gt;
-&lt;h2 id=&#34;i3-config&#34;&gt;i3 Config&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Copy the default Regolith i3 config file into your home directory:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;$ mkdir -p ~/.config/regolith/i3
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="example---use-alt-instead-of-win-as-super">Example - Use Alt instead of Win as Super&lt;/h3>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ &lt;span style="color:#204a87">echo&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;i3-wm-mod: Mod1&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+$ &lt;span style="color:#204a87">echo&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;i3-wm-alt: Mod4&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then Reload i3 for the change to take effect.&lt;/p>
+&lt;h3 id="example---launch-nm-applet-when-i3-starts">Example - Launch &lt;code>nm-applet&lt;/code> when i3 starts&lt;/h3>
+&lt;p>Some users prefer to use the &lt;code>nm-applet&lt;/code> program to configure and manage their wireless network. i3 config file can be updated to launch any arbitrary program at start time. But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file. For this to work, also make sure that the system tray is enabled (see above).&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ &lt;span style="color:#204a87">echo&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;i3-wm.program.1: /usr/bin/nm-applet&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>This change requires you to log back in before the change takes effect.&lt;/p>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Regolith generates many of these values from a canonical set of definitions. See &lt;a href="https://github.com/regolith-linux/regolith-styles">this readme&lt;/a> for more details. If you find yourself updating many values, it may be more concise to create your own look instead.&lt;/p>
+&lt;/div>
+&lt;h1 id="further-reading">Further Reading&lt;/h1>
+&lt;p>See the &lt;a href="../../reference/configurations">reference page for configrations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Stage Config Files</title><link>https://regolith-linux.org/hu/docs/howto/stage-configs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/howto/stage-configs/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Staging configs is no longer required as of Regolith R1.3.1 if you only wish to override or provide new Xresource values. See &lt;a href="../override-xres">this page&lt;/a> for more details.&lt;/p>
+&lt;/div>
+&lt;p>Regolith uses a number of files in &lt;code>/etc/regolith&lt;/code> to determine the behavior and look of various components. While it&amp;rsquo;s possible to simply edit these files directly, users who do so run the risk of having their configurations overwritten upon future updates. The Debian packaging system should ask users if they wish to take updates or keep the existing files, but this may have unintended side effects if users take partial updates of files. As such Regolith, upon login, will look for user-staged version of configuration files and load those &lt;em>instead of the defaults&lt;/em> if they exist. This is recommended over editing the files in &lt;code>/etc/regolith&lt;/code> directly as it gives the user more control over their configuration. This page describes how to create these files.&lt;/p>
+&lt;p>Depending on what you wish to change, you may need your own copy if the i3 config file, Xresources, or both. If you&amp;rsquo;re looking to change the way Regolith looks, Xresources may be all you need. If you want to update or add keybindings or swap out components, you&amp;rsquo;ll most likely need to stage the i3 config file.&lt;/p>
+&lt;h2 id="i3-config">i3 Config&lt;/h2>
+&lt;ol>
+&lt;li>Copy the default Regolith i3 config file into your home directory:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code>$ mkdir -p ~/.config/regolith/i3
 $ cp /etc/regolith/i3/config ~/.config/regolith/i3/config
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Log out and back in. The Regolith session will automatically detect your user-staged file and use that over the default in &lt;code&gt;/etc/regolith/i3&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;verify-the-change&#34;&gt;Verify the Change&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Verify by running &lt;code&gt;i3 --moreversion&lt;/code&gt; and noting the config file that is printed as a result.  It should be the copy you just created.  If not, be sure the path is correct.  It must exactly be &lt;code&gt;~/.config/regolith/i3/config&lt;/code&gt; for Regolith to load it.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;regolith-styles&#34;&gt;Regolith Styles&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Copy the root Regolith Xresource file into your home directory:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;$ cp /etc/regolith/styles/root ~/.Xresources-regolith
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Log out and back in. The Regolith session will automatically detect your user-staged file and use that over the default in &lt;code&gt;/etc/regolith/styles&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Note that this root file is simply a reference to other styles that are broken down by the thing they are designed to style.  For example, if you wish to customize the look of i3, you will need to also copy &lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt; into your user directory and then update the reference to the new file in your &lt;code&gt;~/.Xresources-regolith&lt;/code&gt;.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Change the Default Terminal</title>
-      <link>https://regolith-linux.org/hu/docs/howto/change-terminal/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/howto/change-terminal/</guid>
-      <description>
-        
-        
-        &lt;p&gt;The default terminal that ships with Regolith R1.4 is gnome-terminal, but any X terminal emulator can be used.  To update Regolith to use your already installed terminal of choice, use &lt;code&gt;update-alternatives&lt;/code&gt; to specify it as default.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Run &lt;code&gt;update-alternatives --config x-terminal-emulator&lt;/code&gt; to see all available terminals installed on your system.&lt;/li&gt;
-&lt;li&gt;Select the terminal you prefer.&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Support Multiple Batteries</title>
-      <link>https://regolith-linux.org/hu/docs/howto/multiple-batteries/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/howto/multiple-batteries/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Out of the box the primary battery status will be displayed in the i3-bar. For some laptops that has multiple batteries e.g. &lt;em&gt;ThinkPad&lt;/em&gt;, you want to have both batteries displayed. To do so, follow the steps:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Stage your own i3 config file &lt;a href=&#34;../stage-configs&#34;&gt;(tutorial)&lt;/a&gt;, then open &lt;code&gt;~/.config/regolith/i3xrocks/conf.d/80_battery&lt;/code&gt; in your editor of choice.&lt;/li&gt;
-&lt;li&gt;Find the line that pertains to the battery blocklet:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;...
+&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;li>Log out and back in. The Regolith session will automatically detect your user-staged file and use that over the default in &lt;code>/etc/regolith/i3&lt;/code>.&lt;/li>
+&lt;/ol>
+&lt;h3 id="verify-the-change">Verify the Change&lt;/h3>
+&lt;ol>
+&lt;li>Verify by running &lt;code>i3 --moreversion&lt;/code> and noting the config file that is printed as a result. It should be the copy you just created. If not, be sure the path is correct. It must exactly be &lt;code>~/.config/regolith/i3/config&lt;/code> for Regolith to load it.&lt;/li>
+&lt;/ol>
+&lt;h2 id="regolith-styles">Regolith Styles&lt;/h2>
+&lt;ol>
+&lt;li>Copy the root Regolith Xresource file into your home directory:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code>$ cp /etc/regolith/styles/root ~/.Xresources-regolith
+&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;li>Log out and back in. The Regolith session will automatically detect your user-staged file and use that over the default in &lt;code>/etc/regolith/styles&lt;/code>.&lt;/li>
+&lt;/ol>
+&lt;p>Note that this root file is simply a reference to other styles that are broken down by the thing they are designed to style. For example, if you wish to customize the look of i3, you will need to also copy &lt;code>/etc/regolith/styles/i3-wm&lt;/code> into your user directory and then update the reference to the new file in your &lt;code>~/.Xresources-regolith&lt;/code>.&lt;/p></description></item><item><title>Docs: Change the Default Terminal</title><link>https://regolith-linux.org/hu/docs/howto/change-terminal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/howto/change-terminal/</guid><description>
+&lt;p>The default terminal that ships with Regolith R1.4 is gnome-terminal, but any X terminal emulator can be used. To update Regolith to use your already installed terminal of choice, use &lt;code>update-alternatives&lt;/code> to specify it as default.&lt;/p>
+&lt;ol>
+&lt;li>Run &lt;code>update-alternatives --config x-terminal-emulator&lt;/code> to see all available terminals installed on your system.&lt;/li>
+&lt;li>Select the terminal you prefer.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Support Multiple Batteries</title><link>https://regolith-linux.org/hu/docs/howto/multiple-batteries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/howto/multiple-batteries/</guid><description>
+&lt;p>Out of the box the primary battery status will be displayed in the i3-bar. For some laptops that has multiple batteries e.g. &lt;em>ThinkPad&lt;/em>, you want to have both batteries displayed. To do so, follow the steps:&lt;/p>
+&lt;ol>
+&lt;li>Stage your own i3 config file &lt;a href="../stage-configs">(tutorial)&lt;/a>, then open &lt;code>~/.config/regolith/i3xrocks/conf.d/80_battery&lt;/code> in your editor of choice.&lt;/li>
+&lt;li>Find the line that pertains to the battery blocklet:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-conf" data-lang="conf">...
 # Battery indicator
 #
 # Displays total percentage charge left of specified battery.
 [battery]
 interval=30
 # instance=BAT0
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;List all the battery instances running on your machine by running:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;ls /sys/class/power_supply/
-
-&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# AC BAT0 BAT1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Update the staged config file to have a new blocklet as such:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;...
+&lt;/code>&lt;/pre>&lt;ol start="3">
+&lt;li>List all the battery instances running on your machine by running:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">ls /sys/class/power_supply/
+&lt;span style="color:#8f5902;font-style:italic"># AC BAT0 BAT1&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="4">
+&lt;li>Update the staged config file to have a new blocklet as such:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-conf" data-lang="conf">...
 # Battery indicator
 #
 # Displays total percentage charge left of specified battery.
 [battery]
 interval=30
 instance=BAT0
-
 [battery]
 interval=30
 instance=BAT1
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h2&gt;
-&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configrations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Change the Bar Date and Time Format</title>
-      <link>https://regolith-linux.org/hu/docs/howto/time-format/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/howto/time-format/</guid>
-      <description>
-        
-        
-        &lt;p&gt;The time format (12 or 24 hour) can be specified in Settings:
-&lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-settings-time-format.png&#34; width=&#34;640px&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;The date format can be specified by selecting the appropriate region in Settings.  A preview of the date format is provided, and logging back in is required for changes to take effect.
-&lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-settings-region.png&#34; width=&#34;640px&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;The date and time formats can also be explicitly set via Xresources.  To do so, override the &lt;code&gt;i3xrocks.date.format2&lt;/code&gt; Xresource key.  See &lt;a href=&#34;../override-xres&#34;&gt;Xresource overrides&lt;/a&gt; for details. The format specification for date is simply the arguments that would be passed to the &lt;code&gt;date&lt;/code&gt; command on the commandline.  For example, to print the year in 4 digits, specify &lt;code&gt;+%Y&lt;/code&gt;.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Change Bar Status indicators</title>
-      <link>https://regolith-linux.org/hu/docs/howto/add-remove-blocklets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/howto/add-remove-blocklets/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;adding-or-removing-status-indicators&#34;&gt;Adding or Removing status indicators&lt;/h1&gt;
-&lt;h2 id=&#34;finding-status-indicators&#34;&gt;Finding Status Indicators&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt search i3xrocks-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;installing-a-status-indicator&#34;&gt;Installing a Status Indicator&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install i3xrocks-memory
+&lt;/code>&lt;/pre>&lt;h2 id="further-reading">Further Reading&lt;/h2>
+&lt;p>See the &lt;a href="../../reference/configurations">reference page for configrations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Change the Bar Date and Time Format</title><link>https://regolith-linux.org/hu/docs/howto/time-format/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/howto/time-format/</guid><description>
+&lt;p>The time format (12 or 24 hour) can be specified in Settings:
+&lt;img class="shadow m-5" src="../regolith-screenshot-settings-time-format.png" width="640px"/>&lt;/p>
+&lt;p>The date format can be specified by selecting the appropriate region in Settings. A preview of the date format is provided, and logging back in is required for changes to take effect.
+&lt;img class="shadow m-5" src="../regolith-screenshot-settings-region.png" width="640px"/>&lt;/p>
+&lt;p>The date and time formats can also be explicitly set via Xresources. To do so, override the &lt;code>i3xrocks.date.format2&lt;/code> Xresource key. See &lt;a href="../override-xres">Xresource overrides&lt;/a> for details. The format specification for date is simply the arguments that would be passed to the &lt;code>date&lt;/code> command on the commandline. For example, to print the year in 4 digits, specify &lt;code>+%Y&lt;/code>.&lt;/p></description></item><item><title>Docs: Change Bar Status indicators</title><link>https://regolith-linux.org/hu/docs/howto/add-remove-blocklets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/howto/add-remove-blocklets/</guid><description>
+&lt;h1 id="adding-or-removing-status-indicators">Adding or Removing status indicators&lt;/h1>
+&lt;h2 id="finding-status-indicators">Finding Status Indicators&lt;/h2>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ apt search i3xrocks-
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="installing-a-status-indicator">Installing a Status Indicator&lt;/h2>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sudo apt install i3xrocks-memory
 $ regolith-look refresh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;customization-of-bar&#34;&gt;Customization of bar&lt;/h1&gt;
-&lt;p&gt;For customization of the bar, for example to change the polling interval of the weather block, or to change the order of elements on the bar, the configuration can be copied from &lt;code&gt;/etc/regolith/i3xrocks/conf.d&lt;/code&gt; to &lt;code&gt;~/.config/regolith/i3xrocks/conf.d&lt;/code&gt; and then modified in the user directory.  For example, to change the order of the battery and net traffic blocks on the bar and not display notifications, perform the following steps:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ ls /etc/regolith/i3xrocks/conf.d
-01_setup  
-30_net-traffic  
+&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="customization-of-bar">Customization of bar&lt;/h1>
+&lt;p>For customization of the bar, for example to change the polling interval of the weather block, or to change the order of elements on the bar, the configuration can be copied from &lt;code>/etc/regolith/i3xrocks/conf.d&lt;/code> to &lt;code>~/.config/regolith/i3xrocks/conf.d&lt;/code> and then modified in the user directory. For example, to change the order of the battery and net traffic blocks on the bar and not display notifications, perform the following steps:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ ls /etc/regolith/i3xrocks/conf.d
+01_setup
+30_net-traffic
 80_battery
-80_rofication     
+80_rofication
 90_time
 $ mkdir -p ~/.config/regolith/i3xrocks/conf.d
-$ &lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; /etc/regolith/i3xrocks/conf.d
+$ &lt;span style="color:#204a87">cd&lt;/span> /etc/regolith/i3xrocks/conf.d
 $ cp 01_setup ~/.config/regolith/i3xrocks/conf.d/01_setup
 $ cp 80_battery ~/.config/regolith/i3xrocks/conf.d/30_battery
 $ cp 30_net-traffic ~/.config/regolith/i3xrocks/conf.d/80_net-traffic
 $ regolith-look refresh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If any block configuration exists in the user directory &lt;code&gt;~/.config/regolith/i3xrocks/conf.d&lt;/code&gt;, then the defaults in &lt;code&gt;/etc/regolith/i3xrocks/conf.d&lt;/code&gt; will be ignored.&lt;/p&gt;
-&lt;h1 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h1&gt;
-&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configrations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Change Workspace Icons</title>
-      <link>https://regolith-linux.org/hu/docs/howto/change-workspace-icons/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/howto/change-workspace-icons/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Adding icons to workspaces can give your desktop a nice and functional look.&lt;/p&gt;
-&lt;h3 id=&#34;finding-icons&#34;&gt;Finding icons&lt;/h3&gt;
-&lt;p&gt;Icons are actually characters from fonts installed by Regolith looks. Each look comes with a specific icon font. The icon font is defined in the &lt;code&gt;typeface_bar&lt;/code&gt; variable in the &lt;code&gt;typeface&lt;/code&gt; config file. For example, the look Cahuella uses the &lt;em&gt;Material Design Icons&lt;/em&gt; font (see file &lt;code&gt;/etc/regolith/styles/cahuella/typeface&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;You can browse the icon font using the &lt;a href=&#34;https://wiki.gnome.org/action/show/Apps/Gucharmap?action=show&amp;amp;redirect=Gucharmap&#34;&gt;Gnome Character Map&lt;/a&gt; application (&lt;code&gt;gucharmap&lt;/code&gt; package):&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Open Gnome Character Map.&lt;/li&gt;
-&lt;li&gt;Select your icon font in the top left combo.&lt;/li&gt;
-&lt;li&gt;In the &lt;em&gt;script&lt;/em&gt; pane select &lt;em&gt;Common&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;Scroll down the characters pane until you find the icons.&lt;/li&gt;
-&lt;li&gt;Double click on the icon you are looking to use and press the &lt;em&gt;Copy&lt;/em&gt; button (bottom right).&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; the icons are ordered alphabetically.&lt;/p&gt;
-&lt;h3 id=&#34;changing-icons&#34;&gt;Changing icons&lt;/h3&gt;
-&lt;p&gt;Follow these steps to override the default workspace label with your own:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Find the character you want to use and copy to the clipboard. This example will use the Sigma glyph from Material Design Icons font ().&lt;/li&gt;
-&lt;li&gt;Add a line to your Xresource overrides file with the workspace number and character you wish to use:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm.workspace.06.name: 6:&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Refresh your UI:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In i3, workspace labels are only updated when a workspace is created.  Ensure you&amp;rsquo;re creating an new workspace 6 if following the example above:&lt;/p&gt;
-&lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-bar-icon.png&#34;/&gt;
-&lt;h3 id=&#34;adding-support-for-icon-fonts-in-text-editors&#34;&gt;Adding support for icon fonts in text editors&lt;/h3&gt;
-&lt;p&gt;Atom:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Append the name of the icon font to &lt;code&gt;Settings &amp;gt; Editor &amp;gt; Font Familly&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Example: &lt;code&gt;Menlo, Consolas, DejaVu Sans Mono, monospace, Material Design Icons&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h1&gt;
-&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configurations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Change Workspace Labels</title>
-      <link>https://regolith-linux.org/hu/docs/howto/remove-workspace-icons/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/howto/remove-workspace-icons/</guid>
-      <description>
-        
-        
-        &lt;ol&gt;
-&lt;li&gt;You&amp;rsquo;ll need to stage the Regolith Styles Xresource files as &lt;a href=&#34;../stage-configs&#34;&gt;described here&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Then stage the &lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt; Xresource file in your user directory, and ensure that your user copy of the Xresource file &lt;code&gt;#include&lt;/code&gt;s this copy.&lt;/li&gt;
-&lt;li&gt;Modify the styles to your preference.&lt;/li&gt;
-&lt;li&gt;After saving the styles file log out and back in to see the change.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;remove-everything-but-the-workspace-number&#34;&gt;Remove everything but the workspace number&lt;/h3&gt;
-&lt;p&gt;Follow these steps to edit the Xresource definitions of the workspace labels used by i3:&lt;/p&gt;
-&lt;p&gt;Edit your copy of the &lt;code&gt;i3-wm&lt;/code&gt; styles file. This file uses C-style macros to generate the Pango markup for each workspace label.  There are various ways of changing the macros to strip out the icons, but this may be the most concise.  Replace:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH) INDEX:&amp;lt;span font_desc=FONT&amp;gt; INDEX &amp;lt;/span&amp;gt;&amp;lt;span foreground=COLOR&amp;gt;GLYPH&amp;lt;/span&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;with:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH) 
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;creating-workspace-labels&#34;&gt;Creating workspace labels&lt;/h3&gt;
-&lt;p&gt;Some users prefer to title their workspaces based a theme, such as &lt;code&gt;terminal&lt;/code&gt;, &lt;code&gt;web&lt;/code&gt;, etc.  To do this, make modifications to your user copy of &lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt; similarly to:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;i3-wm.workspace.01.name: 1: Terminal
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>If any block configuration exists in the user directory &lt;code>~/.config/regolith/i3xrocks/conf.d&lt;/code>, then the defaults in &lt;code>/etc/regolith/i3xrocks/conf.d&lt;/code> will be ignored.&lt;/p>
+&lt;h1 id="further-reading">Further Reading&lt;/h1>
+&lt;p>See the &lt;a href="../../reference/configurations">reference page for configrations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Change Workspace Icons</title><link>https://regolith-linux.org/hu/docs/howto/change-workspace-icons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/howto/change-workspace-icons/</guid><description>
+&lt;p>Adding icons to workspaces can give your desktop a nice and functional look.&lt;/p>
+&lt;h3 id="finding-icons">Finding icons&lt;/h3>
+&lt;p>Icons are actually characters from fonts installed by Regolith looks. Each look comes with a specific icon font. The icon font is defined in the &lt;code>typeface_bar&lt;/code> variable in the &lt;code>typeface&lt;/code> config file. For example, the look Cahuella uses the &lt;em>Material Design Icons&lt;/em> font (see file &lt;code>/etc/regolith/styles/cahuella/typeface&lt;/code>).&lt;/p>
+&lt;p>You can browse the icon font using the &lt;a href="https://wiki.gnome.org/action/show/Apps/Gucharmap?action=show&amp;amp;redirect=Gucharmap">Gnome Character Map&lt;/a> application (&lt;code>gucharmap&lt;/code> package):&lt;/p>
+&lt;ol>
+&lt;li>Open Gnome Character Map.&lt;/li>
+&lt;li>Select your icon font in the top left combo.&lt;/li>
+&lt;li>In the &lt;em>script&lt;/em> pane select &lt;em>Common&lt;/em>.&lt;/li>
+&lt;li>Scroll down the characters pane until you find the icons.&lt;/li>
+&lt;li>Double click on the icon you are looking to use and press the &lt;em>Copy&lt;/em> button (bottom right).&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Tip:&lt;/strong> the icons are ordered alphabetically.&lt;/p>
+&lt;h3 id="changing-icons">Changing icons&lt;/h3>
+&lt;p>Follow these steps to override the default workspace label with your own:&lt;/p>
+&lt;ol>
+&lt;li>Find the character you want to use and copy to the clipboard. This example will use the Sigma glyph from Material Design Icons font ().&lt;/li>
+&lt;li>Add a line to your Xresource overrides file with the workspace number and character you wish to use:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ &lt;span style="color:#204a87">echo&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;i3-wm.workspace.06.name: 6:&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;li>Refresh your UI:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ regolith-look refresh
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>In i3, workspace labels are only updated when a workspace is created. Ensure you&amp;rsquo;re creating an new workspace 6 if following the example above:&lt;/p>
+&lt;img class="shadow m-5" src="../regolith-bar-icon.png"/>
+&lt;h3 id="adding-support-for-icon-fonts-in-text-editors">Adding support for icon fonts in text editors&lt;/h3>
+&lt;p>Atom:&lt;/p>
+&lt;ul>
+&lt;li>Append the name of the icon font to &lt;code>Settings &amp;gt; Editor &amp;gt; Font Familly&lt;/code>.&lt;/li>
+&lt;li>Example: &lt;code>Menlo, Consolas, DejaVu Sans Mono, monospace, Material Design Icons&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h1 id="further-reading">Further Reading&lt;/h1>
+&lt;p>See the &lt;a href="../../reference/configurations">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Change Workspace Labels</title><link>https://regolith-linux.org/hu/docs/howto/remove-workspace-icons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/howto/remove-workspace-icons/</guid><description>
+&lt;ol>
+&lt;li>You&amp;rsquo;ll need to stage the Regolith Styles Xresource files as &lt;a href="../stage-configs">described here&lt;/a>.&lt;/li>
+&lt;li>Then stage the &lt;code>/etc/regolith/styles/i3-wm&lt;/code> Xresource file in your user directory, and ensure that your user copy of the Xresource file &lt;code>#include&lt;/code>s this copy.&lt;/li>
+&lt;li>Modify the styles to your preference.&lt;/li>
+&lt;li>After saving the styles file log out and back in to see the change.&lt;/li>
+&lt;/ol>
+&lt;h3 id="remove-everything-but-the-workspace-number">Remove everything but the workspace number&lt;/h3>
+&lt;p>Follow these steps to edit the Xresource definitions of the workspace labels used by i3:&lt;/p>
+&lt;p>Edit your copy of the &lt;code>i3-wm&lt;/code> styles file. This file uses C-style macros to generate the Pango markup for each workspace label. There are various ways of changing the macros to strip out the icons, but this may be the most concise. Replace:&lt;/p>
+&lt;pre>&lt;code>#define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH) INDEX:&amp;lt;span font_desc=FONT&amp;gt; INDEX &amp;lt;/span&amp;gt;&amp;lt;span foreground=COLOR&amp;gt;GLYPH&amp;lt;/span&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>with:&lt;/p>
+&lt;pre>&lt;code>#define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH)
+&lt;/code>&lt;/pre>&lt;h3 id="creating-workspace-labels">Creating workspace labels&lt;/h3>
+&lt;p>Some users prefer to title their workspaces based a theme, such as &lt;code>terminal&lt;/code>, &lt;code>web&lt;/code>, etc. To do this, make modifications to your user copy of &lt;code>/etc/regolith/styles/i3-wm&lt;/code> similarly to:&lt;/p>
+&lt;pre>&lt;code>i3-wm.workspace.01.name: 1: Terminal
 i3-wm.workspace.02.name: 2: Web
 i3-wm.workspace.03.name: 3: Chat
-&lt;/code&gt;&lt;/pre&gt;
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Switch between Regolith PPAs</title>
-      <link>https://regolith-linux.org/hu/docs/howto/change-ppa/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/howto/change-ppa/</guid>
-      <description>
-        
-        
-        &lt;p&gt;This page describes how to configure the package system to consume Regolith packages between a set of PPAs.&lt;/p&gt;
-&lt;h2 id=&#34;regolith-ppas&#34;&gt;Regolith PPAs&lt;/h2&gt;
-&lt;p&gt;See this section for a description of &lt;a href=&#34;https://regolith-linux.org/docs/getting-started/install/#ppa-sources&#34;&gt;each PPA&lt;/a&gt;.  By default users will be on the &lt;code&gt;release&lt;/code&gt; PPA which is intended to only be updated upon bug fixes and versioned releases.  Here is how to switch to the &lt;code&gt;unstable&lt;/code&gt; PPA, by updating the apt packaging configuration:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Remove the existing &lt;code&gt;release&lt;/code&gt; PPA:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository --remove ppa:regolith-linux/release
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Add the new &lt;code&gt;unstable&lt;/code&gt; PPA:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository ppa:regolith-linux/unstable
+&lt;/code>&lt;/pre></description></item><item><title>Docs: Switch between Regolith PPAs</title><link>https://regolith-linux.org/hu/docs/howto/change-ppa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/howto/change-ppa/</guid><description>
+&lt;p>This page describes how to configure the package system to consume Regolith packages between a set of PPAs.&lt;/p>
+&lt;h2 id="regolith-ppas">Regolith PPAs&lt;/h2>
+&lt;p>See this section for a description of &lt;a href="https://regolith-linux.org/docs/getting-started/install/#ppa-sources">each PPA&lt;/a>. By default users will be on the &lt;code>release&lt;/code> PPA which is intended to only be updated upon bug fixes and versioned releases. Here is how to switch to the &lt;code>unstable&lt;/code> PPA, by updating the apt packaging configuration:&lt;/p>
+&lt;ol>
+&lt;li>Remove the existing &lt;code>release&lt;/code> PPA:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sudo add-apt-repository --remove ppa:regolith-linux/release
+&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
+&lt;li>Add the new &lt;code>unstable&lt;/code> PPA:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sudo add-apt-repository ppa:regolith-linux/unstable
 $ sudo apt update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Upgrade packages to the upgraded versions contained in the new PPA:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt upgrade
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;switch-back&#34;&gt;Switch Back&lt;/h3&gt;
-&lt;p&gt;To return to the previon configuration, simply follow the steps above but toggle the PPA URIs.  So, swap &lt;code&gt;unstable&lt;/code&gt; for &lt;code&gt;release&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Once the PPAs have been switched, to revert any unwanted package updates from the &lt;code&gt;unstable&lt;/code&gt; repository, simply install the specific version you wish to revert to.  For example, if &lt;code&gt;regolith-deskop&lt;/code&gt; has version 4 in &lt;code&gt;unstable&lt;/code&gt; and version 3 in &lt;code&gt;release&lt;/code&gt;, you would have been upgraded to version 4 after using the &lt;code&gt;unstable&lt;/code&gt; PPA and taking updates.  To revert back to version 3 after swapping back to the &lt;code&gt;release&lt;/code&gt; PPA, tell &lt;code&gt;apt&lt;/code&gt; the specific version you wish to install:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install regolith-desktop&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The general form is &lt;code&gt;apt install &amp;lt;package name&amp;gt;=&amp;lt;package version&amp;gt;&lt;/code&gt;.  You will be notified by &lt;code&gt;apt&lt;/code&gt; that the operation will result in a downgrade package version.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Upgrade Regolith Linux 1.4 to 1.4.1</title>
-      <link>https://regolith-linux.org/hu/docs/howto/update-14-141/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/howto/update-14-141/</guid>
-      <description>
-        
-        
-        &lt;p&gt;If you&amp;rsquo;ve installed Regolith via the ISO, a few minor changes were made to address bugs found in R1.4.  Most of the fixes will be installed automatically by applying package updates, however a few items must be performed manually.&lt;/p&gt;
-&lt;h2 id=&#34;remove-deprecated-touchpad-driver&#34;&gt;Remove deprecated touchpad driver&lt;/h2&gt;
-&lt;p&gt;An obsolete driver was mistakenly included with the Regolith 1.4 ISO install that conflicts with GNOME touchpad settings.  Perform these steps to fix the touchpad:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt remove xserver-xorg-input-synaptics
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;add-regolith-boot-sequence&#34;&gt;Add Regolith boot sequence&lt;/h2&gt;
-&lt;p&gt;The ISO release now includes an unbranded boot animation, rather than keeping with the default Ubuntu branded experience.  Updating this boot-up theme (also known as a Plymouth theme) also enables users to enter a password if they&amp;rsquo;ve setup an encrypted filesystem.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install plymouth-theme-regolith
+&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;li>Upgrade packages to the upgraded versions contained in the new PPA:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sudo apt upgrade
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="switch-back">Switch Back&lt;/h3>
+&lt;p>To return to the previon configuration, simply follow the steps above but toggle the PPA URIs. So, swap &lt;code>unstable&lt;/code> for &lt;code>release&lt;/code>.&lt;/p>
+&lt;p>Once the PPAs have been switched, to revert any unwanted package updates from the &lt;code>unstable&lt;/code> repository, simply install the specific version you wish to revert to. For example, if &lt;code>regolith-deskop&lt;/code> has version 4 in &lt;code>unstable&lt;/code> and version 3 in &lt;code>release&lt;/code>, you would have been upgraded to version 4 after using the &lt;code>unstable&lt;/code> PPA and taking updates. To revert back to version 3 after swapping back to the &lt;code>release&lt;/code> PPA, tell &lt;code>apt&lt;/code> the specific version you wish to install:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sudo apt install regolith-desktop&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">3&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The general form is &lt;code>apt install &amp;lt;package name&amp;gt;=&amp;lt;package version&amp;gt;&lt;/code>. You will be notified by &lt;code>apt&lt;/code> that the operation will result in a downgrade package version.&lt;/p></description></item><item><title>Docs: Upgrade Regolith Linux 1.4 to 1.4.1</title><link>https://regolith-linux.org/hu/docs/howto/update-14-141/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/howto/update-14-141/</guid><description>
+&lt;p>If you&amp;rsquo;ve installed Regolith via the ISO, a few minor changes were made to address bugs found in R1.4. Most of the fixes will be installed automatically by applying package updates, however a few items must be performed manually.&lt;/p>
+&lt;h2 id="remove-deprecated-touchpad-driver">Remove deprecated touchpad driver&lt;/h2>
+&lt;p>An obsolete driver was mistakenly included with the Regolith 1.4 ISO install that conflicts with GNOME touchpad settings. Perform these steps to fix the touchpad:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sudo apt remove xserver-xorg-input-synaptics
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="add-regolith-boot-sequence">Add Regolith boot sequence&lt;/h2>
+&lt;p>The ISO release now includes an unbranded boot animation, rather than keeping with the default Ubuntu branded experience. Updating this boot-up theme (also known as a Plymouth theme) also enables users to enter a password if they&amp;rsquo;ve setup an encrypted filesystem.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sudo apt install plymouth-theme-regolith
 $ sudo update-alternatives --config default.plymouth
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;From the prompt ensure that the Regolith configuration is selected.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Change Notification Systems</title>
-      <link>https://regolith-linux.org/hu/docs/howto/replace-notification-system/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/howto/replace-notification-system/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Regolith ships with a notification system called &lt;a href=&#34;https://github.com/DaveDavenport/Rofication&#34;&gt;Rofication&lt;/a&gt;.  This system is designed to work in the background and not use pop-ups as a way of alerting the user to a new notification.  Rather, a small bar item displays the current number of unread notifications and a dialog can activated to interact with the content of the current notifications. This page describes a way to install an alternative notification system which works in a more traditional, expected way.&lt;/p&gt;
-&lt;p&gt;We will use &lt;a href=&#34;https://dunst-project.org/&#34;&gt;dunst&lt;/a&gt; as an example but similar steps can be used with pretty much any other notification component.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Replace &lt;code&gt;rofication&lt;/code&gt; with &lt;code&gt;dunst&lt;/code&gt;:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install dunst
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>From the prompt ensure that the Regolith configuration is selected.&lt;/p></description></item><item><title>Docs: Change Notification Systems</title><link>https://regolith-linux.org/hu/docs/howto/replace-notification-system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/howto/replace-notification-system/</guid><description>
+&lt;p>Regolith ships with a notification system called &lt;a href="https://github.com/DaveDavenport/Rofication">Rofication&lt;/a>. This system is designed to work in the background and not use pop-ups as a way of alerting the user to a new notification. Rather, a small bar item displays the current number of unread notifications and a dialog can activated to interact with the content of the current notifications. This page describes a way to install an alternative notification system which works in a more traditional, expected way.&lt;/p>
+&lt;p>We will use &lt;a href="https://dunst-project.org/">dunst&lt;/a> as an example but similar steps can be used with pretty much any other notification component.&lt;/p>
+&lt;ol>
+&lt;li>Replace &lt;code>rofication&lt;/code> with &lt;code>dunst&lt;/code>:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sudo apt install dunst
 $ sudo apt purge regolith-rofication
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Log out and back in.&lt;/li&gt;
-&lt;li&gt;Test your notifications with &lt;code&gt;notify-send test123&lt;/code&gt;.  You should see a pop-up from &lt;code&gt;dunst&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Change the Terminal Font Size</title>
-      <link>https://regolith-linux.org/hu/docs/howto/terminal-font/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/howto/terminal-font/</guid>
-      <description>
-        
-        
-        &lt;ol&gt;
-&lt;li&gt;Create or add the following value to your &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; file:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;gnome.terminal.font:	JetBrains Mono &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;14&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Reload the Xresource configuration:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Open a new terminal to see the change take effect.&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Change the Default Window Gap</title>
-      <link>https://regolith-linux.org/hu/docs/howto/default-gap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/howto/default-gap/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Like most configuration in Regolith, the i3-gaps gap size can be tuned via Xresources (&lt;a href=&#34;../../Reference/xresources&#34;&gt;See here&lt;/a&gt; for all Xresource definitions).&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create or add the following value to your &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; file:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;i3-wm.gaps.inner.size: 20
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;sub&gt;In this example we&amp;rsquo;re setting the default gap to 20 pixels.&lt;/sub&gt;&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Reload the Xresource configuration:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h1&gt;
-&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configrations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
+&lt;li>Log out and back in.&lt;/li>
+&lt;li>Test your notifications with &lt;code>notify-send test123&lt;/code>. You should see a pop-up from &lt;code>dunst&lt;/code>.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Change the Terminal Font Size</title><link>https://regolith-linux.org/hu/docs/howto/terminal-font/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/howto/terminal-font/</guid><description>
+&lt;ol>
+&lt;li>Create or add the following value to your &lt;code>~/.config/regolith/Xresources&lt;/code> file:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gnome.terminal.font: JetBrains Mono &lt;span style="color:#0000cf;font-weight:bold">14&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
+&lt;li>Reload the Xresource configuration:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ regolith-look refresh
+&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;li>Open a new terminal to see the change take effect.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Change the Default Window Gap</title><link>https://regolith-linux.org/hu/docs/howto/default-gap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/howto/default-gap/</guid><description>
+&lt;p>Like most configuration in Regolith, the i3-gaps gap size can be tuned via Xresources (&lt;a href="../../Reference/xresources">See here&lt;/a> for all Xresource definitions).&lt;/p>
+&lt;ol>
+&lt;li>Create or add the following value to your &lt;code>~/.config/regolith/Xresources&lt;/code> file:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code>i3-wm.gaps.inner.size: 20
+&lt;/code>&lt;/pre>&lt;p>&lt;sub>In this example we&amp;rsquo;re setting the default gap to 20 pixels.&lt;/sub>&lt;/p>
+&lt;ol start="2">
+&lt;li>Reload the Xresource configuration:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ regolith-look refresh
+&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="further-reading">Further Reading&lt;/h1>
+&lt;p>See the &lt;a href="../../reference/configurations">reference page for configrations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item></channel></rss>

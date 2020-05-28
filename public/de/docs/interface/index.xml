@@ -1,105 +1,33 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Regolith – The Interface</title>
-    <link>https://regolith-linux.org/de/docs/interface/</link>
-    <description>Recent content in The Interface on Regolith</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	  <atom:link href="https://regolith-linux.org/de/docs/interface/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
-    <item>
-      <title>Docs: Working with Applications</title>
-      <link>https://regolith-linux.org/de/docs/interface/apps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/de/docs/interface/apps/</guid>
-      <description>
-        
-        
-        &lt;p&gt;As mentioned in the &lt;a href=&#34;../../getting-started/basics&#34;&gt;Getting Started&lt;/a&gt; section, &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt; causes i3 to execute Rofi to present a list of apps.  Once launched, the application selected will open a window on the currently active workspace.  If other windows are already present on this workspace, they will be resized to allow the new window to also be placed without overlapping or otherwise obstructing the existing windows.&lt;/p&gt;
-&lt;h2 id=&#34;window-layout&#34;&gt;Window Layout&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;backspace&lt;/span&gt;&lt;/span&gt; can be used to toggle between horizontal and vertical layout modes, which will apply to the &lt;em&gt;next launched application&lt;/em&gt;.  In this way, windows in a workspace can divide the screen into portions relative to the desired importance of the user. A blue border will appear on the bottom or right of the window to indicate the current layout mode.&lt;/p&gt;
-&lt;p&gt;In addition to toggling layout orientation, existing windows can be moved relative to their neighbors with &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;↑ ↓ ← →&lt;/span&gt;&lt;/span&gt; (arrow keys) or VIM-style arrow keys &lt;span class=&#34;badge badge-warning&#34;&gt;k j h l&lt;/span&gt;.  Or, &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;tab&lt;/span&gt;&lt;/span&gt; and &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;tab&lt;/span&gt;&lt;/span&gt; can be used to move back and forth between active workspaces.&lt;/p&gt;
-&lt;p&gt;Windows can also be directly moved to other workspaces.  The bar will indicate all active workspaces as well as the currently focused workspace.  &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;[0-9]&lt;/span&gt;&lt;/span&gt; will cause the currently focused window to be moved to the workspace number selected.&lt;/p&gt;
-&lt;p&gt;Users can navigate to windows via &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;[0-9]&lt;/span&gt;&lt;/span&gt; but can also directly navigate to a specific window with &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;ctrl&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;quit-an-application&#34;&gt;Quit an Application.&lt;/h2&gt;
-&lt;p&gt;Any application can be safely closed via &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;q&lt;/span&gt;&lt;/span&gt;.  Crashed or otherwise unresponsive apps can be killed via &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;q&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Notifications</title>
-      <link>https://regolith-linux.org/de/docs/interface/notifications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/de/docs/interface/notifications/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Regolith 1.3 introduces the integration of &lt;a href=&#34;https://github.com/DaveDavenport/Rofication&#34;&gt;Rofication&lt;/a&gt; into the environment.  Previous versions relied on a built-in notification system within &lt;code&gt;gnome-flashback&lt;/code&gt; but the UI was distracting.  Rofication relies on a notification daemon and Rofi-based front end.  A block in the bar shows the number of notifications the user has.  When a new notification is received, this number is incremented by one.  There is no other alert or other UI that would notify the user of the new message.  If a more agressive notification UI is desired, &lt;a href=&#34;https://dunst-project.org/&#34;&gt;dunst&lt;/a&gt; is recommended.&lt;/p&gt;
-&lt;h2 id=&#34;managing-notifications&#34;&gt;Managing Notifications&lt;/h2&gt;
-&lt;p&gt;Next to the bell icon in the bar is the current number of notifications.  To view and delete them, select &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;n&lt;/span&gt;&lt;/span&gt; and a menu will load.  Notifications can be read and then deleted with &lt;span class=&#34;badge badge-warning&#34;&gt;delete&lt;/span&gt; and the notification window can be dismissed with &lt;span class=&#34;badge badge-warning&#34;&gt;escape&lt;/span&gt;.  All low-priority notifications can be deleted at once with &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;delete&lt;/span&gt;&lt;/span&gt; from within the notification menu.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: System Configuration</title>
-      <link>https://regolith-linux.org/de/docs/interface/system/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/de/docs/interface/system/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;gnome-control-center-also-known-as-codesettingscode&#34;&gt;GNOME control center (also known as &lt;code&gt;Settings&lt;/code&gt;).&lt;/h2&gt;
-&lt;p&gt;A key difference between Regolith and other environments described as minimal is the integration of the GNOME settings backend.  This provides a well-tested, consistent, and friendly way of configuring your environment and computer.  To load the settings app, launch &amp;ldquo;Settings&amp;rdquo; from Rofi or press &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;c&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Settings is a special app in Regolith in that it is launched in floating mode.  This is because typically when loading settings a user is looking to make a specific change and then exit back to their work. Once loaded use the tab sections on the left of the window to select which item you wish to configure.&lt;/p&gt;
-&lt;h2 id=&#34;i3-wm&#34;&gt;i3-wm&lt;/h2&gt;
-&lt;p&gt;The i3 window manager is not part of GNOME and so it&amp;rsquo;s configuration is not viewable or changable from the GNOME control center.  Rather, the user must edit the config file and reload i3 to make changes.  In Regolith, the i3 config file is at &lt;code&gt;/etc/regolith/i3/config&lt;/code&gt; and users can supply their own copy that will override this default if placed at &lt;code&gt;~/.config/regolith/i3/config&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Many things about Regolith can be configured in the i3 config file.  It is best to read the &lt;a href=&#34;https://i3wm.org/docs/userguide.html&#34;&gt;i3 user guide&lt;/a&gt; to understand what and how to modify this file.&lt;/p&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;Maintaining a user copy of the i3 config file requires more work when upgrading Regolith, as changes have to managed from the defaults into the user config to support new features in subsequent versions. If possible, it is better to rely on &lt;a href=&#34;../../howto/override-xres&#34;&gt;Xresource overrides&lt;/a&gt; to customize i3.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&#34;i3bar&#34;&gt;i3bar&lt;/h2&gt;
-&lt;p&gt;The i3bar configuration is defined in the i3 config file listed directly above, but the i3bar has it&amp;rsquo;s own configuration for status items.  To change which information is displayed in the bar, the config directory is &lt;code&gt;/etc/regolith/i3xrocks/conf.d&lt;/code&gt;.  There is one file in this directory for every status item, plus &lt;code&gt;01_setup&lt;/code&gt;.  The prefixed number defines the order in which the blocks are displayed on the bar.  &lt;a href=&#34;../../howto/add-remove-blocklets&#34;&gt;See here&lt;/a&gt; for information about customization.&lt;/p&gt;
-&lt;h2 id=&#34;look&#34;&gt;Look&lt;/h2&gt;
-&lt;p&gt;The look of Regolith is configured via Xresources, that live in &lt;code&gt;/etc/regolith/styles/&lt;/code&gt;.  This topic is covered in detail in the &lt;a href=&#34;../../customize/&#34;&gt;Customize&lt;/a&gt; section of the documentation.&lt;/p&gt;
-&lt;h2 id=&#34;session&#34;&gt;Session&lt;/h2&gt;
-&lt;p&gt;When Regolith is initially loaded, a script is run that configures the system and launches &lt;code&gt;i3-wm&lt;/code&gt;.  While it is not recommended to modify this script, it can provide details about how Regolith is structured and what policy it implements when loading configuration.  This file is readable at &lt;code&gt;/usr/bin/i3-gnome-flashback&lt;/code&gt;.  In fact, this script could be considered the initial seed of the Regolith project and was taken from the &lt;a href=&#34;https://github.com/deuill/i3-gnome-flashback&#34;&gt;i3-gnome-flashback&lt;/a&gt; project.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Advanced</title>
-      <link>https://regolith-linux.org/de/docs/interface/advanced/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/de/docs/interface/advanced/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;i3bar&#34;&gt;i3bar&lt;/h2&gt;
-&lt;p&gt;The bar&amp;rsquo;s visibility can be toggled with &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;i&lt;/span&gt;&lt;/span&gt;.  This can be useful when wanting to remove all distractions and devote 100% of the screen to one or more applications in your workspace.  Another way of giving one application complete use of the screen is to press &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;f&lt;/span&gt;&lt;/span&gt; to cause the active application to enter full screen mode.&lt;/p&gt;
-&lt;h2 id=&#34;i3-wm-layout-mode&#34;&gt;i3-wm Layout Mode&lt;/h2&gt;
-&lt;p&gt;i3-wm offers a few different layout modes.  &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;t&lt;/span&gt;&lt;/span&gt; can be used to toggle between tabbed, horizontal and vertical split modes.&lt;/p&gt;
-&lt;h2 id=&#34;save-and-restore-window-positions&#34;&gt;Save and Restore Window Positions&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/regolith-linux/i3-snapshot&#34;&gt;A tool&lt;/a&gt; to save and load window layouts, &lt;code&gt;i3-snapshot&lt;/code&gt; is integrated into Regolith 1.3.  Pressing &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;,&lt;/span&gt;&lt;/span&gt; will write the current window layout to a file in the &lt;code&gt;/tmp&lt;/code&gt; directory. &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;,&lt;/span&gt;&lt;/span&gt; will restore that layout.  &lt;code&gt;i3-snapshot&lt;/code&gt; is intended for use-cases in which monitor changes may cause layouts to be randomized.  It is not a replacement for &lt;code&gt;&lt;a href=&#34;https://i3wm.org/docs/layout-saving.html&#34;&gt;i3-save-tree&lt;/a&gt;&lt;/code&gt; as it uses window identifiers that do not survive across X sessions, nor does it offer a way of positioning application launches into specific layouts.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith – The Interface</title><link>https://regolith-linux.org/de/docs/interface/</link><description>Recent content in The Interface on Regolith</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://regolith-linux.org/de/docs/interface/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Working with Applications</title><link>https://regolith-linux.org/de/docs/interface/apps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/de/docs/interface/apps/</guid><description>
+&lt;p>As mentioned in the &lt;a href="../../getting-started/basics">Getting Started&lt;/a> section, &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">space&lt;/span>&lt;/span> causes i3 to execute Rofi to present a list of apps. Once launched, the application selected will open a window on the currently active workspace. If other windows are already present on this workspace, they will be resized to allow the new window to also be placed without overlapping or otherwise obstructing the existing windows.&lt;/p>
+&lt;h2 id="window-layout">Window Layout&lt;/h2>
+&lt;p>&lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">backspace&lt;/span>&lt;/span> can be used to toggle between horizontal and vertical layout modes, which will apply to the &lt;em>next launched application&lt;/em>. In this way, windows in a workspace can divide the screen into portions relative to the desired importance of the user. A blue border will appear on the bottom or right of the window to indicate the current layout mode.&lt;/p>
+&lt;p>In addition to toggling layout orientation, existing windows can be moved relative to their neighbors with &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">shift&lt;/span> &lt;span class="badge badge-warning">↑ ↓ ← →&lt;/span>&lt;/span> (arrow keys) or VIM-style arrow keys &lt;span class="badge badge-warning">k j h l&lt;/span>. Or, &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">tab&lt;/span>&lt;/span> and &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">shift&lt;/span> &lt;span class="badge badge-warning">tab&lt;/span>&lt;/span> can be used to move back and forth between active workspaces.&lt;/p>
+&lt;p>Windows can also be directly moved to other workspaces. The bar will indicate all active workspaces as well as the currently focused workspace. &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">shift&lt;/span> &lt;span class="badge badge-warning">[0-9]&lt;/span>&lt;/span> will cause the currently focused window to be moved to the workspace number selected.&lt;/p>
+&lt;p>Users can navigate to windows via &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">[0-9]&lt;/span>&lt;/span> but can also directly navigate to a specific window with &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">ctrl&lt;/span> &lt;span class="badge badge-warning">space&lt;/span>&lt;/span>.&lt;/p>
+&lt;h2 id="quit-an-application">Quit an Application.&lt;/h2>
+&lt;p>Any application can be safely closed via &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">shift&lt;/span> &lt;span class="badge badge-warning">q&lt;/span>&lt;/span>. Crashed or otherwise unresponsive apps can be killed via &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">alt&lt;/span> &lt;span class="badge badge-warning">q&lt;/span>&lt;/span>.&lt;/p></description></item><item><title>Docs: Notifications</title><link>https://regolith-linux.org/de/docs/interface/notifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/de/docs/interface/notifications/</guid><description>
+&lt;p>Regolith 1.3 introduces the integration of &lt;a href="https://github.com/DaveDavenport/Rofication">Rofication&lt;/a> into the environment. Previous versions relied on a built-in notification system within &lt;code>gnome-flashback&lt;/code> but the UI was distracting. Rofication relies on a notification daemon and Rofi-based front end. A block in the bar shows the number of notifications the user has. When a new notification is received, this number is incremented by one. There is no other alert or other UI that would notify the user of the new message. If a more agressive notification UI is desired, &lt;a href="https://dunst-project.org/">dunst&lt;/a> is recommended.&lt;/p>
+&lt;h2 id="managing-notifications">Managing Notifications&lt;/h2>
+&lt;p>Next to the bell icon in the bar is the current number of notifications. To view and delete them, select &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">n&lt;/span>&lt;/span> and a menu will load. Notifications can be read and then deleted with &lt;span class="badge badge-warning">delete&lt;/span> and the notification window can be dismissed with &lt;span class="badge badge-warning">escape&lt;/span>. All low-priority notifications can be deleted at once with &lt;span class="text-nowrap">&lt;span class="badge badge-warning">shift&lt;/span> &lt;span class="badge badge-warning">delete&lt;/span>&lt;/span> from within the notification menu.&lt;/p></description></item><item><title>Docs: System Configuration</title><link>https://regolith-linux.org/de/docs/interface/system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/de/docs/interface/system/</guid><description>
+&lt;h2 id="gnome-control-center-also-known-as-codesettingscode">GNOME control center (also known as &lt;code>Settings&lt;/code>).&lt;/h2>
+&lt;p>A key difference between Regolith and other environments described as minimal is the integration of the GNOME settings backend. This provides a well-tested, consistent, and friendly way of configuring your environment and computer. To load the settings app, launch &amp;ldquo;Settings&amp;rdquo; from Rofi or press &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">c&lt;/span>&lt;/span>.&lt;/p>
+&lt;p>Settings is a special app in Regolith in that it is launched in floating mode. This is because typically when loading settings a user is looking to make a specific change and then exit back to their work. Once loaded use the tab sections on the left of the window to select which item you wish to configure.&lt;/p>
+&lt;h2 id="i3-wm">i3-wm&lt;/h2>
+&lt;p>The i3 window manager is not part of GNOME and so it&amp;rsquo;s configuration is not viewable or changable from the GNOME control center. Rather, the user must edit the config file and reload i3 to make changes. In Regolith, the i3 config file is at &lt;code>/etc/regolith/i3/config&lt;/code> and users can supply their own copy that will override this default if placed at &lt;code>~/.config/regolith/i3/config&lt;/code>.&lt;/p>
+&lt;p>Many things about Regolith can be configured in the i3 config file. It is best to read the &lt;a href="https://i3wm.org/docs/userguide.html">i3 user guide&lt;/a> to understand what and how to modify this file.&lt;/p>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Maintaining a user copy of the i3 config file requires more work when upgrading Regolith, as changes have to managed from the defaults into the user config to support new features in subsequent versions. If possible, it is better to rely on &lt;a href="../../howto/override-xres">Xresource overrides&lt;/a> to customize i3.&lt;/p>
+&lt;/div>
+&lt;h2 id="i3bar">i3bar&lt;/h2>
+&lt;p>The i3bar configuration is defined in the i3 config file listed directly above, but the i3bar has it&amp;rsquo;s own configuration for status items. To change which information is displayed in the bar, the config directory is &lt;code>/etc/regolith/i3xrocks/conf.d&lt;/code>. There is one file in this directory for every status item, plus &lt;code>01_setup&lt;/code>. The prefixed number defines the order in which the blocks are displayed on the bar. &lt;a href="../../howto/add-remove-blocklets">See here&lt;/a> for information about customization.&lt;/p>
+&lt;h2 id="look">Look&lt;/h2>
+&lt;p>The look of Regolith is configured via Xresources, that live in &lt;code>/etc/regolith/styles/&lt;/code>. This topic is covered in detail in the &lt;a href="../../customize/">Customize&lt;/a> section of the documentation.&lt;/p>
+&lt;h2 id="session">Session&lt;/h2>
+&lt;p>When Regolith is initially loaded, a script is run that configures the system and launches &lt;code>i3-wm&lt;/code>. While it is not recommended to modify this script, it can provide details about how Regolith is structured and what policy it implements when loading configuration. This file is readable at &lt;code>/usr/bin/i3-gnome-flashback&lt;/code>. In fact, this script could be considered the initial seed of the Regolith project and was taken from the &lt;a href="https://github.com/deuill/i3-gnome-flashback">i3-gnome-flashback&lt;/a> project.&lt;/p></description></item><item><title>Docs: Advanced</title><link>https://regolith-linux.org/de/docs/interface/advanced/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/de/docs/interface/advanced/</guid><description>
+&lt;h2 id="i3bar">i3bar&lt;/h2>
+&lt;p>The bar&amp;rsquo;s visibility can be toggled with &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">i&lt;/span>&lt;/span>. This can be useful when wanting to remove all distractions and devote 100% of the screen to one or more applications in your workspace. Another way of giving one application complete use of the screen is to press &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">f&lt;/span>&lt;/span> to cause the active application to enter full screen mode.&lt;/p>
+&lt;h2 id="i3-wm-layout-mode">i3-wm Layout Mode&lt;/h2>
+&lt;p>i3-wm offers a few different layout modes. &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">t&lt;/span>&lt;/span> can be used to toggle between tabbed, horizontal and vertical split modes.&lt;/p>
+&lt;h2 id="save-and-restore-window-positions">Save and Restore Window Positions&lt;/h2>
+&lt;p>&lt;a href="https://github.com/regolith-linux/i3-snapshot">A tool&lt;/a> to save and load window layouts, &lt;code>i3-snapshot&lt;/code> is integrated into Regolith 1.3. Pressing &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">,&lt;/span>&lt;/span> will write the current window layout to a file in the &lt;code>/tmp&lt;/code> directory. &lt;span class="text-nowrap">&lt;span class="badge badge-warning">super&lt;/span> &lt;span class="badge badge-warning">,&lt;/span>&lt;/span> will restore that layout. &lt;code>i3-snapshot&lt;/code> is intended for use-cases in which monitor changes may cause layouts to be randomized. It is not a replacement for &lt;code>&lt;a href="https://i3wm.org/docs/layout-saving.html">i3-save-tree&lt;/a>&lt;/code> as it uses window identifiers that do not survive across X sessions, nor does it offer a way of positioning application launches into specific layouts.&lt;/p></description></item></channel></rss>

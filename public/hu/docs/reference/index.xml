@@ -1,958 +1,877 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Regolith – Reference</title>
-    <link>https://regolith-linux.org/hu/docs/reference/</link>
-    <description>Recent content in Reference on Regolith</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	  <atom:link href="https://regolith-linux.org/hu/docs/reference/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
-    <item>
-      <title>Docs: Keybindings</title>
-      <link>https://regolith-linux.org/hu/docs/reference/keybindings/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/reference/keybindings/</guid>
-      <description>
-        
-        
-        &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Action&lt;/th&gt;
-&lt;th&gt;Key Binding&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Launch Terminal&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Enter&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Launch Browser&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; &lt;code&gt;Enter&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Launch Application&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Space&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Launch Command&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; &lt;code&gt;Space&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Launch Help Dialog&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; ?&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Launch File Search&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Alt&lt;/code&gt; &lt;code&gt;Space&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Launch File Browser&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; n&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Launch Notification Viewer&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; n&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Navigate to Window by Name&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; &lt;code&gt;Space&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Navigate to Relative Window&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; ↑ ↓ ← →&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Navigate to Relative Window&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; k j h l&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Navigate to Workspaces 1-10&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; 0..9&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Navigate to Workspace 11 - 19&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; 0..9&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Navigate to Next Workspace&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Tab&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Navigate to Next Workspace&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Alt&lt;/code&gt; →&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Navigate to Previous Workspace&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; &lt;code&gt;Tab&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Navigate to Previous Workspace&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Alt&lt;/code&gt; ←&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Navigate to Scratchpad&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; a&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Modify Window Position&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; ↑ ↓ ← →&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Modify Window Position&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; k j h l&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Modify Containing Workspace&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; ↑ ↓ ← →&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Modify Next Window Orientation&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Backspace&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Modify Window Fullscreen Toggle&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; f&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Modify Window Floating Toggle&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; f&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Move Focused Window to Scratchpad&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; m&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Modify Tile/Float Focus Toggle&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; t&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Modify Window Layout Mode&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; t&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Move Window to Workspace 1 - 10&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; 0..9&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Move Window to Workspace 11 - 19&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; 0..9&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Carry Window to Workspace 1 - 10&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Alt&lt;/code&gt; 0..9&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Carry Window to Workspace 11 - 19&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Alt&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; 0..9&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Exit App&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; q&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Terminate App&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Alt&lt;/code&gt; q&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Reload i3 Config&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; c&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Refresh Session&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; r&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Restart i3&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; r&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Logout&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; e&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Reboot&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; b&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Power Down&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; p&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Lock Screen&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Escape&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Sleep&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; s&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Settings&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; c&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Display Settings&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; d&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Wifi Settings&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; w&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Bluetooth Settings&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; b&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Save Window Layout&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; ,&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Load Window Layout&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; .&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Toggle Bar&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; i&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Enter Resize Mode&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; r&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Exit Resize Mode&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;Enter&lt;/code&gt; or &lt;code&gt;Escape&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Config Files</title>
-      <link>https://regolith-linux.org/hu/docs/reference/configurations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/reference/configurations/</guid>
-      <description>
-        
-        
-        &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;Component&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;Default Config&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;User Config&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-gaps&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;/etc/regolith/i3/config&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;~/.config/regolith/i3/config&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;In Regolith versions prior to 1.2 this file was in another directory.&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Xresources&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;/etc/regolith/styles/root&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;~/.Xresources-regolith&lt;/code&gt; (Global override)&lt;br/&gt;&lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; (Override)&lt;br/&gt;&lt;code&gt;~/.config/regolith/Xresources.d&lt;/code&gt; (User files)&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;~/.Xresources&lt;/code&gt; is also loaded but intended for properties that may also be required in other desktop sessions.&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Rofi&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;/etc/regolith/styles/cahuella/rofi.rasi&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Defined in the &lt;code&gt;theme&lt;/code&gt; style file.&lt;/td&gt;
-&lt;td&gt;This can also be overridden directly in the i3 file if preferred.&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Bar Workspace Labels&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;User defined&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Bar status indicators&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;/etc/regolith/i3xrocks/conf.d&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;~/.config/regolith/i3xrocks/conf.d&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Each block has it&amp;rsquo;s own file.  Filename determines ordering.&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Picom (Compton) Compositor&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;/etc/regolith/compton/config&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;~/.config/regolith/compton/config&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;User config added in 1.4&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;load-sequence&#34;&gt;Load Sequence&lt;/h2&gt;
-&lt;p&gt;Upon session start, Regolith loads configuration files in the following order:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;/usr/bin/i3-gnome-flashback&lt;/code&gt; executes after successful login&lt;/li&gt;
-&lt;li&gt;Load Xresource file &lt;code&gt;~/.Xresources&lt;/code&gt; if it exists.&lt;/li&gt;
-&lt;li&gt;Load Xresource file &lt;code&gt;~/.Xresources-regolith&lt;/code&gt; if it exists.&lt;/li&gt;
-&lt;li&gt;Merge any values from file &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; if it exists.&lt;/li&gt;
-&lt;li&gt;If first time session has loaded, initialize system.&lt;/li&gt;
-&lt;li&gt;Compare current Xresource db against last saved hash, if different, reload GNOME settings from Xresources.&lt;/li&gt;
-&lt;li&gt;Execute i3 with first config file found from following list: &lt;code&gt;~/.config/regolith/i3/config&lt;/code&gt;, &lt;code&gt;/etc/regolith/i3/config&lt;/code&gt;, &lt;code&gt;/etc/i3/config&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;i3 executes the UI components &lt;a href=&#34;https://github.com/davatorium/rofi&#34;&gt;Rofi&lt;/a&gt;, &lt;a href=&#34;https://github.com/regolith-linux/i3xrocks&#34;&gt;i3xrocks&lt;/a&gt;, &lt;a href=&#34;https://github.com/Airblader/unclutter-xfixes&#34;&gt;unclutter&lt;/a&gt;, regolith-compositor, &lt;a href=&#34;&#34;&gt;Rofication&lt;/a&gt;, and &lt;a href=&#34;https://github.com/regolith-linux/regolith-ftue&#34;&gt;regolith-ftue&lt;/a&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Packages</title>
-      <link>https://regolith-linux.org/hu/docs/reference/packages/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/reference/packages/</guid>
-      <description>
-        
-        
-        &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;Package&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;Description&lt;/strong&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-snapshot&lt;/td&gt;
-&lt;td&gt;Save and restore window layouts.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks&lt;/td&gt;
-&lt;td&gt;A fork of i3blocks that enables Xresources integration.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;regolith-assets&lt;/td&gt;
-&lt;td&gt;An optional package with additional wallpaper.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;regolith-builder&lt;/td&gt;
-&lt;td&gt;Scripts and metadata for building and hosting Regolith.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;regolith-compositor-compton-glx&lt;/td&gt;
-&lt;td&gt;A compositor configuration for Picom (recently renamed from Compton).&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;regolith-compositor-xcompmgr&lt;/td&gt;
-&lt;td&gt;A compositor configuration for xcompmgr.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;regolith-compositor-none&lt;/td&gt;
-&lt;td&gt;A compositor configuration for no compositor.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;regolith-desktop&lt;/td&gt;
-&lt;td&gt;The root meta package for Regolith by which all other default packages are referenced.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;regolith-gdm3-theme&lt;/td&gt;
-&lt;td&gt;An optional package for an updated login screen.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;regolith-gnome-flashback&lt;/td&gt;
-&lt;td&gt;A customization of &lt;code&gt;i3-gnome-flashback&lt;/code&gt; for Regolith.  Session init logic lives here.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;regolith-i3-gaps-config&lt;/td&gt;
-&lt;td&gt;Regolith&amp;rsquo;s version of the i3 config file.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;regolith-i3xrocks-config&lt;/td&gt;
-&lt;td&gt;Configuration for the status indicators in the bar.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;regolith-linux.github.io&lt;/td&gt;
-&lt;td&gt;This website.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;regolith-rofication&lt;/td&gt;
-&lt;td&gt;A customization of the Rofication project.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;regolith-st&lt;/td&gt;
-&lt;td&gt;The st-term with some patches applied.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;regolith-styles&lt;/td&gt;
-&lt;td&gt;Metadata that describes the UI look in Regolith including several binary packages for specific looks.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;remontoire&lt;/td&gt;
-&lt;td&gt;A GTK+ keybinding viewer that integrates with i3.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;xrescat&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;cat&lt;/code&gt; for Xresources.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;diving-deeper&#34;&gt;Diving Deeper&lt;/h2&gt;
-&lt;p&gt;For those looking for more specifics, a machine-readable form of all packages and branch versions associated with a release are defined in &lt;a href=&#34;https://github.com/regolith-linux/regolith-builder&#34;&gt;this repo&lt;/a&gt;.  For example, R1.3&amp;rsquo;s packages are defined &lt;a href=&#34;https://github.com/regolith-linux/regolith-builder/blob/master/package-model-R1.3.json&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Xresources</title>
-      <link>https://regolith-linux.org/hu/docs/reference/xresources/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/reference/xresources/</guid>
-      <description>
-        
-        
-        &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Xresource Key&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;St.color0 - St.color15&lt;/td&gt;
-&lt;td&gt;Color definitions for terminal&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;St.font&lt;/td&gt;
-&lt;td&gt;Font definition for st-term&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Xcursor.size&lt;/td&gt;
-&lt;td&gt;X cursor size&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Xcursor.theme&lt;/td&gt;
-&lt;td&gt;X cursor theme&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Xft.antialias&lt;/td&gt;
-&lt;td&gt;X anti-alias flag&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Xft.dpi&lt;/td&gt;
-&lt;td&gt;X DPI setting&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Xft.hinting&lt;/td&gt;
-&lt;td&gt;X hinting&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Xft.hintstyle&lt;/td&gt;
-&lt;td&gt;X hint style&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Xft.rgba&lt;/td&gt;
-&lt;td&gt;X	rgb setting&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;gnome.gtk.theme&lt;/td&gt;
-&lt;td&gt;GTK Theme&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;gnome.icon.theme&lt;/td&gt;
-&lt;td&gt;GTK Icon Theme&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;gnome.terminal.font&lt;/td&gt;
-&lt;td&gt;Font definition for gnome-terminal&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;gnome.terminal.scrollbar&lt;/td&gt;
-&lt;td&gt;Flag to enable/disable scrollbar (&lt;code&gt;never | always&lt;/code&gt;)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;gnome.wallpaper&lt;/td&gt;
-&lt;td&gt;GNOME Wallpaper (can be overridden in Settings)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;gnome.wm.theme&lt;/td&gt;
-&lt;td&gt;GNOME Window Manager Theme (unused)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.alt&lt;/td&gt;
-&lt;td&gt;Key mapping for Alt key.  See the &lt;a href=&#34;https://i3wm.org/docs/userguide.html#_using_i3&#34;&gt;i3 User Guide&lt;/a&gt; for details.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.background.color&lt;/td&gt;
-&lt;td&gt;Bar Background Color&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.font&lt;/td&gt;
-&lt;td&gt;Bar Font&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.position&lt;/td&gt;
-&lt;td&gt;Bar Screen Position&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.separator.color&lt;/td&gt;
-&lt;td&gt;Color of seperator between blocks&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.statusline.color&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.trayoutput&lt;/td&gt;
-&lt;td&gt;Enable or disable the &lt;a href=&#34;https://i3wm.org/docs/userguide.html#_tray_output&#34;&gt;app tray&lt;/a&gt; in i3bar&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.workspace.active.background.color&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.workspace.active.border.color&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.workspace.active.text.color&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.workspace.focused.background.color&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.workspace.focused.border.color&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.workspace.focused.text.color&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.workspace.inactive.background.color&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.workspace.inactive.border.color&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.workspace.inactive.text.color&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.workspace.urgent.background.color&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.workspace.urgent.border.color&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.bar.workspace.urgent.text.color&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.focused.color.background&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.focused.color.border&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.focused.color.child_border&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.focused.color.indicator&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.focused.color.text&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.focused_inactive.color.background&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.focused_inactive.color.border&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.focused_inactive.color.child_border&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.focused_inactive.color.indicator&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.focused_inactive.color.text&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.unfocused.color.background&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.unfocused.color.border&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.unfocused.color.child_border&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.unfocused.color.indicator&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.unfocused.color.text&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.urgent.color.background&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.urgent.color.border&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.urgent.color.child_border&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.urgent.color.indicator&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.client.urgent.color.text&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.floatingwindow.border.size&lt;/td&gt;
-&lt;td&gt;Window border size in pixels for floating windows&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.font&lt;/td&gt;
-&lt;td&gt;Window Manager Font&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.gaps.inner.size&lt;/td&gt;
-&lt;td&gt;Default gap size between windows in pixels&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.gaps.outer.size&lt;/td&gt;
-&lt;td&gt;Default gap size at screen edge in pixels&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.mod&lt;/td&gt;
-&lt;td&gt;Key mapping for Super key.  See the &lt;a href=&#34;https://i3wm.org/docs/userguide.html#_using_i3&#34;&gt;i3 User Guide&lt;/a&gt; for details.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.window.border.size&lt;/td&gt;
-&lt;td&gt;Default border size in pixels&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.workspace.01.name .. i3-wm.workspace.19.name&lt;/td&gt;
-&lt;td&gt;Workspace Labels&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.error.color&lt;/td&gt;
-&lt;td&gt;Color for bar module in error mode&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.battery0&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.battery100&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.battery20&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.battery50&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.battery80&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.batteryac&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.batterycharging&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.batteryunknown&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.capslock&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.color&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.cpu&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.disk&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.dn&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.help&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.mediapaused&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.mediaplaying&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.memory&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.mute&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.notify.error&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.notify.none&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.notify.some&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.numlock&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.off&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.on&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.sound&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.thermometer&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.time&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.up&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.wifi&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.label.wired&lt;/td&gt;
-&lt;td&gt;Bar icon glyph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.nominal&lt;/td&gt;
-&lt;td&gt;Default bar icon color&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.value.color&lt;/td&gt;
-&lt;td&gt;Color of numerical value in bar module&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.value.font&lt;/td&gt;
-&lt;td&gt;Font for numerical value in bar module&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3xrocks.warning&lt;/td&gt;
-&lt;td&gt;Warning color for bar module&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;rofi.drun-display-format&lt;/td&gt;
-&lt;td&gt;Fields to render in drun mode in Rofi&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;rofi.drun-icon-theme&lt;/td&gt;
-&lt;td&gt;Rofi icon theme&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;rofi.font&lt;/td&gt;
-&lt;td&gt;Rofi font&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;rofi.modi&lt;/td&gt;
-&lt;td&gt;Rofi modes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;rofi.show-icons&lt;/td&gt;
-&lt;td&gt;true if the Rofi dialog should render app icons, false otherwise&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;rofi.theme&lt;/td&gt;
-&lt;td&gt;Path to the Rofi theme file&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;rofi.window-format&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h1 id=&#34;optional-xresource-keys&#34;&gt;Optional Xresource keys&lt;/h1&gt;
-&lt;p&gt;The following Xresource keys are undefined by default but can be used by users to change behavior as desired.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Xresource Key&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;rofi.search.help&lt;/td&gt;
-&lt;td&gt;Show help text on the file search dialog, defaults to &lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;rofi.search.limit&lt;/td&gt;
-&lt;td&gt;Total number of items to return from an &lt;code&gt;mlocate&lt;/code&gt; search, default: 64&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.launcher.app&lt;/td&gt;
-&lt;td&gt;Command i3 executes from the app launcher keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.launcher.cmd&lt;/td&gt;
-&lt;td&gt;Command i3 executes from the command launcher keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.launcher.window&lt;/td&gt;
-&lt;td&gt;Command i3 executes for the window navigation keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.help&lt;/td&gt;
-&lt;td&gt;Command to launch from the help keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.file_search&lt;/td&gt;
-&lt;td&gt;Command to launch from the file search keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.refresh_ui&lt;/td&gt;
-&lt;td&gt;Command to launch from the session refresh keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.logout&lt;/td&gt;
-&lt;td&gt;Command to launch from the logout keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.reboot&lt;/td&gt;
-&lt;td&gt;Command to launch from the reboot keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.shutdown&lt;/td&gt;
-&lt;td&gt;Command to launch from the shutdown keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.lock&lt;/td&gt;
-&lt;td&gt;Command to launch from the lock screen keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.sleep&lt;/td&gt;
-&lt;td&gt;Command to launch from the sleep keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.settings&lt;/td&gt;
-&lt;td&gt;Command to launch from the Control Panel keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.display&lt;/td&gt;
-&lt;td&gt;Command to launch from the Display Settings keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.wifi&lt;/td&gt;
-&lt;td&gt;Command to launch from the Wifi Settings keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.bluetooth&lt;/td&gt;
-&lt;td&gt;Command to launch from the Bluetooth Settings keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.files&lt;/td&gt;
-&lt;td&gt;Command to launch from the file browser keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.notification_ui&lt;/td&gt;
-&lt;td&gt;Command to launch from the notification UI keybinding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i3-wm.program.1&amp;hellip;i3-wm.program.3&lt;/td&gt;
-&lt;td&gt;Optional programs to start with i3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Releases</title>
-      <link>https://regolith-linux.org/hu/docs/reference/releases/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/hu/docs/reference/releases/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Release notes and other version-specific content can be found here.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith – Reference</title><link>https://regolith-linux.org/hu/docs/reference/</link><description>Recent content in Reference on Regolith</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://regolith-linux.org/hu/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Keybindings</title><link>https://regolith-linux.org/hu/docs/reference/keybindings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/reference/keybindings/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Action&lt;/th>
+&lt;th>Key Binding&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Launch Terminal&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Enter&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Launch Browser&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> &lt;code>Enter&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Launch Application&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Space&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Launch Command&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> &lt;code>Space&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Launch Help Dialog&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> ?&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Launch File Search&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> &lt;code>Space&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Launch File Browser&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> n&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Launch Notification Viewer&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> n&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Navigate to Window by Name&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> &lt;code>Space&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Navigate to Relative Window&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> ↑ ↓ ← →&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Navigate to Relative Window&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> k j h l&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Navigate to Workspaces 1-10&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> 0..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Navigate to Workspace 11 - 19&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> 0..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Navigate to Next Workspace&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Tab&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Navigate to Next Workspace&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> →&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Navigate to Previous Workspace&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> &lt;code>Tab&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Navigate to Previous Workspace&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> ←&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Navigate to Scratchpad&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> a&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Modify Window Position&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> ↑ ↓ ← →&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Modify Window Position&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> k j h l&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Modify Containing Workspace&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> &lt;code>Shift&lt;/code> ↑ ↓ ← →&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Modify Next Window Orientation&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Backspace&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Modify Window Fullscreen Toggle&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> f&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Modify Window Floating Toggle&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> f&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Move Focused Window to Scratchpad&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> m&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Modify Tile/Float Focus Toggle&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> t&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Modify Window Layout Mode&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> t&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Move Window to Workspace 1 - 10&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> 0..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Move Window to Workspace 11 - 19&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> &lt;code>Shift&lt;/code> 0..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Carry Window to Workspace 1 - 10&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> 0..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Carry Window to Workspace 11 - 19&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> &lt;code>Ctrl&lt;/code> 0..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Exit App&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> q&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Terminate App&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> q&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Reload i3 Config&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> c&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Refresh Session&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> r&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Restart i3&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> r&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Logout&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> e&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Reboot&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> b&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Power Down&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> p&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Lock Screen&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Escape&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Sleep&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> s&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Settings&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> c&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Display Settings&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> d&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Wifi Settings&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> w&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Bluetooth Settings&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> b&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Save Window Layout&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> ,&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Load Window Layout&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> .&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Toggle Bar&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> i&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Enter Resize Mode&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> r&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Exit Resize Mode&lt;/td>
+&lt;td>&lt;code>Enter&lt;/code> or &lt;code>Escape&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Docs: Config Files</title><link>https://regolith-linux.org/hu/docs/reference/configurations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/reference/configurations/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>Component&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Default Config&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>User Config&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Notes&lt;/strong>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>i3-gaps&lt;/td>
+&lt;td>&lt;code>/etc/regolith/i3/config&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith/i3/config&lt;/code>&lt;/td>
+&lt;td>In Regolith versions prior to 1.2 this file was in another directory.&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xresources&lt;/td>
+&lt;td>&lt;code>/etc/regolith/styles/root&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.Xresources-regolith&lt;/code> (Global override)&lt;br/>&lt;code>~/.config/regolith/Xresources&lt;/code> (Override)&lt;br/>&lt;code>~/.config/regolith/Xresources.d&lt;/code> (User files)&lt;/td>
+&lt;td>&lt;code>~/.Xresources&lt;/code> is also loaded but intended for properties that may also be required in other desktop sessions.&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Rofi&lt;/td>
+&lt;td>&lt;code>/etc/regolith/styles/cahuella/rofi.rasi&lt;/code>&lt;/td>
+&lt;td>Defined in the &lt;code>theme&lt;/code> style file.&lt;/td>
+&lt;td>This can also be overridden directly in the i3 file if preferred.&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Bar Workspace Labels&lt;/td>
+&lt;td>&lt;code>/etc/regolith/styles/i3-wm&lt;/code>&lt;/td>
+&lt;td>User defined&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Bar status indicators&lt;/td>
+&lt;td>&lt;code>/etc/regolith/i3xrocks/conf.d&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith/i3xrocks/conf.d&lt;/code>&lt;/td>
+&lt;td>Each block has it&amp;rsquo;s own file. Filename determines ordering.&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Picom (Compton) Compositor&lt;/td>
+&lt;td>&lt;code>/etc/regolith/compton/config&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith/compton/config&lt;/code>&lt;/td>
+&lt;td>User config added in 1.4&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="load-sequence">Load Sequence&lt;/h2>
+&lt;p>Upon session start, Regolith loads configuration files in the following order:&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>/usr/bin/i3-gnome-flashback&lt;/code> executes after successful login&lt;/li>
+&lt;li>Load Xresource file &lt;code>~/.Xresources&lt;/code> if it exists.&lt;/li>
+&lt;li>Load Xresource file &lt;code>~/.Xresources-regolith&lt;/code> if it exists.&lt;/li>
+&lt;li>Merge any values from file &lt;code>~/.config/regolith/Xresources&lt;/code> if it exists.&lt;/li>
+&lt;li>If first time session has loaded, initialize system.&lt;/li>
+&lt;li>Compare current Xresource db against last saved hash, if different, reload GNOME settings from Xresources.&lt;/li>
+&lt;li>Execute i3 with first config file found from following list: &lt;code>~/.config/regolith/i3/config&lt;/code>, &lt;code>/etc/regolith/i3/config&lt;/code>, &lt;code>/etc/i3/config&lt;/code>.&lt;/li>
+&lt;li>i3 executes the UI components &lt;a href="https://github.com/davatorium/rofi">Rofi&lt;/a>, &lt;a href="https://github.com/regolith-linux/i3xrocks">i3xrocks&lt;/a>, &lt;a href="https://github.com/Airblader/unclutter-xfixes">unclutter&lt;/a>, regolith-compositor, &lt;a href="">Rofication&lt;/a>, and &lt;a href="https://github.com/regolith-linux/regolith-ftue">regolith-ftue&lt;/a>.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Packages</title><link>https://regolith-linux.org/hu/docs/reference/packages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/reference/packages/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>Package&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Description&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>i3-snapshot&lt;/td>
+&lt;td>Save and restore window layouts.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks&lt;/td>
+&lt;td>A fork of i3blocks that enables Xresources integration.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-assets&lt;/td>
+&lt;td>An optional package with additional wallpaper.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-builder&lt;/td>
+&lt;td>Scripts and metadata for building and hosting Regolith.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-compositor-compton-glx&lt;/td>
+&lt;td>A compositor configuration for Picom (recently renamed from Compton).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-compositor-xcompmgr&lt;/td>
+&lt;td>A compositor configuration for xcompmgr.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-compositor-none&lt;/td>
+&lt;td>A compositor configuration for no compositor.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-desktop&lt;/td>
+&lt;td>The root meta package for Regolith by which all other default packages are referenced.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-gdm3-theme&lt;/td>
+&lt;td>An optional package for an updated login screen.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-gnome-flashback&lt;/td>
+&lt;td>A customization of &lt;code>i3-gnome-flashback&lt;/code> for Regolith. Session init logic lives here.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3-gaps-config&lt;/td>
+&lt;td>Regolith&amp;rsquo;s version of the i3 config file.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-i3xrocks-config&lt;/td>
+&lt;td>Configuration for the status indicators in the bar.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-linux.github.io&lt;/td>
+&lt;td>This website.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-rofication&lt;/td>
+&lt;td>A customization of the Rofication project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-st&lt;/td>
+&lt;td>The st-term with some patches applied.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>regolith-styles&lt;/td>
+&lt;td>Metadata that describes the UI look in Regolith including several binary packages for specific looks.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>remontoire&lt;/td>
+&lt;td>A GTK+ keybinding viewer that integrates with i3.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>xrescat&lt;/td>
+&lt;td>&lt;code>cat&lt;/code> for Xresources.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="diving-deeper">Diving Deeper&lt;/h2>
+&lt;p>For those looking for more specifics, a machine-readable form of all packages and branch versions associated with a release are defined in &lt;a href="https://github.com/regolith-linux/regolith-builder">this repo&lt;/a>. For example, R1.3&amp;rsquo;s packages are defined &lt;a href="https://github.com/regolith-linux/regolith-builder/blob/master/package-model-R1.3.json">here&lt;/a>.&lt;/p></description></item><item><title>Docs: Xresources</title><link>https://regolith-linux.org/hu/docs/reference/xresources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/reference/xresources/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Xresource Key&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>St.color0 - St.color15&lt;/td>
+&lt;td>Color definitions for terminal&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>St.font&lt;/td>
+&lt;td>Font definition for st-term&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xcursor.size&lt;/td>
+&lt;td>X cursor size&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xcursor.theme&lt;/td>
+&lt;td>X cursor theme&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xft.antialias&lt;/td>
+&lt;td>X anti-alias flag&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xft.dpi&lt;/td>
+&lt;td>X DPI setting&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xft.hinting&lt;/td>
+&lt;td>X hinting&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xft.hintstyle&lt;/td>
+&lt;td>X hint style&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xft.rgba&lt;/td>
+&lt;td>X rgb setting&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.gtk.theme&lt;/td>
+&lt;td>GTK Theme&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.icon.theme&lt;/td>
+&lt;td>GTK Icon Theme&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.font&lt;/td>
+&lt;td>Font definition for gnome-terminal&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.scrollbar&lt;/td>
+&lt;td>Flag to enable/disable scrollbar (&lt;code>never | always&lt;/code>)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.wallpaper&lt;/td>
+&lt;td>GNOME Wallpaper (can be overridden in Settings)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.wm.theme&lt;/td>
+&lt;td>GNOME Window Manager Theme (unused)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.alt&lt;/td>
+&lt;td>Key mapping for Alt key. See the &lt;a href="https://i3wm.org/docs/userguide.html#_using_i3">i3 User Guide&lt;/a> for details.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.background.color&lt;/td>
+&lt;td>Bar Background Color&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.font&lt;/td>
+&lt;td>Bar Font&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.position&lt;/td>
+&lt;td>Bar Screen Position&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.separator.color&lt;/td>
+&lt;td>Color of seperator between blocks&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.statusline.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.trayoutput&lt;/td>
+&lt;td>Enable or disable the &lt;a href="https://i3wm.org/docs/userguide.html#_tray_output">app tray&lt;/a> in i3bar&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.active.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.active.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.active.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.focused.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.focused.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.focused.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.inactive.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.inactive.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.inactive.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.urgent.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.urgent.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.urgent.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused_inactive.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused_inactive.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused_inactive.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused_inactive.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused_inactive.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.unfocused.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.unfocused.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.unfocused.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.unfocused.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.unfocused.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.urgent.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.urgent.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.urgent.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.urgent.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.urgent.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.floatingwindow.border.size&lt;/td>
+&lt;td>Window border size in pixels for floating windows&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.font&lt;/td>
+&lt;td>Window Manager Font&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.gaps.inner.size&lt;/td>
+&lt;td>Default gap size between windows in pixels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.gaps.outer.size&lt;/td>
+&lt;td>Default gap size at screen edge in pixels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.mod&lt;/td>
+&lt;td>Key mapping for Super key. See the &lt;a href="https://i3wm.org/docs/userguide.html#_using_i3">i3 User Guide&lt;/a> for details.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.window.border.size&lt;/td>
+&lt;td>Default border size in pixels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.workspace.01.name .. i3-wm.workspace.19.name&lt;/td>
+&lt;td>Workspace Labels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.error.color&lt;/td>
+&lt;td>Color for bar module in error mode&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery0&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery100&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery20&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery50&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery80&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batteryac&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batterycharging&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batteryunknown&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.capslock&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.color&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.cpu&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.disk&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.dn&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.help&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mediapaused&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mediaplaying&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.memory&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mute&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.error&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.none&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.some&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.numlock&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.off&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.on&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.sound&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.thermometer&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.time&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.up&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.wifi&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.wired&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.nominal&lt;/td>
+&lt;td>Default bar icon color&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.value.color&lt;/td>
+&lt;td>Color of numerical value in bar module&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.value.font&lt;/td>
+&lt;td>Font for numerical value in bar module&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.warning&lt;/td>
+&lt;td>Warning color for bar module&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.drun-display-format&lt;/td>
+&lt;td>Fields to render in drun mode in Rofi&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.drun-icon-theme&lt;/td>
+&lt;td>Rofi icon theme&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.font&lt;/td>
+&lt;td>Rofi font&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.modi&lt;/td>
+&lt;td>Rofi modes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.show-icons&lt;/td>
+&lt;td>true if the Rofi dialog should render app icons, false otherwise&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.theme&lt;/td>
+&lt;td>Path to the Rofi theme file&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.window-format&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h1 id="optional-xresource-keys">Optional Xresource keys&lt;/h1>
+&lt;p>The following Xresource keys are undefined by default but can be used by users to change behavior as desired.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Xresource Key&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>rofi.search.help&lt;/td>
+&lt;td>Show help text on the file search dialog, defaults to &lt;code>true&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.search.limit&lt;/td>
+&lt;td>Total number of items to return from an &lt;code>mlocate&lt;/code> search, default: 64&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.launcher.app&lt;/td>
+&lt;td>Command i3 executes from the app launcher keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.launcher.cmd&lt;/td>
+&lt;td>Command i3 executes from the command launcher keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.launcher.window&lt;/td>
+&lt;td>Command i3 executes for the window navigation keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.help&lt;/td>
+&lt;td>Command to launch from the help keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.file_search&lt;/td>
+&lt;td>Command to launch from the file search keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.refresh_ui&lt;/td>
+&lt;td>Command to launch from the session refresh keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.logout&lt;/td>
+&lt;td>Command to launch from the logout keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.reboot&lt;/td>
+&lt;td>Command to launch from the reboot keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.shutdown&lt;/td>
+&lt;td>Command to launch from the shutdown keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.lock&lt;/td>
+&lt;td>Command to launch from the lock screen keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.sleep&lt;/td>
+&lt;td>Command to launch from the sleep keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.settings&lt;/td>
+&lt;td>Command to launch from the Control Panel keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.display&lt;/td>
+&lt;td>Command to launch from the Display Settings keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.wifi&lt;/td>
+&lt;td>Command to launch from the Wifi Settings keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.bluetooth&lt;/td>
+&lt;td>Command to launch from the Bluetooth Settings keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.files&lt;/td>
+&lt;td>Command to launch from the file browser keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.notification_ui&lt;/td>
+&lt;td>Command to launch from the notification UI keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.1&amp;hellip;i3-wm.program.3&lt;/td>
+&lt;td>Optional programs to start with i3&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Docs: Releases</title><link>https://regolith-linux.org/hu/docs/reference/releases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/hu/docs/reference/releases/</guid><description>
+&lt;p>Release notes and other version-specific content can be found here.&lt;/p></description></item></channel></rss>
