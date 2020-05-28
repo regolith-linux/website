@@ -30,6 +30,9 @@ rm -rf public/*
 # Build the project.
 hugo --minify
 
+# Set the CNAME
+echo "regolith-linux.org" > public/CNAME
+
 # Add changes to git.
 git add --all
 git diff --staged --stat
