@@ -21,7 +21,7 @@ push_git() {
 
   # Push source and build repos.
   git push -u "${GIT_REMOTE}" "${GIT_BRANCH}"
-  git subtree push -f --prefix public "${GIT_URL}" "${GIT_BRANCH}"
+  git subtree push --prefix public "${GIT_URL}" "${GIT_BRANCH}"
 }
 
 # Make sure there are no remnants behind
