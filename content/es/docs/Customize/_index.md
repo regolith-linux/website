@@ -1,33 +1,31 @@
 ---
-title: "Customize"
-linkTitle: "Customize"
+title: "Personalización"
+linkTitle: "Personalización"
 weight: 4
 description: >
-  Customize Regolith to suit you.
+  Personaliza Regolith para que se ajuste a tus necesidades.
 ---
-
-Regolith, as a set of components, lacks a uniform configuration file, format, or set of conventions.  However efforts have been made to create as much consistency as possible by utilizing a simple session-wide key-value configuration facility known as [Xresources](https://wiki.debian.org/Xresources).  Interface preferences such as colors and typeface are defined in Xresource files and then read by components such as `Rofi` and `i3-wm`.  For the most part, Xresources can be used for higher level changes.  Lower level changes, for example swap out `i3bar` for `polybar` or `drun` for `Rofi` require the removal, installation, and configuration of other packages.
+Regolith, como conjunto de componentes, no dispone de un archivo de configuración, formato o conjunto de convenciones uniforme. Se realizó un sinfín de esfuerzos para crear la mayor consistencia posible utilizando una infraestructura de configuración llave-valor utilizada a lo largo de toda la sesión conocida cómo [Xresources](https://wiki.debian.org/Xresources). Las preferencias de interfáz tales como colores y fuente son definidas en los archivos Xresource y luego leídas por los componentes tales como `Rofi` e `i3-wm`. Para la mayoría de los casos, Xresources puede usarse para cambios de alto nivel. Cambios de bajo nivel, como por ejemplo cambiar `i3bar` por `polybar` o `drun`  por `Rofi` requieren la remoción, instalación y configuración de otros paquetes.
 
 {{% pageinfo %}}
-In addition to the content in this section, refer to the [tutorials](../howto) for step-by-step examples of how to customize Regolith.
+Además del contenido en esta sección, lease los [tutoriales](../howto)] para ejemplos paso-a-paso de como personalizar Regolith.
 {{% /pageinfo %}}
 
-## Look
+## Aspecto
+El mayor grado de cambio en la manera que puede verse Regolith se llama "look". Esto aúna color, fuente, tema GTK e iconos todo junto en una unidad empaquetable conocida como `look`. Algunos looks son embalados en el PPA de Regolith, el que viene por defecto en R1.4 es llamado `lascaille`
 
-The highest level change in the way Regolith looks is called a "look".  This ties together color, typeface, GTK theme and icons into a packagable unit known as a <code>look</code>.  A few looks ship in the Regolith PPA, the default for R1.4 being called `lascaille`.
+## Estilos
 
-## Styles
+Los <code>looks</code> de Regolith son una colección de definiciones de estilo que se empaquetan juntas en un todo cohesivo. Pero, ¿qué pasa si quieres cambiar y combinar aspectos de looks diferentes ó hacer pequeños cambios a un look ya existente? Bueno, los archivos Xresource que definen los looks pueden ser directamente modificados. Por ejemplo, para continuar usando el look Cahuella pero cambiando la fuente por defecto Source Code Pro a, digamos Ubuntu Mono, uno solo necesita modificar el archivo Xresource de fuente para especificar la nueva fuente (asumiendo que ya está instalada en el sistema).
 
-Regolith <code>looks</code> are a collection of style definitions that are bundled together as a cohesive whole.  But, what if you want to mix and match from different looks or make small tweaks to an existing look?  Well, the Xresource files that define the looks can be modified directly.  For example, to continue to use the Cahuella look but change the default font from Source Code Pro to, say Ubuntu Mono, one would just need to modify the typeface Xresource file to specify the new font (assuming it's already installed on the system).
+## Compositores
 
-## Compositors
+Un compositor es un componente de escritorio que provee efectos visuales a las ventanas. Si bien no es necesario para que funcione el escritorio, provee al usuario con algunas pistas sobre la aplicación en foco, las transiciones, y otros efectos. La performance y el comportamiento de los compositores pueden variar dependiendo del hardware gráfico y las configuraciones de los controladores. Debido a esto, se prestó especial atención para que esto pueda ser fácilmente cambiado basado en las necesidades del usuario.
 
-A compositor is a desktop component that provides visual effects to windows. While not necessary for a desktop to function, they provide some hints to the user regarding the focused application, transitions, and other effects.  The performance and behavior of compositors can vary depending on graphics hardware and driver configurations.  Due to this, special attention was made such that they can be easily swapped based on the users needs.
+## Componentes
 
-## Components
+Un nivel más profundo de personalización es cambiar qué componentes se van a cargar y usar. Este es un tópico avanzado y requiere tanto de coraje para lidiar con lo inesperado como también conocimiento técnico general y algo de paciencia también.
 
-A deeper level of customization is to change which components are loaded and used.  This is an advanced topic and requires both some courage to deal with the unexpected as well as general technical knowledge and some patience.  
+## Paquetes
 
-## Packages
-
-Regolith is ultimately a set of Debian packages that exist as collections of files on the user's computer. Packages can be created and hosted by anyone willing and able to create a launchpad account and some skills with packaging.  This section covers the details of Regolith's package structure and tips on creating your own.
+En última instancia Regolith es un conjunto de paquetes de Debian que existe como una colección de archivos en la computadora del usuario. Los paquetes pueden ser creados y alojados por cualquiera que que tenga la intención y la capacidad de crear una cuenta en la plataforma de lanzamiento y habilidad con empaquetado. Esta sección cubre los detalles de la estructura de paquetes de Regolith y consejos de como crear los tuyos propios.
