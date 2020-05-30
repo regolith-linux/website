@@ -1,56 +1,57 @@
 ---
-title: "Look"
-linkTitle: "Look"
+title: "Aspecto"
+linkTitle: "Aspecto"
 weight: 1
 description: >
-  Regolith Looks
+  Aspecto de Regolith
 ---
 
-Looks provided by Regolith have the package prefix <code>regolith-look-</code>.  For example, another look sporting the Solarized color palette and a different GTK theme and icon set is called <code>regolith-look-solarized-dark</code>.  
+Los `looks` provistos por Regolith tienen el prefijo de paquete <code>regolith-look-</code>. Por ejemplo, otro look que tiene la misma paleta de colores Solarized y un tema GTK diferente se llama <code>regolith-look-solarized-dark</code>.
 
 
-## Finding Looks
-All <code>look</code> packages using this naming scheme can be found via the following command:
+## Encontrando Aspectos
+Todos los paquetes <code>look</code> que usan este esquema nominal pueden ser encontrados a traves del siguiente comando:
 ```bash
 $ apt search ^regolith-look-
 ```
 
-## Installing a Look
-Looks can be installed via the `apt` tool or with any tool that can install Debian packages on the system, such as `synaptic`.  For example, this command will install the `Ubuntu` look:
+## Instalando un Aspecto
+
+Los aspectos pueden ser instalados a traves de la herramienta `apt` o con cualquier herramienta que pueda instalar paquetes Debian en el sistema, tales como `synaptic`. Por ejemplo, este comando instalará el aspecto `Ubuntu`:
 ```bash
 $ sudo apt install regolith-look-ubuntu
 ```
 
-If you pay attention to the output of `apt` you may notice that in addition to installing the look, `fonts-font-awesome` will also be installed. As a feature, looks are able to depend on any resources or artifacts they require as packages.  This ensures that once a `look` is installed, the user does not need to care about what other things that `look` make require to function properly.  It's taken care of by the package manager.
+Si prestas atención a la salida de `apt` notarás que además de instalar el aspecto, también se instalará `fonts-font-awesome`. Como característica, los aspectos son capaces de depender de cualquier recurso o artefacto que requieran como paquete. Esto se asegura de que una vez que un `look` está instalado, el usuario no se tenga que preocupar de que otras cosas pueda llegar a requerir ese `look` para funcionar apropiadamente. El gestor de paquetes se encarga de ello.
 
-## Switching to a Look
+## Cambiando a un Aspecto
 
-Once a `look` has been installed, a utility command called `regolith-look` can be used to enable it.  To enable the `ubuntu` `look` installed in the previous step, try the following:
+Una vez que un `look` ha sido instalado, una utilidad llamada `regolith-look` puede ser utilizada para habilitarlo. Para habilitar el `look` `Ubuntu` instalado en el paso anterior, intenta lo siguiente:
 ```bash
 $ regolith-look set ubuntu
 $ regolith-look refresh
 ```
 
-The command will mention that it created a file in your user directory.  This file is an Xresource file, and it's stored in a specific path such that `i3-gnome-flashback` will look for it upon session start.  Let's have a look at the file:
+El comando mencionará que creó un archivo en tu directorio de usuario. Este archivo es un archivo Xresource, y está guardado en una carpeta específica en la que `i3-gnome-flashback` lo buscará cuando se inicie la sesión. Miremos el archivo:
 ```bash
 $ cat ~/.Xresources-regolith
 #include "/etc/regolith/styles/ubuntu/root"
 ```
 
-In essence, our Xresource file is simply pointing to another Xresource file.  Lets look there:
+En esencia, nuestro archivo Xresource está simplemente apuntando a otro archivo Xresource. Miremos aquí:
 ```bash
 $ cat /etc/regolith/styles/ubuntu/root
-! -- Styles - Colors
+! -- Estilos - Colores
 #include "/etc/regolith/styles/ubuntu/color"
 
-! -- Styles - Fonts
+! -- Estilos - Fuentes
 #include "/etc/regolith/styles/ubuntu/typeface"
 
-! -- Styles - Theme
+! -- Estilos - Tema
 #include "/etc/regolith/styles/ubuntu/theme"
 
-! -- Applications
-! These files map values defined above into specific app settings.
+! -- Aplicaciones
+! Estos archivos mapean los valores definidos arriba en ajustes específicos de aplicación
 #include "/etc/regolith/styles/st-term"
 #include "/etc/regolith/styles/i3-wm"
 #include "/etc/regolith/styles/i3xrocks"
@@ -58,15 +59,15 @@ $ cat /etc/regolith/styles/ubuntu/root
 #include "/etc/regolith/styles/gnome"
 ```
 
-Here we can see that there are separate Xresource files that define color, typeface and theme (icon, GTK), and these are loaded and then applied to the UI components integrated by Regolith: st (terminal), i3-wm, i3xrocks, rofi, and GNOME.
+Aquí podemos ver que hay archivos Xresource separados que definen color, fuente y tema (iconos, GTK), y que son cargados y luego aplicados a los componentes de IU integrados por Regolith: st (terminal), i3-wm, i3xrocks, rofi, y GNOME.
 
-## Refreshing a Look
+## Refrescando un Aspecto
 
-There may be times that the UI of the system and the Regolith look get out of sync.  For example, if a program sets the wallpaper or icon theme externally, this will not be reflected in the Xresource settings.  Regolith will only update itself upon login if it detects of Xresource changes have been made.  If you wish to force Regolith to reload the UI based on the Xresource settings, run:
+Quizás haya momentos donde la IU del sistema y el aspecto de Regolith pierdan sincronía. Por ejemplo, si un programa define el fondo de pantalla o el tema de íconos de manera externa, esto no se verá reflejado en los ajustes Xresource. Regolith solamente se actualizará a si mismo en el ingreso si detecta que hubo cambios en Xresources. Si quieres forzar a Regolith a recargar la IU basada en los ajustes Xresource, corre:
 ```bash
 $ regolith-look refresh
 ```
 
-## Learning More
+## Aprender Más
 
-To dig deeper, read about `Styles` in the following page and have a look at the [`regolith-styles` README](https://github.com/regolith-linux/regolith-styles).
+Para profundizar más, lee sobre `Estilos` en la siguiente página y echale un vistazo al [LEEME `regolith-styles`](https://github.com/regolith-linux/regolith-styles).
