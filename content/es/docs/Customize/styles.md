@@ -1,50 +1,51 @@
 ---
-title: "Styles"
-linkTitle: "Styles"
+title: "Estilos"
+linkTitle: "Estilos"
 weight: 2
 description: >
-  Details about Regolith styles.
+  Detalles sobre los estilos en Regolith.
 ---
 
-As stated in the [repo readme](https://github.com/regolith-linux/regolith-styles), Regolith styles are a convention by which a set of files which define key/value pairs are loaded into memory and can be queried by `xrdb` or `xrescat`.  Xresources employes the [C preprocessor](https://en.wikipedia.org/wiki/C_preprocessor) to allow for complex behaviors such as including more files, defining constants, and conditional expressions.  In Regolith, only two preprocessor directives are used: `#include` and `#define`.  `#include` statements are used to reference other files.  Collections of files called `looks` were covered in the previous section of this guide.  `#define` statements simply allow for a symbolic value to be replaced by a literal value, like defining a variable.
+Como dejamos claro en el [leeme del repositorio](https://github.com/regolith-linux/regolith-styles), los estilos de Regolith son una convención por la cual un conjunto de archivos que definen pares clave/valor son cargados en la memoria y pueden ser consultados por `xrdb` o `xrescat`. Xresources emplea el [preprocesador de C](https://en.wikipedia.org/wiki/C_preprocessor) para permitir comportamientos complejos tales como incluir archivos, definir constantes y expresiones condicionales. En Regolith, solo se usan dos directivas del preprocesador : `#include` y `#define`. Las declaraciones `#include` se usan para referenciar otros archivos. Colecciones o archivos llamados `looks` fueron cubiertos en la sección previa de esta guía. Las declaraciones `#define` simplemente permiten que un valor simbólico pueda ser reemplazado por un valor literal, como definir una variable.
 
-## Defines
+## Archivos Xresource de Definición
 
-To maximize the re-use of theme information in Regolith, Xresources are divided into two categories of files: definition files and application files.  The definition files make heavy use of the `define` directive.  They essentially bind an abstract key, such as "blue" or "terminal font" to a literal value, such as `#0000FF` or `Source Code Pro Medium`.  In making changes to files, it's expected that these defines will change.  The user may wish to specify a different icon set, or typeface, and would do so by modifying or creating a new definition file.  Once this file is created, it needs to be referenced by a top-level Xresource file in `~/Xresource-regolith`. 
+Para maximizar el re-uso de la información de temas en Regolith, los Xresources son divididos en dos categorías o archivos: archivos de definición y archivos de aplicación. Los archivos de definición hae un uso más intensivo de la directiva `define`. Esencialmente ellos enlazan una clave abstracta, tal como "azul" o "fuente de terminal" a un valor literal, tal como `#0000FF` o `Source Code Pro Medium`. Cuando se hacen cambios a los archivos, se espera que esas definiciones cambien. El usuario querrá especificar un conjunto distinto de íconos, o fuente, y lo hará modificando o creando un nuevo archivo de definición. Una vez que el archivo es creado, necesita ser referenciado por un archivo Xresource de alto nivel en `~/Xresource-regolith`. 
 
 {{% pageinfo %}}
-Note that when referencing other files in Xresources via the `#include` directive, shortcuts like `$HOME` and `~/` are not available.  Absolute paths are required.
+
+Nota que cuando referencias otros archivos en Xresources a traves de la directiva `include`, atajos tales como `$HOME` y `~/` no están disponibles. Se requieren rutas absolutas.
 {{% /pageinfo %}}
 
-## Application Xresource files
+## Archivos Xresource de Aplicación
 
-As mentioned previously, in `/etc/regolith/styles` lives a number of Xresources, including those for specific applications such as `st` or `i3-wm`.  Opening these files will show a mapping of the abstract keys provided by the defines files to application specific keys.  In this way, the general description of the look can be mapped to any UI component or application that can read from Xresources.
+Como se mencionó previamente, en `/etc/regolith/styles/` viven una cantidad de Xresources, incluyendo aquellos para aplicaciones especificas tales como `st` o `i3-wm`. Abriendo esos archivos mostrará un mapeo de las claves abstractas provistas por los archivos de definición a claves específicas de aplicación. De esta manera, la descripción general del aspecto puede ser mapeada a cualquier componente IU o aplicación que pueda leer de Xresources.
 
-## Loading Order
+## Orden de Carga
 
-The `i3-gnome-flashback` session init script will check for the first Xresources file it finds in the following order:
+El script de inició de la sesión `i3-gnome-flashback` chequeará por el primer archivo Xresources que encuentre en el siguiente orden:
 1. `~/.Xresources-regolith`
 2. `/etc/regolith/styles/root`
 
-In addition to a Regolith Xresources file, `~/.Xresources` will also be loaded if it exists upon session start.
+Además de un archivo Xresource de Regolith, `~/.Xresources` también será cargada si existe en el inició de la sesión.
 
-After loading a root Xresource file, the session init script then merges any entries found in the `~/.config/regolith/Xresources` file.  This file provides a quick way of simply overriding a few values without having to copy the entire set of resource definitions.
+Luego de cargar un archivo Xresource raíz, el script de inicio de sesión combina cualquier entrada enconrada en el archivo `~/.config/regolith/Xresources`. Este archivo provee una manera simple de sobre-escribir algunos pocos valores sin tener que copiar el conjunto entero de definiciones de recursos.
 
-## Reloading Xresources
+## Recargando Xresources
 
-The `regolith-look` command can be used to reload all Xresource entries as they are loaded upon session initialization:
+El comando `regolith-look` puede ser usado para recargar todas las entradas Xresource tal como son cargadas durante la inicialización de la sesión:
 ```bash
 $ regolith-look refresh
 ```
 
-Alternatively, the `xrdb` command can be used to refresh specific Xresource files after they have changed.  For example, to reload the user Xresource file run:
+De manera alternativa, el comando `xrdb` puede ser usado para refrescar archivos Xresource especificos luego de que hayan sido cambiados. Por ejemplo, para recargar el archivo Xresource del usuario corre:
 ```bash
 $ xrdb -merge ~/.Xresources-regolith
 ```
 
-### Verification
+### Verificación
 
-You can test that a change has been made to your Xresources file by querying it from the command line.  If a change was made to key `foo.bar` then the following command will return it's current value, or `empty` if unset:
+Puedes comprobar que un cambio fue hecho a tu archivo Xresource consultandoló desde la línea de comándos. Si se realizó un cambio a la clave `foo.bar` entonces el siguiente comando retornará su valor actual, o `empty` si no está definido:
 ```bash
 $ xrescat foo.bar empty
 ```
