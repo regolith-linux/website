@@ -1,50 +1,50 @@
 ---
-title: "Compositors"
-linkTitle: "Compositors"
+title: "Compositores"
+linkTitle: "Compositores"
 weight: 3
 description: >
-  Configure visual effects in Regolith.
+  Configura los efectos visuales en Regolith.
 ---
 
 {{% pageinfo %}}
-Pay special attention to this section if you are experiencing odd visual glitches or slow graphics performance.
+Pon especial atención a esta sección si estás experimentando fallos visuales raros o un rendimiento gráfico bajo.
 {{% /pageinfo %}}
 
-As mentioned previously, a compositor is a UI component that visual effects to windows before they are rendered on-screen.  Many desktop environments integrate a compositor directly into the window manager, making it difficult to switch out or disable.  In Regolith, the compositor is defined as a pluggable "extension point" in the packaging system. This means that compositors can be switched out simply by installing the packages that contain them.  The underlying packaging system will ensure there are no conflicts and that all the dependencies of a given compositor are also installed.
+Como se mencionó previamente, un compositor es un componente IU que agrega efectos visuales a las ventanas antes de que sean renderizadas en pantalla. Muchos entornos de escritorio integran un compositor directamente en el gestor de ventanas, haciendo que sea difícil de cambiar o deshabilitar. En Regolith, el compositor es definido como un "punto de extensión" conectable en el sistema de empaquetado. Esto quiere decir que los compositores pueden ser cambiados de manera sencilla instalando los paquetes que los contengan. El sistema de empaquetado subyacente se encargará de que no haya conflictos y de que todas las dependencias de determinado compositor también sean instaladas.
 
-## Finding Available Compositors
+## Encontrando Compositores Disponibles
 
-The following command will list all compositors configured to work with Regolith:
+El siguiente comando listará todos los compositores configurados para trabajar con Regolith:
 ```bash
 apt search regolith-compositor-
 ```
 
-At least the following three compositors should be available:
+Por lo menos los siguientes tres compositores deberían estar disponibles:
 
-| Package Name            | Backend           | Description |
+| Nombre del Paquete            | Backend           | Descripción |
 |-------------------|-----------------|------|
-| regolith-compositor-compton-glx   | [Compton](https://github.com/yshui/picom)        | The default compositor for Regolith.  This compositor is modern, maintained, and handles screen tearing.|
-| regolith-compositor-xcompmgr            | xcompmgr     | An early compositor that may offer more consistent performance if `compton-glx` is promblematic |
-| regolith-compositor-none      |   | A no-op package that does not run a Compositor. Best for absolute UI performance, at the cost of visual effects. |
+| regolith-compositor-compton-glx   | [Compton](https://github.com/yshui/picom)        | Es el compositor por defecto para Regolith. Este compositor es moderno, mantenido, y maneja el desgarro de pantalla.|
+| regolith-compositor-xcompmgr            | xcompmgr     | Un compositor antiguo que puede ofrecer un rendimiento más consistente si `compton-glx` te da problemas |
+| regolith-compositor-none      |   | Un paquete no operativo que no corre ningún Compositor. Lo mejor para un rendimiento absoluto de la IU, pagando el precio de los efectos visuales. |
 
-## Installing a Compositor
+## Instalando un Compositor
 
 {{% pageinfo %}}
-Due to the way that the compositor is managed by i3-wm, you must log out and back in for compositor changes to take effect.  Restarting i3 is not sufficient.
+Debido a la manera en la que el compositor es gestionado por i3-wm, debes cerrar la sesión y volver a iniciarla para que los cambios del compositor surtan efecto. Reiniciar i3 no es suficiente.
 {{% /pageinfo %}}
 
-Run the following package install command to swap out the compositor.  In this case we'll run `xcompmgr`:
+Corre el siguiente comando de instalación de paquete para cambiar el compositor. En este caso correremos `xcompmgr`:
 ```bash
 $ apt install regolith-compositor-xcompmgr
 ```
 
-Log back in and the new compositor should be loaded.  You can verify by checking the process list for `xcompmgr`:
+Inicia sesión nuevamente y el compositor debería estar cargado. Puedes verificarlo chequeando la lista de procesos en busca de `xcompmgr`:
 ```bash
 $ ps aux | grep xcompmgr
 ```
 
-## Overriding a Compositor Configuration
+## Sobrescribiendo la Configuración de un Compositor
 
 ### Compton/Picom
 
-To provide your own Compton/Picom compositor config, copy the default or create your own and save it as `~/.config/regolith/compton/config`.  Upon next session it will be loaded instead of the default config `/etc/regolith/compton/config`.
+Para proveer tu propia configuración de compositor Compton/Picom, copia la configuración por defecto o crea la tuya propia y guardalá `~/.config/regolith/compton/config`. En el próximo inicio de sesión será cargada en lugar de la configuración por defecto `/etc/regolith/compton/config`.
