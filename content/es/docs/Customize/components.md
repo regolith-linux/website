@@ -1,24 +1,24 @@
 ---
-title: "Components"
-linkTitle: "Components"
+title: "Componentes"
+linkTitle: "Componentes"
 weight: 4
 description: >
-  Change out the UI components that make up Regolith.
+  Cambia los componentes IU que hacen a Regolith.
 ---
 
-As previously mentioned, Regolith is a collection of existing open source components that are integrated into a desktop environment.  Due to standards regarding the way UI components should communicate and years of integration between components, for the most part is simple to swap out parts of the UI for others.  
+Como mencionamos previamente, Regolith es una colección de componentes open-source ya existentes que son integrados en un entorno de escritorio. Dado a los estándares sobre cómo los componentes IU deberían comunicarse y años de integración entre componentes, para la mayoría de los casos es simple cambiar partes de la IU por otras.
 
-The following table lists each UI component and notes regarding it's mutability:
+La siguiente tabla lista cada componente IU y las notas respecto a su mutabilidad:
 
-| UI Component            | Alternatives           | Swappable |
+| Componente IU            | Alternativas           | Intercambiable |
 |-------------------|-----------------|------|
-| Xorg   | Unknown        | Unknown |
-| i3-gaps            | i3-wm, others    | Difficult but possible |
-| i3bar      | Polybar, lemonbar, many others.  | Yes, the i3 config file is changed to load a different bar. |
-| i3xrocks | i3blocks, barista, many others. | Yes, the i3 config file is changed to load a different status program. |
-| Rofication | Dunst, gnome-flashback | Yes, the i3 config file is configured to load the Notification backend and Rofi UI, and i3xrocks is configured to load the blocklet. |
-| Remontoire | Conky | Yes, the i3 config file is changed to load a different help program. |
-| gdm3 | lightdm, sddm, xdm, others. | This is configured in Ubuntu. Installing an alternative session manager should present a prompt to specify which to use. |
-| gnome-flashback | None | No | 
+| Xorg   | Desconocido        | Desconocido |
+| i3-gaps            | i3-wm, otros    | Dificultoso pero posible |
+| i3bar      | Polybar, lemonbar, muchos otros.  | Si, el archivo de configuración i3 se cambia para cargar una barra diferente. |
+| i3xrocks | i3blocks, barista, muchos otros. | Si, el archivo de configuración i3 se cambia para cargar un programa de estado diferente. |
+| Rofication | Dunst, gnome-flashback | Si, el archivo de configuración i3 se configura para cargar el backend de notificaciones y la IU Rofi, e i3xrocks se configura para cargar el blocket. |
+| Remontoire | Conky | Si, el archivo de configuración i3 se cambia para cargar un programa de ayuda diferente. |
+| gdm3 | lightdm, sddm, xdm, otros. | Esto es configurado en Ubuntu. Instalar un gestor de sesiones diferente debería presentar una entrada para especificar cual usar. |
+| gnome-flashback | Ninguna | No | 
 
-Due to the breadth of the topic, more details are not available here.  Experimenting with different UI components is a fun way to learn more about the internals of the operating system.  It is recommended to first experiment in a VM running Regolith to avoid breaking your working environment.
+Dada la amplitud del tópico, no hay mas detalles disponibles aquí. Experimentando con distintos componentes IU es una manera divertida de aprender más sobre las internas del sistema operativo. Se recomienda primero experimentar en una MV corriendo Regolith para evitar romper tu ambiente de trabajo.
