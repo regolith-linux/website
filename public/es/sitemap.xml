@@ -33,6 +33,36 @@
   </url>
   
   <url>
+    <loc>https://regolith-linux.org/es/docs/customize/look/</loc>
+    <lastmod>2020-05-31T16:23:08-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/customize/look/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/customize/look/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/customize/look/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/customize/look/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/customize/look/"
+                />
+  </url>
+  
+  <url>
     <loc>https://regolith-linux.org/es/docs/getting-started/install/</loc>
     <lastmod>2020-05-21T22:48:31-03:00</lastmod>
     <xhtml:link
@@ -119,36 +149,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/reference/keybindings/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://regolith-linux.org/es/docs/customize/look/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://regolith-linux.org/docs/customize/look/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://regolith-linux.org/de/docs/customize/look/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hu"
-                href="https://regolith-linux.org/hu/docs/customize/look/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://regolith-linux.org/fr/docs/customize/look/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://regolith-linux.org/es/docs/customize/look/"
                 />
   </url>
   
@@ -244,7 +244,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/interface/apps/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-05-31T16:23:08-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -363,8 +363,38 @@
   </url>
   
   <url>
+    <loc>https://regolith-linux.org/es/docs/customize/styles/</loc>
+    <lastmod>2020-05-31T16:23:08-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/customize/styles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/customize/styles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/customize/styles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/customize/styles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/customize/styles/"
+                />
+  </url>
+  
+  <url>
     <loc>https://regolith-linux.org/es/docs/interface/notifications/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-05-31T16:23:08-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -513,36 +543,6 @@
   </url>
   
   <url>
-    <loc>https://regolith-linux.org/es/docs/customize/styles/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://regolith-linux.org/docs/customize/styles/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://regolith-linux.org/de/docs/customize/styles/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hu"
-                href="https://regolith-linux.org/hu/docs/customize/styles/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://regolith-linux.org/fr/docs/customize/styles/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://regolith-linux.org/es/docs/customize/styles/"
-                />
-  </url>
-  
-  <url>
     <loc>https://regolith-linux.org/es/docs/policy-and-process/updates/</loc>
     <lastmod>2020-05-16T16:19:50-03:00</lastmod>
     <xhtml:link
@@ -634,7 +634,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/customize/compositors/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-05-31T16:23:08-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -693,6 +693,36 @@
   </url>
   
   <url>
+    <loc>https://regolith-linux.org/es/docs/interface/system/</loc>
+    <lastmod>2020-05-31T16:23:08-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/interface/system/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/interface/system/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/interface/system/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/interface/system/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/interface/system/"
+                />
+  </url>
+  
+  <url>
     <loc>https://regolith-linux.org/es/docs/policy-and-process/contributions/</loc>
     <lastmod>2020-05-16T16:19:50-03:00</lastmod>
     <xhtml:link
@@ -724,7 +754,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/interface/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-05-31T16:23:08-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -843,36 +873,6 @@
   </url>
   
   <url>
-    <loc>https://regolith-linux.org/es/docs/interface/system/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://regolith-linux.org/docs/interface/system/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://regolith-linux.org/de/docs/interface/system/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hu"
-                href="https://regolith-linux.org/hu/docs/interface/system/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://regolith-linux.org/fr/docs/interface/system/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://regolith-linux.org/es/docs/interface/system/"
-                />
-  </url>
-  
-  <url>
     <loc>https://regolith-linux.org/es/docs/reference/releases/regolith-1.3-release-notes/</loc>
     <lastmod>2020-05-16T16:19:50-03:00</lastmod>
     <xhtml:link
@@ -904,7 +904,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/interface/advanced/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-05-31T16:23:08-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -964,7 +964,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/customize/components/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-05-31T16:23:08-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -994,7 +994,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/customize/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-05-31T16:23:08-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1054,7 +1054,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/customize/packages/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-05-31T16:23:08-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
