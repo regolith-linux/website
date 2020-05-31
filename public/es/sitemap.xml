@@ -753,6 +753,36 @@
   </url>
   
   <url>
+    <loc>https://regolith-linux.org/es/docs/developer/packaging/</loc>
+    <lastmod>2020-05-30T22:09:04-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/developer/packaging/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/developer/packaging/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/developer/packaging/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/developer/packaging/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/developer/packaging/"
+                />
+  </url>
+  
+  <url>
     <loc>https://regolith-linux.org/es/docs/policy-and-process/support/</loc>
     <lastmod>2020-05-16T16:19:50-03:00</lastmod>
     <xhtml:link
