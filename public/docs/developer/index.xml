@@ -126,5 +126,77 @@ interval=60
       </description>
     </item>
     
+    <item>
+      <title>Docs: Packaging</title>
+      <link>https://regolith-linux.org/docs/developer/packaging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/docs/developer/packaging/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Regolith is distributed as a set of interrelated Debian packages.  As of Regolith 1.4, there are packages for 3 releases of Ubuntu: bionic, eoan, and focal.  This page describes how code changes can be packaged such that users will get the updated code.&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Debian is the packaging format and system used by Regolith.  Just like Debian, Ubuntu, and other Debian-based systems, the tools and workflow used to develop and update Regolith packages works in the same manner as those system.  The general process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Produce some code change against an existing package.  In Regolith, generally there is a repo for each package, but in some cases one repo may host several source or binary packages.&lt;/li&gt;
+&lt;li&gt;Update the Debian metadata related to the change.  This may just be a &lt;code&gt;changelog&lt;/code&gt; entry, or could be more complex such as a new binary package, additional runtime dependencies, or updates to the build files which generate the executable code.&lt;/li&gt;
+&lt;li&gt;Do local testing and then push updates to GitHub.&lt;/li&gt;
+&lt;li&gt;Use a build script to generate the source package files.&lt;/li&gt;
+&lt;li&gt;Upload the source package to launchpad.net, so it can be built and hosted on the Regolith &lt;code&gt;unstable&lt;/code&gt; (or &lt;code&gt;experimental&lt;/code&gt; depending on the level of change) PPA&lt;/li&gt;
+&lt;li&gt;Test the package once it&#39;s been uploaded on a Regolith system.&lt;/li&gt;
+&lt;li&gt;Once testing is complete, the package is promoted to &lt;code&gt;stable&lt;/code&gt; and then eventually &lt;code&gt;release&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;basic-packages-vs-gbp-packages&#34;&gt;Basic Packages vs &lt;code&gt;gbp&lt;/code&gt; Packages&lt;/h3&gt;
+&lt;p&gt;Until recently, packaging was done manually in that no scripts were used.  Recently, we&#39;ve been moving to using the &lt;code&gt;gbp&lt;/code&gt; tool which provides some nice productivity enhancements when packaging with git repos.  Branch names may differ based on if the package in question has been migrated yet.&lt;/p&gt;
+&lt;h3 id=&#34;branch-conventions&#34;&gt;Branch Conventions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;If a package contains the package source and the debian metadata, then &lt;code&gt;master&lt;/code&gt; represents the development branch.  The Ubuntu version associated with a changelog entry is always the oldest supported, currently &lt;code&gt;bionic&lt;/code&gt;.  This is to comply with launchpad.net&#39;s package copy policy.&lt;/li&gt;
+&lt;li&gt;If a package varies from one Ubuntu release to another, then branches are created for each required version, except for the most recent, which is &lt;code&gt;master&lt;/code&gt;.  Example branches:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;bionic
+eoan
+master
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;If a package requires some github integration such that the package cannot be cleanly built on &lt;code&gt;master&lt;/code&gt;, then a branch &lt;code&gt;debian&lt;/code&gt; is used specifically for the package.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;In order to build packages locally, the debian build tools will need to installed.  It is necessary to understand these tools, and how they work together to produce and verify a package.  Read &lt;a href=&#34;https://packaging.ubuntu.com/html/&#34;&gt;the guides here&lt;/a&gt; and install the software they specify.&lt;/li&gt;
+&lt;li&gt;To push to a Regolith PPA, you will need to become an official contributor and have your keys added to the launchpad account to enable you to push updates.  This is not necessary however to push to your own PPA.  &lt;a href=&#34;https://askubuntu.com/questions/71510/how-do-i-create-a-ppa&#34;&gt;Check here to learn how to create your own PPA&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;h3 id=&#34;add-comment-to-i3-config&#34;&gt;Add comment to i3 config&lt;/h3&gt;
+&lt;h4 id=&#34;1-checkout-the-regolith-i3-gaps-package&#34;&gt;1. Checkout the &lt;code&gt;regolith-i3-gaps&lt;/code&gt; package:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ git clone https://github.com/regolith-linux/regolith-i3-gaps-config.git
+$ &lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; regolith-i3-gaps-config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;2-make-a-change&#34;&gt;2. Make a change:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;# Here is my comment at the end&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;3-update-the-changelog-to-bump-the-version-and-describe-your-change&#34;&gt;3. Update the changelog to bump the version and describe your change:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ dch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will load an editor and create a new changelog entry.  Here is what I added, yours will differ based on identity and configuration:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;regolith-i3-gaps-config (2.4.15-1) bionic; urgency=medium
+
+  * Added comment to i3 config file.
+
+ -- Regolith Linux &amp;lt;regolith.linux@gmail.com&amp;gt;  Sat, 30 May 2020 20:10:27 -0700
+
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;4-commit-and-push-the-change-to-the-git-repository&#34;&gt;4. Commit and push the change to the git repository:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ git commit -am &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Added comment to i3 config file.&amp;#34;&lt;/span&gt;
+$ git push origin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;5-a-shell-scripthttpsgithubcomregolith-linuxregolith-builderblobmasterbuildsh-is-used-to-build-the-source-package-for-uploading-to-launchpadnet&#34;&gt;5. A &lt;a href=&#34;https://github.com/regolith-linux/regolith-builder/blob/master/build.sh&#34;&gt;shell script&lt;/a&gt; is used to build the source package for uploading to launchpad.net:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; ..
+$ git clone https://github.com/regolith-linux/regolith-builder.git
+$ &lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; regolith-builder
+$ ./build.sh package-model-R1.4.2.json ppa:regolith-linux/ubuntu/unstable /tmp regolith-i3-gaps-config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After this script completes, the source package will be uploaded to launchpad.net for inclusion into the &lt;code&gt;unstable&lt;/code&gt; PPA.&lt;/p&gt;
+&lt;h4 id=&#34;6-verification&#34;&gt;6. Verification&lt;/h4&gt;
+&lt;p&gt;Go to the &lt;a href=&#34;https://launchpad.net/~regolith-linux/+archive/ubuntu/unstable&#34;&gt;launchpad.net PPA page&lt;/a&gt; to see the current status of the upload.  It typically takes 10 - 30 minutes for a package update to complete.&lt;/p&gt;
+&lt;h4 id=&#34;summary&#34;&gt;Summary&lt;/h4&gt;
+&lt;p&gt;Once packaging building completes successfully, the binary packages will be available for users to download during any automatic or manual update process.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
