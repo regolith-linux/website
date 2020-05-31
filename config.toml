@@ -79,7 +79,7 @@ weight = 3
 title = "Regolith"
 description = "Regolith Linux Weboldal"
 contentDir = "content/hu"
-languageName ="magyar"
+languageName ="Magyar"
 # Weight used for sorting.
 weight = 4
 
