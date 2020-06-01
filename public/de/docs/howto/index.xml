@@ -27,7 +27,7 @@
 
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;In Regolith, Xresource values can be changed via two methods: supplying your own Xresource files, and overriding the existing Xresource values.  The latter approach is strongly recommended, as it makes upgrading to newer versions of Regolith less likely to break.  If you copy the Xresource tree completely, you&#39;ll need to integrate any breaking changes in future versions manually.&lt;/p&gt;
+&lt;p&gt;In Regolith, Xresource values can be changed via two methods: supplying your own Xresource files, and overriding the existing Xresource values.  The latter approach is strongly recommended, as it makes upgrading to newer versions of Regolith less likely to break.  If you copy the Xresource tree completely, you&amp;rsquo;ll need to integrate any breaking changes in future versions manually.&lt;/p&gt;
 
 &lt;/div&gt;
 
@@ -141,8 +141,8 @@ $ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#3
 
 &lt;/div&gt;
 
-&lt;p&gt;Regolith uses a number of files in &lt;code&gt;/etc/regolith&lt;/code&gt; to determine the behavior and look of various components.  While it&#39;s possible to simply edit these files directly, users who do so run the risk of having their configurations overwritten upon future updates.  The Debian packaging system should ask users if they wish to take updates or keep the existing files, but this may have unintended side effects if users take partial updates of files.  As such Regolith, upon login, will look for user-staged version of configuration files and load those &lt;em&gt;instead of the defaults&lt;/em&gt; if they exist.  This is recommended over editing the files in &lt;code&gt;/etc/regolith&lt;/code&gt; directly as it gives the user more control over their configuration. This page describes how to create these files.&lt;/p&gt;
-&lt;p&gt;Depending on what you wish to change, you may need your own copy if the i3 config file, Xresources, or both.  If you&#39;re looking to change the way Regolith looks, Xresources may be all you need.  If you want to update or add keybindings or swap out components, you&#39;ll most likely need to stage the i3 config file.&lt;/p&gt;
+&lt;p&gt;Regolith uses a number of files in &lt;code&gt;/etc/regolith&lt;/code&gt; to determine the behavior and look of various components.  While it&amp;rsquo;s possible to simply edit these files directly, users who do so run the risk of having their configurations overwritten upon future updates.  The Debian packaging system should ask users if they wish to take updates or keep the existing files, but this may have unintended side effects if users take partial updates of files.  As such Regolith, upon login, will look for user-staged version of configuration files and load those &lt;em&gt;instead of the defaults&lt;/em&gt; if they exist.  This is recommended over editing the files in &lt;code&gt;/etc/regolith&lt;/code&gt; directly as it gives the user more control over their configuration. This page describes how to create these files.&lt;/p&gt;
+&lt;p&gt;Depending on what you wish to change, you may need your own copy if the i3 config file, Xresources, or both.  If you&amp;rsquo;re looking to change the way Regolith looks, Xresources may be all you need.  If you want to update or add keybindings or swap out components, you&amp;rsquo;ll most likely need to stage the i3 config file.&lt;/p&gt;
 &lt;h2 id=&#34;i3-config&#34;&gt;i3 Config&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Copy the default Regolith i3 config file into your home directory:&lt;/li&gt;
@@ -350,7 +350,7 @@ $ regolith-look refresh
         
         
         &lt;ol&gt;
-&lt;li&gt;You&#39;ll need to stage the Regolith Styles Xresource files as &lt;a href=&#34;../stage-configs&#34;&gt;described here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You&amp;rsquo;ll need to stage the Regolith Styles Xresource files as &lt;a href=&#34;../stage-configs&#34;&gt;described here&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Then stage the &lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt; Xresource file in your user directory, and ensure that your user copy of the Xresource file &lt;code&gt;#include&lt;/code&gt;s this copy.&lt;/li&gt;
 &lt;li&gt;Modify the styles to your preference.&lt;/li&gt;
 &lt;li&gt;After saving the styles file log out and back in to see the change.&lt;/li&gt;
@@ -413,12 +413,12 @@ $ sudo apt update
       <description>
         
         
-        &lt;p&gt;If you&#39;ve installed Regolith via the ISO, a few minor changes were made to address bugs found in R1.4.  Most of the fixes will be installed automatically by applying package updates, however a few items must be performed manually.&lt;/p&gt;
+        &lt;p&gt;If you&amp;rsquo;ve installed Regolith via the ISO, a few minor changes were made to address bugs found in R1.4.  Most of the fixes will be installed automatically by applying package updates, however a few items must be performed manually.&lt;/p&gt;
 &lt;h2 id=&#34;remove-deprecated-touchpad-driver&#34;&gt;Remove deprecated touchpad driver&lt;/h2&gt;
 &lt;p&gt;An obsolete driver was mistakenly included with the Regolith 1.4 ISO install that conflicts with GNOME touchpad settings.  Perform these steps to fix the touchpad:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt remove xserver-xorg-input-synaptics
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;add-regolith-boot-sequence&#34;&gt;Add Regolith boot sequence&lt;/h2&gt;
-&lt;p&gt;The ISO release now includes an unbranded boot animation, rather than keeping with the default Ubuntu branded experience.  Updating this boot-up theme (also known as a Plymouth theme) also enables users to enter a password if they&#39;ve setup an encrypted filesystem.&lt;/p&gt;
+&lt;p&gt;The ISO release now includes an unbranded boot animation, rather than keeping with the default Ubuntu branded experience.  Updating this boot-up theme (also known as a Plymouth theme) also enables users to enter a password if they&amp;rsquo;ve setup an encrypted filesystem.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install plymouth-theme-regolith
 $ sudo update-alternatives --config default.plymouth
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;From the prompt ensure that the Regolith configuration is selected.&lt;/p&gt;
@@ -488,7 +488,7 @@ $ sudo apt purge regolith-rofication
 &lt;li&gt;Create or add the following value to your &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; file:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;i3-wm.gaps.inner.size: 20
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;sub&gt;In this example we&#39;re setting the default gap to 20 pixels.&lt;/sub&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;sub&gt;In this example we&amp;rsquo;re setting the default gap to 20 pixels.&lt;/sub&gt;&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Reload the Xresource configuration:&lt;/li&gt;
 &lt;/ol&gt;

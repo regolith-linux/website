@@ -288,7 +288,7 @@
 &lt;td&gt;Bar status indicators&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;/etc/regolith/i3xrocks/conf.d&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;~/.config/regolith/i3xrocks/conf.d&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Each block has it&#39;s own file.  Filename determines ordering.&lt;/td&gt;
+&lt;td&gt;Each block has it&amp;rsquo;s own file.  Filename determines ordering.&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -375,7 +375,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;regolith-i3-gaps-config&lt;/td&gt;
-&lt;td&gt;Regolith&#39;s version of the i3 config file.&lt;/td&gt;
+&lt;td&gt;Regolith&amp;rsquo;s version of the i3 config file.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;regolith-i3xrocks-config&lt;/td&gt;
@@ -408,7 +408,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;diving-deeper&#34;&gt;Diving Deeper&lt;/h2&gt;
-&lt;p&gt;For those looking for more specifics, a machine-readable form of all packages and branch versions associated with a release are defined in &lt;a href=&#34;https://github.com/regolith-linux/regolith-builder&#34;&gt;this repo&lt;/a&gt;.  For example, R1.3&#39;s packages are defined &lt;a href=&#34;https://github.com/regolith-linux/regolith-builder/blob/master/package-model-R1.3.json&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For those looking for more specifics, a machine-readable form of all packages and branch versions associated with a release are defined in &lt;a href=&#34;https://github.com/regolith-linux/regolith-builder&#34;&gt;this repo&lt;/a&gt;.  For example, R1.3&amp;rsquo;s packages are defined &lt;a href=&#34;https://github.com/regolith-linux/regolith-builder/blob/master/package-model-R1.3.json&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>

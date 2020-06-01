@@ -70,7 +70,7 @@ $ sudo apt install i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time &lt;spa
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository --remove ppa:kgilmer/regolith-stable
 $ sudo add-apt-repository ppa:regolith-linux/release
 $ sudo apt update &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt dist-upgrade
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After performing these steps, you&#39;ll need to log out and back again.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After performing these steps, you&amp;rsquo;ll need to log out and back again.&lt;/p&gt;
 &lt;h3 id=&#34;aktualisieren-mit-anpassungen&#34;&gt;Aktualisieren mit Anpassungen&lt;/h3&gt;
 &lt;p&gt;Bei der Aktualisierung von einer Haupt- oder Nebenversion (z.B. 1.2 auf 1.3) ist es oft der Fall, dass neue Xresource-Werte und andere Konfigurationsdateien aktualisiert wurden.  Bestehende Xresource- und Konfigurationsdateien, wie z.B. die i3-Konfigurationsdatei, müssen aktualisiert werden, damit das Upgrade ordnungsgemäß funktioniert.  Wenn Sie irgendwelche Regolith-Konfigurationsdateien angepasst oder eine eigenständige X-Ressourcen-Datei (&lt;code&gt;~/.Xresources-regolith&lt;/code&gt;) erstellt haben, müssen diese möglicherweise aktualisiert werden, um die aktualisierten Dateien zu berücksichtigen.  Ein einfacher Ansatz hierfür ist es, sie an einen anderen Ort zu verschieben, das Upgrade durchzuführen und dann alle gewünschten Anpassungen in die neuen Dateien zu reintegrieren:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ mkdir ~/regolith-backup
@@ -83,7 +83,7 @@ $ mv ~/.config/regolith ~/regolith-backup
 $ sudo rm -Rf /etc/regolith/i3 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# stellen Sie sicher, dass alle wichtigen Änderungen gesichert werden&lt;/span&gt;
 $ sudo apt install regolith-i3-gaps-config
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;fehlerbehebung&#34;&gt;Fehlerbehebung&lt;/h3&gt;
-&lt;h5 id=&#34;blcke-die-nach-dem-upgrade-fehlen&#34;&gt;Blöcke, die nach dem Upgrade fehlen&lt;/h5&gt;
+&lt;h5 id=&#34;blöcke-die-nach-dem-upgrade-fehlen&#34;&gt;Blöcke, die nach dem Upgrade fehlen&lt;/h5&gt;
 &lt;p&gt;Regolith 1.4 ändert die Art und Weise, in der Blöcke installiert und konfiguriert werden.  Diese Änderung ist notwendig, um die &lt;code&gt;arm64&lt;/code&gt;-Architektur sauber zu unterstützen und das Austauschen von Komponenten wie dem Benachrichtigungssubsystem zu vereinfachen.  Ab 1.4 werden die Blöcke durch den Paketmanager installiert.  Siehe &lt;a href=&#34;../../howto/add-remove-blocklets&#34;&gt;dieses HowTo&lt;/a&gt; zum Hinzufügen und Konfigurieren von Blöcken.&lt;/p&gt;
 &lt;h2 id=&#34;ubuntu-aktualisieren&#34;&gt;Ubuntu aktualisieren&lt;/h2&gt;
 &lt;p&gt;Ein Upgrade von Ubuntu 18.04, 18.10, 19.04 oder 19.10 auf 20.04 erfordert, dass das Regolith-PPA erneut hinzugefügt wird, sobald das Ubuntu-Upgrade abgeschlossen ist.&lt;/p&gt;
@@ -174,7 +174,7 @@ $ rm -Rf ~/.config/regolith/flags
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;arm-untersttzung&#34;&gt;ARM-Unterstützung&lt;/h2&gt;
+&lt;h2 id=&#34;arm-unterstützung&#34;&gt;ARM-Unterstützung&lt;/h2&gt;
 &lt;p&gt;Regolith-Pakete werden für die Architekturen &lt;code&gt;i386&lt;/code&gt;, &lt;code&gt;amd64&lt;/code&gt; und &lt;code&gt;arm64&lt;/code&gt; gebaut.  Ein eigenständiges Installationsprogramm ist für ARM-basierte Systeme wie die Rasberry Pi nicht verfügbar, jedoch kann Regolith über das PPA in ein bestehendes Ubuntu-System installiert werden.  &lt;a href=&#34;#option-2-ppa&#34;&gt;Siehe oben&lt;/a&gt; über die Installation von Regolith über PPA.&lt;/p&gt;
 
       </description>
@@ -215,7 +215,7 @@ $ rm -Rf ~/.config/regolith/flags
 &lt;h2 id=&#34;konfigurieren-des-systems&#34;&gt;Konfigurieren des Systems&lt;/h2&gt;
 &lt;p&gt;Die Anwendung &amp;ldquo;Einstellungen&amp;rdquo; (auch bekannt als &amp;ldquo;GNOME-Kontrollzentrum&amp;rdquo;) ist die Anlaufstelle für allgemeine Konfigurationsaufgaben, wie das Ändern des Desktophintergrunds, die Konfiguration von WLAN und Bluetooth, die Konfiguration von Anwendungszuordnungen und das Einrichten von Benutzer*innen.  Diese Anwendung kann über das &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;Super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;c&lt;/span&gt;&lt;/span&gt; Tastaturkürzel oder vom Starter aus über die &lt;code&gt;Einstellungen&lt;/code&gt; Anwendung gestartet werden.&lt;/p&gt;
 &lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-control-panel.png&#34; width=&#34;640px&#34;/&gt;
-&lt;h2 id=&#34;weiterfhrendes&#34;&gt;Weiterführendes&lt;/h2&gt;
+&lt;h2 id=&#34;weiterführendes&#34;&gt;Weiterführendes&lt;/h2&gt;
 &lt;p&gt;Weitere Tastaturkürzel sind unter &lt;code&gt;Remontoire&lt;/code&gt;, der Abkürzungsanwendung, aufgeführt.  Diese Anwendung wird automatisch bei der ersten Sitzung geladen, aber nicht bei aufeinanderfolgenden Anmeldungen.  Das Fenster kann jederzeit umgeschaltet werden, indem Sie auf das eingekreiste Symbol &lt;span class=&#34;badge badge-warning&#34;&gt;i&lt;/span&gt; in der Leiste klicken oder &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;Super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;Umschalt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; drücken.&lt;/p&gt;
 
       </description>
@@ -254,7 +254,7 @@ i3-wm.alt: Mod4
 &lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-settings-keybindings.png&#34; width=&#34;640px&#34;/&gt;
 &lt;h2 id=&#34;fast-alles-andere&#34;&gt;Fast alles andere&lt;/h2&gt;
 &lt;p&gt;Die &lt;code&gt;Einstellungen&lt;/code&gt; oder das GNOME-Control-Panel, wie es auch genannt wird, ist das Werkzeug zur Konfiguration von Locale-, Datums-, Anzeige-, Netzwerk- und verschiedenen anderen Einstellungen.  Starten Sie es über den Anwendungsstarter mit &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;Super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;Leertaste&lt;/span&gt;&lt;/span&gt;, geben Sie &amp;lsquo;Einstellungen&amp;rsquo; ein und drücken Sie die Eingabetaste, um die Anwendung zu starten.  Oder, die direkte Tastenbindung ist &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;Super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;c&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;weiterfhrende-lektre&#34;&gt;Weiterführende Lektüre&lt;/h2&gt;
+&lt;h2 id=&#34;weiterführende-lektüre&#34;&gt;Weiterführende Lektüre&lt;/h2&gt;
 &lt;p&gt;Weitere Informationen finden Sie im Abschnitt &lt;a href=&#34;../../customize&#34;&gt;Anpassung&lt;/a&gt;, in den &lt;a href=&#34;../../howto&#34;&gt;HowTos&lt;/a&gt; oder in der &lt;a href=&#34;../../reference/xresources&#34;&gt;Xresource reference&lt;/a&gt;.  Werden Sie ein/e i3 Power Benutzer*in, indem Sie das [Benutzerhandbuch] lesen (&lt;a href=&#34;https://i3wm.org/docs/userguide.html)&#34;&gt;https://i3wm.org/docs/userguide.html)&lt;/a&gt;.&lt;/p&gt;
 
       </description>

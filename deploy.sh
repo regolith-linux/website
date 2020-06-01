@@ -6,6 +6,7 @@ GIT_URL="git@github.com:regolith-linux/regolith-linux.github.io.git"
 GIT_REMOTE="${GIT_REMOVE:-origin}"
 GIT_BRANCH="${GIT_BRANCH:-master}"
 HUGO_ENV="${HUGO_ENV:-production}"
+export GIT_URL GIT_REMOTE GIT_BRANCH HUGO_ENV
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
