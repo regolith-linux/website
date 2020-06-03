@@ -2573,6 +2573,76 @@ $ sudo apt purge regolith-rofication
     </item>
     
     <item>
+      <title>Docs: Update packages selectively</title>
+      <link>https://regolith-linux.org/es/docs/howto/install-from-unstable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/es/docs/howto/install-from-unstable/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page describes how to configure the package system to manage which PPA package upgrades come from.&lt;/p&gt;
+&lt;p&gt;You can enable the Regolith unstable PPA by adding it to your apt sources:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;# add-apt-repository ppa:regolith-linux/unstable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;It is recommended that you enable selective upgrades from the unstable PPA. This can be done by configuring your apt preferences to only allow selective installs from this PPA:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cat &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;lt;&amp;lt;EOF &amp;gt;/etc/apt/preferences.d/regolith-unstable-updates
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;# Configure apt to allow selective installs of packages from regolith unstable
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;Package: *
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;Pin: release o=LP-PPA-regolith-linux-unstable
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;Pin-Priority: 400
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;EOF&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Apt will now use these preferences and not update packages from the unstable PPA unless explicitly done. This can be tested with:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;# apt upgrade -s&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now, by default, installing a package will come from the primary PPA configured on the machine. As seen by apt-cache policy, there is a version of this package available in unstable as well as the release PPA&#39;s:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt-cache policy i3xrocks-weather
+i3xrocks-weather:
+  Installed: &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;none&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  Candidate: 3.0.21-1
+  Version table:
+     3.0.29-1 &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;400&lt;/span&gt;
+        &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;400&lt;/span&gt; http://ppa.launchpad.net/regolith-linux/unstable/ubuntu focal/main amd64 Packages
+     3.0.21-1 &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;500&lt;/span&gt;
+        &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;500&lt;/span&gt; http://ppa.launchpad.net/regolith-linux/release/ubuntu focal/main amd64 Packages
+        &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;500&lt;/span&gt; http://ppa.launchpad.net/regolith-linux/stable/ubuntu focal/main amd64 Packages
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;However, installing the package will pull from the release PPA when it isn&#39;t explicitly installed from unstable:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt install i3xrocks-weather 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  i3xrocks-weather
+&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt; upgraded, &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; newly installed, &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt; to remove and &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt; not upgraded.
+Need to get 6,360 B of archives.
+After this operation, 23.6 kB of additional disk space will be used.
+Get:1 http://ppa.launchpad.net/regolith-linux/release/ubuntu focal/main amd64 i3xrocks-weather amd64 3.0.21-1 &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;6,360 B&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+Fetched 6,360 B in 0s &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;14.0 kB/s&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;     
+Selecting previously unselected package i3xrocks-weather.
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;Reading database ... &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;302563&lt;/span&gt; files and directories currently installed.&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+Preparing to unpack .../i3xrocks-weather_3.0.21-1_amd64.deb ...
+Unpacking i3xrocks-weather &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;3.0.21-1&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; ...
+Setting up i3xrocks-weather &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;3.0.21-1&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install the version from the unstable PPA you will need to define it like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt install -t focal i3xrocks-weather 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  i3xrocks-weather
+&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt; upgraded, &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; newly installed, &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt; to remove and &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;42&lt;/span&gt; not upgraded.
+Need to get 6,920 B of archives.
+After this operation, 22.5 kB of additional disk space will be used.
+Get:1 http://ppa.launchpad.net/regolith-linux/unstable/ubuntu focal/main amd64 i3xrocks-weather amd64 3.0.29-1 &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;6,920 B&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+Fetched 6,920 B in 1s &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;10.1 kB/s&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;           
+Selecting previously unselected package i3xrocks-weather.
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;Reading database ... &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;302563&lt;/span&gt; files and directories currently installed.&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+Preparing to unpack .../i3xrocks-weather_3.0.29-1_amd64.deb ...
+Unpacking i3xrocks-weather &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;3.0.29-1&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; ...
+Setting up i3xrocks-weather &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;3.0.29-1&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Change the Default Window Gap</title>
       <link>https://regolith-linux.org/es/docs/howto/default-gap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -1383,6 +1383,36 @@
   </url>
   
   <url>
+    <loc>https://regolith-linux.org/es/docs/howto/install-from-unstable/</loc>
+    <lastmod>2020-06-03T08:09:40-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/howto/install-from-unstable/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/howto/install-from-unstable/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/howto/install-from-unstable/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/howto/install-from-unstable/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/howto/install-from-unstable/"
+                />
+  </url>
+  
+  <url>
     <loc>https://regolith-linux.org/es/docs/howto/default-gap/</loc>
     <lastmod>2020-05-16T16:19:50-03:00</lastmod>
     <xhtml:link
