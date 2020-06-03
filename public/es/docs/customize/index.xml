@@ -59,7 +59,7 @@ $ regolith-look refresh
 &lt;h2 id=&#34;refrescando-un-aspecto&#34;&gt;Refrescando un Aspecto&lt;/h2&gt;
 &lt;p&gt;Quizás haya momentos donde la IU del sistema y el aspecto de Regolith pierdan sincronía. Por ejemplo, si un programa define el fondo de pantalla o el tema de íconos de manera externa, esto no se verá reflejado en los ajustes Xresource. Regolith solamente se actualizará a si mismo en el ingreso si detecta que hubo cambios en Xresources. Si quieres forzar a Regolith a recargar la IU basada en los ajustes Xresource, corre:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;aprender-más&#34;&gt;Aprender Más&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;aprender-ms&#34;&gt;Aprender Más&lt;/h2&gt;
 &lt;p&gt;Para profundizar más, lee sobre &lt;code&gt;Estilos&lt;/code&gt; en la siguiente página y echale un vistazo al &lt;a href=&#34;https://github.com/regolith-linux/regolith-styles&#34;&gt;LEEME &lt;code&gt;regolith-styles&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
       </description>
@@ -75,7 +75,7 @@ $ regolith-look refresh
         
         
         &lt;p&gt;Como dejamos claro en el &lt;a href=&#34;https://github.com/regolith-linux/regolith-styles&#34;&gt;leeme del repositorio&lt;/a&gt;, los estilos de Regolith son una convención por la cual un conjunto de archivos que definen pares clave/valor son cargados en la memoria y pueden ser consultados por &lt;code&gt;xrdb&lt;/code&gt; o &lt;code&gt;xrescat&lt;/code&gt;. Xresources emplea el &lt;a href=&#34;https://en.wikipedia.org/wiki/C_preprocessor&#34;&gt;preprocesador de C&lt;/a&gt; para permitir comportamientos complejos tales como incluir archivos, definir constantes y expresiones condicionales. En Regolith, solo se usan dos directivas del preprocesador : &lt;code&gt;#include&lt;/code&gt; y &lt;code&gt;#define&lt;/code&gt;. Las declaraciones &lt;code&gt;#include&lt;/code&gt; se usan para referenciar otros archivos. Colecciones o archivos llamados &lt;code&gt;looks&lt;/code&gt; fueron cubiertos en la sección previa de esta guía. Las declaraciones &lt;code&gt;#define&lt;/code&gt; simplemente permiten que un valor simbólico pueda ser reemplazado por un valor literal, como definir una variable.&lt;/p&gt;
-&lt;h2 id=&#34;archivos-xresource-de-definición&#34;&gt;Archivos Xresource de Definición&lt;/h2&gt;
+&lt;h2 id=&#34;archivos-xresource-de-definicin&#34;&gt;Archivos Xresource de Definición&lt;/h2&gt;
 &lt;p&gt;Para maximizar el re-uso de la información de temas en Regolith, los Xresources son divididos en dos categorías o archivos: archivos de definición y archivos de aplicación. Los archivos de definición hae un uso más intensivo de la directiva &lt;code&gt;define&lt;/code&gt;. Esencialmente ellos enlazan una clave abstracta, tal como &amp;ldquo;azul&amp;rdquo; o &amp;ldquo;fuente de terminal&amp;rdquo; a un valor literal, tal como &lt;code&gt;#0000FF&lt;/code&gt; o &lt;code&gt;Source Code Pro Medium&lt;/code&gt;. Cuando se hacen cambios a los archivos, se espera que esas definiciones cambien. El usuario querrá especificar un conjunto distinto de íconos, o fuente, y lo hará modificando o creando un nuevo archivo de definición. Una vez que el archivo es creado, necesita ser referenciado por un archivo Xresource de alto nivel en &lt;code&gt;~/Xresource-regolith&lt;/code&gt;.&lt;/p&gt;
 
 
@@ -84,7 +84,7 @@ $ regolith-look refresh
 
 &lt;/div&gt;
 
-&lt;h2 id=&#34;archivos-xresource-de-aplicación&#34;&gt;Archivos Xresource de Aplicación&lt;/h2&gt;
+&lt;h2 id=&#34;archivos-xresource-de-aplicacin&#34;&gt;Archivos Xresource de Aplicación&lt;/h2&gt;
 &lt;p&gt;Como se mencionó previamente, en &lt;code&gt;/etc/regolith/styles/&lt;/code&gt; viven una cantidad de Xresources, incluyendo aquellos para aplicaciones especificas tales como &lt;code&gt;st&lt;/code&gt; o &lt;code&gt;i3-wm&lt;/code&gt;. Abriendo esos archivos mostrará un mapeo de las claves abstractas provistas por los archivos de definición a claves específicas de aplicación. De esta manera, la descripción general del aspecto puede ser mapeada a cualquier componente IU o aplicación que pueda leer de Xresources.&lt;/p&gt;
 &lt;h2 id=&#34;orden-de-carga&#34;&gt;Orden de Carga&lt;/h2&gt;
 &lt;p&gt;El script de inició de la sesión &lt;code&gt;i3-gnome-flashback&lt;/code&gt; chequeará por el primer archivo Xresources que encuentre en el siguiente orden:&lt;/p&gt;
@@ -99,7 +99,7 @@ $ regolith-look refresh
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;De manera alternativa, el comando &lt;code&gt;xrdb&lt;/code&gt; puede ser usado para refrescar archivos Xresource especificos luego de que hayan sido cambiados. Por ejemplo, para recargar el archivo Xresource del usuario corre:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ xrdb -merge ~/.Xresources-regolith
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;verificación&#34;&gt;Verificación&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;verificacin&#34;&gt;Verificación&lt;/h3&gt;
 &lt;p&gt;Puedes comprobar que un cambio fue hecho a tu archivo Xresource consultandoló desde la línea de comándos. Si se realizó un cambio a la clave &lt;code&gt;foo.bar&lt;/code&gt; entonces el siguiente comando retornará su valor actual, o &lt;code&gt;empty&lt;/code&gt; si no está definido:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ xrescat foo.bar empty
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -165,7 +165,7 @@ $ regolith-look refresh
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt install regolith-compositor-xcompmgr
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Inicia sesión nuevamente y el compositor debería estar cargado. Puedes verificarlo chequeando la lista de procesos en busca de &lt;code&gt;xcompmgr&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ ps aux &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; grep xcompmgr
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;sobrescribiendo-la-configuración-de-un-compositor&#34;&gt;Sobrescribiendo la Configuración de un Compositor&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;sobrescribiendo-la-configuracin-de-un-compositor&#34;&gt;Sobrescribiendo la Configuración de un Compositor&lt;/h2&gt;
 &lt;h3 id=&#34;comptonpicom&#34;&gt;Compton/Picom&lt;/h3&gt;
 &lt;p&gt;Para proveer tu propia configuración de compositor Compton/Picom, copia la configuración por defecto o crea la tuya propia y guardalá &lt;code&gt;~/.config/regolith/compton/config&lt;/code&gt;. En el próximo inicio de sesión será cargada en lugar de la configuración por defecto &lt;code&gt;/etc/regolith/compton/config&lt;/code&gt;.&lt;/p&gt;
 
@@ -290,7 +290,7 @@ $ regolith-look refresh
 &lt;p&gt;El instalador es generado usando la &lt;a href=&#34;https://launchpad.net/cubic&#34;&gt;herramienta Cubic&lt;/a&gt; y proveyendo el archivo ISO destino como subidas manuales a la organización Github de Regolith Linux. El &lt;a href=&#34;https://github.com/regolith-linux/regolith-cubic-config&#34;&gt;LEEME en &lt;code&gt;regolith-cubic-conf&lt;/code&gt;&lt;/a&gt; tiene más detalles.&lt;/p&gt;
 &lt;h2 id=&#34;montaje&#34;&gt;Montaje&lt;/h2&gt;
 &lt;p&gt;Los paquetes de Regolith pueden ser montados, firmados, y preparados desde el repositorio &lt;code&gt;regolith-builder&lt;/code&gt;. Mira el &lt;a href=&#34;https://github.com/regolith-linux/regolith-builder&#34;&gt;LEEME del proyecto&lt;/a&gt; para más detalles.&lt;/p&gt;
-&lt;h2 id=&#34;δ-de-paquetes-entre-stock-ubuntu-y-regolith-linux&#34;&gt;Δ de Paquetes entre Stock Ubuntu y Regolith Linux&lt;/h2&gt;
+&lt;h2 id=&#34;-de-paquetes-entre-stock-ubuntu-y-regolith-linux&#34;&gt;Δ de Paquetes entre Stock Ubuntu y Regolith Linux&lt;/h2&gt;
 &lt;p&gt;Cuando instala Regolith a traves del PPA, el usuario tiene control y visibilidad sobre todos los cambios de paquetes a traves de su herramienta de instalación de paquetes de preferencia, probablemente &lt;code&gt;apt&lt;/code&gt;,&lt;code&gt;dpkg&lt;/code&gt;, o &lt;code&gt;synaptic&lt;/code&gt;. Sin embargo, cuando instala Regolith a traves del instalador de Ubuntu, el usuario no ve qué paquetes son instalados como parte del proceso. Para disminuír el tamaño de la descarga del instalador, algunos paquetes fueron eliminados del instalador de Ubuntu.&lt;/p&gt;
 &lt;h3 id=&#34;regolith-12&#34;&gt;Regolith 1.2&lt;/h3&gt;
 &lt;p&gt;Para Regolith 1.2, los siguientes paquetes fueron eliminados de Ubuntu stock:&lt;/p&gt;
