@@ -1,6 +1,6 @@
 ---
-title: "Téléchargement"
-linkTitle: "Téléchargement"
+title: "Télécharger"
+linkTitle: "Télécharger"
 weight: 20
 menu:
   main:
@@ -9,7 +9,7 @@ menu:
 <section class="row td-box td-box--1 position-relative td-box--gradient td-box--height-auto">
 	<div class="container text-center td-arrow-down">
 		<span class="h4 mb-0">
-<h1><i class="fas fa-cloud-download-alt ml-2 "></i> Obtenir Regolith</h1>
+<h1><i class="fas fa-cloud-download-alt ml-2 "></i> Télécharger Regolith</h1>
 
 <p>Regolith est disponible sous forme d'<b>ISO autonome</b> qui peut être installée comme un système d'exploitation Linux à part entière, et sous forme de "<b>personal package archive</b>" (PPA) qui installe Regolith sur une installation existante d'Ubuntu 18.04 ou 20.04. Cette page fournit les instructions de base pour installer et mettre à jour Regolith rapidement. Une <a href="../docs/getting-started/install">documentation complète</a> est disponible.</p>
 </span>

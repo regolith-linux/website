@@ -1,5 +1,5 @@
 ---
-title: Interagir
+title: Participer
 menu:
   main:
     weight: 40
