@@ -69,6 +69,7 @@ description: >
 |i3-wm.mod | Key mapping for Super key.  See the [i3 User Guide](https://i3wm.org/docs/userguide.html#_using_i3) for details. |
 |i3-wm.window.border.size | Default border size in pixels |
 |i3-wm.workspace.01.name .. i3-wm.workspace.19.name | Workspace Labels |
+|i3-wm.workspace.01.key .. i3-wm.workspace.10.key | Workspace Shortucts |
 |i3xrocks.error.color | Color for bar module in error mode |
 |i3xrocks.label.battery0 | Bar icon glyph |
 |i3xrocks.label.battery100 |  Bar icon glyph |
