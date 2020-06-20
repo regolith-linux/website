@@ -675,6 +675,10 @@
 &lt;td&gt;Workspace Labels&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;i3-wm.workspace.01.key .. i3-wm.workspace.10.key&lt;/td&gt;
+&lt;td&gt;Workspace Shortucts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;i3xrocks.error.color&lt;/td&gt;
 &lt;td&gt;Color for bar module in error mode&lt;/td&gt;
 &lt;/tr&gt;

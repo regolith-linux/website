@@ -1168,10 +1168,12 @@ interval=60
         &lt;h2 id=&#34;configuration-files&#34;&gt;Configuration Files&lt;/h2&gt;
 &lt;p&gt;Regolith Linux is continually being updated with bug fixes and feature enhancements.  Regolith&#39;s default configuration files live in &lt;code&gt;/etc/regolith/&lt;/code&gt;.  To customize these files, &lt;a href=&#34;https://regolith-linux.org/docs/howto/stage-configs/&#34;&gt;make copies in your user directory&lt;/a&gt; and make changes there.  These copied files in the user directory are owned by the user and will not be modified by Regolith.&lt;/p&gt;
 &lt;h2 id=&#34;package-updates&#34;&gt;Package Updates&lt;/h2&gt;
-&lt;p&gt;Notification of upcoming updates including those that may introduce breaking changes will be announced on the &lt;a href=&#34;https://www.freelists.org/list/regolith-linux&#34;&gt;Regolith Linux Announcements mailing list&lt;/a&gt;.  Whenever possible, breaking changes will be confined to major version releases of Regolith.&lt;/p&gt;
+&lt;p&gt;Notification of upcoming updates including those that may introduce breaking changes will be announced on the &lt;a href=&#34;https://www.freelists.org/list/regolith-linux&#34;&gt;Regolith Linux Announcements mailing list&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Once a package has been published to the &lt;code&gt;release&lt;/code&gt; PPA, Ubuntu&#39;s built-in package update facility will find the update and either directly apply it or ask the user if they wish to do so, depending on configuration.&lt;/p&gt;
 &lt;h2 id=&#34;package-promotion&#34;&gt;Package Promotion&lt;/h2&gt;
-&lt;p&gt;Development of Regolith happens via updates to source code kept in git repos within the GitHub Regolith Organization.  When a given feature or fix is ready for testing, it is published to the &lt;code&gt;unstable&lt;/code&gt; PPA.  After the change has been verified to work and not cause other problems, it is promoted to the &lt;code&gt;stable&lt;/code&gt; PPA.  Changes being preceived as high-risk will spend some additional time in &lt;code&gt;stable&lt;/code&gt;.  If a change is a feature, it will stay in &lt;code&gt;stable&lt;/code&gt; until the next version release, but if the change is a bug fix, it will be promoted to the &lt;code&gt;release&lt;/code&gt; and &lt;code&gt;r1.3&lt;/code&gt; PPAs.&lt;/p&gt;
+&lt;p&gt;Development of Regolith happens via updates to source code kept in git repos within the GitHub Regolith Organization.  When a given feature or fix is ready for testing, it is published to the &lt;code&gt;unstable&lt;/code&gt; PPA.  After the change has been verified to work and not cause other problems, it is promoted to the &lt;code&gt;stable&lt;/code&gt; PPA.  Changes being preceived as high-risk will spend some additional time in &lt;code&gt;stable&lt;/code&gt;.  If a change is a feature, it will stay in &lt;code&gt;stable&lt;/code&gt; until the next version release, but if the change is a bug fix, it will be promoted to the &lt;code&gt;release&lt;/code&gt; PPA.&lt;/p&gt;
+&lt;h2 id=&#34;package-versions&#34;&gt;Package Versions&lt;/h2&gt;
+&lt;p&gt;For packages specific to Regolith, &lt;a href=&#34;https://semver.org/&#34;&gt;symver&lt;/a&gt; will be used.  From Regolith 1.4.1 forward, symver will also be used to describe release versions.  So, if a new release of Regolith will introduce some new component or configuration that is incompatible with the previous version, the major version will be bumped.  Feature releases that do not introduce obvious breaking changes will be minor bumps, and bug fixes will cause a patch bump.s&lt;/p&gt;
 
       </description>
     </item>
@@ -2205,6 +2207,10 @@ i3-wm.workspace.03.name: 3: Chat
 &lt;tr&gt;
 &lt;td&gt;i3-wm.workspace.01.name .. i3-wm.workspace.19.name&lt;/td&gt;
 &lt;td&gt;Workspace Labels&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.workspace.01.key .. i3-wm.workspace.10.key&lt;/td&gt;
+&lt;td&gt;Workspace Shortucts&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;i3xrocks.error.color&lt;/td&gt;
