@@ -1,26 +1,26 @@
 ---
-title: "Configuration"
-linkTitle: "Configuration"
+title: "Configuração"
+linkTitle: "Configuração"
 weight: 3
 description: >
-  Make changes to the way Regolith looks and behaves.
+  Faça alterações na aparência e no comportamento do Regolith.
 ---
 
-## Wallpaper
+## Papel de parede
 
-The wallpaper can be changed via `Settings`, or <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span> by going to the `Background` tab and selecting the preferred image or color.
+O papel de parede pode ser modificado via `Configurações`, ou <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span> indo na tab de `Plano de fundo` e selecionando a imagem ou cor preferida.
 
 <img class="shadow m-5" src="../regolith-screenshot-settings-wallpaper.png" width="640px"/>
 
-## Status Bar Indicators
+## Indicadores da barra de status
 
-Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages.  For example, to show a status indicator for your laptop battery simply run `sudo apt install i3xrocks-battery` and then refresh the session.  To find what indicators are available, run `apt search ^i3xrocks-` or search for "i3xrocks-" in your favorite package manager GUI, such as [Synaptic](https://help.ubuntu.com/community/SynapticHowto).  Learn more about configuring status indicators in this HowTo.
+Indicadores de status como carga da CPU, data e hora, notificações, previsão do tempo e outras informações do sistema podem ser adicionados ou removidos pela instalação de pacotes.  Por exemplo, para mostrar um indicador de status da bateria do seu laptop, simplesmente rode `sudo apt install i3xrocks-battery` e então atualize a sessão.  Para encontrar quais indicadores estão disponíveis, rode `apt search ^i3xrocks-` ou busque por "i3xrocks-"  na GUI do seu gerenciador de pacotes, como o [Synaptic](https://help.ubuntu.com/community/SynapticHowto).  Saiba mais sobre a configuração de indicadores de status nesse HowTo.
 
 <img class="shadow m-5" src="../regolith-screenshot-synaptic-search.png" width="480px"/>
 
 ## Looks
 
-Colors, wallpaper, window and bar layouts, and other visual factors are bundled together in Regolith and called "looks".  Looks provide a simple way of changing the entire look of the desktop with a few commands.  At this time, looks can only be configured on the command line, but there is a script that manages the details for you.  Like status bar indicators, looks are packaged and are installed and removed like any other software package.  By convention, Look packages use the following naming format `regolith-look-<name>`.  `apt` or a GUI package manager can be used to search for available looks.  The tool `regolith-look` can be used to change looks and refresh the active session with the selected look.  Here's an example that switches to the `cahuella` look that shipped by default in Regolith 1.3:
+Cores, papel de parede, layout de janela e da barra, e outros fatores visuais são agrupados no Regolith e são chamados de "looks".  Os Looks fornecem uma maneira simples de alterar toda a aparência da área de trabalho com alguns comandos.  No momento, a aparência só pode ser configurada pela linha de comando, mas existe um script que gerencia os detalhes para você.  Como os indicadores da barra de status, os "looks" são empacotados, instalados e removidos como qualquer outro pacote de software.  Por convenção, os pacotes de Look usam o seguinte formate de nomenclatura `regolith-look-<nome>`.  `apt` ou um gerenciador de pacotes GUI pode ser usados para buscar looks disponíveis.  A ferramenta `regolith-look` pode ser usada para mudar os looks e atualizar a sessão ativa com o look selecionado.  Aqui um exemplo que muda para o look `cahuella` que é fornecido por padrão no Regolith 1.3:
 
 ```bash
 $ apt search ^regolith-look-
@@ -32,25 +32,25 @@ $ regolith-look set cahuella
 $ regolith-look refresh
 ```
 
-## Keybindings
+## Combinações de teclas
 
-The most common keybinding change is the super key.  Regolith uses Xresources as the canonical source of truth for settings, which are read by various UI components.  The table of Xresource keys open to user configuration can be found here.  To change the default super binding from the windows key to alt, add the following line to the file `~/.config/regolith/Xresources`:
+A alteração mais comum de combinação de teclas é a tecla super.  O Regolith usa o Xresources como a fonte canônica da verdade para as configurações, que são lidas por vários componentes da interface do usuário.  A tabela de teclas do Xresource aberta para configuração do usuário pode ser encontrada aqui. Para mudar a combinação padrão do super da tecla windows para alt, adicione as seguintes linhas ao arquivo `~/.config/regolith/Xresources`:
 
 ```bash
 i3-wm.mod: Mod1
 i3-wm.alt: Mod4
 ```
 
-To change other keybindings, creating a user copy of the i3 config file is necessary.  See the [staging configs HowTo](../../howto/stage-configs) to learn more.
+Para alterar outras combinações de teclas, é necessário criar uma cópia do usuário do arquivo de configuração do i3.  Veja o [tutorial de preparo de configurações](../../howto/stage-configs) para saber mais.
 
-Note: GNOME also has it's own set of keybindings.  When the Regolith session is first initialized, the conflicting GNOME keybindings are removed from the user settings.  GNOME keybindings can be managed in `Settings`.
+Nota: O GNOME também possui seu próprio conjunto de combinações de teclas.  Quando a sessão do Regolith é inicializada pela primeira vez, as combinações de teclas conflitantes do GNOME são removidas das configurações do usuário.  As combinações de teclas do GNOME podem ser gerenciadas em `Configurações`.
 
 <img class="shadow m-5" src="../regolith-screenshot-settings-keybindings.png" width="640px"/>
 
-## Almost Everything Else
+## Quase todo o resto
 
-`Settings` or gnome-control-panel as it's also known, is the tool to configure locale, date, display, networking, and various other settings.  Launch it via the app launcher with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>, type 'settings', and hit enter to launch the app.  Or, the direct keybinding is <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span>.
+`Configurações` ou gnome-control-panel como também é conhecido, é a ferramenta para configurar localidade, data, monitor, rede e várias outras configurações.  Inicie-o pelo inicializador de aplicativos com <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>, digite 'configurações', e aperte enter para iniciar o app app.  Ou, a combinação de tecla direta é <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span>.
 
-## Further Reading
+## Leitura adicional
 
-To dig deeper checkout the section on [Customization](../../customize), find what [HowTos](../../howto) are available, or read the [Xresource reference](../../reference/xresources).  Become an i3 power user by reading the [user guide](https://i3wm.org/docs/userguide.html).
+Para aprofundar, vá até a seção sobre [Customização](../../customize), encontre quais [HowTos](../../howto) estão disponíveis, ou leia a [referência do Xresource](../../reference/xresources).  Torne-se um usuário avançado do i3 lendo o [guia do usuário](https://i3wm.org/docs/userguide.html).

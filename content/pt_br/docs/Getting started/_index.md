@@ -1,29 +1,29 @@
 ---
-title: "Getting Started"
-linkTitle: "Getting Started"
+title: "Começando"
+linkTitle: "Começando"
 weight: 2
 description: >
-  Summary of installation methods for Regolith.
+  Resumo dos métodos de instalação do Regolith.
 ---
 
-This section contains the information necessary to get Regolith running on a computer.  There are two primary ways of installing Regolith; via an Ubuntu-based installer and via a Personal Package Archive (PPA).  Either of these methods will result in essentially the same user experience, although installing via the Ubuntu installer will result in a package selection that is different from installing vanilla Ubuntu. However by adding and removing specific packages a vanilla Ubuntu system can be configured.
+Esta seção contém as informações neessárias para ter o Regolith rodando em um computador. Há duas principais formas para instalar o Regolith; através de um instalador baseado no Ubuntu e através de um Personal Package Archive (PPA). Qualquer um desses métodos resultará essencialmente na mesma experiência de usuário, embora a instalação pelo instalador do Ubuntu resulte em uma seleção de pacotes diferente da instalação do Ubuntu vanilla. Porém, adicionando e removendo pacotes específicos, um sistema Ubuntu vanilla pode ser configurado.
 
-## Prerequisites
+## Pré-requisitos 
 
-### Ubuntu Installer
+### Instalador Ubuntu
 
-* A [modern computer](https://help.ubuntu.com/community/Installation/SystemRequirements) that can boot from a USB flash drive.
-* Free space on a local drive.  The installer will allow for managing existing partitions or installing on an empty volume.
-* An internet connection to install updates during and after installation.
-* A monitor with at least VGA (1024 x 768) resolution.  Regolith is optimized for FHD (1920 x 1080) screens.
-* An empty USB flash drive with at least 4 Gb of storage space.
+* Um [computador moderno](https://help.ubuntu.com/community/Installation/SystemRequirements) que pode inicializar a partir de uma unidade flash USB.
+* Espaço livre em uma unidade local.  O instalador permitirá gerenciar partições existentes ou instalar em um volume vazio.
+* Conexão de internet para instalar atualizações durante e após a instalação.
+* Um monitor com no mínimo uma resolução VGA (1024 x 768).  O Regolith é otimizado para telas FHD (1920 x 1080).
+* Uma unidade flash USB vazia com pelo menos 4 Gb de espaço de armazenamento.
 
 ### PPA
 
-* An existing Ubuntu installation with admin rights, version 18.04 or 20.04.
-* 100Mb of free storage space to install the Regolith desktop environment.
-* An internet connection to install updates during and after installation.
+* Uma instalação existente do Ubuntu com direitos de administrador, versão 18.04 ou 20.04.
+* 100Mb de espaço de armazenamento livre para instalar o ambiente de desktop Regolith.
+* Conexão de internet para instalar atualizações durante e após a instalação.
 
-## Deciding on Installation Method
+## Decidindo o método de instalação
 
-If you already have an Ubuntu system of a supported version, than adding Regolith via PPA is the faster and less disruptive method.  The Ubuntu installer method is better for starting from scratch, installing into a virtual machine, or just ensuring that any existing software is not conflicting with Regolith.  Some users have had some issues with getting Regolith to work properly with other Ubuntu derivative desktop environments.  Installing a fresh instance can sidestep these potential issues.
+Se você já possui um sistema Ubuntu de uma versão suportada, adicionar o Regolith via PPA é o método mais rápido e menos disruptivo.  O método de instalação do Ubuntu é melhor para começar do zero, instalando em uma máquina virtual, ou apenas garantindo que qualquer software não esteja em conflito com o Regolith.  Alguns usuários têm alguns problemas fazer o Regolith funcionar corretamente com outro ambiente desktop derivado do Ubuntu. Instalar uma instância nova pode contornar esses possíveis problemas.
