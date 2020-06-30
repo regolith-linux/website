@@ -36,4 +36,11 @@
 		
 	</sitemap>
 	
+	<sitemap>
+	   	<loc>https://regolith-linux.org/pt_pt/sitemap.xml</loc>
+		
+	   	<lastmod>2020-06-30T02:08:14+01:00</lastmod>
+		
+	</sitemap>
+	
 </sitemapindex>
