@@ -5,20 +5,20 @@ linkTitle = "Regolith Linux"
 +++
 {{< blocks/cover image_anchor="top" height="full" >}}
 
-<h2 class="m-5">O Regolith é um ambiente de desktop moderno projetado para permitir que você trabalhe mais rapidamente, reduzindo a confusão e a cerimónia desnecessárias. Construído em cima do Ubuntu, GNOME, e i3, o Regolith assenta numa base bem suportada e consistente.</h2>
+<h2 class="m-5">O Regolith é um ambiente de desktop moderno projetado para permitir que você trabalhe mais rapidamente, reduzindo a confusão e a cerimônia desnecessárias. Construído em cima do Ubuntu, GNOME, e i3, o Regolith se baseia em uma base bem suportada e consistente.</h2>
 
 <div class="row">
   <div class="col-sm-8 mb-5">{{< img regolith-screenshot-intro.png "Regolith Linux" >}}</div>
   <div class="col-sm-4">
     <div class="mx-auto">
     <a class="btn btn-lg btn-secondary mr-3 mb-4" href="{{< relref "/download" >}}">
-      Obter o Regolith <i class="fas fa-cloud-download-alt ml-2 "></i>
+      Baixar o Regolith <i class="fas fa-cloud-download-alt ml-2 "></i>
     </a>
     <a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
       Saber mais <i class="fas fa-book-reader ml-2"></i>
     </a>
     <a class="btn btn-lg btn-success mr-3 mb-4" href="https://opencollective.com/regolith/donate">
-      Contribua <i class="fas fa-piggy-bank ml-2"></i>
+      Contribuir <i class="fas fa-piggy-bank ml-2"></i>
     </a>
 </div>
 </div>
@@ -30,7 +30,7 @@ linkTitle = "Regolith Linux"
 <a name="td-block-1"><h3 class="text-center p-5" >Visita Visual</h3></a>
 <div class="container mt-3">
   <div class="row pb-5">
-    <div class="col-8 my-auto"><p>Após o primeiro login, uma sobreposição (mostre a qualquer momento com <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">?</span></span>) apresenta os atalhos de teclado mais importantes usados com i3-wm.</p></div>
+    <div class="col-8 my-auto"><p>Após o primeiro login, uma sobreposição (ativada a qualquer momento com <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">?</span></span>) apresenta os atalhos de teclado mais importantes usados com i3-wm.</p></div>
     <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-remontoire.png "Atalhos" >}}</div>
   </div>
   <div class="row pb-5">
@@ -38,7 +38,7 @@ linkTitle = "Regolith Linux"
     <div class="col-8 my-auto"><p>Para aqueles que trabalham com o terminal, pressionando <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span> é tudo o que é preciso para chegar a ele.</p></div>    
   </div>
   <div class="row pb-5">
-    <div class="col-8 my-auto"><p>Um lançador global e único de aplicações está disponível instantaneamente e em qualquer lugar para executar os seus programas via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>.</p></div>
+    <div class="col-8 my-auto"><p>Um iniciador global e único de aplicações está disponível instantaneamente e em qualquer lugar para executar os seus programas via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>.</p></div>
     <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-launcher.png "Lançador" >}}</div>    
   </div>
   <div class="row pb-5">
@@ -46,12 +46,12 @@ linkTitle = "Regolith Linux"
     <div class="col-8 my-auto"><p>Necessita de mais terminais?  Crie layouts rapidamente alternando entre os modos horizontal e vertical com <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">backspace</span></span> seguido de <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span>.  Navegue para janelas posicionalmente com <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">h</span> <span class="badge badge-warning">j</span> <span class="badge badge-warning">k</span> <span class="badge badge-warning">l</span></span>.</p></div>    
   </div>
   <div class="row pb-5">
-    <div class="col-8 my-auto"><p>Mude para o modo de janela flutuante com <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">F</span></span>.  Redimensione janelas com <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">r</span></span> e mova-as com o rato pressionando <span class="badge badge-warning">super</span>.</p></div>
+    <div class="col-8 my-auto"><p>Mude para o modo de janela flutuante com <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">F</span></span>.  Redimensione janelas com <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">r</span></span> e mova-as com o mouse pressionando <span class="badge badge-warning">super</span>.</p></div>
     <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-float.png "Janela flutuante" >}}</div>    
   </div>
   <div class="row pb-5">
     <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-gnome.png "Administração de sistema do GNOME" >}}</div>
-    <div class="col-8 my-auto"><p>O Gnome Flashback fornece uma gestão do sistema consistente e simples. Ajuste o seu interface, monte automaticamente as suas unidades USB, ligue-se a redes wireless. Inicie o painel de controlo com <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span>.</p></div>    
+    <div class="col-8 my-auto"><p>O Gnome Flashback fornece uma gestão do sistema consistente e simples. Ajuste a seu interface, monte automaticamente as suas unidades USB, conecte a redes wireless. Inicie o painel de controle com <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span>.</p></div>
   </div>
   <div class="row pb-5">
     <div class="col-8 my-auto"><p>Mude facilmente para <a href="https://ethanschoonover.com/solarized">Solarized</a> ou outros temas com o comando <code>regolith-look</code>. Devido ao <b>looks</b> utilizar o gestor de pacotes, você armazena apenas recursos do tema que está a utilizar.</p></div>
@@ -62,7 +62,7 @@ linkTitle = "Regolith Linux"
     <div class="col-8 my-auto"><p>O Regolith é construído em cima do Ubuntu, fornecendo um sistema atualizado e estável.</p></div>    
   </div>
   <div class="row pb-5">
-    <div class="col-8 my-auto"><p>Muito a acontecer?  Encontre rapidamente a janela que procura através de <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> ou navegue através entre espaços de trabalho com <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">[0 - 19]</span></span>.</p></div>
+    <div class="col-8 my-auto"><p>Muita coisa ao mesmo tempo?  Encontre rapidamente a janela que procura através de <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> ou navegue através entre espaços de trabalho com <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">[0 - 19]</span></span>.</p></div>
     <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-window.png "Atalhos" >}}</div>    
   </div>
   <div class="row pb-5">
