@@ -77,7 +77,7 @@ weight = 2
 title = "Regolith"
 description = "Sitio Web de Regolith Linux"
 contentDir = "content/es"
-languageName ="Español"
+languageName ="español"
 # Weight used for sorting.
 weight = 3
 
@@ -85,7 +85,7 @@ weight = 3
 title = "Regolith"
 description = "Regolith Linux Weboldal"
 contentDir = "content/hu"
-languageName ="Magyar"
+languageName ="magyar"
 # Weight used for sorting.
 weight = 4
 
@@ -93,9 +93,17 @@ weight = 4
 title = "Regolith"
 description = "Site web de Regolith Linux"
 contentDir = "content/fr"
-languageName ="Français"
+languageName ="français"
 # Weight used for sorting.
 weight = 5
+
+[languages.pt_pt]
+title = "Regolith"
+description = "Site Regolith Linux"
+contentDir = "content/pt_pt"
+languageName ="português"
+# Weight used for sorting.
+weight = 6
 
 [markup]
 [markup.goldmark]
