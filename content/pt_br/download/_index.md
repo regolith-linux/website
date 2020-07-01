@@ -1,6 +1,6 @@
 ---
-title: "Descarregar"
-linkTitle: "Descarregar"
+title: "Baixar"
+linkTitle: "Baixar"
 weight: 20
 menu:
   main:
