@@ -105,6 +105,14 @@ languageName ="português"
 # Weight used for sorting.
 weight = 6
 
+[languages.pt_br]
+title = "Regolith"
+description = "Site web do Regolith Linux"
+contentDir = "content/pt_br"
+languageName ="português brasileiro"
+# Weight used for sorting.
+weight = 7
+
 [markup]
 [markup.goldmark]
 [markup.goldmark.renderer]
