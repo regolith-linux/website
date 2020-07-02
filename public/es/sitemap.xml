@@ -32,6 +32,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.4.1-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.4.1-release-notes/"
                 />
@@ -64,6 +69,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/customize/look/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/customize/look/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -102,6 +112,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/getting-started/install/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/getting-started/install/"
                 />
@@ -134,6 +149,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/overview/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/overview/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -172,6 +192,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/reference/keybindings/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/reference/keybindings/"
                 />
@@ -204,6 +229,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/developer/looks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/developer/looks/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -242,6 +272,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/override-xres/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/howto/override-xres/"
                 />
@@ -274,6 +309,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/policy-and-process/privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/policy-and-process/privacy/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -312,6 +352,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/interface/apps/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/interface/apps/"
                 />
@@ -344,6 +389,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.4-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.4-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -382,6 +432,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/getting-started/basics/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/getting-started/basics/"
                 />
@@ -414,6 +469,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/reference/configurations/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/reference/configurations/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -452,6 +512,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/customize/styles/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/customize/styles/"
                 />
@@ -484,6 +549,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/interface/notifications/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/interface/notifications/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -522,6 +592,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/reference/packages/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/reference/packages/"
                 />
@@ -557,6 +632,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/getting-started/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/getting-started/"
                 />
@@ -589,6 +669,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/howto/stage-configs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/stage-configs/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -657,6 +742,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/policy-and-process/updates/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/policy-and-process/updates/"
                 />
@@ -689,6 +779,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.3.1-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.3.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -727,6 +822,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/change-terminal/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/howto/change-terminal/"
                 />
@@ -759,6 +859,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/customize/compositors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/customize/compositors/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -797,6 +902,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/getting-started/configuration/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/getting-started/configuration/"
                 />
@@ -829,6 +939,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/interface/system/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/interface/system/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -867,6 +982,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/policy-and-process/contributions/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/policy-and-process/contributions/"
                 />
@@ -899,6 +1019,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/interface/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/interface/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -967,6 +1092,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/policy-and-process/support/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/policy-and-process/support/"
                 />
@@ -999,6 +1129,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/howto/multiple-batteries/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/multiple-batteries/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1037,6 +1172,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.3-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.3-release-notes/"
                 />
@@ -1069,6 +1209,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/interface/advanced/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/interface/advanced/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1107,6 +1252,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/time-format/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/howto/time-format/"
                 />
@@ -1139,6 +1289,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/customize/components/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/customize/components/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1177,6 +1332,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/customize/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/customize/"
                 />
@@ -1209,6 +1369,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/howto/add-remove-blocklets/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/add-remove-blocklets/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1247,6 +1412,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/customize/packages/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/customize/packages/"
                 />
@@ -1279,6 +1449,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/howto/change-workspace-icons/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/change-workspace-icons/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1317,6 +1492,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/remove-workspace-icons/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/howto/remove-workspace-icons/"
                 />
@@ -1349,6 +1529,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/reference/xresources/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/reference/xresources/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1387,6 +1572,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/howto/"
                 />
@@ -1419,6 +1609,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/howto/change-ppa/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/change-ppa/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1457,6 +1652,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/reference/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/reference/"
                 />
@@ -1489,6 +1689,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/reference/releases/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/reference/releases/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1527,6 +1732,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/update-14-141/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/howto/update-14-141/"
                 />
@@ -1562,6 +1772,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/replace-notification-system/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/howto/replace-notification-system/"
                 />
@@ -1594,6 +1809,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/docs/howto/terminal-font/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/terminal-font/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1662,6 +1882,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/default-gap/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/howto/default-gap/"
                 />
@@ -1694,6 +1919,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/download/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/download/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1732,6 +1962,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/"
                 />
@@ -1764,6 +1999,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/index.json"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/index.json"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1802,6 +2042,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/developer/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/developer/"
                 />
@@ -1834,6 +2079,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/interact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/interact/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1872,6 +2122,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/policy-and-process/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/policy-and-process/"
                 />
@@ -1907,6 +2162,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/"
                 />
@@ -1939,6 +2199,11 @@
                 rel="alternate"
                 hreflang="pt_pt"
                 href="https://regolith-linux.org/pt_pt/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/search/"
                 />
     <xhtml:link
                 rel="alternate"

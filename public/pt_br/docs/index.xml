@@ -1,0 +1,2460 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regolith – Documentation</title>
+    <link>https://regolith-linux.org/pt_br/docs/</link>
+    <description>Recent content in Documentation on Regolith</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://regolith-linux.org/pt_br/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 1.4.1 Release Notes</title>
+      <link>https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.4.1-release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.4.1-release-notes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Regolith R1.4.1 is a fast follow up to 1.4 that fixes a few serious bugs, detailed on the mailing list &lt;a href=&#34;https://www.freelists.org/post/regolith-linux/Package-Updates-to-Release&#34;&gt;here&lt;/a&gt;.  In addition to the package updates, a new boot animation is provided by the package &lt;code&gt;plymouth-theme-regolith&lt;/code&gt; that is installed by default on the ISO.  The ISO also now excludes a deprecated touchpad driver that was conflicting with Settings.  Existing PPA-based installations can simply get the updates via their typical package update process.  Regolith Linux ISO users can update to R1.4.1 by applying regular package updates and then follow &lt;a href=&#34;../../../howto/update-14-141&#34;&gt;this guide&lt;/a&gt; to perform some manual steps if they have touchpad issues or use encrypted root file systems.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Instalação</title>
+      <link>https://regolith-linux.org/pt_br/docs/getting-started/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/getting-started/install/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Baseado no seu método de instalação preferido, siga uma das duas seções a seguir para instalar o Regolith.  Diferentemente das versões anteriores do Regolith, as instalações de PPA e ISO resultam em diferentes configurações.  A instalação do PPA favorece a coexistência com a área de trabalho Ubuntu existente, enquanto a versão ISO otimiza para menos utilização de recursos.  Especificamente, a instação ISO é aproximadamente 1Gb menor e o uso de RAM na inicialização é reduzido em cerca de 200Mb em comparação à instalação PPA.&lt;/p&gt;
+&lt;h2 id=&#34;opo-1-instalador-ubuntu&#34;&gt;Opção 1: Instalador Ubuntu&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Baixe uma imagem ISO do &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1&#34;&gt;Regolith R1.4&lt;/a&gt; &lt;i class=&#34;fas fa-cloud-download-alt&#34;&gt;&lt;/i&gt; e então use uma ferramenta de instalação do sistema operacional como o USB Creator, para escrever o arquivo baixado em um dispositivo USB.  Aqui estão os guias do Ubuntu para executar essa ação no &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;Windows&lt;/a&gt;, &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0&#34;&gt;Mac&lt;/a&gt;, e no &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0&#34;&gt;Ubuntu&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Reinicie o computador e selecione a inicialização a partir da unidade flash USB.&lt;/li&gt;
+&lt;li&gt;Instale ou execute o ambiente ativo fornecendo informações quando solicitadas durante o processo de instalação.  Veja &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop&#34;&gt;esse tutorial&lt;/a&gt; para aprender mais sobre o processo de instalação.&lt;/li&gt;
+&lt;li&gt;Quando solicitado, reinicie o computador e faça login no seu novo ambiente Regolith!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;opo-2-ppa&#34;&gt;Opção 2: PPA&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Veja abaixo sobre &lt;a href=&#34;#fontes-ppa&#34;&gt;fontes PPA&lt;/a&gt;, e adicione a PPA escolhida ao seu sistema:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;
+$ sudo add-apt-repository ppa:regolith-linux/release
+&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Instale o pacote do Regolith desktop:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;
+$ sudo apt install regolith-desktop
+&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;(Opcional) instale indicadores de status (padrão no Regolith 1.3)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;
+$ sudo apt install i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time
+$ sudo apt install i3xrocks-battery # for laptops
+&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Reinicie o computador, e ao logar, selecione a sessão &amp;ldquo;Regolith&amp;rdquo; no menu da engrenagem (⚙️):&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://regolith-linux.org/regolith-screenshot-login.png&#34; alt=&#34;Tela de login do Ubuntu&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A partir desse ponto, prossiga para a próxima seção, &lt;a href=&#34;../configuration&#34;&gt;configuração&lt;/a&gt; para saber mais sobre as mudanças mais comuns que as pessoas gostam de fazer no Regolith.&lt;/p&gt;
+&lt;h2 id=&#34;atualizaes&#34;&gt;Atualizações&lt;/h2&gt;
+&lt;h3 id=&#34;regolith-13---regolith-14&#34;&gt;Regolith 1.3 -&amp;gt; Regolith 1.4&lt;/h3&gt;
+&lt;p&gt;O PPA instável &lt;code&gt;ppa:regolith-linux/release&lt;/code&gt; está atualmente hospedando os pacotes da versão 1.4.1 do Regolith.  Para atualizar um sistema existente para a versão 1.4.1, atualize o gerenciador de pacotes Regolith para a PPA  &lt;code&gt;stable&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt policy &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; grep regolith
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Algumas informações com URLs vão ser retornadas.  Assumindo que http://ppa.launchpad.net/regolith-linux/release/ubuntu é retornado:&lt;/span&gt;
+$ sudo add-apt-repository --remove ppa:regolith-linux/release &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# remove release PPA&lt;/span&gt;
+$ sudo add-apt-repository ppa:regolith-linux/release
+$ sudo apt update &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt dist-upgrade
+$ sudo apt install i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#considere também i3xrocks-battery i3xrocks-memory i3xrocks-weather&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Após executar a atualização, efetue o login novamente no seu sistema.  No entanto, se você preparou o seu próprio arquivo de configuração do i3 ou a raiz do Xresources, leia abaixo a seção &lt;code&gt;Atualizando com customizações&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;regolith-10---12---regolith-14&#34;&gt;Regolith 1.0 - 1.2 -&amp;gt; Regolith 1.4&lt;/h3&gt;
+&lt;p&gt;Para atualizar do Regolith 1.0 - 1.2, a URL do PPA deve ser alterada e, em seguida, novas versões de pacotes serão aplicadas pelo gerenciador de pacotes:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository --remove ppa:kgilmer/regolith-stable
+$ sudo add-apt-repository ppa:regolith-linux/release
+$ sudo apt update &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt dist-upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Depois de executar essas etapas, você precisará deslogar e logar novamente.&lt;/p&gt;
+&lt;h3 id=&#34;atualizando-com-customizaes&#34;&gt;Atualizando com customizações&lt;/h3&gt;
+&lt;p&gt;Ao atualizar de uma versão major ou minor (ex.: 1.2 para 1.3), geralmente ocorre de os novos valores Xresources e outros arquivos de configuração serem atualizados.  Xresource existente e arquivos de configuração como o arquivo de configuração do i3 vão precisar ser atualizados para que a atualização funcione corretamente.  Se você personalizou qualquer arquivo de configuração do Regolith ou criou um arquivo Xresource independente (&lt;code&gt;~/.Xresources-regolith&lt;/code&gt;), talvez seja necessário atualizar esses arquivos para levar em consideração os arquivos atualizados.  Uma abordagem simples para fazer isso é movê-los para outro lugar, executar a atualização e reintegrar quaisquer personalizações desejadas nos novos arquivos:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ mkdir ~/regolith-backup
+$ mv ~/.Xresources-regolith ~/regolith-backup
+$ mv ~/.config/regolith ~/regolith-backup
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Depois que essas etapas forem executadas, logar novamente deve resultar em uma instância &amp;ldquo;em estoque&amp;rdquo; do Regolith.  A partir daí, quaisquer mudanças desejadas para serem reintegradas podem ser feitas editando as novas versões dos arquivos de configuração do Regolith que existem no diretório &lt;code&gt;/etc/regolith&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;monificaes-nos-arquivos-etcregolith&#34;&gt;Monificações nos arquivos &lt;code&gt;/etc/regolith/...&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Se você pegou os atalhos e modificou manualmente os arquivos pertencentes ao &lt;code&gt;root&lt;/code&gt; em &lt;code&gt;/etc/regolith&lt;/code&gt; ou em outro local, a ferramenta de empacotamento pode não atualizar os arquivos, nem mencionar que arquivos obsoletos foram deixados.  Mesmo removendo o pacote via &lt;code&gt;apt remove ...&lt;/code&gt; pode não resultar em um sistema limpo.  Nesse caso, use o comando purge para remover o pacote e excluir manualmente os arquivos restantes.  Por exemplo, para limpar o arquivo de configuração do i3:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt purge regolith-i3-gaps-config
+$ sudo rm -Rf /etc/regolith/i3 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# certifique-se de fazer backup de quaisquer alterações importantes&lt;/span&gt; 
+$ sudo apt install regolith-i3-gaps-config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;resoluo-de-problemas&#34;&gt;Resolução de problemas&lt;/h3&gt;
+&lt;h4 id=&#34;blocos-ausentes-aps-a-atualizao&#34;&gt;Blocos ausentes após a atualização&lt;/h4&gt;
+&lt;p&gt;O Regolith 1.4 altera a maneira com a qual blocos são instalados e configurados.  Essa alteração é necessária para suportar de maneira limpa a arquitetura &lt;code&gt;arm64&lt;/code&gt; e simplificar a troca de componentes como o subsistema de notificação.  A parte do 1.4, os blocos são instalados pelo gerenciador de pacotes.  Veja &lt;a href=&#34;../../howto/add-remove-blocklets&#34;&gt;esse tutorial&lt;/a&gt; sobre como adicionar e configurar blocos.&lt;/p&gt;
+&lt;h2 id=&#34;atualizando-o-ubuntu&#34;&gt;Atualizando o Ubuntu&lt;/h2&gt;
+&lt;p&gt;A atualização do Ubuntu 18.04, 18.10, 19.04, ou 19.10 para o 20.04 requer que o PPA do Regolith seja adicionado novamente assim que a atualização do Ubuntu for concluída.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Se a sessão padrão do Ubuntu não estiver instalada, instale-a:&lt;br/&gt;&lt;code&gt;$ sudo apt install ubuntu-session&lt;/code&gt;.  (Se você já estiver instalado, esse comando não causará danos.)&lt;/li&gt;
+&lt;li&gt;Execute a atualização para 20.04.&lt;/li&gt;
+&lt;li&gt;Após a reinicialização, efetue o login na sessão do Ubuntu, não do Regolith.&lt;/li&gt;
+&lt;li&gt;Adicione o PPA do Regolith, pois o processo de instalação removeu os PPAs::&lt;br/&gt;&lt;code&gt;$ sudo add-apt-repository ppa:regolith-linux/release&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Atualize o Regolith para a versão mais recente:&lt;br/&gt;&lt;code&gt;$ sudo apt upgrade &amp;amp;&amp;amp; sudo apt install regolith-desktop&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reinicie, e agora selecione a sessão Regolith na tela de login.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;NOTA: Alguns usuários relataram que o &lt;code&gt;regolith-desktop&lt;/code&gt; é desinstalado automaticamente durante a atualização.  Se isso acontecer, simplesmente execute &lt;code&gt;sudo apt install --reinstall regolith-desktop&lt;/code&gt; após a atualização ser concluída, para restaurar a sessão de área de trabalho do Regolith.&lt;/p&gt;
+&lt;h2 id=&#34;reinstalao&#34;&gt;Reinstalação&lt;/h2&gt;
+&lt;p&gt;Caso o ambiente desktop do Regolith fique corrompido ou não inicializável, siga as etapas para redefini-lo.  Nenhum arquivo de usuário será removido como parte deste processo:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Logue na sessão de stock do Ubuntu.  Se essa sessão não está disponível, instale-a com &lt;code&gt;sudo apt install ubuntu-session&lt;/code&gt;.  Se você não conseguir fazer o login, digite &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;ctrl&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;F2&lt;/span&gt;&lt;/span&gt; para acessar um TTY.  Após instalar o &lt;code&gt;ubuntu-session&lt;/code&gt;, você terá a opção de selecionar o tipo de sessão &lt;code&gt;Ubuntu&lt;/code&gt; na tela de login.&lt;/li&gt;
+&lt;li&gt;Desinstale o Regolith de dentro da sessão Ubuntu:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt purge regolith-*
+$ sudo apt autoremove
+$ rm -Rf ~/.config/regolith/flags
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Verifique se nenhum pacote regolith ainda está instalado com &lt;code&gt;apt list --installed | grep -i regolith&lt;/code&gt;.  O comando não deve retornar nenhum pacote.  Se isso acontecer, desinstale-os manualmente com &lt;code&gt;sudo apt purge &amp;lt;package&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Reinstale o Regolith:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo apt install regolith-desktop
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Reinicie o computador e, ao fazer login, selecione a sessão &amp;ldquo;Regolith&amp;rdquo; no menu da engrenagem.  Neste ponto, você pode remover ou manter o &lt;code&gt;ubuntu-session&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;desinstalao-do-regolith-desktop&#34;&gt;Desinstalação do &lt;code&gt;regolith-desktop&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Simplesmente siga essas etapas para remover o Regolith do seu sistema:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Saia da sessão Regolith e entre na sessão padrão do Ubuntu.&lt;/li&gt;
+&lt;li&gt;Abra um terminal e execute:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt purge regolith-desktop &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt autoremove
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Agora, remova o PPA:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository --remove ppa:regolith-linux/release
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Para restaurar suas configurações do GNOME, execute:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;source&lt;/span&gt; ~/.regolith-gnome-backup
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Agora você pode excluir com segurança o diretório &lt;code&gt;~/.config/regolith&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;fontes-ppa&#34;&gt;Fontes PPA&lt;/h2&gt;
+&lt;p&gt;Existem 4 fontes para pacotes Regolith.  O PPPA &lt;code&gt;release&lt;/code&gt; é recomendado para a maioria dos usuários, mas algum outro pode ser melhor para você com base nas suas necessidades. Aqui está uma descrição de cada PPA.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Nome&lt;/th&gt;
+&lt;th&gt;PPA URI&lt;/th&gt;
+&lt;th&gt;Frescor&lt;/th&gt;
+&lt;th&gt;Estabilidade&lt;/th&gt;
+&lt;th&gt;Descrição&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Unstable&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;text-nowrap&#34;&gt;&lt;code&gt;ppa:regolith-linux/unstable&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;badge badge-primary&#34;&gt;Muito Alto&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;badge badge-secondary&#34;&gt;Baixa&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;O PPA &lt;code&gt;unstable&lt;/code&gt; é recomendado para desenvolvedores de projetos ou qualquer pessoa que esteja confortável com resolução de problemas do seu próprio sistema e não se importa com alguns problemas de tempos em tempos.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Stable&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ppa:regolith-linux/stable&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;badge badge-primary&#34;&gt;Alto&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;badge badge-secondary&#34;&gt;Média&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;O PPA &lt;code&gt;stable&lt;/code&gt; é para aqueles que gostariam das últimas funcionalidades, mesmo entre lançamentos oficiais.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Release&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;text-nowrap&#34;&gt;&lt;code&gt;ppa:regolith-linux/release&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;badge badge-primary&#34;&gt;Baixo&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;badge badge-secondary&#34;&gt;Alta&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;O PPA &lt;code&gt;release&lt;/code&gt; provê correção de bugs quando eles ocorrem e atualização de funcionalidades após o lançamento.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;r1.3&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ppa:regolith-linux/r1.3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;badge badge-primary&#34;&gt;Muito Baixo&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;badge badge-secondary&#34;&gt;Muito Alta&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;O &lt;code&gt;r1.3&lt;/code&gt; PPA está lacrado com o lançamento do 1.3 e não vai ser atualizado, exceto para correção de bugs críticos.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;suporte-arm&#34;&gt;Suporte ARM&lt;/h2&gt;
+&lt;p&gt;Os pacotes Regolith são construídos para as arquiteturas &lt;code&gt;i386&lt;/code&gt;, &lt;code&gt;amd64&lt;/code&gt;, e &lt;code&gt;arm64&lt;/code&gt;.  Um instalador independente não está disponível para sistemas baseados em ARM, como o Raspberry Pi, no entanto, o Regolith pode ser instalado via PPA em um sistema Ubuntu existente.  &lt;a href=&#34;#opcao-2-ppa&#34;&gt;Veja acima&lt;/a&gt; sobre a instalação do Regolith via PPA.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Keybindings</title>
+      <link>https://regolith-linux.org/pt_br/docs/reference/keybindings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/reference/keybindings/</guid>
+      <description>
+        
+        
+        &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Action&lt;/th&gt;
+&lt;th&gt;Key Binding&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Launch Terminal&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Enter&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Launch Browser&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; &lt;code&gt;Enter&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Launch Application&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Space&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Launch Command&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; &lt;code&gt;Space&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Launch Help Dialog&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; ?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Launch File Search&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Alt&lt;/code&gt; &lt;code&gt;Space&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Launch File Browser&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; n&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Launch Notification Viewer&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; n&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Navigate to Window by Name&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; &lt;code&gt;Space&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Navigate to Relative Window&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; ↑ ↓ ← →&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Navigate to Relative Window&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; k j h l&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Navigate to Workspaces 1-10&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; 0..9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Navigate to Workspace 11 - 19&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; 0..9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Navigate to Next Workspace&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Tab&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Navigate to Next Workspace&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Alt&lt;/code&gt; →&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Navigate to Previous Workspace&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; &lt;code&gt;Tab&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Navigate to Previous Workspace&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Alt&lt;/code&gt; ←&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Navigate to Scratchpad&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Modify Window Position&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; ↑ ↓ ← →&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Modify Window Position&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; k j h l&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Modify Containing Workspace&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; ↑ ↓ ← →&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Modify Next Window Orientation&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Backspace&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Modify Window Fullscreen Toggle&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; f&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Modify Window Floating Toggle&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; f&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Move Focused Window to Scratchpad&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; m&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Modify Tile/Float Focus Toggle&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; t&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Modify Window Layout Mode&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; t&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Move Window to Workspace 1 - 10&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; 0..9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Move Window to Workspace 11 - 19&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; 0..9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Carry Window to Workspace 1 - 10&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Alt&lt;/code&gt; 0..9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Carry Window to Workspace 11 - 19&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Alt&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; 0..9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Exit App&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; q&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Terminate App&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Alt&lt;/code&gt; q&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Reload i3 Config&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; c&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Refresh Session&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; r&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Restart i3&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Ctrl&lt;/code&gt; r&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Logout&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; e&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Reboot&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; b&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Power Down&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; p&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lock Screen&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Escape&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sleep&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Settings&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; c&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Display Settings&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; d&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Wifi Settings&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; w&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Bluetooth Settings&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; b&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Save Window Layout&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; ,&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Load Window Layout&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; .&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Toggle Bar&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; i&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Enter Resize Mode&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⊞ Win&lt;/code&gt; r&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Exit Resize Mode&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Enter&lt;/code&gt; or &lt;code&gt;Escape&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Look</title>
+      <link>https://regolith-linux.org/pt_br/docs/customize/look/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/customize/look/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Looks provided by Regolith have the package prefix &lt;code&gt;regolith-look-&lt;/code&gt;.  For example, another look sporting the Solarized color palette and a different GTK theme and icon set is called &lt;code&gt;regolith-look-solarized-dark&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;finding-looks&#34;&gt;Finding Looks&lt;/h2&gt;
+&lt;p&gt;All &lt;code&gt;look&lt;/code&gt; packages using this naming scheme can be found via the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt search ^regolith-look-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;installing-a-look&#34;&gt;Installing a Look&lt;/h2&gt;
+&lt;p&gt;Looks can be installed via the &lt;code&gt;apt&lt;/code&gt; tool or with any tool that can install Debian packages on the system, such as &lt;code&gt;synaptic&lt;/code&gt;.  For example, this command will install the &lt;code&gt;Ubuntu&lt;/code&gt; look:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install regolith-look-ubuntu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you pay attention to the output of &lt;code&gt;apt&lt;/code&gt; you may notice that in addition to installing the look, &lt;code&gt;fonts-font-awesome&lt;/code&gt; will also be installed. As a feature, looks are able to depend on any resources or artifacts they require as packages.  This ensures that once a &lt;code&gt;look&lt;/code&gt; is installed, the user does not need to care about what other things that &lt;code&gt;look&lt;/code&gt; make require to function properly.  It&#39;s taken care of by the package manager.&lt;/p&gt;
+&lt;h2 id=&#34;switching-to-a-look&#34;&gt;Switching to a Look&lt;/h2&gt;
+&lt;p&gt;Once a &lt;code&gt;look&lt;/code&gt; has been installed, a utility command called &lt;code&gt;regolith-look&lt;/code&gt; can be used to enable it.  To enable the &lt;code&gt;ubuntu&lt;/code&gt; &lt;code&gt;look&lt;/code&gt; installed in the previous step, try the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; ubuntu
+$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The command will mention that it created a file in your user directory.  This file is an Xresource file, and it&#39;s stored in a specific path such that &lt;code&gt;i3-gnome-flashback&lt;/code&gt; will look for it upon session start.  Let&#39;s have a look at the file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ cat ~/.Xresources-regolith
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/ubuntu/root&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In essence, our Xresource file is simply pointing to another Xresource file.  Lets look there:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ cat /etc/regolith/styles/ubuntu/root
+! -- Styles - Colors
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/ubuntu/color&amp;#34;&lt;/span&gt;
+
+! -- Styles - Fonts
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/ubuntu/typeface&amp;#34;&lt;/span&gt;
+
+! -- Styles - Theme
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/ubuntu/theme&amp;#34;&lt;/span&gt;
+
+! -- Applications
+! These files map values defined above into specific app settings.
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/st-term&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/i3-wm&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/i3xrocks&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/rofi&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#include &amp;#34;/etc/regolith/styles/gnome&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here we can see that there are separate Xresource files that define color, typeface and theme (icon, GTK), and these are loaded and then applied to the UI components integrated by Regolith: st (terminal), i3-wm, i3xrocks, rofi, and GNOME.&lt;/p&gt;
+&lt;h2 id=&#34;refreshing-a-look&#34;&gt;Refreshing a Look&lt;/h2&gt;
+&lt;p&gt;There may be times that the UI of the system and the Regolith look get out of sync.  For example, if a program sets the wallpaper or icon theme externally, this will not be reflected in the Xresource settings.  Regolith will only update itself upon login if it detects of Xresource changes have been made.  If you wish to force Regolith to reload the UI based on the Xresource settings, run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;learning-more&#34;&gt;Learning More&lt;/h2&gt;
+&lt;p&gt;To dig deeper, read about &lt;code&gt;Styles&lt;/code&gt; in the following page and have a look at the &lt;a href=&#34;https://github.com/regolith-linux/regolith-styles&#34;&gt;&lt;code&gt;regolith-styles&lt;/code&gt; README&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Looks</title>
+      <link>https://regolith-linux.org/pt_br/docs/developer/looks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/developer/looks/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Looks are a combination of Xresource definitions and associated resources such as wallpapers, GTK themes, and icons that as a whole provide the user with a distinctive user interface, all expressed as a collection of files.  The default looks that ship with Regolith are natural starting points for creating new ones, but it&#39;s also possible to start from scratch as long as the required Xresource entries are defined.  Ideally, looks are packaged as Debian packages with all required resources either provided by the look or added as a package dependency.  By using the OS packaging system, required files and resources are ensured to be installed and available.&lt;/p&gt;
+&lt;h2 id=&#34;required-files&#34;&gt;Required Files&lt;/h2&gt;
+&lt;p&gt;Starting from scratch, the only mandatory file for a Look as a single Xresource definition file.  This file must specify entries for Regolith&#39;s required values, &lt;a href=&#34;../../reference/xresources&#34;&gt;defined on this page&lt;/a&gt;.  However, it&#39;s recommended to simply copy an existing look as a basis for customization, due to the compositional nature that Looks use.&lt;/p&gt;
+&lt;h3 id=&#34;suggested-file-layout&#34;&gt;Suggested File Layout&lt;/h3&gt;
+&lt;p&gt;It is suggested that a look be installed in &lt;code&gt;/etc/regolith/styles/&amp;lt;look name&amp;gt;&lt;/code&gt; and that the primary (or only) Xresource file is named &lt;code&gt;root&lt;/code&gt;.  Existing Regolith Looks decompose the Xresources into types of resources and any config specific to a UI component.  For example the Cahuella Look provides definitions for GNOME (theme), color, and typeface and a specific theme for Rofi since it&#39;s configuration cannot be completely expressed via Xresource key/value pairs:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ find /etc/regolith/styles/cahuella -type f
+/etc/regolith/styles/cahuella/theme
+/etc/regolith/styles/cahuella/color
+/etc/regolith/styles/cahuella/typeface
+/etc/regolith/styles/cahuella/root
+/etc/regolith/styles/cahuella/rofi.rasi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;initialization&#34;&gt;Initialization&lt;/h2&gt;
+&lt;p&gt;When the Regolith session loads upon login, the initialization script looks &lt;a href=&#34;../../customize/styles/#loading-order&#34;&gt;in a few places&lt;/a&gt; for Xresource file definitions.  The &lt;code&gt;regolith-look&lt;/code&gt; tool provides the ability for users to change looks by creating an Xresource file that simply redirects to another file via the &lt;code&gt;#include&lt;/code&gt; directive provided by the Xresources subsystem.  In this way, a Look is enabled in Regolith by providing this link between a well-known Xresource file entry point to the files specific to the custom Look.&lt;/p&gt;
+&lt;h2 id=&#34;packaging&#34;&gt;Packaging&lt;/h2&gt;
+&lt;p&gt;The ideal user experience is to install a look via a package manager tool, and then using the &lt;code&gt;regolith-look&lt;/code&gt; tool to set it.  For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install regolith-look-ubuntu
+$ regolith-look &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; ubuntu
+$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In order to achieve this flow, all runtime dependencies (fonts, GTK themes, wallpapers, etc.) must be included in the package or defined as a Debian package dependency in a &lt;code&gt;debian/control&lt;/code&gt; file.  See the &lt;a href=&#34;https://github.com/regolith-linux/regolith-styles/tree/master/debian&#34;&gt;&lt;code&gt;regolith-styles&lt;/code&gt; package&lt;/a&gt; for further information on Debian metadata.  If you&#39;re new to Debian packaging, here is &lt;a href=&#34;https://wiki.debian.org/BuildingTutorial&#34;&gt;an introduction&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;testing&#34;&gt;Testing&lt;/h2&gt;
+&lt;p&gt;Once you have a Look ready for testing, copy the containing directory for your files into &lt;code&gt;/etc/regolith/styles&lt;/code&gt;, for example for a Look called &lt;code&gt;orange&lt;/code&gt;, you may have this file layout:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;/etc/regolith/styles/orange/theme
+/etc/regolith/styles/orange/color
+/etc/regolith/styles/orange/typeface
+/etc/regolith/styles/orange/root
+/etc/regolith/styles/orange/rofi.rasi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then run &lt;code&gt;regolith-look set orange &amp;amp;&amp;amp; regolith-look refresh&lt;/code&gt;.  The UI should be updated with your new look.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Override Xresources</title>
+      <link>https://regolith-linux.org/pt_br/docs/howto/override-xres/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/howto/override-xres/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Regolith relies on the Xresource system to provide a consolidated interface configuration.  By changing Xresource values, Regolith can be customized in ways such as updating the user interface, specifying custom behaviors, or defining a specific format for the clock.&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;In Regolith, Xresource values can be changed via two methods: supplying your own Xresource files, and overriding the existing Xresource values.  The latter approach is strongly recommended, as it makes upgrading to newer versions of Regolith less likely to break.  If you copy the Xresource tree completely, you&#39;ll need to integrate any breaking changes in future versions manually.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;initialization&#34;&gt;Initialization&lt;/h2&gt;
+&lt;p&gt;When a Regolith session is started, Xresources are loaded in the following order:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;File&lt;/th&gt;
+&lt;th&gt;Optional&lt;/th&gt;
+&lt;th&gt;Notes&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;~/.Xresources&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;Intended for non-Regolith settings&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;~/.Xresources-regolith&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;A global override to replace all Regolith settings&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;/etc/regolith/styles/root&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;The default Regolith Xresource file if &lt;code&gt;~/.Xresources-regolith&lt;/code&gt; does not exist&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;Applies specific overrides to Xresource defaults&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;It is recommended to use &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; for customization as it requires the specification of no redundant settings, and is easier to maintain over time.&lt;/p&gt;
+&lt;h2 id=&#34;determining-what-values-can-be-changed&#34;&gt;Determining what values can be changed&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;xrdb&lt;/code&gt; tool can be used to list the existing Xresource values.  See &lt;a href=&#34;../../reference/xresources&#34;&gt;here for a table of existing values&lt;/a&gt; in the R1.4.1 release.  Example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ xrdb -query 
+...
+gnome.icon.theme:	Moka
+gnome.terminal.font:	JetBrains Mono &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;12&lt;/span&gt;
+gnome.terminal.scrollbar:	never
+gnome.wallpaper:	/usr/share/backgrounds/ESP_016895_1525_desktop.jpg
+gnome.wm.theme:	Ayu-Mirage-Dark
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;p&gt;Note that the commands presented below append text to a file.  So, running the command more than once will result in duplicate lines in the file.&lt;/p&gt;
+&lt;h3 id=&#34;example---update-the-ui-for-high-dpi-screens&#34;&gt;Example - Update the UI for High DPI Screens&lt;/h3&gt;
+&lt;p&gt;By using the &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; override file, we will only need to specify the values we wish to change.  The &lt;code&gt;xrdb&lt;/code&gt; tool can be used to determine what current values are set to.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create or add the following value to your &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; file:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;Xft.dpi: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;192&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Reload the Xresource configuration:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Open a new terminal to see the change take effect.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;sub&gt;192 is just an example value, please adjust as needed.&lt;/sub&gt;&lt;/p&gt;
+&lt;h3 id=&#34;example---change-i3-bar-position&#34;&gt;Example - Change i3 bar position&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ xrdb -query &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; grep position
+i3-wm.bar.position:	bottom
+$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm.bar.position:	bottom&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;example---change-gtk-theme&#34;&gt;Example - Change GTK Theme&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ xrdb -query &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; grep gtk
+gnome.gtk.theme:	Ayu-Mirage-Dark
+$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;gnome.gtk.theme:	Adwaita&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;example---enable-system-tray&#34;&gt;Example - Enable System Tray&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm.bar.trayoutput:	primary&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;example---use-alt-instead-of-win-as-super&#34;&gt;Example - Use Alt instead of Win as Super&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm-mod: Mod1&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm-alt: Mod4&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then Reload i3 for the change to take effect.&lt;/p&gt;
+&lt;h3 id=&#34;example---launch-nm-applet-when-i3-starts&#34;&gt;Example - Launch &lt;code&gt;nm-applet&lt;/code&gt; when i3 starts&lt;/h3&gt;
+&lt;p&gt;Some users prefer to use the &lt;code&gt;nm-applet&lt;/code&gt; program to configure and manage their wireless network.  i3 config file can be updated to launch any arbitrary program at start time.  But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file.  For this to work, also make sure that the system tray is enabled (see above).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm.program.1: /usr/bin/nm-applet&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This change requires you to log back in before the change takes effect.&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Regolith generates many of these values from a canonical set of definitions.  See &lt;a href=&#34;https://github.com/regolith-linux/regolith-styles&#34;&gt;this readme&lt;/a&gt; for more details.  If you find yourself updating many values, it may be more concise to create your own look instead.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h1 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h1&gt;
+&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configrations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Privacy</title>
+      <link>https://regolith-linux.org/pt_br/docs/policy-and-process/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/policy-and-process/privacy/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There is nothing in Regolith Linux itself that collects any user data, either anonymously or otherwise. Because Regolith is a customization of Ubuntu Linux, any data collection that Ubuntu is doing will also be performed by Regolith Linux. This website has vanilla Google Analytics integration.  Anonymity is a feature.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Working with Applications</title>
+      <link>https://regolith-linux.org/pt_br/docs/interface/apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/interface/apps/</guid>
+      <description>
+        
+        
+        &lt;p&gt;As mentioned in the &lt;a href=&#34;../../getting-started/basics&#34;&gt;Getting Started&lt;/a&gt; section, &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt; causes i3 to execute Rofi to present a list of apps.  Once launched, the application selected will open a window on the currently active workspace.  If other windows are already present on this workspace, they will be resized to allow the new window to also be placed without overlapping or otherwise obstructing the existing windows.&lt;/p&gt;
+&lt;h2 id=&#34;window-layout&#34;&gt;Window Layout&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;backspace&lt;/span&gt;&lt;/span&gt; can be used to toggle between horizontal and vertical layout modes, which will apply to the &lt;em&gt;next launched application&lt;/em&gt;.  In this way, windows in a workspace can divide the screen into portions relative to the desired importance of the user. A blue border will appear on the bottom or right of the window to indicate the current layout mode.&lt;/p&gt;
+&lt;p&gt;In addition to toggling layout orientation, existing windows can be moved relative to their neighbors with &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;↑ ↓ ← →&lt;/span&gt;&lt;/span&gt; (arrow keys) or VIM-style arrow keys &lt;span class=&#34;badge badge-warning&#34;&gt;k j h l&lt;/span&gt;.  Or, &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;tab&lt;/span&gt;&lt;/span&gt; and &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;tab&lt;/span&gt;&lt;/span&gt; can be used to move back and forth between active workspaces.&lt;/p&gt;
+&lt;p&gt;Windows can also be directly moved to other workspaces.  The bar will indicate all active workspaces as well as the currently focused workspace.  &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;[0-9]&lt;/span&gt;&lt;/span&gt; will cause the currently focused window to be moved to the workspace number selected.&lt;/p&gt;
+&lt;p&gt;Users can navigate to windows via &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;[0-9]&lt;/span&gt;&lt;/span&gt; but can also directly navigate to a specific window with &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;ctrl&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;quit-an-application&#34;&gt;Quit an Application.&lt;/h2&gt;
+&lt;p&gt;Any application can be safely closed via &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;q&lt;/span&gt;&lt;/span&gt;.  Crashed or otherwise unresponsive apps can be killed via &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;q&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 1.4 Release Notes</title>
+      <link>https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.4-release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.4-release-notes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Regolith R1.4 is a major feature release which includes several improvements and optimizations.  Regolith is now smaller and more efficient.  The ISO-based installer is now based from the Xubuntu image, and moves from the gdm3 display manager to LightDM.  This allows for less resource consumption at runtime and dramatically smaller download size[1]. A new look, &lt;code&gt;lascaille&lt;/code&gt; and file search dialog round out the major new features.  Read below for more details.&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;If you maintain your own i3 config file, note that the copy shipped in Regolith 1.4 has changed in that it reads more configuration from Xresources.  The intention of this change is to require a full copy of the i3 config file &lt;b&gt;less often&lt;/b&gt;, by allowing users to customize the system via Xresource overrides instead of copy/edit of the i3 config file.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;For R1.4 in particular @ploum has provided many of the ideas and validation.  Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @baldrailers, @ivomarino, @Josh-Letts, @LawZava, @SkyyySi, @tomster, @gdeflaux, @appelgriebsch, @farsil, and @MrKovar for their time and attention.  Also thanks to all that helped to test and filed issues for bugs and feature requests!&lt;/p&gt;
+&lt;h2 id=&#34;known-issues&#34;&gt;Known Issues&lt;/h2&gt;
+&lt;p&gt;Issues and fixes are being tracked in &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/13&#34;&gt;this project&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;table class=&#34;table&#34;&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Remontoire 1.3.1&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-remontoire-screenshot-131.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-remontoire-screenshot-131.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;
+            &lt;ul&gt;
+            &lt;li&gt;Can render keybindings from i3 over socket or from any file.&lt;/li&gt;
+            &lt;li&gt;Can be configured to display on any screen edge.&lt;/li&gt;
+            &lt;li&gt;Visual updates and bug fixes.&lt;/li&gt;
+            &lt;li&gt;Presentation changeable via CSS.&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;New default look: Lascaille&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-lascaille.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-screenshot-lascaille.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;A new look with &lt;a href=&#34;https://www.jetbrains.com/lp/mono/&#34;&gt;a bolder, tighter typeface&lt;/a&gt; and a &lt;a href=&#34;https://github.com/ayu-theme/ayu-colors&#34;&gt;darker, higher contrast color theme&lt;/a&gt; become Regolith&#39;s default look in 1.4.  Cahuella, and other looks continue to be available and can be installed with a few commands.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;New File Search Dialog&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-file-search.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-screenshot-file-search.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Based on &lt;a href=&#34;https://github.com/davatorium/rofi-scripts/tree/master/rofi-finder&#34;&gt;Rofi&lt;/a&gt; and &lt;code&gt;mlocate&lt;/code&gt;, users can now quickly find files and launch their default editors from a global dialog.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Faster, Easier Customization&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Virtually everything exportable from the i3 config can now be overridden directly with Xresources declarations, from changing the meta key to specifying the command that launches the app search dialog.  Additionally, up to 3 user configured programs can be set to be loaded upon start.  All of this is possible without creating a user copy of the i3 config file, but rather by overriding a specific Xresource.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;i3xrocks supports conf.d style configuration&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;The status indicators in the bar can now be installed and configured independently.  This allows for a cleaner dependency model and more efficient runtime characteristics. It also provides future flexibility for user contributed modules and status indicators.  Plus, users can provide their own block descriptors in the user directory to easily override the defaults without having to change the i3 config file.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;New architecture support: &lt;code&gt;arm64&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;With testing done on a Raspberry Pi 4, Regolith now is installable via PPA when using Ubuntu on arm64 devices with the necessary hardware support.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Rewrite of Rofication&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Rofication has been rewritten to require less dependencies and be more stable by Regolith contributor @farsil.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;New Ubuntu release support: Focal Fossa&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-focal.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-screenshot-focal.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Regolith runs as a desktop environment in Canonical&#39;s latest release of Ubuntu: 20.04.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Time and Space Optimizations in ISO release&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;By switching from GDM3 to LightDM, Regolith avoids loading some unnecessary desktop components into RAM, resulting in between 200MB to 300MB savings on cold start.  Additionally, the LiveCD installer is now based on the Xubuntu LiveCD which dramatically lowers the size of the installer and install image of the system[2].  Finally, with more fine-grained control of the bar status blocks, only the blocks you&#39;ve installed will run.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Pluggable Desktop Notification Components&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Users can now cleanly switch between desktop notification implementations such as dunst and notify-osd, in addition to Rofication without resorting to hacks.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Integrate &lt;code&gt;gnome-terminal&lt;/code&gt; over &lt;code&gt;st-term&lt;/code&gt; by Default&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-gnome-terminal.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-screenshot-gnome-terminal.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Regolith 1.4 uses &lt;code&gt;gnome-terminal&lt;/code&gt; with a dynamically generated profile to overcome some character encoding and input devices.  &lt;code&gt;st&lt;/code&gt; is still available, simply by installing the &lt;code&gt;regolith-st&lt;/code&gt; package.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Picom (Compton) config can be overriden by user&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Users can provide their own Picom compositor config in their user directory.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;i3 reload becomes Regolith reload&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Refreshing the UI (look, colors, fonts, etc.) after making changes is now as easy as &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;r&lt;/span&gt;&lt;/span&gt;.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Polish, polish, polish&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Just as in previous releases, many tiny fixes and enhancements were added to Regolith in version 1.4.&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;fixes&#34;&gt;Fixes&lt;/h2&gt;
+&lt;p&gt;Have a look at the R1.4 project page for a &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/11&#34;&gt;list of bug fixes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;1: This does **not** mean that Regolith uses XFCE4 or any other aspect of Xubuntu other than the install image.&lt;/p&gt;
+&lt;p&gt;2: The trade-off is that users need to install more of the software they require after installation.&lt;/p&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Config Files</title>
+      <link>https://regolith-linux.org/pt_br/docs/reference/configurations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/reference/configurations/</guid>
+      <description>
+        
+        
+        &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Component&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Default Config&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;User Config&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-gaps&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/etc/regolith/i3/config&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;~/.config/regolith/i3/config&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;In Regolith versions prior to 1.2 this file was in another directory.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Xresources&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/etc/regolith/styles/root&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;~/.Xresources-regolith&lt;/code&gt; (Global override)&lt;br/&gt;&lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; (Override)&lt;br/&gt;&lt;code&gt;~/.config/regolith/Xresources.d&lt;/code&gt; (User files)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;~/.Xresources&lt;/code&gt; is also loaded but intended for properties that may also be required in other desktop sessions.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Rofi&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/etc/regolith/styles/cahuella/rofi.rasi&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Defined in the &lt;code&gt;theme&lt;/code&gt; style file.&lt;/td&gt;
+&lt;td&gt;This can also be overridden directly in the i3 file if preferred.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Bar Workspace Labels&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;User defined&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Bar status indicators&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/etc/regolith/i3xrocks/conf.d&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;~/.config/regolith/i3xrocks/conf.d&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Each block has it&#39;s own file.  Filename determines ordering.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Picom (Compton) Compositor&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/etc/regolith/compton/config&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;~/.config/regolith/compton/config&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;User config added in 1.4&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;load-sequence&#34;&gt;Load Sequence&lt;/h2&gt;
+&lt;p&gt;Upon session start, Regolith loads configuration files in the following order:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;/usr/bin/i3-gnome-flashback&lt;/code&gt; executes after successful login&lt;/li&gt;
+&lt;li&gt;Load Xresource file &lt;code&gt;~/.Xresources&lt;/code&gt; if it exists.&lt;/li&gt;
+&lt;li&gt;Load Xresource file &lt;code&gt;~/.Xresources-regolith&lt;/code&gt; if it exists.&lt;/li&gt;
+&lt;li&gt;Merge any values from file &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; if it exists.&lt;/li&gt;
+&lt;li&gt;If first time session has loaded, initialize system.&lt;/li&gt;
+&lt;li&gt;Compare current Xresource db against last saved hash, if different, reload GNOME settings from Xresources.&lt;/li&gt;
+&lt;li&gt;Execute i3 with first config file found from following list: &lt;code&gt;~/.config/regolith/i3/config&lt;/code&gt;, &lt;code&gt;/etc/regolith/i3/config&lt;/code&gt;, &lt;code&gt;/etc/i3/config&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;i3 executes the UI components &lt;a href=&#34;https://github.com/davatorium/rofi&#34;&gt;Rofi&lt;/a&gt;, &lt;a href=&#34;https://github.com/regolith-linux/i3xrocks&#34;&gt;i3xrocks&lt;/a&gt;, &lt;a href=&#34;https://github.com/Airblader/unclutter-xfixes&#34;&gt;unclutter&lt;/a&gt;, regolith-compositor, &lt;a href=&#34;&#34;&gt;Rofication&lt;/a&gt;, and &lt;a href=&#34;https://github.com/regolith-linux/regolith-ftue&#34;&gt;regolith-ftue&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Fundamentos</title>
+      <link>https://regolith-linux.org/pt_br/docs/getting-started/basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/getting-started/basics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Embora abordemos tudo com mais detalhes em outras áreas da documentação, esta página cobre os princípios básicos.&lt;/p&gt;
+&lt;h2 id=&#34;a-tecla-super&#34;&gt;A Tecla Super&lt;/h2&gt;
+&lt;p&gt;A maioria das combinações de teclas que você usará com o Regolith começa com a tecla &lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt;.  Essa tecla normalmente diz &amp;ldquo;WIN&amp;rdquo; ou possui um logotipo da MS Windows.  Em um Mac é a tecla Command &lt;span class=&#34;badge badge-warning&#34;&gt;⌘&lt;/span&gt;.  Daqui para frente, essa tecla será chamada simplemente de &lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt;, mas lembre-se de que você pode alterar para qualquer botão físico &lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; é mapeado nas suas configurações, se você escolher.&lt;/p&gt;
+&lt;h2 id=&#34;inicializadores&#34;&gt;Inicializadores&lt;/h2&gt;
+&lt;p&gt;O Regolith fornece vários inicializadores como a principal maneira de interagir com seu sistema.  Cada um desses inicializadores tem uma aparência consistente, e fornece acesso a uma entidade específica.  Inicializador padrão para aplicações &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt;, comandos &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt;, notificações &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;n&lt;/span&gt;&lt;/span&gt;, janelas &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;ctrl&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt;, e arquivos &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;iniciar-uma-aplicao&#34;&gt;Iniciar uma aplicação&lt;/h3&gt;
+&lt;p&gt;Após o login, você estará em uma tela em branco com a barra na parte inferior e alguns atalhos de teclado à direita.  Para iniciar uma aplicação, pressione &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt; e um menu será apresentado com todas as aplicações instaladas no sistema.  Se você começar a digitar o nome da aplicação que você deseja iniciar, a lista será filtrada para apenas nomes correspondentes.  Você também pode rolar pela lista com as teclas de seta do teclado.&lt;/p&gt;
+&lt;img class=&#34;shadow m-5&#34; src=&#34;../screenshot-launcher.png&#34; width=&#34;640px&#34;/&gt;
+&lt;h3 id=&#34;navegar-para-uma-janela&#34;&gt;Navegar para uma janela&lt;/h3&gt;
+&lt;p&gt;Para dar foco a uma aplicação em execução, a combinação de teclas &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;ctrl&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt; pode ser usada para mostrar uma caixa de diálogo de todas as janelas em execução.  Basta simplesmente selecionar a janela desejada e o sistema vai para a área de trabalho dessa janela e seta o seu foco.&lt;/p&gt;
+&lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-window-nav2.png&#34; width=&#34;640px&#34;/&gt;
+&lt;h3 id=&#34;encontrar-e-iniciar-um-arquivo&#34;&gt;Encontrar e iniciar um arquivo&lt;/h3&gt;
+&lt;p&gt;Buscar por um arquivo específico no seu computador pode ser feito de várias maneiras.  O Regolith fornece uma caixa de diálogo de pesquisa de arquivos com &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt; para procurar rapidamente e opcionalmente carregar um arquivo com sua aplicação padrão.  Se o caminho do arquivo exceder a largura da caixa de diálogo, &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;.&lt;/span&gt;&lt;/span&gt; ativará a justificação de texto.  Pressionar enter em uma seleção fará com que o arquivo seja chamado com o comando &lt;code&gt;xdg-open&lt;/code&gt;.&lt;/p&gt;
+&lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-file-search.png&#34; width=&#34;640px&#34;/&gt;
+&lt;h3 id=&#34;terminal&#34;&gt;Terminal&lt;/h3&gt;
+&lt;p&gt;O terminal é uma aplicação especial que possui sua própria combinação de teclas, &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;enter&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;navegador&#34;&gt;Navegador&lt;/h3&gt;
+&lt;p&gt;O navegador padrão também é especial e pode ser inicializado com &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;enter&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;sair-de-um-aplicativo&#34;&gt;Sair de um aplicativo&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;q&lt;/span&gt;&lt;/span&gt; vai fechar a aplicação focada.  Para aplicações que se comportam mal, &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;q&lt;/span&gt;&lt;/span&gt; forçará o encerramento da aplicação focada, mas note que todos os dados não salvos provavelmente serão perdidos.&lt;/p&gt;
+&lt;h2 id=&#34;alternando-reas-de-trabalho&#34;&gt;Alternando áreas de trabalho&lt;/h2&gt;
+&lt;p&gt;A principal maneira de gerenciar como as aplicações ocupam a tela é pelo uso de áreas de trabalho.  Uma área de trabalho é essencialmente um grupo de zero ou mais aplicações as quais apresentam janelas no mesmo monitor físico.  Os usuários podem trocar áreas de trabalho para &amp;ldquo;ganhar&amp;rdquo; mais espaço para as aplicações ocuparem.  Janelas podem ser movidas pelas áreas de trabalho.  Áreas de trabalho podem estar vinculadas a um monitor ou serem movidas para outros conforme desejado.  Para alternar áreas de trabalho, mantenha pressionada a tecla &lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; e pressione uma das teclas numéricas.  Isso irá navegar para a área de trabalho.  Se existir alguma janela em uma determinada área de trabalho, ela será exibida na barra como ativa. Portanto, consultando a barra o usuário pode saber em quais áreas de trabalho estão aplicações ativas.&lt;/p&gt;
+&lt;p&gt;Áreas de trabalho também podem ser paginadas para frente e para trás por &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;tab&lt;/span&gt;&lt;/span&gt; e &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;tab&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;configurando-o-sistema&#34;&gt;Configurando o sistema&lt;/h2&gt;
+&lt;p&gt;O app &lt;code&gt;Configurações&lt;/code&gt; (também conhecido como &lt;code&gt;gnome-control-center&lt;/code&gt;) é a interface principal para tarefas comuns, como alterar o papel de parede da área de trabalho, configurar a wifi e o bluetooth, configurar associações de aplicações e configurar usuários.  Esse app pode ser inicializado por &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;c&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-control-panel.png&#34; width=&#34;640px&#34;/&gt;
+&lt;h2 id=&#34;leitura-adicional&#34;&gt;Leitura adicional&lt;/h2&gt;
+&lt;p&gt;Mais combinações de teclas estão listadas no &lt;code&gt;Remontoire&lt;/code&gt;, a aplicação de atalhos.  Esse app é carregado automaticamente na primeira sessão, mas não em logins sucessivos.  A janela pode ser alternada a qualquer momento clicando no ícone de círculo &lt;span class=&#34;badge badge-warning&#34;&gt;i&lt;/span&gt; na barra, ou pressionando &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;?&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Notifications</title>
+      <link>https://regolith-linux.org/pt_br/docs/interface/notifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/interface/notifications/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Regolith 1.3 introduces the integration of &lt;a href=&#34;https://github.com/DaveDavenport/Rofication&#34;&gt;Rofication&lt;/a&gt; into the environment.  Previous versions relied on a built-in notification system within &lt;code&gt;gnome-flashback&lt;/code&gt; but the UI was distracting.  Rofication relies on a notification daemon and Rofi-based front end.  A block in the bar shows the number of notifications the user has.  When a new notification is received, this number is incremented by one.  There is no other alert or other UI that would notify the user of the new message.  If a more agressive notification UI is desired, &lt;a href=&#34;https://dunst-project.org/&#34;&gt;dunst&lt;/a&gt; is recommended.&lt;/p&gt;
+&lt;h2 id=&#34;managing-notifications&#34;&gt;Managing Notifications&lt;/h2&gt;
+&lt;p&gt;Next to the bell icon in the bar is the current number of notifications.  To view and delete them, select &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;n&lt;/span&gt;&lt;/span&gt; and a menu will load.  Notifications can be read and then deleted with &lt;span class=&#34;badge badge-warning&#34;&gt;delete&lt;/span&gt; and the notification window can be dismissed with &lt;span class=&#34;badge badge-warning&#34;&gt;escape&lt;/span&gt;.  All low-priority notifications can be deleted at once with &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;delete&lt;/span&gt;&lt;/span&gt; from within the notification menu.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Packages</title>
+      <link>https://regolith-linux.org/pt_br/docs/reference/packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/reference/packages/</guid>
+      <description>
+        
+        
+        &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Package&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Description&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-snapshot&lt;/td&gt;
+&lt;td&gt;Save and restore window layouts.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks&lt;/td&gt;
+&lt;td&gt;A fork of i3blocks that enables Xresources integration.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-assets&lt;/td&gt;
+&lt;td&gt;An optional package with additional wallpaper.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-builder&lt;/td&gt;
+&lt;td&gt;Scripts and metadata for building and hosting Regolith.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-compositor-compton-glx&lt;/td&gt;
+&lt;td&gt;A compositor configuration for Picom (recently renamed from Compton).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-compositor-xcompmgr&lt;/td&gt;
+&lt;td&gt;A compositor configuration for xcompmgr.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-compositor-none&lt;/td&gt;
+&lt;td&gt;A compositor configuration for no compositor.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-desktop&lt;/td&gt;
+&lt;td&gt;The root meta package for Regolith by which all other default packages are referenced.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-gdm3-theme&lt;/td&gt;
+&lt;td&gt;An optional package for an updated login screen.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-gnome-flashback&lt;/td&gt;
+&lt;td&gt;A customization of &lt;code&gt;i3-gnome-flashback&lt;/code&gt; for Regolith.  Session init logic lives here.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-i3-gaps-config&lt;/td&gt;
+&lt;td&gt;Regolith&#39;s version of the i3 config file.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-i3xrocks-config&lt;/td&gt;
+&lt;td&gt;Configuration for the status indicators in the bar.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-linux.github.io&lt;/td&gt;
+&lt;td&gt;This website.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-rofication&lt;/td&gt;
+&lt;td&gt;A customization of the Rofication project.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-st&lt;/td&gt;
+&lt;td&gt;The st-term with some patches applied.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-styles&lt;/td&gt;
+&lt;td&gt;Metadata that describes the UI look in Regolith including several binary packages for specific looks.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;remontoire&lt;/td&gt;
+&lt;td&gt;A GTK+ keybinding viewer that integrates with i3.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xrescat&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;cat&lt;/code&gt; for Xresources.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;diving-deeper&#34;&gt;Diving Deeper&lt;/h2&gt;
+&lt;p&gt;For those looking for more specifics, a machine-readable form of all packages and branch versions associated with a release are defined in &lt;a href=&#34;https://github.com/regolith-linux/regolith-builder&#34;&gt;this repo&lt;/a&gt;.  For example, R1.3&#39;s packages are defined &lt;a href=&#34;https://github.com/regolith-linux/regolith-builder/blob/master/package-model-R1.3.json&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Stage Config Files</title>
+      <link>https://regolith-linux.org/pt_br/docs/howto/stage-configs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/howto/stage-configs/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Staging configs is no longer required as of Regolith R1.3.1 if you only wish to override or provide new Xresource values.  See &lt;a href=&#34;../override-xres&#34;&gt;this page&lt;/a&gt; for more details.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Regolith uses a number of files in &lt;code&gt;/etc/regolith&lt;/code&gt; to determine the behavior and look of various components.  While it&#39;s possible to simply edit these files directly, users who do so run the risk of having their configurations overwritten upon future updates.  The Debian packaging system should ask users if they wish to take updates or keep the existing files, but this may have unintended side effects if users take partial updates of files.  As such Regolith, upon login, will look for user-staged version of configuration files and load those &lt;em&gt;instead of the defaults&lt;/em&gt; if they exist.  This is recommended over editing the files in &lt;code&gt;/etc/regolith&lt;/code&gt; directly as it gives the user more control over their configuration. This page describes how to create these files.&lt;/p&gt;
+&lt;p&gt;Depending on what you wish to change, you may need your own copy if the i3 config file, Xresources, or both.  If you&#39;re looking to change the way Regolith looks, Xresources may be all you need.  If you want to update or add keybindings or swap out components, you&#39;ll most likely need to stage the i3 config file.&lt;/p&gt;
+&lt;h2 id=&#34;i3-config&#34;&gt;i3 Config&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Copy the default Regolith i3 config file into your home directory:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ mkdir -p ~/.config/regolith/i3
+$ cp /etc/regolith/i3/config ~/.config/regolith/i3/config
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Log out and back in. The Regolith session will automatically detect your user-staged file and use that over the default in &lt;code&gt;/etc/regolith/i3&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;verify-the-change&#34;&gt;Verify the Change&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Verify by running &lt;code&gt;i3 --moreversion&lt;/code&gt; and noting the config file that is printed as a result.  It should be the copy you just created.  If not, be sure the path is correct.  It must exactly be &lt;code&gt;~/.config/regolith/i3/config&lt;/code&gt; for Regolith to load it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;regolith-styles&#34;&gt;Regolith Styles&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Copy the root Regolith Xresource file into your home directory:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ cp /etc/regolith/styles/root ~/.Xresources-regolith
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Log out and back in. The Regolith session will automatically detect your user-staged file and use that over the default in &lt;code&gt;/etc/regolith/styles&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note that this root file is simply a reference to other styles that are broken down by the thing they are designed to style.  For example, if you wish to customize the look of i3, you will need to also copy &lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt; into your user directory and then update the reference to the new file in your &lt;code&gt;~/.Xresources-regolith&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Styles</title>
+      <link>https://regolith-linux.org/pt_br/docs/customize/styles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/customize/styles/</guid>
+      <description>
+        
+        
+        &lt;p&gt;As stated in the &lt;a href=&#34;https://github.com/regolith-linux/regolith-styles&#34;&gt;repo readme&lt;/a&gt;, Regolith styles are a convention by which a set of files which define key/value pairs are loaded into memory and can be queried by &lt;code&gt;xrdb&lt;/code&gt; or &lt;code&gt;xrescat&lt;/code&gt;.  Xresources employes the &lt;a href=&#34;https://en.wikipedia.org/wiki/C_preprocessor&#34;&gt;C preprocessor&lt;/a&gt; to allow for complex behaviors such as including more files, defining constants, and conditional expressions.  In Regolith, only two preprocessor directives are used: &lt;code&gt;#include&lt;/code&gt; and &lt;code&gt;#define&lt;/code&gt;.  &lt;code&gt;#include&lt;/code&gt; statements are used to reference other files.  Collections of files called &lt;code&gt;looks&lt;/code&gt; were covered in the previous section of this guide.  &lt;code&gt;#define&lt;/code&gt; statements simply allow for a symbolic value to be replaced by a literal value, like defining a variable.&lt;/p&gt;
+&lt;h2 id=&#34;defines&#34;&gt;Defines&lt;/h2&gt;
+&lt;p&gt;To maximize the re-use of theme information in Regolith, Xresources are divided into two categories of files: definition files and application files.  The definition files make heavy use of the &lt;code&gt;define&lt;/code&gt; directive.  They essentially bind an abstract key, such as &amp;ldquo;blue&amp;rdquo; or &amp;ldquo;terminal font&amp;rdquo; to a literal value, such as &lt;code&gt;#0000FF&lt;/code&gt; or &lt;code&gt;Source Code Pro Medium&lt;/code&gt;.  In making changes to files, it&#39;s expected that these defines will change.  The user may wish to specify a different icon set, or typeface, and would do so by modifying or creating a new definition file.  Once this file is created, it needs to be referenced by a top-level Xresource file in &lt;code&gt;~/Xresource-regolith&lt;/code&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Note that when referencing other files in Xresources via the &lt;code&gt;#include&lt;/code&gt; directive, shortcuts like &lt;code&gt;$HOME&lt;/code&gt; and &lt;code&gt;~/&lt;/code&gt; are not available.  Absolute paths are required.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;application-xresource-files&#34;&gt;Application Xresource files&lt;/h2&gt;
+&lt;p&gt;As mentioned previously, in &lt;code&gt;/etc/regolith/styles&lt;/code&gt; lives a number of Xresources, including those for specific applications such as &lt;code&gt;st&lt;/code&gt; or &lt;code&gt;i3-wm&lt;/code&gt;.  Opening these files will show a mapping of the abstract keys provided by the defines files to application specific keys.  In this way, the general description of the look can be mapped to any UI component or application that can read from Xresources.&lt;/p&gt;
+&lt;h2 id=&#34;loading-order&#34;&gt;Loading Order&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;i3-gnome-flashback&lt;/code&gt; session init script will check for the first Xresources file it finds in the following order:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;~/.Xresources-regolith&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/regolith/styles/root&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In addition to a Regolith Xresources file, &lt;code&gt;~/.Xresources&lt;/code&gt; will also be loaded if it exists upon session start.&lt;/p&gt;
+&lt;p&gt;After loading a root Xresource file, the session init script then merges any entries found in the &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; file.  This file provides a quick way of simply overriding a few values without having to copy the entire set of resource definitions.&lt;/p&gt;
+&lt;h2 id=&#34;reloading-xresources&#34;&gt;Reloading Xresources&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;regolith-look&lt;/code&gt; command can be used to reload all Xresource entries as they are loaded upon session initialization:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Alternatively, the &lt;code&gt;xrdb&lt;/code&gt; command can be used to refresh specific Xresource files after they have changed.  For example, to reload the user Xresource file run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ xrdb -merge ~/.Xresources-regolith
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;verification&#34;&gt;Verification&lt;/h3&gt;
+&lt;p&gt;You can test that a change has been made to your Xresources file by querying it from the command line.  If a change was made to key &lt;code&gt;foo.bar&lt;/code&gt; then the following command will return it&#39;s current value, or &lt;code&gt;empty&lt;/code&gt; if unset:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ xrescat foo.bar empty
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Updates</title>
+      <link>https://regolith-linux.org/pt_br/docs/policy-and-process/updates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/policy-and-process/updates/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;configuration-files&#34;&gt;Configuration Files&lt;/h2&gt;
+&lt;p&gt;Regolith Linux is continually being updated with bug fixes and feature enhancements.  Regolith&#39;s default configuration files live in &lt;code&gt;/etc/regolith/&lt;/code&gt;.  To customize these files, &lt;a href=&#34;https://regolith-linux.org/docs/howto/stage-configs/&#34;&gt;make copies in your user directory&lt;/a&gt; and make changes there.  These copied files in the user directory are owned by the user and will not be modified by Regolith.&lt;/p&gt;
+&lt;h2 id=&#34;package-updates&#34;&gt;Package Updates&lt;/h2&gt;
+&lt;p&gt;Notification of upcoming updates including those that may introduce breaking changes will be announced on the &lt;a href=&#34;https://www.freelists.org/list/regolith-linux&#34;&gt;Regolith Linux Announcements mailing list&lt;/a&gt;.  Whenever possible, breaking changes will be confined to major version releases of Regolith.&lt;/p&gt;
+&lt;p&gt;Once a package has been published to the &lt;code&gt;release&lt;/code&gt; PPA, Ubuntu&#39;s built-in package update facility will find the update and either directly apply it or ask the user if they wish to do so, depending on configuration.&lt;/p&gt;
+&lt;h2 id=&#34;package-promotion&#34;&gt;Package Promotion&lt;/h2&gt;
+&lt;p&gt;Development of Regolith happens via updates to source code kept in git repos within the GitHub Regolith Organization.  When a given feature or fix is ready for testing, it is published to the &lt;code&gt;unstable&lt;/code&gt; PPA.  After the change has been verified to work and not cause other problems, it is promoted to the &lt;code&gt;stable&lt;/code&gt; PPA.  Changes being preceived as high-risk will spend some additional time in &lt;code&gt;stable&lt;/code&gt;.  If a change is a feature, it will stay in &lt;code&gt;stable&lt;/code&gt; until the next version release, but if the change is a bug fix, it will be promoted to the &lt;code&gt;release&lt;/code&gt; and &lt;code&gt;r1.3&lt;/code&gt; PPAs.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 1.3.1 Release Notes</title>
+      <link>https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.3.1-release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.3.1-release-notes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;R1.3.1 is a quick followup to R1.3 that adds polish and usability features.  Headlining features include a more concise way of overriding Xresource defaults and several enhancements to the Remontoire keybinding viewer.&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;If you maintain your own i3 config file, note that the copy shipped in Regolith 1.3.1 has changed in that the comment format has been modified to be readable by Remontoire (&lt;a href=&#34;https://github.com/regolith-linux/regolith-i3-gaps-config/blob/master/config#L37&#34;&gt;example&lt;/a&gt;).  Without updating your copy i3 config comments, you will not see any keybindings.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;table class=&#34;table&#34;&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Remontoire 1.1.1&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-remontoire-screenshot.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-remontoire-screenshot.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Provides a live view of active i3 keybindings, introduces a machine-readable comment format for i3 config files, and fixes several layout and presentation bugs reported by users.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Ayu Looks&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-ayu-mirage.png&#34;&gt;&lt;img class=&#34;shadow&#34; width=&#34;640px&#34; src=&#34;../regolith-screenshot-ayu-mirage.png&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;The community contributed Ayu themes have been fully integrated into Regolith with updates to package dependencies and configurations.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Rofi Polish&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-rofi-window.png&#34;&gt;&lt;img class=&#34;shadow&#34; width=&#34;640px&#34; src=&#34;../regolith-screenshot-rofi-window.png&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Numerous updates to the Rofi themes for all provided looks.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Easier Customization&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Now, overriding specific Xresource values can be easily done by supplying only the overrides in &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; without needing to copying and update any existing files.  Additionally, any Xresource files in &lt;code&gt;~/.config/regolith/Xresources.d&lt;/code&gt; can be referenced without absolute path, enabling easier multi-machine configurations.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Utilize GNOME and &lt;code&gt;update-alternatives&lt;/code&gt; for Default Apps&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;GNOME settings for default browser and &lt;code&gt;update-alternatives&lt;/code&gt; for preferred terminal are now used by Regolith.  No custom configuration changes are required.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Xresource Updates&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;More UI configuration pulled out of component configs and into Xresources provides more flexibility in how custom looks can be.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Locale used for date/time Format&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;For those not using the US date and time formats, the bar clock will now automatically use the GNOME hour format and the &lt;code&gt;locale&lt;/code&gt; &lt;code&gt;LC_TIME&lt;/code&gt; setting to automatically display date and time in the regional form without configuration.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;UI Tweaks and Polish&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../nord-dark.png&#34;&gt;&lt;img class=&#34;shadow&#34; width=&#34;640px&#34; src=&#34;../nord-dark.png&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Many small updates across all UI components to further polish the interface, including a new optional dark background adapted from work by &lt;a href=&#34;https://www.reddit.com/r/unixporn/comments/ehdj6b/i3gaps_nordic_beauty/&#34;&gt;/u/InfernusZ9&lt;/a&gt;.&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;fixes&#34;&gt;Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Debian package dependencies for various Regolith Looks have been fixed.&lt;/li&gt;
+&lt;li&gt;Layout issues with Remontoire have been addressed.&lt;/li&gt;
+&lt;li&gt;Compton configuration cleaned up&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Change the Default Terminal</title>
+      <link>https://regolith-linux.org/pt_br/docs/howto/change-terminal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/howto/change-terminal/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The default terminal that ships with Regolith R1.4 is gnome-terminal, but any X terminal emulator can be used.  To update Regolith to use your already installed terminal of choice, use &lt;code&gt;update-alternatives&lt;/code&gt; to specify it as default.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Run &lt;code&gt;update-alternatives --config x-terminal-emulator&lt;/code&gt; to see all available terminals installed on your system.&lt;/li&gt;
+&lt;li&gt;Select the terminal you prefer.&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Compositors</title>
+      <link>https://regolith-linux.org/pt_br/docs/customize/compositors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/customize/compositors/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Pay special attention to this section if you are experiencing odd visual glitches or slow graphics performance.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;As mentioned previously, a compositor is a UI component that visual effects to windows before they are rendered on-screen.  Many desktop environments integrate a compositor directly into the window manager, making it difficult to switch out or disable.  In Regolith, the compositor is defined as a pluggable &amp;ldquo;extension point&amp;rdquo; in the packaging system. This means that compositors can be switched out simply by installing the packages that contain them.  The underlying packaging system will ensure there are no conflicts and that all the dependencies of a given compositor are also installed.&lt;/p&gt;
+&lt;h2 id=&#34;finding-available-compositors&#34;&gt;Finding Available Compositors&lt;/h2&gt;
+&lt;p&gt;The following command will list all compositors configured to work with Regolith:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;apt search regolith-compositor-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;At least the following three compositors should be available:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Package Name&lt;/th&gt;
+&lt;th&gt;Backend&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-compositor-compton-glx&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/yshui/picom&#34;&gt;Compton&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The default compositor for Regolith.  This compositor is modern, maintained, and handles screen tearing.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-compositor-xcompmgr&lt;/td&gt;
+&lt;td&gt;xcompmgr&lt;/td&gt;
+&lt;td&gt;An early compositor that may offer more consistent performance if &lt;code&gt;compton-glx&lt;/code&gt; is promblematic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-compositor-none&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;A no-op package that does not run a Compositor. Best for absolute UI performance, at the cost of visual effects.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;installing-a-compositor&#34;&gt;Installing a Compositor&lt;/h2&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Due to the way that the compositor is managed by i3-wm, you must log out and back in for compositor changes to take effect.  Restarting i3 is not sufficient.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Run the following package install command to swap out the compositor.  In this case we&#39;ll run &lt;code&gt;xcompmgr&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt install regolith-compositor-xcompmgr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Log back in and the new compositor should be loaded.  You can verify by checking the process list for &lt;code&gt;xcompmgr&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ ps aux &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; grep xcompmgr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;overriding-a-compositor-configuration&#34;&gt;Overriding a Compositor Configuration&lt;/h2&gt;
+&lt;h3 id=&#34;comptonpicom&#34;&gt;Compton/Picom&lt;/h3&gt;
+&lt;p&gt;To provide your own Compton/Picom compositor config, copy the default or create your own and save it as &lt;code&gt;~/.config/regolith/compton/config&lt;/code&gt;.  Upon next session it will be loaded instead of the default config &lt;code&gt;/etc/regolith/compton/config&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Configuração</title>
+      <link>https://regolith-linux.org/pt_br/docs/getting-started/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/getting-started/configuration/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;papel-de-parede&#34;&gt;Papel de parede&lt;/h2&gt;
+&lt;p&gt;O papel de parede pode ser modificado via &lt;code&gt;Configurações&lt;/code&gt;, ou &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;c&lt;/span&gt;&lt;/span&gt; indo na tab de &lt;code&gt;Plano de fundo&lt;/code&gt; e selecionando a imagem ou cor preferida.&lt;/p&gt;
+&lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-settings-wallpaper.png&#34; width=&#34;640px&#34;/&gt;
+&lt;h2 id=&#34;indicadores-da-barra-de-status&#34;&gt;Indicadores da barra de status&lt;/h2&gt;
+&lt;p&gt;Indicadores de status como carga da CPU, data e hora, notificações, previsão do tempo e outras informações do sistema podem ser adicionados ou removidos pela instalação de pacotes.  Por exemplo, para mostrar um indicador de status da bateria do seu laptop, simplesmente rode &lt;code&gt;sudo apt install i3xrocks-battery&lt;/code&gt; e então atualize a sessão.  Para encontrar quais indicadores estão disponíveis, rode &lt;code&gt;apt search ^i3xrocks-&lt;/code&gt; ou busque por &amp;ldquo;i3xrocks-&amp;rdquo;  na GUI do seu gerenciador de pacotes, como o &lt;a href=&#34;https://help.ubuntu.com/community/SynapticHowto&#34;&gt;Synaptic&lt;/a&gt;.  Saiba mais sobre a configuração de indicadores de status nesse HowTo.&lt;/p&gt;
+&lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-synaptic-search.png&#34; width=&#34;480px&#34;/&gt;
+&lt;h2 id=&#34;looks&#34;&gt;Looks&lt;/h2&gt;
+&lt;p&gt;Cores, papel de parede, layout de janela e da barra, e outros fatores visuais são agrupados no Regolith e são chamados de &amp;ldquo;looks&amp;rdquo;.  Os Looks fornecem uma maneira simples de alterar toda a aparência da área de trabalho com alguns comandos.  No momento, a aparência só pode ser configurada pela linha de comando, mas existe um script que gerencia os detalhes para você.  Como os indicadores da barra de status, os &amp;ldquo;looks&amp;rdquo; são empacotados, instalados e removidos como qualquer outro pacote de software.  Por convenção, os pacotes de Look usam o seguinte formate de nomenclatura &lt;code&gt;regolith-look-&amp;lt;nome&amp;gt;&lt;/code&gt;.  &lt;code&gt;apt&lt;/code&gt; ou um gerenciador de pacotes GUI pode ser usados para buscar looks disponíveis.  A ferramenta &lt;code&gt;regolith-look&lt;/code&gt; pode ser usada para mudar os looks e atualizar a sessão ativa com o look selecionado.  Aqui um exemplo que muda para o look &lt;code&gt;cahuella&lt;/code&gt; que é fornecido por padrão no Regolith 1.3:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt search ^regolith-look-
+...
+regolith-look-cahuella/bionic,now 2.4.9 amd64
+...
+$ sudo apt install regolith-look-cahuella
+$ regolith-look &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; cahuella
+$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;combinaes-de-teclas&#34;&gt;Combinações de teclas&lt;/h2&gt;
+&lt;p&gt;A alteração mais comum de combinação de teclas é a tecla super.  O Regolith usa o Xresources como a fonte canônica da verdade para as configurações, que são lidas por vários componentes da interface do usuário.  A tabela de teclas do Xresource aberta para configuração do usuário pode ser encontrada aqui. Para mudar a combinação padrão do super da tecla windows para alt, adicione as seguintes linhas ao arquivo &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;i3-wm.mod: Mod1
+i3-wm.alt: Mod4
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Para alterar outras combinações de teclas, é necessário criar uma cópia do usuário do arquivo de configuração do i3.  Veja o &lt;a href=&#34;../../howto/stage-configs&#34;&gt;tutorial de preparo de configurações&lt;/a&gt; para saber mais.&lt;/p&gt;
+&lt;p&gt;Nota: O GNOME também possui seu próprio conjunto de combinações de teclas.  Quando a sessão do Regolith é inicializada pela primeira vez, as combinações de teclas conflitantes do GNOME são removidas das configurações do usuário.  As combinações de teclas do GNOME podem ser gerenciadas em &lt;code&gt;Configurações&lt;/code&gt;.&lt;/p&gt;
+&lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-settings-keybindings.png&#34; width=&#34;640px&#34;/&gt;
+&lt;h2 id=&#34;quase-todo-o-resto&#34;&gt;Quase todo o resto&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Configurações&lt;/code&gt; ou gnome-control-panel como também é conhecido, é a ferramenta para configurar localidade, data, monitor, rede e várias outras configurações.  Inicie-o pelo inicializador de aplicativos com &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt;, digite &amp;lsquo;configurações&amp;rsquo;, e aperte enter para iniciar o app app.  Ou, a combinação de tecla direta é &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;c&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;leitura-adicional&#34;&gt;Leitura adicional&lt;/h2&gt;
+&lt;p&gt;Para aprofundar, vá até a seção sobre &lt;a href=&#34;../../customize&#34;&gt;Customização&lt;/a&gt;, encontre quais &lt;a href=&#34;../../howto&#34;&gt;HowTos&lt;/a&gt; estão disponíveis, ou leia a &lt;a href=&#34;../../reference/xresources&#34;&gt;referência do Xresource&lt;/a&gt;.  Torne-se um usuário avançado do i3 lendo o &lt;a href=&#34;https://i3wm.org/docs/userguide.html&#34;&gt;guia do usuário&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Contribute</title>
+      <link>https://regolith-linux.org/pt_br/docs/policy-and-process/contributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/policy-and-process/contributions/</guid>
+      <description>
+        
+        
+        &lt;p&gt;As an &lt;a href=&#34;https://github.com/regolith-linux&#34;&gt;open source project&lt;/a&gt;, Regolith is open to anyone to extend, fork, or modify as they see fit.  Additionally, we welcome people to join as &lt;a href=&#34;https://github.com/orgs/regolith-linux/people&#34;&gt;contributors&lt;/a&gt; to the project. If you already have something in mind, please file an issue describing the change you&#39;re planning to make to Regolith, or discuss in the &lt;a href=&#34;https://regolith-linux.herokuapp.com/&#34;&gt;Slack channel&lt;/a&gt;.  This ensures work isn&#39;t duplicated or effort wasted.  If you&#39;re interested in seeing what work is available to start with, take a look at the &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/labels/help%20wanted&#34;&gt;list of issues looking for help&lt;/a&gt; to see what is needed.  To get a picture of the future, check &lt;a href=&#34;https://regolith-linux.org/news.html#roadmap&#34;&gt;the roadmap&lt;/a&gt;. Regolith is a young project with much potential for improvement!&lt;/p&gt;
+&lt;h2 id=&#34;financial-support&#34;&gt;Financial Support&lt;/h2&gt;
+&lt;p&gt;As of the 1.3 release, Regolith has joined &lt;a href=&#34;https://opencollective.com/&#34;&gt;Open Collective&lt;/a&gt; as a way of receiving financial contributions from users. Financial contributions are vital to pay for infrastructure costs and fund future development of both Regolith itself as well as the upstream components that Regolith is composed of.  &lt;a href=&#34;https://opencollective.com/regolith/donate&#34;&gt;Go here to contribute to Regolith&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;join-our-slack-channel&#34;&gt;Join our Slack channel&lt;/h2&gt;
+&lt;p&gt;Click &lt;a href=&#34;https://regolith-linux.herokuapp.com/&#34;&gt;this link&lt;/a&gt; to join our Slack channel, which allows you to communicate with the developers of Regolith and other users. Here is where we brainstorm about new features, ways to improve current features, and fix bugs.&lt;/p&gt;
+&lt;h2 id=&#34;testing-fixes-and-features&#34;&gt;Testing Fixes and Features&lt;/h2&gt;
+&lt;p&gt;When bugs are reported by users, we try to have them verify the fix before enabling the update for everyone. Switching to the &lt;code&gt;unstable&lt;/code&gt; PPA is necessary for Ubuntu to see that a new version of a package is available for testing a new fix or feature.  Once the update has been verified to resolve the problem and not cause any other bugs, it is promoted to the &lt;code&gt;stable&lt;/code&gt; PPA for general consumption by Regolith users.  See &lt;a href=&#34;../updates#package-promotion&#34;&gt;this section&lt;/a&gt; for more details on package promotion, and see &lt;a href=&#34;https://regolith-linux.org/docs/howto/change-ppa/&#34;&gt;this section&lt;/a&gt; to learn how to switch between PPAs.&lt;/p&gt;
+&lt;h2 id=&#34;switching-between-ppas&#34;&gt;Switching between PPAs&lt;/h2&gt;
+&lt;p&gt;When bugs are reported by users, we try to have them verify the fix before enabling the update for everyone. Switching to the &lt;code&gt;unstable&lt;/code&gt; PPA is necessary for testing a new fix or feature before it becomes available to the general population via an automatic update.  See this section for more details on package promotion.&lt;/p&gt;
+&lt;h2 id=&#34;official-regolith-contributors&#34;&gt;Official Regolith Contributors&lt;/h2&gt;
+&lt;p&gt;Those that have shown aptitude and desire to help others, fix bugs, or add features to Regolith may be invited to become an official contributor.  Official contributors have more abilities with Regolith source repos and have a high level of trust and agency.&lt;/p&gt;
+&lt;h3 id=&#34;tasks&#34;&gt;Tasks&lt;/h3&gt;
+&lt;p&gt;Regolith is a volunteer effort, and so there are no specific expectations regarding how much or in what way people contribute. However here are some tasks that are of great help to the project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Groom GitHub issues.  If an issue is pending a response from a user and there is no response from the issue creator, close it.  If an issue has been resolved but not closed, also close it.&lt;/li&gt;
+&lt;li&gt;To learn about and contribute to the future roadmap, &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects&#34;&gt;see here&lt;/a&gt; for project planning.&lt;/li&gt;
+&lt;li&gt;As a young project, there are a lot of rough edges so if you want to work in fixes that&#39;s great but also if you&#39;re interested in new features that&#39;s fine too.&lt;/li&gt;
+&lt;li&gt;Help with release planning.  We try for a release every 3 - 4 months.  Besides feature development and bug fixes, documentation and testing are needed.&lt;/li&gt;
+&lt;li&gt;For new features, it is recommended to create a &amp;ldquo;request for comment&amp;rdquo; issue (&lt;a href=&#34;https://github.com/regolith-linux/regolith-i3-gaps-config/issues/6&#34;&gt;example&lt;/a&gt;) and allow some time for user feedback.  These RfCs will be advertised via the mailing list and official Twitter account.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Support</title>
+      <link>https://regolith-linux.org/pt_br/docs/policy-and-process/support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/policy-and-process/support/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Regolith Linux is an open source project created and maintained by volunteers.  At this time there is no method for getting paid support.  &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/issues&#34;&gt;GitHub issues&lt;/a&gt; and the &lt;a href=&#34;https://regolith-linux.herokuapp.com/&#34;&gt;Slack channel&lt;/a&gt; are recommended ways of finding fixes or asking questions.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Support Multiple Batteries</title>
+      <link>https://regolith-linux.org/pt_br/docs/howto/multiple-batteries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/howto/multiple-batteries/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Out of the box the primary battery status will be displayed in the i3-bar. For some laptops that has multiple batteries e.g. &lt;em&gt;ThinkPad&lt;/em&gt;, you want to have both batteries displayed. To do so, follow the steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Stage your own i3 config file &lt;a href=&#34;../stage-configs&#34;&gt;(tutorial)&lt;/a&gt;, then open &lt;code&gt;~/.config/regolith/i3xrocks/conf.d/80_battery&lt;/code&gt; in your editor of choice.&lt;/li&gt;
+&lt;li&gt;Find the line that pertains to the battery blocklet:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;...
+# Battery indicator
+#
+# Displays total percentage charge left of specified battery.
+[battery]
+interval=30
+# instance=BAT0
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;List all the battery instances running on your machine by running:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;ls /sys/class/power_supply/
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# AC BAT0 BAT1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Update the staged config file to have a new blocklet as such:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-conf&#34; data-lang=&#34;conf&#34;&gt;...
+# Battery indicator
+#
+# Displays total percentage charge left of specified battery.
+[battery]
+interval=30
+instance=BAT0
+
+[battery]
+interval=30
+instance=BAT1
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h2&gt;
+&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configrations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: System Configuration</title>
+      <link>https://regolith-linux.org/pt_br/docs/interface/system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/interface/system/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;gnome-control-center-also-known-as-codesettingscode&#34;&gt;GNOME control center (also known as &lt;code&gt;Settings&lt;/code&gt;).&lt;/h2&gt;
+&lt;p&gt;A key difference between Regolith and other environments described as minimal is the integration of the GNOME settings backend.  This provides a well-tested, consistent, and friendly way of configuring your environment and computer.  To load the settings app, launch &amp;ldquo;Settings&amp;rdquo; from Rofi or press &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;c&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Settings is a special app in Regolith in that it is launched in floating mode.  This is because typically when loading settings a user is looking to make a specific change and then exit back to their work. Once loaded use the tab sections on the left of the window to select which item you wish to configure.&lt;/p&gt;
+&lt;h2 id=&#34;i3-wm&#34;&gt;i3-wm&lt;/h2&gt;
+&lt;p&gt;The i3 window manager is not part of GNOME and so it&#39;s configuration is not viewable or changable from the GNOME control center.  Rather, the user must edit the config file and reload i3 to make changes.  In Regolith, the i3 config file is at &lt;code&gt;/etc/regolith/i3/config&lt;/code&gt; and users can supply their own copy that will override this default if placed at &lt;code&gt;~/.config/regolith/i3/config&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Many things about Regolith can be configured in the i3 config file.  It is best to read the &lt;a href=&#34;https://i3wm.org/docs/userguide.html&#34;&gt;i3 user guide&lt;/a&gt; to understand what and how to modify this file.&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Maintaining a user copy of the i3 config file requires more work when upgrading Regolith, as changes have to managed from the defaults into the user config to support new features in subsequent versions. If possible, it is better to rely on &lt;a href=&#34;../../howto/override-xres&#34;&gt;Xresource overrides&lt;/a&gt; to customize i3.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;i3bar&#34;&gt;i3bar&lt;/h2&gt;
+&lt;p&gt;The i3bar configuration is defined in the i3 config file listed directly above, but the i3bar has it&#39;s own configuration for status items.  To change which information is displayed in the bar, the config directory is &lt;code&gt;/etc/regolith/i3xrocks/conf.d&lt;/code&gt;.  There is one file in this directory for every status item, plus &lt;code&gt;01_setup&lt;/code&gt;.  The prefixed number defines the order in which the blocks are displayed on the bar.  &lt;a href=&#34;../../howto/add-remove-blocklets&#34;&gt;See here&lt;/a&gt; for information about customization.&lt;/p&gt;
+&lt;h2 id=&#34;look&#34;&gt;Look&lt;/h2&gt;
+&lt;p&gt;The look of Regolith is configured via Xresources, that live in &lt;code&gt;/etc/regolith/styles/&lt;/code&gt;.  This topic is covered in detail in the &lt;a href=&#34;../../customize/&#34;&gt;Customize&lt;/a&gt; section of the documentation.&lt;/p&gt;
+&lt;h2 id=&#34;session&#34;&gt;Session&lt;/h2&gt;
+&lt;p&gt;When Regolith is initially loaded, a script is run that configures the system and launches &lt;code&gt;i3-wm&lt;/code&gt;.  While it is not recommended to modify this script, it can provide details about how Regolith is structured and what policy it implements when loading configuration.  This file is readable at &lt;code&gt;/usr/bin/i3-gnome-flashback&lt;/code&gt;.  In fact, this script could be considered the initial seed of the Regolith project and was taken from the &lt;a href=&#34;https://github.com/deuill/i3-gnome-flashback&#34;&gt;i3-gnome-flashback&lt;/a&gt; project.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 1.3 Release Notes</title>
+      <link>https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.3-release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.3-release-notes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Following R1.2, the 1.3 release focused on usability issues reported by users and a continuing refinement of the desktop environment in general, with a focus on making the system easier for those inexperienced with tiling window managers.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;table class=&#34;table&#34;&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Cahuella GTK Theme&lt;/td&gt;
+            &lt;td&gt;&lt;img src=&#34;../regolith-screenshot-widgets.png&#34;&gt;&lt;/img&gt;&lt;/td&gt;
+            &lt;td&gt;A new GTK theme was created for Regolith that more closely follows the standard GNOME theme, Adwaita.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Keybindings Dialog&lt;/td&gt;
+            &lt;td&gt;&lt;img src=&#34;../regolith-screenshot-remontoire.png&#34;&gt;&lt;/img&gt;&lt;/td&gt;
+            &lt;td&gt;To allow for a more consistent look and collapsible content for various monitor dimensions, a custom shortcut dialog was developed called Remontoire.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Pluggable Compositors&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;The subsystem providing visual effects, the compositor, can behave differently based on hardware and driver support. Regolith now packages 3 compositor backends: compton-glx (based on Picom), xcompmgr, and none.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;i3-snapshot&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;In office environments it is common to switch between various display configurations (desk, meeting room...).  &lt;code&gt;i3-snapshot&lt;/code&gt; allows the user to quickly save and restore existing window layouts in a session.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;New Rofi theme&lt;/td&gt;
+            &lt;td&gt;&lt;img src=&#34;../regolith-screenshot-rofi.png&#34;&gt;&lt;/img&gt;&lt;/td&gt;
+            &lt;td&gt;Based on &lt;a href=&#34;https://www.reddit.com/r/unixporn/comments/ehdj6b/i3gaps_nordic_beauty/&#34;&gt;work by /u/InfernusZ9&lt;/a&gt;, the Rofi launcher is less distracting.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;New notification UI based on &lt;a href=&#34;https://github.com/DaveDavenport/Rofication&#34;&gt;Rofication&lt;a/&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;The previous notification UI was a hold over from more traditional desktop environments that prefer to present an on-screen dialog when a notification is received. Because user-focus is paramount, this was changed such that an indicator in the bar displays the number of unread notifications and the user decides when to view them via a keybinding or button click.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Floating Control Panel&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;The &lt;code&gt;gnome-control-center&lt;/code&gt; app can have a hard time adapting to constrained tiled layouts common with &lt;code&gt;i3-wm&lt;/code&gt;. Now when the control panel is loaded, it floats above the existing windows to allow for a quick settings change without impacting other apps.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Clickable Bar Status Actions&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;For convienence, the default blocks on the bar will launch configuration apps for the associated block.  For example, the battery block will launch the power settings control panel, and the notification block will launch the notification viewer.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Discrete and packagable Looks&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;The underlying style framework used by Regolith has been revamped to allow for &#34;looks&#34;: colors, themes, typeface, and other thematic state.  Looks can be switched with a single command.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;New bar status components&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Network, keybindings, notifications, focused window, and other blocklets have been improved and added.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Build System&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Build scripts were added and improved to allow for the generation of Regolith packages in an automated fashion, making it easier for others to roll their own.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Website&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;An entirely new website is launching with R1.3, to integrate more content and make it faster for users to find information.&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;fixes&#34;&gt;Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;i3-gaps-wm: Fix for workspace label bug on startup. Revamping some keybindings based on user feedback.&lt;/li&gt;
+&lt;li&gt;i3xrocks: numerous tweaks and fixes for status indicators.&lt;/li&gt;
+&lt;li&gt;regolith-gnome-flashback: numerous fixes and policy enhancements to session management.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;iso-generation&#34;&gt;ISO Generation&lt;/h2&gt;
+&lt;p&gt;The following commands were applied via the &lt;a href=&#34;https://launchpad.net/cubic&#34;&gt;Cubic tool&lt;/a&gt; to the stock Ubuntu 18.04 and 19.10 installer images to generate the Regolith Install ISO:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository universe &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo add-apt-repository ppa:regolith-linux/release
+$ sudo apt remove aisleriot branding-ubuntu cheese* gnome-mahjongg gnome-sudoku gnome-mines gnome-todo* gnome-video-* libchees* libgnome-games* libreoffice* remmina* rhythmbox* shotwell* thunderbird* totem* ure ubuntu-session ubuntu-web-launchers
+$ apt install regolith-desktop regolith-gdm3-theme
+$ sudo apt autoremove
+$ cp /usr/share/backgrounds/lucas-bellator-C0OD8OM-oM0-unsplash.jpg /usr/share/backgrounds/warty-final-ubuntu.png
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The purpose of removing several packages such as games and libreoffice was to reduce the ISO size.  All packages removed in the ISO are installable via the &lt;code&gt;apt&lt;/code&gt; tool or via the Ubuntu app store.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Advanced</title>
+      <link>https://regolith-linux.org/pt_br/docs/interface/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/interface/advanced/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;i3bar&#34;&gt;i3bar&lt;/h2&gt;
+&lt;p&gt;The bar&#39;s visibility can be toggled with &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;i&lt;/span&gt;&lt;/span&gt;.  This can be useful when wanting to remove all distractions and devote 100% of the screen to one or more applications in your workspace.  Another way of giving one application complete use of the screen is to press &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;f&lt;/span&gt;&lt;/span&gt; to cause the active application to enter full screen mode.&lt;/p&gt;
+&lt;h2 id=&#34;i3-wm-layout-mode&#34;&gt;i3-wm Layout Mode&lt;/h2&gt;
+&lt;p&gt;i3-wm offers a few different layout modes.  &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;t&lt;/span&gt;&lt;/span&gt; can be used to toggle between tabbed, horizontal and vertical split modes.&lt;/p&gt;
+&lt;h2 id=&#34;save-and-restore-window-positions&#34;&gt;Save and Restore Window Positions&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/regolith-linux/i3-snapshot&#34;&gt;A tool&lt;/a&gt; to save and load window layouts, &lt;code&gt;i3-snapshot&lt;/code&gt; is integrated into Regolith 1.3.  Pressing &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;,&lt;/span&gt;&lt;/span&gt; will write the current window layout to a file in the &lt;code&gt;/tmp&lt;/code&gt; directory. &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;,&lt;/span&gt;&lt;/span&gt; will restore that layout.  &lt;code&gt;i3-snapshot&lt;/code&gt; is intended for use-cases in which monitor changes may cause layouts to be randomized.  It is not a replacement for &lt;code&gt;&lt;a href=&#34;https://i3wm.org/docs/layout-saving.html&#34;&gt;i3-save-tree&lt;/a&gt;&lt;/code&gt; as it uses window identifiers that do not survive across X sessions, nor does it offer a way of positioning application launches into specific layouts.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Change the Bar Date and Time Format</title>
+      <link>https://regolith-linux.org/pt_br/docs/howto/time-format/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/howto/time-format/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The time format (12 or 24 hour) can be specified in Settings:
+&lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-settings-time-format.png&#34; width=&#34;640px&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;The date format can be specified by selecting the appropriate region in Settings.  A preview of the date format is provided, and logging back in is required for changes to take effect.
+&lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-settings-region.png&#34; width=&#34;640px&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;The date and time formats can also be explicitly set via Xresources.  To do so, override the &lt;code&gt;i3xrocks.date.format2&lt;/code&gt; Xresource key.  See &lt;a href=&#34;../override-xres&#34;&gt;Xresource overrides&lt;/a&gt; for details. The format specification for date is simply the arguments that would be passed to the &lt;code&gt;date&lt;/code&gt; command on the commandline.  For example, to print the year in 4 digits, specify &lt;code&gt;+%Y&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Components</title>
+      <link>https://regolith-linux.org/pt_br/docs/customize/components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/customize/components/</guid>
+      <description>
+        
+        
+        &lt;p&gt;As previously mentioned, Regolith is a collection of existing open source components that are integrated into a desktop environment.  Due to standards regarding the way UI components should communicate and years of integration between components, for the most part is simple to swap out parts of the UI for others.&lt;/p&gt;
+&lt;p&gt;The following table lists each UI component and notes regarding it&#39;s mutability:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;UI Component&lt;/th&gt;
+&lt;th&gt;Alternatives&lt;/th&gt;
+&lt;th&gt;Swappable&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Xorg&lt;/td&gt;
+&lt;td&gt;Unknown&lt;/td&gt;
+&lt;td&gt;Unknown&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-gaps&lt;/td&gt;
+&lt;td&gt;i3-wm, others&lt;/td&gt;
+&lt;td&gt;Difficult but possible&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3bar&lt;/td&gt;
+&lt;td&gt;Polybar, lemonbar, many others.&lt;/td&gt;
+&lt;td&gt;Yes, the i3 config file is changed to load a different bar.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks&lt;/td&gt;
+&lt;td&gt;i3blocks, barista, many others.&lt;/td&gt;
+&lt;td&gt;Yes, the i3 config file is changed to load a different status program.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Rofication&lt;/td&gt;
+&lt;td&gt;Dunst, gnome-flashback&lt;/td&gt;
+&lt;td&gt;Yes, the i3 config file is configured to load the Notification backend and Rofi UI, and i3xrocks is configured to load the blocklet.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Remontoire&lt;/td&gt;
+&lt;td&gt;Conky&lt;/td&gt;
+&lt;td&gt;Yes, the i3 config file is changed to load a different help program.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gdm3&lt;/td&gt;
+&lt;td&gt;lightdm, sddm, xdm, others.&lt;/td&gt;
+&lt;td&gt;This is configured in Ubuntu. Installing an alternative session manager should present a prompt to specify which to use.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gnome-flashback&lt;/td&gt;
+&lt;td&gt;None&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Due to the breadth of the topic, more details are not available here.  Experimenting with different UI components is a fun way to learn more about the internals of the operating system.  It is recommended to first experiment in a VM running Regolith to avoid breaking your working environment.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Change Bar Status indicators</title>
+      <link>https://regolith-linux.org/pt_br/docs/howto/add-remove-blocklets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/howto/add-remove-blocklets/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;adding-or-removing-status-indicators&#34;&gt;Adding or Removing status indicators&lt;/h1&gt;
+&lt;h2 id=&#34;finding-status-indicators&#34;&gt;Finding Status Indicators&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt search i3xrocks-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;installing-a-status-indicator&#34;&gt;Installing a Status Indicator&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install i3xrocks-memory
+$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;customization-of-bar&#34;&gt;Customization of bar&lt;/h1&gt;
+&lt;p&gt;For customization of the bar, for example to change the polling interval of the weather block, or to change the order of elements on the bar, the configuration can be copied from &lt;code&gt;/etc/regolith/i3xrocks/conf.d&lt;/code&gt; to &lt;code&gt;~/.config/regolith/i3xrocks/conf.d&lt;/code&gt; and then modified in the user directory.  For example, to change the order of the battery and net traffic blocks on the bar and not display notifications, perform the following steps:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ ls /etc/regolith/i3xrocks/conf.d
+01_setup  
+30_net-traffic  
+80_battery
+80_rofication     
+90_time
+$ mkdir -p ~/.config/regolith/i3xrocks/conf.d
+$ &lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; /etc/regolith/i3xrocks/conf.d
+$ cp 01_setup ~/.config/regolith/i3xrocks/conf.d/01_setup
+$ cp 80_battery ~/.config/regolith/i3xrocks/conf.d/30_battery
+$ cp 30_net-traffic ~/.config/regolith/i3xrocks/conf.d/80_net-traffic
+$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If any block configuration exists in the user directory &lt;code&gt;~/.config/regolith/i3xrocks/conf.d&lt;/code&gt;, then the defaults in &lt;code&gt;/etc/regolith/i3xrocks/conf.d&lt;/code&gt; will be ignored.&lt;/p&gt;
+&lt;h1 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h1&gt;
+&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configrations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Packages</title>
+      <link>https://regolith-linux.org/pt_br/docs/customize/packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/customize/packages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The following graph generated by &lt;code&gt;debtree&lt;/code&gt; provides the dependency relationships of Regolith packages and some of their notable upstream dependencies:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://regolith-linux.org/regolith-desktop-graph-l2.png&#34; alt=&#34;Package Dependency Graph&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;source&#34;&gt;Source&lt;/h2&gt;
+&lt;h3 id=&#34;packages&#34;&gt;Packages&lt;/h3&gt;
+&lt;p&gt;Regolith&#39;s packages are hosted on PPAs provided by launchpad.net:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;PPA&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Launchpad URL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ppa:regolith-linux/unstable&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Packages staged for developer testing.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://launchpad.net/~regolith-linux/+archive/ubuntu/unstable&#34;&gt;https://launchpad.net/~regolith-linux/+archive/ubuntu/unstable&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ppa:regolith-linux/stable&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Packages that have been tested but have not been committed to a release.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://launchpad.net/~regolith-linux/+archive/ubuntu/stable&#34;&gt;https://launchpad.net/~regolith-linux/+archive/ubuntu/stable&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ppa:regolith-linux/release&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Packages as provided by the current Regolith release&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://launchpad.net/~regolith-linux/+archive/ubuntu/release&#34;&gt;https://launchpad.net/~regolith-linux/+archive/ubuntu/release&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ppa:kgilmer/speed-ricer&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;General purpose packages that Regolith depends on that are not currently available via Ubuntu&#39;s repos.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://launchpad.net/~kgilmer/+archive/ubuntu/speed-ricer&#34;&gt;https://launchpad.net/~kgilmer/+archive/ubuntu/speed-ricer&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;git-repositories&#34;&gt;Git Repositories&lt;/h3&gt;
+&lt;p&gt;The source code associated with Regolith packages is hosted on &lt;a href=&#34;https://github.com/regolith-linux&#34;&gt;Regolith Linux&#39;s GitHub organization&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;installer-isos&#34;&gt;Installer ISOs&lt;/h3&gt;
+&lt;p&gt;The installer is produced using the &lt;a href=&#34;https://launchpad.net/cubic&#34;&gt;Cubic tool&lt;/a&gt; and providing the target ISO files as manual uploads to the Regolith Linux GitHub org.  The &lt;a href=&#34;https://github.com/regolith-linux/regolith-cubic-config&#34;&gt;README in &lt;code&gt;regolith-cubic-conf&lt;/code&gt;&lt;/a&gt; has more details.&lt;/p&gt;
+&lt;h2 id=&#34;build&#34;&gt;Build&lt;/h2&gt;
+&lt;p&gt;Regolith packages can be built, signed, and staged from the &lt;code&gt;regolith-builder&lt;/code&gt; repository.  See the &lt;a href=&#34;https://github.com/regolith-linux/regolith-builder&#34;&gt;project&#39;s README&lt;/a&gt; for details.&lt;/p&gt;
+&lt;h2 id=&#34;package--between-stock-ubuntu-and-regolith-linux&#34;&gt;Package Δ between Stock Ubuntu and Regolith Linux&lt;/h2&gt;
+&lt;p&gt;When installing Regolith via PPA, the user has control and visibility over all package changes via their package installation tool of choice, likely &lt;code&gt;apt&lt;/code&gt;, &lt;code&gt;dpkg&lt;/code&gt;, or &lt;code&gt;synaptic&lt;/code&gt;.  However when installing Regolith via the Ubuntu Installer, the user does not see what packages are installed as part of that process.  To cut down the size of the installer download, some packages were removed from the Ubuntu installer.&lt;/p&gt;
+&lt;h3 id=&#34;regolith-12&#34;&gt;Regolith 1.2&lt;/h3&gt;
+&lt;p&gt;For Regolith 1.2, the following packages are removed from stock Ubuntu:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ubuntu-session&lt;/li&gt;
+&lt;li&gt;libreoffice-*&lt;/li&gt;
+&lt;li&gt;rythmbox-*&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of course, any of these packages can be re-added by the user after installation using a variety of tools including the app store.&lt;/p&gt;
+&lt;h3 id=&#34;regolith-13&#34;&gt;Regolith 1.3&lt;/h3&gt;
+&lt;p&gt;For the 1.3 release of Regolith, changes from baseline Ubuntu are &lt;a href=&#34;https://regolith-linux.org/docs/reference/releases/regolith-1.3-release-notes/#iso-generation&#34;&gt;documented here&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Change Workspace Icons</title>
+      <link>https://regolith-linux.org/pt_br/docs/howto/change-workspace-icons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/howto/change-workspace-icons/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Adding icons to workspaces can give your desktop a nice and functional look.&lt;/p&gt;
+&lt;h3 id=&#34;finding-icons&#34;&gt;Finding icons&lt;/h3&gt;
+&lt;p&gt;Icons are actually characters from fonts installed by Regolith looks. Each look comes with a specific icon font. The icon font is defined in the &lt;code&gt;typeface_bar&lt;/code&gt; variable in the &lt;code&gt;typeface&lt;/code&gt; config file. For example, the look Cahuella uses the &lt;em&gt;Material Design Icons&lt;/em&gt; font (see file &lt;code&gt;/etc/regolith/styles/cahuella/typeface&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;You can browse the icon font using the &lt;a href=&#34;https://wiki.gnome.org/action/show/Apps/Gucharmap?action=show&amp;amp;redirect=Gucharmap&#34;&gt;Gnome Character Map&lt;/a&gt; application (&lt;code&gt;gucharmap&lt;/code&gt; package):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Gnome Character Map.&lt;/li&gt;
+&lt;li&gt;Select your icon font in the top left combo.&lt;/li&gt;
+&lt;li&gt;In the &lt;em&gt;script&lt;/em&gt; pane select &lt;em&gt;Common&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Scroll down the characters pane until you find the icons.&lt;/li&gt;
+&lt;li&gt;Double click on the icon you are looking to use and press the &lt;em&gt;Copy&lt;/em&gt; button (bottom right).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; the icons are ordered alphabetically.&lt;/p&gt;
+&lt;h3 id=&#34;changing-icons&#34;&gt;Changing icons&lt;/h3&gt;
+&lt;p&gt;Follow these steps to override the default workspace label with your own:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Find the character you want to use and copy to the clipboard. This example will use the Sigma glyph from Material Design Icons font ().&lt;/li&gt;
+&lt;li&gt;Add a line to your Xresource overrides file with the workspace number and character you wish to use:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm.workspace.06.name: 6:&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Refresh your UI:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In i3, workspace labels are only updated when a workspace is created.  Ensure you&#39;re creating an new workspace 6 if following the example above:&lt;/p&gt;
+&lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-bar-icon.png&#34;/&gt;
+&lt;h3 id=&#34;adding-support-for-icon-fonts-in-text-editors&#34;&gt;Adding support for icon fonts in text editors&lt;/h3&gt;
+&lt;p&gt;Atom:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Append the name of the icon font to &lt;code&gt;Settings &amp;gt; Editor &amp;gt; Font Familly&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Example: &lt;code&gt;Menlo, Consolas, DejaVu Sans Mono, monospace, Material Design Icons&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h1&gt;
+&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configurations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Change Workspace Labels</title>
+      <link>https://regolith-linux.org/pt_br/docs/howto/remove-workspace-icons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/howto/remove-workspace-icons/</guid>
+      <description>
+        
+        
+        &lt;ol&gt;
+&lt;li&gt;You&#39;ll need to stage the Regolith Styles Xresource files as &lt;a href=&#34;../stage-configs&#34;&gt;described here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Then stage the &lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt; Xresource file in your user directory, and ensure that your user copy of the Xresource file &lt;code&gt;#include&lt;/code&gt;s this copy.&lt;/li&gt;
+&lt;li&gt;Modify the styles to your preference.&lt;/li&gt;
+&lt;li&gt;After saving the styles file log out and back in to see the change.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;remove-everything-but-the-workspace-number&#34;&gt;Remove everything but the workspace number&lt;/h3&gt;
+&lt;p&gt;Follow these steps to edit the Xresource definitions of the workspace labels used by i3:&lt;/p&gt;
+&lt;p&gt;Edit your copy of the &lt;code&gt;i3-wm&lt;/code&gt; styles file. This file uses C-style macros to generate the Pango markup for each workspace label.  There are various ways of changing the macros to strip out the icons, but this may be the most concise.  Replace:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH) INDEX:&amp;lt;span font_desc=FONT&amp;gt; INDEX &amp;lt;/span&amp;gt;&amp;lt;span foreground=COLOR&amp;gt;GLYPH&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;with:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH) 
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;creating-workspace-labels&#34;&gt;Creating workspace labels&lt;/h3&gt;
+&lt;p&gt;Some users prefer to title their workspaces based a theme, such as &lt;code&gt;terminal&lt;/code&gt;, &lt;code&gt;web&lt;/code&gt;, etc.  To do this, make modifications to your user copy of &lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt; similarly to:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;i3-wm.workspace.01.name: 1: Terminal
+i3-wm.workspace.02.name: 2: Web
+i3-wm.workspace.03.name: 3: Chat
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Xresources</title>
+      <link>https://regolith-linux.org/pt_br/docs/reference/xresources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/reference/xresources/</guid>
+      <description>
+        
+        
+        &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Xresource Key&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;St.color0 - St.color15&lt;/td&gt;
+&lt;td&gt;Color definitions for terminal&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;St.font&lt;/td&gt;
+&lt;td&gt;Font definition for st-term&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Xcursor.size&lt;/td&gt;
+&lt;td&gt;X cursor size&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Xcursor.theme&lt;/td&gt;
+&lt;td&gt;X cursor theme&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Xft.antialias&lt;/td&gt;
+&lt;td&gt;X anti-alias flag&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Xft.dpi&lt;/td&gt;
+&lt;td&gt;X DPI setting&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Xft.hinting&lt;/td&gt;
+&lt;td&gt;X hinting&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Xft.hintstyle&lt;/td&gt;
+&lt;td&gt;X hint style&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Xft.rgba&lt;/td&gt;
+&lt;td&gt;X	rgb setting&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gnome.gtk.theme&lt;/td&gt;
+&lt;td&gt;GTK Theme&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gnome.icon.theme&lt;/td&gt;
+&lt;td&gt;GTK Icon Theme&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gnome.terminal.font&lt;/td&gt;
+&lt;td&gt;Font definition for gnome-terminal&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gnome.terminal.scrollbar&lt;/td&gt;
+&lt;td&gt;Flag to enable/disable scrollbar (&lt;code&gt;never | always&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gnome.wallpaper&lt;/td&gt;
+&lt;td&gt;GNOME Wallpaper (can be overridden in Settings)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gnome.wm.theme&lt;/td&gt;
+&lt;td&gt;GNOME Window Manager Theme (unused)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.alt&lt;/td&gt;
+&lt;td&gt;Key mapping for Alt key.  See the &lt;a href=&#34;https://i3wm.org/docs/userguide.html#_using_i3&#34;&gt;i3 User Guide&lt;/a&gt; for details.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.background.color&lt;/td&gt;
+&lt;td&gt;Bar Background Color&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.font&lt;/td&gt;
+&lt;td&gt;Bar Font&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.position&lt;/td&gt;
+&lt;td&gt;Bar Screen Position&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.separator.color&lt;/td&gt;
+&lt;td&gt;Color of seperator between blocks&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.statusline.color&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.trayoutput&lt;/td&gt;
+&lt;td&gt;Enable or disable the &lt;a href=&#34;https://i3wm.org/docs/userguide.html#_tray_output&#34;&gt;app tray&lt;/a&gt; in i3bar&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.workspace.active.background.color&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.workspace.active.border.color&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.workspace.active.text.color&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.workspace.focused.background.color&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.workspace.focused.border.color&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.workspace.focused.text.color&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.workspace.inactive.background.color&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.workspace.inactive.border.color&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.workspace.inactive.text.color&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.workspace.urgent.background.color&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.workspace.urgent.border.color&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.workspace.urgent.text.color&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.focused.color.background&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.focused.color.border&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.focused.color.child_border&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.focused.color.indicator&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.focused.color.text&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.focused_inactive.color.background&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.focused_inactive.color.border&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.focused_inactive.color.child_border&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.focused_inactive.color.indicator&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.focused_inactive.color.text&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.unfocused.color.background&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.unfocused.color.border&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.unfocused.color.child_border&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.unfocused.color.indicator&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.unfocused.color.text&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.urgent.color.background&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.urgent.color.border&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.urgent.color.child_border&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.urgent.color.indicator&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.client.urgent.color.text&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.floatingwindow.border.size&lt;/td&gt;
+&lt;td&gt;Window border size in pixels for floating windows&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.font&lt;/td&gt;
+&lt;td&gt;Window Manager Font&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.gaps.inner.size&lt;/td&gt;
+&lt;td&gt;Default gap size between windows in pixels&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.gaps.outer.size&lt;/td&gt;
+&lt;td&gt;Default gap size at screen edge in pixels&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.mod&lt;/td&gt;
+&lt;td&gt;Key mapping for Super key.  See the &lt;a href=&#34;https://i3wm.org/docs/userguide.html#_using_i3&#34;&gt;i3 User Guide&lt;/a&gt; for details.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.window.border.size&lt;/td&gt;
+&lt;td&gt;Default border size in pixels&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.workspace.01.name .. i3-wm.workspace.19.name&lt;/td&gt;
+&lt;td&gt;Workspace Labels&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.error.color&lt;/td&gt;
+&lt;td&gt;Color for bar module in error mode&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.battery0&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.battery100&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.battery20&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.battery50&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.battery80&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.batteryac&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.batterycharging&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.batteryunknown&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.capslock&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.color&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.cpu&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.disk&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.dn&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.help&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.mediapaused&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.mediaplaying&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.memory&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.mute&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.notify.error&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.notify.none&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.notify.some&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.numlock&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.off&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.on&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.sound&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.thermometer&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.time&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.up&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.wifi&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.wired&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.nominal&lt;/td&gt;
+&lt;td&gt;Default bar icon color&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.value.color&lt;/td&gt;
+&lt;td&gt;Color of numerical value in bar module&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.value.font&lt;/td&gt;
+&lt;td&gt;Font for numerical value in bar module&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.warning&lt;/td&gt;
+&lt;td&gt;Warning color for bar module&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rofi.drun-display-format&lt;/td&gt;
+&lt;td&gt;Fields to render in drun mode in Rofi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rofi.drun-icon-theme&lt;/td&gt;
+&lt;td&gt;Rofi icon theme&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rofi.font&lt;/td&gt;
+&lt;td&gt;Rofi font&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rofi.modi&lt;/td&gt;
+&lt;td&gt;Rofi modes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rofi.show-icons&lt;/td&gt;
+&lt;td&gt;true if the Rofi dialog should render app icons, false otherwise&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rofi.theme&lt;/td&gt;
+&lt;td&gt;Path to the Rofi theme file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rofi.window-format&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;optional-xresource-keys&#34;&gt;Optional Xresource keys&lt;/h1&gt;
+&lt;p&gt;The following Xresource keys are undefined by default but can be used by users to change behavior as desired.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Xresource Key&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;rofi.search.help&lt;/td&gt;
+&lt;td&gt;Show help text on the file search dialog, defaults to &lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rofi.search.limit&lt;/td&gt;
+&lt;td&gt;Total number of items to return from an &lt;code&gt;mlocate&lt;/code&gt; search, default: 64&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.launcher.app&lt;/td&gt;
+&lt;td&gt;Command i3 executes from the app launcher keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.launcher.cmd&lt;/td&gt;
+&lt;td&gt;Command i3 executes from the command launcher keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.launcher.window&lt;/td&gt;
+&lt;td&gt;Command i3 executes for the window navigation keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.help&lt;/td&gt;
+&lt;td&gt;Command to launch from the help keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.file_search&lt;/td&gt;
+&lt;td&gt;Command to launch from the file search keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.refresh_ui&lt;/td&gt;
+&lt;td&gt;Command to launch from the session refresh keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.logout&lt;/td&gt;
+&lt;td&gt;Command to launch from the logout keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.reboot&lt;/td&gt;
+&lt;td&gt;Command to launch from the reboot keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.shutdown&lt;/td&gt;
+&lt;td&gt;Command to launch from the shutdown keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.lock&lt;/td&gt;
+&lt;td&gt;Command to launch from the lock screen keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.sleep&lt;/td&gt;
+&lt;td&gt;Command to launch from the sleep keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.settings&lt;/td&gt;
+&lt;td&gt;Command to launch from the Control Panel keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.display&lt;/td&gt;
+&lt;td&gt;Command to launch from the Display Settings keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.wifi&lt;/td&gt;
+&lt;td&gt;Command to launch from the Wifi Settings keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.bluetooth&lt;/td&gt;
+&lt;td&gt;Command to launch from the Bluetooth Settings keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.files&lt;/td&gt;
+&lt;td&gt;Command to launch from the file browser keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.notification_ui&lt;/td&gt;
+&lt;td&gt;Command to launch from the notification UI keybinding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.program.1&amp;hellip;i3-wm.program.3&lt;/td&gt;
+&lt;td&gt;Optional programs to start with i3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Switch between Regolith PPAs</title>
+      <link>https://regolith-linux.org/pt_br/docs/howto/change-ppa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/howto/change-ppa/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page describes how to configure the package system to consume Regolith packages between a set of PPAs.&lt;/p&gt;
+&lt;h2 id=&#34;regolith-ppas&#34;&gt;Regolith PPAs&lt;/h2&gt;
+&lt;p&gt;See this section for a description of &lt;a href=&#34;https://regolith-linux.org/docs/getting-started/install/#ppa-sources&#34;&gt;each PPA&lt;/a&gt;.  By default users will be on the &lt;code&gt;release&lt;/code&gt; PPA which is intended to only be updated upon bug fixes and versioned releases.  Here is how to switch to the &lt;code&gt;unstable&lt;/code&gt; PPA, by updating the apt packaging configuration:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Remove the existing &lt;code&gt;release&lt;/code&gt; PPA:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository --remove ppa:regolith-linux/release
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Add the new &lt;code&gt;unstable&lt;/code&gt; PPA:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository ppa:regolith-linux/unstable
+$ sudo apt update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Upgrade packages to the upgraded versions contained in the new PPA:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;switch-back&#34;&gt;Switch Back&lt;/h3&gt;
+&lt;p&gt;To return to the previon configuration, simply follow the steps above but toggle the PPA URIs.  So, swap &lt;code&gt;unstable&lt;/code&gt; for &lt;code&gt;release&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Once the PPAs have been switched, to revert any unwanted package updates from the &lt;code&gt;unstable&lt;/code&gt; repository, simply install the specific version you wish to revert to.  For example, if &lt;code&gt;regolith-deskop&lt;/code&gt; has version 4 in &lt;code&gt;unstable&lt;/code&gt; and version 3 in &lt;code&gt;release&lt;/code&gt;, you would have been upgraded to version 4 after using the &lt;code&gt;unstable&lt;/code&gt; PPA and taking updates.  To revert back to version 3 after swapping back to the &lt;code&gt;release&lt;/code&gt; PPA, tell &lt;code&gt;apt&lt;/code&gt; the specific version you wish to install:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install regolith-desktop&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The general form is &lt;code&gt;apt install &amp;lt;package name&amp;gt;=&amp;lt;package version&amp;gt;&lt;/code&gt;.  You will be notified by &lt;code&gt;apt&lt;/code&gt; that the operation will result in a downgrade package version.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Upgrade Regolith Linux 1.4 to 1.4.1</title>
+      <link>https://regolith-linux.org/pt_br/docs/howto/update-14-141/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/howto/update-14-141/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you&#39;ve installed Regolith via the ISO, a few minor changes were made to address bugs found in R1.4.  Most of the fixes will be installed automatically by applying package updates, however a few items must be performed manually.&lt;/p&gt;
+&lt;h2 id=&#34;remove-deprecated-touchpad-driver&#34;&gt;Remove deprecated touchpad driver&lt;/h2&gt;
+&lt;p&gt;An obsolete driver was mistakenly included with the Regolith 1.4 ISO install that conflicts with GNOME touchpad settings.  Perform these steps to fix the touchpad:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt remove xserver-xorg-input-synaptics
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;add-regolith-boot-sequence&#34;&gt;Add Regolith boot sequence&lt;/h2&gt;
+&lt;p&gt;The ISO release now includes an unbranded boot animation, rather than keeping with the default Ubuntu branded experience.  Updating this boot-up theme (also known as a Plymouth theme) also enables users to enter a password if they&#39;ve setup an encrypted filesystem.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install plymouth-theme-regolith
+$ sudo update-alternatives --config default.plymouth
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;From the prompt ensure that the Regolith configuration is selected.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Change Notification Systems</title>
+      <link>https://regolith-linux.org/pt_br/docs/howto/replace-notification-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/howto/replace-notification-system/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Regolith ships with a notification system called &lt;a href=&#34;https://github.com/DaveDavenport/Rofication&#34;&gt;Rofication&lt;/a&gt;.  This system is designed to work in the background and not use pop-ups as a way of alerting the user to a new notification.  Rather, a small bar item displays the current number of unread notifications and a dialog can activated to interact with the content of the current notifications. This page describes a way to install an alternative notification system which works in a more traditional, expected way.&lt;/p&gt;
+&lt;p&gt;We will use &lt;a href=&#34;https://dunst-project.org/&#34;&gt;dunst&lt;/a&gt; as an example but similar steps can be used with pretty much any other notification component.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Replace &lt;code&gt;rofication&lt;/code&gt; with &lt;code&gt;dunst&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install dunst
+$ sudo apt purge regolith-rofication
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Log out and back in.&lt;/li&gt;
+&lt;li&gt;Test your notifications with &lt;code&gt;notify-send test123&lt;/code&gt;.  You should see a pop-up from &lt;code&gt;dunst&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Change the Terminal Font Size</title>
+      <link>https://regolith-linux.org/pt_br/docs/howto/terminal-font/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/howto/terminal-font/</guid>
+      <description>
+        
+        
+        &lt;ol&gt;
+&lt;li&gt;Create or add the following value to your &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; file:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;gnome.terminal.font:	JetBrains Mono &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;14&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Reload the Xresource configuration:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Open a new terminal to see the change take effect.&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Change the Default Window Gap</title>
+      <link>https://regolith-linux.org/pt_br/docs/howto/default-gap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_br/docs/howto/default-gap/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Like most configuration in Regolith, the i3-gaps gap size can be tuned via Xresources (&lt;a href=&#34;../../Reference/xresources&#34;&gt;See here&lt;/a&gt; for all Xresource definitions).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create or add the following value to your &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; file:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;i3-wm.gaps.inner.size: 20
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;sub&gt;In this example we&#39;re setting the default gap to 20 pixels.&lt;/sub&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Reload the Xresource configuration:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h1&gt;
+&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configrations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

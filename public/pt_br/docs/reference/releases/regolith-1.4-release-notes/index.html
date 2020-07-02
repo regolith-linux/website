@@ -1,0 +1,1016 @@
+<!doctype html>
+<html lang="pt_br" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.62.1" />
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>1.4 Release Notes | Regolith</title><meta property="og:title" content="1.4 Release Notes" />
+<meta property="og:description" content="Release notes for Regolith 1.4.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.4-release-notes/" />
+<meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
+<meta property="article:modified_time" content="2020-07-02T01:56:33-03:00" /><meta property="og:site_name" content="Regolith" />
+<meta itemprop="name" content="1.4 Release Notes">
+<meta itemprop="description" content="Release notes for Regolith 1.4.
+">
+<meta itemprop="dateModified" content="2020-07-02T01:56:33-03:00" />
+<meta itemprop="wordCount" content="748">
+<meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
+
+<meta name="twitter:title" content="1.4 Release Notes"/>
+<meta name="twitter:description" content="Release notes for Regolith 1.4.
+"/>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-138654070-2', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.a8ae4c3a9f3c38e78bab4910b4e703de36f080507ccc7d9c687415539c187a90.css" as="style">
+<link href="/scss/main.min.a8ae4c3a9f3c38e78bab4910b4e703de36f080507ccc7d9c687415539c187a90.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+    <title>1.4 Release Notes | Regolith</title>
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/pt_br/">
+		<span class="navbar-logo"><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" id="svg3861" width="32" height="32" viewBox="0 0 32 32"><defs id="defs3865"><clipPath clipPathUnits="userSpaceOnUse" id="clipPath3877"><path d="M0 1567.127H1560.637V0H0z" id="path3875" /></clipPath></defs><g id="g3869" transform="matrix(0.04502922,0,0,-0.04502922,-18.438529,59.849926)"><g id="g3871"><g id="g3873" clip-path="url(#clipPath3877)"><g id="g3879" transform="translate(986.2234,818.9683)"><path d="m0 0c-75.72-35.88-161.365-25.672-225.389 19.23-72.324-31.545-141.013-56.576-197.909-71.903-.128-.035-.25-.066-.377-.1 86.695-99.281 231.864-133.353 356.852-74.126C26.211-82.814 86.301 2.663 101.911 97.083 80.012 56.06 45.25 21.443.0.0" style="fill:#dc322f;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path3881" /></g><g id="g3883" transform="translate(462.4304,829.2241)"><path d="M0 0C6.707 8.363 19.316 21.578 41.14 39.939 44.93 28.666 49.403 17.491 54.623 6.478 54.652 6.413 54.686 6.351 54.716 6.287 26.173.289 9.383-.517.0.0m651.611 279c-8.663 9.474-23.361 10.127-32.83 1.472-25.998-23.768-66-51.988-114.677-81.441-11.948 12.294-28.65 19.943-47.147 19.943-36.315.0-65.753-29.439-65.753-65.753.0-5.395.664-10.632 1.889-15.649-17.518-8.931-35.486-17.776-53.773-26.441-33.203-15.734-66.287-30.337-98.339-43.485-6.1 9.092-11.617 18.736-16.448 28.929-53.137 112.139-5.307 246.121 106.831 299.259 34.274 16.241 70.584 23.005 106.007 21.429-74.756 29.139-160.888 28.631-239.117-8.439C74.632 350.245 9.163 218.589 28.971 89.964-54.849 23.866-58.534-2.795-49.612-21.628c7.913-16.699 25.611-24.994 54.989-24.994 23.742.0 55.114 5.417 95.118 16.194 72.675 19.58 164.558 54.936 258.725 99.558 20.717 9.817 40.946 19.804 60.558 29.863 10.576-7.265 23.378-11.525 37.179-11.525 36.314.0 65.752 29.439 65.752 65.753.0.883-.032 1.758-.065 2.633 53.819 32.245 98.061 63.408 127.496 90.315 9.472 8.661 10.131 23.359 1.471 32.831" style="fill:#dc322f;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path3885" /></g></g></g></g></svg></span><span class="text-uppercase font-weight-bold">Regolith</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/pt_br/download/" ><span>Baixar</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/pt_br/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/pt_br/interact/" ><span>Interagir</span></a>
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Releases
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="http://regolith-linux.org">1.4.1</a>
+	
+	<a class="dropdown-item" href="http://regolith-linux.org">1.4</a>
+	
+	<a class="dropdown-item" href="http://regolith-linux.org/regolith-site-r131/">1.3.1</a>
+	
+	<a class="dropdown-item" href="http://regolith-linux.org/regolith-site-r13/">1.3</a>
+	
+	<a class="dropdown-item" href="http://regolith-linux.org/regolith-site-r12/">1.2</a>
+	
+</div>
+
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	português brasileiro
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/docs/reference/releases/regolith-1.4-release-notes/">English</a>
+	
+	<a class="dropdown-item" href="/de/docs/reference/releases/regolith-1.4-release-notes/">Deutsch</a>
+	
+	<a class="dropdown-item" href="/es/docs/reference/releases/regolith-1.4-release-notes/">español</a>
+	
+	<a class="dropdown-item" href="/hu/docs/reference/releases/regolith-1.4-release-notes/">magyar</a>
+	
+	<a class="dropdown-item" href="/fr/docs/reference/releases/regolith-1.4-release-notes/">français</a>
+	
+	<a class="dropdown-item" href="/pt_pt/docs/reference/releases/regolith-1.4-release-notes/">português</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+    
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	português brasileiro
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/docs/reference/releases/regolith-1.4-release-notes/">English</a>
+	
+	<a class="dropdown-item" href="/de/docs/reference/releases/regolith-1.4-release-notes/">Deutsch</a>
+	
+	<a class="dropdown-item" href="/es/docs/reference/releases/regolith-1.4-release-notes/">español</a>
+	
+	<a class="dropdown-item" href="/hu/docs/reference/releases/regolith-1.4-release-notes/">magyar</a>
+	
+	<a class="dropdown-item" href="/fr/docs/reference/releases/regolith-1.4-release-notes/">français</a>
+	
+	<a class="dropdown-item" href="/pt_pt/docs/reference/releases/regolith-1.4-release-notes/">português</a>
+	
+</div>
+    </div>
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/pt_br/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="pt-br-docs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/pt_br/docs/overview/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Overview</a>
+  </li>
+  <ul>
+    <li class="collapse " id="pt-br-docs-overview">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/pt_br/docs/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Começando</a>
+  </li>
+  <ul>
+    <li class="collapse " id="pt-br-docs-getting-started">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-getting-started-install" href="/pt_br/docs/getting-started/install/">Instalação</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-getting-started-basics" href="/pt_br/docs/getting-started/basics/">Fundamentos</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-getting-started-configuration" href="/pt_br/docs/getting-started/configuration/">Configuração</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/pt_br/docs/interface/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Interface</a>
+  </li>
+  <ul>
+    <li class="collapse " id="pt-br-docs-interface">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-interface-apps" href="/pt_br/docs/interface/apps/">Working with Applications</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-interface-notifications" href="/pt_br/docs/interface/notifications/">Notifications</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-interface-system" href="/pt_br/docs/interface/system/">System Configuration</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-interface-advanced" href="/pt_br/docs/interface/advanced/">Advanced</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/pt_br/docs/customize/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Customize</a>
+  </li>
+  <ul>
+    <li class="collapse " id="pt-br-docs-customize">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-customize-look" href="/pt_br/docs/customize/look/">Look</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-customize-styles" href="/pt_br/docs/customize/styles/">Styles</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-customize-compositors" href="/pt_br/docs/customize/compositors/">Compositors</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-customize-components" href="/pt_br/docs/customize/components/">Components</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-customize-packages" href="/pt_br/docs/customize/packages/">Packages</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/pt_br/docs/howto/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">How To</a>
+  </li>
+  <ul>
+    <li class="collapse " id="pt-br-docs-howto">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-howto-override-xres" href="/pt_br/docs/howto/override-xres/">Override Xresources</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-howto-stage-configs" href="/pt_br/docs/howto/stage-configs/">Stage Config Files</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-howto-change-terminal" href="/pt_br/docs/howto/change-terminal/">Change the Default Terminal</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-howto-multiple-batteries" href="/pt_br/docs/howto/multiple-batteries/">Support Multiple Batteries</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-howto-time-format" href="/pt_br/docs/howto/time-format/">Change the Bar Date and Time Format</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-howto-add-remove-blocklets" href="/pt_br/docs/howto/add-remove-blocklets/">Change Bar Status indicators</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-howto-change-workspace-icons" href="/pt_br/docs/howto/change-workspace-icons/">Change Workspace Icons</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-howto-remove-workspace-icons" href="/pt_br/docs/howto/remove-workspace-icons/">Change Workspace Labels</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-howto-change-ppa" href="/pt_br/docs/howto/change-ppa/">Switch between Regolith PPAs</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-howto-update-14-141" href="/pt_br/docs/howto/update-14-141/">Upgrade Regolith Linux 1.4 to 1.4.1</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-howto-replace-notification-system" href="/pt_br/docs/howto/replace-notification-system/">Change Notification Systems</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-howto-terminal-font" href="/pt_br/docs/howto/terminal-font/">Change the Terminal Font Size</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-howto-default-gap" href="/pt_br/docs/howto/default-gap/">Change the Default Window Gap</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/pt_br/docs/reference/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Reference</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="pt-br-docs-reference">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-reference-keybindings" href="/pt_br/docs/reference/keybindings/">Keybindings</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-reference-configurations" href="/pt_br/docs/reference/configurations/">Config Files</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-reference-packages" href="/pt_br/docs/reference/packages/">Packages</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-reference-xresources" href="/pt_br/docs/reference/xresources/">Xresources</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/pt_br/docs/reference/releases/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Releases</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="pt-br-docs-reference-releases">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-reference-releases-regolith-1-4-1-release-notes" href="/pt_br/docs/reference/releases/regolith-1.4.1-release-notes/">1.4.1 Release Notes</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-pt-br-docs-reference-releases-regolith-1-4-release-notes" href="/pt_br/docs/reference/releases/regolith-1.4-release-notes/">1.4 Release Notes</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-reference-releases-regolith-1-3-1-release-notes" href="/pt_br/docs/reference/releases/regolith-1.3.1-release-notes/">1.3.1 Release Notes</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-reference-releases-regolith-1-3-release-notes" href="/pt_br/docs/reference/releases/regolith-1.3-release-notes/">1.3 Release Notes</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/pt_br/docs/developer/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Developer</a>
+  </li>
+  <ul>
+    <li class="collapse " id="pt-br-docs-developer">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-developer-looks" href="/pt_br/docs/developer/looks/">Looks</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/pt_br/docs/policy-and-process/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Policy and Process</a>
+  </li>
+  <ul>
+    <li class="collapse " id="pt-br-docs-policy-and-process">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-policy-and-process-privacy" href="/pt_br/docs/policy-and-process/privacy/">Privacy</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-policy-and-process-updates" href="/pt_br/docs/policy-and-process/updates/">Updates</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-policy-and-process-contributions" href="/pt_br/docs/policy-and-process/contributions/">Contribute</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-policy-and-process-support" href="/pt_br/docs/policy-and-process/support/">Support</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/regolith-linux/website/edit/master/content/pt_br/docs/Reference/Releases/regolith-1.4-release-notes.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/regolith-linux/website/issues/new?title=1.4%20Release%20Notes" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/regolith-linux/regolith-desktop/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+
+</div>
+
+
+
+
+
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://regolith-linux.org/pt_br/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://regolith-linux.org/pt_br/docs/reference/">Reference</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://regolith-linux.org/pt_br/docs/reference/releases/">Releases</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.4-release-notes/">1.4 Release Notes</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>1.4 Release Notes</h1>
+	<div class="lead">Release notes for Regolith 1.4.</div>
+	<p>Regolith R1.4 is a major feature release which includes several improvements and optimizations.  Regolith is now smaller and more efficient.  The ISO-based installer is now based from the Xubuntu image, and moves from the gdm3 display manager to LightDM.  This allows for less resource consumption at runtime and dramatically smaller download size[1]. A new look, <code>lascaille</code> and file search dialog round out the major new features.  Read below for more details.</p>
+
+
+<div class="pageinfo pageinfo-primary">
+<p>If you maintain your own i3 config file, note that the copy shipped in Regolith 1.4 has changed in that it reads more configuration from Xresources.  The intention of this change is to require a full copy of the i3 config file <b>less often</b>, by allowing users to customize the system via Xresource overrides instead of copy/edit of the i3 config file.</p>
+
+</div>
+
+<p>For R1.4 in particular @ploum has provided many of the ideas and validation.  Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @baldrailers, @ivomarino, @Josh-Letts, @LawZava, @SkyyySi, @tomster, @gdeflaux, @appelgriebsch, @farsil, and @MrKovar for their time and attention.  Also thanks to all that helped to test and filed issues for bugs and feature requests!</p>
+<h2 id="known-issues">Known Issues</h2>
+<p>Issues and fixes are being tracked in <a href="https://github.com/orgs/regolith-linux/projects/13">this project</a>.</p>
+<h2 id="features">Features</h2>
+<table class="table">
+    <tbody>
+        <tr>
+            <td>Remontoire 1.3.1</td>
+            <td><a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a></td>
+            <td>
+            <ul>
+            <li>Can render keybindings from i3 over socket or from any file.</li>
+            <li>Can be configured to display on any screen edge.</li>
+            <li>Visual updates and bug fixes.</li>
+            <li>Presentation changeable via CSS.</li>
+            </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>New default look: Lascaille</td>
+            <td><a href="../regolith-screenshot-lascaille.png"><img class="shadow" src="../regolith-screenshot-lascaille.png"/></a></td>
+            <td>A new look with <a href="https://www.jetbrains.com/lp/mono/">a bolder, tighter typeface</a> and a <a href="https://github.com/ayu-theme/ayu-colors">darker, higher contrast color theme</a> become Regolith's default look in 1.4.  Cahuella, and other looks continue to be available and can be installed with a few commands.</td>
+        </tr>
+        <tr>
+            <td>New File Search Dialog</td>
+            <td><a href="../regolith-screenshot-file-search.png"><img class="shadow" src="../regolith-screenshot-file-search.png"/></a></td>
+            <td>Based on <a href="https://github.com/davatorium/rofi-scripts/tree/master/rofi-finder">Rofi</a> and <code>mlocate</code>, users can now quickly find files and launch their default editors from a global dialog.</td>
+        </tr>
+        <tr>
+            <td>Faster, Easier Customization</td>
+            <td></td>
+            <td>Virtually everything exportable from the i3 config can now be overridden directly with Xresources declarations, from changing the meta key to specifying the command that launches the app search dialog.  Additionally, up to 3 user configured programs can be set to be loaded upon start.  All of this is possible without creating a user copy of the i3 config file, but rather by overriding a specific Xresource.</td>
+        </tr>
+        <tr>
+            <td>i3xrocks supports conf.d style configuration</td>
+            <td></td>
+            <td>The status indicators in the bar can now be installed and configured independently.  This allows for a cleaner dependency model and more efficient runtime characteristics. It also provides future flexibility for user contributed modules and status indicators.  Plus, users can provide their own block descriptors in the user directory to easily override the defaults without having to change the i3 config file.</td>
+        </tr>
+        <tr>
+            <td>New architecture support: <code>arm64</code></td>
+            <td></td>
+            <td>With testing done on a Raspberry Pi 4, Regolith now is installable via PPA when using Ubuntu on arm64 devices with the necessary hardware support.</td>
+        </tr>
+        <tr>
+            <td>Rewrite of Rofication</td>
+            <td></td>
+            <td>Rofication has been rewritten to require less dependencies and be more stable by Regolith contributor @farsil.</td>
+        </tr>
+        <tr>
+            <td>New Ubuntu release support: Focal Fossa</td>
+            <td><a href="../regolith-screenshot-focal.png"><img class="shadow" src="../regolith-screenshot-focal.png"/></a></td>
+            <td>Regolith runs as a desktop environment in Canonical's latest release of Ubuntu: 20.04.</td>
+        </tr>
+        <tr>
+            <td>Time and Space Optimizations in ISO release</td>
+            <td></td>
+            <td>By switching from GDM3 to LightDM, Regolith avoids loading some unnecessary desktop components into RAM, resulting in between 200MB to 300MB savings on cold start.  Additionally, the LiveCD installer is now based on the Xubuntu LiveCD which dramatically lowers the size of the installer and install image of the system[2].  Finally, with more fine-grained control of the bar status blocks, only the blocks you've installed will run.</td>
+        </tr>
+        <tr>
+            <td>Pluggable Desktop Notification Components</td>
+            <td></td>
+            <td>Users can now cleanly switch between desktop notification implementations such as dunst and notify-osd, in addition to Rofication without resorting to hacks.</td>
+        </tr>
+        <tr>
+            <td>Integrate <code>gnome-terminal</code> over <code>st-term</code> by Default</td>
+            <td><a href="../regolith-screenshot-gnome-terminal.png"><img class="shadow" src="../regolith-screenshot-gnome-terminal.png"/></a></td>
+            <td>Regolith 1.4 uses <code>gnome-terminal</code> with a dynamically generated profile to overcome some character encoding and input devices.  <code>st</code> is still available, simply by installing the <code>regolith-st</code> package.</td>
+        </tr>
+        <tr>
+            <td>Picom (Compton) config can be overriden by user</td>
+            <td></td>
+            <td>Users can provide their own Picom compositor config in their user directory.</td>
+        </tr>
+        <tr>
+            <td>i3 reload becomes Regolith reload</td>
+            <td></td>
+            <td>Refreshing the UI (look, colors, fonts, etc.) after making changes is now as easy as <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">r</span></span>.</td>
+        </tr>
+        <tr>
+            <td>Polish, polish, polish</td>
+            <td></td>
+            <td>Just as in previous releases, many tiny fixes and enhancements were added to Regolith in version 1.4.</td>
+        </tr>
+    </tbody>
+</table>
+<h2 id="fixes">Fixes</h2>
+<p>Have a look at the R1.4 project page for a <a href="https://github.com/orgs/regolith-linux/projects/11">list of bug fixes</a>.</p>
+<p>1: This does **not** mean that Regolith uses XFCE4 or any other aspect of Xubuntu other than the install image.</p>
+<p>2: The trade-off is that users need to install more of the software they require after installation.</p>
+	
+		<style>
+  .feedback--answer {
+    display: inline-block;
+  }
+  .feedback--answer-no {
+    margin-left: 1em;
+  }
+  .feedback--response {
+    display: none;
+    margin-top: 1em;
+  }
+  .feedback--response__visible {
+    display: block;
+  }
+</style>
+<h2 class="feedback--title">Feedback</h2>
+<p class="feedback--question">Was this page helpful?</p>
+<button class="feedback--answer feedback--answer-yes">Yes</button>
+<button class="feedback--answer feedback--answer-no">No</button>
+<p class="feedback--response feedback--response-yes">
+  Glad to hear it! Please <a href="https://github.com/regolith-linux/regolith-linux.github.io/issues/new">tell us how we can improve</a>.
+</p>
+<p class="feedback--response feedback--response-no">
+  Sorry to hear that. Please <a href="https://github.com/regolith-linux/regolith-linux.github.io/issues/new">tell us how we can improve</a>.
+</p>
+<script>
+  const yesButton = document.querySelector('.feedback--answer-yes');
+  const noButton = document.querySelector('.feedback--answer-no');
+  const yesResponse = document.querySelector('.feedback--response-yes');
+  const noResponse = document.querySelector('.feedback--response-no');
+  const disableButtons = () => {
+    yesButton.disabled = true;
+    noButton.disabled = true;
+  };
+  const sendFeedback = (value) => {
+    if (typeof ga !== 'function') return;
+    const args = {
+      command: 'send',
+      hitType: 'event',
+      category: 'Helpful',
+      action: 'click',
+      label: window.location.pathname,
+      value: value
+    };
+    ga(args.command, args.hitType, args.category, args.action, args.label, args.value);
+  };
+  yesButton.addEventListener('click', () => {
+    yesResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(1);
+  });
+  noButton.addEventListener('click', () => {
+    noResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(0);
+  });
+</script>
+
+		<br />
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified July 2, 2020: <a  href="https://github.com/regolith-linux/website/commit/f19564dae21a942eded8eec036cd503906f793cf">Brazilian Portuguese translation (#34) (f19564d)</a>
+</div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Announcement mailing list" aria-label="Announcement mailing list">
+    <a class="text-white" target="_blank" href="https://www.freelists.org/list/regolith-linux">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" href="https://twitter.com/RegolithL">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Mastodon" aria-label="Mastodon">
+    <a class="text-white" target="_blank" href="https://fosstodon.org/@regolith">
+      <i class="fab fa-mastodon"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Github Issues" aria-label="Github Issues">
+    <a class="text-white" target="_blank" href="https://github.com/regolith-linux/regolith-desktop/issues">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" href="https://github.com/regolith-linux">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Slack" aria-label="Slack">
+    <a class="text-white" target="_blank" href="https://regolith-linux.herokuapp.com/">
+      <i class="fab fa-slack"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2020 Regolith Project All Rights Reserved</small>
+        <small class="ml-1"><a href="https://regolith-linux.org/docs/policy-and-process/privacy/" target="_blank">Privacy Policy</a></small>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+<script src="/js/main.min.33abc8092065e5e26e4ffd57f1f3c02314a0585ac6195f49b875eab902392794.js" integrity="sha256-M6vICSBl5eJuT/1X8fPAIxSgWFrGGV9JuHXquQI5J5Q=" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
