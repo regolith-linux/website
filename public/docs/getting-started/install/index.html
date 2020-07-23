@@ -26,12 +26,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/docs/getting-started/install/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-05-17T16:39:00-07:00" /><meta property="og:site_name" content="Regolith" />
+<meta property="article:modified_time" content="2020-07-22T18:40:53-07:00" /><meta property="og:site_name" content="Regolith" />
 <meta itemprop="name" content="Installation">
 <meta itemprop="description" content="Install Regolith onto your computer.
 ">
-<meta itemprop="dateModified" content="2020-05-17T16:39:00-07:00" />
-<meta itemprop="wordCount" content="1299">
+<meta itemprop="dateModified" content="2020-07-22T18:40:53-07:00" />
+<meta itemprop="wordCount" content="1314">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
 
@@ -875,9 +875,9 @@ $ rm -Rf ~/.config/regolith/flags
 <li>Verify that no regolith packages are still installed with <code>apt list --installed | grep -i regolith</code>.  The command should not return any packages.  If it does, manually uninstall them with <code>sudo apt purge &lt;package&gt;</code>.</li>
 <li>Reinstall Regolith:</li>
 </ol>
-<pre><code>$ sudo apt install regolith-desktop
+<pre><code>$ sudo apt install regolith-desktop i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time #also consider i3xrocks-battery i3xrocks-memory i3xrocks-weather
 </code></pre><ol start="5">
-<li>Reboot the computer, and when logging in select the &ldquo;Regolith&rdquo; session in the gear menu.  At this point you can remove or keep <code>ubuntu-session</code>.</li>
+<li>Reboot the computer, and when logging in select the &ldquo;Regolith&rdquo; session in the gear menu.  At this point you can remove <code>ubuntu-session</code> if you don't want the stock GNOME session (optional).</li>
 </ol>
 <h2 id="uninstallation-of-regolith-desktop">Uninstallation of <code>regolith-desktop</code></h2>
 <p>Simply follow these steps to remove Regolith from your system:</p>
@@ -1005,7 +1005,7 @@ $ rm -Rf ~/.config/regolith/flags
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 17, 2020: <a  href="https://github.com/regolith-linux/website/commit/b1c60271cd3cd56650b7ccc1e47a43ce31a89b61">Remove 1.4 beta text, replace w/ version 1.4.1. (b1c6027)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified July 22, 2020: <a  href="https://github.com/regolith-linux/website/commit/7a34a0a89eb7fb50b6d5684ac418e61b76d9b565">Update reinstallation instructions to include i3xrocks indicators. (7a34a0a)</a>
 </div>
 </div>
 

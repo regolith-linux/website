@@ -123,9 +123,9 @@ $ rm -Rf ~/.config/regolith/flags
 &lt;li&gt;Verify that no regolith packages are still installed with &lt;code&gt;apt list --installed | grep -i regolith&lt;/code&gt;.  The command should not return any packages.  If it does, manually uninstall them with &lt;code&gt;sudo apt purge &amp;lt;package&amp;gt;&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Reinstall Regolith:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo apt install regolith-desktop
+&lt;pre&gt;&lt;code&gt;$ sudo apt install regolith-desktop i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time #also consider i3xrocks-battery i3xrocks-memory i3xrocks-weather
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;Reboot the computer, and when logging in select the &amp;ldquo;Regolith&amp;rdquo; session in the gear menu.  At this point you can remove or keep &lt;code&gt;ubuntu-session&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Reboot the computer, and when logging in select the &amp;ldquo;Regolith&amp;rdquo; session in the gear menu.  At this point you can remove &lt;code&gt;ubuntu-session&lt;/code&gt; if you don&#39;t want the stock GNOME session (optional).&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;uninstallation-of-regolith-desktop&#34;&gt;Uninstallation of &lt;code&gt;regolith-desktop&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Simply follow these steps to remove Regolith from your system:&lt;/p&gt;
