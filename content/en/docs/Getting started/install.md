@@ -118,9 +118,9 @@ $ rm -Rf ~/.config/regolith/flags
 3. Verify that no regolith packages are still installed with `apt list --installed | grep -i regolith`.  The command should not return any packages.  If it does, manually uninstall them with `sudo apt purge <package>`.
 4. Reinstall Regolith:
 ```
-$ sudo apt install regolith-desktop
+$ sudo apt install regolith-desktop i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time #also consider i3xrocks-battery i3xrocks-memory i3xrocks-weather
 ```
-5. Reboot the computer, and when logging in select the "Regolith" session in the gear menu.  At this point you can remove or keep `ubuntu-session`.
+5. Reboot the computer, and when logging in select the "Regolith" session in the gear menu.  At this point you can remove `ubuntu-session` if you don't want the stock GNOME session (optional).
 
 ## Uninstallation of `regolith-desktop`
 
