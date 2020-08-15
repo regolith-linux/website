@@ -826,6 +826,13 @@ $ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#3
 &lt;td&gt;User config added in 1.4&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;LightDM GTK Greeter&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/usr/share/lightdm/lightdm-gtk-greeter.conf.d/02_regolith.conf&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;This file only exists if the &lt;code&gt;regolith-lightdm-config&lt;/code&gt; package is installed.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;load-sequence&#34;&gt;Load Sequence&lt;/h2&gt;
