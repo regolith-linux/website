@@ -13,7 +13,8 @@ description: >
 | Rofi | `/etc/regolith/styles/cahuella/rofi.rasi` | Defined in the `theme` style file. | This can also be overridden directly in the i3 file if preferred.
 | Bar Workspace Labels | `/etc/regolith/styles/i3-wm` | User defined | |
 | Bar status indicators | `/etc/regolith/i3xrocks/conf.d` | `~/.config/regolith/i3xrocks/conf.d` | Each block has it's own file.  Filename determines ordering. |
-| Picom (Compton) Compositor | `/etc/regolith/compton/config` | `~/.config/regolith/compton/config` | User config added in 1.4
+| Picom (Compton) Compositor | `/etc/regolith/compton/config` | `~/.config/regolith/compton/config` | User config added in 1.4 |
+| LightDM GTK Greeter | `/usr/share/lightdm/lightdm-gtk-greeter.conf.d/02_regolith.conf` | N/A | This file only exists if the `regolith-lightdm-config` package is installed. |
 
 ## Load Sequence
 
