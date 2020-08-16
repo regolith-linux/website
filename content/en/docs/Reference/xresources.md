@@ -64,7 +64,6 @@ description: >
 |i3-wm.client.urgent.color.text | |
 |i3-wm.floatingwindow.border.size | Window border size in pixels for floating windows |
 |i3-wm.font | Window manager font |
-|i3-wm.gaps.focus_follows_mouse | The window under the mouse has focus if enabled |
 |i3-wm.gaps.inner.size | Default gap size between windows in pixels |
 |i3-wm.gaps.outer.size | 	Default gap size at screen edge in pixels |
 |i3-wm.mod | Key mapping for Super key.  See the [i3 User Guide](https://i3wm.org/docs/userguide.html#_using_i3) for details. |
@@ -122,6 +121,7 @@ The following Xresource keys are undefined by default but can be used by users t
 |-------------|-------------|
 |rofi.search.help | Show help text on the file search dialog, defaults to `true` |
 |rofi.search.limit | Total number of items to return from an `mlocate` search, default: 64 |
+|i3-wm.gaps.focus_follows_mouse | The window under the mouse has focus if enabled |
 |i3-wm.program.launcher.app | Command i3 executes from the app launcher keybinding |
 |i3-wm.program.launcher.cmd | Command i3 executes from the command launcher keybinding |
 |i3-wm.program.launcher.window | Command i3 executes for the window navigation keybinding |
