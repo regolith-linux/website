@@ -654,6 +654,10 @@
 &lt;td&gt;Window Manager Font&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;i3-wm.gaps.focus_follows_mouse&lt;/td&gt;
+&lt;td&gt;The window under the mouse has focus if enabled&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;i3-wm.gaps.inner.size&lt;/td&gt;
 &lt;td&gt;Default gap size between windows in pixels&lt;/td&gt;
 &lt;/tr&gt;
@@ -856,6 +860,10 @@
 &lt;tr&gt;
 &lt;td&gt;rofi.search.limit&lt;/td&gt;
 &lt;td&gt;Total number of items to return from an &lt;code&gt;mlocate&lt;/code&gt; search, default: 64&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.gaps.focus_follows_mouse&lt;/td&gt;
+&lt;td&gt;The window under the mouse has focus if enabled&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;i3-wm.program.launcher.app&lt;/td&gt;

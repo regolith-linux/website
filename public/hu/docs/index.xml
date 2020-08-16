@@ -2398,6 +2398,10 @@ i3-wm.workspace.03.name: 3: Chat
 &lt;td&gt;Total number of items to return from an &lt;code&gt;mlocate&lt;/code&gt; search, default: 64&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;i3-wm.gaps.focus_follows_mouse&lt;/td&gt;
+&lt;td&gt;The window under the mouse has focus if enabled&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;i3-wm.program.launcher.app&lt;/td&gt;
 &lt;td&gt;Command i3 executes from the app launcher keybinding&lt;/td&gt;
 &lt;/tr&gt;
