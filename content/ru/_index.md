@@ -5,7 +5,7 @@ linkTitle = "Regolith Linux"
 +++
 {{< blocks/cover image_anchor="top" height="full" >}}
 
-<h2 class="m-5">Regolith-это современная среда рабочего стола, предназначенная для того, чтобы вы могли работать быстрее, уменьшая ненужный беспорядок и церемонию. Построеный на Ubuntu, Gnome и i3, Regolith стоит на хорошей поддержки и единой базе.</h2>
+<h2 class="m-5">Regolith - это современная среда рабочего стола, предназначенная для того, чтобы вы могли работать быстрее, уменьшая ненужный беспорядок и церемонию. Построеный на Ubuntu, Gnome и i3, Regolith стоит на хорошей поддержки и единой базе.</h2>
 
 <div class="row">
   <div class="col-sm-8 mb-5">{{< img regolith-screenshot-intro.png "Regolith Linux" >}}</div>
