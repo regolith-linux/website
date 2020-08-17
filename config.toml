@@ -113,6 +113,14 @@ languageName ="português brasileiro"
 # Weight used for sorting.
 weight = 7
 
+[languages.ru]
+title = "Regolith"
+description = "Вебсайт Regolith Linux"
+contentDir = "content/ru"
+languageName ="Russian"
+# Weight used for sorting.
+weight = 8
+
 [markup]
 [markup.goldmark]
 [markup.goldmark.renderer]
