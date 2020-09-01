@@ -140,3 +140,4 @@ The following Xresource keys are undefined by default but can be used by users t
 |i3-wm.program.files | Command to launch from the file browser keybinding |
 |i3-wm.program.notification_ui | Command to launch from the notification UI keybinding |
 |i3-wm.program.1...i3-wm.program.3 | Optional programs to start with i3 |
+|i3xrocks.media-player.player-args | Optional arguments used by the `media-player` i3xrocks block. These arguments are fed straight into `playerctl`, eg. setting this value to `-p spotify` only makes the bar display/control spotify. |
