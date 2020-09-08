@@ -57,11 +57,8 @@ $ sudo apt install i3xrocks-battery # for laptops
 &lt;p&gt;A partir de este punto, por favor continúa en la próxima sección, &lt;a href=&#34;../configuration&#34;&gt;configuration&lt;/a&gt; para aprender sobre los cambios más comunes que a la gente le gusta realizar a Regolith.&lt;/p&gt;
 &lt;h2 id=&#34;actualizaciones&#34;&gt;Actualizaciones&lt;/h2&gt;
 &lt;h3 id=&#34;regolith-13---regolith-14&#34;&gt;Regolith 1.3 -&amp;gt; Regolith 1.4&lt;/h3&gt;
-&lt;p&gt;El PPA inestable &lt;code&gt;ppa:regolith-linux/release&lt;/code&gt; está actualmente alojando los paquetes de la versión 1.4.1 de Regolith. Para actualizar un sistema ya existente a 1.41, actualiza el gestor de paquetes para que supla los paquetes de Regolith desde el PPA &lt;code&gt;stable&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt policy &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; grep regolith
-&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Va a retornar alguna información con URLs. Asumiendo que devuelva http://ppa.launchpad.net/regolith-linux/release/ubuntu :&lt;/span&gt;
-$ sudo add-apt-repository --remove ppa:regolith-linux/release &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# elimina el PPA de release&lt;/span&gt;
-$ sudo add-apt-repository ppa:regolith-linux/release
+&lt;p&gt;El PPA &lt;code&gt;ppa:regolith-linux/release&lt;/code&gt; está actualmente alojando los paquetes de la versión 1.4.1 de Regolith. Para actualizar un sistema ya existente a 1.41, actualiza el gestor de paquetes para que supla los paquetes de Regolith desde el PPA &lt;code&gt;release&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository ppa:regolith-linux/release
 $ sudo apt update &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt dist-upgrade
 $ sudo apt install i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#también considera i3xrocks-battery i3xrocks-memory i3xrocks-weather&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Luego de realizar la actualización, vuelve a ingresar en el sistema. En cualquier caso, si tenías tu propio archivo de configuración i3 o raiz Xresources, lee la sección &lt;code&gt;Actualizando con Personalizaciones&lt;/code&gt; más abajo.&lt;/p&gt;

@@ -122,7 +122,7 @@ $ regolith-look refresh
 
 &lt;/div&gt;
 
-&lt;p&gt;As mentioned previously, a compositor is a UI component that visual effects to windows before they are rendered on-screen.  Many desktop environments integrate a compositor directly into the window manager, making it difficult to switch out or disable.  In Regolith, the compositor is defined as a pluggable &amp;ldquo;extension point&amp;rdquo; in the packaging system. This means that compositors can be switched out simply by installing the packages that contain them.  The underlying packaging system will ensure there are no conflicts and that all the dependencies of a given compositor are also installed.&lt;/p&gt;
+&lt;p&gt;As mentioned previously, a compositor is a UI component that applies visual effects to windows before they are rendered on-screen.  Many desktop environments integrate a compositor directly into the window manager, making it difficult to switch out or disable.  In Regolith, the compositor is defined as a pluggable &amp;ldquo;extension point&amp;rdquo; in the packaging system. This means that compositors can be switched out simply by installing the packages that contain them.  The underlying packaging system will ensure there are no conflicts and that all the dependencies of a given compositor are also installed.&lt;/p&gt;
 &lt;h2 id=&#34;finding-available-compositors&#34;&gt;Finding Available Compositors&lt;/h2&gt;
 &lt;p&gt;The following command will list all compositors configured to work with Regolith:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;apt search regolith-compositor-

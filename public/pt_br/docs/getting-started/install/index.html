@@ -26,12 +26,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/pt_br/docs/getting-started/install/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-07-02T01:56:33-03:00" /><meta property="og:site_name" content="Regolith" />
+<meta property="article:modified_time" content="2020-09-07T20:22:55-07:00" /><meta property="og:site_name" content="Regolith" />
 <meta itemprop="name" content="Instalação">
 <meta itemprop="description" content="Instale o Regolith no seu computador.
 ">
-<meta itemprop="dateModified" content="2020-07-02T01:56:33-03:00" />
-<meta itemprop="wordCount" content="1389">
+<meta itemprop="dateModified" content="2020-09-07T20:22:55-07:00" />
+<meta itemprop="wordCount" content="1380">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
 
@@ -809,10 +809,9 @@ $ sudo apt install i3xrocks-battery # for laptops
 <p>A partir desse ponto, prossiga para a próxima seção, <a href="../configuration">configuração</a> para saber mais sobre as mudanças mais comuns que as pessoas gostam de fazer no Regolith.</p>
 <h2 id="atualizaes">Atualizações</h2>
 <h3 id="regolith-13---regolith-14">Regolith 1.3 -&gt; Regolith 1.4</h3>
-<p>O PPA instável <code>ppa:regolith-linux/release</code> está atualmente hospedando os pacotes da versão 1.4.1 do Regolith.  Para atualizar um sistema existente para a versão 1.4.1, atualize o gerenciador de pacotes Regolith para a PPA  <code>stable</code>:</p>
+<p>O PPA <code>ppa:regolith-linux/release</code> está atualmente hospedando os pacotes da versão 1.4.1 do Regolith.  Para atualizar um sistema existente para a versão 1.4.1, atualize o gerenciador de pacotes Regolith para a PPA <code>release</code>:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ apt policy <span style="color:#000;font-weight:bold">|</span> grep regolith
-<span style="color:#8f5902;font-style:italic"># Algumas informações com URLs vão ser retornadas.  Assumindo que http://ppa.launchpad.net/regolith-linux/release/ubuntu é retornado:</span>
-$ sudo add-apt-repository --remove ppa:regolith-linux/release <span style="color:#8f5902;font-style:italic"># remove release PPA</span>
+<span style="color:#8f5902;font-style:italic"># Algumas informações com URLs vão ser retornadas.  Assumindo que http://ppa.launchpad.net/regolith-linux/release/ubuntu é no retornado:</span>
 $ sudo add-apt-repository ppa:regolith-linux/release
 $ sudo apt update <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> sudo apt dist-upgrade
 $ sudo apt install i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time <span style="color:#8f5902;font-style:italic">#considere também i3xrocks-battery i3xrocks-memory i3xrocks-weather</span>
@@ -991,7 +990,7 @@ $ rm -Rf ~/.config/regolith/flags
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified July 2, 2020: <a  href="https://github.com/regolith-linux/website/commit/f19564dae21a942eded8eec036cd503906f793cf">Brazilian Portuguese translation (#34) (f19564da)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified September 7, 2020: <a  href="https://github.com/regolith-linux/website/commit/19cc109956891b47f547b85fedfd7b125392109c">Fix 1.3-&gt;1.4.1 upgrade instructions based on tip from @ajeshp in https://github.com/regolith-linux/website/pull/37. (19cc1099)</a>
 </div>
 </div>
 
