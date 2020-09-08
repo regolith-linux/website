@@ -40,12 +40,11 @@ From this point, please proceed to the next section, [configuration](../configur
 
 ### Regolith 1.3 -> Regolith 1.4
 
-The Unstable PPA `ppa:regolith-linux/release` is currently hosting Regolith 1.4.1 version packages.  To upgrade an existing system to 1.4.1, update the package manager to source Regolith packages from the `stable` PPA:
+The PPA `ppa:regolith-linux/release` is currently hosting Regolith 1.4.1 version packages.  To upgrade an existing system to 1.4.1, update the package manager to source Regolith packages from the `release` PPA:
 
 ```bash
 $ apt policy | grep regolith
-# Some info w/ URLs will be returned.  Assuming http://ppa.launchpad.net/regolith-linux/release/ubuntu is returned:
-$ sudo add-apt-repository --remove ppa:regolith-linux/release # remove release PPA
+# Some info w/ URLs will be returned.  Assuming http://ppa.launchpad.net/regolith-linux/release/ubuntu is not returned, run next line:
 $ sudo add-apt-repository ppa:regolith-linux/release
 $ sudo apt update && sudo apt dist-upgrade
 $ sudo apt install i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time #also consider i3xrocks-battery i3xrocks-memory i3xrocks-weather
