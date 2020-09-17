@@ -75,7 +75,7 @@ linkTitle = "Regolith Linux"
   </div>
 </div>
 
-<a name="td-block-2"><h3 class="text-center p-5" ><i class="fas fa-info-circle pr-3"></i>Was macht bei Regolith den Unterscheid?</h3></a>
+<a name="td-block-2"><h3 class="text-center p-5" ><i class="fas fa-info-circle pr-3"></i>Was macht bei Regolith den Unterschied?</h3></a>
 <div class="container">
 <ul>
 <li>Es liefert einen Desktop mit einer funktional minimalistischen Benutzeroberfläche, die nach Bedarf <a href="docs/customize/">angepasst</a> und erweitert werden kann;</li>
