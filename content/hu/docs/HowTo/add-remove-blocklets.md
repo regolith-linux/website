@@ -22,7 +22,11 @@ $ regolith-look refresh
 
 # Customization of bar
 
-For customization of the bar, for example to change the polling interval of the weather block, or to change the order of elements on the bar, the configuration can be copied from `/etc/regolith/i3xrocks/conf.d` to `~/.config/regolith/i3xrocks/conf.d` and then modified in the user directory.  For example, to change the order of the battery and net traffic blocks on the bar and not display notifications, perform the following steps:
+Each status indicator on the bar is managed by a file.  The filename's sort order maps to the position of the status indicator on the bar.  So for example, a file starting with `10_` will come before a file starting with `20_`.  Within each file contains some information that i3xrocks uses to execute a script that ultimately returns the data you see on the bar.  Some of the status indicators have configuration parameters that can be adjusted to your liking.  For example, if you would prefer that the battery status changes more readily, the polling interval can be updated.  The first thing to do in order to customize the bar is to copy the indicators you wish to see from `/etc/regolith/i3xrocks/conf.d` to `~/.config/regolith/i3xrocks/conf.d`.  Once files have been added into `~/.config/regolith/i3xrocks/conf.d`, i3xrocks will ignore the default files in `/etc/regolith/i3xrocks/conf.d`.  Each file in `~/.config/regolith/i3xrocks/conf.d` can be modified as you see fit.  To change the order of status indicators on the bar, simply change the name of the files to the sort order you prefer.
+
+Once you've made your changes, refreshing the session should cause the bar to update based on your new configuration.
+
+For example, to change the order of the battery and net traffic blocks on the bar and not display notifications, perform the following steps:
 
 ```bash
 $ ls /etc/regolith/i3xrocks/conf.d
