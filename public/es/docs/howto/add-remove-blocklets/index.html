@@ -26,12 +26,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/es/docs/howto/add-remove-blocklets/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-05-16T16:19:50-03:00" /><meta property="og:site_name" content="Regolith" />
+<meta property="article:modified_time" content="2020-09-22T21:07:06-07:00" /><meta property="og:site_name" content="Regolith" />
 <meta itemprop="name" content="Change Bar Status indicators">
 <meta itemprop="description" content="Make changes to the status indicators in the bar.
 ">
-<meta itemprop="dateModified" content="2020-05-16T16:19:50-03:00" />
-<meta itemprop="wordCount" content="157">
+<meta itemprop="dateModified" content="2020-09-22T21:07:06-07:00" />
+<meta itemprop="wordCount" content="312">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
 
@@ -785,7 +785,9 @@ if (!doNotTrack) {
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install i3xrocks-memory
 $ regolith-look refresh
 </code></pre></div><h1 id="customization-of-bar">Customization of bar</h1>
-<p>For customization of the bar, for example to change the polling interval of the weather block, or to change the order of elements on the bar, the configuration can be copied from <code>/etc/regolith/i3xrocks/conf.d</code> to <code>~/.config/regolith/i3xrocks/conf.d</code> and then modified in the user directory.  For example, to change the order of the battery and net traffic blocks on the bar and not display notifications, perform the following steps:</p>
+<p>Each status indicator on the bar is managed by a file.  The filename's sort order maps to the position of the status indicator on the bar.  So for example, a file starting with <code>10_</code> will come before a file starting with <code>20_</code>.  Within each file contains some information that i3xrocks uses to execute a script that ultimately returns the data you see on the bar.  Some of the status indicators have configuration parameters that can be adjusted to your liking.  For example, if you would prefer that the battery status changes more readily, the polling interval can be updated.  The first thing to do in order to customize the bar is to copy the indicators you wish to see from <code>/etc/regolith/i3xrocks/conf.d</code> to <code>~/.config/regolith/i3xrocks/conf.d</code>.  Once files have been added into <code>~/.config/regolith/i3xrocks/conf.d</code>, i3xrocks will ignore the default files in <code>/etc/regolith/i3xrocks/conf.d</code>.  Each file in <code>~/.config/regolith/i3xrocks/conf.d</code> can be modified as you see fit.  To change the order of status indicators on the bar, simply change the name of the files to the sort order you prefer.</p>
+<p>Once you've made your changes, refreshing the session should cause the bar to update based on your new configuration.</p>
+<p>For example, to change the order of the battery and net traffic blocks on the bar and not display notifications, perform the following steps:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ls /etc/regolith/i3xrocks/conf.d
 01_setup  
 30_net-traffic  
@@ -795,7 +797,7 @@ $ regolith-look refresh
 $ mkdir -p ~/.config/regolith/i3xrocks/conf.d
 $ <span style="color:#204a87">cd</span> /etc/regolith/i3xrocks/conf.d
 $ cp 01_setup ~/.config/regolith/i3xrocks/conf.d/01_setup
-$ cp 80_battery ~/.config/regolith/i3xrocks/conf.d/30_battery
+$ cp 80_battery ~/.config/regolith/i3xrocks/conf.d/30_battery <span style="color:#8f5902;font-style:italic"># notice the change in filename</span>
 $ cp 30_net-traffic ~/.config/regolith/i3xrocks/conf.d/80_net-traffic
 $ regolith-look refresh
 </code></pre></div><p>If any block configuration exists in the user directory <code>~/.config/regolith/i3xrocks/conf.d</code>, then the defaults in <code>/etc/regolith/i3xrocks/conf.d</code> will be ignored.</p>
@@ -864,7 +866,7 @@ $ regolith-look refresh
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Última Modificación May 16, 2020: <a  href="https://github.com/regolith-linux/website/commit/a5de0e006c162c6b120bf0b579448bcc13c6e961">create new folder for spanish content and modify config.toml (a5de0e00)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Última Modificación September 22, 2020: <a  href="https://github.com/regolith-linux/website/commit/c676f3f79eb31a7e50938a0af5d7b484e66ce4e5">Update i3xrocks howto, add more description about how to make changes.  Fixes https://github.com/regolith-linux/regolith-linux.github.io/issues/24. (c676f3f7)</a>
 </div>
 </div>
 
