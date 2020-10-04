@@ -77,7 +77,7 @@ weight = 2
 title = "Regolith"
 description = "Sitio Web de Regolith Linux"
 contentDir = "content/es"
-languageName ="español"
+languageName ="Español"
 # Weight used for sorting.
 weight = 3
 

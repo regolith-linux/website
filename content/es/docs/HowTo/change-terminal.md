@@ -1,11 +1,11 @@
 ---
-title: "Change the Default Terminal"
+title: "Cambia la Terminal por Defecto"
 weight: 3
 description: >
-  Change which terminal Regolith loads by default.
+  Cambia que terminal Regolith carga por defecto.
 ---
 
-The default terminal that ships with Regolith R1.4 is gnome-terminal, but any X terminal emulator can be used.  To update Regolith to use your already installed terminal of choice, use `update-alternatives` to specify it as default.
+La terminal por defecto que viene con Regolith R1.4 es `gnome-terminal`, pero se puede usar cualquier emulador de terminal X. Para actualizar Regolith y que use la terminal de tu preferencia que ya tienes instalada, usa `update-alternatives` para especificarla como default.
 
-1. Run `update-alternatives --config x-terminal-emulator` to see all available terminals installed on your system.
-2. Select the terminal you prefer.
+1. Corre `update-alternatives --config x-terminal-emulator` para ver todas las terminales instaladas disponibles en tu sistema.
+2. Selecciona la terminal que prefieras.
