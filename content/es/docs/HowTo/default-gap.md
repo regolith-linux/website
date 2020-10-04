@@ -1,23 +1,23 @@
 ---
-title: "Change the Default Window Gap"
+title: "Cambia la Brecha entre Ventanas por Defecto"
 weight: 16
 description: >
-  Change the pixels between windows.
+  Cambia los pixeles entre ventanas.
 ---
 
-Like most configuration in Regolith, the i3-gaps gap size can be tuned via Xresources ([See here](../../Reference/xresources) for all Xresource definitions).
+Como la mayoría de las configuraciones en Regolith, el tamaño de la brecha de i3-gaps puede ser ajustada a traves de Xresources ([Ver aquí](../../Reference/xresources) todas las definiciones de Xresource).
 
-1. Create or add the following value to your `~/.config/regolith/Xresources` file:
+1. Crea o agrega el siguiente valor a tu archivo `~/.config/regolith/Xresources`:
 ```
 i3-wm.gaps.inner.size: 20
 ```
-<sub>In this example we're setting the default gap to 20 pixels.</sub>
+<sub>En este ejemplo estamos ajustando la brecha por defecto a 20 pixeles.</sub>
 
-2. Reload the Xresource configuration:
+2. Recarga la configuración de Xresources:
 ```bash
 $ regolith-look refresh
 ```
 
-# Further Reading
+# Lectura Complementaria
 
-See the [reference page for configrations](../../reference/configurations) for more details about config files in Regolith.
+Vea la [página de referencia para configuraciones](../../reference/configurations) para más detalles sobre los archivos de configuración en Regolith.
