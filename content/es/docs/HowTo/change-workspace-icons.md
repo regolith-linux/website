@@ -1,5 +1,5 @@
 ---
-title: "Cambiar los Iconocs del Espacio de Trabajo"
+title: "Cambiar los Íconos del Espacio de Trabajo"
 weight: 7
 description: >
   Aprende cómo configurar íconos personalizados para cada espacio de trabajo.
