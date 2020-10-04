@@ -1,21 +1,22 @@
 
 ---
-title: "How To"
-linkTitle: "How To"
+title: "Cómo Hacer"
+linkTitle: "Cómo Hacer"
 weight: 8
 date: 2017-01-04
 description: >
-  Show your user how to work through some end to end examples.
+  Muestrale a tu usuario como trabajar a traves de algunos ejemplos de punta a punta.
 ---
 
 {{% pageinfo %}}
-More examples and tutorials are available in the [Regolith Desktop wiki on GitHub](https://github.com/search?q=org%3Aregolith-linux&type=Wikis&in:HowTo).
+Más ejemplos y tutoriales disponibles en la [Wiki de Regolith Desktop en Github](https://github.com/search?q=org%3Aregolith-linux&type=Wikis&in:HowTo)).
 {{% /pageinfo %}}
 
-## Using the Terminal
+## Usando la Terminal
 
-This section provides examples of how to change Regolith to suit your needs. Most of them will specify commands to be run in the terminal.  If using the terminal is new to you or you'd just like to refresh your memory, [this guide from Ubuntu](https://tutorials.ubuntu.com/tutorial/command-line-for-beginners#0) is recommended.  Another [tutorial from linuxcommand.org](http://linuxcommand.org/lc3_learning_the_shell.php) goes into some more advanced territory.  
+Esta seccion provee ejemplos de cómo cambiar Regolith para que se ajuste a tus necesidades. La mayoría de ellos especificará comandos para correr en la terminal. Si usar la terminal es algo nuevo para ti o solo quieres refrescar tu memoria, te recomendamos [esta guía de Ubuntu](https://tutorials.ubuntu.com/tutorial/command-line-for-beginners#0). Este otro [tutorial de linuxcommand.org](http://linuxcommand.org/lc3_learning_the_shell.php) se adentra en un territorio más avanzado.
 
-## i3-wm User Guide
+## Guía de Usuario de i3-wm
 
-In addition to general command-line abilities, having a basic understanding of what options are available in the [i3 user guide](https://i3wm.org/docs/userguide.html) is recommended to get the most out of the interface.
+Además de las habilidades generales en línea de comandos, tener un entendimiento básico de cuales son las opciones disponibles en la [guía de usuario de i3](https://i3wm.org/docs/userguide.html) es recomendado para aprovechar al máximo la interfaz.
+
