@@ -1,5 +1,5 @@
 ---
-title: "Soporta Multiple Baterías"
+title: "Soporte para Multiple Baterías"
 weight: 3
 description: >
   Muestra el estado de las baterías por instancia.
