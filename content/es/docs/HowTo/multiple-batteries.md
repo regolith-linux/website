@@ -1,14 +1,14 @@
 ---
-title: "Support Multiple Batteries"
+title: "Soporta Multiple Baterías"
 weight: 3
 description: >
-  Display status of the batteries per instance.
+  Muestra el estado de las baterías por instancia.
 ---
 
-Out of the box the primary battery status will be displayed in the i3-bar. For some laptops that has multiple batteries e.g. _ThinkPad_, you want to have both batteries displayed. To do so, follow the steps:
+Por defecto el estado de la batería primaria va a ser mostrado en la barra i3-bar. Para algunas laptops que tienen múltiples baterías, por ejemplo _ThinkPad_, vas a querer ver ambas baterías. Para hacerlo, sigue los pasos:
 
-1. Stage your own i3 config file [(tutorial)](../stage-configs), then open `~/.config/regolith/i3xrocks/conf.d/80_battery` in your editor of choice.
-2. Find the line that pertains to the battery blocklet:
+1. Monta tu propio archivo de configuración i3 [(tutorial)](../stage-configs), y luego abre`~/.config/regolith/i3xrocks/conf.d/80_battery` en el editor de tu preferencia.
+2. Encuentra la línea que corresponde al blocket de la batería:
 ```conf
 ...
 # Battery indicator
@@ -18,13 +18,13 @@ Out of the box the primary battery status will be displayed in the i3-bar. For s
 interval=30
 # instance=BAT0
 ```
-3. List all the battery instances running on your machine by running:
+3. Lista todas las instancias de batería corriendo en tu maquina ejecutando:
 ```sh
 ls /sys/class/power_supply/
 
 # AC BAT0 BAT1
 ```
-4. Update the staged config file to have a new blocklet as such:
+4. Actualiza el archivo de configuración montado para que tenga un blocket nuevo como el siguiente:
 ```conf
 ...
 # Battery indicator
@@ -39,6 +39,7 @@ interval=30
 instance=BAT1
 ```
 
-## Further Reading
 
-See the [reference page for configrations](../../reference/configurations) for more details about config files in Regolith.
+# Lectura Complementaria
+
+Vea la [página de referencia para configuraciones](../../reference/configurations) para más detalles sobre los archivos de configuración en Regolith.
