@@ -273,51 +273,6 @@
   </url>
   
   <url>
-    <loc>https://regolith-linux.org/es/docs/howto/override-xres/</loc>
-    <lastmod>2020-05-21T19:03:54-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://regolith-linux.org/docs/howto/override-xres/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://regolith-linux.org/de/docs/howto/override-xres/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hu"
-                href="https://regolith-linux.org/hu/docs/howto/override-xres/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://regolith-linux.org/fr/docs/howto/override-xres/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt_pt"
-                href="https://regolith-linux.org/pt_pt/docs/howto/override-xres/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt_br"
-                href="https://regolith-linux.org/pt_br/docs/howto/override-xres/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://regolith-linux.org/ru/docs/howto/override-xres/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://regolith-linux.org/es/docs/howto/override-xres/"
-                />
-  </url>
-  
-  <url>
     <loc>https://regolith-linux.org/es/docs/policy-and-process/privacy/</loc>
     <lastmod>2020-05-16T16:19:50-03:00</lastmod>
     <xhtml:link
@@ -359,6 +314,51 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/policy-and-process/privacy/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://regolith-linux.org/es/docs/howto/override-xres/</loc>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/howto/override-xres/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/howto/override-xres/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/howto/override-xres/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/howto/override-xres/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_pt"
+                href="https://regolith-linux.org/pt_pt/docs/howto/override-xres/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/override-xres/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://regolith-linux.org/ru/docs/howto/override-xres/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/howto/override-xres/"
                 />
   </url>
   
@@ -588,6 +588,51 @@
   </url>
   
   <url>
+    <loc>https://regolith-linux.org/es/docs/howto/stage-configs/</loc>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/howto/stage-configs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/howto/stage-configs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/howto/stage-configs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/howto/stage-configs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_pt"
+                href="https://regolith-linux.org/pt_pt/docs/howto/stage-configs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/stage-configs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://regolith-linux.org/ru/docs/howto/stage-configs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/howto/stage-configs/"
+                />
+  </url>
+  
+  <url>
     <loc>https://regolith-linux.org/es/docs/interface/notifications/</loc>
     <lastmod>2020-05-31T16:23:08-03:00</lastmod>
     <xhtml:link
@@ -723,51 +768,6 @@
   </url>
   
   <url>
-    <loc>https://regolith-linux.org/es/docs/howto/stage-configs/</loc>
-    <lastmod>2020-08-22T09:12:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://regolith-linux.org/docs/howto/stage-configs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://regolith-linux.org/de/docs/howto/stage-configs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hu"
-                href="https://regolith-linux.org/hu/docs/howto/stage-configs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://regolith-linux.org/fr/docs/howto/stage-configs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt_pt"
-                href="https://regolith-linux.org/pt_pt/docs/howto/stage-configs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt_br"
-                href="https://regolith-linux.org/pt_br/docs/howto/stage-configs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://regolith-linux.org/ru/docs/howto/stage-configs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://regolith-linux.org/es/docs/howto/stage-configs/"
-                />
-  </url>
-  
-  <url>
     <loc>https://regolith-linux.org/es/docs/developer/status-indicators/</loc>
     <lastmod>2020-05-30T19:40:44-07:00</lastmod>
     <xhtml:link
@@ -894,7 +894,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/howto/change-terminal/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1198,6 +1198,51 @@
   </url>
   
   <url>
+    <loc>https://regolith-linux.org/es/docs/howto/multiple-batteries/</loc>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/howto/multiple-batteries/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/howto/multiple-batteries/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/howto/multiple-batteries/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/howto/multiple-batteries/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_pt"
+                href="https://regolith-linux.org/pt_pt/docs/howto/multiple-batteries/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/multiple-batteries/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://regolith-linux.org/ru/docs/howto/multiple-batteries/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/howto/multiple-batteries/"
+                />
+  </url>
+  
+  <url>
     <loc>https://regolith-linux.org/es/docs/policy-and-process/support/</loc>
     <lastmod>2020-05-16T16:19:50-03:00</lastmod>
     <xhtml:link
@@ -1239,51 +1284,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/policy-and-process/support/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://regolith-linux.org/es/docs/howto/multiple-batteries/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://regolith-linux.org/docs/howto/multiple-batteries/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://regolith-linux.org/de/docs/howto/multiple-batteries/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hu"
-                href="https://regolith-linux.org/hu/docs/howto/multiple-batteries/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://regolith-linux.org/fr/docs/howto/multiple-batteries/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt_pt"
-                href="https://regolith-linux.org/pt_pt/docs/howto/multiple-batteries/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt_br"
-                href="https://regolith-linux.org/pt_br/docs/howto/multiple-batteries/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://regolith-linux.org/ru/docs/howto/multiple-batteries/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://regolith-linux.org/es/docs/howto/multiple-batteries/"
                 />
   </url>
   
@@ -1379,7 +1379,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/howto/time-format/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1514,7 +1514,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/howto/add-remove-blocklets/</loc>
-    <lastmod>2020-09-22T21:07:06-07:00</lastmod>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1603,53 +1603,8 @@
   </url>
   
   <url>
-    <loc>https://regolith-linux.org/es/docs/howto/change-workspace-icons/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://regolith-linux.org/docs/howto/change-workspace-icons/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://regolith-linux.org/de/docs/howto/change-workspace-icons/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hu"
-                href="https://regolith-linux.org/hu/docs/howto/change-workspace-icons/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://regolith-linux.org/fr/docs/howto/change-workspace-icons/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt_pt"
-                href="https://regolith-linux.org/pt_pt/docs/howto/change-workspace-icons/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt_br"
-                href="https://regolith-linux.org/pt_br/docs/howto/change-workspace-icons/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://regolith-linux.org/ru/docs/howto/change-workspace-icons/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://regolith-linux.org/es/docs/howto/change-workspace-icons/"
-                />
-  </url>
-  
-  <url>
     <loc>https://regolith-linux.org/es/docs/howto/remove-workspace-icons/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1689,6 +1644,51 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/howto/remove-workspace-icons/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://regolith-linux.org/es/docs/howto/change-workspace-icons/</loc>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/howto/change-workspace-icons/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/howto/change-workspace-icons/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/howto/change-workspace-icons/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/howto/change-workspace-icons/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_pt"
+                href="https://regolith-linux.org/pt_pt/docs/howto/change-workspace-icons/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/change-workspace-icons/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://regolith-linux.org/ru/docs/howto/change-workspace-icons/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/howto/change-workspace-icons/"
                 />
   </url>
   
@@ -1739,7 +1739,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/howto/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1784,7 +1784,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/howto/change-ppa/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1824,6 +1824,51 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/howto/change-ppa/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://regolith-linux.org/es/docs/howto/update-14-141/</loc>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/howto/update-14-141/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/howto/update-14-141/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/howto/update-14-141/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/howto/update-14-141/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_pt"
+                href="https://regolith-linux.org/pt_pt/docs/howto/update-14-141/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/update-14-141/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://regolith-linux.org/ru/docs/howto/update-14-141/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/howto/update-14-141/"
                 />
   </url>
   
@@ -1918,53 +1963,8 @@
   </url>
   
   <url>
-    <loc>https://regolith-linux.org/es/docs/howto/update-14-141/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://regolith-linux.org/docs/howto/update-14-141/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://regolith-linux.org/de/docs/howto/update-14-141/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hu"
-                href="https://regolith-linux.org/hu/docs/howto/update-14-141/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://regolith-linux.org/fr/docs/howto/update-14-141/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt_pt"
-                href="https://regolith-linux.org/pt_pt/docs/howto/update-14-141/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt_br"
-                href="https://regolith-linux.org/pt_br/docs/howto/update-14-141/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://regolith-linux.org/ru/docs/howto/update-14-141/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://regolith-linux.org/es/docs/howto/update-14-141/"
-                />
-  </url>
-  
-  <url>
     <loc>https://regolith-linux.org/es/docs/howto/replace-notification-system/</loc>
-    <lastmod>2020-05-21T09:28:07-07:00</lastmod>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -2009,7 +2009,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/howto/terminal-font/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -2054,7 +2054,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/howto/install-from-unstable/</loc>
-    <lastmod>2020-06-03T08:09:40-07:00</lastmod>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -2089,7 +2089,7 @@
   
   <url>
     <loc>https://regolith-linux.org/es/docs/howto/default-gap/</loc>
-    <lastmod>2020-05-16T16:19:50-03:00</lastmod>
+    <lastmod>2020-10-05T11:47:12-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
