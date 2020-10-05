@@ -1,45 +1,43 @@
 ---
-title: "Change Workspace Icons"
+title: "Cambiar los Íconos del Espacio de Trabajo"
 weight: 7
 description: >
-  Learn how to set custom icons for each workspace.
+  Aprende cómo configurar íconos personalizados para cada espacio de trabajo.
 ---
 
-Adding icons to workspaces can give your desktop a nice and functional look.
+Agregar iconos a los espacios de trabajo puede darle a tu escritorio un aspecto bueno y funcional.
 
-### Finding icons
+### Encontrando Íconos
 
-Icons are actually characters from fonts installed by Regolith looks. Each look comes with a specific icon font. The icon font is defined in the `typeface_bar` variable in the `typeface` config file. The default look Cahuella uses the _Material Design Icons_ font (see file `/etc/regolith/styles/cahuella/typeface`).
+Los íconos en realidad son caracteres de las fuentes instaladas por Regolith looks. Cada aspecto viene con una fuente de ícono especifica. La fuente del ícono es definida en la variable `typeface_bar` en el archivo de configuración `typeface`. El aspecto por defecto Cahuella usa la fuente _Material Design Icons_ (ver archivo `/etc/regolith/styles/cahuella/typeface`). 
 
-You can browse the icon font using the [Gnome Character Map](https://wiki.gnome.org/action/show/Apps/Gucharmap?action=show&redirect=Gucharmap) application (`gucharmap` package):
+Puedes navegar la fuente del ícono usando la aplicación [Mapa de Caracteres de Gnome](https://wiki.gnome.org/action/show/Apps/Gucharmap?action=show&redirect=Gucharmap) (paquete `gucharmap`):
 
-1. Open Gnome Character Map.
-2. Select your icon font in the top left combo.
-3. In the _script_ pane select _Common_.
-4. Scroll down the characters pane until you find the icons.
-5. Double click on the icon you are looking to use and press the _Copy_ button (bottom right).
+1. Abre el Mapa de Caracteres de Gnome.
+2. Selecciona tu fuente de ícono en la combinación de arriba a la izquierda.
+3. En el panel de _script_ selecciona _Common_.
+4. Desliza hacia abajo el panel de caracteres hasta que encuentres los íconos.
+5. Haz doble click en el ícono que estás buscando para usar y presiona el botón _Copiar_ (abajo a la derecha).
 
-**Tip:** the icons are ordered alphabetically.
+**Tip:** los íconos están ordenados alfabeticamente.
 
-### Staging files and changing icons
+### Montando archivos y cambiando íconos
 
-Follow these steps to edit the Xresource definitions of the workspace icons used by i3:
+Sigue los siguientes pasos para editar las definiciones de Xresource de los íconos de los espacios de trabajo usados por i3:
 
-1. Stage your Regolith Styles Xresources files, as [described here](../stage-configs).
-2. Stage the `/etc/regolith/styles/i3-wm` Xresource file in your user directory, and ensure that your user copy of the Xresource file `#include`s this copy.
-3. Edit your copy of the `i3-wm` styles file. Find the workspace name definition starting with `i3-wm.workspace.01.name:` and change the last argument of the `WORKSPACE_NAME` function from the default `glyph` to your icon by simply copying and pasting the icon character. The icon character might not be displayed properly if your editor does not support the icon font, but it will work fine in the bar.
+1. Monta tus archivos de Estilos Xresources Regolith, cómo se [describe acá](`../stage-configs`).
+2. Monta el archivo Xresource `/etc/regolith/styles/i3-wm` en tu directorio de usuario, y asegurate de que tu copia de usuario del archivo Xresource haga un `#include` de esta copia.
+3. Edita tu copia de tu archivo de estilos `i3-wm`. Encuentra la definición de nombre de espacio de trabajo que comienza con `i3-wm.workspace.01.name:` y cambia el último argumento de la función `WORKSPACE_NAME` de el valor por defecto `glyph` a tu ícono simplemente copiando y pegando el caracter del ícono. El caracter del ícono quizas no sea mostrado apropiadamente si tu editor no soporta la fuente del ícono, pero funcionará bien en la barra.
+4. Repite lo mismo para todos los espacios de trabajo requeridos.
+5. Luego de guardar este archivo cierra la sesión y vuelve a iniciarla para ver el cambio.
 
-4. Repeat for all required workspaces.
-
-5. After saving this file log out and back in to see the change.
-
-### Adding support for icon fonts in text editors
+### Agrega soporte para fuentes de íconos en los editores de texto
 
 Atom:
 
-- Append the name of the icon font to `Settings > Editor > Font Familly`.
-- Example: `Menlo, Consolas, DejaVu Sans Mono, monospace, Material Design Icons`
+- Concatena el nombre de la fuente del ícono en `Preferencias > Editor > Fuentes`.
+- Ejemplo: `Menlo, Consolas, DejaVu Sans Mono, monospace, Material Design Icons`
 
-# Further Reading
+# Lectura Complementaria
 
-See the [reference page for configrations](../../reference/configurations) for more details about config files in Regolith.
+Vea la [página de referencia para configuraciones](../../reference/configurations) para más detalles sobre los archivos de configuración en Regolith.

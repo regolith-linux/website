@@ -1,31 +1,32 @@
 ---
-title: "Change Workspace Labels"
+title: "Cambiar las Etiquetas de los Espacios de Trabajo"
 weight: 7
 description: >
-  Change the workspace names as displayed in the bar.
+  Cambiar los nombres de los espacios de trabajo como son mostrados en la barra.
 ---
 
-1. You'll need to stage the Regolith Styles Xresource files as [described here](../stage-configs).
-2. Then stage the `/etc/regolith/styles/i3-wm` Xresource file in your user directory, and ensure that your user copy of the Xresource file `#include`s this copy.
-3. Modify the styles to your preference.
-4. After saving the styles file log out and back in to see the change.
+1. Necesitarás montar los archivos de Estilos Xresource Regolith cómo [se describe aqui](../stage-configs).
+2. Entonces monta el archivo Xresource `/etc/regolith/styles/i3-wm` en tu directorio de usuario, y asegurate de que tu copia de usuario del archivo Xresource tenga un `#include` de esta copia.
+3. Modifica los estilos a tu preferencia.
+4. Luego de salvar el archivo de estilos cierra la sesión y vuelve a iniciarla para ver el cambio.
 
-### Remove everything but the workspace number
+### Elimina todo menos el número del espacio de trabajo
 
-Follow these steps to edit the Xresource definitions of the workspace labels used by i3:
+Sigue los siguientes pasos para editar las definiciones Xresource de las etiquetas de espacios de trabajo usadas por i3:
 
-Edit your copy of the `i3-wm` styles file. This file uses C-style macros to generate the Pango markup for each workspace label.  There are various ways of changing the macros to strip out the icons, but this may be the most concise.  Replace:
+Edita tu copia de el archivo de estilos de `i3-wm`. Este archivo usa macros del estilo C para generar el marcado Pango para la etiqueta de cada espacio de trabajo. Hay varias maneras de cambiar los macros para quitar los íconos, pero esta manera es la mas concisa. Reemplaza:
+
 ```
 #define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH) INDEX:<span font_desc=FONT> INDEX </span><span foreground=COLOR>GLYPH</span>
 ```
-with:
+con:
 ```
 #define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH) 
 ```
 
-### Creating workspace labels
+### Creando etiquetas de espacio de trabajo
 
-Some users prefer to title their workspaces based a theme, such as `terminal`, `web`, etc.  To do this, make modifications to your user copy of `/etc/regolith/styles/i3-wm` similarly to:
+Algunos usuarios prefieren titular sus espacios de trabajo basados en un tema, tales como `terminal`, `web`, etc. Para hacer esto, modifica tu copia de usuario de `/etc/regolith/styles/i3-wm` de manera similar:
 
 ```
 i3-wm.workspace.01.name: 1: Terminal

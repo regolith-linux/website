@@ -1,38 +1,37 @@
 ---
-title: "Stage Config Files"
+title: "Montar Archivos de Configuración"
 weight: 2
 description: >
-  Learn how to stage user copies of Regolith configuration files.
+  Aprende cómo montar copias de usuario de los archivos de configuración de Regolith.
 ---
 
 {{% pageinfo %}}
-Regolith 1.3.1 and above: If you only wish to override or provide new Xresource values, staging configs is no longer required.  See [this page](../override-xres) for more details.
+Regolith 1.3.1 y superiores: Si deseas sobreescribir o proporcionar un nuevo valor de Xresource, montar configuraciones no se requiere mas. Mira [esta página](../override-xres) para más detalles.
 {{% /pageinfo %}}
 
-Regolith uses a number of files in `/etc/regolith` to determine the behavior and look of various components.  While it's possible to simply edit these files directly, users who do so run the risk of having their configurations overwritten upon future updates.  The Debian packaging system should ask users if they wish to take updates or keep the existing files, but this may have unintended side effects if users take partial updates of files.  As such Regolith, upon login, will look for user-staged version of configuration files and load those *instead of the defaults* if they exist.  This is recommended over editing the files in `/etc/regolith` directly as it gives the user more control over their configuration. This page describes how to create these files.
+Regolith usa una cantidad de archivos en `/etc/regolith` para determinar el comportamiento y aspecto de varios componentes. Mientras que es posible simplemente editar esos archivos directamente, los usuarios que lo hacen corren el riesgo de que sus configuraciones sean sobreescritas en futuras actualizaciones. El sistema de paquetes de Debian le preguntará a los usuarios si quieren tomar las actualizaciones o mantener sus archivos ya existentes, pero esto quizas tenga efectos secundarios no intencionados si los usuarios solo toman actualizaciones parciales de los archivos. Tal como Regolith, en el inicio de sesión, buscará por las versiones montadas por el usuario de los carchivos de configuracion y si existen las cargará *en lugar de los archivos por defecto*. Esto se recomienda por encima de editar directamente los archivos en `/etc/regolith` ya que le da más control al usuario sobre su configuración. Esta página describe cómo crear esos archivos.
 
-Depending on what you wish to change, you may need your own copy if the i3 config file, Xresources, or both.  If you're looking to change the way Regolith looks, Xresources may be all you need.  If you want to update or add keybindings or swap out components, you'll most likely need to stage the i3 config file.
+Dependiendo en que quieras cambiar, necesitarás tu propia copia del archivo de configuración i3, Xresources, o ambos. Si estás buscando cambiar el aspecto de Regolith, Xresources quizás sea todo lo que necesites. Si quieres actualizar o agregar atajos de teclado o cambiar componentes, es muy probable que necesites montar el archivo de configuración i3.
 
-## i3 Config
+## Configuración i3
 
-1. Copy the default Regolith i3 config file into your home directory:
+1. Copia el archivo de configuración i3 por defecto en tu directorio de usuario:
 ```
 $ mkdir -p ~/.config/regolith/i3
 $ cp /etc/regolith/i3/config ~/.config/regolith/i3/config
 ```
-2. Log out and back in. The Regolith session will automatically detect your user-staged file and use that over the default in `/etc/regolith/i3`.
+2. Cierra sesión y vuelve a iniciarla. La sesión de Regolith automaticamente detectara tu archivo de usuario montado y lo usará en lugar del archivo por defecto en `/etc/regolith/i3`.
 
-### Verify the Change
+### Verificar el Cambio
 
-1. Verify by running `i3 --moreversion` and noting the config file that is printed as a result.  It should be the copy you just created.  If not, be sure the path is correct.  It must exactly be `~/.config/regolith/i3/config` for Regolith to load it.
+1. Verifica corriendo `i3 --moreversion` y chequeando el archivo de configuración que se imprime en pantalla. Debería ser la copia que recien creamos. Si no lo es, asegurate de que la ruta sea la correcta. Debe ser exactamente `~/.config/regolith/i3/config` para que Regolith la cargue.
 
-## Regolith Styles
+## Estilos de Regolith
 
-1. Copy the root Regolith Xresource file into your home directory:
+1. Copia la raiz del archivo Xresource de Regolith en tu directorio de usuario:
 ```
 $ cp /etc/regolith/styles/root ~/.Xresources-regolith
 ```
-2. Log out and back in. The Regolith session will automatically detect your user-staged file and use that over the default in `/etc/regolith/styles`.
+2. Cierra sesión y vuelve a iniciarla. La sesión de Regolith automaticamente detectara tu archivo de usuario montado y lo usará en lugar del archivo por defecto en `/etc/regolith/styles`.
 
-Note that this root file is simply a reference to other styles that are broken down by the thing they are designed to style.  For example, if you wish to customize the look of i3, you will need to also copy `/etc/regolith/styles/i3-wm` into your user directory and then update the reference to the new file in your `~/.Xresources-regolith`.
-
+Nota que este archivo raiz es una simple referencia a otros estilos que están separados por aquello que están diseñados para estilizar. Por ejemplo, si quieres personalizar el aspecto de i3, también necesitarás una copia de `/etc/regolith/styles/i3-wm` en tu directorio de usuario y luego actualizar la referencia al nuevo archivo en tu `~/.Xresources-regolith`.

@@ -1,32 +1,32 @@
 ---
-title: "Update packages selectively"
+title: "Actualizar los Paquetes Selectivamente"
 weight: 15
 description: >
-  Install or upgrade packages selectively from the unstable PPA.
+  Instala o actualiza paquetes selectivamente desde el PPA unstable.
 ---
 
-This page describes how to configure the package system to manage which PPA package upgrades come from.
+Esta página describe como configurar el sistema de paquetes para manejar de qué paquetes PPA vienen las actualizaciones.
 
-You can enable the Regolith unstable PPA by adding it to your apt sources:
+Puedes habilitar el PPA `unstable` de Regolith agregandolo a tus fuentes apt:
 
 ```# add-apt-repository ppa:regolith-linux/unstable```
 
-It is recommended that you enable selective upgrades from the unstable PPA. This can be done by configuring your apt preferences to only allow selective installs from this PPA:
+Es recomendado que habilites las actualizaciones selectivas del PPA unstable. Esto solo puede ser hecho configurando tus preferencias de apt para solo permitir instalaciones selectivas desde este PPA:
 
 ```bash
 cat <<EOF >/etc/apt/preferences.d/regolith-unstable-updates
-# Configure apt to allow selective installs of packages from regolith unstable
+# Configura apt para permitir instalaciones selectivas de paquetes desde unstable Regolith
 Package: *
 Pin: release o=LP-PPA-regolith-linux-unstable
 Pin-Priority: 400
 EOF
 ```
 
-Apt will now use these preferences and not update packages from the unstable PPA unless explicitly done. This can be tested with:
+Apt ahora va a usar estas preferencias y no actualizar paquetes desde la PPA unstable a menos que sea explicitamente hecho. Esto puede ser testeado con:
 
 ```# apt upgrade -s```
 
-Now, by default, installing a package will come from the primary PPA configured on the machine. As seen by apt-cache policy, there is a version of this package available in unstable as well as the release PPA's:
+Ahora, por defecto, la instalación de un paquete vendrá del PPA primario configurado en la máquina. Como es visto por la política de apt-cache, hay una versión de este paquete disponible en unstable como también en la PPA release:
 
 ```bash
 $ apt-cache policy i3xrocks-weather
@@ -40,8 +40,7 @@ i3xrocks-weather:
         500 http://ppa.launchpad.net/regolith-linux/release/ubuntu focal/main amd64 Packages
         500 http://ppa.launchpad.net/regolith-linux/stable/ubuntu focal/main amd64 Packages
 ```
-
-However, installing the package will pull from the release PPA when it isn't explicitly installed from unstable:
+Como sea, instalar el paquete va a traer del PPA release cuando no sea explicitamente instalado desde unstable:
 ```bash
 $ apt install i3xrocks-weather 
 Reading package lists... Done
@@ -61,7 +60,7 @@ Unpacking i3xrocks-weather (3.0.21-1) ...
 Setting up i3xrocks-weather (3.0.21-1) ...
 ```
 
-To install the version from the unstable PPA you will need to define it like:
+Para instalar la versión del PPA unstable vas a necesitar definirlo de esta manera:
 
 ```bash
 $ apt install -t focal i3xrocks-weather 

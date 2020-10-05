@@ -1,33 +1,33 @@
 ---
-title: "Override Xresources"
+title: "Sobreescribir Xresources"
 weight: 1
 description: >
-  Learn how to stage user copies of Regolith configuration files.
+  Aprende cómo montar copias de usuario de los archivos de configuración de Regolith.
 ---
 
-Regolith relies on the Xresource system to provide a consolidated interface configuration.  By changing Xresource values, Regolith can be customized in ways such as updating the user interface, specifying custom behaviors, or defining a specific format for the clock.  
+Regolith se basa en el sistema Xresource para proveer una interfaz de configuración consolidada. Cambiando los valores de Xresource, Regolith puede ser personalizado de maneras tales cómo actualizar la interfaz de usuario, especificar comportamientos personalizados, o definir un formato específico para el reloj.
 
 {{% pageinfo %}}
-In Regolith, Xresource values can be changed via two methods: supplying your own Xresource files, and overriding the existing Xresource values.  The latter approach is strongly recommended, as it makes upgrading to newer versions of Regolith less likely to break.  If you copy the Xresource tree completely, you'll need to integrate any breaking changes in future versions manually.
+En Regolith, los valores Xresource pueden ser cambiados a traves de dos métodos: suministrando tus propios archivos Xresource, y sobreescribiendo los ya existentes valores de Xresource. El primer acercamiento es fuertemente recomendado, ya que hace que actualizar a nuevas versiones de Regolith sea menos propenso a romperse. Si copias el árbol completo de Xresource, necesitarás integrar cualquier cambio destructivo en versiones futuras a mano.
 {{% /pageinfo %}}
 
 
-## Initialization
+## Inicialización
 
-When a Regolith session is started, Xresources are loaded in the following order:
+Cuando una sesión Regolith es iniciada, los Xresources son cargados en el siguiente orden:
 
-| File | Optional | Notes |
+| Archivo | Opcional | Notas |
 | ---- | -------- | ----- |
-| `~/.Xresources` | Y | Intended for non-Regolith settings |
-| `~/.Xresources-regolith` | Y | A global override to replace all Regolith settings |
-| `/etc/regolith/styles/root` | N | The default Regolith Xresource file if `~/.Xresources-regolith` does not exist |
-| `~/.config/regolith/Xresources` | Y | Applies specific overrides to Xresource defaults |
+| `~/.Xresources` | S | Dispuesto para configuraciones no-Regolith |
+| `~/.Xresources-regolith` | S | Una sobreescritura global para reemplazar todas las configuraciones Regolith |
+| `/etc/regolith/styles/root` | N | El archivo por Xresource por defecto en Regolith si `~/.Xresources-regolith` no existe |
+| `~/.config/regolith/Xresources` | S | Aplica sobreescrituras específicas a los valores por defecto de Xresource |
 
-It is recommended to use `~/.config/regolith/Xresources` for customization as it requires the specification of no redundant settings, and is easier to maintain over time.
+Se recomienda usar `~/.config/regolith/Xresources` para personalizaciones ya que requiere la especificación de configuraciones no redundantes, y es más facil de mantener en le tiempo.
 
-## Determining what values can be changed
+## Determinando que valores pueden ser cambiados
 
-The `xrdb` tool can be used to list the existing Xresource values.  See [here for a table of existing values](../../reference/xresources) in the R1.4.1 release.  Example:
+La herramienta `xrdb` puede ser usada para listar los valores Xresource existentes. Ver [aquí para una tabla de los valores existentes](../../reference/xresources) en la publicación R1.4.1 .  Ejemplo:
 
 ```bash
 $ xrdb -query 
@@ -40,26 +40,26 @@ gnome.wm.theme:	Ayu-Mirage-Dark
 ...
 ```
 
-## Examples
-Note that the commands presented below append text to a file.  So, running the command more than once will result in duplicate lines in the file.
+## Ejemplos
+Note que los comandos presentados debajo concatenan texto a un archivo. Entonces, ejecutar el comando más de una vez resultará en líneas duplicadas en el archivo.
 
-### Example - Update the UI for High DPI Screens
+### Ejemplo - Actualiza la IU para Pantallas con DPI Alto
 
-By using the `~/.config/regolith/Xresources` override file, we will only need to specify the values we wish to change.  The `xrdb` tool can be used to determine what current values are set to.
+Usando el archivo de sobreescritura `~/.config/regolith/Xresources`, solo necesitaremos especificar los valores que queremos cambiar. La herramienta `xrdb` puede ser usada para determinar que valores están configurados actualmente.
 
-1. Create or add the following value to your `~/.config/regolith/Xresources` file:
+1. Crea o agrega el siguiente valor a tu archivo `~/.config/regolith/Xresources`:
 ```bash
 Xft.dpi: 192
 ```
-2. Reload the Xresource configuration:
+2. Recarga la configuración Xresource:
 ```bash
 $ regolith-look refresh
 ```
-3. Open a new terminal to see the change take effect.
+3. Abre una nueva terminal para ver si el cambio tomó efecto.
 
-<sub>192 is just an example value, please adjust as needed.</sub>
+<sub>192 es solo un valor de ejemplo, por favor ajustalo cuando sea necesario.</sub>
 
-### Example - Change i3 bar position
+### Ejemplo - Cambia la posición de la barra i3
 
 ```bash
 $ xrdb -query | grep position
@@ -68,7 +68,7 @@ $ echo "i3-wm.bar.position:	bottom" >> ~/.config/regolith/Xresources
 $ regolith-look refresh
 ```
 
-### Example - Change GTK Theme
+### Ejemplo - Cambia el Tema GTK
 
 ```bash
 $ xrdb -query | grep gtk
@@ -77,36 +77,36 @@ $ echo "gnome.gtk.theme:	Adwaita" >> ~/.config/regolith/Xresources
 $ regolith-look refresh
 ```
 
-### Example - Enable System Tray
+### Ejemplo - Habilita la Bandeja de Sistema
 
 ```bash
 $ echo "i3-wm.bar.trayoutput:	primary" >> ~/.config/regolith/Xresources
 $ regolith-look refresh
 ```
 
-### Example - Use Alt instead of Win as Super
+### Ejemplo - Usa Alt en lugar de Win como Super
 
 ```bash
 $ echo "i3-wm-mod: Mod1" >> ~/.config/regolith/Xresources
 $ echo "i3-wm-alt: Mod4" >> ~/.config/regolith/Xresources
 ```
 
-Then Reload i3 for the change to take effect.
+Entonces recarga i3 para que el cambio tome efecto.
 
-### Example - Launch `nm-applet` when i3 starts
+### Ejemplo - Lanza `nm-applet` cuando se inicia i3
 
-Some users prefer to use the `nm-applet` program to configure and manage their wireless network.  i3 config file can be updated to launch any arbitrary program at start time.  But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file.  For this to work, also make sure that the system tray is enabled (see above).
+Algunos usuarios prefieren usar el programa `nm-applet` para configurar y gestionar sus redes inalámbricas. El archivo de configuración i3 puede ser actualizado para lanzar cualquier programa de manera arbitraria en el inicio. Pero, en lugar de copiar todo el archivo entero, podemos suministrar hasta 3 programas a traves de Xresources sin necesidad de cambiar el archivo de configuración i3. Para que esto funcione, también asegurate de que la bandeja de sistema esté habilitada (ver más arriba).
 
 ```bash
 $ echo "i3-wm.program.1: /usr/bin/nm-applet"
 ```
 
-This change requires you to log back in before the change takes effect.
+Este cambio requiere que cierres la sesión y vuelvas a entrar para que el cambio surta efecto.
 
 {{% pageinfo %}}
-Regolith generates many of these values from a canonical set of definitions.  See [this readme](https://github.com/regolith-linux/regolith-styles) for more details.  If you find yourself updating many values, it may be more concise to create your own look instead.
+Regolith genera muchos de esos valores de un conjunto de definiciones canónicas. Vea [este leeme](https://github.com/regolith-linux/regolith-styles) para mas detalles.  Si te encuentras actualizando muchos valores, sería más conciso que en su lugar crearas tu propio aspecto.
 {{% /pageinfo %}}
 
-# Further Reading
+# Lectura Complementaria
 
-See the [reference page for configrations](../../reference/configurations) for more details about config files in Regolith.
+Vea la [página de referencia para configuraciones](../../reference/configurations) para más detalles sobre los archivos de configuración en Regolith.

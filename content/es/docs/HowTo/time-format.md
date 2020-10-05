@@ -1,14 +1,14 @@
 ---
-title: "Change the Bar Date and Time Format"
+title: "Cambiar el Formato de la Fecha y Hora en la Barra"
 weight: 4
 description: >
-  Change the date/time format used in the bar.
+  Cambia el formato de la fecha/hora en la barra.
 ---
 
-The time format (12 or 24 hour) can be specified in Settings:
+El formato de tiempo (12 o 24 horas) puede ser especificado en Configuración:
 <img class="shadow m-5" src="../regolith-screenshot-settings-time-format.png" width="640px"/>
 
-The date format can be specified by selecting the appropriate region in Settings.  A preview of the date format is provided, and logging back in is required for changes to take effect.
+El formato de la fecha puede ser especificado seleccionando la región apropiada en Configuración. Una vista previa del formato de la fecha se muestra, y cerrando e iniciando sesión de nuevo es requerido para que los cambios tomen efecto.
 <img class="shadow m-5" src="../regolith-screenshot-settings-region.png" width="640px"/>
 
-The date and time formats can also be explicitly set via Xresources.  To do so, override the `i3xrocks.date.format2` Xresource key.  See [Xresource overrides](../override-xres) for details. The format specification for date is simply the arguments that would be passed to the `date` command on the commandline.  For example, to print the year in 4 digits, specify `+%Y`.
+Los formatos de fecha y hora también pueden ser configurados explicitamente a traves de Xresources. Para hacerlo, sobreescribe la llave Xresource `i3xrocks.date.format2`. Mira [Sobreescribir Xresource](../override-xres) para más detalles. La especificación de formato para la fecha es simplemente los argumentos que serán pasados al comando `date`en la línea de comandos. Por ejemplo, para mostrar el año con 4 dígitos, especifica `+%Y`.

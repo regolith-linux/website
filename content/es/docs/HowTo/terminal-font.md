@@ -1,16 +1,16 @@
 ---
-title: "Change the Terminal Font Size"
+title: "Cambia el Tamaño de la Fuente en la Terminal"
 weight: 14
 description: >
-  Change the font used in the terminal.
+  Cambia la fuente usada en la terminal.
 ---
 
-1. Create or add the following value to your `~/.config/regolith/Xresources` file:
+1. Crea o agrega el siguiente valor en tu archivo  `~/.config/regolith/Xresources`:
 ```bash
 gnome.terminal.font:	JetBrains Mono 14
 ```
-2. Reload the Xresource configuration:
+2. Recarga la configuración Xresource:
 ```bash
 $ regolith-look refresh
 ```
-3. Open a new terminal to see the change take effect.
+3. Abre una nueva terminal para ver si el cambio tomó efecto.
