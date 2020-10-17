@@ -10,7 +10,7 @@ Como dejamos claro en el [leeme del repositorio](https://github.com/regolith-lin
 
 ## Archivos Xresource de Definición
 
-Para maximizar el re-uso de la información de temas en Regolith, los Xresources son divididos en dos categorías o archivos: archivos de definición y archivos de aplicación. Los archivos de definición hae un uso más intensivo de la directiva `define`. Esencialmente ellos enlazan una clave abstracta, tal como "azul" o "fuente de terminal" a un valor literal, tal como `#0000FF` o `Source Code Pro Medium`. Cuando se hacen cambios a los archivos, se espera que esas definiciones cambien. El usuario querrá especificar un conjunto distinto de íconos, o fuente, y lo hará modificando o creando un nuevo archivo de definición. Una vez que el archivo es creado, necesita ser referenciado por un archivo Xresource de alto nivel en `~/Xresource-regolith`. 
+Para maximizar el re-uso de la información de temas en Regolith, los Xresources son divididos en dos categorías o archivos: archivos de definición y archivos de aplicación. Los archivos de definición hae un uso más intensivo de la directiva `define`. Esencialmente ellos enlazan una clave abstracta, tal como "azul" o "fuente de terminal" a un valor literal, tal como `#0000FF` o `Source Code Pro Medium`. Cuando se hacen cambios a los archivos, se espera que esas definiciones cambien. El usuario querrá especificar un conjunto distinto de íconos, o fuente, y lo hará modificando o creando un nuevo archivo de definición. Una vez que el archivo es creado, necesita ser referenciado por un archivo Xresource de alto nivel en `~/.Xresource-regolith`. 
 
 {{% pageinfo %}}
 
