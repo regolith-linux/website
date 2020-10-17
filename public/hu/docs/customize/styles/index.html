@@ -26,11 +26,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/hu/docs/customize/styles/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-05-25T18:29:24+02:00" /><meta property="og:site_name" content="Regolith" />
+<meta property="article:modified_time" content="2020-10-16T18:10:54-07:00" /><meta property="og:site_name" content="Regolith" />
 <meta itemprop="name" content="Styles">
 <meta itemprop="description" content="Details about Regolith styles.
 ">
-<meta itemprop="dateModified" content="2020-05-25T18:29:24&#43;02:00" />
+<meta itemprop="dateModified" content="2020-10-16T18:10:54-07:00" />
 <meta itemprop="wordCount" content="484">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
@@ -786,7 +786,7 @@ if (!doNotTrack) {
 	<div class="lead">Details about Regolith styles.</div>
 	<p>As stated in the <a href="https://github.com/regolith-linux/regolith-styles">repo readme</a>, Regolith styles are a convention by which a set of files which define key/value pairs are loaded into memory and can be queried by <code>xrdb</code> or <code>xrescat</code>.  Xresources employes the <a href="https://en.wikipedia.org/wiki/C_preprocessor">C preprocessor</a> to allow for complex behaviors such as including more files, defining constants, and conditional expressions.  In Regolith, only two preprocessor directives are used: <code>#include</code> and <code>#define</code>.  <code>#include</code> statements are used to reference other files.  Collections of files called <code>looks</code> were covered in the previous section of this guide.  <code>#define</code> statements simply allow for a symbolic value to be replaced by a literal value, like defining a variable.</p>
 <h2 id="defines">Defines</h2>
-<p>To maximize the re-use of theme information in Regolith, Xresources are divided into two categories of files: definition files and application files.  The definition files make heavy use of the <code>define</code> directive.  They essentially bind an abstract key, such as &ldquo;blue&rdquo; or &ldquo;terminal font&rdquo; to a literal value, such as <code>#0000FF</code> or <code>Source Code Pro Medium</code>.  In making changes to files, it's expected that these defines will change.  The user may wish to specify a different icon set, or typeface, and would do so by modifying or creating a new definition file.  Once this file is created, it needs to be referenced by a top-level Xresource file in <code>~/Xresource-regolith</code>.</p>
+<p>To maximize the re-use of theme information in Regolith, Xresources are divided into two categories of files: definition files and application files.  The definition files make heavy use of the <code>define</code> directive.  They essentially bind an abstract key, such as &ldquo;blue&rdquo; or &ldquo;terminal font&rdquo; to a literal value, such as <code>#0000FF</code> or <code>Source Code Pro Medium</code>.  In making changes to files, it's expected that these defines will change.  The user may wish to specify a different icon set, or typeface, and would do so by modifying or creating a new definition file.  Once this file is created, it needs to be referenced by a top-level Xresource file in <code>~/.Xresource-regolith</code>.</p>
 
 
 <div class="pageinfo pageinfo-primary">
@@ -875,7 +875,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Utolsó módosítás May 25, 2020: <a  href="https://github.com/regolith-linux/website/commit/5fbceaadb4b8df4ce2822a986b40b69472068c62">adding Hungarian landing page (#20) (5fbceaad)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Utolsó módosítás October 16, 2020: <a  href="https://github.com/regolith-linux/website/commit/0b1acce3f767731a0cf7c350055c72e12fbaff85">Fix other languages based from https://github.com/regolith-linux/website/pull/46. (0b1acce3)</a>
 </div>
 </div>
 

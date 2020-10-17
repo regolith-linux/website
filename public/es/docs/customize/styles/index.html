@@ -26,11 +26,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/es/docs/customize/styles/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-05-31T16:23:08-03:00" /><meta property="og:site_name" content="Regolith" />
+<meta property="article:modified_time" content="2020-10-16T18:10:54-07:00" /><meta property="og:site_name" content="Regolith" />
 <meta itemprop="name" content="Estilos">
 <meta itemprop="description" content="Detalles sobre los estilos en Regolith.
 ">
-<meta itemprop="dateModified" content="2020-05-31T16:23:08-03:00" />
+<meta itemprop="dateModified" content="2020-10-16T18:10:54-07:00" />
 <meta itemprop="wordCount" content="525">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
@@ -786,7 +786,7 @@ if (!doNotTrack) {
 	<div class="lead">Detalles sobre los estilos en Regolith.</div>
 	<p>Como dejamos claro en el <a href="https://github.com/regolith-linux/regolith-styles">leeme del repositorio</a>, los estilos de Regolith son una convención por la cual un conjunto de archivos que definen pares clave/valor son cargados en la memoria y pueden ser consultados por <code>xrdb</code> o <code>xrescat</code>. Xresources emplea el <a href="https://en.wikipedia.org/wiki/C_preprocessor">preprocesador de C</a> para permitir comportamientos complejos tales como incluir archivos, definir constantes y expresiones condicionales. En Regolith, solo se usan dos directivas del preprocesador : <code>#include</code> y <code>#define</code>. Las declaraciones <code>#include</code> se usan para referenciar otros archivos. Colecciones o archivos llamados <code>looks</code> fueron cubiertos en la sección previa de esta guía. Las declaraciones <code>#define</code> simplemente permiten que un valor simbólico pueda ser reemplazado por un valor literal, como definir una variable.</p>
 <h2 id="archivos-xresource-de-definicin">Archivos Xresource de Definición</h2>
-<p>Para maximizar el re-uso de la información de temas en Regolith, los Xresources son divididos en dos categorías o archivos: archivos de definición y archivos de aplicación. Los archivos de definición hae un uso más intensivo de la directiva <code>define</code>. Esencialmente ellos enlazan una clave abstracta, tal como &ldquo;azul&rdquo; o &ldquo;fuente de terminal&rdquo; a un valor literal, tal como <code>#0000FF</code> o <code>Source Code Pro Medium</code>. Cuando se hacen cambios a los archivos, se espera que esas definiciones cambien. El usuario querrá especificar un conjunto distinto de íconos, o fuente, y lo hará modificando o creando un nuevo archivo de definición. Una vez que el archivo es creado, necesita ser referenciado por un archivo Xresource de alto nivel en <code>~/Xresource-regolith</code>.</p>
+<p>Para maximizar el re-uso de la información de temas en Regolith, los Xresources son divididos en dos categorías o archivos: archivos de definición y archivos de aplicación. Los archivos de definición hae un uso más intensivo de la directiva <code>define</code>. Esencialmente ellos enlazan una clave abstracta, tal como &ldquo;azul&rdquo; o &ldquo;fuente de terminal&rdquo; a un valor literal, tal como <code>#0000FF</code> o <code>Source Code Pro Medium</code>. Cuando se hacen cambios a los archivos, se espera que esas definiciones cambien. El usuario querrá especificar un conjunto distinto de íconos, o fuente, y lo hará modificando o creando un nuevo archivo de definición. Una vez que el archivo es creado, necesita ser referenciado por un archivo Xresource de alto nivel en <code>~/.Xresource-regolith</code>.</p>
 
 
 <div class="pageinfo pageinfo-primary">
@@ -875,7 +875,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Última Modificación May 31, 2020: <a  href="https://github.com/regolith-linux/website/commit/cc3edba069ccf0f3c4770bfba7816dc07dd276f6">Ongoing spanish translation (#28) (cc3edba0)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Última Modificación October 16, 2020: <a  href="https://github.com/regolith-linux/website/commit/0b1acce3f767731a0cf7c350055c72e12fbaff85">Fix other languages based from https://github.com/regolith-linux/website/pull/46. (0b1acce3)</a>
 </div>
 </div>
 
