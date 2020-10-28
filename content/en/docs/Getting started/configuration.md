@@ -12,6 +12,25 @@ The wallpaper can be changed via `Settings`, or <span class="text-nowrap"><span 
 
 <img class="shadow m-5" src="../regolith-screenshot-settings-wallpaper.png" width="640px"/>
 
+## Display Manager Wallpaper
+
+The Display Manager's wallpaper can be changed by editing the configuration of Regolith linux's default display manager.Regolith uses LightDM, with its GTK greeter, as its display manager, the `conf` file can be found at path `/etc/lightdm/lightdm-gtk-greeter.conf` and will look like this by default:
+
+```
+...
+[greeter]
+#background=
+#user-background=
+#theme-name=
+...
+```
+Uncomment the background section and give the path to your wallpaper file with extension like this `background=/full/path/to/your/wallpaper`.
+
+If you don't want to edit config files for changing a wallpaper, you can install `lightdm-gtk-greeter-settings` by following command `sudo apt-get install   lightdm-gtk-greeter-settings` and change the wallpaper from the image section.
+
+
+<img class="shadow m-5" src="../regolith-screenshot-dm-wallpaper.png" width="400px"/>
+
 ## Status Bar Indicators
 
 Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages.  For example, to show a status indicator for your laptop battery simply run `sudo apt install i3xrocks-battery` and then refresh the session.  To find what indicators are available, run `apt search ^i3xrocks-` or search for "i3xrocks-" in your favorite package manager GUI, such as [Synaptic](https://help.ubuntu.com/community/SynapticHowto).  Learn more about configuring status indicators in this HowTo.
