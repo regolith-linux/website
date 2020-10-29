@@ -104,7 +104,7 @@ description: >
 |i3xrocks.value.font | Font for numerical value in bar module |
 |i3xrocks.warning | Warning color for bar module |
 |rofi.drun-display-format | Fields to render in drun mode in Rofi |
-|rofi.drun-icon-theme | Rofi icon theme |
+|rofi.icon-theme | Rofi icon theme |
 |rofi.font | Rofi font |
 |rofi.modi | Rofi modes |
 |rofi.show-icons | true if the Rofi dialog should render app icons, false otherwise |
