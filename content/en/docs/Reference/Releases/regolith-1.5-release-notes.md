@@ -21,20 +21,56 @@ Issues and fixes are being tracked in [this project](https://github.com/orgs/reg
 <table class="table">
     <tbody>
         <tr>
-            <td>feature title</td>
+            <td>Move to Next Free Workspace</td>
             <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
-            <td>feature desc</td>
+            <td>A typical part of managing workspaces in an i3-based desktop is moving to unused workspaces and then loading some applications. Before this feature, a user has to determine which unused workspace they prefer.  This is done by scanning the list of existing used workspaces to determine an unused one. Now, the system can do this automatically.  The `<super>-\`` keybinding will move to the next free workspace.  `<super><alt>-``` will move the focused window into the next free workspace.</td>
         </tr>
         <tr>
-            <td>feature title</td>
+            <td>View and Change Looks via Rofi</td>
             <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
-            <td>feature desc</td>
+            <td>Looks can be changed now via a Rofi dialog rather than having to configure the Xresource override via the command-line.  To do this, use keybinding `<super>-<alt>l` and then select from the dialog to load a Look.</td>
         </tr>
         <tr>
-            <td>feature title</td>
+            <td>GSettings Overrides</td>
             <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
-            <td>feature desc</td>
+            <td>Regolith now uses [gsettings overrides](https://help.gnome.org/admin/system-admin-guide/stable/overrides.html.en) to configure various GNOME settings for use with Regolith.  In previous versions of Regolith, settings were written globally to the user session from within the Regolith startup code.  This could cause issues if the user works in multiple desktop environments.  Now, Regolith GNOME settings are defined in an override file that is only in effect while using a Regolith session.  This allows switching between desktop environments without settings from Regolith impacting other environments.</td>
         </tr>
+        <tr>
+            <td>New Looks</td>
+            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
+            <td>Users have contributed some new Looks to Regolith: dracula, gruvbox, and pop-os.  Each of these looks presents a distinctive color palate, typeface, and GTK theme.</td>
+        </tr>
+        <tr>
+            <td>i3-gaps upgraded to 4.18.2</td>
+            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
+            <td>See i3-gaps [release notes here](https://github.com/Airblader/i3/blob/a4a1a44275ea402b25d2d1365e1163e496024358/RELEASE-NOTES-4.18.2).</td>
+        </tr>
+        <tr>
+            <td>More Refined Customizations</td>
+            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
+            <td>Numerous small chnages allow more granual system customization, such as specifying the temperature unit, custom Compositor settings, and a more comprehensive way of changing i3 keybindings without having to copy the entire config file.</td>
+        </tr>
+        <tr>
+            <td>More Desktop Environment Packages</td>
+            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
+            <td>Tthe following packages can be installed in place of `regolith-desktop` for specific sets of packages based on user needs: `regolith-desktop-minimal`, `regolith-desktop-standard`, `regolith-desktop-mobile`, and `regolith-desktop-complete`</td>
+        </tr>
+        <tr>
+            <td>New default compositor: Picom version 8</td>
+            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
+            <td>See Picom's [releaes notes here](https://github.com/yshui/picom/releases).</td>
+        </tr>
+        <tr>
+            <td>Remontoire upgraded to version 1.4</td>
+            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
+            <td>Includes better multi-monitor support and other bug fixes.</td>
+        </tr>
+          <tr>
+            <td>Optional integration with `td-cli`</td>
+            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
+            <td>Access a simple todo app via Rofi.</td>
+        </tr>
+
     </tbody>
 </table>
 
@@ -42,7 +78,7 @@ Issues and fixes are being tracked in [this project](https://github.com/orgs/reg
 
 Have a look at the R1.5 project page for a [list of bug fixes](https://github.com/orgs/regolith-linux/projects/12).
 
-## Changelog Delta from Regolith 1.4.1
+## Changelog Delta from Regolith 1.4.1 to Regolith 1.5
 
 ```
 ########################################
@@ -65,73 +101,6 @@ dracula-gtk (1.0-1) bionic; urgency=medium
 fonts-materialdesignicons-webfont (1.6.50-3regolith3) bionic; urgency=medium
 
   * Backporting to bionic for Regolith. 
-
-
-fonts-materialdesignicons-webfont (1.6.50-3) unstable; urgency=medium
-
-  * Uploading to unstable:
-    - upgrades the package to latest version (Closes: #903753).
-
-
-fonts-materialdesignicons-webfont (1.6.50-2) experimental; urgency=medium
-
-  * Remove unicode "BOM" from _functions.scss,
-    as it caused scss compiler to fail.
-
-
-fonts-materialdesignicons-webfont (1.6.50-1) experimental; urgency=medium
-
-  [ Daniel Baumann ]
-  * Updating vcs fields.
-  * Updating copyright format url.
-  * Updating maintainer field.
-  * Running wrap-and-sort -bast.
-  * Updating standards version to 4.0.0.
-  * Removing gbp.conf, not used anymore or should be specified in the
-    developers dotfiles.
-  * Updating standards version to 4.0.1.
-  * Deprecating priority extra as per policy 4.0.1.
-  * Updating standards version to 4.1.0.
-
-  [ Ondřej Nový ]
-  * d/control: Set Vcs-* to salsa.debian.org
-  * d/control: Use team+openstack@tracker.debian.org as maintainer
-  * Use debhelper-compat instead of debian/compat.
-
-  [ Michal Arbet ]
-  * New upstream version
-  * d/control:
-    - Add me to uploaders field
-    - Bump debhelper-compat to 11
-    - Bump Standards-version to 4.5.0
-  * d/copyright: Add me
-  * Add some lintian overrides
-
-
-fonts-materialdesignicons-webfont (1.4.57-1) unstable; urgency=medium
-
-  [ Ondřej Nový ]
-  * Fixed VCS URLs (https).
-  * d/rules: Changed UPSTREAM_GIT protocol to https
-  * d/copyright: Changed source URL to https protocol
-
-  [ Ivan Udovichenko ]
-  * Package new version.
-
-  [ Thomas Goirand ]
-  * Added Ivan as uploaders:.
-  * Standards-Version is now 3.9.8 (no change).
-  * Fixed debian/copyright ordering.
-
-
-fonts-materialdesignicons-webfont (1.1.70-2) unstable; urgency=medium
-
-  * Also packaging the scss folder (it was missing).
-
-
-fonts-materialdesignicons-webfont (1.1.70-1) unstable; urgency=medium
-
-  * Initial release. (Closes: #798299)
 
 
 ########################################
@@ -244,26 +213,6 @@ plymouth-theme-regolith (1.0.1-1) focal; urgency=medium
 pop-fonts (1.0.3~1555617065~18.04~a86eb73) bionic; urgency=medium
 
   * Auto Build
-
-
-
-########################################
-# Release Notes for pop-gtk-theme
-########################################
-pop-gtk-theme (4.1.4~1560290633~18.04~f75e86a) bionic; urgency=medium
-
-  * Auto Build
-
-
-
-########################################
-# Release Notes for pop-icon-theme
-########################################
-pop-icon-theme (1.4.0~1565992228~18.04~2bac292) bionic; urgency=medium
-
-  * Auto Build
-
-
 
 ########################################
 # Release Notes for python3-i3ipc
