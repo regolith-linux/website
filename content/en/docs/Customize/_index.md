@@ -6,7 +6,7 @@ description: >
   Customize Regolith to suit you.
 ---
 
-Regolith, as a set of components, lacks a uniform configuration file, format, or set of conventions.  However efforts have been made to create as much consistency as possible by utilizing a simple session-wide key-value configuration facility known as [Xresources](https://wiki.debian.org/Xresources).  Interface preferences such as colors and typeface are defined in Xresource files and then read by components such as `Rofi` and `i3-wm`.  For the most part, Xresources can be used for higher level changes.  Lower level changes, for example swap out `i3bar` for `polybar` or `drun` for `Rofi` require the removal, installation, and configuration of other packages.
+Regolith, as a set of independent open-source components, lacks a uniform configuration file, format, or set of conventions.  However efforts have been made to create as much consistency as possible by utilizing a simple session-wide key-value configuration facility known as [Xresources](https://wiki.debian.org/Xresources).  Interface preferences such as colors and typeface are defined in Xresource files and then read by components such as `Rofi` and `i3-wm`.  For the most part, Xresources can be used for most configuration.  Lower level changes, for example swap out `i3bar` for `polybar` or `drun` for `Rofi` require the removal, installation, and configuration of other packages.
 
 {{% pageinfo %}}
 In addition to the content in this section, refer to the [tutorials](../howto) for step-by-step examples of how to customize Regolith.
@@ -14,15 +14,15 @@ In addition to the content in this section, refer to the [tutorials](../howto) f
 
 ## Look
 
-The highest level change in the way Regolith looks is called a "look".  This ties together color, typeface, GTK theme and icons into a packagable unit known as a <code>look</code>.  A few looks ship in the Regolith PPA, the default for R1.4 being called `lascaille`.
+The highest level change in the way Regolith looks is called a "look".  This ties together color, typeface, GTK theme and icons into a packagable unit known as a <code>look</code>.  A few looks ship in the Regolith PPA, the default for R1.4 being called `lascaille`.  Regolith Looks can be installed from the package manager.  The official Looks follow the naming convention of `regolith-look-`.  Installed Regolith looks can easily be set via the Look dialog; `<super>`-'<alt>'-l.
 
-## Styles
+### Styles
 
 Regolith <code>looks</code> are a collection of style definitions that are bundled together as a cohesive whole.  But, what if you want to mix and match from different looks or make small tweaks to an existing look?  Well, the Xresource files that define the looks can be modified directly.  For example, to continue to use the Cahuella look but change the default font from Source Code Pro to, say Ubuntu Mono, one would just need to modify the typeface Xresource file to specify the new font (assuming it's already installed on the system).
 
 ## Compositors
 
-A compositor is a desktop component that provides visual effects to windows. While not necessary for a desktop to function, they provide some hints to the user regarding the focused application, transitions, and other effects.  The performance and behavior of compositors can vary depending on graphics hardware and driver configurations.  Due to this, special attention was made such that they can be easily swapped based on the users needs.
+A compositor is a desktop component that provides visual effects to windows. While not necessary for a desktop to function, they provide some hints to the user regarding the focused application, transitions, and other effects.  The performance and behavior of compositors can vary depending on graphics hardware and driver configurations.  Due to this, special attention was made such that they can be easily swapped based on the users needs.  Regolith compositor packages start with `regolith-compositor`.
 
 ## Components
 
