@@ -6,7 +6,7 @@ description: >
   How code changes make it to users.
 ---
 
-Regolith is distributed as a set of interrelated Debian packages.  As of Regolith 1.4, there are packages for 3 releases of Ubuntu: bionic, eoan, and focal.  This page describes how code changes can be packaged such that users will get the updated code.
+Regolith is distributed as a set of interrelated Debian packages.  As of Regolith 1.5, there are packages for 3 releases of Ubuntu: bionic, focal, and groovy.  This page describes how code changes can be packaged such that users will get the updated code.
 
 ## Overview
 
