@@ -20,8 +20,8 @@ This section contains the information necessary to get Regolith running on a com
 
 ### PPA
 
-* An existing Ubuntu installation with admin rights, version 18.04 or 20.04.
-* 100Mb of free storage space to install the Regolith desktop environment.
+* An existing Ubuntu installation with admin rights, version 18.04, 20.04, or 20.10.
+* 100Mb of free storage space to install the Regolith desktop environment (depending on package selections).
 * An internet connection to install updates during and after installation.
 
 ## Deciding on Installation Method
