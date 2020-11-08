@@ -1,7 +1,7 @@
 ---
 title: "Configuration"
 linkTitle: "Configuration"
-weight: 3
+weight: 4
 description: >
   Make changes to the way Regolith looks and behaves.
 ---
@@ -32,6 +32,8 @@ $ regolith-look set cahuella
 $ regolith-look refresh
 ```
 
+Installed Looks may also be set via the Look Dialog, activated via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">l</span></span>.
+
 ## Keybindings
 
 The most common keybinding change is the super key.  Regolith uses Xresources as the canonical source of truth for settings, which are read by various UI components.  The table of Xresource keys open to user configuration can be found here.  To change the default super binding from the windows key to alt, add the following line to the file `~/.config/regolith/Xresources`:
@@ -46,6 +48,10 @@ To change other keybindings, creating a user copy of the i3 config file is neces
 Note: GNOME also has it's own set of keybindings.  When the Regolith session is first initialized, the conflicting GNOME keybindings are removed from the user settings.  GNOME keybindings can be managed in `Settings`.
 
 <img class="shadow m-5" src="../regolith-screenshot-settings-keybindings.png" width="640px"/>
+
+## Window Behavior
+
+Regolith uses an i3 window manager variant called `i3-gaps`.  It controls how windows are drawn, how keybindings are configured, some start up applications, and other details.  By default the Regolith version of the i3 config file is at `/etc/regolith/i3/config`.
 
 ## Almost Everything Else
 
