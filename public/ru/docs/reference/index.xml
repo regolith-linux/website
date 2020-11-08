@@ -819,7 +819,7 @@
 &lt;td&gt;Fields to render in drun mode in Rofi&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;rofi.drun-icon-theme&lt;/td&gt;
+&lt;td&gt;rofi.icon-theme&lt;/td&gt;
 &lt;td&gt;Rofi icon theme&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;

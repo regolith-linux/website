@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith – The Interface</title>
+    <title>Regolith 1.5 – The Interface</title>
     <link>https://regolith-linux.org/docs/interface/</link>
-    <description>Recent content in The Interface on Regolith</description>
+    <description>Recent content in The Interface on Regolith 1.5</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/docs/interface/index.xml" rel="self" type="application/rss+xml" />
@@ -28,7 +28,7 @@
 &lt;p&gt;In addition to toggling layout orientation, existing windows can be moved relative to their neighbors with &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;↑ ↓ ← →&lt;/span&gt;&lt;/span&gt; (arrow keys) or VIM-style arrow keys &lt;span class=&#34;badge badge-warning&#34;&gt;k j h l&lt;/span&gt;.  Or, &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;tab&lt;/span&gt;&lt;/span&gt; and &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;tab&lt;/span&gt;&lt;/span&gt; can be used to move back and forth between active workspaces.&lt;/p&gt;
 &lt;p&gt;Windows can also be directly moved to other workspaces.  The bar will indicate all active workspaces as well as the currently focused workspace.  &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;[0-9]&lt;/span&gt;&lt;/span&gt; will cause the currently focused window to be moved to the workspace number selected.&lt;/p&gt;
 &lt;p&gt;Users can navigate to windows via &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;[0-9]&lt;/span&gt;&lt;/span&gt; but can also directly navigate to a specific window with &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;ctrl&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;quit-an-application&#34;&gt;Quit an Application.&lt;/h2&gt;
+&lt;h2 id=&#34;quit-an-application&#34;&gt;Quit an Application&lt;/h2&gt;
 &lt;p&gt;Any application can be safely closed via &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;q&lt;/span&gt;&lt;/span&gt;.  Crashed or otherwise unresponsive apps can be killed via &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;q&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
 
       </description>

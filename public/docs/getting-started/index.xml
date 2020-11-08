@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith – Getting Started</title>
+    <title>Regolith 1.5 – Getting Started</title>
     <link>https://regolith-linux.org/docs/getting-started/</link>
-    <description>Recent content in Getting Started on Regolith</description>
+    <description>Recent content in Getting Started on Regolith 1.5</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
@@ -14,7 +14,7 @@
     
     
     <item>
-      <title>Docs: Installation</title>
+      <title>Docs: Install</title>
       <link>https://regolith-linux.org/docs/getting-started/install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -23,32 +23,28 @@
         
         
         &lt;p&gt;Based on your preferred installation method, follow one of the following two sections to install Regolith.  Unlike previous versions of Regolith, PPA and ISO installs result in different configurations.  The PPA install favors coexistence with the existing Ubuntu desktop, while the ISO release optimizes for less resource utilization.  Specifically, the ISO install is roughly 1Gb smaller and cold start RAM usage is reduced by about 200Mb as compared to the PPA installation.&lt;/p&gt;
-&lt;h2 id=&#34;option-1-ubuntu-installer&#34;&gt;Option 1: Ubuntu Installer&lt;/h2&gt;
+&lt;h2 id=&#34;option-1-regolith-linux-via-installer&#34;&gt;Option 1: Regolith Linux via Installer&lt;/h2&gt;
+&lt;p&gt;At this time an &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/15&#34;&gt;installer for Regolith 1.5&lt;/a&gt; is not available, however the 1.4.1 installer can be upgraded to 1.5.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Download an ISO image of &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1&#34;&gt;Regolith R1.4&lt;/a&gt; &lt;i class=&#34;fas fa-cloud-download-alt&#34;&gt;&lt;/i&gt; and then use an OS installation tool such as USB Creator to write the downloaded file into a USB device. Here are Ubuntu guides for performing this action in &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;Windows&lt;/a&gt;, &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0&#34;&gt;Mac&lt;/a&gt;, and &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0&#34;&gt;Ubuntu&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Download an ISO image of &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1&#34;&gt;Regolith R1.4.1&lt;/a&gt; &lt;i class=&#34;fas fa-cloud-download-alt&#34;&gt;&lt;/i&gt; and then use an OS installation tool such as USB Creator to write the downloaded file into a USB device. Here are Ubuntu guides for performing this action in &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;Windows&lt;/a&gt;, &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0&#34;&gt;Mac&lt;/a&gt;, and &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0&#34;&gt;Ubuntu&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Reboot the computer and select the USB flash drive to boot from.&lt;/li&gt;
 &lt;li&gt;Install or run the live environment by providing information when prompted during the setup process.  See &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop&#34;&gt;this tutorial&lt;/a&gt; to learn more about the installation process.&lt;/li&gt;
 &lt;li&gt;When prompted, reboot the computer and login to your new Regolith environment!&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;option-2-ppa&#34;&gt;Option 2: PPA&lt;/h2&gt;
+&lt;p&gt;The system will automatically upgrade to Regolith 1.5 with the following commands:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt update &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt dist-upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;option-2-regolith-desktop-via-repository-ppa&#34;&gt;Option 2: Regolith Desktop via Repository (PPA)&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;See below about &lt;a href=&#34;#ppa-sources&#34;&gt;PPA sources&lt;/a&gt;, and add your chosen PPA to your system:&lt;/li&gt;
+&lt;li&gt;Add the Regolith release PPA to your system: (See below about &lt;a href=&#34;#ppa-sources&#34;&gt;PPA sources&lt;/a&gt; for other package archives.)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;
 $ sudo add-apt-repository ppa:regolith-linux/release
 &lt;/pre&gt;
 &lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Install the Regolith desktop package:&lt;/li&gt;
+&lt;li&gt;Install the Regolith desktop package:&lt;br&gt;&lt;i&gt;See below about other &lt;a href=&#34;#desktop-packages&#34;&gt;desktop packages&lt;/a&gt; available.&lt;/i&gt;&lt;/br&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;
-$ sudo apt install regolith-desktop
-&lt;/pre&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;(Optional) install status indicators as default in Regolith 1.3&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;
-$ sudo apt install i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time
-$ sudo apt install i3xrocks-battery # for laptops
+$ sudo apt install regolith-desktop-standard # or regolith-desktop-mobile for laptops
 &lt;/pre&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Reboot the computer, and when logging in select the &amp;ldquo;Regolith&amp;rdquo; session in the gear menu (⚙️):&lt;/li&gt;
@@ -56,13 +52,9 @@ $ sudo apt install i3xrocks-battery # for laptops
 &lt;p&gt;&lt;img src=&#34;https://regolith-linux.org/regolith-screenshot-login.png&#34; alt=&#34;Ubuntu Login Screen&#34;&gt;&lt;/p&gt;
 &lt;p&gt;From this point, please proceed to the next section, &lt;a href=&#34;../configuration&#34;&gt;configuration&lt;/a&gt; to learn about the most common changes people like to make to Regolith.&lt;/p&gt;
 &lt;h2 id=&#34;upgrades&#34;&gt;Upgrades&lt;/h2&gt;
-&lt;h3 id=&#34;regolith-13---regolith-14&#34;&gt;Regolith 1.3 -&amp;gt; Regolith 1.4&lt;/h3&gt;
-&lt;p&gt;The PPA &lt;code&gt;ppa:regolith-linux/release&lt;/code&gt; is currently hosting Regolith 1.4.1 version packages.  To upgrade an existing system to 1.4.1, update the package manager to source Regolith packages from the &lt;code&gt;release&lt;/code&gt; PPA:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt policy &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; grep regolith
-&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Some info w/ URLs will be returned.  Assuming http://ppa.launchpad.net/regolith-linux/release/ubuntu is not returned, execute:&lt;/span&gt;
-$ sudo add-apt-repository ppa:regolith-linux/release
-$ sudo apt update &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt dist-upgrade
-$ sudo apt install i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#also consider i3xrocks-battery i3xrocks-memory i3xrocks-weather&lt;/span&gt;
+&lt;h3 id=&#34;regolith-141---regolith-15&#34;&gt;Regolith 1.4.1 -&amp;gt; Regolith 1.5&lt;/h3&gt;
+&lt;p&gt;If your system already has added the &lt;code&gt;regolith-linux/release&lt;/code&gt; PPA, then upgrading is just matter of performing an upgrade:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt update &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt dist-upgrade
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After performing the update, log back in to your system.  However, if you have staged your own i3 config file or Xresources root, read the below section &lt;code&gt;Upgrading with Customizations&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;regolith-10---12---regolith-14&#34;&gt;Regolith 1.0 - 1.2 -&amp;gt; Regolith 1.4&lt;/h3&gt;
 &lt;p&gt;To upgrade from Regolith 1.0 - 1.2, the PPA URL must be changed and then new package versions are applied by the package manager:&lt;/p&gt;
@@ -82,19 +74,19 @@ $ mv ~/.config/regolith ~/regolith-backup
 $ sudo rm -Rf /etc/regolith/i3 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# be sure to backup any important changes&lt;/span&gt;
 $ sudo apt install regolith-i3-gaps-config
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h3&gt;
-&lt;h4 id=&#34;blocks-missing-after-upgrade&#34;&gt;Blocks Missing after Upgrade&lt;/h4&gt;
+&lt;h4 id=&#34;status-indicators-missing-after-upgrade&#34;&gt;Status indicators missing after Upgrade&lt;/h4&gt;
 &lt;p&gt;Regolith 1.4 changes the way in which blocks are installed and configured.  This change is necessary to cleanly support the &lt;code&gt;arm64&lt;/code&gt; architecture and make it simple to swap out components like the notification subsystem.  From 1.4 onward, blocks are installed by the package manager.  See &lt;a href=&#34;../../howto/add-remove-blocklets&#34;&gt;this HowTo&lt;/a&gt; on adding and configuring blocks.&lt;/p&gt;
 &lt;h2 id=&#34;upgrading-ubuntu&#34;&gt;Upgrading Ubuntu&lt;/h2&gt;
-&lt;p&gt;Upgrading from Ubuntu 18.04, 18.10, 19.04, or 19.10 to 20.04 requires that the Regolith PPA be re-added once the Ubuntu upgrade completes.&lt;/p&gt;
+&lt;p&gt;The Ubuntu upgrade process automatically removes all PPAs from the system, including Regolith.  The Regolith PPA must be re-added once the Ubuntu upgrade completes.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;If the standard Ubuntu session is not installed, install it:&lt;br/&gt;&lt;code&gt;$ sudo apt install ubuntu-session&lt;/code&gt;.  (If you have it already installed this should cause no harm.)&lt;/li&gt;
-&lt;li&gt;Perform the upgrade to 20.04.&lt;/li&gt;
-&lt;li&gt;After rebooting, log into the stock Ubuntu session, not Regolith.&lt;/li&gt;
+&lt;li&gt;Perform the upgrade to the latest Ubuntu version.&lt;/li&gt;
+&lt;li&gt;After rebooting, log into the stock Ubuntu session (not Regolith).&lt;/li&gt;
 &lt;li&gt;Add the Regolith PPA, as the installation process removed PPAs:&lt;br/&gt;&lt;code&gt;$ sudo add-apt-repository ppa:regolith-linux/release&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Upgrade Regolith to the latest version:&lt;br/&gt;&lt;code&gt;$ sudo apt upgrade &amp;amp;&amp;amp; sudo apt install regolith-desktop&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Upgrade Regolith to the latest version:&lt;br/&gt;&lt;code&gt;$ sudo apt upgrade &amp;amp;&amp;amp; sudo apt install regolith-desktop-standard&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Reboot, and now select the Regolith session at the login screen.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;NOTE: Some users have reported that &lt;code&gt;regolith-desktop&lt;/code&gt; is automatically uninstalled during the upgrade.  If this happens, simply run &lt;code&gt;sudo apt install --reinstall regolith-desktop&lt;/code&gt; after the upgrade completes to restore the Regolith desktop session.&lt;/p&gt;
+&lt;p&gt;NOTE: Some users have reported that &lt;code&gt;regolith-desktop&lt;/code&gt; is automatically uninstalled during the upgrade.  If this happens, simply run &lt;code&gt;sudo apt install --reinstall regolith-desktop-standard&lt;/code&gt; after the upgrade completes to restore the Regolith desktop session.&lt;/p&gt;
 &lt;h2 id=&#34;reinstallation&#34;&gt;Reinstallation&lt;/h2&gt;
 &lt;p&gt;In the case that the Regolith desktop environment becomes corrupted or otherwise unbootable, follow these steps to reset it.  No user files will be removed as part of this process:&lt;/p&gt;
 &lt;ol&gt;
@@ -113,7 +105,7 @@ $ rm -Rf ~/.config/regolith/flags
 &lt;li&gt;Reboot the computer, and when logging in select the &amp;ldquo;Regolith&amp;rdquo; session in the gear menu.  At this point you can remove &lt;code&gt;ubuntu-session&lt;/code&gt; if you don&#39;t want the stock GNOME session (optional).&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;uninstallation-of-regolith-desktop&#34;&gt;Uninstallation of &lt;code&gt;regolith-desktop&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Simply follow these steps to remove Regolith from your system:&lt;/p&gt;
+&lt;p&gt;Simply follow these steps to remove Regolith Desktop installed via PPA from your system:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Log out of the Regolith session and into the default Ubuntu session.&lt;/li&gt;
 &lt;li&gt;Open a terminal and run:&lt;/li&gt;
@@ -124,10 +116,6 @@ $ rm -Rf ~/.config/regolith/flags
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository --remove ppa:regolith-linux/release
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;To restore your GNOME settings, run:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;source&lt;/span&gt; ~/.regolith-gnome-backup
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;You can now safely delete the directory &lt;code&gt;~/.config/regolith&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;ppa-sources&#34;&gt;PPA Sources&lt;/h2&gt;
@@ -173,14 +161,125 @@ $ rm -Rf ~/.config/regolith/flags
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;arm-support&#34;&gt;ARM support&lt;/h2&gt;
-&lt;p&gt;Regolith packages are built for &lt;code&gt;i386&lt;/code&gt;, &lt;code&gt;amd64&lt;/code&gt;, and &lt;code&gt;arm64&lt;/code&gt; architectures.  A stand-alone installer is not available for ARM-based systems such as the Rasberry Pi, however Regolith can be installed via PPA into an existing Ubuntu system.  &lt;a href=&#34;#option-2-ppa&#34;&gt;See above&lt;/a&gt; about installing Regolith via PPA.&lt;/p&gt;
+&lt;h2 id=&#34;desktop-packages&#34;&gt;Desktop Packages&lt;/h2&gt;
+&lt;p&gt;Starting with Regolith 1.5, there are a few different desktop packages that users can choose from to get specific package selections for their system and use case.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Package&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;regolith-desktop&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Legacy package, no status indicators.  Not recommended for new users.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;regolith-desktop-standard&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;A reasonable set of default packages for desktop users.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;regolith-desktop-minimal&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The bare minimum package set for power users. Not recommended.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;regolith-desktop-mobile&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Some additional packages on top of standard for laptop users.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;regolith-desktop-complete&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Includes all of the official looks and status indicators available.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;arm-support&#34;&gt;ARM support&lt;/h1&gt;
+&lt;p&gt;Regolith packages are built for &lt;code&gt;i386&lt;/code&gt;, &lt;code&gt;amd64&lt;/code&gt;, &lt;code&gt;arm64&lt;/code&gt;, and &lt;code&gt;armhf&lt;/code&gt; architectures.  A stand-alone installer is not available for ARM-based systems such as the Rasberry Pi, however Regolith can be installed via PPA into any existing Ubuntu system running on the supported architectures.  &lt;a href=&#34;#option-2-ppa&#34;&gt;See above&lt;/a&gt; about installing Regolith via PPA.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
-      <title>Docs: Basics</title>
+      <title>Docs: Upgrade</title>
+      <link>https://regolith-linux.org/docs/getting-started/upgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/docs/getting-started/upgrade/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;regolith-141---regolith-15&#34;&gt;Regolith 1.4.1 -&amp;gt; Regolith 1.5&lt;/h3&gt;
+&lt;p&gt;If your system already has added the &lt;code&gt;regolith-linux/release&lt;/code&gt; PPA, then upgrading is just matter of performing an upgrade:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt update &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt dist-upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After performing the update, log back in to your system.  However, if you have staged your own i3 config file or Xresources root, read the below section &lt;code&gt;Upgrading with Customizations&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;regolith-10---12---regolith-15&#34;&gt;Regolith 1.0 - 1.2 -&amp;gt; Regolith 1.5&lt;/h3&gt;
+&lt;p&gt;To upgrade from Regolith 1.0 - 1.2, the PPA URL must be changed and then new package versions are applied by the package manager:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository --remove ppa:kgilmer/regolith-stable
+$ sudo add-apt-repository ppa:regolith-linux/release
+$ sudo apt update &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt dist-upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After performing these steps, you&#39;ll need to log out and back again.&lt;/p&gt;
+&lt;h3 id=&#34;upgrading-with-customizations&#34;&gt;Upgrading with Customizations&lt;/h3&gt;
+&lt;p&gt;When updating from a major or minor version (eg 1.2 to 1.3), it is often the case that new Xresource values and other config files have been updated.  Existing Xresource and config files such as the i3 config file will need to be updated in order for the upgrade to function properly.  If you&#39;ve customized any Regolith config files or created a stand-alone Xresource file (&lt;code&gt;~/.Xresources-regolith&lt;/code&gt;), these may need to be updated to take the upgraded files into account.  A simple approach to doing this is to move them elsewhere, perform the upgrade, and then reintegrate any desired customizations into the new files:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ mkdir ~/regolith-backup
+$ mv ~/.Xresources-regolith ~/regolith-backup
+$ mv ~/.config/regolith ~/regolith-backup
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once these steps are performed, logging back in should result in a &amp;ldquo;stock&amp;rdquo; instance of Regolith.  From there, any changes desired to be reintegrated can be done by editing the new versions of the Regolith config files that exist in the &lt;code&gt;/etc/regolith&lt;/code&gt; directory.&lt;/p&gt;
+&lt;h3 id=&#34;edits-to-etcregolith-files&#34;&gt;Edits to &lt;code&gt;/etc/regolith/...&lt;/code&gt; files&lt;/h3&gt;
+&lt;p&gt;If you&#39;ve taken shortcuts and manually edited files owned by &lt;code&gt;root&lt;/code&gt; in &lt;code&gt;/etc/regolith&lt;/code&gt; or elsewhere, the packaging tool may not update the files, nor mention that stale files have been left.  Even removing the package via &lt;code&gt;apt remove ...&lt;/code&gt; may not result in a clean system.  In this case, use the purge command to remove the package and manually delete any left over files.  For example, to clean up the i3 config file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt purge regolith-i3-gaps-config
+$ sudo rm -Rf /etc/regolith/i3 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# be sure to backup any important changes&lt;/span&gt;
+$ sudo apt install regolith-i3-gaps-config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h3&gt;
+&lt;h4 id=&#34;status-indicators-missing-after-upgrade&#34;&gt;Status indicators missing after Upgrade&lt;/h4&gt;
+&lt;p&gt;Regolith 1.4 changes the way in which blocks are installed and configured.  This change is necessary to cleanly support the &lt;code&gt;arm64&lt;/code&gt; architecture and make it simple to swap out components like the notification subsystem.  From 1.4 onward, blocks are installed by the package manager.  See &lt;a href=&#34;../../howto/add-remove-blocklets&#34;&gt;this HowTo&lt;/a&gt; on adding and configuring blocks.&lt;/p&gt;
+&lt;h2 id=&#34;upgrading-ubuntu&#34;&gt;Upgrading Ubuntu&lt;/h2&gt;
+&lt;p&gt;The Ubuntu upgrade process automatically removes all PPAs from the system, including Regolith.  The Regolith PPA must be re-added once the Ubuntu upgrade completes.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If the standard Ubuntu session is not installed, install it:&lt;br/&gt;&lt;code&gt;$ sudo apt install ubuntu-session&lt;/code&gt;.  (If you have it already installed this should cause no harm.)&lt;/li&gt;
+&lt;li&gt;Perform the upgrade to the latest Ubuntu version.&lt;/li&gt;
+&lt;li&gt;After rebooting, log into the stock Ubuntu session (not Regolith).&lt;/li&gt;
+&lt;li&gt;Add the Regolith PPA, as the installation process removed PPAs:&lt;br/&gt;&lt;code&gt;$ sudo add-apt-repository ppa:regolith-linux/release&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Upgrade Regolith to the latest version:&lt;br/&gt;&lt;code&gt;$ sudo apt upgrade &amp;amp;&amp;amp; sudo apt install regolith-desktop-standard&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reboot, and now select the Regolith session at the login screen.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;NOTE: Some users have reported that &lt;code&gt;regolith-desktop&lt;/code&gt; is automatically uninstalled during the upgrade.  If this happens, simply run &lt;code&gt;sudo apt install --reinstall regolith-desktop-standard&lt;/code&gt; after the upgrade completes to restore the Regolith desktop session.&lt;/p&gt;
+&lt;h2 id=&#34;reinstallation&#34;&gt;Reinstallation&lt;/h2&gt;
+&lt;p&gt;In the case that the Regolith desktop environment becomes corrupted or otherwise unbootable, follow these steps to reset it.  No user files will be removed as part of this process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Login to the stock Ubuntu session.  If this session is not available, install it with &lt;code&gt;sudo apt install ubuntu-session&lt;/code&gt;.  If you are unable to login, type &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;ctrl&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;F2&lt;/span&gt;&lt;/span&gt; to access a TTY.  After installing &lt;code&gt;ubuntu-session&lt;/code&gt;, you will have the option to select the &lt;code&gt;Ubuntu&lt;/code&gt; session type in the login screen.&lt;/li&gt;
+&lt;li&gt;Uninstall Regolith from within the Ubuntu session:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt purge regolith-*
+$ sudo apt autoremove
+$ rm -Rf ~/.config/regolith/flags
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Verify that no regolith packages are still installed with &lt;code&gt;apt list --installed | grep -i regolith&lt;/code&gt;.  The command should not return any packages.  If it does, manually uninstall them with &lt;code&gt;sudo apt purge &amp;lt;package&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Reinstall Regolith:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo apt install regolith-desktop i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time #also consider i3xrocks-battery i3xrocks-memory i3xrocks-weather
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Reboot the computer, and when logging in select the &amp;ldquo;Regolith&amp;rdquo; session in the gear menu.  At this point you can remove &lt;code&gt;ubuntu-session&lt;/code&gt; if you don&#39;t want the stock GNOME session (optional).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;uninstallation-of-regolith-desktop&#34;&gt;Uninstallation of &lt;code&gt;regolith-desktop&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Simply follow these steps to remove Regolith Desktop installed via PPA from your system:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Log out of the Regolith session and into the default Ubuntu session.&lt;/li&gt;
+&lt;li&gt;Open a terminal and run:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt purge regolith-desktop &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt autoremove
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Now remove the PPA:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository --remove ppa:regolith-linux/release
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;You can now safely delete the directory &lt;code&gt;~/.config/regolith&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Basic Usage</title>
       <link>https://regolith-linux.org/docs/getting-started/basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -199,6 +298,8 @@ $ rm -Rf ~/.config/regolith/flags
 &lt;h3 id=&#34;navigate-to-a-window&#34;&gt;Navigate to a Window&lt;/h3&gt;
 &lt;p&gt;To focus on a running application, the &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;ctrl&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt; keybinding can be used to show a dialog of all running windows.  Simply select the desired window and the system will move to the window&#39;s containing workspace and set it&#39;s focus.&lt;/p&gt;
 &lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-window-nav2.png&#34; width=&#34;640px&#34;/&gt;
+&lt;h3 id=&#34;create-a-new-workspace&#34;&gt;Create a new Workspace&lt;/h3&gt;
+&lt;p&gt;Workspaces (also known as virtual desktops in some desktop enviroments) are the primary way by which windows can be managed.  Each workspace provides a screen for an indepentent set of windows.  To create a workspace, &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;`&lt;/span&gt;&lt;/span&gt; will create and move to a new workspace.  &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;0 - 9&lt;/span&gt;&lt;/span&gt; allows for navigation to specific workspaces.&lt;/p&gt;
 &lt;h3 id=&#34;find-and-launch-a-file&#34;&gt;Find and Launch a File&lt;/h3&gt;
 &lt;p&gt;Searching your local computer for a specific file can be achieved in a variety of ways.  Regolith provides a file search dialog via &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt; to quickly seek and optionally load a file with it&#39;s default application.  If the file path exceeds the width of the dialog, &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;.&lt;/span&gt;&lt;/span&gt; will toggle text justification.  Pressing enter on a selection will cause the file to be invoked with the &lt;code&gt;xdg-open&lt;/code&gt; command.&lt;/p&gt;
 &lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-file-search.png&#34; width=&#34;640px&#34;/&gt;
@@ -244,13 +345,16 @@ regolith-look-cahuella/bionic,now 2.4.9 amd64
 $ sudo apt install regolith-look-cahuella
 $ regolith-look &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; cahuella
 $ regolith-look refresh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;keybindings&#34;&gt;Keybindings&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Installed Looks may also be set via the Look Dialog, activated via &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;l&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;keybindings&#34;&gt;Keybindings&lt;/h2&gt;
 &lt;p&gt;The most common keybinding change is the super key.  Regolith uses Xresources as the canonical source of truth for settings, which are read by various UI components.  The table of Xresource keys open to user configuration can be found here.  To change the default super binding from the windows key to alt, add the following line to the file &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;i3-wm.mod: Mod1
 i3-wm.alt: Mod4
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To change other keybindings, creating a user copy of the i3 config file is necessary.  See the &lt;a href=&#34;../../howto/stage-configs&#34;&gt;staging configs HowTo&lt;/a&gt; to learn more.&lt;/p&gt;
 &lt;p&gt;Note: GNOME also has it&#39;s own set of keybindings.  When the Regolith session is first initialized, the conflicting GNOME keybindings are removed from the user settings.  GNOME keybindings can be managed in &lt;code&gt;Settings&lt;/code&gt;.&lt;/p&gt;
 &lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-settings-keybindings.png&#34; width=&#34;640px&#34;/&gt;
+&lt;h2 id=&#34;window-behavior&#34;&gt;Window Behavior&lt;/h2&gt;
+&lt;p&gt;Regolith uses an i3 window manager variant called &lt;code&gt;i3-gaps&lt;/code&gt;.  It controls how windows are drawn, how keybindings are configured, some start up applications, and other details.  By default the Regolith version of the i3 config file is at &lt;code&gt;/etc/regolith/i3/config&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;almost-everything-else&#34;&gt;Almost Everything Else&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;Settings&lt;/code&gt; or gnome-control-panel as it&#39;s also known, is the tool to configure locale, date, display, networking, and various other settings.  Launch it via the app launcher with &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt;, type &amp;lsquo;settings&amp;rsquo;, and hit enter to launch the app.  Or, the direct keybinding is &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;c&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h2&gt;

@@ -1,0 +1,1126 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.62.1" />
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Development | Regolith 1.5</title><meta property="og:title" content="Development" />
+<meta property="og:description" content="This page describes the maintenance and development of Regolith from a task perspective.  The objective of this document is to allow others the ability to maintain and develop Regolith.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://regolith-linux.org/docs/policy-and-process/development/" />
+<meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
+<meta property="article:modified_time" content="2020-11-08T14:26:13-08:00" /><meta property="og:site_name" content="Regolith 1.5" />
+<meta itemprop="name" content="Development">
+<meta itemprop="description" content="This page describes the maintenance and development of Regolith from a task perspective.  The objective of this document is to allow others the ability to maintain and develop Regolith.
+">
+<meta itemprop="dateModified" content="2020-11-08T14:26:13-08:00" />
+<meta itemprop="wordCount" content="2102">
+<meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
+
+<meta name="twitter:title" content="Development"/>
+<meta name="twitter:description" content="This page describes the maintenance and development of Regolith from a task perspective.  The objective of this document is to allow others the ability to maintain and develop Regolith.
+"/>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-138654070-2', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.5c27cf458842f18dbe8ab20d0a32c3736ab1ac71a3b393fe7b806a9707fcdf4d.css" as="style">
+<link href="/scss/main.min.5c27cf458842f18dbe8ab20d0a32c3736ab1ac71a3b393fe7b806a9707fcdf4d.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+    <title>Development | Regolith 1.5</title>
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" id="svg3861" width="32" height="32" viewBox="0 0 32 32"><defs id="defs3865"><clipPath clipPathUnits="userSpaceOnUse" id="clipPath3877"><path d="M0 1567.127H1560.637V0H0z" id="path3875" /></clipPath></defs><g id="g3869" transform="matrix(0.04502922,0,0,-0.04502922,-18.438529,59.849926)"><g id="g3871"><g id="g3873" clip-path="url(#clipPath3877)"><g id="g3879" transform="translate(986.2234,818.9683)"><path d="m0 0c-75.72-35.88-161.365-25.672-225.389 19.23-72.324-31.545-141.013-56.576-197.909-71.903-.128-.035-.25-.066-.377-.1 86.695-99.281 231.864-133.353 356.852-74.126C26.211-82.814 86.301 2.663 101.911 97.083 80.012 56.06 45.25 21.443.0.0" style="fill:#dc322f;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path3881" /></g><g id="g3883" transform="translate(462.4304,829.2241)"><path d="M0 0C6.707 8.363 19.316 21.578 41.14 39.939 44.93 28.666 49.403 17.491 54.623 6.478 54.652 6.413 54.686 6.351 54.716 6.287 26.173.289 9.383-.517.0.0m651.611 279c-8.663 9.474-23.361 10.127-32.83 1.472-25.998-23.768-66-51.988-114.677-81.441-11.948 12.294-28.65 19.943-47.147 19.943-36.315.0-65.753-29.439-65.753-65.753.0-5.395.664-10.632 1.889-15.649-17.518-8.931-35.486-17.776-53.773-26.441-33.203-15.734-66.287-30.337-98.339-43.485-6.1 9.092-11.617 18.736-16.448 28.929-53.137 112.139-5.307 246.121 106.831 299.259 34.274 16.241 70.584 23.005 106.007 21.429-74.756 29.139-160.888 28.631-239.117-8.439C74.632 350.245 9.163 218.589 28.971 89.964-54.849 23.866-58.534-2.795-49.612-21.628c7.913-16.699 25.611-24.994 54.989-24.994 23.742.0 55.114 5.417 95.118 16.194 72.675 19.58 164.558 54.936 258.725 99.558 20.717 9.817 40.946 19.804 60.558 29.863 10.576-7.265 23.378-11.525 37.179-11.525 36.314.0 65.752 29.439 65.752 65.753.0.883-.032 1.758-.065 2.633 53.819 32.245 98.061 63.408 127.496 90.315 9.472 8.661 10.131 23.359 1.471 32.831" style="fill:#dc322f;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path3885" /></g></g></g></g></svg></span><span class="text-uppercase font-weight-bold">Regolith 1.5</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/download/" ><span>Download</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/interact/" ><span>Interact</span></a>
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Releases
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="http://regolith-linux.org">1.5</a>
+	
+	<a class="dropdown-item" href="http://regolith-linux.org/regolith-site-r141/">1.4.1</a>
+	
+	<a class="dropdown-item" href="http://regolith-linux.org/regolith-site-r141/">1.4</a>
+	
+	<a class="dropdown-item" href="http://regolith-linux.org/regolith-site-r131/">1.3.1</a>
+	
+	<a class="dropdown-item" href="http://regolith-linux.org/regolith-site-r13/">1.3</a>
+	
+	<a class="dropdown-item" href="http://regolith-linux.org/regolith-site-r12/">1.2</a>
+	
+</div>
+
+			</li>
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/de/">Deutsch</a>
+	
+	<a class="dropdown-item" href="/es/">Español</a>
+	
+	<a class="dropdown-item" href="/hu/">magyar</a>
+	
+	<a class="dropdown-item" href="/fr/">français</a>
+	
+	<a class="dropdown-item" href="/pt_pt/">português</a>
+	
+	<a class="dropdown-item" href="/pt_br/">português brasileiro</a>
+	
+	<a class="dropdown-item" href="/ru/">Russian</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+    
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/de/">Deutsch</a>
+	
+	<a class="dropdown-item" href="/es/">Español</a>
+	
+	<a class="dropdown-item" href="/hu/">magyar</a>
+	
+	<a class="dropdown-item" href="/fr/">français</a>
+	
+	<a class="dropdown-item" href="/pt_pt/">português</a>
+	
+	<a class="dropdown-item" href="/pt_br/">português brasileiro</a>
+	
+	<a class="dropdown-item" href="/ru/">Russian</a>
+	
+</div>
+    </div>
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/overview/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Overview</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-overview">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting Started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-getting-started">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-getting-started-install" href="/docs/getting-started/install/">Install</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-getting-started-upgrade" href="/docs/getting-started/upgrade/">Upgrade</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-getting-started-basics" href="/docs/getting-started/basics/">Basic Usage</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-getting-started-configuration" href="/docs/getting-started/configuration/">Configuration</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/interface/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Interface</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-interface">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-interface-apps" href="/docs/interface/apps/">Working with Applications</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-interface-notifications" href="/docs/interface/notifications/">Notifications</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-interface-system" href="/docs/interface/system/">System Configuration</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-interface-advanced" href="/docs/interface/advanced/">Advanced</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/customize/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Customize</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-customize">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-customize-look" href="/docs/customize/look/">Look</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-customize-styles" href="/docs/customize/styles/">Styles</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-customize-compositors" href="/docs/customize/compositors/">Compositors</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-customize-components" href="/docs/customize/components/">Components</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-customize-packages" href="/docs/customize/packages/">Packages</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/howto/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">How To</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-howto">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-override-xres" href="/docs/howto/override-xres/">Override Xresources</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-stage-configs" href="/docs/howto/stage-configs/">Stage Config Files</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-change-terminal" href="/docs/howto/change-terminal/">Change the Default Terminal</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-find-install-packages" href="/docs/howto/find-install-packages/">Find and Install Packages</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-multiple-batteries" href="/docs/howto/multiple-batteries/">Support Multiple Batteries</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-time-format" href="/docs/howto/time-format/">Change the Bar Date and Time Format</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-add-remove-blocklets" href="/docs/howto/add-remove-blocklets/">Change Bar Status indicators</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-change-workspace-icons" href="/docs/howto/change-workspace-icons/">Change Workspace Icons</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-remove-workspace-icons" href="/docs/howto/remove-workspace-icons/">Change Workspace Labels</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-change-ppa" href="/docs/howto/change-ppa/">Switch between Regolith PPAs</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-update-14-141" href="/docs/howto/update-14-141/">Upgrade Regolith Linux 1.4 to 1.4.1</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-replace-notification-system" href="/docs/howto/replace-notification-system/">Change Notification Systems</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-terminal-font" href="/docs/howto/terminal-font/">Change the Terminal Font Size</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-install-from-unstable" href="/docs/howto/install-from-unstable/">Update packages selectively</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-default-gap" href="/docs/howto/default-gap/">Change the Default Window Gap</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-workspace-on-output" href="/docs/howto/workspace-on-output/">Assign a workspace to a specific Output (Display)</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/reference/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Reference</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-reference">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-reference-keybindings" href="/docs/reference/keybindings/">Keybindings</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-reference-configurations" href="/docs/reference/configurations/">Config Files</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-reference-packages" href="/docs/reference/packages/">Packages</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-reference-xresources" href="/docs/reference/xresources/">Xresources</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/reference/releases/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Releases</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-reference-releases">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-reference-releases-regolith-1-5-release-notes" href="/docs/reference/releases/regolith-1.5-release-notes/">1.5 Release Notes</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-reference-releases-regolith-1-4-1-release-notes" href="/docs/reference/releases/regolith-1.4.1-release-notes/">1.4.1 Release Notes</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-reference-releases-regolith-1-4-release-notes" href="/docs/reference/releases/regolith-1.4-release-notes/">1.4 Release Notes</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-reference-releases-regolith-1-3-1-release-notes" href="/docs/reference/releases/regolith-1.3.1-release-notes/">1.3.1 Release Notes</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-reference-releases-regolith-1-3-release-notes" href="/docs/reference/releases/regolith-1.3-release-notes/">1.3 Release Notes</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/developer/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Developer</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-developer">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-developer-looks" href="/docs/developer/looks/">Looks</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-developer-status-indicators" href="/docs/developer/status-indicators/">Status Indicators</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-developer-packaging" href="/docs/developer/packaging/">Packaging</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-developer-design" href="/docs/developer/design/">Design</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/policy-and-process/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Policy and Process</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs-policy-and-process">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-policy-and-process-privacy" href="/docs/policy-and-process/privacy/">Privacy</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-policy-and-process-updates" href="/docs/policy-and-process/updates/">Updates</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-policy-and-process-contributions" href="/docs/policy-and-process/contributions/">Contribute</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-policy-and-process-support" href="/docs/policy-and-process/support/">Support</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docs-policy-and-process-development" href="/docs/policy-and-process/development/">Development</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/regolith-linux/website/edit/master/content/en/docs/Policy%20and%20Process/development.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/regolith-linux/website/issues/new?title=Development" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/regolith-linux/regolith-desktop/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#triage-bugs-feature-requests">Triage Bugs, Feature Requests</a></li>
+    <li><a href="#take-user-contributed-pr">Take user-contributed PR</a></li>
+    <li><a href="#publish-package-version-to-unstable">Publish Package Version to unstable</a></li>
+    <li><a href="#synchronize-package-versions-across-ubuntu-releases">Synchronize Package Versions Across Ubuntu Releases</a></li>
+    <li><a href="#promote-packages-from-unstable-to-stable">Promote Packages from unstable to stable</a></li>
+    <li><a href="#plan-a-subsequent-regolith-release">Plan a Subsequent Regolith Release</a></li>
+    <li><a href="#test-a-snapshot-of-regolith-for-a-release">Test a Snapshot of Regolith for a Release</a>
+      <ul>
+        <li><a href="#testing-via-ppa">Testing via PPA</a></li>
+        <li><a href="#testing-an-iso">Testing an ISO</a></li>
+      </ul>
+    </li>
+    <li><a href="#perform-a-regolith-release">Perform a Regolith Release</a></li>
+    <li><a href="#add-a-new-package-to-regolith">Add a New Package to Regolith</a></li>
+    <li><a href="#update-package-model">Update Package Model</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#r1---ubuntu-version-in-changelog">R1 - Ubuntu version in Changelog</a></li>
+        <li><a href="#r2---git-branch-names-for-ubuntu-versions">R2 - Git branch names for Ubuntu versions</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://regolith-linux.org/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://regolith-linux.org/docs/policy-and-process/">Policy and Process</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="https://regolith-linux.org/docs/policy-and-process/development/">Development</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>Development</h1>
+	<div class="lead">This page describes the maintenance and development of Regolith from a task perspective.  The objective of this document is to allow others the ability to maintain and develop Regolith.</div>
+	<h1 id="tasks">Tasks</h1>
+<h2 id="triage-bugs-feature-requests">Triage Bugs, Feature Requests</h2>
+<p>This task is essentially adding a first layer of organization from inputs from users.</p>
+<ul>
+<li>Notice of bugs and feature requests come as email/slack notifications when the bugs are created.</li>
+<li>Review each incoming gh issue within two days, determine if there is an easy fix.  (best effort)</li>
+<li>For issues without an easy fix, add relevant tags, provide some suggestions, give some time for community members to respond with suggestions.</li>
+<li>For issues that result in a code change (feature/bug fix), make reference to GH URL for issue in commit so that GH will link to it from isssue</li>
+<li>Fix/Feature first goes to <code>unstable</code> (see steps below that describe this process).  When feature ready, add note to original github issue stating that feature/fix is ready for testing.</li>
+<li>If no response or no issue reported after a few weeks, change is eligible for promotion to <code>stable</code>.</li>
+</ul>
+<h2 id="take-user-contributed-pr">Take user-contributed PR</h2>
+<p>We accept user contributions with the following steps:</p>
+<ul>
+<li>Get notified of PR from email</li>
+<li>Identify if code change results in general utility for most users, or is more of a personal concern.  If the latter, inform the user politely as such and that the PR will not be merged.  Also consider the complexity and volatility of the change.  Does the change make maintaining Regolith more difficult (things like version specific changes, changes that require Ubuntu-only packages or behavior, changes that are difficult to test, features that rely on specific hw configurations, etc.)</li>
+<li>Assuming PR passes these tests, do a PR review.  Iterate until the changes is ready for inclusion.</li>
+<li>Merge the change, publish package to <code>unstable</code> (see below), inform user in PR that package is available for testing.</li>
+</ul>
+<h2 id="publish-package-version-to-unstable">Publish Package Version to <code>unstable</code></h2>
+<p>This task describes how code sitting on a computer makes it into a package that can be distributed to other users via the package manager facility.</p>
+<ol>
+<li>Pull commits locally if from others, or whatever local commits if from me.</li>
+<li><code>gbp dch</code> to update changelog with git commits.</li>
+<li>Edit <code>/debian/changelog</code> with correct version and Ubuntu Release (See Rule 1 below).</li>
+<li><code>gbp buildpackage</code> to locally test package build.  Address all lintian errors and warnings.  Some warnings cannot be fixed, or at least I don't yet understand how to fix them.</li>
+<li>If during package build testing, changes are required, add them to existing commit (<code>git commit --amend</code>)</li>
+<li>Once package build is ready, push package changes to GitHub</li>
+<li>Go to local clone of <code>regolith-builder</code> repo, run <code>build.sh</code> script to generate source package and upload to launchpad (this step utilizes Launchpad PKI and as of 7/2/2020 only kgilmer has access to publish packages to Regolith PPAs).  Example invocation: <code>./build.sh package-model-R1.4.2.json ppa:regolith-linux/ubuntu/unstable /tmp/bb56 regolith-compositor-compton-glx</code></li>
+<li>Once package is uploaded, monitor email for build error notifications.  Iterate on package dev if errors.</li>
+<li>Once package has built in <code>unstable</code>, sync package versions (see below)</li>
+</ol>
+<h2 id="synchronize-package-versions-across-ubuntu-releases">Synchronize Package Versions Across Ubuntu Releases</h2>
+<p>When a package is submitted to laundpad.net to be built into a PPA, the package is only built for the Ubuntu version (Bionic, Focal, etc.) that is listed in the package's changelog file.  Here is an example changelog (<code>debian/changelog</code>) snippet:</p>
+<pre><code>regolith-system (1.4.0.4-1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add gbp conf file, cleanup.
+
+ -- Regolith Linux &lt;regolith.linux@gmail.com&gt;  Sat, 06 Jun 2020 12:39:39 -0700
+...
+</code></pre><p>Here you can see <code>focal</code> is listed after the package version.  This means that when this package source was uploaded via <code>dput</code>, launchpad.net built it for the focal release.  Users running other versions of Ubuntu will not see this as an update for their system.  Because Regolith often supports 2 or 3 different releases, Launchpad needs to be instructed to build the packages for our other supported Ubuntu versions as well.  For packages that differ based on Ubuntu version (such as <code>regolith-desktop</code>) typically there is a seperate branch with a unique changelog entry for each Ubuntu target.  However for almost all other packages, each is able to run as-is on all supported Ubuntu versions, so we do not need to maintain anything per version, but we do have to copy the package.</p>
+<p>To do this we simply copy the package from the <em>source</em> Ubuntu version to the <em>target</em> Ubuntu version within the <em>same</em> PPA.  This task is error prone and tedious, because the time it takes for launchpad.net to build a package greatly varies depending on load and other factors.  A package cannot be copied until it's completely finished building.  Attempting to do so will result in an error. Additionally, packages can only be copied from older Ubuntu versions to newer versions.  So, we must first build a package for the earliest supported version, and then copy it in order to each later version.  All the while keeping the timing constraints in mind so we do not perform an operation on a package that hasn't completed building (copying is also considered building in launchpad.net).</p>
+<p>It may be possible to write a program that can monitor the state of all packages within a PPA and attempt to copy packages to keep versions consistent, but this program has yet to be written. The current process is to run a script that performs the copies from older to newer versions and simply sleeps between operations hoping to get lucky with the package build times.  This makes it slow and error prone.</p>
+<ul>
+<li>For the package recently published to a PPA, verify that the package has completed building, and that it is on the oldest possible version.</li>
+<li>From the <code>regolith-builder</code> repo, run the <code>sync-pkg-version.sh</code> script, and specify the package name.  The following example will copy the package <code>regolith-compoisitor-compton-glx</code> from <code>bionic</code> to <code>eoan</code>, and then <code>focal</code> (note this will change in the future with Ubuntu versions) in the <code>unstable</code> PPA:</li>
+</ul>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./sync-pkg-version.sh unstable regolith-compositor-compton-glx
+</code></pre></div><ul>
+<li>It's configured to pause 20 minutes between copies, so will take some time to complete.  When it's done, check the PPA page (<a href="https://launchpad.net/~regolith-linux/+archive/ubuntu/unstable">unstable</a>, <a href="https://launchpad.net/~regolith-linux/+archive/ubuntu/stable">stable</a>, <a href="https://launchpad.net/~regolith-linux/+archive/ubuntu/release">release</a>) to determine if the copies were successful.  If not, run the script again until all supported Ubuntu versions have the same version.</li>
+</ul>
+<h2 id="promote-packages-from-unstable-to-stable">Promote Packages from <code>unstable</code> to <code>stable</code></h2>
+<p>Once a package has been tested in <code>unstable</code> by the developer of the change (and possibly others), it can be promoted to <code>stable</code> (and eventually <code>release</code>, but this requires planning and coordination).  The <code>stable</code> PPA is intended to provide &ldquo;beta&rdquo; level quality of package updates for those that are willing to add some risk in exchange for earlier fixes and features.  Most users are expected to use <code>release</code> and so the pool of users should be relatively small.  This gives more time for testing and a smaller risk when issues are discovered.</p>
+<p>Package promotion is essentially just copying packages, as we did in the task above to sync a package's versions across Ubuntu versions.  The difference is that instead of copying between Ubuntu versions, we are first copying from source PPA to target PPA (same Ubuntu version), and then across Ubuntu versions within the target PPA.</p>
+<p>There is a script in <code>regolith-builder</code> specific to this task.  It essentially works as the package sync script, it's just implementing the copies as described above.  Example that promotes <code>regolith-system</code> from <code>unstable</code> to <code>stable</code>:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./promote-stage.sh unstable stable regolith-system 
+</code></pre></div><p>Note that this script has the same limitations and fragility of the sync versions script.  Timing copy operations can fail and so it's necessary to verify each time that the promotion worked as expected.  If the package was copied successfully to the target PPA but subsequent sync operations failed, then run the <code>sync-pkg-version.sh</code> script to clean up the package versions in the target PPA.</p>
+<h2 id="plan-a-subsequent-regolith-release">Plan a Subsequent Regolith Release</h2>
+<p>Keeping it simple, we rely on the <a href="https://github.com/orgs/regolith-linux/projects">GitHub project planning feature</a> available in the Regolith organization.  Workflow:</p>
+<ul>
+<li>Create a new project to house and manage issues related to the release.  Generally 3 columns seems to work well (not done, in process, complete).</li>
+<li>Go through the GitHub issues and determine which issues have or should be fixed in the project created in the above step.  For those issues, specify the project in the drop-down to the right.</li>
+<li>As issues are created, continue to add them to the new project as-needed.</li>
+<li>Any features that are expected to be in the release, and do not already have issues, need to have issues created so they can be tracked in the project.  Ideally, the project should define all changes that were made from the previous version.</li>
+<li>As bugs get fixed and features get implemented, use the project facility to synchronize the issue status with the project status.</li>
+<li>Once the scope is finalized for the release and all associated issues are in the &ldquo;done&rdquo; column, the project is complete.</li>
+<li>Use the project link to communicate with users and other contributors the status of the release or an issue associated with the release.</li>
+<li>Once a project is complete (has been shipped, no critical bugs), the project can be marked as complete.</li>
+</ul>
+<h2 id="test-a-snapshot-of-regolith-for-a-release">Test a Snapshot of Regolith for a Release</h2>
+<p>The <code>stable</code> PPA is a staging area for the next upcoming Regolith release.  Packages should not be copied into the <code>release</code> PPA unless they are specifically critical bugs.  Features and lesser important bugs should be held in <code>stable</code> until a release occurs.</p>
+<h3 id="testing-via-ppa">Testing via PPA</h3>
+<p>To test the packages in stable, simply add the PPA to your test environment and install Regolith as it would normally be installed (substituting the <code>stable</code> PPA).</p>
+<h3 id="testing-an-iso">Testing an ISO</h3>
+<p>The <code>regolith-builder</code> repo contains the files <code>create-iso.txt</code> and <code>package-iso-*</code> text files that describe the steps necessary to generate a Regolith ISO from a PPA.  Follow these steps with the Cubic ISO builder to generate an ISO.  Boot a test environment with the ISO to perform testing.</p>
+<h2 id="perform-a-regolith-release">Perform a Regolith Release</h2>
+<p>Once testing a release in the <code>stable</code> PPA has been confirmed to be of acceptable quality, perform the following steps to execute the release:</p>
+<ol>
+<li>Communicate the upcoming update on the <code>release-plan</code> Slack channel, linking to the project.</li>
+<li>Sync all packages from the <code>stable</code> PPA to the <code>release</code> PPA.</li>
+<li>Communicate that users will now be able to update.  Provide release notes or link to project if none available.</li>
+<li>Generate a new ISO w/ the Cubic tool (described above) and upload this to the <code>regolith-desktop</code> releases page.  Use consistent entries for the various field when generating the release on GitHub.</li>
+<li>Communicate the update is available on the mailing list and Twitter.</li>
+<li>Monitor Slack and GitHub issues for any problems users may encounter.</li>
+</ol>
+<h2 id="add-a-new-package-to-regolith">Add a New Package to Regolith</h2>
+<ol>
+<li>Create the GitHub repo in the Regolith org.</li>
+<li>Use the debian package utilities to generate the package metadata that is stored in the <code>debian</code> directory.</li>
+<li>Use the debian package utilities to verify that the package builds succesfully locally.</li>
+<li>Follow the steps in task <strong>Publish Package Version to <code>unstable</code></strong> from step 7 such that the new package is installable by users.</li>
+</ol>
+<h2 id="update-package-model">Update Package Model</h2>
+<p>The build scripts use a JSON file that defines a few things necessary in order to build source packages and upload them to launchpad.net.  These files live in the <code>regolith-builder</code> repo with the schema <code>package-model-&lt;regolith version&gt;.json</code>.  Here is an abbreviated snippet of <code>package-model-R1.4.1.txt</code>:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">&#34;packages&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+        <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">&#34;gitRepoUrl&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;https://github.com/regolith-linux/regolith-system.git&#34;</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">&#34;packageName&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;regolith-system&#34;</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">&#34;buildPath&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;regolith-system&#34;</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">&#34;upstreamTarball&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;&#34;</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">&#34;packageBranch&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;master&#34;</span>
+        <span style="color:#000;font-weight:bold">}</span><span style="color:#000;font-weight:bold">,</span>
+    <span style="color:#a40000">.</span><span style="color:#a40000">.</span><span style="color:#a40000">.</span>
+    <span style="color:#000;font-weight:bold">]</span><span style="color:#000;font-weight:bold">,</span>
+    <span style="color:#204a87;font-weight:bold">&#34;copies&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+        <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">&#34;ppaUrl&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;~kgilmer/ubuntu/speed-ricer&#34;</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">&#34;packageName&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;i3-snapshot&#34;</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">&#34;sourceVersion&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;bionic&#34;</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">&#34;targetVersions&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;eoan&#34;</span>
+        <span style="color:#000;font-weight:bold">}</span><span style="color:#000;font-weight:bold">,</span>
+    <span style="color:#000;font-weight:bold">]</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p>The file contains two sections, &ldquo;packages&rdquo; and &ldquo;copies&rdquo;.  Packages defines how the <code>build.sh</code> script can go about generating a source package for a given package.  It requires the git repo, the name of the package, the root directory in the repo from which the build should execute, any specific source tarball to use, and the git branch.  The Copies section describes packages that are not built as part of Regolith but copied from other PPAs.  For example many GTK theme and icon packages are already hosted by other developers on launchpad.net and for Regolith, we simply need to copy them.</p>
+<p>Steps to add a new package model for a new Regolith version:</p>
+<ol>
+<li>Copy from the latest release to the new one.</li>
+<li>Make changes as needed to the new package model to support the new Regolith version.</li>
+<li>When running the <code>build.sh</code> script to generate source packages, specify the new package model in the parameter list.</li>
+</ol>
+<h1 id="rules">Rules</h1>
+<h3 id="r1---ubuntu-version-in-changelog">R1 - Ubuntu version in Changelog</h3>
+<p>Packages should be published with changelog entry of oldest supported Ubuntu release (<code>bionic</code> as of 7/2/2020).</p>
+<h3 id="r2---git-branch-names-for-ubuntu-versions">R2 - Git branch names for Ubuntu versions</h3>
+<p>For packages which must maintain Ubuntu-version-specific differences, a distinct version string must be generated for each version of Ubuntu.  In this case, the package's git repo will maintain a branch named after the Ubuntu release it builds, with the exception of the branch <code>debian</code> always tracking the current production release of Ubuntu.</p>
+
+	
+		<style>
+  .feedback--answer {
+    display: inline-block;
+  }
+  .feedback--answer-no {
+    margin-left: 1em;
+  }
+  .feedback--response {
+    display: none;
+    margin-top: 1em;
+  }
+  .feedback--response__visible {
+    display: block;
+  }
+</style>
+<h2 class="feedback--title">Feedback</h2>
+<p class="feedback--question">Was this page helpful?</p>
+<button class="feedback--answer feedback--answer-yes">Yes</button>
+<button class="feedback--answer feedback--answer-no">No</button>
+<p class="feedback--response feedback--response-yes">
+  Glad to hear it! Please <a href="https://github.com/regolith-linux/regolith-linux.github.io/issues/new">tell us how we can improve</a>.
+</p>
+<p class="feedback--response feedback--response-no">
+  Sorry to hear that. Please <a href="https://github.com/regolith-linux/regolith-linux.github.io/issues/new">tell us how we can improve</a>.
+</p>
+<script>
+  const yesButton = document.querySelector('.feedback--answer-yes');
+  const noButton = document.querySelector('.feedback--answer-no');
+  const yesResponse = document.querySelector('.feedback--response-yes');
+  const noResponse = document.querySelector('.feedback--response-no');
+  const disableButtons = () => {
+    yesButton.disabled = true;
+    noButton.disabled = true;
+  };
+  const sendFeedback = (value) => {
+    if (typeof ga !== 'function') return;
+    const args = {
+      command: 'send',
+      hitType: 'event',
+      category: 'Helpful',
+      action: 'click',
+      label: window.location.pathname,
+      value: value
+    };
+    ga(args.command, args.hitType, args.category, args.action, args.label, args.value);
+  };
+  yesButton.addEventListener('click', () => {
+    yesResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(1);
+  });
+  noButton.addEventListener('click', () => {
+    noResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(0);
+  });
+</script>
+
+		<br />
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified November 8, 2020: <a  href="https://github.com/regolith-linux/website/commit/15a53b1b643b95f0b3f9e440216e27ae8eb23208">Add developer task documentation taken from wiki. (15a53b1)</a>
+</div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Announcement mailing list" aria-label="Announcement mailing list">
+    <a class="text-white" target="_blank" href="https://www.freelists.org/list/regolith-linux">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" href="https://twitter.com/RegolithL">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Mastodon" aria-label="Mastodon">
+    <a class="text-white" target="_blank" href="https://fosstodon.org/@regolith">
+      <i class="fab fa-mastodon"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Github Issues" aria-label="Github Issues">
+    <a class="text-white" target="_blank" href="https://github.com/regolith-linux/regolith-desktop/issues">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" href="https://github.com/regolith-linux">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Slack" aria-label="Slack">
+    <a class="text-white" target="_blank" href="https://regolith-linux.herokuapp.com/">
+      <i class="fab fa-slack"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2020 Regolith Project All Rights Reserved</small>
+        <small class="ml-1"><a href="https://regolith-linux.org/docs/policy-and-process/privacy/" target="_blank">Privacy Policy</a></small>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+<script src="/js/main.min.33abc8092065e5e26e4ffd57f1f3c02314a0585ac6195f49b875eab902392794.js" integrity="sha256-M6vICSBl5eJuT/1X8fPAIxSgWFrGGV9JuHXquQI5J5Q=" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>

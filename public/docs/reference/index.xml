@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith – Reference</title>
+    <title>Regolith 1.5 – Reference</title>
     <link>https://regolith-linux.org/docs/reference/</link>
-    <description>Recent content in Reference on Regolith</description>
+    <description>Recent content in Reference on Regolith 1.5</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/docs/reference/index.xml" rel="self" type="application/rss+xml" />
@@ -268,7 +268,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Rofi&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;/etc/regolith/styles/cahuella/rofi.rasi&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/etc/regolith/styles/lascaille/rofi.rasi&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;Defined in the &lt;code&gt;theme&lt;/code&gt; style file.&lt;/td&gt;
 &lt;td&gt;This can also be overridden directly in the i3 file if preferred.&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
@@ -366,7 +366,27 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;regolith-desktop&lt;/td&gt;
-&lt;td&gt;The root meta package for Regolith by which all other default packages are referenced.&lt;/td&gt;
+&lt;td&gt;The legacy (pre 1.5) root meta package for Regolith by which all other default packages are referenced.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-desktop-meta&lt;/td&gt;
+&lt;td&gt;The virtual package from which one of the following desktop packages can be installed into:&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-desktop-standard&lt;/td&gt;
+&lt;td&gt;The baseline desktop package that installs a reasonable subset of all Regolith functionality.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-desktop-complete&lt;/td&gt;
+&lt;td&gt;This installs all possible packages and adds roughly 180Mb to the installation footprint.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-desktop-minimal&lt;/td&gt;
+&lt;td&gt;This package is for system tweakers.  Some functionality may be broken with this package, but it allows users to remove more from their system.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;regolith-desktop-mobile&lt;/td&gt;
+&lt;td&gt;A slight tweak to the standard package, this adds support for features common on laptops such as batteries.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;regolith-gdm3-theme&lt;/td&gt;
@@ -826,7 +846,7 @@
 &lt;td&gt;Fields to render in drun mode in Rofi&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;rofi.drun-icon-theme&lt;/td&gt;
+&lt;td&gt;rofi.icon-theme&lt;/td&gt;
 &lt;td&gt;Rofi icon theme&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;

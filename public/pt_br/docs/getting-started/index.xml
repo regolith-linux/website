@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith – Começando</title>
+    <title>Regolith 1.5 – Começando</title>
     <link>https://regolith-linux.org/pt_br/docs/getting-started/</link>
-    <description>Recent content in Começando on Regolith</description>
+    <description>Recent content in Começando on Regolith 1.5</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/pt_br/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />

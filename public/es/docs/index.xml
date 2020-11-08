@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith – Documentación</title>
+    <title>Regolith 1.5 – Documentación</title>
     <link>https://regolith-linux.org/es/docs/</link>
-    <description>Recent content in Documentación on Regolith</description>
+    <description>Recent content in Documentación on Regolith 1.5</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/es/docs/index.xml" rel="self" type="application/rss+xml" />
@@ -2345,7 +2345,7 @@ i3-wm.workspace.03.name: 3: Chat
 &lt;td&gt;Fields to render in drun mode in Rofi&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;rofi.drun-icon-theme&lt;/td&gt;
+&lt;td&gt;rofi.icon-theme&lt;/td&gt;
 &lt;td&gt;Rofi icon theme&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;

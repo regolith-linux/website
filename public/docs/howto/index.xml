@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith – How To</title>
+    <title>Regolith 1.5 – How To</title>
     <link>https://regolith-linux.org/docs/howto/</link>
-    <description>Recent content in How To on Regolith</description>
+    <description>Recent content in How To on Regolith 1.5</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 04 Jan 2017 00:00:00 +0000</lastBuildDate>
     
@@ -183,6 +183,36 @@ $ cp /etc/regolith/i3/config ~/.config/regolith/i3/config
 &lt;li&gt;Run &lt;code&gt;update-alternatives --config x-terminal-emulator&lt;/code&gt; to see all available terminals installed on your system.&lt;/li&gt;
 &lt;li&gt;Select the terminal you prefer.&lt;/li&gt;
 &lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Find and Install Packages</title>
+      <link>https://regolith-linux.org/docs/howto/find-install-packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/docs/howto/find-install-packages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Regolith is a Debian-based system.  Debian packaging tools can be used to find and install packages.&lt;/p&gt;
+&lt;h1 id=&#34;find-package-via-the-command-line&#34;&gt;Find package via the command line&lt;/h1&gt;
+&lt;p&gt;The &lt;code&gt;apt&lt;/code&gt; command can be used to query installed or all packages:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt list --installed &amp;lt;package name&amp;gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# finds installed packages&lt;/span&gt;
+$ apt list &amp;lt;package name&amp;gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# finds all packages&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For example, to list all official Regolith looks that could be installed, run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt list regolith-look-*
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To see which status indicators are installed on your system, run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt list --installed i3xrocks-*
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;install-via-command-line&#34;&gt;Install via command-line&lt;/h1&gt;
+&lt;p&gt;To install packages via the command line, again we can us the &lt;code&gt;apt&lt;/code&gt; command, but must use sudo to gain the rights necessary for installation:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install &amp;lt;package name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install the battery status indicator, run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt install i3xrocks-battery
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;find-and-install-packages-via-gui-app&#34;&gt;Find and Install Packages via GUI app&lt;/h1&gt;
+&lt;p&gt;There are a number of apps that can provide a nice window interface on top of the apt packaging system, for example &lt;code&gt;synaptic&lt;/code&gt;.  Refer to the documentation for the tool of your choice to learn how to search and install packages.&lt;/p&gt;
 
       </description>
     </item>
@@ -561,6 +591,26 @@ Setting up i3xrocks-weather &lt;span style=&#34;color:#ce5c00;font-weight:bold&#
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h1&gt;
 &lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configrations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Assign a workspace to a specific Output (Display)</title>
+      <link>https://regolith-linux.org/docs/howto/workspace-on-output/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/docs/howto/workspace-on-output/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In order to configure i3 to assign a workspace to a given monitor, first find the device name for the monitor you wish to use &lt;code&gt;xrandr&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ xrandr --listmonitors
+Monitors: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;
+ 0: +*eDP-1 1920/309x1080/173+0+0  eDP-1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In this case, the output name is &lt;code&gt;eDP-1&lt;/code&gt;.  Next add a line like this into a staged copy of your i3 config file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;workspace &amp;quot;$ws1&amp;quot; output DP1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Log back in for the changes to take effect.&lt;/p&gt;
 
       </description>
     </item>
