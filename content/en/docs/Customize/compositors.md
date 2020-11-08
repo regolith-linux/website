@@ -23,9 +23,10 @@ At least the following three compositors should be available:
 
 | Package Name            | Backend           | Description |
 |-------------------|-----------------|------|
-| regolith-compositor-compton-glx   | [Compton](https://github.com/yshui/picom)        | The default compositor for Regolith.  This compositor is modern, maintained, and handles screen tearing.|
-| regolith-compositor-xcompmgr            | xcompmgr     | An early compositor that may offer more consistent performance if `compton-glx` is promblematic |
-| regolith-compositor-none      |   | A no-op package that does not run a Compositor. Best for absolute UI performance, at the cost of visual effects. |
+| regolith-compositor-picom-glx   | [Picom](https://github.com/yshui/picom)        | The default compositor for Regolith.  This compositor is modern, maintained, and handles screen tearing.|
+| regolith-compositor-compton-glx   | [Compton](https://github.com/yshui/picom)        | Previously the default compositor for Regolith.  This is an older version of Picom before it's name changed.|
+| regolith-compositor-xcompmgr            | xcompmgr     | An early compositor that may offer more consistent performance if more complex compositors are problematic. |
+| regolith-compositor-none      | N/A  | A no-op package that does not run a Compositor. Best for absolute UI performance, at the cost of visual effects. |
 
 ## Installing a Compositor
 
@@ -48,3 +49,7 @@ $ ps aux | grep xcompmgr
 ### Compton/Picom
 
 To provide your own Compton/Picom compositor config, copy the default or create your own and save it as `~/.config/regolith/compton/config`.  Upon next session it will be loaded instead of the default config `/etc/regolith/compton/config`.
+
+### xcompmgr
+
+To provide your own xcompmgr compositor config, copy the default or create your own and save it as  `~/.config/regolith/xcompmgr/config`
