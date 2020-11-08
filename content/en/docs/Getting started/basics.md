@@ -1,7 +1,7 @@
 ---
-title: "Basics"
-linkTitle: "Basics"
-weight: 2
+title: "Basic Usage"
+linkTitle: "Basic Usage"
+weight: 3
 description: >
   Learn the most important parts of Regolith first.
 ---
@@ -27,6 +27,10 @@ After logging in, you'll be at a blank screen with the bar at the bottom and som
 To focus on a running application, the <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> keybinding can be used to show a dialog of all running windows.  Simply select the desired window and the system will move to the window's containing workspace and set it's focus.
 
 <img class="shadow m-5" src="../regolith-screenshot-window-nav2.png" width="640px"/>
+
+### Create a new Workspace
+
+Workspaces (also known as virtual desktops in some desktop enviroments) are the primary way by which windows can be managed.  Each workspace provides a screen for an indepentent set of windows.  To create a workspace, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">`</span></span> will create and move to a new workspace.  <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">0 - 9</span></span> allows for navigation to specific workspaces.
 
 ### Find and Launch a File
 

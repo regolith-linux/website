@@ -1,45 +1,10 @@
 ---
-title: "Install"
-linkTitle: "Install"
-weight: 1
+title: "Upgrade"
+linkTitle: "Upgrade"
+weight: 2
 description: >
-  Install Regolith onto your computer.
+  Upgrade an existing install of Regolith.
 ---
-
-Based on your preferred installation method, follow one of the following two sections to install Regolith.  Unlike previous versions of Regolith, PPA and ISO installs result in different configurations.  The PPA install favors coexistence with the existing Ubuntu desktop, while the ISO release optimizes for less resource utilization.  Specifically, the ISO install is roughly 1Gb smaller and cold start RAM usage is reduced by about 200Mb as compared to the PPA installation.
-
-## Option 1: Regolith Linux via Installer
-
-At this time an [installer for Regolith 1.5](https://github.com/orgs/regolith-linux/projects/15) is not available, however the 1.4.1 installer can be upgraded to 1.5.
-
-1. Download an ISO image of [Regolith R1.4.1](https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1) <i class="fas fa-cloud-download-alt"></i> and then use an OS installation tool such as USB Creator to write the downloaded file into a USB device. Here are Ubuntu guides for performing this action in [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0), [Mac](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), and [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0).
-2. Reboot the computer and select the USB flash drive to boot from.
-3. Install or run the live environment by providing information when prompted during the setup process.  See [this tutorial](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop) to learn more about the installation process.
-4. When prompted, reboot the computer and login to your new Regolith environment!
-
-The system will automatically upgrade to Regolith 1.5 with the following commands:
-
-```bash
-$ sudo apt update && sudo apt dist-upgrade
-```
-
-## Option 2: Regolith Desktop via Repository (PPA)
-
-1. Add the Regolith release PPA to your system: (See below about [PPA sources](#ppa-sources) for other package archives.)
-<pre>
-$ sudo add-apt-repository ppa:regolith-linux/release
-</pre>
-2. Install the Regolith desktop package:<br><i>See below about other [desktop packages](#desktop-packages) available.</i></br>
-<pre>
-$ sudo apt install regolith-desktop-standard # or regolith-desktop-mobile for laptops
-</pre>
-4. Reboot the computer, and when logging in select the "Regolith" session in the gear menu (⚙️):
-
-![Ubuntu Login Screen](/regolith-screenshot-login.png)
-
-From this point, please proceed to the next section, [configuration](../configuration) to learn about the most common changes people like to make to Regolith.
-
-## Upgrades
 
 ### Regolith 1.4.1 -> Regolith 1.5
 
@@ -51,7 +16,7 @@ $ sudo apt update && sudo apt dist-upgrade
 
 After performing the update, log back in to your system.  However, if you have staged your own i3 config file or Xresources root, read the below section `Upgrading with Customizations`.
 
-### Regolith 1.0 - 1.2 -> Regolith 1.4
+### Regolith 1.0 - 1.2 -> Regolith 1.5
 
 To upgrade from Regolith 1.0 - 1.2, the PPA URL must be changed and then new package versions are applied by the package manager:
 ```bash
@@ -134,31 +99,3 @@ $ sudo apt purge regolith-desktop && sudo apt autoremove
 $ sudo add-apt-repository --remove ppa:regolith-linux/release
 ```
 4. You can now safely delete the directory `~/.config/regolith`.
-
-## PPA Sources
-
-There are 4 sources for Regolith packages.  The `release` PPA is recommended for most users, but another may be better for you based on your needs.  Here is a description of each PPA.
-
-| Name | PPA URI | Freshness | Stability | Description |
-|------|---------|-----------|-----------|-------------|
-| Unstable | <span class="text-nowrap">`ppa:regolith-linux/unstable`</span> | <span class="badge badge-primary">Very High</span> | <span class="badge badge-secondary">Low</span> | The `unstable` PPA is recommended for project developers and anyone that's alright with troubleshooting their own system and doesn't mind some problems from time to time. |
-| Stable | `ppa:regolith-linux/stable` | <span class="badge badge-primary">High</span> | <span class="badge badge-secondary">Medium</span> | The `stable` PPA is for those that would like the latest features, even between official releases. |
-| Release | <span class="text-nowrap">`ppa:regolith-linux/release`</span> | <span class="badge badge-primary">Low</span> | <span class="badge badge-secondary">High</span> | The `release` PPA provides bug fixes as they occur and feature updates upon release. |
-| r1.3 | `ppa:regolith-linux/r1.3` | <span class="badge badge-primary">Very Low</span> | <span class="badge badge-secondary">Very High</span> | The `r1.3` PPA is locked to the 1.3 release and will not be updated except for critical bug fixes. |
-
-## Desktop Packages
-
-Starting with Regolith 1.5, there are a few different desktop packages that users can choose from to get specific package selections for their system and use case.
-
-| Package | Description |
-|---------|-------------|
-|`regolith-desktop` | Legacy package, no status indicators.  Not recommended for new users. |
-|`regolith-desktop-standard` | A reasonable set of default packages for desktop users. |
-|`regolith-desktop-minimal` | The bare minimum package set for power users. Not recommended. |
-|`regolith-desktop-mobile` | Some additional packages on top of standard for laptop users. |
-|`regolith-desktop-complete` | Includes all of the official looks and status indicators available. |
-
-
-# ARM support
-
-Regolith packages are built for `i386`, `amd64`, `arm64`, and `armhf` architectures.  A stand-alone installer is not available for ARM-based systems such as the Rasberry Pi, however Regolith can be installed via PPA into any existing Ubuntu system running on the supported architectures.  [See above](#option-2-ppa) about installing Regolith via PPA.
