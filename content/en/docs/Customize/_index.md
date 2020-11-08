@@ -16,6 +16,10 @@ In addition to the content in this section, refer to the [tutorials](../howto) f
 
 The highest level change in the way Regolith looks is called a "look".  This ties together color, typeface, GTK theme and icons into a packagable unit known as a <code>look</code>.  A few looks ship in the Regolith PPA, the default for R1.4 being called `lascaille`.  Regolith Looks can be installed from the package manager.  The official Looks follow the naming convention of `regolith-look-`.  Installed Regolith looks can easily be set via the Look dialog; `<super>`-'<alt>'-l.
 
+## Keybindings and Window Behavior
+
+Regolith uses the i3 window manager to display and interface with application windows.  Regolith uses the standard version of i3-gaps.  Any configuration available to i3-gaps should also work with Regolith, however keep in mind Regolith adds additional configuration via Xresources that may need to be adapted for some customizations.  To learn what configuration options are available in i3, consult [the user guide](https://i3wm.org/docs/userguide.html).
+
 ### Styles
 
 Regolith <code>looks</code> are a collection of style definitions that are bundled together as a cohesive whole.  But, what if you want to mix and match from different looks or make small tweaks to an existing look?  Well, the Xresource files that define the looks can be modified directly.  For example, to continue to use the Cahuella look but change the default font from Source Code Pro to, say Ubuntu Mono, one would just need to modify the typeface Xresource file to specify the new font (assuming it's already installed on the system).
