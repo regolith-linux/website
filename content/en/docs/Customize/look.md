@@ -25,7 +25,11 @@ If you pay attention to the output of `apt` you may notice that in addition to i
 
 ## Switching to a Look
 
-Once a `look` has been installed, a utility command called `regolith-look` can be used to enable it.  To enable the `ubuntu` `look` installed in the previous step, try the following:
+Once a `look` has been installed, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">l</span></span> will bring up a dialog in which a Look can be set from all that are installed.
+
+<img class="shadow m-5" src="../regolith-select-look.png" width="640px"/>
+
+Setting looks via the command line is also supported.  A utility command called `regolith-look` can be used to enable it.  To enable the `ubuntu` `look` installed in the previous step, try the following:
 ```bash
 $ regolith-look set ubuntu
 $ regolith-look refresh
