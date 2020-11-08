@@ -18,6 +18,6 @@ Windows can also be directly moved to other workspaces.  The bar will indicate a
 
 Users can navigate to windows via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">[0-9]</span></span> but can also directly navigate to a specific window with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span>.
 
-## Quit an Application.
+## Quit an Application
 
 Any application can be safely closed via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">q</span></span>.  Crashed or otherwise unresponsive apps can be killed via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">q</span></span>.
