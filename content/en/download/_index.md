@@ -11,16 +11,19 @@ menu:
 		<span class="h4 mb-0">
 <h1><i class="fas fa-cloud-download-alt ml-2 "></i> Get Regolith</h1>
 
-<p>Regolith is available as a <b>stand-alone ISO</b> that can be installed as a complete Linux operating system, and as a "<b>personal package archive</b>" (PPA) that installs the Regolith desktop into an existing Ubuntu 18.04 or 20.04 system.  This page provides a quick start for installs and upgrades but <a href="../docs/getting-started/install">more thorough documentation</a> is available.</p>
+<p>Regolith is packaged in two forms:</p>
 </span>
 	</div>
 </section>
 
+<div class="container text-center p-5">
+<p>Regolith is available as a <b>stand-alone ISO</b> that can be installed as a complete Linux operating system, and as a "<b>personal package archive</b>" (PPA) that installs the Regolith desktop into an existing Ubuntu 18.04, 20.04, or 20.10 system.  This page provides a quick start for installs and upgrades but <a href="../docs/getting-started/install">more detailed documentation</a> is available.</p>
+</div>
 
 <div class="container">
   <div class="row">
     <div class="col-sm p-5">
-				<h2><i class="fas fa-compact-disc"></i> Regolith Linux ISO</h2>
+				<h2><i class="fas fa-compact-disc"></i> Regolith Linux 1.4.1 ISO</h2>
 				<p>
 					Regolith can be installed as a stand-alone operating system, and is a good option for the following scenarios:
 					<ul>
@@ -35,9 +38,9 @@ menu:
 			</th>
     </div>
     <div class="col-sm p-5">
-			<h2><i class="fas fa-download"></i> Regolith Desktop PPA</h2>
+			<h2><i class="fas fa-download"></i> Regolith Desktop 1.5 PPA</h2>
 			<p>
-					Regolith can be installed in an existing Ubuntu 18.04 or 20.04 system by adding a Regolith PPA and installing the <code>regolith-desktop</code> package.  Advantages to Regolith via PPA:
+					Regolith can be installed in an existing Ubuntu 18.04, 20.04, or 20.10 system by adding a Regolith PPA and installing the <code>regolith-desktop</code> package.  Advantages to Regolith via PPA:
 					<ul>
 						<li>More compatibility with standard Ubuntu</li>
 						<li>Easy interop with other installed desktop environments</li>
@@ -47,8 +50,8 @@ menu:
 					To install Regolith Desktop from the <code>release</code> PPA:
 					<pre class="border rounded p-2">
 $ sudo add-apt-repository ppa:regolith-linux/release
-$ sudo apt install regolith-desktop i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time</pre>
-					Learn more about <a href="https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories">adding PPAs here</a>, and more about <a href="../docs/getting-started/install/#ppa-sources">PPAs that Regolith provides here</a>.
+$ sudo apt install regolith-desktop-standard</pre>
+					Learn more about <a href="https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories">adding PPAs here</a>, and more about <a href="../docs/getting-started/install/#ppa-sources">PPAs that Regolith provides here</a>. Staring with Regolith 1.5, there are 4 varations of the desktop that can be installed based on system and user needs.  <a href="../docs/getting-started/install/#desktop-packages">See here</a> for details about all desktop packages available.
 				</p>
     </div>
   </div>
