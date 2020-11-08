@@ -15,7 +15,12 @@ description: >
 |regolith-compositor-compton-glx | A compositor configuration for Picom (recently renamed from Compton).
 |regolith-compositor-xcompmgr | A compositor configuration for xcompmgr. |
 |regolith-compositor-none | A compositor configuration for no compositor. |
-|regolith-desktop | The root meta package for Regolith by which all other default packages are referenced. |
+|regolith-desktop | The legacy (pre 1.5) root meta package for Regolith by which all other default packages are referenced. |
+|regolith-desktop-meta | The virtual package from which one of the following desktop packages can be installed into: |
+|regolith-desktop-standard | The baseline desktop package that installs a reasonable subset of all Regolith functionality. |
+|regolith-desktop-complete | This installs all possible packages and adds roughly 180Mb to the installation footprint. |
+|regolith-desktop-minimal | This package is for system tweakers.  Some functionality may be broken with this package, but it allows users to remove more from their system. |
+|regolith-desktop-mobile | A slight tweak to the standard package, this adds support for features common on laptops such as batteries. |
 |regolith-gdm3-theme | An optional package for an updated login screen. |
 |regolith-gnome-flashback | A customization of `i3-gnome-flashback` for Regolith.  Session init logic lives here. |
 |regolith-i3-gaps-config | Regolith's version of the i3 config file. |
