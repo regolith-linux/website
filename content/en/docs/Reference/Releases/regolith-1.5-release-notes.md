@@ -3,13 +3,13 @@ title: "1.5 Release Notes"
 linkTitle: "1.5 Release Notes"
 weight: 1
 description: >
-  Release notes for Regolith 1.4.
+  Release notes for Regolith 1.5.
 ---
 
 Regolith R1.5 is a feature release which includes several improvements and optimizations.  To summarize, Regolith 1.5 ships simpler workspace management, a Rofi-based Look switcher, and numerous internal optimizations and cleanup.  Read below for more details.
 
 {{% pageinfo %}}
-If you maintain your own i3 config file, note that the copy shipped in Regolith 1.4 has changed in that it reads more configuration from Xresources.  The intention of this change is to require a full copy of the i3 config file <b>less often</b>, by allowing users to customize the system via Xresource overrides instead of copy/edit of the i3 config file.
+If you maintain your own i3 config file, note that the copy shipped in Regolith 1.5 has changed in that it reads more configuration from Xresources.  The intention of this change is to require a full copy of the i3 config file <b>less often</b>, by allowing users to customize the system via Xresource overrides instead of copy/edit of the i3 config file.
 {{% /pageinfo %}}
 
 ## Known Issues
@@ -21,56 +21,53 @@ Issues and fixes are being tracked in [this project](https://github.com/orgs/reg
 <table class="table">
     <tbody>
         <tr>
-            <td>Move to Next Free Workspace</td>
-            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
-            <td>A typical part of managing workspaces in an i3-based desktop is moving to unused workspaces and then loading some applications. Before this feature, a user has to determine which unused workspace they prefer.  This is done by scanning the list of existing used workspaces to determine an unused one. Now, the system can do this automatically.  The `<super>-\`` keybinding will move to the next free workspace.  `<super><alt>-``` will move the focused window into the next free workspace.</td>
+            <td>Next Free Workspace</td>
+            <td colspan="2">A typical part of managing workspaces in an i3-based desktop is moving to unused workspaces and then loading some applications. Before this feature, a user has to determine which unused workspace they prefer.  This is done by scanning the list of existing used workspaces to determine an unused one. Now, the system can do this automatically.  The <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">`</span></span> keybinding will move to the next free workspace.  <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">`</span></span> will move the focused window into the next free workspace.</td>
         </tr>
         <tr>
             <td>View and Change Looks via Rofi</td>
-            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
+            <td><a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-select-look.png"/></td>
             <td>Looks can be changed now via a Rofi dialog rather than having to configure the Xresource override via the command-line.  To do this, use keybinding `<super>-<alt>l` and then select from the dialog to load a Look.</td>
         </tr>
         <tr>
-            <td>GSettings Overrides</td>
-            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
-            <td>Regolith now uses [gsettings overrides](https://help.gnome.org/admin/system-admin-guide/stable/overrides.html.en) to configure various GNOME settings for use with Regolith.  In previous versions of Regolith, settings were written globally to the user session from within the Regolith startup code.  This could cause issues if the user works in multiple desktop environments.  Now, Regolith GNOME settings are defined in an override file that is only in effect while using a Regolith session.  This allows switching between desktop environments without settings from Regolith impacting other environments.</td>
+            <td>GSettings Overrides</td>            
+            <td colspan="2">Regolith now uses [gsettings overrides](https://help.gnome.org/admin/system-admin-guide/stable/overrides.html.en) to configure various GNOME settings for use with Regolith.  In previous versions of Regolith, settings were written globally to the user session from within the Regolith startup code.  This could cause issues if the user works in multiple desktop environments.  Now, Regolith GNOME settings are defined in an override file that is only in effect while using a Regolith session.  This allows switching between desktop environments without settings from Regolith impacting other environments.</td>
         </tr>
         <tr>
             <td>New Looks</td>
-            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
+            <td>
+              <a href="../regolith-dracula.png"><img class="shadow p-2" src="../regolith-dracula.png"/>
+              <a href="../regolith-gruvbox.png"><img class="shadow p-2" src="../regolith-gruvbox.png"/>
+              <a href="../regolith-pop-os.png"><img class="shadow p-2" src="../regolith-pop-os.png"/>
+            </td>
             <td>Users have contributed some new Looks to Regolith: dracula, gruvbox, and pop-os.  Each of these looks presents a distinctive color palate, typeface, and GTK theme.</td>
         </tr>
         <tr>
             <td>i3-gaps upgraded to 4.18.2</td>
-            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
-            <td>See i3-gaps [release notes here](https://github.com/Airblader/i3/blob/a4a1a44275ea402b25d2d1365e1163e496024358/RELEASE-NOTES-4.18.2).</td>
+            <td colspan="2">See i3-gaps <a href="https://github.com/Airblader/i3/blob/a4a1a44275ea402b25d2d1365e1163e496024358/RELEASE-NOTES-4.18.2">release notes here</a>.</td>
         </tr>
         <tr>
             <td>More Refined Customizations</td>
-            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
-            <td>Numerous small chnages allow more granual system customization, such as specifying the temperature unit, custom Compositor settings, and a more comprehensive way of changing i3 keybindings without having to copy the entire config file.</td>
+            <td colspan="2">Numerous small chnages allow more granual system customization, such as specifying the temperature unit, custom Compositor settings, and a more comprehensive way of changing i3 keybindings without having to copy the entire config file.</td>
         </tr>
         <tr>
             <td>More Desktop Environment Packages</td>
-            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
-            <td>Tthe following packages can be installed in place of `regolith-desktop` for specific sets of packages based on user needs: `regolith-desktop-minimal`, `regolith-desktop-standard`, `regolith-desktop-mobile`, and `regolith-desktop-complete`</td>
+            <td colspan="2">The following packages can be installed in place of <code>regolith-desktop</code> for specific sets of packages based on user needs: <code>regolith-desktop-minimal</code>, <code>regolith-desktop-standard</code>, <code>regolith-desktop-mobile</code>, and <code>regolith-desktop-complete</code></td>
         </tr>
         <tr>
             <td>New default compositor: Picom version 8</td>
-            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
-            <td>See Picom's [releaes notes here](https://github.com/yshui/picom/releases).</td>
+            <td colspan="2">See Picom's <a href="https://github.com/yshui/picom/releases">releaes notes here</a>.</td>
         </tr>
         <tr>
             <td>Remontoire upgraded to version 1.4</td>
-            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
-            <td>Includes better multi-monitor support and other bug fixes.</td>
+            <td colspan="2">Includes better multi-monitor support and other bug fixes.</td>
         </tr>
           <tr>
-            <td>Optional integration with `td-cli`</td>
-            <td><!--<a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-remontoire-screenshot-131.png"/></a>--></td>
+            <td>Optional integration with <b>td-cli</b></td>
+            <td><a href="../regolith-td.png"><img class="shadow" src="../regolith-td.png"/></td>
             <td>Access a simple todo app via Rofi.</td>
         </tr>
-
+      </tr>
     </tbody>
 </table>
 
