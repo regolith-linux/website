@@ -23,13 +23,6 @@
         
         
         &lt;p&gt;Regolith R1.5 is a feature release which includes several improvements and optimizations.  To summarize, Regolith 1.5 ships simpler workspace management, a Rofi-based Look switcher, and numerous internal optimizations and cleanup.  Read below for more details.&lt;/p&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;If you maintain your own i3 config file, note that the copy shipped in Regolith 1.5 has changed in that it reads more configuration from Xresources.  The intention of this change is to require a full copy of the i3 config file &lt;b&gt;less often&lt;/b&gt;, by allowing users to customize the system via Xresource overrides instead of copy/edit of the i3 config file.&lt;/p&gt;
-
-&lt;/div&gt;
-
 &lt;h2 id=&#34;known-issues&#34;&gt;Known Issues&lt;/h2&gt;
 &lt;p&gt;Issues and fixes are being tracked in &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/13&#34;&gt;this project&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
@@ -41,7 +34,7 @@
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;View and Change Looks via Rofi&lt;/td&gt;
-            &lt;td&gt;&lt;a href=&#34;../regolith-remontoire-screenshot-131.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-select-look.png&#34;/&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-select-look.png&#34;&gt;&lt;img class=&#34;shadow&#34; width=&#34;640px&#34; src=&#34;../regolith-select-look.png&#34;/&gt;&lt;/td&gt;
             &lt;td&gt;Looks can be changed now via a Rofi dialog rather than having to configure the Xresource override via the command-line.  To do this, use keybinding `&lt;super&gt;-&lt;alt&gt;l` and then select from the dialog to load a Look.&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
@@ -51,9 +44,9 @@
         &lt;tr&gt;
             &lt;td&gt;New Looks&lt;/td&gt;
             &lt;td&gt;
-              &lt;a href=&#34;../regolith-dracula.png&#34;&gt;&lt;img class=&#34;shadow p-2&#34; src=&#34;../regolith-dracula.png&#34;/&gt;
-              &lt;a href=&#34;../regolith-gruvbox.png&#34;&gt;&lt;img class=&#34;shadow p-2&#34; src=&#34;../regolith-gruvbox.png&#34;/&gt;
-              &lt;a href=&#34;../regolith-pop-os.png&#34;&gt;&lt;img class=&#34;shadow p-2&#34; src=&#34;../regolith-pop-os.png&#34;/&gt;
+              &lt;a href=&#34;../regolith-dracula.png&#34;&gt;&lt;img class=&#34;shadow p-2&#34; width=&#34;640px&#34; src=&#34;../regolith-dracula.png&#34;/&gt;
+              &lt;a href=&#34;../regolith-gruvbox.png&#34;&gt;&lt;img class=&#34;shadow p-2&#34; width=&#34;640px&#34; src=&#34;../regolith-gruvbox.png&#34;/&gt;
+              &lt;a href=&#34;../regolith-pop-os.png&#34;&gt;&lt;img class=&#34;shadow p-2&#34; width=&#34;640px&#34; src=&#34;../regolith-pop-os.png&#34;/&gt;
             &lt;/td&gt;
             &lt;td&gt;Users have contributed some new Looks to Regolith: dracula, gruvbox, and pop-os.  Each of these looks presents a distinctive color palate, typeface, and GTK theme.&lt;/td&gt;
         &lt;/tr&gt;
@@ -63,7 +56,7 @@
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;More Refined Customizations&lt;/td&gt;
-            &lt;td colspan=&#34;2&#34;&gt;Numerous small chnages allow more granual system customization, such as specifying the temperature unit, custom Compositor settings, and a more comprehensive way of changing i3 keybindings without having to copy the entire config file.&lt;/td&gt;
+            &lt;td colspan=&#34;2&#34;&gt;Numerous small changes allow more granular system customization, such as specifying the temperature unit, custom Compositor settings, and a more comprehensive way of changing i3 keybindings without having to copy the entire config file.&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;More Desktop Environment Packages&lt;/td&gt;
@@ -75,12 +68,17 @@
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;Remontoire upgraded to version 1.4&lt;/td&gt;
-            &lt;td colspan=&#34;2&#34;&gt;Includes better multi-monitor support and other bug fixes.&lt;/td&gt;
+            &lt;td colspan=&#34;2&#34;&gt;Includes better multi-monitor support and other bug fixes and enhancements.&lt;/td&gt;
         &lt;/tr&gt;
-          &lt;tr&gt;
+        &lt;tr&gt;
             &lt;td&gt;Optional integration with &lt;b&gt;td-cli&lt;/b&gt;&lt;/td&gt;
-            &lt;td&gt;&lt;a href=&#34;../regolith-td.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-td.png&#34;/&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-td.png&#34;&gt;&lt;img class=&#34;shadow&#34; width=&#34;640px&#34; src=&#34;../regolith-td.png&#34;/&gt;&lt;/td&gt;
             &lt;td&gt;Access a simple todo app via Rofi.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Documentation of development process.&lt;/td&gt;
+            &lt;td colspan=&#34;2&#34;&gt;The &lt;a href=&#34;../../../policy-and-process/development/&#34;&gt;Regolith development process&lt;/a&gt; is now better documented to enable greater transparency and inclusion.&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tr&gt;
     &lt;/tbody&gt;
