@@ -8,10 +8,6 @@ description: >
 
 Regolith R1.5 is a feature release which includes several improvements and optimizations.  To summarize, Regolith 1.5 ships simpler workspace management, a Rofi-based Look switcher, and numerous internal optimizations and cleanup.  Read below for more details.
 
-{{% pageinfo %}}
-If you maintain your own i3 config file, note that the copy shipped in Regolith 1.5 has changed in that it reads more configuration from Xresources.  The intention of this change is to require a full copy of the i3 config file <b>less often</b>, by allowing users to customize the system via Xresource overrides instead of copy/edit of the i3 config file.
-{{% /pageinfo %}}
-
 ## Known Issues
 
 Issues and fixes are being tracked in [this project](https://github.com/orgs/regolith-linux/projects/13).
@@ -26,7 +22,7 @@ Issues and fixes are being tracked in [this project](https://github.com/orgs/reg
         </tr>
         <tr>
             <td>View and Change Looks via Rofi</td>
-            <td><a href="../regolith-remontoire-screenshot-131.png"><img class="shadow" src="../regolith-select-look.png"/></td>
+            <td><a href="../regolith-select-look.png"><img class="shadow" width="640px" src="../regolith-select-look.png"/></td>
             <td>Looks can be changed now via a Rofi dialog rather than having to configure the Xresource override via the command-line.  To do this, use keybinding `<super>-<alt>l` and then select from the dialog to load a Look.</td>
         </tr>
         <tr>
@@ -36,9 +32,9 @@ Issues and fixes are being tracked in [this project](https://github.com/orgs/reg
         <tr>
             <td>New Looks</td>
             <td>
-              <a href="../regolith-dracula.png"><img class="shadow p-2" src="../regolith-dracula.png"/>
-              <a href="../regolith-gruvbox.png"><img class="shadow p-2" src="../regolith-gruvbox.png"/>
-              <a href="../regolith-pop-os.png"><img class="shadow p-2" src="../regolith-pop-os.png"/>
+              <a href="../regolith-dracula.png"><img class="shadow p-2" width="640px" src="../regolith-dracula.png"/>
+              <a href="../regolith-gruvbox.png"><img class="shadow p-2" width="640px" src="../regolith-gruvbox.png"/>
+              <a href="../regolith-pop-os.png"><img class="shadow p-2" width="640px" src="../regolith-pop-os.png"/>
             </td>
             <td>Users have contributed some new Looks to Regolith: dracula, gruvbox, and pop-os.  Each of these looks presents a distinctive color palate, typeface, and GTK theme.</td>
         </tr>
@@ -48,7 +44,7 @@ Issues and fixes are being tracked in [this project](https://github.com/orgs/reg
         </tr>
         <tr>
             <td>More Refined Customizations</td>
-            <td colspan="2">Numerous small chnages allow more granual system customization, such as specifying the temperature unit, custom Compositor settings, and a more comprehensive way of changing i3 keybindings without having to copy the entire config file.</td>
+            <td colspan="2">Numerous small changes allow more granular system customization, such as specifying the temperature unit, custom Compositor settings, and a more comprehensive way of changing i3 keybindings without having to copy the entire config file.</td>
         </tr>
         <tr>
             <td>More Desktop Environment Packages</td>
@@ -60,12 +56,17 @@ Issues and fixes are being tracked in [this project](https://github.com/orgs/reg
         </tr>
         <tr>
             <td>Remontoire upgraded to version 1.4</td>
-            <td colspan="2">Includes better multi-monitor support and other bug fixes.</td>
+            <td colspan="2">Includes better multi-monitor support and other bug fixes and enhancements.</td>
         </tr>
-          <tr>
+        <tr>
             <td>Optional integration with <b>td-cli</b></td>
-            <td><a href="../regolith-td.png"><img class="shadow" src="../regolith-td.png"/></td>
+            <td><a href="../regolith-td.png"><img class="shadow" width="640px" src="../regolith-td.png"/></td>
             <td>Access a simple todo app via Rofi.</td>
+        </tr>
+        <tr>
+            <td>Documentation of development process.</td>
+            <td colspan="2">The <a href="../../../policy-and-process/development/">Regolith development process</a> is now better documented to enable greater transparency and inclusion.</td>
+            <td></td>
         </tr>
       </tr>
     </tbody>
