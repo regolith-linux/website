@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith – Policy and Process</title>
+    <title>Regolith 1.5 – Policy and Process</title>
     <link>https://regolith-linux.org/docs/policy-and-process/</link>
-    <description>Recent content in Policy and Process on Regolith</description>
+    <description>Recent content in Policy and Process on Regolith 1.5</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/docs/policy-and-process/index.xml" rel="self" type="application/rss+xml" />
@@ -93,6 +93,146 @@ s&lt;/p&gt;
         
         
         &lt;p&gt;Regolith Linux is an open source project created and maintained by volunteers.  At this time there is no method for getting paid support.  &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/issues&#34;&gt;GitHub issues&lt;/a&gt; and the &lt;a href=&#34;https://regolith-linux.herokuapp.com/&#34;&gt;Slack channel&lt;/a&gt; are recommended ways of finding fixes or asking questions.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Development</title>
+      <link>https://regolith-linux.org/docs/policy-and-process/development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/docs/policy-and-process/development/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;tasks&#34;&gt;Tasks&lt;/h1&gt;
+&lt;h2 id=&#34;triage-bugs-feature-requests&#34;&gt;Triage Bugs, Feature Requests&lt;/h2&gt;
+&lt;p&gt;This task is essentially adding a first layer of organization from inputs from users.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Notice of bugs and feature requests come as email/slack notifications when the bugs are created.&lt;/li&gt;
+&lt;li&gt;Review each incoming gh issue within two days, determine if there is an easy fix.  (best effort)&lt;/li&gt;
+&lt;li&gt;For issues without an easy fix, add relevant tags, provide some suggestions, give some time for community members to respond with suggestions.&lt;/li&gt;
+&lt;li&gt;For issues that result in a code change (feature/bug fix), make reference to GH URL for issue in commit so that GH will link to it from isssue&lt;/li&gt;
+&lt;li&gt;Fix/Feature first goes to &lt;code&gt;unstable&lt;/code&gt; (see steps below that describe this process).  When feature ready, add note to original github issue stating that feature/fix is ready for testing.&lt;/li&gt;
+&lt;li&gt;If no response or no issue reported after a few weeks, change is eligible for promotion to &lt;code&gt;stable&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;take-user-contributed-pr&#34;&gt;Take user-contributed PR&lt;/h2&gt;
+&lt;p&gt;We accept user contributions with the following steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Get notified of PR from email&lt;/li&gt;
+&lt;li&gt;Identify if code change results in general utility for most users, or is more of a personal concern.  If the latter, inform the user politely as such and that the PR will not be merged.  Also consider the complexity and volatility of the change.  Does the change make maintaining Regolith more difficult (things like version specific changes, changes that require Ubuntu-only packages or behavior, changes that are difficult to test, features that rely on specific hw configurations, etc.)&lt;/li&gt;
+&lt;li&gt;Assuming PR passes these tests, do a PR review.  Iterate until the changes is ready for inclusion.&lt;/li&gt;
+&lt;li&gt;Merge the change, publish package to &lt;code&gt;unstable&lt;/code&gt; (see below), inform user in PR that package is available for testing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;publish-package-version-to-unstable&#34;&gt;Publish Package Version to &lt;code&gt;unstable&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;This task describes how code sitting on a computer makes it into a package that can be distributed to other users via the package manager facility.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pull commits locally if from others, or whatever local commits if from me.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gbp dch&lt;/code&gt; to update changelog with git commits.&lt;/li&gt;
+&lt;li&gt;Edit &lt;code&gt;/debian/changelog&lt;/code&gt; with correct version and Ubuntu Release (See Rule 1 below).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gbp buildpackage&lt;/code&gt; to locally test package build.  Address all lintian errors and warnings.  Some warnings cannot be fixed, or at least I don&#39;t yet understand how to fix them.&lt;/li&gt;
+&lt;li&gt;If during package build testing, changes are required, add them to existing commit (&lt;code&gt;git commit --amend&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Once package build is ready, push package changes to GitHub&lt;/li&gt;
+&lt;li&gt;Go to local clone of &lt;code&gt;regolith-builder&lt;/code&gt; repo, run &lt;code&gt;build.sh&lt;/code&gt; script to generate source package and upload to launchpad (this step utilizes Launchpad PKI and as of 7/2/2020 only kgilmer has access to publish packages to Regolith PPAs).  Example invocation: &lt;code&gt;./build.sh package-model-R1.4.2.json ppa:regolith-linux/ubuntu/unstable /tmp/bb56 regolith-compositor-compton-glx&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Once package is uploaded, monitor email for build error notifications.  Iterate on package dev if errors.&lt;/li&gt;
+&lt;li&gt;Once package has built in &lt;code&gt;unstable&lt;/code&gt;, sync package versions (see below)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;synchronize-package-versions-across-ubuntu-releases&#34;&gt;Synchronize Package Versions Across Ubuntu Releases&lt;/h2&gt;
+&lt;p&gt;When a package is submitted to laundpad.net to be built into a PPA, the package is only built for the Ubuntu version (Bionic, Focal, etc.) that is listed in the package&#39;s changelog file.  Here is an example changelog (&lt;code&gt;debian/changelog&lt;/code&gt;) snippet:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;regolith-system (1.4.0.4-1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add gbp conf file, cleanup.
+
+ -- Regolith Linux &amp;lt;regolith.linux@gmail.com&amp;gt;  Sat, 06 Jun 2020 12:39:39 -0700
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here you can see &lt;code&gt;focal&lt;/code&gt; is listed after the package version.  This means that when this package source was uploaded via &lt;code&gt;dput&lt;/code&gt;, launchpad.net built it for the focal release.  Users running other versions of Ubuntu will not see this as an update for their system.  Because Regolith often supports 2 or 3 different releases, Launchpad needs to be instructed to build the packages for our other supported Ubuntu versions as well.  For packages that differ based on Ubuntu version (such as &lt;code&gt;regolith-desktop&lt;/code&gt;) typically there is a seperate branch with a unique changelog entry for each Ubuntu target.  However for almost all other packages, each is able to run as-is on all supported Ubuntu versions, so we do not need to maintain anything per version, but we do have to copy the package.&lt;/p&gt;
+&lt;p&gt;To do this we simply copy the package from the &lt;em&gt;source&lt;/em&gt; Ubuntu version to the &lt;em&gt;target&lt;/em&gt; Ubuntu version within the &lt;em&gt;same&lt;/em&gt; PPA.  This task is error prone and tedious, because the time it takes for launchpad.net to build a package greatly varies depending on load and other factors.  A package cannot be copied until it&#39;s completely finished building.  Attempting to do so will result in an error. Additionally, packages can only be copied from older Ubuntu versions to newer versions.  So, we must first build a package for the earliest supported version, and then copy it in order to each later version.  All the while keeping the timing constraints in mind so we do not perform an operation on a package that hasn&#39;t completed building (copying is also considered building in launchpad.net).&lt;/p&gt;
+&lt;p&gt;It may be possible to write a program that can monitor the state of all packages within a PPA and attempt to copy packages to keep versions consistent, but this program has yet to be written. The current process is to run a script that performs the copies from older to newer versions and simply sleeps between operations hoping to get lucky with the package build times.  This makes it slow and error prone.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For the package recently published to a PPA, verify that the package has completed building, and that it is on the oldest possible version.&lt;/li&gt;
+&lt;li&gt;From the &lt;code&gt;regolith-builder&lt;/code&gt; repo, run the &lt;code&gt;sync-pkg-version.sh&lt;/code&gt; script, and specify the package name.  The following example will copy the package &lt;code&gt;regolith-compoisitor-compton-glx&lt;/code&gt; from &lt;code&gt;bionic&lt;/code&gt; to &lt;code&gt;eoan&lt;/code&gt;, and then &lt;code&gt;focal&lt;/code&gt; (note this will change in the future with Ubuntu versions) in the &lt;code&gt;unstable&lt;/code&gt; PPA:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ ./sync-pkg-version.sh unstable regolith-compositor-compton-glx
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;It&#39;s configured to pause 20 minutes between copies, so will take some time to complete.  When it&#39;s done, check the PPA page (&lt;a href=&#34;https://launchpad.net/~regolith-linux/+archive/ubuntu/unstable&#34;&gt;unstable&lt;/a&gt;, &lt;a href=&#34;https://launchpad.net/~regolith-linux/+archive/ubuntu/stable&#34;&gt;stable&lt;/a&gt;, &lt;a href=&#34;https://launchpad.net/~regolith-linux/+archive/ubuntu/release&#34;&gt;release&lt;/a&gt;) to determine if the copies were successful.  If not, run the script again until all supported Ubuntu versions have the same version.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;promote-packages-from-unstable-to-stable&#34;&gt;Promote Packages from &lt;code&gt;unstable&lt;/code&gt; to &lt;code&gt;stable&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Once a package has been tested in &lt;code&gt;unstable&lt;/code&gt; by the developer of the change (and possibly others), it can be promoted to &lt;code&gt;stable&lt;/code&gt; (and eventually &lt;code&gt;release&lt;/code&gt;, but this requires planning and coordination).  The &lt;code&gt;stable&lt;/code&gt; PPA is intended to provide &amp;ldquo;beta&amp;rdquo; level quality of package updates for those that are willing to add some risk in exchange for earlier fixes and features.  Most users are expected to use &lt;code&gt;release&lt;/code&gt; and so the pool of users should be relatively small.  This gives more time for testing and a smaller risk when issues are discovered.&lt;/p&gt;
+&lt;p&gt;Package promotion is essentially just copying packages, as we did in the task above to sync a package&#39;s versions across Ubuntu versions.  The difference is that instead of copying between Ubuntu versions, we are first copying from source PPA to target PPA (same Ubuntu version), and then across Ubuntu versions within the target PPA.&lt;/p&gt;
+&lt;p&gt;There is a script in &lt;code&gt;regolith-builder&lt;/code&gt; specific to this task.  It essentially works as the package sync script, it&#39;s just implementing the copies as described above.  Example that promotes &lt;code&gt;regolith-system&lt;/code&gt; from &lt;code&gt;unstable&lt;/code&gt; to &lt;code&gt;stable&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ ./promote-stage.sh unstable stable regolith-system 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Note that this script has the same limitations and fragility of the sync versions script.  Timing copy operations can fail and so it&#39;s necessary to verify each time that the promotion worked as expected.  If the package was copied successfully to the target PPA but subsequent sync operations failed, then run the &lt;code&gt;sync-pkg-version.sh&lt;/code&gt; script to clean up the package versions in the target PPA.&lt;/p&gt;
+&lt;h2 id=&#34;plan-a-subsequent-regolith-release&#34;&gt;Plan a Subsequent Regolith Release&lt;/h2&gt;
+&lt;p&gt;Keeping it simple, we rely on the &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects&#34;&gt;GitHub project planning feature&lt;/a&gt; available in the Regolith organization.  Workflow:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a new project to house and manage issues related to the release.  Generally 3 columns seems to work well (not done, in process, complete).&lt;/li&gt;
+&lt;li&gt;Go through the GitHub issues and determine which issues have or should be fixed in the project created in the above step.  For those issues, specify the project in the drop-down to the right.&lt;/li&gt;
+&lt;li&gt;As issues are created, continue to add them to the new project as-needed.&lt;/li&gt;
+&lt;li&gt;Any features that are expected to be in the release, and do not already have issues, need to have issues created so they can be tracked in the project.  Ideally, the project should define all changes that were made from the previous version.&lt;/li&gt;
+&lt;li&gt;As bugs get fixed and features get implemented, use the project facility to synchronize the issue status with the project status.&lt;/li&gt;
+&lt;li&gt;Once the scope is finalized for the release and all associated issues are in the &amp;ldquo;done&amp;rdquo; column, the project is complete.&lt;/li&gt;
+&lt;li&gt;Use the project link to communicate with users and other contributors the status of the release or an issue associated with the release.&lt;/li&gt;
+&lt;li&gt;Once a project is complete (has been shipped, no critical bugs), the project can be marked as complete.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;test-a-snapshot-of-regolith-for-a-release&#34;&gt;Test a Snapshot of Regolith for a Release&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;stable&lt;/code&gt; PPA is a staging area for the next upcoming Regolith release.  Packages should not be copied into the &lt;code&gt;release&lt;/code&gt; PPA unless they are specifically critical bugs.  Features and lesser important bugs should be held in &lt;code&gt;stable&lt;/code&gt; until a release occurs.&lt;/p&gt;
+&lt;h3 id=&#34;testing-via-ppa&#34;&gt;Testing via PPA&lt;/h3&gt;
+&lt;p&gt;To test the packages in stable, simply add the PPA to your test environment and install Regolith as it would normally be installed (substituting the &lt;code&gt;stable&lt;/code&gt; PPA).&lt;/p&gt;
+&lt;h3 id=&#34;testing-an-iso&#34;&gt;Testing an ISO&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;regolith-builder&lt;/code&gt; repo contains the files &lt;code&gt;create-iso.txt&lt;/code&gt; and &lt;code&gt;package-iso-*&lt;/code&gt; text files that describe the steps necessary to generate a Regolith ISO from a PPA.  Follow these steps with the Cubic ISO builder to generate an ISO.  Boot a test environment with the ISO to perform testing.&lt;/p&gt;
+&lt;h2 id=&#34;perform-a-regolith-release&#34;&gt;Perform a Regolith Release&lt;/h2&gt;
+&lt;p&gt;Once testing a release in the &lt;code&gt;stable&lt;/code&gt; PPA has been confirmed to be of acceptable quality, perform the following steps to execute the release:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Communicate the upcoming update on the &lt;code&gt;release-plan&lt;/code&gt; Slack channel, linking to the project.&lt;/li&gt;
+&lt;li&gt;Sync all packages from the &lt;code&gt;stable&lt;/code&gt; PPA to the &lt;code&gt;release&lt;/code&gt; PPA.&lt;/li&gt;
+&lt;li&gt;Communicate that users will now be able to update.  Provide release notes or link to project if none available.&lt;/li&gt;
+&lt;li&gt;Generate a new ISO w/ the Cubic tool (described above) and upload this to the &lt;code&gt;regolith-desktop&lt;/code&gt; releases page.  Use consistent entries for the various field when generating the release on GitHub.&lt;/li&gt;
+&lt;li&gt;Communicate the update is available on the mailing list and Twitter.&lt;/li&gt;
+&lt;li&gt;Monitor Slack and GitHub issues for any problems users may encounter.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;add-a-new-package-to-regolith&#34;&gt;Add a New Package to Regolith&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Create the GitHub repo in the Regolith org.&lt;/li&gt;
+&lt;li&gt;Use the debian package utilities to generate the package metadata that is stored in the &lt;code&gt;debian&lt;/code&gt; directory.&lt;/li&gt;
+&lt;li&gt;Use the debian package utilities to verify that the package builds succesfully locally.&lt;/li&gt;
+&lt;li&gt;Follow the steps in task &lt;strong&gt;Publish Package Version to &lt;code&gt;unstable&lt;/code&gt;&lt;/strong&gt; from step 7 such that the new package is installable by users.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;update-package-model&#34;&gt;Update Package Model&lt;/h2&gt;
+&lt;p&gt;The build scripts use a JSON file that defines a few things necessary in order to build source packages and upload them to launchpad.net.  These files live in the &lt;code&gt;regolith-builder&lt;/code&gt; repo with the schema &lt;code&gt;package-model-&amp;lt;regolith version&amp;gt;.json&lt;/code&gt;.  Here is an abbreviated snippet of &lt;code&gt;package-model-R1.4.1.txt&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;packages&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;gitRepoUrl&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://github.com/regolith-linux/regolith-system.git&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;packageName&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;regolith-system&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;buildPath&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;regolith-system&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;upstreamTarball&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;packageBranch&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;master&amp;#34;&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#a40000&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;.&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;copies&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;ppaUrl&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;~kgilmer/ubuntu/speed-ricer&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;packageName&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-snapshot&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;sourceVersion&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;bionic&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;targetVersions&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;eoan&amp;#34;&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The file contains two sections, &amp;ldquo;packages&amp;rdquo; and &amp;ldquo;copies&amp;rdquo;.  Packages defines how the &lt;code&gt;build.sh&lt;/code&gt; script can go about generating a source package for a given package.  It requires the git repo, the name of the package, the root directory in the repo from which the build should execute, any specific source tarball to use, and the git branch.  The Copies section describes packages that are not built as part of Regolith but copied from other PPAs.  For example many GTK theme and icon packages are already hosted by other developers on launchpad.net and for Regolith, we simply need to copy them.&lt;/p&gt;
+&lt;p&gt;Steps to add a new package model for a new Regolith version:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Copy from the latest release to the new one.&lt;/li&gt;
+&lt;li&gt;Make changes as needed to the new package model to support the new Regolith version.&lt;/li&gt;
+&lt;li&gt;When running the &lt;code&gt;build.sh&lt;/code&gt; script to generate source packages, specify the new package model in the parameter list.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;rules&#34;&gt;Rules&lt;/h1&gt;
+&lt;h3 id=&#34;r1---ubuntu-version-in-changelog&#34;&gt;R1 - Ubuntu version in Changelog&lt;/h3&gt;
+&lt;p&gt;Packages should be published with changelog entry of oldest supported Ubuntu release (&lt;code&gt;bionic&lt;/code&gt; as of 7/2/2020).&lt;/p&gt;
+&lt;h3 id=&#34;r2---git-branch-names-for-ubuntu-versions&#34;&gt;R2 - Git branch names for Ubuntu versions&lt;/h3&gt;
+&lt;p&gt;For packages which must maintain Ubuntu-version-specific differences, a distinct version string must be generated for each version of Ubuntu.  In this case, the package&#39;s git repo will maintain a branch named after the Ubuntu release it builds, with the exception of the branch &lt;code&gt;debian&lt;/code&gt; always tracking the current production release of Ubuntu.&lt;/p&gt;
 
       </description>
     </item>

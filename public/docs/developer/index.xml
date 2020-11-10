@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith – Developer</title>
+    <title>Regolith 1.5 – Developer</title>
     <link>https://regolith-linux.org/docs/developer/</link>
-    <description>Recent content in Developer on Regolith</description>
+    <description>Recent content in Developer on Regolith 1.5</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/docs/developer/index.xml" rel="self" type="application/rss+xml" />
@@ -80,7 +80,7 @@ $ regolith-look refresh
 &lt;h2 id=&#34;output&#34;&gt;Output&lt;/h2&gt;
 &lt;p&gt;Before we saw the output of the time script.  Let&#39;s deconstruct it:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;span&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;color&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;#E6E1CF&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;span&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;span&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;font_desc&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;JetBrains Mono Medium 13&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;color&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;#E6E1CF&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; 05/30 19:06 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;span&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The first span block defines the icon of the status indicator.  Notice how it does not specify a font.  This is because, without a font specification, the default is used.  In the case of Regolith looks, the default font is whatever icon font is specified in Xresources.  In Regolith 1.4.1, &lt;a href=&#34;https://github.com/regolith-linux/regolith-styles/blob/master/Xresources/root&#34;&gt;the default look is &lt;code&gt;lascaille&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://github.com/regolith-linux/regolith-styles/blob/master/lascaille/typeface#L2&#34;&gt;the icon font is &lt;code&gt;fonts-materialdesignicons-webfont&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The first span block defines the icon of the status indicator.  Notice how it does not specify a font.  This is because, without a font specification, the default is used.  In the case of Regolith looks, the default font is whatever icon font is specified in Xresources.  In Regolith 1.4.1 and 1.5, &lt;a href=&#34;https://github.com/regolith-linux/regolith-styles/blob/master/Xresources/root&#34;&gt;the default look is &lt;code&gt;lascaille&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://github.com/regolith-linux/regolith-styles/blob/master/lascaille/typeface#L2&#34;&gt;the icon font is &lt;code&gt;fonts-materialdesignicons-webfont&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This color is &lt;a href=&#34;https://github.com/regolith-linux/regolith-i3xrocks-config/blob/master/scripts/time#L38&#34;&gt;read from Xresources in the script&lt;/a&gt;, rather than hardcoded.  This allows the look of the status indicator to match the installed user&#39;s look.&lt;/p&gt;
 &lt;p&gt;The second span block contains the textual status information.  Again we have a color (coming from Xresources), but also now a font.  This is the secondary font passed to &lt;code&gt;i3bar&lt;/code&gt; in the &lt;code&gt;i3-wm&lt;/code&gt; config file.  It also comes from Xresources.  In general, to load icon character, the icon font and text font, as well as the colors, use the &lt;code&gt;xrescat&lt;/code&gt; program with the appropriate keys.  For the time script it is this:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;LABEL_ICON&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;icon&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;:-&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;$(&lt;/span&gt;xrescat i3xrocks.label.time &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;}&lt;/span&gt;
@@ -135,7 +135,7 @@ interval=60
       <description>
         
         
-        &lt;p&gt;Regolith is distributed as a set of interrelated Debian packages.  As of Regolith 1.4, there are packages for 3 releases of Ubuntu: bionic, eoan, and focal.  This page describes how code changes can be packaged such that users will get the updated code.&lt;/p&gt;
+        &lt;p&gt;Regolith is distributed as a set of interrelated Debian packages.  As of Regolith 1.5, there are packages for 3 releases of Ubuntu: bionic, focal, and groovy.  This page describes how code changes can be packaged such that users will get the updated code.&lt;/p&gt;
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Debian is the packaging format and system used by Regolith.  Just like Debian, Ubuntu, and other Debian-based systems, the tools and workflow used to develop and update Regolith packages works in the same manner as those system.  The general process:&lt;/p&gt;
 &lt;ol&gt;
@@ -194,6 +194,26 @@ $ ./build.sh package-model-R1.4.2.json ppa:regolith-linux/ubuntu/unstable /tmp r
 &lt;p&gt;Go to the &lt;a href=&#34;https://launchpad.net/~regolith-linux/+archive/ubuntu/unstable&#34;&gt;launchpad.net PPA page&lt;/a&gt; to see the current status of the upload.  It typically takes 10 - 30 minutes for a package update to complete.&lt;/p&gt;
 &lt;h4 id=&#34;summary&#34;&gt;Summary&lt;/h4&gt;
 &lt;p&gt;Once packaging building completes successfully, the binary packages will be available for users to download during any automatic or manual update process.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Design</title>
+      <link>https://regolith-linux.org/docs/developer/design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/docs/developer/design/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;The user&#39;s application is of greater importance than any feature or facility of the desktop environment.&lt;/li&gt;
+&lt;li&gt;Regolith branding should be only enough to afford a cohesive identity to the user and nothing more.&lt;/li&gt;
+&lt;li&gt;Small pieces that can combine into bigger pieces is better than larger, monolithic pieces.&lt;/li&gt;
+&lt;li&gt;Typography is the keystone of the appearance of the system.&lt;/li&gt;
+&lt;li&gt;Less is more.  The ideal system is no system.&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
