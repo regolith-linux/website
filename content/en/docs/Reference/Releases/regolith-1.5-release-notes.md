@@ -52,7 +52,7 @@ Issues and fixes are being tracked in [this project](https://github.com/orgs/reg
         </tr>
         <tr>
             <td>New default compositor: Picom version 8</td>
-            <td colspan="2">See Picom's <a href="https://github.com/yshui/picom/releases">releaes notes here</a>.</td>
+            <td colspan="2">See Picom's <a href="https://github.com/yshui/picom/releases">release notes here</a>.</td>
         </tr>
         <tr>
             <td>Remontoire upgraded to version 1.4</td>
