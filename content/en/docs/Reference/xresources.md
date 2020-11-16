@@ -70,6 +70,11 @@ description: >
 |i3-wm.window.border.size | Default border size in pixels |
 |i3-wm.workspace.01.name .. i3-wm.workspace.19.name | Workspace Labels |
 |i3-wm.workspace.01.key .. i3-wm.workspace.10.key | Workspace Shortucts |
+|i3xrocks.action.volume.left | Command to execute when volume indicator is left clicked (default: none) |
+|i3xrocks.action.volume.middle | Command to execute when volume indicator is middle clicked (default: none) |
+|i3xrocks.action.volume.right | Command to execute when volume indicator is right clicked (default: mute through amixer) |
+|i3xrocks.action.volume.scrollup | Command to execute when scroll wheel up is used on volume indicator (default: increase volume through amixer) |
+|i3xrocks.action.volume.scrolldn | Command to execute when scroll wheel down is used on volume indicator (default: decrease volume through amixer) |
 |i3xrocks.error.color | Color for bar module in error mode |
 |i3xrocks.label.battery0 | Bar icon glyph |
 |i3xrocks.label.battery100 |  Bar icon glyph |
