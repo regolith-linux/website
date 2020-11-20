@@ -64,7 +64,7 @@
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;New default compositor: Picom version 8&lt;/td&gt;
-            &lt;td colspan=&#34;2&#34;&gt;See Picom&#39;s &lt;a href=&#34;https://github.com/yshui/picom/releases&#34;&gt;releaes notes here&lt;/a&gt;.&lt;/td&gt;
+            &lt;td colspan=&#34;2&#34;&gt;See Picom&#39;s &lt;a href=&#34;https://github.com/yshui/picom/releases&#34;&gt;release notes here&lt;/a&gt;.&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;Remontoire upgraded to version 1.4&lt;/td&gt;
@@ -3463,6 +3463,26 @@ i3-wm.workspace.03.name: 3: Chat
 &lt;td&gt;Workspace Shortucts&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;i3xrocks.action.volume.left&lt;/td&gt;
+&lt;td&gt;Command to execute when volume indicator is left clicked (default: none)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.action.volume.middle&lt;/td&gt;
+&lt;td&gt;Command to execute when volume indicator is middle clicked (default: none)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.action.volume.right&lt;/td&gt;
+&lt;td&gt;Command to execute when volume indicator is right clicked (default: mute through amixer)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.action.volume.scrollup&lt;/td&gt;
+&lt;td&gt;Command to execute when scroll wheel up is used on volume indicator (default: increase volume through amixer)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.action.volume.scrolldn&lt;/td&gt;
+&lt;td&gt;Command to execute when scroll wheel down is used on volume indicator (default: decrease volume through amixer)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;i3xrocks.error.color&lt;/td&gt;
 &lt;td&gt;Color for bar module in error mode&lt;/td&gt;
 &lt;/tr&gt;
@@ -3971,6 +3991,29 @@ Monitors: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In this case, the output name is &lt;code&gt;eDP-1&lt;/code&gt;.  Next add a line like this into a staged copy of your i3 config file:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;workspace &amp;quot;$ws1&amp;quot; output DP1
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Log back in for the changes to take effect.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Launch Default i3 Session</title>
+      <link>https://regolith-linux.org/docs/howto/vanilla-i3-gaps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/docs/howto/vanilla-i3-gaps/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To do so on Ubuntu, run &lt;code&gt;sudo apt install i3-gaps-session&lt;/code&gt; to add an option on login that starts vanilla i3-gaps without regolith.&lt;/p&gt;
+&lt;h2 id=&#34;use-case&#34;&gt;Use Case&lt;/h2&gt;
+&lt;p&gt;This is useful for, say, running an application that does not integrate well with Gnome. For example, Spotify&#39;s unmaintained official Linux client mishandle&#39;s it&#39;s file selection dialogue and crashes when&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. Setting user profile photo
+2. Setting album cover photo
+3. Adding a local directory to the library paths
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;under Gnome and Regolith. Switching to vanilla i3 solves the crash.&lt;/p&gt;
+&lt;h2 id=&#34;source&#34;&gt;Source&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;&#34;&gt;kgilmer&lt;/a&gt;&amp;lsquo;s &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/issues/21#issuecomment-729776535&#34;&gt;comment&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>

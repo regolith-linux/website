@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://regolith-linux.org/docs/reference/releases/regolith-1.5-release-notes/</loc>
-    <lastmod>2020-11-09T21:19:53-08:00</lastmod>
+    <lastmod>2020-11-11T22:29:26-05:00</lastmod>
   </url>
   
   <url>
@@ -1714,7 +1714,7 @@
   
   <url>
     <loc>https://regolith-linux.org/docs/reference/xresources/</loc>
-    <lastmod>2020-10-28T20:32:34+05:30</lastmod>
+    <lastmod>2020-11-16T13:54:58+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -2160,6 +2160,51 @@
   <url>
     <loc>https://regolith-linux.org/docs/howto/workspace-on-output/</loc>
     <lastmod>2020-11-07T16:32:15-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://regolith-linux.org/docs/howto/vanilla-i3-gaps/</loc>
+    <lastmod>2020-11-19T21:00:28-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/howto/vanilla-i3-gaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/howto/vanilla-i3-gaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/howto/vanilla-i3-gaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/howto/vanilla-i3-gaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_pt"
+                href="https://regolith-linux.org/pt_pt/docs/howto/vanilla-i3-gaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/vanilla-i3-gaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://regolith-linux.org/ru/docs/howto/vanilla-i3-gaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/howto/vanilla-i3-gaps/"
+                />
   </url>
   
   <url>

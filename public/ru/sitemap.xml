@@ -2133,6 +2133,51 @@
   </url>
   
   <url>
+    <loc>https://regolith-linux.org/ru/docs/howto/vanilla-i3-gaps/</loc>
+    <lastmod>2020-11-19T21:00:28-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/howto/vanilla-i3-gaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/howto/vanilla-i3-gaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/howto/vanilla-i3-gaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/howto/vanilla-i3-gaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/howto/vanilla-i3-gaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_pt"
+                href="https://regolith-linux.org/pt_pt/docs/howto/vanilla-i3-gaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/vanilla-i3-gaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://regolith-linux.org/ru/docs/howto/vanilla-i3-gaps/"
+                />
+  </url>
+  
+  <url>
     <loc>https://regolith-linux.org/ru/docs/</loc>
     <lastmod>2020-10-02T17:03:02+04:00</lastmod>
     <xhtml:link

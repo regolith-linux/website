@@ -565,5 +565,28 @@ Setting up i3xrocks-weather &lt;span style=&#34;color:#ce5c00;font-weight:bold&#
       </description>
     </item>
     
+    <item>
+      <title>Docs: Launch Default i3 Session</title>
+      <link>https://regolith-linux.org/fr/docs/howto/vanilla-i3-gaps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/fr/docs/howto/vanilla-i3-gaps/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To do so on Ubuntu, run &lt;code&gt;sudo apt install i3-gaps-session&lt;/code&gt; to add an option on login that starts vanilla i3-gaps without regolith.&lt;/p&gt;
+&lt;h2 id=&#34;use-case&#34;&gt;Use Case&lt;/h2&gt;
+&lt;p&gt;This is useful for, say, running an application that does not integrate well with Gnome. For example, Spotify&#39;s unmaintained official Linux client mishandle&#39;s it&#39;s file selection dialogue and crashes when&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. Setting user profile photo
+2. Setting album cover photo
+3. Adding a local directory to the library paths
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;under Gnome and Regolith. Switching to vanilla i3 solves the crash.&lt;/p&gt;
+&lt;h2 id=&#34;source&#34;&gt;Source&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;&#34;&gt;kgilmer&lt;/a&gt;&amp;lsquo;s &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/issues/21#issuecomment-729776535&#34;&gt;comment&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
