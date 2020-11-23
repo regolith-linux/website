@@ -98,7 +98,7 @@ Then Reload i3 for the change to take effect.
 Some users prefer to use the `nm-applet` program to configure and manage their wireless network.  i3 config file can be updated to launch any arbitrary program at start time.  But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file.  For this to work, also make sure that the system tray is enabled (see above).
 
 ```bash
-$ echo "i3-wm.program.1: /usr/bin/nm-applet"
+$ echo "i3-wm.program.1: /usr/bin/nm-applet" >> ~/.config/regolith/Xresources
 ```
 
 This change requires you to log back in before the change takes effect.
