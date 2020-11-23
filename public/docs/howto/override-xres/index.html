@@ -26,12 +26,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/docs/howto/override-xres/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-05-21T19:03:54-07:00" /><meta property="og:site_name" content="Regolith 1.5" />
+<meta property="article:modified_time" content="2020-11-22T21:08:04-05:00" /><meta property="og:site_name" content="Regolith 1.5" />
 <meta itemprop="name" content="Override Xresources">
 <meta itemprop="description" content="Learn how to stage user copies of Regolith configuration files.
 ">
-<meta itemprop="dateModified" content="2020-05-21T19:03:54-07:00" />
-<meta itemprop="wordCount" content="562">
+<meta itemprop="dateModified" content="2020-11-22T21:08:04-05:00" />
+<meta itemprop="wordCount" content="564">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
 
@@ -919,7 +919,7 @@ $ <span style="color:#204a87">echo</span> <span style="color:#4e9a06">&#34;i3-wm
 </code></pre></div><p>Then Reload i3 for the change to take effect.</p>
 <h3 id="example---launch-nm-applet-when-i3-starts">Example - Launch <code>nm-applet</code> when i3 starts</h3>
 <p>Some users prefer to use the <code>nm-applet</code> program to configure and manage their wireless network.  i3 config file can be updated to launch any arbitrary program at start time.  But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file.  For this to work, also make sure that the system tray is enabled (see above).</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#204a87">echo</span> <span style="color:#4e9a06">&#34;i3-wm.program.1: /usr/bin/nm-applet&#34;</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#204a87">echo</span> <span style="color:#4e9a06">&#34;i3-wm.program.1: /usr/bin/nm-applet&#34;</span> &gt;&gt; ~/.config/regolith/Xresources
 </code></pre></div><p>This change requires you to log back in before the change takes effect.</p>
 
 
@@ -993,7 +993,7 @@ $ <span style="color:#204a87">echo</span> <span style="color:#4e9a06">&#34;i3-wm
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 21, 2020: <a  href="https://github.com/regolith-linux/website/commit/0aacc12419483f5d42901311341d26d56bb256bd">Update override xres howto. (0aacc124)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified November 22, 2020: <a  href="https://github.com/regolith-linux/website/commit/287157fa3592ef0a53b99c3845ed399bd57c10a3">Update override-xres.md (#53) (287157fa)</a>
 </div>
 </div>
 

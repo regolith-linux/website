@@ -110,7 +110,7 @@ $ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then Reload i3 for the change to take effect.&lt;/p&gt;
 &lt;h3 id=&#34;example---launch-nm-applet-when-i3-starts&#34;&gt;Example - Launch &lt;code&gt;nm-applet&lt;/code&gt; when i3 starts&lt;/h3&gt;
 &lt;p&gt;Some users prefer to use the &lt;code&gt;nm-applet&lt;/code&gt; program to configure and manage their wireless network.  i3 config file can be updated to launch any arbitrary program at start time.  But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file.  For this to work, also make sure that the system tray is enabled (see above).&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm.program.1: /usr/bin/nm-applet&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm.program.1: /usr/bin/nm-applet&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This change requires you to log back in before the change takes effect.&lt;/p&gt;
 
 
