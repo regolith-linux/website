@@ -1873,6 +1873,51 @@
   </url>
   
   <url>
+    <loc>https://regolith-linux.org/ru/docs/howto/configure-wallpaper/</loc>
+    <lastmod>2020-11-24T08:41:51-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/howto/configure-wallpaper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/howto/configure-wallpaper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/howto/configure-wallpaper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/howto/configure-wallpaper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/howto/configure-wallpaper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_pt"
+                href="https://regolith-linux.org/pt_pt/docs/howto/configure-wallpaper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/howto/configure-wallpaper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://regolith-linux.org/ru/docs/howto/configure-wallpaper/"
+                />
+  </url>
+  
+  <url>
     <loc>https://regolith-linux.org/ru/docs/reference/</loc>
     <lastmod>2020-08-22T08:55:52-07:00</lastmod>
     <xhtml:link

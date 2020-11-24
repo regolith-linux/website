@@ -2753,6 +2753,8 @@ instance=BAT1
         &lt;h2 id=&#34;wallpaper&#34;&gt;Wallpaper&lt;/h2&gt;
 &lt;p&gt;The wallpaper can be changed via &lt;code&gt;Settings&lt;/code&gt;, or &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;c&lt;/span&gt;&lt;/span&gt; by going to the &lt;code&gt;Background&lt;/code&gt; tab and selecting the preferred image or color.&lt;/p&gt;
 &lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-settings-wallpaper.png&#34; width=&#34;640px&#34;/&gt;
+&lt;p&gt;Wallpaper can also be set via dotfiles for those that prefer file-based configuration management over GSettings.&lt;/p&gt;
+&lt;p&gt;Regardless of which style you prefer, see &lt;a href=&#34;../../howto/configure-wallpaper&#34;&gt;this page&lt;/a&gt; that describes the configuration in detail.&lt;/p&gt;
 &lt;h2 id=&#34;status-bar-indicators&#34;&gt;Status Bar Indicators&lt;/h2&gt;
 &lt;p&gt;Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages.  For example, to show a status indicator for your laptop battery simply run &lt;code&gt;sudo apt install i3xrocks-battery&lt;/code&gt; and then refresh the session.  To find what indicators are available, run &lt;code&gt;apt search ^i3xrocks-&lt;/code&gt; or search for &amp;ldquo;i3xrocks-&amp;rdquo; in your favorite package manager GUI, such as &lt;a href=&#34;https://help.ubuntu.com/community/SynapticHowto&#34;&gt;Synaptic&lt;/a&gt;.  Learn more about configuring status indicators in this HowTo.&lt;/p&gt;
 &lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-synaptic-search.png&#34; width=&#34;480px&#34;/&gt;
@@ -3992,6 +3994,26 @@ Monitors: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&
 &lt;pre&gt;&lt;code&gt;workspace &amp;quot;$ws1&amp;quot; output DP1
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Log back in for the changes to take effect.&lt;/p&gt;
 
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Wallpaper Configuration</title>
+      <link>https://regolith-linux.org/docs/howto/configure-wallpaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/docs/howto/configure-wallpaper/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This page describes how to configure the wallpaper in Regolith, which can either be set via the GNOME Settings, or in dotfiles via Xresource overrides.&lt;/p&gt;
+&lt;h2 id=&#34;gnome-settings&#34;&gt;GNOME settings&lt;/h2&gt;
+&lt;p&gt;As is mentioned in the Getting Started section, wallpaper can be set using GNOME Settings.  Some Looks specific specific wallpaper that is set to go along with the color theme and other style changes.  An Xresource value can be set to tell Regolith to ignore Look settings and keep which ever wallpaper has been selected via GNOME Settings.  The following command will set the &lt;code&gt;gnome.wallpaper&lt;/code&gt; Xresource key to an empty value, which will prevent Regolith from making any changes:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;gnome.wallpaper: &amp;#34;&lt;/span&gt; &amp;gt; ~/.config/regolith/Xresources
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;xresources&#34;&gt;Xresources&lt;/h2&gt;
+&lt;p&gt;Another way of setting the wallpaper is by specifying a file path to the image in the Xresource key &lt;code&gt;gnome.wallpaper&lt;/code&gt;.  Upon session load, wallpaper will be set if a image file is specified at this key.  For example, here is how to specify an override to set the wallpaper to the default Ubuntu wallpaper:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ echo &amp;quot;gnome.wallpaper: /usr/share/backgrounds/warty-final-ubuntu.png&amp;quot; &amp;gt; ~/.config/regolith/Xresources
+&lt;/code&gt;&lt;/pre&gt;
       </description>
     </item>
     

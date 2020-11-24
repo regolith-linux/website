@@ -333,6 +333,8 @@ $ rm -Rf ~/.config/regolith/flags
         &lt;h2 id=&#34;wallpaper&#34;&gt;Wallpaper&lt;/h2&gt;
 &lt;p&gt;The wallpaper can be changed via &lt;code&gt;Settings&lt;/code&gt;, or &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;c&lt;/span&gt;&lt;/span&gt; by going to the &lt;code&gt;Background&lt;/code&gt; tab and selecting the preferred image or color.&lt;/p&gt;
 &lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-settings-wallpaper.png&#34; width=&#34;640px&#34;/&gt;
+&lt;p&gt;Wallpaper can also be set via dotfiles for those that prefer file-based configuration management over GSettings.&lt;/p&gt;
+&lt;p&gt;Regardless of which style you prefer, see &lt;a href=&#34;../../howto/configure-wallpaper&#34;&gt;this page&lt;/a&gt; that describes the configuration in detail.&lt;/p&gt;
 &lt;h2 id=&#34;status-bar-indicators&#34;&gt;Status Bar Indicators&lt;/h2&gt;
 &lt;p&gt;Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages.  For example, to show a status indicator for your laptop battery simply run &lt;code&gt;sudo apt install i3xrocks-battery&lt;/code&gt; and then refresh the session.  To find what indicators are available, run &lt;code&gt;apt search ^i3xrocks-&lt;/code&gt; or search for &amp;ldquo;i3xrocks-&amp;rdquo; in your favorite package manager GUI, such as &lt;a href=&#34;https://help.ubuntu.com/community/SynapticHowto&#34;&gt;Synaptic&lt;/a&gt;.  Learn more about configuring status indicators in this HowTo.&lt;/p&gt;
 &lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-screenshot-synaptic-search.png&#34; width=&#34;480px&#34;/&gt;

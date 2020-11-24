@@ -26,12 +26,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/docs/getting-started/configuration/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-11-08T11:03:20-08:00" /><meta property="og:site_name" content="Regolith 1.5" />
+<meta property="article:modified_time" content="2020-11-24T08:41:29-08:00" /><meta property="og:site_name" content="Regolith 1.5" />
 <meta itemprop="name" content="Configuration">
 <meta itemprop="description" content="Make changes to the way Regolith looks and behaves.
 ">
-<meta itemprop="dateModified" content="2020-11-08T11:03:20-08:00" />
-<meta itemprop="wordCount" content="514">
+<meta itemprop="dateModified" content="2020-11-24T08:41:29-08:00" />
+<meta itemprop="wordCount" content="545">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
 
@@ -528,6 +528,12 @@ if (!doNotTrack) {
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-configure-wallpaper" href="/docs/howto/configure-wallpaper/">Wallpaper Configuration</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-howto-vanilla-i3-gaps" href="/docs/howto/vanilla-i3-gaps/">Launch Default i3 Session</a>
       
       
@@ -830,6 +836,8 @@ if (!doNotTrack) {
 	<h2 id="wallpaper">Wallpaper</h2>
 <p>The wallpaper can be changed via <code>Settings</code>, or <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span> by going to the <code>Background</code> tab and selecting the preferred image or color.</p>
 <img class="shadow m-5" src="../regolith-screenshot-settings-wallpaper.png" width="640px"/>
+<p>Wallpaper can also be set via dotfiles for those that prefer file-based configuration management over GSettings.</p>
+<p>Regardless of which style you prefer, see <a href="../../howto/configure-wallpaper">this page</a> that describes the configuration in detail.</p>
 <h2 id="status-bar-indicators">Status Bar Indicators</h2>
 <p>Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages.  For example, to show a status indicator for your laptop battery simply run <code>sudo apt install i3xrocks-battery</code> and then refresh the session.  To find what indicators are available, run <code>apt search ^i3xrocks-</code> or search for &ldquo;i3xrocks-&rdquo; in your favorite package manager GUI, such as <a href="https://help.ubuntu.com/community/SynapticHowto">Synaptic</a>.  Learn more about configuring status indicators in this HowTo.</p>
 <img class="shadow m-5" src="../regolith-screenshot-synaptic-search.png" width="480px"/>
@@ -919,7 +927,7 @@ i3-wm.alt: Mod4
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified November 8, 2020: <a  href="https://github.com/regolith-linux/website/commit/191f5281758bdd1262c633e0a355e1099f6a4b97">Additions and cleanup to getting started section for Regolith 1.5. (191f5281)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified November 24, 2020: <a  href="https://github.com/regolith-linux/website/commit/3c75bd929461d32b030b51ce30e218686b033647">Update Configuration help to mention Xres approach and link to corresponding howto. (3c75bd92)</a>
 </div>
 </div>
 
