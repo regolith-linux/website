@@ -12,6 +12,10 @@ The wallpaper can be changed via `Settings`, or <span class="text-nowrap"><span 
 
 <img class="shadow m-5" src="../regolith-screenshot-settings-wallpaper.png" width="640px"/>
 
+Wallpaper can also be set via dotfiles for those that prefer file-based configuration management over GSettings.
+
+Regardless of which style you prefer, see [this page](../../howto/configure-wallpaper) that describes the configuration in detail.
+
 ## Status Bar Indicators
 
 Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages.  For example, to show a status indicator for your laptop battery simply run `sudo apt install i3xrocks-battery` and then refresh the session.  To find what indicators are available, run `apt search ^i3xrocks-` or search for "i3xrocks-" in your favorite package manager GUI, such as [Synaptic](https://help.ubuntu.com/community/SynapticHowto).  Learn more about configuring status indicators in this HowTo.
