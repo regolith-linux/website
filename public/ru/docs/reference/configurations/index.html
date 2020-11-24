@@ -26,12 +26,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/ru/docs/reference/configurations/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-08-22T08:55:52-07:00" /><meta property="og:site_name" content="Regolith" />
+<meta property="article:modified_time" content="2020-11-24T08:18:06-08:00" /><meta property="og:site_name" content="Regolith" />
 <meta itemprop="name" content="Config Files">
 <meta itemprop="description" content="General information about the config files that Regolith uses.
 ">
-<meta itemprop="dateModified" content="2020-08-22T08:55:52-07:00" />
-<meta itemprop="wordCount" content="185">
+<meta itemprop="dateModified" content="2020-11-24T08:18:06-08:00" />
+<meta itemprop="wordCount" content="213">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
 
@@ -586,6 +586,12 @@ if (!doNotTrack) {
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-ru-docs-reference-releases-regolith-1-5-release-notes" href="/ru/docs/reference/releases/regolith-1.5-release-notes/">1.5 Release Notes</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-ru-docs-reference-releases-regolith-1-4-release-notes" href="/ru/docs/reference/releases/regolith-1.4-release-notes/">1.4 Release Notes</a>
       
       
@@ -806,7 +812,7 @@ if (!doNotTrack) {
 </tr>
 <tr>
 <td>Rofi</td>
-<td><code>/etc/regolith/styles/cahuella/rofi.rasi</code></td>
+<td><code>/etc/regolith/styles/lascaille/rofi.rasi</code></td>
 <td>Defined in the <code>theme</code> style file.</td>
 <td>This can also be overridden directly in the i3 file if preferred.</td>
 <td></td>
@@ -827,9 +833,16 @@ if (!doNotTrack) {
 </tr>
 <tr>
 <td>Picom (Compton) Compositor</td>
-<td><code>/etc/regolith/compton/config</code></td>
-<td><code>~/.config/regolith/compton/config</code></td>
-<td>User config added in 1.4</td>
+<td><code>/etc/regolith/picom/config</code></td>
+<td><code>~/.config/regolith/picom/config</code></td>
+<td>User config added in 1.5. Each compositor has it's own independent config file, but the default is <code>Picom</code>.</td>
+<td></td>
+</tr>
+<tr>
+<td>LightDM GTK Greeter</td>
+<td><code>/usr/share/lightdm/lightdm-gtk-greeter.conf.d/02_regolith.conf</code></td>
+<td>N/A</td>
+<td>This file only exists if the <code>regolith-lightdm-config</code> package is installed.</td>
 <td></td>
 </tr>
 </tbody>
@@ -909,7 +922,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified August 22, 2020: <a  href="https://github.com/regolith-linux/website/commit/070a9b33539a8aa5822b78645812cd62edf127ef">Russian translation of landing page (#38) (070a9b33)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified November 24, 2020: <a  href="https://github.com/regolith-linux/website/commit/91cafe43dcbcb2ee334d98de0fc8fc3b82c52256">Fix path to default compositor in Configurations page for Regolith 1.5 migration to Picom (91cafe43)</a>
 </div>
 </div>
 

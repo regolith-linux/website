@@ -35,7 +35,7 @@
         &lt;tr&gt;
             &lt;td&gt;View and Change Looks via Rofi&lt;/td&gt;
             &lt;td&gt;&lt;a href=&#34;../regolith-select-look.png&#34;&gt;&lt;img class=&#34;shadow&#34; width=&#34;640px&#34; src=&#34;../regolith-select-look.png&#34;/&gt;&lt;/td&gt;
-            &lt;td&gt;Looks can be changed now via a Rofi dialog rather than having to configure the Xresource override via the command-line.  To do this, use keybinding `&lt;super&gt;-&lt;alt&gt;l` and then select from the dialog to load a Look.&lt;/td&gt;
+            &lt;td&gt;Looks can be changed now via a Rofi dialog rather than having to configure the Xresource override via the command-line.  To do this, use keybinding &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;l&lt;/span&gt;&lt;/span&gt; and then select from the dialog to load a Look.&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;GSettings Overrides&lt;/td&gt;            
@@ -1653,9 +1653,9 @@ $ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#3
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Picom (Compton) Compositor&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;/etc/regolith/compton/config&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;~/.config/regolith/compton/config&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;User config added in 1.4&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/etc/regolith/picom/config&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;~/.config/regolith/picom/config&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;User config added in 1.5. Each compositor has it&#39;s own independent config file, but the default is &lt;code&gt;Picom&lt;/code&gt;.&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;

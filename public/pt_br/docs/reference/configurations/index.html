@@ -26,12 +26,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/pt_br/docs/reference/configurations/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-08-14T20:44:29-07:00" /><meta property="og:site_name" content="Regolith 1.5" />
+<meta property="article:modified_time" content="2020-11-24T08:18:06-08:00" /><meta property="og:site_name" content="Regolith 1.5" />
 <meta itemprop="name" content="Config Files">
 <meta itemprop="description" content="General information about the config files that Regolith uses.
 ">
-<meta itemprop="dateModified" content="2020-08-14T20:44:29-07:00" />
-<meta itemprop="wordCount" content="200">
+<meta itemprop="dateModified" content="2020-11-24T08:18:06-08:00" />
+<meta itemprop="wordCount" content="213">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
 
@@ -580,6 +580,12 @@ if (!doNotTrack) {
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-reference-releases-regolith-1-5-release-notes" href="/pt_br/docs/reference/releases/regolith-1.5-release-notes/">1.5 Release Notes</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-br-docs-reference-releases-regolith-1-4-release-notes" href="/pt_br/docs/reference/releases/regolith-1.4-release-notes/">1.4 Release Notes</a>
       
       
@@ -788,7 +794,7 @@ if (!doNotTrack) {
 </tr>
 <tr>
 <td>Rofi</td>
-<td><code>/etc/regolith/styles/cahuella/rofi.rasi</code></td>
+<td><code>/etc/regolith/styles/lascaille/rofi.rasi</code></td>
 <td>Defined in the <code>theme</code> style file.</td>
 <td>This can also be overridden directly in the i3 file if preferred.</td>
 <td></td>
@@ -809,9 +815,9 @@ if (!doNotTrack) {
 </tr>
 <tr>
 <td>Picom (Compton) Compositor</td>
-<td><code>/etc/regolith/compton/config</code></td>
-<td><code>~/.config/regolith/compton/config</code></td>
-<td>User config added in 1.4</td>
+<td><code>/etc/regolith/picom/config</code></td>
+<td><code>~/.config/regolith/picom/config</code></td>
+<td>User config added in 1.5. Each compositor has it's own independent config file, but the default is <code>Picom</code>.</td>
 <td></td>
 </tr>
 <tr>
@@ -898,7 +904,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified August 14, 2020: <a  href="https://github.com/regolith-linux/website/commit/0ac5afce7a733aeea3b0d950d2072657fae34911">Add login screen config file for ISO installs to config reference page. (0ac5afce)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified November 24, 2020: <a  href="https://github.com/regolith-linux/website/commit/91cafe43dcbcb2ee334d98de0fc8fc3b82c52256">Fix path to default compositor in Configurations page for Regolith 1.5 migration to Picom (91cafe43)</a>
 </div>
 </div>
 

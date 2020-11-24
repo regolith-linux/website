@@ -268,7 +268,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Rofi&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;/etc/regolith/styles/cahuella/rofi.rasi&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/etc/regolith/styles/lascaille/rofi.rasi&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;Defined in the &lt;code&gt;theme&lt;/code&gt; style file.&lt;/td&gt;
 &lt;td&gt;This can also be overridden directly in the i3 file if preferred.&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
@@ -289,9 +289,16 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Picom (Compton) Compositor&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;/etc/regolith/compton/config&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;~/.config/regolith/compton/config&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;User config added in 1.4&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/etc/regolith/picom/config&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;~/.config/regolith/picom/config&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;User config added in 1.5. Each compositor has it&#39;s own independent config file, but the default is &lt;code&gt;Picom&lt;/code&gt;.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;LightDM GTK Greeter&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/usr/share/lightdm/lightdm-gtk-greeter.conf.d/02_regolith.conf&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;This file only exists if the &lt;code&gt;regolith-lightdm-config&lt;/code&gt; package is installed.&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
