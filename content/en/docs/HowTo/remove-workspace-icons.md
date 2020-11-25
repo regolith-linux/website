@@ -32,3 +32,4 @@ i3-wm.workspace.01.name: 1: Terminal
 i3-wm.workspace.02.name: 2: Web
 i3-wm.workspace.03.name: 3: Chat
 ```
+
