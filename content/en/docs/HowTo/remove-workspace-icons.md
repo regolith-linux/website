@@ -1,50 +1,35 @@
 ---
-title: "Manage a To-Do List"
+title: "Change Workspace Labels"
 weight: 7
 description: >
-  Create and manage a to-do list from status bar
+  Change the workspace names as displayed in the bar.
 ---
 
-[`td-cli`](https://github.com/darrikonn/td-cli) is a command line todo manager written in Python 3 for organizing your todos across multiple projects.
+1. You'll need to stage the Regolith Styles Xresource files as [described here](../stage-configs).
+2. Then stage the `/etc/regolith/styles/i3-wm` Xresource file in your user directory, and ensure that your user copy of the Xresource file `#include`s this copy.
+3. Modify the styles to your preference.
+4. After saving the styles file log out and back in to see the change.
 
-Regolith, includes a status bar blocklet for accessing `td-cli` directly from the status bar.
-This blocklet can be installed as follows:
-```bash
-sudo apt install i3xrocks-todo
+### Remove everything but the workspace number
+
+Follow these steps to edit the Xresource definitions of the workspace labels used by i3:
+
+Edit your copy of the `i3-wm` styles file. This file uses C-style macros to generate the Pango markup for each workspace label.  There are various ways of changing the macros to strip out the icons, but this may be the most concise.  Replace:
+```
+#define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH) INDEX:<span font_desc=FONT> INDEX </span><span foreground=COLOR>GLYPH</span>
+```
+with:
+```
+#define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH) 
 ```
 
-After installing `td-cli` you can access it via command line using ``td``. The full documentation of `td-cli`'s API can be found [here](https://github.com/darrikonn/td-cli/blob/master/API.md). For example, let's create a todo list with a group name of Regolith, set it as the default project, and then add a new task to this group:
+### Creating workspace labels
 
-```bash
-td ag regolith
-td g regolith p
-td a "Write a HowTo for td-cli"
+Some users prefer to title their workspaces based a theme, such as `terminal`, `web`, etc.  To do this, make modifications to your user copy of `/etc/regolith/styles/i3-wm` similarly to:
+
 ```
-
-Now, if you click on the `td-cli` blocket (on the left of the time blocklet) a floating terminal opens up:
-
-![tdcli_statusbar](tdcli.png)
-
-![tdcli_window](tdcli_window.png)
-
-You can add a keybinding for accessing `td-cli`'s floating windows as well. You can add the line following to your `i3` config file, for example, `~/.config/regolith/i3/config`:
-
-```bash
-bindsym $mod+Ctrl+d exec --no-startup-id "/usr/bin/gnome-terminal --class=floating_window -e 'td --interactive'"
-```
-
-Alternatively, you add these lines to your `i3` config file, first:
-
-```bash
-set_from_resource $i3-wm.bindsym.1 i3-wm.bindsym.1 :
-set_from_resource $i3-wm.bindsym.program.1 i3-wm.bindsym.program.1 :
-bindsym $mod+$i3-wm.bindsym.1 exec --no-startup-id "$i3-wm.bindsym.program.1"
-```
-
-Then, add the followings to you `Xresource` file, for example, `~/.config/regolith/Xresources`:
-
-```bash
-i3-wm.bindsym.1: Ctrl+d
-i3-wm.bindsym.program.1: /usr/bin/gnome-terminal --class=floating_window -e 'td --interactive'
+i3-wm.workspace.01.name: 1: Terminal
+i3-wm.workspace.02.name: 2: Web
+i3-wm.workspace.03.name: 3: Chat
 ```
 
