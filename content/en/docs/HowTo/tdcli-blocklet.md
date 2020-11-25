@@ -23,9 +23,15 @@ td a "Write a HowTo for td-cli"
 
 Now, if you click on the `td-cli` blocket (on the left of the time blocklet) a floating terminal opens up:
 
+<<<<<<< HEAD
 ![tdcli_statusbar](tdcli.png)
 
 ![tdcli_window](tdcli_window.png)
+=======
+<img class="shadow m-5" src="../tdcli.png"/>
+
+<img class="shadow m-5" src="../tdcli_window.png"/>
+>>>>>>> upstream/master
 
 You can add a keybinding for accessing `td-cli`'s floating windows as well. You can add the line following to your `i3` config file, for example, `~/.config/regolith/i3/config`:
 
