@@ -367,6 +367,39 @@ i3-wm.workspace.03.name: 3: Chat
     </item>
     
     <item>
+      <title>Docs: Manage a To-Do List</title>
+      <link>https://regolith-linux.org/fr/docs/howto/tdcli-blocklet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/fr/docs/howto/tdcli-blocklet/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;a href=&#34;https://github.com/darrikonn/td-cli&#34;&gt;&lt;code&gt;td-cli&lt;/code&gt;&lt;/a&gt; is a command line todo manager written in Python 3 for organizing your todos across multiple projects.&lt;/p&gt;
+&lt;p&gt;Regolith, includes a status bar blocklet for accessing &lt;code&gt;td-cli&lt;/code&gt; directly from the status bar.
+This blocklet can be installed as follows:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo apt install i3xrocks-todo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After installing &lt;code&gt;td-cli&lt;/code&gt; you can access it via command line using &lt;code&gt;td&lt;/code&gt;. The full documentation of &lt;code&gt;td-cli&lt;/code&gt;&#39;s API can be found &lt;a href=&#34;https://github.com/darrikonn/td-cli/blob/master/API.md&#34;&gt;here&lt;/a&gt;. For example, let&#39;s create a todo list with a group name of Regolith, set it as the default project, and then add a new task to this group:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;td ag regolith
+td g regolith p
+td a &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Write a HowTo for td-cli&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, if you click on the &lt;code&gt;td-cli&lt;/code&gt; blocket (on the left of the time blocklet) a floating terminal opens up:&lt;/p&gt;
+&lt;img class=&#34;shadow m-5&#34; src=&#34;../tdcli.png&#34;/&gt;
+&lt;img class=&#34;shadow m-5&#34; src=&#34;../tdcli_window.png&#34;/&gt;
+&lt;p&gt;You can add a keybinding for accessing &lt;code&gt;td-cli&lt;/code&gt;&#39;s floating windows as well. You can add the line following to your &lt;code&gt;i3&lt;/code&gt; config file, for example, &lt;code&gt;~/.config/regolith/i3/config&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;bindsym &lt;span style=&#34;color:#000&#34;&gt;$mod&lt;/span&gt;+Ctrl+d &lt;span style=&#34;color:#204a87&#34;&gt;exec&lt;/span&gt; --no-startup-id &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/usr/bin/gnome-terminal --class=floating_window -e &amp;#39;td --interactive&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Alternatively, you add these lines to your &lt;code&gt;i3&lt;/code&gt; config file, first:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;set_from_resource &lt;span style=&#34;color:#000&#34;&gt;$i3&lt;/span&gt;-wm.bindsym.1 i3-wm.bindsym.1 :
+set_from_resource &lt;span style=&#34;color:#000&#34;&gt;$i3&lt;/span&gt;-wm.bindsym.program.1 i3-wm.bindsym.program.1 :
+bindsym &lt;span style=&#34;color:#000&#34;&gt;$mod&lt;/span&gt;+&lt;span style=&#34;color:#000&#34;&gt;$i3&lt;/span&gt;-wm.bindsym.1 &lt;span style=&#34;color:#204a87&#34;&gt;exec&lt;/span&gt; --no-startup-id &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$i3&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;-wm.bindsym.program.1&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, add the followings to you &lt;code&gt;Xresource&lt;/code&gt; file, for example, &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;i3-wm.bindsym.1: Ctrl+d
+i3-wm.bindsym.program.1: /usr/bin/gnome-terminal --class&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;floating_window -e &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;td --interactive&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Switch between Regolith PPAs</title>
       <link>https://regolith-linux.org/fr/docs/howto/change-ppa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
