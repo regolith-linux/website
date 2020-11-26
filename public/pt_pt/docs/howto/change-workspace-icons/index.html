@@ -20,18 +20,18 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Change Workspace Icons | Regolith 1.5</title><meta property="og:title" content="Change Workspace Icons" />
-<meta property="og:description" content="Learn how to set custom icons for each workspace.
+<title>Change Workspace Icons and Labels | Regolith 1.5</title><meta property="og:title" content="Change Workspace Icons and Labels" />
+<meta property="og:description" content="Learn how to customize each workspace in the bar.
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/pt_pt/docs/howto/change-workspace-icons/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-06-30T02:08:14+01:00" /><meta property="og:site_name" content="Regolith 1.5" />
-<meta itemprop="name" content="Change Workspace Icons">
-<meta itemprop="description" content="Learn how to set custom icons for each workspace.
+<meta property="article:modified_time" content="2020-11-25T21:06:12-08:00" /><meta property="og:site_name" content="Regolith 1.5" />
+<meta itemprop="name" content="Change Workspace Icons and Labels">
+<meta itemprop="description" content="Learn how to customize each workspace in the bar.
 ">
-<meta itemprop="dateModified" content="2020-06-30T02:08:14&#43;01:00" />
-<meta itemprop="wordCount" content="269">
+<meta itemprop="dateModified" content="2020-11-25T21:06:12-08:00" />
+<meta itemprop="wordCount" content="309">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
 
@@ -39,8 +39,8 @@
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
-<meta name="twitter:title" content="Change Workspace Icons"/>
-<meta name="twitter:description" content="Learn how to set custom icons for each workspace.
+<meta name="twitter:title" content="Change Workspace Icons and Labels"/>
+<meta name="twitter:description" content="Learn how to customize each workspace in the bar.
 "/>
 
 
@@ -80,7 +80,7 @@ if (!doNotTrack) {
   crossorigin="anonymous"></script>
 
 
-    <title>Change Workspace Icons | Regolith 1.5</title>
+    <title>Change Workspace Icons and Labels | Regolith 1.5</title>
   </head>
   <body class="td-page">
     <header>
@@ -462,13 +462,7 @@ if (!doNotTrack) {
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-pt-pt-docs-howto-change-workspace-icons" href="/pt_pt/docs/howto/change-workspace-icons/">Change Workspace Icons</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-pt-pt-docs-howto-remove-workspace-icons" href="/pt_pt/docs/howto/remove-workspace-icons/">Change Workspace Labels</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-pt-pt-docs-howto-change-workspace-icons" href="/pt_pt/docs/howto/change-workspace-icons/">Change Workspace Icons and Labels</a>
       
       
       
@@ -725,7 +719,7 @@ if (!doNotTrack) {
 
 
 <a href="https://github.com/regolith-linux/website/edit/master/content/pt_pt/docs/HowTo/change-workspace-icons.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/regolith-linux/website/issues/new?title=Change%20Workspace%20Icons" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/regolith-linux/website/issues/new?title=Change%20Workspace%20Icons%20and%20Labels" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 
 <a href="https://github.com/regolith-linux/regolith-desktop/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
@@ -742,7 +736,8 @@ if (!doNotTrack) {
     <li>
       <ul>
         <li><a href="#finding-icons">Finding icons</a></li>
-        <li><a href="#changing-icons">Changing icons</a></li>
+        <li><a href="#changing-icons">Changing Icons</a></li>
+        <li><a href="#changing-labels">Changing Labels</a></li>
         <li><a href="#adding-support-for-icon-fonts-in-text-editors">Adding support for icon fonts in text editors</a></li>
       </ul>
     </li>
@@ -781,7 +776,7 @@ if (!doNotTrack) {
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://regolith-linux.org/pt_pt/docs/howto/change-workspace-icons/">Change Workspace Icons</a>
+	<a href="https://regolith-linux.org/pt_pt/docs/howto/change-workspace-icons/">Change Workspace Icons and Labels</a>
 </li>
 
 	</ol>
@@ -789,8 +784,8 @@ if (!doNotTrack) {
 
             
 <div class="td-content">
-	<h1>Change Workspace Icons</h1>
-	<div class="lead">Learn how to set custom icons for each workspace.</div>
+	<h1>Change Workspace Icons and Labels</h1>
+	<div class="lead">Learn how to customize each workspace in the bar.</div>
 	<p>Adding icons to workspaces can give your desktop a nice and functional look.</p>
 <h3 id="finding-icons">Finding icons</h3>
 <p>Icons are actually characters from fonts installed by Regolith looks. Each look comes with a specific icon font. The icon font is defined in the <code>typeface_bar</code> variable in the <code>typeface</code> config file. For example, the look Cahuella uses the <em>Material Design Icons</em> font (see file <code>/etc/regolith/styles/cahuella/typeface</code>).</p>
@@ -803,7 +798,7 @@ if (!doNotTrack) {
 <li>Double click on the icon you are looking to use and press the <em>Copy</em> button (bottom right).</li>
 </ol>
 <p><strong>Tip:</strong> the icons are ordered alphabetically.</p>
-<h3 id="changing-icons">Changing icons</h3>
+<h3 id="changing-icons">Changing Icons</h3>
 <p>Follow these steps to override the default workspace label with your own:</p>
 <ol>
 <li>Find the character you want to use and copy to the clipboard. This example will use the Sigma glyph from Material Design Icons font ().</li>
@@ -816,7 +811,12 @@ if (!doNotTrack) {
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ regolith-look refresh
 </code></pre></div><p>In i3, workspace labels are only updated when a workspace is created.  Ensure you're creating an new workspace 6 if following the example above:</p>
 <img class="shadow m-5" src="../regolith-bar-icon.png"/>
-<h3 id="adding-support-for-icon-fonts-in-text-editors">Adding support for icon fonts in text editors</h3>
+<h3 id="changing-labels">Changing Labels</h3>
+<p>The same approach can be used to specify textual descriptions of your workspaces.  For example, adding the following lines to your <code>~/.config/regolith/Xresources</code> file will change the first three workspaces:</p>
+<pre><code>i3-wm.workspace.01.name: 1: Terminal
+i3-wm.workspace.02.name: 2: Web
+i3-wm.workspace.03.name: 3: Chat
+</code></pre><h3 id="adding-support-for-icon-fonts-in-text-editors">Adding support for icon fonts in text editors</h3>
 <p>Atom:</p>
 <ul>
 <li>Append the name of the icon font to <code>Settings &gt; Editor &gt; Font Familly</code>.</li>
@@ -887,7 +887,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified June 30, 2020: <a  href="https://github.com/regolith-linux/website/commit/d488ba9370176e2f8cc539530f2013bdd7978ea5">Pt pt translation (#32) (d488ba93)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified November 25, 2020: <a  href="https://github.com/regolith-linux/website/commit/92419c83cd121cca5fffb5451d8ebeb7de2b770f">Copy workspace label update to all languages. NOTE: this overwrites the es translation and will need to be revamped w/ the new content. (92419c83)</a>
 </div>
 </div>
 

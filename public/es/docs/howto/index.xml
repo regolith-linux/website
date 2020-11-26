@@ -291,37 +291,7 @@ $ regolith-look refresh
     </item>
     
     <item>
-      <title>Docs: Cambiar las Etiquetas de los Espacios de Trabajo</title>
-      <link>https://regolith-linux.org/es/docs/howto/remove-workspace-icons/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/es/docs/howto/remove-workspace-icons/</guid>
-      <description>
-        
-        
-        &lt;ol&gt;
-&lt;li&gt;Necesitarás montar los archivos de Estilos Xresource Regolith cómo &lt;a href=&#34;../stage-configs&#34;&gt;se describe aqui&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Entonces monta el archivo Xresource &lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt; en tu directorio de usuario, y asegurate de que tu copia de usuario del archivo Xresource tenga un &lt;code&gt;#include&lt;/code&gt; de esta copia.&lt;/li&gt;
-&lt;li&gt;Modifica los estilos a tu preferencia.&lt;/li&gt;
-&lt;li&gt;Luego de salvar el archivo de estilos cierra la sesión y vuelve a iniciarla para ver el cambio.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;elimina-todo-menos-el-nmero-del-espacio-de-trabajo&#34;&gt;Elimina todo menos el número del espacio de trabajo&lt;/h3&gt;
-&lt;p&gt;Sigue los siguientes pasos para editar las definiciones Xresource de las etiquetas de espacios de trabajo usadas por i3:&lt;/p&gt;
-&lt;p&gt;Edita tu copia de el archivo de estilos de &lt;code&gt;i3-wm&lt;/code&gt;. Este archivo usa macros del estilo C para generar el marcado Pango para la etiqueta de cada espacio de trabajo. Hay varias maneras de cambiar los macros para quitar los íconos, pero esta manera es la mas concisa. Reemplaza:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH) INDEX:&amp;lt;span font_desc=FONT&amp;gt; INDEX &amp;lt;/span&amp;gt;&amp;lt;span foreground=COLOR&amp;gt;GLYPH&amp;lt;/span&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;con:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH) 
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;creando-etiquetas-de-espacio-de-trabajo&#34;&gt;Creando etiquetas de espacio de trabajo&lt;/h3&gt;
-&lt;p&gt;Algunos usuarios prefieren titular sus espacios de trabajo basados en un tema, tales como &lt;code&gt;terminal&lt;/code&gt;, &lt;code&gt;web&lt;/code&gt;, etc. Para hacer esto, modifica tu copia de usuario de &lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt; de manera similar:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;i3-wm.workspace.01.name: 1: Terminal
-i3-wm.workspace.02.name: 2: Web
-i3-wm.workspace.03.name: 3: Chat
-&lt;/code&gt;&lt;/pre&gt;
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Cambiar los Íconos del Espacio de Trabajo</title>
+      <title>Docs: Change Workspace Icons and Labels</title>
       <link>https://regolith-linux.org/es/docs/howto/change-workspace-icons/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -329,35 +299,44 @@ i3-wm.workspace.03.name: 3: Chat
       <description>
         
         
-        &lt;p&gt;Agregar iconos a los espacios de trabajo puede darle a tu escritorio un aspecto bueno y funcional.&lt;/p&gt;
-&lt;h3 id=&#34;encontrando-conos&#34;&gt;Encontrando Íconos&lt;/h3&gt;
-&lt;p&gt;Los íconos en realidad son caracteres de las fuentes instaladas por Regolith looks. Cada aspecto viene con una fuente de ícono especifica. La fuente del ícono es definida en la variable &lt;code&gt;typeface_bar&lt;/code&gt; en el archivo de configuración &lt;code&gt;typeface&lt;/code&gt;. El aspecto por defecto Cahuella usa la fuente &lt;em&gt;Material Design Icons&lt;/em&gt; (ver archivo &lt;code&gt;/etc/regolith/styles/cahuella/typeface&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;Puedes navegar la fuente del ícono usando la aplicación &lt;a href=&#34;https://wiki.gnome.org/action/show/Apps/Gucharmap?action=show&amp;amp;redirect=Gucharmap&#34;&gt;Mapa de Caracteres de Gnome&lt;/a&gt; (paquete &lt;code&gt;gucharmap&lt;/code&gt;):&lt;/p&gt;
+        &lt;p&gt;Adding icons to workspaces can give your desktop a nice and functional look.&lt;/p&gt;
+&lt;h3 id=&#34;finding-icons&#34;&gt;Finding icons&lt;/h3&gt;
+&lt;p&gt;Icons are actually characters from fonts installed by Regolith looks. Each look comes with a specific icon font. The icon font is defined in the &lt;code&gt;typeface_bar&lt;/code&gt; variable in the &lt;code&gt;typeface&lt;/code&gt; config file. For example, the look Cahuella uses the &lt;em&gt;Material Design Icons&lt;/em&gt; font (see file &lt;code&gt;/etc/regolith/styles/cahuella/typeface&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;You can browse the icon font using the &lt;a href=&#34;https://wiki.gnome.org/action/show/Apps/Gucharmap?action=show&amp;amp;redirect=Gucharmap&#34;&gt;Gnome Character Map&lt;/a&gt; application (&lt;code&gt;gucharmap&lt;/code&gt; package):&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Abre el Mapa de Caracteres de Gnome.&lt;/li&gt;
-&lt;li&gt;Selecciona tu fuente de ícono en la combinación de arriba a la izquierda.&lt;/li&gt;
-&lt;li&gt;En el panel de &lt;em&gt;script&lt;/em&gt; selecciona &lt;em&gt;Common&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;Desliza hacia abajo el panel de caracteres hasta que encuentres los íconos.&lt;/li&gt;
-&lt;li&gt;Haz doble click en el ícono que estás buscando para usar y presiona el botón &lt;em&gt;Copiar&lt;/em&gt; (abajo a la derecha).&lt;/li&gt;
+&lt;li&gt;Open Gnome Character Map.&lt;/li&gt;
+&lt;li&gt;Select your icon font in the top left combo.&lt;/li&gt;
+&lt;li&gt;In the &lt;em&gt;script&lt;/em&gt; pane select &lt;em&gt;Common&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Scroll down the characters pane until you find the icons.&lt;/li&gt;
+&lt;li&gt;Double click on the icon you are looking to use and press the &lt;em&gt;Copy&lt;/em&gt; button (bottom right).&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; los íconos están ordenados alfabeticamente.&lt;/p&gt;
-&lt;h3 id=&#34;montando-archivos-y-cambiando-conos&#34;&gt;Montando archivos y cambiando íconos&lt;/h3&gt;
-&lt;p&gt;Sigue los siguientes pasos para editar las definiciones de Xresource de los íconos de los espacios de trabajo usados por i3:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; the icons are ordered alphabetically.&lt;/p&gt;
+&lt;h3 id=&#34;changing-icons&#34;&gt;Changing Icons&lt;/h3&gt;
+&lt;p&gt;Follow these steps to override the default workspace label with your own:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Monta tus archivos de Estilos Xresources Regolith, cómo se &lt;a href=&#34;%60../stage-configs%60&#34;&gt;describe acá&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Monta el archivo Xresource &lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt; en tu directorio de usuario, y asegurate de que tu copia de usuario del archivo Xresource haga un &lt;code&gt;#include&lt;/code&gt; de esta copia.&lt;/li&gt;
-&lt;li&gt;Edita tu copia de tu archivo de estilos &lt;code&gt;i3-wm&lt;/code&gt;. Encuentra la definición de nombre de espacio de trabajo que comienza con &lt;code&gt;i3-wm.workspace.01.name:&lt;/code&gt; y cambia el último argumento de la función &lt;code&gt;WORKSPACE_NAME&lt;/code&gt; de el valor por defecto &lt;code&gt;glyph&lt;/code&gt; a tu ícono simplemente copiando y pegando el caracter del ícono. El caracter del ícono quizas no sea mostrado apropiadamente si tu editor no soporta la fuente del ícono, pero funcionará bien en la barra.&lt;/li&gt;
-&lt;li&gt;Repite lo mismo para todos los espacios de trabajo requeridos.&lt;/li&gt;
-&lt;li&gt;Luego de guardar este archivo cierra la sesión y vuelve a iniciarla para ver el cambio.&lt;/li&gt;
+&lt;li&gt;Find the character you want to use and copy to the clipboard. This example will use the Sigma glyph from Material Design Icons font ().&lt;/li&gt;
+&lt;li&gt;Add a line to your Xresource overrides file with the workspace number and character you wish to use:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;agrega-soporte-para-fuentes-de-conos-en-los-editores-de-texto&#34;&gt;Agrega soporte para fuentes de íconos en los editores de texto&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm.workspace.06.name: 6:&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Refresh your UI:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In i3, workspace labels are only updated when a workspace is created.  Ensure you&#39;re creating an new workspace 6 if following the example above:&lt;/p&gt;
+&lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-bar-icon.png&#34;/&gt;
+&lt;h3 id=&#34;changing-labels&#34;&gt;Changing Labels&lt;/h3&gt;
+&lt;p&gt;The same approach can be used to specify textual descriptions of your workspaces.  For example, adding the following lines to your &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; file will change the first three workspaces:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;i3-wm.workspace.01.name: 1: Terminal
+i3-wm.workspace.02.name: 2: Web
+i3-wm.workspace.03.name: 3: Chat
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;adding-support-for-icon-fonts-in-text-editors&#34;&gt;Adding support for icon fonts in text editors&lt;/h3&gt;
 &lt;p&gt;Atom:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Concatena el nombre de la fuente del ícono en &lt;code&gt;Preferencias &amp;gt; Editor &amp;gt; Fuentes&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Ejemplo: &lt;code&gt;Menlo, Consolas, DejaVu Sans Mono, monospace, Material Design Icons&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Append the name of the icon font to &lt;code&gt;Settings &amp;gt; Editor &amp;gt; Font Familly&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Example: &lt;code&gt;Menlo, Consolas, DejaVu Sans Mono, monospace, Material Design Icons&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;lectura-complementaria&#34;&gt;Lectura Complementaria&lt;/h1&gt;
-&lt;p&gt;Vea la &lt;a href=&#34;../../reference/configurations&#34;&gt;página de referencia para configuraciones&lt;/a&gt; para más detalles sobre los archivos de configuración en Regolith.&lt;/p&gt;
+&lt;h1 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h1&gt;
+&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configurations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
 
       </description>
     </item>

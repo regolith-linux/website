@@ -2798,7 +2798,7 @@ $ regolith-look refresh
     </item>
     
     <item>
-      <title>Docs: Change Workspace Icons</title>
+      <title>Docs: Change Workspace Icons and Labels</title>
       <link>https://regolith-linux.org/de/docs/howto/change-workspace-icons/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2808,7 +2808,7 @@ $ regolith-look refresh
         
         &lt;p&gt;Adding icons to workspaces can give your desktop a nice and functional look.&lt;/p&gt;
 &lt;h3 id=&#34;finding-icons&#34;&gt;Finding icons&lt;/h3&gt;
-&lt;p&gt;Icons are actually characters from fonts installed by Regolith looks. Each look comes with a specific icon font. The icon font is defined in the &lt;code&gt;typeface_bar&lt;/code&gt; variable in the &lt;code&gt;typeface&lt;/code&gt; config file. The default look Cahuella uses the &lt;em&gt;Material Design Icons&lt;/em&gt; font (see file &lt;code&gt;/etc/regolith/styles/cahuella/typeface&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Icons are actually characters from fonts installed by Regolith looks. Each look comes with a specific icon font. The icon font is defined in the &lt;code&gt;typeface_bar&lt;/code&gt; variable in the &lt;code&gt;typeface&lt;/code&gt; config file. For example, the look Cahuella uses the &lt;em&gt;Material Design Icons&lt;/em&gt; font (see file &lt;code&gt;/etc/regolith/styles/cahuella/typeface&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;You can browse the icon font using the &lt;a href=&#34;https://wiki.gnome.org/action/show/Apps/Gucharmap?action=show&amp;amp;redirect=Gucharmap&#34;&gt;Gnome Character Map&lt;/a&gt; application (&lt;code&gt;gucharmap&lt;/code&gt; package):&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open Gnome Character Map.&lt;/li&gt;
@@ -2818,64 +2818,33 @@ $ regolith-look refresh
 &lt;li&gt;Double click on the icon you are looking to use and press the &lt;em&gt;Copy&lt;/em&gt; button (bottom right).&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; the icons are ordered alphabetically.&lt;/p&gt;
-&lt;h3 id=&#34;staging-files-and-changing-icons&#34;&gt;Staging files and changing icons&lt;/h3&gt;
-&lt;p&gt;Follow these steps to edit the Xresource definitions of the workspace icons used by i3:&lt;/p&gt;
+&lt;h3 id=&#34;changing-icons&#34;&gt;Changing Icons&lt;/h3&gt;
+&lt;p&gt;Follow these steps to override the default workspace label with your own:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Stage your Regolith Styles Xresources files, as &lt;a href=&#34;../stage-configs&#34;&gt;described here&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Stage the &lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt; Xresource file in your user directory, and ensure that your user copy of the Xresource file &lt;code&gt;#include&lt;/code&gt;s this copy.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Edit your copy of the &lt;code&gt;i3-wm&lt;/code&gt; styles file. Find the workspace name definition starting with &lt;code&gt;i3-wm.workspace.01.name:&lt;/code&gt; and change the last argument of the &lt;code&gt;WORKSPACE_NAME&lt;/code&gt; function from the default &lt;code&gt;glyph&lt;/code&gt; to your icon by simply copying and pasting the icon character. The icon character might not be displayed properly if your editor does not support the icon font, but it will work fine in the bar.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Repeat for all required workspaces.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;After saving this file log out and back in to see the change.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Find the character you want to use and copy to the clipboard. This example will use the Sigma glyph from Material Design Icons font ().&lt;/li&gt;
+&lt;li&gt;Add a line to your Xresource overrides file with the workspace number and character you wish to use:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;adding-support-for-icon-fonts-in-text-editors&#34;&gt;Adding support for icon fonts in text editors&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm.workspace.06.name: 6:&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Refresh your UI:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ regolith-look refresh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In i3, workspace labels are only updated when a workspace is created.  Ensure you&#39;re creating an new workspace 6 if following the example above:&lt;/p&gt;
+&lt;img class=&#34;shadow m-5&#34; src=&#34;../regolith-bar-icon.png&#34;/&gt;
+&lt;h3 id=&#34;changing-labels&#34;&gt;Changing Labels&lt;/h3&gt;
+&lt;p&gt;The same approach can be used to specify textual descriptions of your workspaces.  For example, adding the following lines to your &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; file will change the first three workspaces:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;i3-wm.workspace.01.name: 1: Terminal
+i3-wm.workspace.02.name: 2: Web
+i3-wm.workspace.03.name: 3: Chat
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;adding-support-for-icon-fonts-in-text-editors&#34;&gt;Adding support for icon fonts in text editors&lt;/h3&gt;
 &lt;p&gt;Atom:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Append the name of the icon font to &lt;code&gt;Settings &amp;gt; Editor &amp;gt; Font Familly&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Example: &lt;code&gt;Menlo, Consolas, DejaVu Sans Mono, monospace, Material Design Icons&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h1&gt;
-&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configrations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configurations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
 
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Change Workspace Labels</title>
-      <link>https://regolith-linux.org/de/docs/howto/remove-workspace-icons/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/de/docs/howto/remove-workspace-icons/</guid>
-      <description>
-        
-        
-        &lt;ol&gt;
-&lt;li&gt;You&#39;ll need to stage the Regolith Styles Xresource files as &lt;a href=&#34;../stage-configs&#34;&gt;described here&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Then stage the &lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt; Xresource file in your user directory, and ensure that your user copy of the Xresource file &lt;code&gt;#include&lt;/code&gt;s this copy.&lt;/li&gt;
-&lt;li&gt;Modify the styles to your preference.&lt;/li&gt;
-&lt;li&gt;After saving the styles file log out and back in to see the change.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;remove-everything-but-the-workspace-number&#34;&gt;Remove everything but the workspace number&lt;/h3&gt;
-&lt;p&gt;Follow these steps to edit the Xresource definitions of the workspace labels used by i3:&lt;/p&gt;
-&lt;p&gt;Edit your copy of the &lt;code&gt;i3-wm&lt;/code&gt; styles file. This file uses C-style macros to generate the Pango markup for each workspace label.  There are various ways of changing the macros to strip out the icons, but this may be the most concise.  Replace:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH) INDEX:&amp;lt;span font_desc=FONT&amp;gt; INDEX &amp;lt;/span&amp;gt;&amp;lt;span foreground=COLOR&amp;gt;GLYPH&amp;lt;/span&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;with:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#define WORKSPACE_NAME(INDEX, FONT, COLOR, GLYPH) 
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;creating-workspace-labels&#34;&gt;Creating workspace labels&lt;/h3&gt;
-&lt;p&gt;Some users prefer to title their workspaces based a theme, such as &lt;code&gt;terminal&lt;/code&gt;, &lt;code&gt;web&lt;/code&gt;, etc.  To do this, make modifications to your user copy of &lt;code&gt;/etc/regolith/styles/i3-wm&lt;/code&gt; similarly to:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;i3-wm.workspace.01.name: 1: Terminal
-i3-wm.workspace.02.name: 2: Web
-i3-wm.workspace.03.name: 3: Chat
-&lt;/code&gt;&lt;/pre&gt;
       </description>
     </item>
     
