@@ -375,6 +375,27 @@ i3-wm.bindsym.program.1: /usr/bin/gnome-terminal --class&lt;span style=&#34;colo
     </item>
     
     <item>
+      <title>Docs: Change the lock screen program</title>
+      <link>https://regolith-linux.org/de/docs/howto/change-lockscreen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/de/docs/howto/change-lockscreen/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;1-configure-gnome-flashback-to-disable-built-in-lockscreen&#34;&gt;1. Configure &lt;code&gt;gnome-flashback&lt;/code&gt; to Disable Built-in Lockscreen&lt;/h3&gt;
+&lt;p&gt;By default &lt;code&gt;gnome-flashback&lt;/code&gt; handles the lockscreen for Regolith.  This can be adjusted by modifying it&#39;s configuration via the gsettings command line program:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ gsettings &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; org.gnome.gnome-flashback screensaver &lt;span style=&#34;color:#204a87&#34;&gt;false&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-cause-your-lockscreen-program-to-run-from-i3-keybinding&#34;&gt;2. Cause Your Lockscreen program to Run from i3 Keybinding&lt;/h3&gt;
+&lt;p&gt;Specify the following override line in your &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; file (substituting &lt;code&gt;your-script.sh&lt;/code&gt; to the command you wish to use for the screenlock):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;i3-wm.program.lock: your-script.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For example, assuming you have &lt;code&gt;i3lock&lt;/code&gt; installed:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm.program.lock: /usr/bin/i3lock&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Switch between Regolith PPAs</title>
       <link>https://regolith-linux.org/de/docs/howto/change-ppa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
