@@ -1,15 +1,15 @@
 ---
-title: "Change Workspace Icons"
+title: "Change Workspace Icons and Labels"
 weight: 7
 description: >
-  Learn how to set custom icons for each workspace.
+  Learn how to customize each workspace in the bar.
 ---
 
 Adding icons to workspaces can give your desktop a nice and functional look.
 
 ### Finding icons
 
-Icons are actually characters from fonts installed by Regolith looks. Each look comes with a specific icon font. The icon font is defined in the `typeface_bar` variable in the `typeface` config file. The default look Cahuella uses the _Material Design Icons_ font (see file `/etc/regolith/styles/cahuella/typeface`).
+Icons are actually characters from fonts installed by Regolith looks. Each look comes with a specific icon font. The icon font is defined in the `typeface_bar` variable in the `typeface` config file. For example, the look Cahuella uses the _Material Design Icons_ font (see file `/etc/regolith/styles/cahuella/typeface`).
 
 You can browse the icon font using the [Gnome Character Map](https://wiki.gnome.org/action/show/Apps/Gucharmap?action=show&redirect=Gucharmap) application (`gucharmap` package):
 
@@ -21,17 +21,34 @@ You can browse the icon font using the [Gnome Character Map](https://wiki.gnome.
 
 **Tip:** the icons are ordered alphabetically.
 
-### Staging files and changing icons
+### Changing Icons
 
-Follow these steps to edit the Xresource definitions of the workspace icons used by i3:
+Follow these steps to override the default workspace label with your own:
 
-1. Stage your Regolith Styles Xresources files, as [described here](../stage-configs).
-2. Stage the `/etc/regolith/styles/i3-wm` Xresource file in your user directory, and ensure that your user copy of the Xresource file `#include`s this copy.
-3. Edit your copy of the `i3-wm` styles file. Find the workspace name definition starting with `i3-wm.workspace.01.name:` and change the last argument of the `WORKSPACE_NAME` function from the default `glyph` to your icon by simply copying and pasting the icon character. The icon character might not be displayed properly if your editor does not support the icon font, but it will work fine in the bar.
+1. Find the character you want to use and copy to the clipboard. This example will use the Sigma glyph from Material Design Icons font ().
+2. Add a line to your Xresource overrides file with the workspace number and character you wish to use:
+```bash
+$ echo "i3-wm.workspace.06.name: 6:" >> ~/.config/regolith/Xresources
+```
+3. Refresh your UI:
+```bash
+$ regolith-look refresh
+```
 
-4. Repeat for all required workspaces.
+In i3, workspace labels are only updated when a workspace is created.  Ensure you're creating an new workspace 6 if following the example above:
 
-5. After saving this file log out and back in to see the change.
+<img class="shadow m-5" src="../regolith-bar-icon.png"/>
+
+
+### Changing Labels
+
+The same approach can be used to specify textual descriptions of your workspaces.  For example, adding the following lines to your `~/.config/regolith/Xresources` file will change the first three workspaces:
+
+```
+i3-wm.workspace.01.name: 1: Terminal
+i3-wm.workspace.02.name: 2: Web
+i3-wm.workspace.03.name: 3: Chat
+```
 
 ### Adding support for icon fonts in text editors
 
@@ -42,4 +59,4 @@ Atom:
 
 # Further Reading
 
-See the [reference page for configrations](../../reference/configurations) for more details about config files in Regolith.
+See the [reference page for configurations](../../reference/configurations) for more details about config files in Regolith.
