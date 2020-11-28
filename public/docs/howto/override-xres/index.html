@@ -26,11 +26,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/docs/howto/override-xres/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-11-22T21:08:04-05:00" /><meta property="og:site_name" content="Regolith 1.5" />
+<meta property="article:modified_time" content="2020-11-28T20:12:32+01:00" /><meta property="og:site_name" content="Regolith 1.5" />
 <meta itemprop="name" content="Override Xresources">
 <meta itemprop="description" content="Learn how to stage user copies of Regolith configuration files.
 ">
-<meta itemprop="dateModified" content="2020-11-22T21:08:04-05:00" />
+<meta itemprop="dateModified" content="2020-11-28T20:12:32&#43;01:00" />
 <meta itemprop="wordCount" content="564">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
@@ -915,7 +915,7 @@ gnome.wm.theme:	Ayu-Mirage-Dark
 <h3 id="example---change-i3-bar-position">Example - Change i3 bar position</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ xrdb -query <span style="color:#000;font-weight:bold">|</span> grep position
 i3-wm.bar.position:	bottom
-$ <span style="color:#204a87">echo</span> <span style="color:#4e9a06">&#34;i3-wm.bar.position:	bottom&#34;</span> &gt;&gt; ~/.config/regolith/Xresources
+$ <span style="color:#204a87">echo</span> <span style="color:#4e9a06">&#34;i3-wm.bar.position:	top&#34;</span> &gt;&gt; ~/.config/regolith/Xresources
 $ regolith-look refresh
 </code></pre></div><h3 id="example---change-gtk-theme">Example - Change GTK Theme</h3>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ xrdb -query <span style="color:#000;font-weight:bold">|</span> grep gtk
@@ -1005,7 +1005,7 @@ $ <span style="color:#204a87">echo</span> <span style="color:#4e9a06">&#34;i3-wm
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified November 22, 2020: <a  href="https://github.com/regolith-linux/website/commit/287157fa3592ef0a53b99c3845ed399bd57c10a3">Update override-xres.md (#53) (287157fa)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified November 28, 2020: <a  href="https://github.com/regolith-linux/website/commit/47c98bab14e900113abdcf76cec80a8342608f1d">Clarify that the i3 bar position can be changed from bottom to top. (#56) (47c98bab)</a>
 </div>
 </div>
 
