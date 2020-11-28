@@ -64,7 +64,7 @@ $ regolith-look refresh
 ```bash
 $ xrdb -query | grep position
 i3-wm.bar.position:	bottom
-$ echo "i3-wm.bar.position:	bottom" >> ~/.config/regolith/Xresources
+$ echo "i3-wm.bar.position:	top" >> ~/.config/regolith/Xresources
 $ regolith-look refresh
 ```
 
