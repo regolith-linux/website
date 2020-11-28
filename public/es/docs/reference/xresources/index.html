@@ -26,12 +26,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/es/docs/reference/xresources/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-10-29T08:45:49-07:00" /><meta property="og:site_name" content="Regolith 1.5" />
+<meta property="article:modified_time" content="2020-11-28T11:43:15-08:00" /><meta property="og:site_name" content="Regolith 1.5" />
 <meta itemprop="name" content="Xresources">
 <meta itemprop="description" content="All Regolith Xresource key definitions
 ">
-<meta itemprop="dateModified" content="2020-10-29T08:45:49-07:00" />
-<meta itemprop="wordCount" content="595">
+<meta itemprop="dateModified" content="2020-11-28T11:43:15-08:00" />
+<meta itemprop="wordCount" content="752">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
 
@@ -850,6 +850,14 @@ if (!doNotTrack) {
 <td>GTK Icon Theme</td>
 </tr>
 <tr>
+<td>gnome.terminal.audible-bell</td>
+<td>Enables audible bell in gnome-terminal (<code>true | false</code>)</td>
+</tr>
+<tr>
+<td>gnome.terminal.background-transparency-percent</td>
+<td>Background transparency value for gnome-terminal (<code>0 - 100</code>). See also <code>gnome.terminal.use-transparent-background</code>.</td>
+</tr>
+<tr>
 <td>gnome.terminal.font</td>
 <td>Font definition for gnome-terminal</td>
 </tr>
@@ -858,12 +866,20 @@ if (!doNotTrack) {
 <td>Flag to enable/disable scrollbar (<code>never | always</code>)</td>
 </tr>
 <tr>
+<td>gnome.terminal.use-transparent-background</td>
+<td>Enables transparent background in gnome-terminal (<code>true | false</code>). See also <code>gnome.terminal.background-transparency-percent</code>.</td>
+</tr>
+<tr>
 <td>gnome.wallpaper</td>
 <td>GNOME Wallpaper (can be overridden in Settings)</td>
 </tr>
 <tr>
 <td>gnome.wm.theme</td>
 <td>GNOME Window Manager Theme (unused)</td>
+</tr>
+<tr>
+<td>i3-wm.alt</td>
+<td>Key mapping for Alt key.  See the <a href="https://i3wm.org/docs/userguide.html#_using_i3">i3 User Guide</a> for details.</td>
 </tr>
 <tr>
 <td>i3-wm.bar.background.color</td>
@@ -1023,11 +1039,7 @@ if (!doNotTrack) {
 </tr>
 <tr>
 <td>i3-wm.font</td>
-<td>Window Manager Font</td>
-</tr>
-<tr>
-<td>i3-wm.gaps.focus_follows_mouse</td>
-<td>The window under the mouse has focus if enabled</td>
+<td>Window manager font</td>
 </tr>
 <tr>
 <td>i3-wm.gaps.inner.size</td>
@@ -1038,12 +1050,40 @@ if (!doNotTrack) {
 <td>Default gap size at screen edge in pixels</td>
 </tr>
 <tr>
+<td>i3-wm.mod</td>
+<td>Key mapping for Super key.  See the <a href="https://i3wm.org/docs/userguide.html#_using_i3">i3 User Guide</a> for details.</td>
+</tr>
+<tr>
 <td>i3-wm.window.border.size</td>
 <td>Default border size in pixels</td>
 </tr>
 <tr>
 <td>i3-wm.workspace.01.name .. i3-wm.workspace.19.name</td>
 <td>Workspace Labels</td>
+</tr>
+<tr>
+<td>i3-wm.workspace.01.key .. i3-wm.workspace.10.key</td>
+<td>Workspace Shortucts</td>
+</tr>
+<tr>
+<td>i3xrocks.action.volume.left</td>
+<td>Command to execute when volume indicator is left clicked (default: none)</td>
+</tr>
+<tr>
+<td>i3xrocks.action.volume.middle</td>
+<td>Command to execute when volume indicator is middle clicked (default: none)</td>
+</tr>
+<tr>
+<td>i3xrocks.action.volume.right</td>
+<td>Command to execute when volume indicator is right clicked (default: mute through amixer)</td>
+</tr>
+<tr>
+<td>i3xrocks.action.volume.scrollup</td>
+<td>Command to execute when scroll wheel up is used on volume indicator (default: increase volume through amixer)</td>
+</tr>
+<tr>
+<td>i3xrocks.action.volume.scrolldn</td>
+<td>Command to execute when scroll wheel down is used on volume indicator (default: decrease volume through amixer)</td>
 </tr>
 <tr>
 <td>i3xrocks.error.color</td>
@@ -1309,6 +1349,10 @@ if (!doNotTrack) {
 <td>i3-wm.program.1&hellip;i3-wm.program.3</td>
 <td>Optional programs to start with i3</td>
 </tr>
+<tr>
+<td>i3xrocks.media-player.player-args</td>
+<td>Optional arguments used by the <code>media-player</code> i3xrocks block. These arguments are fed straight into <code>playerctl</code>, eg. setting this value to <code>-p spotify</code> only makes the bar display/control spotify.</td>
+</tr>
 </tbody>
 </table>
 
@@ -1374,7 +1418,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Última Modificación October 29, 2020: <a  href="https://github.com/regolith-linux/website/commit/ea037042134632efbcd0874b8b5b5f9e9f318bb4">Push doc fix from https://github.com/regolith-linux/website/pull/47 to other languages. (#49) (ea037042)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Última Modificación November 28, 2020: <a  href="https://github.com/regolith-linux/website/commit/a5cbb61be2f73168db3f66779aa78fd67c8e1eb9">Copy xres update to all transations. (a5cbb61b)</a>
 </div>
 </div>
 
