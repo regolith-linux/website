@@ -19,8 +19,11 @@ description: >
 |Xft.rgba | X	rgb setting |
 |gnome.gtk.theme | GTK Theme |
 |gnome.icon.theme | GTK Icon Theme |
+|gnome.terminal.audible-bell | Enables audible bell in gnome-terminal (`true | false`) |
+|gnome.terminal.background-transparency-percent | Background transparency value for gnome-terminal (`0 - 100`). See also `gnome.terminal.use-transparent-background`. |
 |gnome.terminal.font | Font definition for gnome-terminal |
 |gnome.terminal.scrollbar | Flag to enable/disable scrollbar (`never | always`) |
+|gnome.terminal.use-transparent-background | Enables transparent background in gnome-terminal (`true | false`). See also `gnome.terminal.background-transparency-percent`. |
 |gnome.wallpaper | GNOME Wallpaper (can be overridden in Settings) |
 |gnome.wm.theme | GNOME Window Manager Theme (unused) |
 |i3-wm.alt | Key mapping for Alt key.  See the [i3 User Guide](https://i3wm.org/docs/userguide.html#_using_i3) for details. |
@@ -63,13 +66,18 @@ description: >
 |i3-wm.client.urgent.color.indicator | |
 |i3-wm.client.urgent.color.text | |
 |i3-wm.floatingwindow.border.size | Window border size in pixels for floating windows |
-|i3-wm.font | Window Manager Font |
+|i3-wm.font | Window manager font |
 |i3-wm.gaps.inner.size | Default gap size between windows in pixels |
 |i3-wm.gaps.outer.size | 	Default gap size at screen edge in pixels |
 |i3-wm.mod | Key mapping for Super key.  See the [i3 User Guide](https://i3wm.org/docs/userguide.html#_using_i3) for details. |
 |i3-wm.window.border.size | Default border size in pixels |
 |i3-wm.workspace.01.name .. i3-wm.workspace.19.name | Workspace Labels |
 |i3-wm.workspace.01.key .. i3-wm.workspace.10.key | Workspace Shortucts |
+|i3xrocks.action.volume.left | Command to execute when volume indicator is left clicked (default: none) |
+|i3xrocks.action.volume.middle | Command to execute when volume indicator is middle clicked (default: none) |
+|i3xrocks.action.volume.right | Command to execute when volume indicator is right clicked (default: mute through amixer) |
+|i3xrocks.action.volume.scrollup | Command to execute when scroll wheel up is used on volume indicator (default: increase volume through amixer) |
+|i3xrocks.action.volume.scrolldn | Command to execute when scroll wheel down is used on volume indicator (default: decrease volume through amixer) |
 |i3xrocks.error.color | Color for bar module in error mode |
 |i3xrocks.label.battery0 | Bar icon glyph |
 |i3xrocks.label.battery100 |  Bar icon glyph |
@@ -121,6 +129,7 @@ The following Xresource keys are undefined by default but can be used by users t
 |-------------|-------------|
 |rofi.search.help | Show help text on the file search dialog, defaults to `true` |
 |rofi.search.limit | Total number of items to return from an `mlocate` search, default: 64 |
+|i3-wm.gaps.focus_follows_mouse | The window under the mouse has focus if enabled |
 |i3-wm.program.launcher.app | Command i3 executes from the app launcher keybinding |
 |i3-wm.program.launcher.cmd | Command i3 executes from the command launcher keybinding |
 |i3-wm.program.launcher.window | Command i3 executes for the window navigation keybinding |
@@ -139,3 +148,4 @@ The following Xresource keys are undefined by default but can be used by users t
 |i3-wm.program.files | Command to launch from the file browser keybinding |
 |i3-wm.program.notification_ui | Command to launch from the notification UI keybinding |
 |i3-wm.program.1...i3-wm.program.3 | Optional programs to start with i3 |
+|i3xrocks.media-player.player-args | Optional arguments used by the `media-player` i3xrocks block. These arguments are fed straight into `playerctl`, eg. setting this value to `-p spotify` only makes the bar display/control spotify. |
