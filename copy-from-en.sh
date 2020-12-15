@@ -22,5 +22,5 @@ LANGUAGES=( "de" "es" "fr" "hu" "pt_br" "pt_pt" "ru" )
 for LANG in "${LANGUAGES[@]}"
 do
     TARGET_PATH="$ROOT_DIR/content/$LANG/$SOURCE_PAGE"
-    cp -v $SOURCE_PATH $TARGET_PATH
+    cp -v "$SOURCE_PATH" "$TARGET_PATH"
 done
