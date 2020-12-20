@@ -24,23 +24,23 @@ After logging in, you'll be at a blank screen with the bar at the bottom and som
 
 ### Navigate to a Window
 
-To focus on a running application, the <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> keybinding can be used to show a dialog of all running windows.  Simply select the desired window and the system will move to the window's containing workspace and set it's focus.
+To focus on a running application, the <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> keybinding can be used to show a dialog of all running windows.  Simply select the desired window and the system will move to the window's containing workspace and set its focus.
 
 <img class="shadow m-5" src="../regolith-screenshot-window-nav2.png" width="640px"/>
 
 ### Create a new Workspace
 
-Workspaces (also known as virtual desktops in some desktop enviroments) are the primary way by which windows can be managed.  Each workspace provides a screen for an indepentent set of windows.  To create a workspace, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">`</span></span> will create and move to a new workspace.  <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">0 - 9</span></span> allows for navigation to specific workspaces.
+Workspaces (also known as virtual desktops in some desktop enviroments) are the primary way by which windows can be managed.  Each workspace provides a screen for an independent set of windows.  To create a workspace, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">`</span></span> will create and move to a new workspace.  <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">0 - 9</span></span> allows for navigation to specific workspaces.
 
 ### Find and Launch a File
 
-Searching your local computer for a specific file can be achieved in a variety of ways.  Regolith provides a file search dialog via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">space</span></span> to quickly seek and optionally load a file with it's default application.  If the file path exceeds the width of the dialog, <span class="text-nowrap"><span class="badge badge-warning">alt</span> <span class="badge badge-warning">.</span></span> will toggle text justification.  Pressing enter on a selection will cause the file to be invoked with the <code>xdg-open</code> command.
+Searching your local computer for a specific file can be achieved in a variety of ways.  Regolith provides a file search dialog via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">space</span></span> to quickly seek and optionally load a file with its default application.  If the file path exceeds the width of the dialog, <span class="text-nowrap"><span class="badge badge-warning">alt</span> <span class="badge badge-warning">.</span></span> will toggle text justification.  Pressing enter on a selection will cause the file to be invoked with the <code>xdg-open</code> command.
 
 <img class="shadow m-5" src="../regolith-file-search.png" width="640px"/>
 
 ### Terminal
 
-The terminal is a special application that has it's own keybinding, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span>.
+The terminal is a special application that has its own keybinding, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span>.
 
 ### Browser
 
@@ -52,7 +52,7 @@ The preferred browser is also special, and can be launched with <span class="tex
 
 ## Switching Workspaces
 
-A primary way of managing how applications occupy the screen is by the usage of workspaces.  A workspace is in essence a group of zero or more applications that all present windows on the same physical display.  Users can switch workspaces to "gain" more space for applications to occupy.  Windows can be moved across workspaces.  Workspaces can be tied to physical display or be moved to other displays as needed.  To switch workspaces, hold down the <span class="badge badge-warning">super</span> key and press one of the number keys.  This will navigate to that workspace.  If any windows exist in a given workspace, it will show in the bar as being active. Thus, by referring to the bar the user can known of which workspaces active applications live.
+A primary way of managing how applications occupy the screen is by the usage of workspaces.  A workspace is in essence a group of zero or more applications that all present windows on the same physical display.  Users can switch workspaces to "gain" more space for applications to occupy.  Windows can be moved across workspaces.  Workspaces can be tied to physical display or be moved to other displays as needed.  To switch workspaces, hold down the <span class="badge badge-warning">super</span> key and press one of the number keys.  This will navigate to that workspace.  If any windows exist in a given workspace, it will show in the bar as being active. Thus, by referring to the bar the user can know in which workspaces active applications live.
 
 Workspaces can also be paged forward and backward via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">tab</span></span> and <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">tab</span></span>.
 

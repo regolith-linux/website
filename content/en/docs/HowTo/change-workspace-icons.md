@@ -1,8 +1,8 @@
 ---
-title: "Change Workspace Icons"
+title: "Change Workspace Icons and Labels"
 weight: 7
 description: >
-  Learn how to set custom icons for each workspace.
+  Learn how to customize each workspace in the bar.
 ---
 
 Adding icons to workspaces can give your desktop a nice and functional look.
@@ -21,7 +21,7 @@ You can browse the icon font using the [Gnome Character Map](https://wiki.gnome.
 
 **Tip:** the icons are ordered alphabetically.
 
-### Changing icons
+### Changing Icons
 
 Follow these steps to override the default workspace label with your own:
 
@@ -38,6 +38,17 @@ $ regolith-look refresh
 In i3, workspace labels are only updated when a workspace is created.  Ensure you're creating an new workspace 6 if following the example above:
 
 <img class="shadow m-5" src="../regolith-bar-icon.png"/>
+
+
+### Changing Labels
+
+The same approach can be used to specify textual descriptions of your workspaces.  For example, adding the following lines to your `~/.config/regolith/Xresources` file will change the first three workspaces:
+
+```
+i3-wm.workspace.01.name: 1: Terminal
+i3-wm.workspace.02.name: 2: Web
+i3-wm.workspace.03.name: 3: Chat
+```
 
 ### Adding support for icon fonts in text editors
 

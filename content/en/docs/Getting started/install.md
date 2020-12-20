@@ -141,10 +141,11 @@ There are 4 sources for Regolith packages.  The `release` PPA is recommended for
 
 | Name | PPA URI | Freshness | Stability | Description |
 |------|---------|-----------|-----------|-------------|
-| Unstable | <span class="text-nowrap">`ppa:regolith-linux/unstable`</span> | <span class="badge badge-primary">Very High</span> | <span class="badge badge-secondary">Low</span> | The `unstable` PPA is recommended for project developers and anyone that's alright with troubleshooting their own system and doesn't mind some problems from time to time. |
-| Stable | `ppa:regolith-linux/stable` | <span class="badge badge-primary">High</span> | <span class="badge badge-secondary">Medium</span> | The `stable` PPA is for those that would like the latest features, even between official releases. |
+| Unstable | <span class="text-nowrap">`ppa:regolith-linux/unstable`</span> | <span class="badge badge-primary">High</span> | <span class="badge badge-secondary">Low</span> | The `unstable` PPA is recommended for project developers and anyone that's alright with troubleshooting their own system and doesn't mind some problems from time to time. |
+| Stable | `ppa:regolith-linux/stable` | <span class="badge badge-primary">Medium</span> | <span class="badge badge-secondary">Medium</span> | The `stable` PPA is for those that would like the latest features, even between official releases. |
 | Release | <span class="text-nowrap">`ppa:regolith-linux/release`</span> | <span class="badge badge-primary">Low</span> | <span class="badge badge-secondary">High</span> | The `release` PPA provides bug fixes as they occur and feature updates upon release. |
-| r1.3 | `ppa:regolith-linux/r1.3` | <span class="badge badge-primary">Very Low</span> | <span class="badge badge-secondary">Very High</span> | The `r1.3` PPA is locked to the 1.3 release and will not be updated except for critical bug fixes. |
+| r1.3 | `ppa:regolith-linux/r1.3` |  |  | The `r1.3` PPA is locked to the 1.3 release and will not be updated. |
+| r1.4.1 | `ppa:regolith-linux/regolith-1.4.1` | | | The `r1.4.1` PPA is locked to the 1.4.1 release and will not be updated. |
 
 ## Desktop Packages
 
