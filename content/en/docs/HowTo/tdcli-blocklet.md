@@ -5,9 +5,9 @@ description: >
   Create and manage a to-do list from status bar
 ---
 
-[`td-cli`](https://github.com/darrikonn/td-cli) is a command line todo manager written in Python 3 for organizing your todos across multiple projects.
+[`td-cli`](https://github.com/darrikonn/td-cli) is a command line todo manager written in Python 3 for organizing todo lists across multiple projects.
 
-Regolith includes blocklet for accessing `td-cli` directly from the status bar which can be installed as follows:
+Regolith includes a status bar blocklet for accessing `td-cli` directly from the bar. It can be installed as follows:
 
 ```bash
 sudo apt install i3xrocks-todo
