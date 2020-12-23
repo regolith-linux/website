@@ -41,4 +41,4 @@ instance=BAT1
 
 ## Further Reading
 
-See the [reference page for configrations](../../reference/configurations) for more details about config files in Regolith.
+See the [reference page for configurations](../../reference/configurations) for more details about config files in Regolith.
