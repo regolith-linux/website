@@ -20,7 +20,7 @@ Perhaps the most user-impacting component in Regolith is the window manager, an 
 
 ## Launching Applications
 
-It is common for desktop environments to display application launchers throughout the user interface, in the form of icons and text.  Folders, docks, and context menus are used to present a form of menu to the user.  Despite them appearing visually different, they are have one function: to launch an application.  As with keybindings, in Regolith this user interface of launching apps is refined and minimized.  Desktop icons, panels, and docks are not used.  Rather, the user invokes the application launcher which presents a menu of applications sorted by frequency of usage.  The user may begin typing the name or function of the application they intend to load and the list is filtered accordingly.  In addition, frequently used applications such as terminal and browser have specific keybindings.  With this UI treatment, there is no fixed overhead on the display for the presentation of application launchers.  This provides the user benefit of more screen space devoted to the user's applications.
+It is common for desktop environments to display application launchers throughout the user interface, in the form of icons and text.  Folders, docks, and context menus are used to present a form of menu to the user.  Despite them appearing visually different, they all have one function: to launch an application.  As with keybindings, in Regolith this user interface of launching apps is refined and minimized.  Desktop icons, panels, and docks are not used.  Rather, the user invokes the application launcher which presents a menu of applications sorted by frequency of usage.  The user may begin typing the name or function of the application they intend to load and the list is filtered accordingly.  In addition, frequently used applications such as terminal and browser have specific keybindings.  With this UI treatment, there is no fixed overhead on the display for the presentation of application launchers.  This provides the user benefit of more screen space devoted to the user's applications.
 
 ## System Management
 
@@ -42,4 +42,4 @@ While most of the common tasks of system management and administration are handl
 
 1: The term came from a time when computers were large and were used on desks. That is no longer the case but we still use the term.  A *desktop environment* is generally applicable to any computer with a keyboard, display, and some type of pointing device.
 
-2: See [the interface page](../interface/) for specifics about the component Regolith is composed of.
+2: See [the interface page](../interface/) for specifics about the components Regolith is composed of.
