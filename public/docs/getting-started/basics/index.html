@@ -26,11 +26,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/docs/getting-started/basics/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-11-08T11:03:20-08:00" /><meta property="og:site_name" content="Regolith 1.5" />
+<meta property="article:modified_time" content="2020-12-17T23:26:42-05:00" /><meta property="og:site_name" content="Regolith 1.5" />
 <meta itemprop="name" content="Basic Usage">
 <meta itemprop="description" content="Learn the most important parts of Regolith first.
 ">
-<meta itemprop="dateModified" content="2020-11-08T11:03:20-08:00" />
+<meta itemprop="dateModified" content="2020-12-17T23:26:42-05:00" />
 <meta itemprop="wordCount" content="705">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
@@ -856,21 +856,21 @@ if (!doNotTrack) {
 <p>After logging in, you'll be at a blank screen with the bar at the bottom and some keyboard shortcuts on the right.  To launch an application, press <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span> and a menu will be presented with all of the applications installed on the system.  If you begin typing the name of the application you wish to launch, the list will filter down to only matching names.  You can also scroll through the list with the arrow keys.</p>
 <img class="shadow m-5" src="../screenshot-launcher.png" width="640px"/>
 <h3 id="navigate-to-a-window">Navigate to a Window</h3>
-<p>To focus on a running application, the <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> keybinding can be used to show a dialog of all running windows.  Simply select the desired window and the system will move to the window's containing workspace and set it's focus.</p>
+<p>To focus on a running application, the <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> keybinding can be used to show a dialog of all running windows.  Simply select the desired window and the system will move to the window's containing workspace and set its focus.</p>
 <img class="shadow m-5" src="../regolith-screenshot-window-nav2.png" width="640px"/>
 <h3 id="create-a-new-workspace">Create a new Workspace</h3>
-<p>Workspaces (also known as virtual desktops in some desktop enviroments) are the primary way by which windows can be managed.  Each workspace provides a screen for an indepentent set of windows.  To create a workspace, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">`</span></span> will create and move to a new workspace.  <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">0 - 9</span></span> allows for navigation to specific workspaces.</p>
+<p>Workspaces (also known as virtual desktops in some desktop enviroments) are the primary way by which windows can be managed.  Each workspace provides a screen for an independent set of windows.  To create a workspace, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">`</span></span> will create and move to a new workspace.  <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">0 - 9</span></span> allows for navigation to specific workspaces.</p>
 <h3 id="find-and-launch-a-file">Find and Launch a File</h3>
-<p>Searching your local computer for a specific file can be achieved in a variety of ways.  Regolith provides a file search dialog via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">space</span></span> to quickly seek and optionally load a file with it's default application.  If the file path exceeds the width of the dialog, <span class="text-nowrap"><span class="badge badge-warning">alt</span> <span class="badge badge-warning">.</span></span> will toggle text justification.  Pressing enter on a selection will cause the file to be invoked with the <code>xdg-open</code> command.</p>
+<p>Searching your local computer for a specific file can be achieved in a variety of ways.  Regolith provides a file search dialog via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">space</span></span> to quickly seek and optionally load a file with its default application.  If the file path exceeds the width of the dialog, <span class="text-nowrap"><span class="badge badge-warning">alt</span> <span class="badge badge-warning">.</span></span> will toggle text justification.  Pressing enter on a selection will cause the file to be invoked with the <code>xdg-open</code> command.</p>
 <img class="shadow m-5" src="../regolith-file-search.png" width="640px"/>
 <h3 id="terminal">Terminal</h3>
-<p>The terminal is a special application that has it's own keybinding, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span>.</p>
+<p>The terminal is a special application that has its own keybinding, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span>.</p>
 <h3 id="browser">Browser</h3>
 <p>The preferred browser is also special, and can be launched with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">enter</span></span>.</p>
 <h2 id="quit-an-application">Quit an Application</h2>
 <p><span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">q</span></span> will quit the focused application.  For misbehaving apps, <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">q</span></span> will force quit the focused application, but note that any unsaved data will likely be lost.</p>
 <h2 id="switching-workspaces">Switching Workspaces</h2>
-<p>A primary way of managing how applications occupy the screen is by the usage of workspaces.  A workspace is in essence a group of zero or more applications that all present windows on the same physical display.  Users can switch workspaces to &ldquo;gain&rdquo; more space for applications to occupy.  Windows can be moved across workspaces.  Workspaces can be tied to physical display or be moved to other displays as needed.  To switch workspaces, hold down the <span class="badge badge-warning">super</span> key and press one of the number keys.  This will navigate to that workspace.  If any windows exist in a given workspace, it will show in the bar as being active. Thus, by referring to the bar the user can known of which workspaces active applications live.</p>
+<p>A primary way of managing how applications occupy the screen is by the usage of workspaces.  A workspace is in essence a group of zero or more applications that all present windows on the same physical display.  Users can switch workspaces to &ldquo;gain&rdquo; more space for applications to occupy.  Windows can be moved across workspaces.  Workspaces can be tied to physical display or be moved to other displays as needed.  To switch workspaces, hold down the <span class="badge badge-warning">super</span> key and press one of the number keys.  This will navigate to that workspace.  If any windows exist in a given workspace, it will show in the bar as being active. Thus, by referring to the bar the user can know in which workspaces active applications live.</p>
 <p>Workspaces can also be paged forward and backward via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">tab</span></span> and <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">tab</span></span>.</p>
 <h2 id="configuring-the-system">Configuring the System</h2>
 <p>The <code>Settings</code> app (also known as <code>gnome-control-center</code>) is the primary interface for common configuration tasks, such as changing the desktop wallpaper, configuring wifi and bluetooth, configuring app associations, and setting up users.  This app can be launched via the <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span> keybinding or from the Launcher via the <code>Settings</code> app.</p>
@@ -940,7 +940,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified November 8, 2020: <a  href="https://github.com/regolith-linux/website/commit/191f5281758bdd1262c633e0a355e1099f6a4b97">Additions and cleanup to getting started section for Regolith 1.5. (191f5281)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified December 17, 2020: <a  href="https://github.com/regolith-linux/website/commit/3c83eeb9f4177b60d7750be36943f671eebf6f20">Minor spelling and grammar fixes (#58) (3c83eeb9)</a>
 </div>
 </div>
 

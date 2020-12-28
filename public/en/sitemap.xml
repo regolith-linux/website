@@ -229,7 +229,7 @@
   
   <url>
     <loc>https://regolith-linux.org/docs/howto/override-xres/</loc>
-    <lastmod>2020-11-28T20:12:32+01:00</lastmod>
+    <lastmod>2020-12-28T10:43:29-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -274,7 +274,7 @@
   
   <url>
     <loc>https://regolith-linux.org/docs/overview/</loc>
-    <lastmod>2020-04-25T10:10:31-07:00</lastmod>
+    <lastmod>2020-12-25T21:32:04+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -854,7 +854,7 @@
   
   <url>
     <loc>https://regolith-linux.org/docs/getting-started/basics/</loc>
-    <lastmod>2020-11-08T11:03:20-08:00</lastmod>
+    <lastmod>2020-12-17T23:26:42-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -1164,7 +1164,7 @@
   
   <url>
     <loc>https://regolith-linux.org/docs/howto/multiple-batteries/</loc>
-    <lastmod>2020-05-02T00:09:30-04:00</lastmod>
+    <lastmod>2020-12-23T20:00:28+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -1709,7 +1709,7 @@
   
   <url>
     <loc>https://regolith-linux.org/docs/howto/tdcli-blocklet/</loc>
-    <lastmod>2020-11-24T20:17:55-08:00</lastmod>
+    <lastmod>2020-12-23T10:59:17-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"

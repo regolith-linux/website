@@ -26,12 +26,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/docs/howto/tdcli-blocklet/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-11-24T20:17:55-08:00" /><meta property="og:site_name" content="Regolith 1.5" />
+<meta property="article:modified_time" content="2020-12-23T10:59:17-06:00" /><meta property="og:site_name" content="Regolith 1.5" />
 <meta itemprop="name" content="Manage a To-Do List">
 <meta itemprop="description" content="Create and manage a to-do list from status bar
 ">
-<meta itemprop="dateModified" content="2020-11-24T20:17:55-08:00" />
-<meta itemprop="wordCount" content="205">
+<meta itemprop="dateModified" content="2020-12-23T10:59:17-06:00" />
+<meta itemprop="wordCount" content="247">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
 
@@ -827,24 +827,26 @@ if (!doNotTrack) {
 <div class="td-content">
 	<h1>Manage a To-Do List</h1>
 	<div class="lead">Create and manage a to-do list from status bar</div>
-	<p><a href="https://github.com/darrikonn/td-cli"><code>td-cli</code></a> is a command line todo manager written in Python 3 for organizing your todos across multiple projects.</p>
-<p>Regolith, includes a status bar blocklet for accessing <code>td-cli</code> directly from the status bar.
-This blocklet can be installed as follows:</p>
+	<p><a href="https://github.com/darrikonn/td-cli"><code>td-cli</code></a> is a command line todo manager written in Python 3 for organizing todo lists across multiple projects.</p>
+<p>Regolith includes a status bar blocklet for accessing <code>td-cli</code> directly from the bar. It can be installed as follows:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install i3xrocks-todo
-</code></pre></div><p>After installing <code>td-cli</code> you can access it via command line using <code>td</code>. The full documentation of <code>td-cli</code>'s API can be found <a href="https://github.com/darrikonn/td-cli/blob/master/API.md">here</a>. For example, let's create a todo list with a group name of Regolith, set it as the default project, and then add a new task to this group:</p>
+</code></pre></div><p>After installing <code>td-cli</code> you can access it via command line using <code>td</code>. The full documentation of <code>td-cli</code>'s API can be found <a href="https://github.com/darrikonn/td-cli/blob/master/API.md">here</a>.
+For example, let's create a todo list with a group name of Regolith, set it as the default project, and then add a new task to this group:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">td ag regolith
 td g regolith p
 td a <span style="color:#4e9a06">&#34;Write a HowTo for td-cli&#34;</span>
-</code></pre></div><p>Now, if you click on the <code>td-cli</code> blocket (on the left of the time blocklet) a floating terminal opens up:</p>
+</code></pre></div><p>Now, if you click on the <code>td-cli</code> blocklet (on the left of the time blocklet in the figure below) a floating terminal opens up with an interactive instance of <code>td-cli</code>:</p>
 <img class="shadow m-5" src="../tdcli.png"/>
 <img class="shadow m-5" src="../tdcli_window.png"/>
-<p>You can add a keybinding for accessing <code>td-cli</code>'s floating windows as well. You can add the line following to your <code>i3</code> config file, for example, <code>~/.config/regolith/i3/config</code>:</p>
+<p>You can set this blocklet to only show number of uncompleted tasks in the bar by setting the following key in your <code>Xresource</code> file, for example, <code>~/.config/regolith/Xresources</code>:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">i3xrocks.todo.uncompleted: <span style="color:#204a87">true</span>
+</code></pre></div><p>By default, this key is set to <code>false</code>. Moreover, you can add a keybinding for accessing <code>td-cli</code> via a floating terminal by adding the following line to your <code>i3</code> config file, for example, <code>~/.config/regolith/i3/config</code>:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bindsym <span style="color:#000">$mod</span>+Ctrl+d <span style="color:#204a87">exec</span> --no-startup-id <span style="color:#4e9a06">&#34;/usr/bin/gnome-terminal --class=floating_window -e &#39;td --interactive&#39;&#34;</span>
 </code></pre></div><p>Alternatively, you add these lines to your <code>i3</code> config file, first:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">set_from_resource <span style="color:#000">$i3</span>-wm.bindsym.1 i3-wm.bindsym.1 :
 set_from_resource <span style="color:#000">$i3</span>-wm.bindsym.program.1 i3-wm.bindsym.program.1 :
 bindsym <span style="color:#000">$mod</span>+<span style="color:#000">$i3</span>-wm.bindsym.1 <span style="color:#204a87">exec</span> --no-startup-id <span style="color:#4e9a06">&#34;</span><span style="color:#000">$i3</span><span style="color:#4e9a06">-wm.bindsym.program.1</span><span style="color:#4e9a06">&#34;</span>
-</code></pre></div><p>Then, add the followings to you <code>Xresource</code> file, for example, <code>~/.config/regolith/Xresources</code>:</p>
+</code></pre></div><p>Then, add the followings to your <code>Xresource</code> file:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">i3-wm.bindsym.1: Ctrl+d
 i3-wm.bindsym.program.1: /usr/bin/gnome-terminal --class<span style="color:#ce5c00;font-weight:bold">=</span>floating_window -e <span style="color:#4e9a06">&#39;td --interactive&#39;</span>
 </code></pre></div>
@@ -910,7 +912,7 @@ i3-wm.bindsym.program.1: /usr/bin/gnome-terminal --class<span style="color:#ce5c
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified November 24, 2020: <a  href="https://github.com/regolith-linux/website/commit/d4324db820b7913d019b79c1ece73cb4036c2b4d">Fix image links in todo howto (d4324db8)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified December 23, 2020: <a  href="https://github.com/regolith-linux/website/commit/9a71f0a652c206f81cf54f8316796fd986f55e07">Improve td-cli documentation (#59) (9a71f0a6)</a>
 </div>
 </div>
 
