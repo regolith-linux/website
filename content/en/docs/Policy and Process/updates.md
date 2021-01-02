@@ -22,5 +22,5 @@ Development of Regolith happens via updates to source code kept in git repos wit
 
 ## Package Versions
 
-For packages specific to Regolith, [symver](https://semver.org/) will be used.  From Regolith 1.4.1 forward, symver will also be used to describe release versions.  So, if a new release of Regolith will introduce some new component or configuration that is incompatible with the previous version, the major version will be bumped.  Feature releases that do not introduce obvious breaking changes will be minor bumps, and bug fixes will cause a patch bump.
+For packages specific to Regolith, [semver](https://semver.org/) will be used.  From Regolith 1.4.1 forward, semver will also be used to describe release versions.  So, if a new release of Regolith will introduce some new component or configuration that is incompatible with the previous version, the major version will be bumped.  Feature releases that do not introduce obvious breaking changes will be minor bumps, and bug fixes will cause a patch bump.
 s
