@@ -1,7 +1,7 @@
 ---
 title: "1.4 Release Notes"
 linkTitle: "1.4 Release Notes"
-weight: 2
+weight: 4
 description: >
   Release notes for Regolith 1.4.
 ---

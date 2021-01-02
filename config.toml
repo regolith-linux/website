@@ -58,7 +58,7 @@ id = "UA-138654070-2"
 
 [languages]
 [languages.en]
-title = "Regolith 1.5"
+title = "Regolith 1.5.1"
 description = "Regolith Linux website"
 contentDir = "content/en"
 languageName ="English"
@@ -66,7 +66,7 @@ languageName ="English"
 weight = 1
 
 [languages.de]
-title = "Regolith 1.5"
+title = "Regolith 1.5.1"
 description = "Regolith Linux Webseite"
 contentDir = "content/de"
 languageName ="Deutsch"
@@ -74,7 +74,7 @@ languageName ="Deutsch"
 weight = 2
 
 [languages.es]
-title = "Regolith 1.5"
+title = "Regolith 1.5.1"
 description = "Sitio Web de Regolith Linux"
 contentDir = "content/es"
 languageName ="Español"
@@ -82,7 +82,7 @@ languageName ="Español"
 weight = 3
 
 [languages.hu]
-title = "Regolith 1.5"
+title = "Regolith 1.5.1"
 description = "Regolith Linux Weboldal"
 contentDir = "content/hu"
 languageName ="magyar"
@@ -90,7 +90,7 @@ languageName ="magyar"
 weight = 4
 
 [languages.fr]
-title = "Regolith 1.5"
+title = "Regolith 1.5.1"
 description = "Site web de Regolith Linux"
 contentDir = "content/fr"
 languageName ="français"
@@ -98,7 +98,7 @@ languageName ="français"
 weight = 5
 
 [languages.pt_pt]
-title = "Regolith 1.5"
+title = "Regolith 1.5.1"
 description = "Site Regolith Linux"
 contentDir = "content/pt_pt"
 languageName ="português"
@@ -106,7 +106,7 @@ languageName ="português"
 weight = 6
 
 [languages.pt_br]
-title = "Regolith 1.5"
+title = "Regolith 1.5.1"
 description = "Site web do Regolith Linux"
 contentDir = "content/pt_br"
 languageName ="português brasileiro"
@@ -114,7 +114,7 @@ languageName ="português brasileiro"
 weight = 7
 
 [languages.ru]
-title = "Regolith"
+title = "Regolith 1.5.1"
 description = "Вебсайт Regolith Linux"
 contentDir = "content/ru"
 languageName ="Russian"
@@ -261,8 +261,12 @@ desc = "Discuster avec les contributeurs et les utilisateurs."
 
 # Versions
 [[params.versions]]
-version = "1.5"
+version = "1.5.1"
 url = "http://regolith-linux.org"
+
+[[params.versions]]
+version = "1.5"
+url = "http://regolith-linux.org/regolith-site-r15/"
 
 [[params.versions]]
 version = "1.4.1"

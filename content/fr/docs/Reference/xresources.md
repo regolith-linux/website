@@ -20,10 +20,10 @@ description: >
 |gnome.gtk.theme | GTK Theme |
 |gnome.icon.theme | GTK Icon Theme |
 |gnome.terminal.audible-bell | Enables audible bell in gnome-terminal (`true | false`) |
-|~~gnome.terminal.background-transparency-percent~~ | Background transparency value for gnome-terminal (`0 - 100`). See also `gnome.terminal.use-transparent-background`. (Coming in Regolith 1.5.1) |
+|gnome.terminal.background-transparency-percent | Background transparency value for gnome-terminal (`0 - 100`). See also `gnome.terminal.use-transparent-background`. |
 |gnome.terminal.font | Font definition for gnome-terminal |
 |gnome.terminal.scrollbar | Flag to enable/disable scrollbar (`never | always`) |
-|~~gnome.terminal.use-transparent-background~~ | Enables transparent background in gnome-terminal (`true | false`). See also `gnome.terminal.background-transparency-percent`. (Coming in Regolith 1.5.1) |
+|gnome.terminal.use-transparent-background | Enables transparent background in gnome-terminal (`true | false`). See also `gnome.terminal.background-transparency-percent`. |
 |gnome.wallpaper | GNOME Wallpaper (can be overridden in Settings) |
 |gnome.wm.theme | GNOME Window Manager Theme (unused) |
 |i3-wm.alt | Key mapping for Alt key.  See the [i3 User Guide](https://i3wm.org/docs/userguide.html#_using_i3) for details. |
