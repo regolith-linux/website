@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith 1.5 – Releases</title>
+    <title>Regolith 1.5.1 – Releases</title>
     <link>https://regolith-linux.org/hu/docs/reference/releases/</link>
-    <description>Recent content in Releases on Regolith 1.5</description>
+    <description>Recent content in Releases on Regolith 1.5.1</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/hu/docs/reference/releases/index.xml" rel="self" type="application/rss+xml" />
@@ -948,6 +948,101 @@ xrescat (1.2.0-1) bionic; urgency=medium
   * Update README for new double quote handling.  Add gbp config. Cleanup.
 
 &lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 1.5.1 Release Notes</title>
+      <link>https://regolith-linux.org/hu/docs/reference/releases/regolith-1.5.1-release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/hu/docs/reference/releases/regolith-1.5.1-release-notes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Regolith 1.5.1 is a bug fix release.  The following list contains brief descriptions of fixes and updates per package since the Regolith 1.5 release:&lt;/p&gt;
+&lt;h4 id=&#34;release-notes-for-i3-next-workspace&#34;&gt;Release Notes for i3-next-workspace&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial copy from regolith-i3xrocks-config.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-compositor-picom-glx&#34;&gt;Release Notes for regolith-compositor-picom-glx&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add xrender-sync-fence for better support of nvidia systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-default-settings&#34;&gt;Release Notes for regolith-default-settings&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add breaks declaration to deal w/ ISO upgrade issue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-desktop&#34;&gt;Release Notes for regolith-desktop&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;ship version file with all desktop variants&lt;/li&gt;
+&lt;li&gt;Update version to 1.5.1&lt;/li&gt;
+&lt;li&gt;Add new recommends for rofication status indicator that has been seperated from regolith-rofication&lt;/li&gt;
+&lt;li&gt;Fix virtual package specification.  Use look w/ less dependencies for minimal meta-package.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-ftue&#34;&gt;Release Notes for regolith-ftue&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add some Xresources options for GNOME Terminal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-i3-gaps-config&#34;&gt;Release Notes for regolith-i3-gaps-config&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix build files&lt;/li&gt;
+&lt;li&gt;Fix path to i3-next-workspace&lt;/li&gt;
+&lt;li&gt;Move some non-critical dependencies to Recommends.  Add recommends to i3-next-workspace.  Remove dep on fontawesome.&lt;/li&gt;
+&lt;li&gt;deprecating startnum&lt;/li&gt;
+&lt;li&gt;fix&lt;/li&gt;
+&lt;li&gt;adding a missing logic&lt;/li&gt;
+&lt;li&gt;Fix &amp;lsquo;Carry Window to Next Free&amp;rsquo; binding, remove trailing whitespace. (#31)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-i3xrocks-config&#34;&gt;Release Notes for regolith-i3xrocks-config&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add padding for net-traffic, extensive mocked tests (#101)&lt;/li&gt;
+&lt;li&gt;Migrate rofication status indicator i3xrocks conf file here from regolith-rofication.&lt;/li&gt;
+&lt;li&gt;Remove button handling code as net-traffic cannot use them w/ repeat interval type. (#100)&lt;/li&gt;
+&lt;li&gt;Update net-traffic script to use &amp;lsquo;repeat&amp;rsquo; interval type.&lt;/li&gt;
+&lt;li&gt;Rewrite weather blocklet (#96)&lt;/li&gt;
+&lt;li&gt;Remove todo scripts as migrated to regolith-todo package&lt;/li&gt;
+&lt;li&gt;Fix disk-capacity button clicks, add tests (#98)&lt;/li&gt;
+&lt;li&gt;Change memory rock default full text (#94)&lt;/li&gt;
+&lt;li&gt;Fix name of next-workspace script from last change&lt;/li&gt;
+&lt;li&gt;Remove next-workspace script as it&#39;s moved to it&#39;s own package: i3-next-workspace.&lt;/li&gt;
+&lt;li&gt;format the connected device string using pango same as other rocks (#89)&lt;/li&gt;
+&lt;li&gt;Changed around a few release names&lt;/li&gt;
+&lt;li&gt;Use git-buildpackage to build the deb instead of debuild, use auth for all containers&lt;/li&gt;
+&lt;li&gt;reading from xresources now (#82)&lt;/li&gt;
+&lt;li&gt;Don&#39;t sign packages for now, so the pipeline actually builds&lt;/li&gt;
+&lt;li&gt;Only run packaging on tag releases for now&lt;/li&gt;
+&lt;li&gt;Added tests for temp script and reworked temp script routine&lt;/li&gt;
+&lt;li&gt;Also run the tests on PRs&lt;/li&gt;
+&lt;li&gt;Match example with what the script is looking for (#90)&lt;/li&gt;
+&lt;li&gt;Rewrote net-traffic script, fixes #91 (#92)&lt;/li&gt;
+&lt;li&gt;Add extra location information to weather API request (#88)&lt;/li&gt;
+&lt;li&gt;set BUTTON variable (#93)&lt;/li&gt;
+&lt;li&gt;Added net-traffic tests and GitHub Actions workflow to run tests&lt;/li&gt;
+&lt;li&gt;Switch to a separate container running to ensure we can run our tests&lt;/li&gt;
+&lt;li&gt;Make sure we can actually run the job somewhere&lt;/li&gt;
+&lt;li&gt;Fixed xrescat mock and test execution&lt;/li&gt;
+&lt;li&gt;Fix for button handling of the net-traffic script (#86)&lt;/li&gt;
+&lt;li&gt;Make time interval configurable with Xresource (#87)&lt;/li&gt;
+&lt;li&gt;Restore original behavior of mouse actions on volume (#85)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-rofication&#34;&gt;Release Notes for regolith-rofication&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Another approach to breaking status indicator from base functionality due to python build script mysteries: move the i3xrocks conf.d file to i3xrocks.  Leave python scripts here for the python installer thing.&lt;/li&gt;
+&lt;li&gt;Break status indicator for rofication into separate package: i3xrocks-rofication.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-styles&#34;&gt;Release Notes for regolith-styles&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Check if gnome-terminal is installed before generating profile.  Related to &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/issues/522&#34;&gt;https://github.com/regolith-linux/regolith-desktop/issues/522&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-todo&#34;&gt;Release Notes for regolith-todo&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add i3xrocks dependency in hopes of sidestepping package file conflicts during upgrades&lt;/li&gt;
+&lt;li&gt;Rewrote syntax of todo script, added tests&lt;/li&gt;
+&lt;li&gt;Add td-cli as dependency&lt;/li&gt;
+&lt;li&gt;Package created from regolith-i3xrocks-config&lt;/li&gt;
+&lt;/ul&gt;
+
       </description>
     </item>
     

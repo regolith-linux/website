@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith 1.5 – Interagir</title>
+    <title>Regolith 1.5.1 – Interagir</title>
     <link>https://regolith-linux.org/pt_pt/interact/</link>
-    <description>Recent content in Interagir on Regolith 1.5</description>
+    <description>Recent content in Interagir on Regolith 1.5.1</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/pt_pt/interact/index.xml" rel="self" type="application/rss+xml" />

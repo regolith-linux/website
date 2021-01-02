@@ -3,92 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://regolith-linux.org/de/docs/reference/releases/regolith-1.4.1-release-notes/</loc>
-    <lastmod>2020-05-15T00:45:31+02:00</lastmod>
+    <loc>https://regolith-linux.org/de/docs/reference/releases/regolith-1.5.1-release-notes/</loc>
+    <lastmod>2021-01-01T18:03:50-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://regolith-linux.org/docs/reference/releases/regolith-1.4.1-release-notes/"
+                href="https://regolith-linux.org/docs/reference/releases/regolith-1.5.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.4.1-release-notes/"
+                href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.5.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="https://regolith-linux.org/hu/docs/reference/releases/regolith-1.4.1-release-notes/"
+                href="https://regolith-linux.org/hu/docs/reference/releases/regolith-1.5.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://regolith-linux.org/fr/docs/reference/releases/regolith-1.4.1-release-notes/"
+                href="https://regolith-linux.org/fr/docs/reference/releases/regolith-1.5.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt_pt"
-                href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.4.1-release-notes/"
+                href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.5.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt_br"
-                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.4.1-release-notes/"
+                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.5.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://regolith-linux.org/ru/docs/reference/releases/regolith-1.4.1-release-notes/"
+                href="https://regolith-linux.org/ru/docs/reference/releases/regolith-1.5.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://regolith-linux.org/de/docs/reference/releases/regolith-1.4.1-release-notes/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://regolith-linux.org/de/docs/reference/releases/regolith-1.5-release-notes/</loc>
-    <lastmod>2020-11-24T08:07:05-08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://regolith-linux.org/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hu"
-                href="https://regolith-linux.org/hu/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://regolith-linux.org/fr/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt_pt"
-                href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt_br"
-                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://regolith-linux.org/ru/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://regolith-linux.org/de/docs/reference/releases/regolith-1.5-release-notes/"
+                href="https://regolith-linux.org/de/docs/reference/releases/regolith-1.5.1-release-notes/"
                 />
   </url>
   
@@ -453,47 +408,47 @@
   </url>
   
   <url>
-    <loc>https://regolith-linux.org/de/docs/reference/releases/regolith-1.4-release-notes/</loc>
-    <lastmod>2020-05-15T00:45:31+02:00</lastmod>
+    <loc>https://regolith-linux.org/de/docs/reference/releases/regolith-1.5-release-notes/</loc>
+    <lastmod>2021-01-01T18:03:50-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://regolith-linux.org/docs/reference/releases/regolith-1.4-release-notes/"
+                href="https://regolith-linux.org/docs/reference/releases/regolith-1.5-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.4-release-notes/"
+                href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.5-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="https://regolith-linux.org/hu/docs/reference/releases/regolith-1.4-release-notes/"
+                href="https://regolith-linux.org/hu/docs/reference/releases/regolith-1.5-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://regolith-linux.org/fr/docs/reference/releases/regolith-1.4-release-notes/"
+                href="https://regolith-linux.org/fr/docs/reference/releases/regolith-1.5-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt_pt"
-                href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.4-release-notes/"
+                href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.5-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt_br"
-                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.4-release-notes/"
+                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.5-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://regolith-linux.org/ru/docs/reference/releases/regolith-1.4-release-notes/"
+                href="https://regolith-linux.org/ru/docs/reference/releases/regolith-1.5-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://regolith-linux.org/de/docs/reference/releases/regolith-1.4-release-notes/"
+                href="https://regolith-linux.org/de/docs/reference/releases/regolith-1.5-release-notes/"
                 />
   </url>
   
@@ -893,47 +848,47 @@
   </url>
   
   <url>
-    <loc>https://regolith-linux.org/de/docs/reference/releases/regolith-1.3.1-release-notes/</loc>
-    <lastmod>2020-05-15T00:45:31+02:00</lastmod>
+    <loc>https://regolith-linux.org/de/docs/reference/releases/regolith-1.4.1-release-notes/</loc>
+    <lastmod>2021-01-01T18:03:50-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://regolith-linux.org/docs/reference/releases/regolith-1.3.1-release-notes/"
+                href="https://regolith-linux.org/docs/reference/releases/regolith-1.4.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.3.1-release-notes/"
+                href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.4.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="https://regolith-linux.org/hu/docs/reference/releases/regolith-1.3.1-release-notes/"
+                href="https://regolith-linux.org/hu/docs/reference/releases/regolith-1.4.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://regolith-linux.org/fr/docs/reference/releases/regolith-1.3.1-release-notes/"
+                href="https://regolith-linux.org/fr/docs/reference/releases/regolith-1.4.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt_pt"
-                href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.3.1-release-notes/"
+                href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.4.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt_br"
-                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.3.1-release-notes/"
+                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.4.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://regolith-linux.org/ru/docs/reference/releases/regolith-1.3.1-release-notes/"
+                href="https://regolith-linux.org/ru/docs/reference/releases/regolith-1.4.1-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://regolith-linux.org/de/docs/reference/releases/regolith-1.3.1-release-notes/"
+                href="https://regolith-linux.org/de/docs/reference/releases/regolith-1.4.1-release-notes/"
                 />
   </url>
   
@@ -1333,47 +1288,47 @@
   </url>
   
   <url>
-    <loc>https://regolith-linux.org/de/docs/reference/releases/regolith-1.3-release-notes/</loc>
-    <lastmod>2020-05-15T00:45:31+02:00</lastmod>
+    <loc>https://regolith-linux.org/de/docs/reference/releases/regolith-1.4-release-notes/</loc>
+    <lastmod>2021-01-01T18:03:50-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://regolith-linux.org/docs/reference/releases/regolith-1.3-release-notes/"
+                href="https://regolith-linux.org/docs/reference/releases/regolith-1.4-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.3-release-notes/"
+                href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.4-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="https://regolith-linux.org/hu/docs/reference/releases/regolith-1.3-release-notes/"
+                href="https://regolith-linux.org/hu/docs/reference/releases/regolith-1.4-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://regolith-linux.org/fr/docs/reference/releases/regolith-1.3-release-notes/"
+                href="https://regolith-linux.org/fr/docs/reference/releases/regolith-1.4-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt_pt"
-                href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.3-release-notes/"
+                href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.4-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt_br"
-                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.3-release-notes/"
+                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.4-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://regolith-linux.org/ru/docs/reference/releases/regolith-1.3-release-notes/"
+                href="https://regolith-linux.org/ru/docs/reference/releases/regolith-1.4-release-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://regolith-linux.org/de/docs/reference/releases/regolith-1.3-release-notes/"
+                href="https://regolith-linux.org/de/docs/reference/releases/regolith-1.4-release-notes/"
                 />
   </url>
   
@@ -1558,6 +1513,51 @@
   </url>
   
   <url>
+    <loc>https://regolith-linux.org/de/docs/reference/releases/regolith-1.3.1-release-notes/</loc>
+    <lastmod>2021-01-01T18:03:50-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/reference/releases/regolith-1.3.1-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.3.1-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/reference/releases/regolith-1.3.1-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/reference/releases/regolith-1.3.1-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_pt"
+                href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.3.1-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.3.1-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://regolith-linux.org/ru/docs/reference/releases/regolith-1.3.1-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/reference/releases/regolith-1.3.1-release-notes/"
+                />
+  </url>
+  
+  <url>
     <loc>https://regolith-linux.org/de/docs/howto/add-remove-blocklets/</loc>
     <lastmod>2020-09-22T21:07:06-07:00</lastmod>
     <xhtml:link
@@ -1644,6 +1644,51 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://regolith-linux.org/de/docs/customize/packages/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://regolith-linux.org/de/docs/reference/releases/regolith-1.3-release-notes/</loc>
+    <lastmod>2021-01-01T18:03:50-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/reference/releases/regolith-1.3-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.3-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/reference/releases/regolith-1.3-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/reference/releases/regolith-1.3-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_pt"
+                href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.3-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.3-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://regolith-linux.org/ru/docs/reference/releases/regolith-1.3-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/reference/releases/regolith-1.3-release-notes/"
                 />
   </url>
   
@@ -1739,7 +1784,7 @@
   
   <url>
     <loc>https://regolith-linux.org/de/docs/reference/xresources/</loc>
-    <lastmod>2020-12-07T22:10:40-08:00</lastmod>
+    <lastmod>2021-01-01T18:03:50-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

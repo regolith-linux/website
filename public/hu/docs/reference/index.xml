@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith 1.5 – Reference</title>
+    <title>Regolith 1.5.1 – Reference</title>
     <link>https://regolith-linux.org/hu/docs/reference/</link>
-    <description>Recent content in Reference on Regolith 1.5</description>
+    <description>Recent content in Reference on Regolith 1.5.1</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/hu/docs/reference/index.xml" rel="self" type="application/rss+xml" />
@@ -482,8 +482,8 @@
 &lt;td&gt;Enables audible bell in gnome-terminal (&lt;code&gt;true | false&lt;/code&gt;)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;del&gt;gnome.terminal.background-transparency-percent&lt;/del&gt;&lt;/td&gt;
-&lt;td&gt;Background transparency value for gnome-terminal (&lt;code&gt;0 - 100&lt;/code&gt;). See also &lt;code&gt;gnome.terminal.use-transparent-background&lt;/code&gt;. (Coming in Regolith 1.5.1)&lt;/td&gt;
+&lt;td&gt;gnome.terminal.background-transparency-percent&lt;/td&gt;
+&lt;td&gt;Background transparency value for gnome-terminal (&lt;code&gt;0 - 100&lt;/code&gt;). See also &lt;code&gt;gnome.terminal.use-transparent-background&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;gnome.terminal.font&lt;/td&gt;
@@ -494,8 +494,8 @@
 &lt;td&gt;Flag to enable/disable scrollbar (&lt;code&gt;never | always&lt;/code&gt;)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;del&gt;gnome.terminal.use-transparent-background&lt;/del&gt;&lt;/td&gt;
-&lt;td&gt;Enables transparent background in gnome-terminal (&lt;code&gt;true | false&lt;/code&gt;). See also &lt;code&gt;gnome.terminal.background-transparency-percent&lt;/code&gt;. (Coming in Regolith 1.5.1)&lt;/td&gt;
+&lt;td&gt;gnome.terminal.use-transparent-background&lt;/td&gt;
+&lt;td&gt;Enables transparent background in gnome-terminal (&lt;code&gt;true | false&lt;/code&gt;). See also &lt;code&gt;gnome.terminal.background-transparency-percent&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;gnome.wallpaper&lt;/td&gt;

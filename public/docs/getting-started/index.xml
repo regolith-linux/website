@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith 1.5 – Getting Started</title>
+    <title>Regolith 1.5.1 – Getting Started</title>
     <link>https://regolith-linux.org/docs/getting-started/</link>
-    <description>Recent content in Getting Started on Regolith 1.5</description>
+    <description>Recent content in Getting Started on Regolith 1.5.1</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
@@ -24,14 +24,14 @@
         
         &lt;p&gt;Based on your preferred installation method, follow one of the following two sections to install Regolith.  Unlike previous versions of Regolith, PPA and ISO installs result in different configurations.  The PPA install favors coexistence with the existing Ubuntu desktop, while the ISO release optimizes for less resource utilization.  Specifically, the ISO install is roughly 1Gb smaller and cold start RAM usage is reduced by about 200Mb as compared to the PPA installation.&lt;/p&gt;
 &lt;h2 id=&#34;option-1-regolith-linux-via-installer&#34;&gt;Option 1: Regolith Linux via Installer&lt;/h2&gt;
-&lt;p&gt;At this time an &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/15&#34;&gt;installer for Regolith 1.5&lt;/a&gt; is not available, however the 1.4.1 installer can be upgraded to 1.5.&lt;/p&gt;
+&lt;p&gt;At this time an &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/15&#34;&gt;installer for Regolith 1.5&lt;/a&gt; is not available, however the 1.4.1 installer can be upgraded to 1.5.1.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Download an ISO image of &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1&#34;&gt;Regolith R1.4.1&lt;/a&gt; &lt;i class=&#34;fas fa-cloud-download-alt&#34;&gt;&lt;/i&gt; and then use an OS installation tool such as USB Creator to write the downloaded file into a USB device. Here are Ubuntu guides for performing this action in &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;Windows&lt;/a&gt;, &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0&#34;&gt;Mac&lt;/a&gt;, and &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0&#34;&gt;Ubuntu&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Reboot the computer and select the USB flash drive to boot from.&lt;/li&gt;
 &lt;li&gt;Install or run the live environment by providing information when prompted during the setup process.  See &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop&#34;&gt;this tutorial&lt;/a&gt; to learn more about the installation process.&lt;/li&gt;
 &lt;li&gt;When prompted, reboot the computer and login to your new Regolith environment!&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The system will automatically upgrade to Regolith 1.5 with the following commands:&lt;/p&gt;
+&lt;p&gt;The system will automatically upgrade to Regolith 1.5.1 with the following commands:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt update &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt dist-upgrade
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;option-2-regolith-desktop-via-repository-ppa&#34;&gt;Option 2: Regolith Desktop via Repository (PPA)&lt;/h2&gt;
 &lt;ol&gt;
@@ -52,11 +52,11 @@ $ sudo apt install regolith-desktop-standard # or regolith-desktop-mobile for la
 &lt;p&gt;&lt;img src=&#34;https://regolith-linux.org/regolith-screenshot-login.png&#34; alt=&#34;Ubuntu Login Screen&#34;&gt;&lt;/p&gt;
 &lt;p&gt;From this point, please proceed to the next section, &lt;a href=&#34;../configuration&#34;&gt;configuration&lt;/a&gt; to learn about the most common changes people like to make to Regolith.&lt;/p&gt;
 &lt;h2 id=&#34;upgrades&#34;&gt;Upgrades&lt;/h2&gt;
-&lt;h3 id=&#34;regolith-141---regolith-15&#34;&gt;Regolith 1.4.1 -&amp;gt; Regolith 1.5&lt;/h3&gt;
+&lt;h3 id=&#34;regolith-141---regolith-151&#34;&gt;Regolith 1.4.1 -&amp;gt; Regolith 1.5.1&lt;/h3&gt;
 &lt;p&gt;If your system already has added the &lt;code&gt;regolith-linux/release&lt;/code&gt; PPA, then upgrading is just matter of performing an upgrade:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt update &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt dist-upgrade
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After performing the update, log back in to your system.  However, if you have staged your own i3 config file or Xresources root, read the below section &lt;code&gt;Upgrading with Customizations&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;regolith-10---12---regolith-14&#34;&gt;Regolith 1.0 - 1.2 -&amp;gt; Regolith 1.4&lt;/h3&gt;
+&lt;h3 id=&#34;regolith-10---12---regolith-151&#34;&gt;Regolith 1.0 - 1.2 -&amp;gt; Regolith 1.5.1&lt;/h3&gt;
 &lt;p&gt;To upgrade from Regolith 1.0 - 1.2, the PPA URL must be changed and then new package versions are applied by the package manager:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository --remove ppa:kgilmer/regolith-stable
 $ sudo add-apt-repository ppa:regolith-linux/release
