@@ -1,7 +1,7 @@
 ---
 title: "1.5 Release Notes"
 linkTitle: "1.5 Release Notes"
-weight: 1
+weight: 2
 description: >
   Release notes for Regolith 1.5.
 ---
@@ -27,7 +27,7 @@ Issues and fixes are being tracked in [this project](https://github.com/orgs/reg
         </tr>
         <tr>
             <td>GSettings Overrides</td>            
-            <td colspan="2">Regolith now uses [gsettings overrides](https://help.gnome.org/admin/system-admin-guide/stable/overrides.html.en) to configure various GNOME settings for use with Regolith.  In previous versions of Regolith, settings were written globally to the user session from within the Regolith startup code.  This could cause issues if the user works in multiple desktop environments.  Now, Regolith GNOME settings are defined in an override file that is only in effect while using a Regolith session.  This allows switching between desktop environments without settings from Regolith impacting other environments.</td>
+            <td colspan="2">Regolith now uses <a href="https://help.gnome.org/admin/system-admin-guide/stable/overrides.html.en">gsettings overrides</a> to configure various GNOME settings for use with Regolith.  In previous versions of Regolith, settings were written globally to the user session from within the Regolith startup code.  This could cause issues if the user works in multiple desktop environments.  Now, Regolith GNOME settings are defined in an override file that is only in effect while using a Regolith session.  This allows switching between desktop environments without settings from Regolith impacting other environments.</td>
         </tr>
         <tr>
             <td>New Looks</td>
