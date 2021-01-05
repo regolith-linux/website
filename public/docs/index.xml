@@ -786,7 +786,7 @@ $ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#3
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;GSettings Overrides&lt;/td&gt;            
-            &lt;td colspan=&#34;2&#34;&gt;Regolith now uses [gsettings overrides](https://help.gnome.org/admin/system-admin-guide/stable/overrides.html.en) to configure various GNOME settings for use with Regolith.  In previous versions of Regolith, settings were written globally to the user session from within the Regolith startup code.  This could cause issues if the user works in multiple desktop environments.  Now, Regolith GNOME settings are defined in an override file that is only in effect while using a Regolith session.  This allows switching between desktop environments without settings from Regolith impacting other environments.&lt;/td&gt;
+            &lt;td colspan=&#34;2&#34;&gt;Regolith now uses &lt;a href=&#34;https://help.gnome.org/admin/system-admin-guide/stable/overrides.html.en&#34;&gt;gsettings overrides&lt;/a&gt; to configure various GNOME settings for use with Regolith.  In previous versions of Regolith, settings were written globally to the user session from within the Regolith startup code.  This could cause issues if the user works in multiple desktop environments.  Now, Regolith GNOME settings are defined in an override file that is only in effect while using a Regolith session.  This allows switching between desktop environments without settings from Regolith impacting other environments.&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;New Looks&lt;/td&gt;
@@ -2079,7 +2079,7 @@ interval=60
 &lt;h2 id=&#34;package-promotion&#34;&gt;Package Promotion&lt;/h2&gt;
 &lt;p&gt;Development of Regolith happens via updates to source code kept in git repos within the GitHub Regolith Organization.  When a given feature or fix is ready for testing, it is published to the &lt;code&gt;unstable&lt;/code&gt; PPA.  After the change has been verified to work and not cause other problems, it is promoted to the &lt;code&gt;stable&lt;/code&gt; PPA.  Changes being preceived as high-risk will spend some additional time in &lt;code&gt;stable&lt;/code&gt;.  If a change is a feature, it will stay in &lt;code&gt;stable&lt;/code&gt; until the next version release, but if the change is a bug fix, it will be promoted to the &lt;code&gt;release&lt;/code&gt; PPA.&lt;/p&gt;
 &lt;h2 id=&#34;package-versions&#34;&gt;Package Versions&lt;/h2&gt;
-&lt;p&gt;For packages specific to Regolith, &lt;a href=&#34;https://semver.org/&#34;&gt;symver&lt;/a&gt; will be used.  From Regolith 1.4.1 forward, symver will also be used to describe release versions.  So, if a new release of Regolith will introduce some new component or configuration that is incompatible with the previous version, the major version will be bumped.  Feature releases that do not introduce obvious breaking changes will be minor bumps, and bug fixes will cause a patch bump.
+&lt;p&gt;For packages specific to Regolith, &lt;a href=&#34;https://semver.org/&#34;&gt;semver&lt;/a&gt; will be used.  From Regolith 1.4.1 forward, semver will also be used to describe release versions.  So, if a new release of Regolith will introduce some new component or configuration that is incompatible with the previous version, the major version will be bumped.  Feature releases that do not introduce obvious breaking changes will be minor bumps, and bug fixes will cause a patch bump.
 s&lt;/p&gt;
 
       </description>

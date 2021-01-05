@@ -134,7 +134,7 @@
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;GSettings Overrides&lt;/td&gt;            
-            &lt;td colspan=&#34;2&#34;&gt;Regolith now uses [gsettings overrides](https://help.gnome.org/admin/system-admin-guide/stable/overrides.html.en) to configure various GNOME settings for use with Regolith.  In previous versions of Regolith, settings were written globally to the user session from within the Regolith startup code.  This could cause issues if the user works in multiple desktop environments.  Now, Regolith GNOME settings are defined in an override file that is only in effect while using a Regolith session.  This allows switching between desktop environments without settings from Regolith impacting other environments.&lt;/td&gt;
+            &lt;td colspan=&#34;2&#34;&gt;Regolith now uses &lt;a href=&#34;https://help.gnome.org/admin/system-admin-guide/stable/overrides.html.en&#34;&gt;gsettings overrides&lt;/a&gt; to configure various GNOME settings for use with Regolith.  In previous versions of Regolith, settings were written globally to the user session from within the Regolith startup code.  This could cause issues if the user works in multiple desktop environments.  Now, Regolith GNOME settings are defined in an override file that is only in effect while using a Regolith session.  This allows switching between desktop environments without settings from Regolith impacting other environments.&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;New Looks&lt;/td&gt;

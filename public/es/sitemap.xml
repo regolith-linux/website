@@ -48,51 +48,6 @@
   </url>
   
   <url>
-    <loc>https://regolith-linux.org/es/docs/reference/releases/regolith-1.5-release-notes/</loc>
-    <lastmod>2020-11-24T08:07:05-08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://regolith-linux.org/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://regolith-linux.org/de/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hu"
-                href="https://regolith-linux.org/hu/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://regolith-linux.org/fr/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt_pt"
-                href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt_br"
-                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://regolith-linux.org/ru/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.5-release-notes/"
-                />
-  </url>
-  
-  <url>
     <loc>https://regolith-linux.org/es/docs/reference/releases/regolith-1.5.1-release-notes/</loc>
     <lastmod>2021-01-01T18:03:50-08:00</lastmod>
     <xhtml:link
@@ -539,6 +494,51 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.4-release-notes/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://regolith-linux.org/es/docs/reference/releases/regolith-1.5-release-notes/</loc>
+    <lastmod>2021-01-05T09:00:30-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://regolith-linux.org/docs/reference/releases/regolith-1.5-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://regolith-linux.org/de/docs/reference/releases/regolith-1.5-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hu"
+                href="https://regolith-linux.org/hu/docs/reference/releases/regolith-1.5-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://regolith-linux.org/fr/docs/reference/releases/regolith-1.5-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_pt"
+                href="https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.5-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt_br"
+                href="https://regolith-linux.org/pt_br/docs/reference/releases/regolith-1.5-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://regolith-linux.org/ru/docs/reference/releases/regolith-1.5-release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://regolith-linux.org/es/docs/reference/releases/regolith-1.5-release-notes/"
                 />
   </url>
   
