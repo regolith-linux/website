@@ -10,17 +10,17 @@ While we'll cover everything in greater detail in other areas of the documentati
 
 ## The Super Key
 
-Most keybindings you'll be using with Regolith start with the <span class="badge badge-warning">super</span> key.  This key typically says "WIN" or has a MS Windows logo on it.  On a Mac it is the Command <span class="badge badge-warning">⌘</span> key.  Going forward, this key will simply be referred to as <span class="badge badge-warning">super</span> but keep in mind that you can change which physical button <span class="badge badge-warning">super</span> maps to in your configuration if you choose to.
+Most keybindings you'll be using with Regolith start with the {{< keys "super" >}} key.  This key typically says "WIN" or has a MS Windows logo on it.  On a Mac it is the Command {{< keys "⌘" >}} key.  Going forward, this key will simply be referred to as {{< keys "super" >}} but keep in mind that you can change which physical button {{< keys "super" >}} maps to in your configuration if you choose to.
 
 ## Launchers
 
-Regolith provides several launchers are a primary way of interacting with your system.  Each of these launchers has a consistent look and feel but provides access to a specific entity.  Default launchers are provided for applications <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>, commands <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">space</span></span>, notifications <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">n</span></span>, windows <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span>, and files <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">space</span></span>.
+Regolith provides several launchers are a primary way of interacting with your system.  Each of these launchers has a consistent look and feel but provides access to a specific entity.  Default launchers are provided for applications {{< keys "super,space" >}}, commands {{< keys "super,shift,space" >}}, notifications {{< keys "super,n" >}}, windows {{< keys "super,ctrl,space" >}}, and files {{< keys "super,alt,space" >}}.
 
 ### Launch an Application
 
-After logging in, you'll be at a blank screen with the bar at the bottom and some keyboard shortcuts on the right.  To launch an application, press <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span> and a menu will be presented with all of the applications installed on the system.  If you begin typing the name of the application you wish to launch, the list will filter down to only matching names.  You can also scroll through the list with the arrow keys.
+After logging in, you'll be at a blank screen with the bar at the bottom and some keyboard shortcuts on the right.  To launch an application, press {{< keys "super,space" >}} and a menu will be presented with all of the applications installed on the system.  If you begin typing the name of the application you wish to launch, the list will filter down to only matching names.  You can also scroll through the list with the arrow keys.
 
-<img class="shadow m-5" src="../screenshot-launcher.png" width="640px"/>
+![](/img/screenshot-launcher.png) { .image}
 
 ### Navigate to a Window
 

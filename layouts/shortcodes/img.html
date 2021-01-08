@@ -1,11 +1,12 @@
 {{ $original := .Page.Resources.GetMatch (.Get 0) }}
 {{ $preview := $original.Resize "636x" }}
 {{ $alt := .Get 1 }}
+{{ $classes := .Get "classes" }}
 
 {{ if lt $original.Width 636 }}
-<img src="{{ $original.RelPermalink }}" width="100%" height="auto" alt="{{ $alt }}">
+<img class="rounded img-fluid" src="{{ $original.RelPermalink }}" width="100%" height="auto" alt="{{ $alt }}">
 {{ else }}
 <a href="{{ $original.RelPermalink }}" target="_blank" title="{{ $alt }}">
-	<img src="{{ $preview.RelPermalink }}" width="100%" height="auto" alt="{{ $alt }}">
+	<img class="img-thumbnail" src="{{ $preview.RelPermalink }}" width="100%" height="auto" alt="{{ $alt }}">
 </a>
 {{ end }}
