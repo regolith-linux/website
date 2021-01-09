@@ -3,15 +3,16 @@ title = "Regolith Linux"
 linkTitle = "Regolith Linux"
 
 +++
+
 {{< blocks/cover image_anchor="top" height="full" >}}
 
-## Regolith is a modern desktop environment designed to let you work faster by reducing unnecessary clutter and ceremony. Built on top of Ubuntu, GNOME, and i3, Regolith stands on a well-supported and consistent foundation. {.m-5}
+<h2 class="m-5">Regolith is a modern desktop environment designed to let you work faster by reducing unnecessary clutter and ceremony. Built on top of Ubuntu, GNOME, and i3, Regolith stands on a well-supported and consistent foundation.</h2>
 
 <div class="row">
-  <div class="col-sm-8 mb-5">{{< img regolith-screenshot-intro.png "Regolith Linux" >}}</div>
+  <div class="col-sm-8 mb-5">{{< img "images/regolith-screenshot-intro.png" "Regolith Linux" >}}</div>
   <div class="col-sm-4">
     <div class="mx-auto">
-    <a class="btn btn-lg btn-secondary mr-3 mb-4" href="{{< relref "/download" >}}">
+    <a class="btn btn-lg btn-secondary mr-3 mb-4 rounded-pill" href="{{< relref "/download" >}}">
       Get Regolith <i class="fas fa-cloud-download-alt ml-2 "></i>
     </a>
     <a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
@@ -28,54 +29,56 @@ linkTitle = "Regolith Linux"
 {{< /blocks/cover >}}
 
 <a name="td-block-1"><h3 class="text-center p-5" >Visual Tour</h3></a>
+
 <div class="container mt-3">
   <div class="row pb-5">
     <div class="col-8 my-auto"><p>Upon first login, an overlay (toggled anytime via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">?</span></span>) presents the most important keybindings used with i3-wm.</p></div>
-    <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-remontoire.png "Shortcuts" >}}</div>
+    <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-remontoire.png" "Shortcuts" >}}</div>
   </div>
   <div class="row pb-5">
-    <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-terminal.png "Single Terminal" >}}</div>
+    <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-terminal.png" "Single Terminal" >}}</div>
     <div class="col-8 my-auto"><p>For those that work in the terminal, pressing <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span> is all it takes to get to business.</p></div>    
   </div>
   <div class="row pb-5">
     <div class="col-8 my-auto"><p>A single global app launcher is instantly available from anywhere to run your programs via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>.</p></div>
-    <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-launcher.png "Launcher" >}}</div>    
+    <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-launcher.png" "Launcher" >}}</div>    
   </div>
   <div class="row pb-5">
-    <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-terminals.png "Terminals" >}}</div>
+    <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-terminals.png" "Terminals" >}}</div>
     <div class="col-8 my-auto"><p>Need more terminals?  Create layouts on the fly by toggling between horizontal and vertical modes with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">backspace</span></span> followed by <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span>.  Navigate to windows positionally with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">h</span> <span class="badge badge-warning">j</span> <span class="badge badge-warning">k</span> <span class="badge badge-warning">l</span></span>.</p></div>    
   </div>
   <div class="row pb-5">
     <div class="col-8 my-auto"><p>Toggle floating window mode with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">F</span></span>.  Resize windows with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">r</span></span> and move them around with the mouse by pressing <span class="badge badge-warning">super</span>.</p></div>
-    <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-float.png "Window Float" >}}</div>    
+    <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-float.png" "Window Float" >}}</div>    
   </div>
   <div class="row pb-5">
-    <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-gnome.png "GNOME system admin" >}}</div>
+    <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-gnome.png" "GNOME system admin" >}}</div>
     <div class="col-8 my-auto"><p>Gnome Flashback provides consistent and simple system management. Tweak your UI, auto mount your USB drives, connect to wireless networks. Launch the control panel with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span>.</p></div>    
   </div>
   <div class="row pb-5">
     <div class="col-8 my-auto"><p>Easily switch to <a href="https://ethanschoonover.com/solarized">Solarized</a> or other looks with the <code>regolith-look</code> command. Because <b>looks</b> utilize the package manager, you only store theme resources that you're using.</p></div>
-    <div class="col-4 my-auto border rounded p-1">{{< screenshot regolith-screenshot-solarized.png "Solarized" >}}</div>    
+    <div class="col-4 my-auto border rounded p-1">{{< img "images/regolith-screenshot-solarized.png" "Solarized" >}}</div>    
   </div>
   <div class="row pb-5">
-    <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-updates.png "System Updates" >}}</div>
+    <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-updates.png" "System Updates" >}}</div>
     <div class="col-8 my-auto"><p>Regolith is built on Ubuntu, providing a system that's up to date and stable.</p></div>    
   </div>
   <div class="row pb-5">
     <div class="col-8 my-auto"><p>Got a lot going on?  Quickly find the window you're looking for via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> or navigate over workspaces with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">[0 - 19]</span></span>.</p></div>
-    <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-window.png "Shortcuts" >}}</div>    
+    <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-window.png" "Shortcuts" >}}</div>    
   </div>
   <div class="row pb-5">
-    <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-develop.png "Window Management" >}}</div>
+    <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-develop.png" "Window Management" >}}</div>
     <div class="col-8 my-auto"><p>Waste no space on frivolous UI and take advantage of every pixel without micro-managing your window layouts.</p></div>    
   </div>
   <div class="row pb-5">
     <div class="col-8 my-auto"><p>Desktop notifications do not compete for your attention, but rather can be managed via an on-screen dialog by pressing <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">n</span></span>.</p></div>
-    <div class="col-4 my-auto border rounded p-1">{{< screenshot screenshot-notifications.png "Notifications" >}}</div>    
+    <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-notifications.png" "Notifications" >}}</div>    
   </div>
 </div>
 
 <a name="td-block-2"><h3 class="text-center p-5" ><i class="fas fa-info-circle pr-3"></i>What Makes Regolith Different</h3></a>
+
 <div class="container">
 <ul>
 <li>Delivers a desktop with a functional yet minimal user interface that can be <a href="docs/customize/">customized</a> and expanded as needed.</li>
@@ -90,6 +93,7 @@ linkTitle = "Regolith Linux"
 </div>
 
 <a name="td-block-3"><h3 class="text-center p-5" ><i class="fas fa-user-friends pr-3"></i>Thanks to...</h3></a>
+
 <div class="container-fluid mb-3">
   <div class="row pl-0 align-top">
     <div class="col-3 col-md-0">

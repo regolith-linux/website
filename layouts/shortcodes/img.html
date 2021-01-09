@@ -1,12 +1,20 @@
-{{ $original := .Page.Resources.GetMatch (.Get 0) }}
+{{ $original := resources.Get (.Get 0) }}
 {{ $preview := $original.Resize "636x" }}
 {{ $alt := .Get 1 }}
-{{ $classes := .Get "classes" }}
 
 {{ if lt $original.Width 636 }}
-<img class="rounded img-fluid" src="{{ $original.RelPermalink }}" width="100%" height="auto" alt="{{ $alt }}">
+<img class="img-fluid rounded" src="{{ $original.RelPermalink }}" alt="{{ $alt }}" />
 {{ else }}
-<a href="{{ $original.RelPermalink }}" target="_blank" title="{{ $alt }}">
-	<img class="img-thumbnail" src="{{ $preview.RelPermalink }}" width="100%" height="auto" alt="{{ $alt }}">
-</a>
+<img data-toggle="modal" data-backdrop="false" data-target="#img-modal" class="rounded img-fluid"
+	src="{{ $preview.RelPermalink }}" alt="{{ $alt }}" />
+
+<div class="modal" id="img-modal">
+	<div class="modal-dialog modal-xl modal-dialog-centered">
+		<div class="modal-content rounded">
+			<div class="modal-body">
+				<img class="img-fluid" data-dismiss="modal" src="{{ $original.RelPermalink }}" alt="{{ $alt }}" />
+			</div>
+		</div>
+	</div>
+</div>
 {{ end }}

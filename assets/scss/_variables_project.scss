@@ -1,19 +1,19 @@
-$base03:    #002b36;
-$base02:    #073642;
-$base01:    #586e75;
-$base00:    #657b83;
-$base0:     #839496;
-$base1:     #93a1a1;
-$base2:     #eee8d5;
-$base3:     #fdf6e3;
-$yellow:    #b58900;
-$orange:    #cb4b16;
-$red:       #dc322f;
-$magenta:   #d33682;
-$violet:    #6c71c4;
-$blue:      #268bd2;
-$cyan:      #2aa198;
-$green:     #859900;
+$base03: #002b36;
+$base02: #073642;
+$base01: #586e75;
+$base00: #657b83;
+$base0: #839496;
+$base1: #93a1a1;
+$base2: #eee8d5;
+$base3: #fdf6e3;
+$yellow: #b58900;
+$orange: #cb4b16;
+$red: #dc322f;
+$magenta: #d33682;
+$violet: #6c71c4;
+$blue: #268bd2;
+$cyan: #2aa198;
+$green: #859900;
 
 $primary: $base00;
 $primary-light: lighten($primary, 75%) !default;
@@ -22,7 +22,7 @@ $success: $green;
 $info: $base2;
 $warning: $orange;
 $danger: $red;
-$white: #FFF;
+$white: #fff;
 $light: $base2;
 
 $dark: $base03;
@@ -37,7 +37,7 @@ $gray-800: $base03;
 $gray-900: $base03;
 $black: #000 !default;
 
-$enable-rounded: false;
+$enable-rounded: true;
 
 $google_font_name: "Titillium Web";
 $google_font_family: "Titillium+Web:300,300i,400,400i,700,700i";

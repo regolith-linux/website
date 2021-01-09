@@ -1,0 +1,4 @@
+{{ $scssMain := "scss/main.scss"}}
+{{ $css := resources.Get $scssMain | resources.ToCSS (dict "enableSourceMap" false) | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
+<link href="{{ $css.RelPermalink }}" rel="stylesheet" integrity="{{ $css.Data.Integrity }}">
