@@ -1,0 +1,25 @@
+name: Publish
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Build website
+        uses: jakejarvis/hugo-build-action@v0.79.1
+        with:
+          args: --minify
+      - name: Deploy to GitHub Pages
+        uses: Cecilapp/GitHub-Pages-deploy@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          build_dir: public
+          branch: gh-pages
+          cname: regolith-linux.org

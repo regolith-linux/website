@@ -1,6 +1,6 @@
 ---
 title: "Getting Started"
-linkTitle: "getting-started"
+linkTitle: "Getting Started"
 weight: 2
 description: >
   Summary of installation methods for Regolith.

@@ -1,1 +1,11 @@
-{{ delimit $.Page.Site.Params.supported_versions ", " }}
+{{ $scratch := newScratch }}
+{{ range $k, $v := site.Params.supported_versions }}
+    {{ $scratch.Add "names" (slice $k) }}
+    {{ $scratch.Add "versions" (slice $v) }}
+{{ end }}
+
+{{ if eq (.Get "type") "names" }}
+{{ delimit ($scratch.Get "names") ", " }}
+{{ else }}
+{{ delimit ($scratch.Get "versions") ", " }}
+{{ end }}

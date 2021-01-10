@@ -45,6 +45,10 @@ Additional shortcodes are:
 
 Although Hugo accepts common HTML elements pretty much anywhere the expressed goal is to rely on Markdown and its syntax for pretty much anything _within the confines of the `content` directory itself_. If you need to style something differently, try using [a shortcode]() first, before actually styling the page in "pure" HTML. Some pages are violating this concern, mostly because the underlying theme does as well, but for the sake of making it easier on folks to edit and especially translate the content as well as keeping a consistent style across languages they should be free of HTML.
 
+#### Use `prettier` for formatting files (especially Markdown)
+
+[`prettier`](https://www.npmjs.com/package/prettier) is a versatile formatter for JavaScript/TypeScript and everything related to HTML as well as JSON/YAML and TOML. Please use it to format all the content in the repository that `prettier` is capable of processing. Manual formatting will show up as an error in the future and PRs changing formatting that's different from `prettier` output will not be accepted.
+
 #### Use `console` for highlighting shell session code
 
 Using `bash` obscures the flow of information and things you type into a session isn't really shell code all the time but rather a random set of commands. There's [an open feature request](https://github.com/alecthomas/chroma/issues/137) with the highlighting engine ("Chroma") Hugo is using to accept `console` as a lexer. Once that's accomplished all the relevant highlighting parts will look different. For now, they'll just receive the default styling.

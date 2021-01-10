@@ -1,6 +1,7 @@
 ---
 title: "Developer"
 linkTitle: "Developer"
+weight: 7
 description: >
   Providing extensions and customizations to Regolith
 ---
