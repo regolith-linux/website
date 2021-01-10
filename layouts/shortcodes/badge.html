@@ -1,0 +1,2 @@
+{{ $class := .Get "class" | default "primary" }}
+<span class="badge badge-{{ $class }}">{{ .Inner }}</span>

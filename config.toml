@@ -133,6 +133,7 @@ author = "Regolith Project"
 description = "Regolith is a modern desktop environment that lets you work faster by reducing unnecessary clutter and ceremony."
 site_description = "Regolith is a modern desktop environment that lets you work faster by reducing unnecessary clutter and ceremony."
 images = ["https://regolith-linux.org/screenshot-remontoire.png"]
+supported_versions = ["18.04", "20.04", "20.10"]
 
 copyright = "Regolith Project"
 privacy_policy = "https://regolith-linux.org/docs/policy-and-process/privacy/"
