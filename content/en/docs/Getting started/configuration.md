@@ -14,11 +14,11 @@ The wallpaper can be changed via Settings, or {{< keys "super,c" >}}, by going t
 
 Wallpaper can also be set via [dotfiles](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory) for those that prefer file-based configuration management over GSettings.
 
-Regardless of which style you prefer, you can refer to the [more extensive documentation]({{< ref "configure-wallpaper.md" >}}) for additional details.
+Regardless of which style you prefer, you can refer to the [more extensive documentation]({{< ref "/docs/howtos/configure-wallpaper.md" >}}) for additional details.
 
 ## Status Bar Indicators
 
-Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages. For example, to show a status indicator for your laptop battery, simply run `sudo apt install i3xrocks-battery` and then refresh the session using `regolith-look refresh`. To find what indicators are available, run `apt search ^i3xrocks-` or search for `i3xrocks-` in your favorite package manager GUI, such as [Synaptic](https://help.ubuntu.com/community/SynapticHowto). There is [more documentation available]({{< ref "add-remove-blocklets.md" >}}) for configuring status indicators, also called "blocklets".
+Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages. For example, to show a status indicator for your laptop battery, simply run `sudo apt install i3xrocks-battery` and then refresh the session using `regolith-look refresh`. To find what indicators are available, run `apt search ^i3xrocks-` or search for `i3xrocks-` in your favorite package manager GUI, such as [Synaptic](https://help.ubuntu.com/community/SynapticHowto). There is [more documentation available]({{< ref "/docs/howtos/add-remove-blocklets.md" >}}) for configuring status indicators, also called "blocklets".
 
 {{< img "images/regolith-screenshot-synaptic-search.png" "Searching for blocklets in Synaptics" >}}
 
@@ -47,7 +47,7 @@ i3-wm.mod: Mod1
 i3-wm.alt: Mod4
 ```
 
-To change other, more advanced keybindings, creating a user copy of the i3 config file is necessary. We call this process ["staging"]({{< ref "stage-configs" >}}).
+To change other, more advanced keybindings, creating a user copy of the i3 config file is necessary. We call this process ["staging"]({{< ref "/docs/howtos/stage-configs" >}}).
 
 **Note**: GNOME also has it's own set of keybindings. When the Regolith session is first initialized, the conflicting GNOME keybindings are removed from the user settings. GNOME keybindings can be managed in the Settings app.
 
@@ -63,4 +63,4 @@ The Settings app, or `gnome-control-center` as it's also known, is the tool to c
 
 ## Further Reading
 
-To dig deeper check out the section on [Customization]({{< ref "customize" >}}), find which [Howtos]({{< ref "howto" >}}) are available, or read the [Xresources reference]({{< ref "docs/Reference/xresources.md" >}}). Become an i3 power user by reading their [user guide](https://i3wm.org/docs/userguide.html).
+To dig deeper check out the section on [Customization]({{< ref "customize" >}}), find which [Howtos]({{< ref "howtos" >}}) are available, or read the [Xresources reference]({{< ref "docs/Reference/xresources.md" >}}). Become an i3 power user by reading their [user guide](https://i3wm.org/docs/userguide.html).

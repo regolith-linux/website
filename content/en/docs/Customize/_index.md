@@ -8,12 +8,12 @@ description: "Customize Regolith to suit your needs"
 Regolith, as a set of independent open-source components, lacks a uniform configuration file, format, or set of conventions. However efforts have been made to create as much consistency as possible by utilizing a simple session-wide key-value configuration facility known as [Xresources](https://wiki.debian.org/Xresources). Interface preferences such as colors and typeface are defined in `Xresources` files and then read by components such as `rofi` and `i3-wm`. For the most part, `Xresources` can be used for most configuration. Lower level changes, for example swap out `i3bar` for `polybar` or `drun` for `rofi` require the removal, installation, and configuration of other packages.
 
 {{% pageinfo %}}
-In addition to the content in this section, refer to the [tutorials]({{< ref "howto" >}}) for step-by-step examples of how to customize Regolith.
+In addition to the content in this section, refer to the [tutorials]({{< ref "howtos" >}}) for step-by-step examples of how to customize Regolith.
 {{% /pageinfo %}}
 
 ## Look
 
-The highest level change in the way Regolith looks is called a "look". This ties together color, typeface, GTK theme and icons into a packagable unit known as a `look`. A few looks ship in the Regolith PPA, the default for R1.4 being called `lascaille`. Regolith Looks can be installed from the package manager. The official Looks follow the naming convention of `regolith-look-<look-name>`. Installed Regolith looks can easily be set via the Look dialog through {{< keys "super,alt,l" >}}.
+The highest level change in the way Regolith looks is called a "look". This ties together color, typeface, GTK theme and icons into a packageable unit known as a `look`. A few looks ship in the Regolith PPA, the default for R1.4 being called `lascaille`. Regolith Looks can be installed from the package manager. The official Looks follow the naming convention of `regolith-look-<look-name>`. Installed Regolith looks can easily be set via the Look dialog through {{< keys "super,alt,l" >}}.
 
 ## Keybindings and Window Behavior
 
