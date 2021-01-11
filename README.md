@@ -43,7 +43,7 @@ Additional shortcodes are:
 
 #### Use Markdown wherever possible
 
-Although Hugo accepts common HTML elements pretty much anywhere the expressed goal is to rely on Markdown and its syntax for pretty much anything _within the confines of the `content` directory itself_. If you need to style something differently, try using [a shortcode]() first, before actually styling the page in "pure" HTML. Some pages are violating this concern, mostly because the underlying theme does as well, but for the sake of making it easier on folks to edit and especially translate the content as well as keeping a consistent style across languages they should be free of HTML.
+Although Hugo accepts common HTML elements pretty much anywhere the expressed goal is to rely on Markdown and its syntax for pretty much anything _within the confines of the `content` directory itself_. If you need to style something differently, try using [a shortcode](https://gohugo.io/templates/shortcode-templates/) first, before actually styling the page in "pure" HTML. Some pages are violating this concern, mostly because the underlying theme does as well, but for the sake of making it easier on folks to edit and especially translate the content as well as keeping a consistent style across languages they should be free of HTML.
 
 #### Use `prettier` for formatting files (especially Markdown)
 
@@ -75,4 +75,8 @@ Example:
 
 Content changes, page names change. Using a hardcoded path in Markdown links will break sooner or later. Hugo has two built-in functions, [`ref` (preferred) pr `relref`](https://gohugo.io/content-management/cross-references/), to make sure links are viable and linking to the right content. Use them whenever you're linking to "internal" content.
 
-**Note**: Hugo will fail to render the page if a link is "dead" and you will have to fix it before you can continue.
+**Note**: Hugo will fail to render the page if a link is "dead" and you will have to fix it before you can continue. We consider this a feature!
+
+#### Use the Markdown footnote syntax to render footnotes
+
+Hugo allows for specifying footnotes in [the regular Markdown syntax](https://michelf.ca/projects/php-markdown/extra/#footnotes), e.g. `[^1]` for the note in the text and `[^1]: Some text` (mind the colon) wherever you want to place the footnote text. It has the added advantage that the footnote also links back to the text.

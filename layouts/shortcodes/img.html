@@ -1,14 +1,16 @@
 {{ $original := resources.Get (.Get 0) }}
+{{/* We need this hash, otherwise we will always trigger the same modal instead of the one specific for the content */}}
+{{ $hash := sha256 $original }}
 {{ $preview := $original.Resize "636x" }}
 {{ $alt := .Get 1 }}
 
 {{ if lt $original.Width 636 }}
 <img class="img-fluid rounded" src="{{ $original.RelPermalink }}" alt="{{ $alt }}" />
 {{ else }}
-<img data-toggle="modal" data-backdrop="false" data-target="#img-modal" class="rounded img-fluid"
+<img data-toggle="modal" data-backdrop="false" data-target="#img-modal-{{ $hash }}" class="rounded img-fluid"
 	src="{{ $preview.RelPermalink }}" alt="{{ $alt }}" />
 
-<div class="modal" id="img-modal">
+<div class="modal" id="img-modal-{{ $hash }}">
 	<div class="modal-dialog modal-xl modal-dialog-centered">
 		<div class="modal-content rounded">
 			<div class="modal-body">
