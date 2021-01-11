@@ -22,7 +22,7 @@ Debian is the packaging format and system used by Regolith. Just like Debian, Ub
 
 ### Basic Packages vs `gbp` Packages
 
-Until recently, packaging was done manually in that no scripts were used. Recently, we've been moving to using the `gbp` tool which provides some nice productivity enhancements when packaging with git repos. Branch names may differ based on if the package in question has been migrated yet.
+Until recently, packaging was done manually in that no scripts were used. Recently, we've been moving to using the `gbp` tool which provides some nice productivity enhancements when packaging with git repositories. Branch names may differ based on if the package in question has been migrated yet.
 
 ### Branch Conventions
 
@@ -48,20 +48,20 @@ master
 
 #### 1. Checkout the `regolith-i3-gaps` package:
 
-```bash
+```console
 $ git clone https://github.com/regolith-linux/regolith-i3-gaps-config.git
 $ cd regolith-i3-gaps-config
 ```
 
 #### 2. Make a change:
 
-```bash
+```console
 $ echo "# Here is my comment at the end" >> config
 ```
 
 #### 3. Update the changelog to bump the version and describe your change:
 
-```bash
+```console
 $ dch
 ```
 
@@ -78,14 +78,14 @@ regolith-i3-gaps-config (2.4.15-1) bionic; urgency=medium
 
 #### 4. Commit and push the change to the git repository:
 
-```bash
+```console
 $ git commit -am "Added comment to i3 config file."
 $ git push origin
 ```
 
 #### 5. A [shell script](https://github.com/regolith-linux/regolith-builder/blob/master/build.sh) is used to build the source package for uploading to launchpad.net:
 
-```bash
+```console
 $ cd ..
 $ git clone https://github.com/regolith-linux/regolith-builder.git
 $ cd regolith-builder

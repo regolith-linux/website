@@ -35,9 +35,9 @@ $ ./deploy "reason for change"
 
 Additional shortcodes are:
 
-- `keys`: To insert a recognizable sequence of keypresses, e.g. `{{< keys "super,shift,q" >}}`
+- `keys`: To insert a recognizable sequence of keypresses, e.g. `{{< keys "super,shift,q" >}}`. The block also accepts an optional delimiter, should you need `,` as a keypress, e.g. `{{< keys "super|," "|" >}}`
 - `img`: To insert an image, including automated, cross-device sizing, a lightbox and an alt text, e.g. `{{< img "images/my-image.jpg" "Some alt text" >}}`
-- `supported_version`: To insert the Ubuntu versions, delimited by commas, which are currently supported by Regolith Linux, e.g. `{{< supported_versions >}}` (they are taken from the `config.toml` `params` section)
+- `supported_version`: To insert the Ubuntu versions, delimited by commas, which are currently supported by Regolith Linux, e.g. `{{< supported_versions >}}` (they are taken from the `config.toml` `params` section). You can either choose to display the version _numbers_ or the version _names_, with _numbers_ being the default. To display the names use `{{< supported_version type="names" >}}`
 
 ### Conventions
 
