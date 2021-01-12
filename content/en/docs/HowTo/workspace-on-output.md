@@ -15,7 +15,7 @@ Monitors: 1
 In this case, the output name is `eDP-1`.  Next add a line like this into a staged copy of your i3 config file:
 
  ```
- workspace "$ws1" output DP1
+ workspace "$ws1" output eDP-1
  ```
 
  Log back in for the changes to take effect.
