@@ -73,7 +73,7 @@ Example:
 
 #### Use `ref` or `relref` for linking between content
 
-Content changes, page names change. Using a hardcoded path in Markdown links will break sooner or later. Hugo has two built-in functions, [`ref` (preferred) pr `relref`](https://gohugo.io/content-management/cross-references/), to make sure links are viable and linking to the right content. Use them whenever you're linking to "internal" content.
+Content changes, page names change. Using a hardcoded path in Markdown links will break sooner or later. Hugo [has two built-in functions](https://gohugo.io/content-management/cross-references/), `ref` (preferred) or `relref`, to make sure links are viable and linking to the right content. Use them whenever you're linking to "internal" content.
 
 **Note**: Hugo will fail to render the page if a link is "dead" and you will have to fix it before you can continue. We consider this a feature!
 

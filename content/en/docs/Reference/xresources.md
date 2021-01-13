@@ -6,7 +6,7 @@ description: >
   All Regolith `Xresources` key definitions
 ---
 
-| Xresource Key                                      | Description                                                                                                         |
+| `Xresources` Key                                   | Description                                                                                                         |
 | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | St.color0 - St.color15                             | Color definitions for terminal                                                                                      |
 | St.font                                            | Font definition for st-term                                                                                         |
@@ -125,7 +125,7 @@ description: >
 
 The following `Xresources` keys are undefined by default but can be used by users to change behavior as desired.
 
-| Xresource Key                     | Description                                                                                                                                                                                         |
+| `Xresources` Key                  | Description                                                                                                                                                                                         |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | rofi.search.help                  | Show help text on the file search dialog, defaults to `true`                                                                                                                                        |
 | rofi.search.limit                 | Total number of items to return from an `mlocate` search, default: 64                                                                                                                               |
