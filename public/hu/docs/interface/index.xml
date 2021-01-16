@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith 1.5.1 – The Interface</title>
+    <title>Regolith 1.5.2 – The Interface</title>
     <link>https://regolith-linux.org/hu/docs/interface/</link>
-    <description>Recent content in The Interface on Regolith 1.5.1</description>
+    <description>Recent content in The Interface on Regolith 1.5.2</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/hu/docs/interface/index.xml" rel="self" type="application/rss+xml" />

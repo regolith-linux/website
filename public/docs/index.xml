@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith 1.5.1 – Documentation</title>
+    <title>Regolith 1.5.2 – Documentation</title>
     <link>https://regolith-linux.org/docs/</link>
-    <description>Recent content in Documentation on Regolith 1.5.1</description>
+    <description>Recent content in Documentation on Regolith 1.5.2</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/docs/index.xml" rel="self" type="application/rss+xml" />
@@ -14,95 +14,28 @@
     
     
     <item>
-      <title>Docs: 1.5.1 Release Notes</title>
-      <link>https://regolith-linux.org/docs/reference/releases/regolith-1.5.1-release-notes/</link>
+      <title>Docs: 1.5.2 Release Notes</title>
+      <link>https://regolith-linux.org/docs/reference/releases/regolith-1.5.2-release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://regolith-linux.org/docs/reference/releases/regolith-1.5.1-release-notes/</guid>
+      <guid>https://regolith-linux.org/docs/reference/releases/regolith-1.5.2-release-notes/</guid>
       <description>
         
         
-        &lt;p&gt;Regolith 1.5.1 is a bug fix release.  The following list contains brief descriptions of fixes and updates per package since the Regolith 1.5 release:&lt;/p&gt;
-&lt;h4 id=&#34;release-notes-for-i3-next-workspace&#34;&gt;Release Notes for i3-next-workspace&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Initial copy from regolith-i3xrocks-config.&lt;/li&gt;
-&lt;/ul&gt;
+        &lt;p&gt;Regolith 1.5.2 is a bug fix release.  The following list contains brief descriptions of fixes and updates per package since the Regolith 1.5.1 release:&lt;/p&gt;
 &lt;h4 id=&#34;release-notes-for-regolith-compositor-picom-glx&#34;&gt;Release Notes for regolith-compositor-picom-glx&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Add xrender-sync-fence for better support of nvidia systems.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;release-notes-for-regolith-default-settings&#34;&gt;Release Notes for regolith-default-settings&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Add breaks declaration to deal w/ ISO upgrade issue&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;release-notes-for-regolith-desktop&#34;&gt;Release Notes for regolith-desktop&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;ship version file with all desktop variants&lt;/li&gt;
-&lt;li&gt;Update version to 1.5.1&lt;/li&gt;
-&lt;li&gt;Add new recommends for rofication status indicator that has been seperated from regolith-rofication&lt;/li&gt;
-&lt;li&gt;Fix virtual package specification.  Use look w/ less dependencies for minimal meta-package.&lt;/li&gt;
+&lt;li&gt;Remove manual fade flag passed to compositor in favor of specification in config file.  Allows users to specify fade parameters via config file.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;release-notes-for-regolith-ftue&#34;&gt;Release Notes for regolith-ftue&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Add some Xresources options for GNOME Terminal&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;release-notes-for-regolith-i3-gaps-config&#34;&gt;Release Notes for regolith-i3-gaps-config&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix build files&lt;/li&gt;
-&lt;li&gt;Fix path to i3-next-workspace&lt;/li&gt;
-&lt;li&gt;Move some non-critical dependencies to Recommends.  Add recommends to i3-next-workspace.  Remove dep on fontawesome.&lt;/li&gt;
-&lt;li&gt;deprecating startnum&lt;/li&gt;
-&lt;li&gt;fix&lt;/li&gt;
-&lt;li&gt;adding a missing logic&lt;/li&gt;
-&lt;li&gt;Fix &amp;lsquo;Carry Window to Next Free&amp;rsquo; binding, remove trailing whitespace. (#31)&lt;/li&gt;
+&lt;li&gt;Check update flag before changing gnome-terminal.  Allows users to turn gnome-terminal profile generation off.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;release-notes-for-regolith-i3xrocks-config&#34;&gt;Release Notes for regolith-i3xrocks-config&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Add padding for net-traffic, extensive mocked tests (#101)&lt;/li&gt;
-&lt;li&gt;Migrate rofication status indicator i3xrocks conf file here from regolith-rofication.&lt;/li&gt;
-&lt;li&gt;Remove button handling code as net-traffic cannot use them w/ repeat interval type. (#100)&lt;/li&gt;
-&lt;li&gt;Update net-traffic script to use &amp;lsquo;repeat&amp;rsquo; interval type.&lt;/li&gt;
-&lt;li&gt;Rewrite weather blocklet (#96)&lt;/li&gt;
-&lt;li&gt;Remove todo scripts as migrated to regolith-todo package&lt;/li&gt;
-&lt;li&gt;Fix disk-capacity button clicks, add tests (#98)&lt;/li&gt;
-&lt;li&gt;Change memory rock default full text (#94)&lt;/li&gt;
-&lt;li&gt;Fix name of next-workspace script from last change&lt;/li&gt;
-&lt;li&gt;Remove next-workspace script as it&#39;s moved to it&#39;s own package: i3-next-workspace.&lt;/li&gt;
-&lt;li&gt;format the connected device string using pango same as other rocks (#89)&lt;/li&gt;
-&lt;li&gt;Changed around a few release names&lt;/li&gt;
-&lt;li&gt;Use git-buildpackage to build the deb instead of debuild, use auth for all containers&lt;/li&gt;
-&lt;li&gt;reading from xresources now (#82)&lt;/li&gt;
-&lt;li&gt;Don&#39;t sign packages for now, so the pipeline actually builds&lt;/li&gt;
-&lt;li&gt;Only run packaging on tag releases for now&lt;/li&gt;
-&lt;li&gt;Added tests for temp script and reworked temp script routine&lt;/li&gt;
-&lt;li&gt;Also run the tests on PRs&lt;/li&gt;
-&lt;li&gt;Match example with what the script is looking for (#90)&lt;/li&gt;
-&lt;li&gt;Rewrote net-traffic script, fixes #91 (#92)&lt;/li&gt;
-&lt;li&gt;Add extra location information to weather API request (#88)&lt;/li&gt;
-&lt;li&gt;set BUTTON variable (#93)&lt;/li&gt;
-&lt;li&gt;Added net-traffic tests and GitHub Actions workflow to run tests&lt;/li&gt;
-&lt;li&gt;Switch to a separate container running to ensure we can run our tests&lt;/li&gt;
-&lt;li&gt;Make sure we can actually run the job somewhere&lt;/li&gt;
-&lt;li&gt;Fixed xrescat mock and test execution&lt;/li&gt;
-&lt;li&gt;Fix for button handling of the net-traffic script (#86)&lt;/li&gt;
-&lt;li&gt;Make time interval configurable with Xresource (#87)&lt;/li&gt;
-&lt;li&gt;Restore original behavior of mouse actions on volume (#85)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;release-notes-for-regolith-rofication&#34;&gt;Release Notes for regolith-rofication&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Another approach to breaking status indicator from base functionality due to python build script mysteries: move the i3xrocks conf.d file to i3xrocks.  Leave python scripts here for the python installer thing.&lt;/li&gt;
-&lt;li&gt;Break status indicator for rofication into separate package: i3xrocks-rofication.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;release-notes-for-regolith-styles&#34;&gt;Release Notes for regolith-styles&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Check if gnome-terminal is installed before generating profile.  Related to &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/issues/522&#34;&gt;https://github.com/regolith-linux/regolith-desktop/issues/522&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;release-notes-for-regolith-todo&#34;&gt;Release Notes for regolith-todo&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Add i3xrocks dependency in hopes of sidestepping package file conflicts during upgrades&lt;/li&gt;
-&lt;li&gt;Rewrote syntax of todo script, added tests&lt;/li&gt;
-&lt;li&gt;Add td-cli as dependency&lt;/li&gt;
-&lt;li&gt;Package created from regolith-i3xrocks-config&lt;/li&gt;
+&lt;li&gt;Added gawk specific testing for temp script (#108)&lt;/li&gt;
+&lt;li&gt;Filter all interfaces associated with VPN traffic while determining default route (#110)&lt;/li&gt;
+&lt;li&gt;Capture error cases involving invalid network device paths and sleep before returning to resolve CPU consuming loop due to  interval type of i3blocks.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -119,14 +52,14 @@
         
         &lt;p&gt;Based on your preferred installation method, follow one of the following two sections to install Regolith.  Unlike previous versions of Regolith, PPA and ISO installs result in different configurations.  The PPA install favors coexistence with the existing Ubuntu desktop, while the ISO release optimizes for less resource utilization.  Specifically, the ISO install is roughly 1Gb smaller and cold start RAM usage is reduced by about 200Mb as compared to the PPA installation.&lt;/p&gt;
 &lt;h2 id=&#34;option-1-regolith-linux-via-installer&#34;&gt;Option 1: Regolith Linux via Installer&lt;/h2&gt;
-&lt;p&gt;At this time an &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/15&#34;&gt;installer for Regolith 1.5&lt;/a&gt; is not available, however the 1.4.1 installer can be upgraded to 1.5.1.&lt;/p&gt;
+&lt;p&gt;At this time an &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/15&#34;&gt;installer for Regolith 1.5&lt;/a&gt; is not available, however the 1.4.1 installer can be upgraded to 1.5.2.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Download an ISO image of &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1&#34;&gt;Regolith R1.4.1&lt;/a&gt; &lt;i class=&#34;fas fa-cloud-download-alt&#34;&gt;&lt;/i&gt; and then use an OS installation tool such as USB Creator to write the downloaded file into a USB device. Here are Ubuntu guides for performing this action in &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0&#34;&gt;Windows&lt;/a&gt;, &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0&#34;&gt;Mac&lt;/a&gt;, and &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0&#34;&gt;Ubuntu&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Reboot the computer and select the USB flash drive to boot from.&lt;/li&gt;
 &lt;li&gt;Install or run the live environment by providing information when prompted during the setup process.  See &lt;a href=&#34;https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop&#34;&gt;this tutorial&lt;/a&gt; to learn more about the installation process.&lt;/li&gt;
 &lt;li&gt;When prompted, reboot the computer and login to your new Regolith environment!&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The system will automatically upgrade to Regolith 1.5.1 with the following commands:&lt;/p&gt;
+&lt;p&gt;The system will automatically upgrade to Regolith 1.5.2 with the following commands:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt update &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt dist-upgrade
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;option-2-regolith-desktop-via-repository-ppa&#34;&gt;Option 2: Regolith Desktop via Repository (PPA)&lt;/h2&gt;
 &lt;ol&gt;
@@ -147,11 +80,11 @@ $ sudo apt install regolith-desktop-standard # or regolith-desktop-mobile for la
 &lt;p&gt;&lt;img src=&#34;https://regolith-linux.org/regolith-screenshot-login.png&#34; alt=&#34;Ubuntu Login Screen&#34;&gt;&lt;/p&gt;
 &lt;p&gt;From this point, please proceed to the next section, &lt;a href=&#34;../configuration&#34;&gt;configuration&lt;/a&gt; to learn about the most common changes people like to make to Regolith.&lt;/p&gt;
 &lt;h2 id=&#34;upgrades&#34;&gt;Upgrades&lt;/h2&gt;
-&lt;h3 id=&#34;regolith-141---regolith-151&#34;&gt;Regolith 1.4.1 -&amp;gt; Regolith 1.5.1&lt;/h3&gt;
+&lt;h3 id=&#34;regolith-141---regolith-152&#34;&gt;Regolith 1.4.1 -&amp;gt; Regolith 1.5.2&lt;/h3&gt;
 &lt;p&gt;If your system already has added the &lt;code&gt;regolith-linux/release&lt;/code&gt; PPA, then upgrading is just matter of performing an upgrade:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt update &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt dist-upgrade
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After performing the update, log back in to your system.  However, if you have staged your own i3 config file or Xresources root, read the below section &lt;code&gt;Upgrading with Customizations&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;regolith-10---12---regolith-151&#34;&gt;Regolith 1.0 - 1.2 -&amp;gt; Regolith 1.5.1&lt;/h3&gt;
+&lt;h3 id=&#34;regolith-10---12---regolith-152&#34;&gt;Regolith 1.0 - 1.2 -&amp;gt; Regolith 1.5.2&lt;/h3&gt;
 &lt;p&gt;To upgrade from Regolith 1.0 - 1.2, the PPA URL must be changed and then new package versions are applied by the package manager:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository --remove ppa:kgilmer/regolith-stable
 $ sudo add-apt-repository ppa:regolith-linux/release
@@ -720,7 +653,7 @@ $ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#3
 &lt;/div&gt;
 
 &lt;h1 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h1&gt;
-&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configrations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configurations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
 
       </description>
     </item>
@@ -757,930 +690,6 @@ $ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#3
 &lt;h2 id=&#34;quit-an-application&#34;&gt;Quit an Application&lt;/h2&gt;
 &lt;p&gt;Any application can be safely closed via &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;q&lt;/span&gt;&lt;/span&gt;.  Crashed or otherwise unresponsive apps can be killed via &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;q&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
 
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: 1.5 Release Notes</title>
-      <link>https://regolith-linux.org/docs/reference/releases/regolith-1.5-release-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/docs/reference/releases/regolith-1.5-release-notes/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Regolith R1.5 is a feature release which includes several improvements and optimizations.  To summarize, Regolith 1.5 ships simpler workspace management, a Rofi-based Look switcher, and numerous internal optimizations and cleanup.  Read below for more details.&lt;/p&gt;
-&lt;h2 id=&#34;known-issues&#34;&gt;Known Issues&lt;/h2&gt;
-&lt;p&gt;Issues and fixes are being tracked in &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/13&#34;&gt;this project&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;table class=&#34;table&#34;&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Next Free Workspace&lt;/td&gt;
-            &lt;td colspan=&#34;2&#34;&gt;A typical part of managing workspaces in an i3-based desktop is moving to unused workspaces and then loading some applications. Before this feature, a user has to determine which unused workspace they prefer.  This is done by scanning the list of existing used workspaces to determine an unused one. Now, the system can do this automatically.  The &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;`&lt;/span&gt;&lt;/span&gt; keybinding will move to the next free workspace.  &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;`&lt;/span&gt;&lt;/span&gt; will move the focused window into the next free workspace.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;View and Change Looks via Rofi&lt;/td&gt;
-            &lt;td&gt;&lt;a href=&#34;../regolith-select-look.png&#34;&gt;&lt;img class=&#34;shadow&#34; width=&#34;640px&#34; src=&#34;../regolith-select-look.png&#34;/&gt;&lt;/td&gt;
-            &lt;td&gt;Looks can be changed now via a Rofi dialog rather than having to configure the Xresource override via the command-line.  To do this, use keybinding &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;l&lt;/span&gt;&lt;/span&gt; and then select from the dialog to load a Look.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;GSettings Overrides&lt;/td&gt;            
-            &lt;td colspan=&#34;2&#34;&gt;Regolith now uses &lt;a href=&#34;https://help.gnome.org/admin/system-admin-guide/stable/overrides.html.en&#34;&gt;gsettings overrides&lt;/a&gt; to configure various GNOME settings for use with Regolith.  In previous versions of Regolith, settings were written globally to the user session from within the Regolith startup code.  This could cause issues if the user works in multiple desktop environments.  Now, Regolith GNOME settings are defined in an override file that is only in effect while using a Regolith session.  This allows switching between desktop environments without settings from Regolith impacting other environments.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;New Looks&lt;/td&gt;
-            &lt;td&gt;
-              &lt;a href=&#34;../regolith-dracula.png&#34;&gt;&lt;img class=&#34;shadow p-2&#34; width=&#34;640px&#34; src=&#34;../regolith-dracula.png&#34;/&gt;
-              &lt;a href=&#34;../regolith-gruvbox.png&#34;&gt;&lt;img class=&#34;shadow p-2&#34; width=&#34;640px&#34; src=&#34;../regolith-gruvbox.png&#34;/&gt;
-              &lt;a href=&#34;../regolith-pop-os.png&#34;&gt;&lt;img class=&#34;shadow p-2&#34; width=&#34;640px&#34; src=&#34;../regolith-pop-os.png&#34;/&gt;
-            &lt;/td&gt;
-            &lt;td&gt;Users have contributed some new Looks to Regolith: dracula, gruvbox, and pop-os.  Each of these looks presents a distinctive color palate, typeface, and GTK theme.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;i3-gaps upgraded to 4.18.2&lt;/td&gt;
-            &lt;td colspan=&#34;2&#34;&gt;See i3-gaps &lt;a href=&#34;https://github.com/Airblader/i3/blob/a4a1a44275ea402b25d2d1365e1163e496024358/RELEASE-NOTES-4.18.2&#34;&gt;release notes here&lt;/a&gt;.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;More Refined Customizations&lt;/td&gt;
-            &lt;td colspan=&#34;2&#34;&gt;Numerous small changes allow more granular system customization, such as specifying the temperature unit, custom Compositor settings, and a more comprehensive way of changing i3 keybindings without having to copy the entire config file.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;More Desktop Environment Packages&lt;/td&gt;
-            &lt;td colspan=&#34;2&#34;&gt;The following packages can be installed in place of &lt;code&gt;regolith-desktop&lt;/code&gt; for specific sets of packages based on user needs: &lt;code&gt;regolith-desktop-minimal&lt;/code&gt;, &lt;code&gt;regolith-desktop-standard&lt;/code&gt;, &lt;code&gt;regolith-desktop-mobile&lt;/code&gt;, and &lt;code&gt;regolith-desktop-complete&lt;/code&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;New default compositor: Picom version 8&lt;/td&gt;
-            &lt;td colspan=&#34;2&#34;&gt;See Picom&#39;s &lt;a href=&#34;https://github.com/yshui/picom/releases&#34;&gt;release notes here&lt;/a&gt;.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Remontoire upgraded to version 1.4&lt;/td&gt;
-            &lt;td colspan=&#34;2&#34;&gt;Includes better multi-monitor support and other bug fixes and enhancements.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Optional integration with &lt;b&gt;td-cli&lt;/b&gt;&lt;/td&gt;
-            &lt;td&gt;&lt;a href=&#34;../regolith-td.png&#34;&gt;&lt;img class=&#34;shadow&#34; width=&#34;640px&#34; src=&#34;../regolith-td.png&#34;/&gt;&lt;/td&gt;
-            &lt;td&gt;Access a simple todo app via Rofi.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Documentation of development process.&lt;/td&gt;
-            &lt;td colspan=&#34;2&#34;&gt;The &lt;a href=&#34;../../../policy-and-process/development/&#34;&gt;Regolith development process&lt;/a&gt; is now better documented to enable greater transparency and inclusion.&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;fixes&#34;&gt;Fixes&lt;/h2&gt;
-&lt;p&gt;Have a look at the R1.5 project page for a &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/12&#34;&gt;list of bug fixes&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;changelog-delta-from-regolith-141-to-regolith-15&#34;&gt;Changelog Delta from Regolith 1.4.1 to Regolith 1.5&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;########################################
-# Release Notes for dracula-gtk
-########################################
-dracula-gtk (1.0.1-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Remove unnecessary files
-
-
-dracula-gtk (1.0-1) bionic; urgency=medium
-
-  * [ Ken Gilmer ]
-  * Packaging version add4f8c 
-
-########################################
-# Release Notes for fonts-materialdesignicons-webfont
-########################################
-fonts-materialdesignicons-webfont (1.6.50-3regolith3) bionic; urgency=medium
-
-  * Backporting to bionic for Regolith. 
-
-
-########################################
-# Release Notes for gruvbox-gtk
-########################################
-gruvbox-gtk (1.0.1-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Rename root directory of theme to Gruvbox for consistency w/ other GTK themes.
-  * Add gbp config for package management.
-
-
-gruvbox-gtk (1.0-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * New upstream version 1.0
-
-
-gruvbox-gtk (1.0-1) bionic; urgency=medium
-
-  [ eximus ]
-  * Initial commit
-  * gruvbox theme
-
-
-########################################
-# Release Notes for i3-gaps-wm
-########################################
-i3-gaps-wm (4.18.2-1~regolith2) bionic; urgency=medium
-
-  * Package source from upstream https://github.com/Airblader/i3/releases/tag/4.18.2
-
-
-########################################
-# Release Notes for i3ipc-python
-########################################
-i3ipc-python (2.1.1-1ubuntu1~ppa6) bionic; urgency=medium
-
-  * Update build dependencies hoping to resolve packaing problems. 
-
-
-
-########################################
-# Release Notes for i3xrocks
-########################################
-i3xrocks (1.3.4-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Version bump to match changelog.  Cleanup.
-
-
-i3xrocks (1.3.3-1) bionic; urgency=medium
-
-  [ Will Winder ]
-  * Add optional default resource value.
-  * Minor cleanup.
-  * Free resource allocated by xcb_xrm_resource_get_string
-  * Fix possible truncated resource value.
-
-  [ Ken Gilmer ]
-  * Add gbp config file
-
-
-########################################
-# Release Notes for picom
-########################################
-picom (8-1~1.gbp353272ubuntu1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Remove github files from debian branch.
-
-
-picom (8-1~1.gbp353272) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * New upstream version 8
-
-
-########################################
-# Release Notes for plano-theme
-########################################
-plano-theme (3.36-1-1regolith1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * New upstream version 3.36-1
-
-
-########################################
-# Release Notes for plymouth-theme-regolith
-########################################
-plymouth-theme-regolith (1.0.3-1) focal; urgency=medium
-
-  * Tweaks to config files. 
-
-
-plymouth-theme-regolith (1.0.2-1) focal; urgency=medium
-
-  * Ship grub file. 
-
-
-plymouth-theme-regolith (1.0.1-1) focal; urgency=medium
-
-  * Add package hooks. 
-
-
-
-########################################
-# Release Notes for pop-fonts
-########################################
-pop-fonts (1.0.3~1555617065~18.04~a86eb73) bionic; urgency=medium
-
-  * Auto Build
-
-########################################
-# Release Notes for python3-i3ipc
-########################################
-python3-i3ipc (2.1.1-1ubuntu1~ppa7) bionic; urgency=medium
-
-  * Changes to python version.
-
-
-i3ipc-python (2.1.1-1ubuntu1~ppa6) bionic; urgency=medium
-
-  * Update build dependencies hoping to resolve packaing problems. 
-
-
-i3ipc-python (2.1.1-1ubuntu1~ppa4) eoan; urgency=medium
-
-  * Add python-xlib dependency. 
-
-
-i3ipc-python (2.1.1-1ubuntu1~ppa2) eoan; urgency=medium
-
-  * Initial release from https://github.com/altdesktop/i3ipc-python/archive/v2.1.1.tar.gz.
-
-
-########################################
-# Release Notes for regolith-compositor-compton-glx
-########################################
-regolith-compositor-compton-glx (1.1.0-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Init script will kill pre-existing app instance before starting new. Part of fix for https://github.com/regolith-linux/regolith-desktop/issues/475.
-
-
-regolith-compositor-compton-glx (1.0.10-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Fix typo in compton config file, found by @gservat.
-
-
-regolith-compositor-compton-glx (1.0.9-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add xrender-sync-fence to handle issue https://github.com/regolith-linux/regolith-desktop/issues/116.
-
-
-regolith-compositor-compton-glx (1.0.8-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Ship config file.
-
-
-regolith-compositor-compton-glx (1.0.7-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add gbp conf file, cleanup.
-
-
-
-########################################
-# Release Notes for regolith-compositor-none
-########################################
-regolith-compositor-none (1.0.3-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add gbp conf file, cleanup.
-
-
-
-########################################
-# Release Notes for regolith-compositor-picom-glx
-########################################
-regolith-compositor-picom-glx (1.1.1-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Fix typo found in https://github.com/regolith-linux/regolith-compositor-picom-glx/issues/1.
-  * Init script will kill pre-existing app instance before starting new. Part of fix for https://github.com/regolith-linux/regolith-desktop/issues/475.
-
-
-regolith-compositor-picom-glx (1.0.1-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Fix typo found in 
-  https://github.com/regolith-linux/regolith-compositor-picom-glx/issues/1.
-
-
-regolith-compositor-picom-glx (1.0.0-1) bionic; urgency=medium
-
-  * Initial release
-
-
-########################################
-# Release Notes for regolith-compositor-xcompmgr
-########################################
-regolith-compositor-xcompmgr (1.2.0-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Init script will kill pre-existing app instance before starting new. Part of fix for https://github.com/regolith-linux/regolith-desktop/issues/475.
-
-
-regolith-compositor-xcompmgr (1.1.0-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add ability to override xcompmgr defaults. Fixes https://github.com/regolith-linux/regolith-desktop/issues/382.
-
-
-regolith-compositor-xcompmgr (1.0.3-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add gbp conf file, cleanup.
-
-
-
-########################################
-# Release Notes for regolith-default-settings
-########################################
-regolith-default-settings (1.0-1bionic1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add bionic specific gsettings overrides.
-
-
-regolith-default-settings (1.0-1) focal; urgency=medium
-
-  * Initial release, files moved from package regolith-gnome-flashback.
-
-
-########################################
-# Release Notes for regolith-desktop
-########################################
-regolith-desktop (2.78-1bionic) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Move from compton to picom as default compositor.
-
-
-regolith-desktop (2.75-1bionic) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Change unclutter to regolith-unclutter-fixes to address https://github.com/regolith-linux/speed-ricer/issues/14.
-
-
-regolith-desktop (2.72-1bionic1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Version bump for next DE release
-
-
-regolith-desktop (2.71-1bionic1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Depend on regolith-default-settings to migrate to gsettings overrides.
-  * Update branch name to conform w/ gbp.
-
-
-regolith-desktop (2.68-1bionic1) bionic; urgency=medium
-
-  * Package: Remove postinst to unblock upgrades (#432) 
-
-
-regolith-desktop (2.60-1bionic1) bionic; urgency=medium
-
-  * Package: Remove unclutter-startup, if installed 
-
-
-regolith-desktop (2.59-1bionic1) bionic; urgency=medium
-
-  * Bump version file for R1.4.1 release. 
-
-
-
-########################################
-# Release Notes for regolith-ftue
-########################################
-regolith-ftue (1.0.11-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add gbp config file.
-
-
-########################################
-# Release Notes for regolith-gnome-flashback
-########################################
-regolith-gnome-flashback (2.6.2-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Remove invalid component from desktop session file.
-  * Cleanup
-
-
-regolith-gnome-flashback (2.6.1-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Rename files to make session work.
-
-
-regolith-gnome-flashback (2.6.0-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add gbp config file.
-  * Simply package, model directories in package and remove Makefile.
-  * Update session files to refer to regolith over i3-gnome-flashback.  Experimental.
-
-
-regolith-gnome-flashback (2.5.0-1) bionic; urgency=medium
-
-  * Remove desktop files moved to regolith-default-settings. 
-
-
-regolith-gnome-flashback (2.4.19-1focal1) focal; urgency=medium
-
-  * Fix wallpaper gsettings override. 
-
-
-regolith-gnome-flashback (2.4.18-1focal1) focal; urgency=medium
-
-  * Remove non Regolith i3 config file load logic. 
-
-
-regolith-gnome-flashback (2.4.17-1focal1) focal; urgency=medium
-
-  * Move to gsettings overrides for static dconf changes.
-  * Change session name from i3-gnome to regolith.
-  * Remove wm theme setting.
-
-
-
-########################################
-# Release Notes for regolith-i3-gaps-config
-########################################
-regolith-i3-gaps-config (2.8.0-1) bionic; urgency=medium
-
-  [ Bence Ferdinandy ]
-  * adding bindings for next_on_output and prev_on_output (#29)
-
-
-regolith-i3-gaps-config (2.7.2-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add nm-applet to launch by default. Enables better network connectivity workflow.
-
-
-regolith-i3-gaps-config (2.7.1-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Shorten look-selector to look for rofi menu.
-
-
-regolith-i3-gaps-config (2.7.0-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add launcher for look selector.
-
-
-regolith-i3-gaps-config (2.6.0-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Based on idea from @Ukaszg, extract all keybindings to Xres keys for easy overriding without i3 file copy.  Fixes https://github.com/regolith-linux/regolith-i3-gaps-config/issues/25.
-  * Restart compositor upon i3 restart.  Part of fix for https://github.com/regolith-linux/regolith-desktop/issues/475.
-
-
-regolith-i3-gaps-config (2.5.1-1) bionic; urgency=medium
-
-  [ Moritz Heiber ]
-  * Set tray output to primary by default (#24)
-
-  [ Ken Gilmer ]
-  * Allow the bar mode (dock|hide|invisible) to be specified by xres overrides.
-
-
-regolith-i3-gaps-config (2.5.0-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add keybindings for &#39;next free workspace&#39; feature.
-
-
-regolith-i3-gaps-config (2.4.18-1) bionic; urgency=medium
-
-  [ Will Winder ]
-  * Add missing keybind for moving the workspace with hjkl. (#19)
-
-  [ Jordan Cohen ]
-  * shortcuts for explicit window orientation and hierarchical focusing (#18)
-
-
-regolith-i3-gaps-config (2.4.17-1) bionic; urgency=medium
-
-  [ Markus Bertheau ]
-  * Allow customization of workspace_auto_back_and_forth (#20)
-
-
-regolith-i3-gaps-config (2.4.16-1) bionic; urgency=medium
-
-  [ ukaszg ]
-  * configurable workspace keys (#17)
-
-
-regolith-i3-gaps-config (2.4.15-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Cleanup from lintian warnings.
-
-
-regolith-i3-gaps-config (2.4.14-1) bionic; urgency=medium
-
-  * Take smart-gaps fix from @winder.
-  * Comment cleanup. 
-
-
-
-########################################
-# Release Notes for regolith-i3xrocks-config
-########################################
-regolith-i3xrocks-config (3.2.6-1ubuntu2) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Fix todo icon from updated material design web icons change
-
-
-regolith-i3xrocks-config (3.2.5-1ubuntu1) bionic; urgency=medium
-
-  [ Rafael Lacerda ]
-  * Fix crash when focused window name is None (#81)
-
-  [ Peter Mahnke ]
-  * Remove decimal places from battery number (#80)
-
-
-regolith-i3xrocks-config (3.2.4-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Temp status indicator can be configured with sensor name via Xres value i3xrocks.temp.key.
-
-
-regolith-i3xrocks-config (3.2.3-1) bionic; urgency=medium
-
-  [ Pedro Kostelec ]
-  * [IMPR] Show aggregated battery percentage (#78)
-
-  [ Ken Gilmer ]
-  * Fix issue found in livecd enviroment w memory script
-
-  [ Pedro Kostelec ]
-  * [FIX] Fixes dissapearing indicator when value is 0 (#79)
-
-
-regolith-i3xrocks-config (3.2.2-1) bionic; urgency=medium
-
-  [ Peter Mahnke ]
-  * Make curl work for special characters (#76)
-
-  [ Ken Gilmer ]
-  * Remove debugging line mistakenly added by me in earlier fix.
-
-
-regolith-i3xrocks-config (3.2.1-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Fix cpu-usage script
-
-
-regolith-i3xrocks-config (3.2.0-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add ability to specify temperature unit via xres, and fallback to country locale if unspecified. Based on https://github.com/regolith-linux/regolith-desktop/issues/372. (#72)
-
-  [ Joel Hoisko ]
-  * Add option to define a specific media player (#63)
-
-
-regolith-i3xrocks-config (3.1.3-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add ability to override click commands via Xresources. Fixes https://github.com/regolith-linux/regolith-desktop/issues/352.
-
-
-regolith-i3xrocks-config (3.1.2-1) bionic; urgency=medium
-
-  [ Leo Palmer Sunmo ]
-  * Polish up media-player text splitting and pango formatting (#71)
-
-
-regolith-i3xrocks-config (3.1.1-1) bionic; urgency=medium
-
-  [ Vipul Mathur ]
-  * Use `MemAvailable` to indicate memory usage (#70)
-
-
-regolith-i3xrocks-config (3.1.0-1) bionic; urgency=medium
-
-  [ Bence Ferdinandy ]
-  * fixed an error with name somehow being None
-  * adding next-workspace
-
-
-regolith-i3xrocks-config (3.0.34-1) bionic; urgency=medium
-
-  [ Marten Lienen ]
-  * Exit gracefully if the focused window does not have a name (#68)
-
-
-regolith-i3xrocks-config (3.0.33-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * regress debhelper-compat version due to build failure in launchpad.
-
-
-regolith-i3xrocks-config (3.0.32-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Downgrade debhelper version to appease launchpad.
-  * Remove compat file in attempt to appease debuild.
-
-
-regolith-i3xrocks-config (3.0.31-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Downgrade debhelper version to appease launchpad.
-
-
-regolith-i3xrocks-config (3.0.30-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add gbp conf file, cleanup.
-
-
-regolith-i3xrocks-config (3.0.29-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Package: @cheginit&#39;s new todo status indicator based on td-cli. 
-
-
-regolith-i3xrocks-config (3.0.28-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Package: @buck10&#39;s major rework of keyboard-layout.
-
-
-regolith-i3xrocks-config (3.0.27-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Package: Removed verbose output from net-traffic script (#62) 
-
-
-regolith-i3xrocks-config (3.0.26-2) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Update i3xrocks-focused-window-name to use consistent python library name. 
-
-
-regolith-i3xrocks-config (3.0.26-1) bionic; urgency=medium
-
-  [ Taher Chegini ]
-  * Add todo blocklet (#54)
-
-  [ Ken Gilmer ]
-  * Initial upstream branch.
-  * New upstream version 3.0.25
-
-
-regolith-i3xrocks-config (3.0.25-2) bionic; urgency=medium
-
-  * Trying w/ debhelper v11 based on build error. 
-
-
-regolith-i3xrocks-config (3.0.25-1) bionic; urgency=medium
-
-  * Package changes by @moritzheiber:
-  ** Fix button clicks blocklets
-  ** Also fix network bandwidth calculation/shellcheck errors in net-traffic script
-
-
-regolith-i3xrocks-config (3.0.24-1) bionic; urgency=medium
-
-  * Package @moritzheiber&#39;s fixes for disk-capacity and other blocks.
-  * Package @cjohnston1158 additions to net-traffic.
-
-
-regolith-i3xrocks-config (3.0.23-1) bionic; urgency=medium
-
-  * Add info indicator missed when moving to conf.d config.
-
-
-regolith-i3xrocks-config (3.0.22-2) bionic; urgency=medium
-
-  * Fixes to weather status for ambiguous city names and cities of multiple
-    words.
-
-
-########################################
-# Release Notes for regolith-rofi-config
-########################################
-regolith-rofi-config (1.3.1-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Fix look-selector
-
-
-regolith-rofi-config (1.3.0-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add script to view and select Looks.  Minor cleanup.  Addresses https://github.com/orgs/regolith-linux/projects/12.
-
-
-regolith-rofi-config (1.2.6-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add gbp config file.
-
-
-
-########################################
-# Release Notes for regolith-rofication
-########################################
-regolith-rofication (1.2.3-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Remove scripts that do not apply to user sessions
-
-
-regolith-rofication (1.2.2-2) focal; urgency=medium
-
-  * Add git-buildpackage config
-
-
-########################################
-# Release Notes for regolith-styles
-########################################
-regolith-styles (2.6.13-1ubuntu2) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * More tweaks to icons for material design based looks
-
-
-regolith-styles (2.6.12-1ubuntu1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Update material design icon-based looks to use fonts-materialdesignicons-webfont 1.6 mappings
-
-
-regolith-styles (2.6.11-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add regolith.look Xres entry for currently set look.
-
-
-regolith-styles (2.6.10-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * If Regolith user root Xres file exists, move old copy to tmp instead of aborting.  Sort looks.  Misc cleanup.
-
-
-regolith-styles (2.6.9-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Check a flag before executing gnome-terminal profile script.  Fixes https://github.com/regolith-linux/regolith-desktop/issues/471.
-
-
-regolith-styles (2.6.8-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Update term colors for Dracula for more variance and remove conflict for color 11.  Addresses https://github.com/regolith-linux/regolith-styles/issues/32.
-
-
-regolith-styles (2.6.7-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Change selected item background color to addresss https://github.com/regolith-linux/regolith-styles/issues/23.
-
-
-regolith-styles (2.6.6-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add next-workspace glyph for missing looks.  Change sound, mute, ram glyphs for fontawesome looks.
-
-
-regolith-styles (2.6.5-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Fix font dependency for pop-os.  Cleanup control file.
-
-
-regolith-styles (2.6.4-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add package for regolith-look-pop-os.
-
-
-regolith-styles (2.6.3-1) bionic; urgency=medium
-
-  [ Aditya Wagh ]
-  * Create Pop!_OS Style (#29)
-
-  [ Ken Gilmer ]
-  * Update gtk theme name for consistency.
-  * Add packaging data for pop-os look.
-
-
-regolith-styles (2.6.2-1) bionic; urgency=medium
-
-  * Specify glyph for next-workspace status indicator for fontawesome and materialdesign.
-
-
-regolith-styles (2.6.1-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Package the dracula look.
-
-
-regolith-styles (2.6.0-1) bionic; urgency=medium
-
-  [ Drew DeVore ]
-  * Create Dracula Theme (#30)
-
-  [ Julius Francisco ]
-  * Remove user specific path (#31)
-
-
-regolith-styles (2.4.27-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Fix typo in package file.
-
-
-regolith-styles (2.4.26-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Fix gruvbox missing files on install.
-
-
-regolith-styles (2.4.25-1) bionic; urgency=medium
-
-  [ Ekans ]
-  * Create gruvbox style (#25)
-
-  [ Ken Gilmer ]
-  * Add packaging for gruvbox.
-
-
-regolith-styles (2.4.24-1) bionic; urgency=medium
-
-  [ Chua Hou ]
-  * Balance workspace name by adding space at end (#20)
-
-
-regolith-styles (2.4.23-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add gbp conf file, cleanup.
-
-
-
-########################################
-# Release Notes for regolith-system
-########################################
-regolith-system (1.4.0.4-1) focal; urgency=medium
-
-  [ Ken Gilmer ]
-  * Add gbp conf file, cleanup.
-
-
-
-########################################
-# Release Notes for regolith-unclutter-xfixes
-########################################
-regolith-unclutter-xfixes (1.5-2) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Fix linter warning
-  * Revert &amp;quot;Remove master files&amp;quot;
-
-
-regolith-unclutter-xfixes (1.5-1) disco; urgency=medium
-
-  [ Ken Gilmer ]
-  * Initial release
-
-
-########################################
-# Release Notes for remontoire
-########################################
-remontoire (1.4.0-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Specify font for windows glyph in stylesheet.
-  * Increase buffer to 128Kb to handle larger i3 config files
-  * Add feature to consume for stdin and specify arbitrary string prefix for more config file format support.
-  * Fix window positioning in multi-monitor setups.
-
-
-########################################
-# Release Notes for td-cli
-########################################
-td-cli (1.2.4-7) bionic; urgency=medium
-
-  * Initial release
-
-
-########################################
-# Release Notes for xrescat
-########################################
-xrescat (1.2.1-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Cleanup lintian warnings.
-  * Version bump to appease launchpad
-
-
-xrescat (1.2.0-1) bionic; urgency=medium
-
-  [ Jeremy Coghill ]
-  * added logic to exclude surrounding double quotes from returned strings to allow for the use of leading and trailing spaces in resources. updated version number. updated man page
-
-  [ Ken Gilmer ]
-  * Update README for new double quote handling.  Add gbp config. Cleanup.
-
-&lt;/code&gt;&lt;/pre&gt;
       </description>
     </item>
     
@@ -2165,20 +1174,6 @@ $ rm -Rf ~/.config/regolith/flags
     </item>
     
     <item>
-      <title>Docs: 1.4.1 Release Notes</title>
-      <link>https://regolith-linux.org/docs/reference/releases/regolith-1.4.1-release-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/docs/reference/releases/regolith-1.4.1-release-notes/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Regolith R1.4.1 is a fast follow up to 1.4 that fixes a few serious bugs, detailed on the mailing list &lt;a href=&#34;https://www.freelists.org/post/regolith-linux/Package-Updates-to-Release&#34;&gt;here&lt;/a&gt;.  In addition to the package updates, a new boot animation is provided by the package &lt;code&gt;plymouth-theme-regolith&lt;/code&gt; that is installed by default on the ISO.  The ISO also now excludes a deprecated touchpad driver that was conflicting with Settings.  Existing PPA-based installations can simply get the updates via their typical package update process.  Regolith Linux ISO users can update to R1.4.1 by applying regular package updates and then follow &lt;a href=&#34;../../../howto/update-14-141&#34;&gt;this guide&lt;/a&gt; to perform some manual steps if they have touchpad issues or use encrypted root file systems.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Docs: Basic Usage</title>
       <link>https://regolith-linux.org/docs/getting-started/basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2541,115 +1536,6 @@ instance=BAT1
     </item>
     
     <item>
-      <title>Docs: 1.4 Release Notes</title>
-      <link>https://regolith-linux.org/docs/reference/releases/regolith-1.4-release-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/docs/reference/releases/regolith-1.4-release-notes/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Regolith R1.4 is a major feature release which includes several improvements and optimizations.  Regolith is now smaller and more efficient.  The ISO-based installer is now based from the Xubuntu image, and moves from the gdm3 display manager to LightDM.  This allows for less resource consumption at runtime and dramatically smaller download size[1]. A new look, &lt;code&gt;lascaille&lt;/code&gt; and file search dialog round out the major new features.  Read below for more details.&lt;/p&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;If you maintain your own i3 config file, note that the copy shipped in Regolith 1.4 has changed in that it reads more configuration from Xresources.  The intention of this change is to require a full copy of the i3 config file &lt;b&gt;less often&lt;/b&gt;, by allowing users to customize the system via Xresource overrides instead of copy/edit of the i3 config file.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;For R1.4 in particular @ploum has provided many of the ideas and validation.  Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @baldrailers, @ivomarino, @Josh-Letts, @LawZava, @SkyyySi, @tomster, @gdeflaux, @appelgriebsch, @farsil, and @MrKovar for their time and attention.  Also thanks to all that helped to test and filed issues for bugs and feature requests!&lt;/p&gt;
-&lt;h2 id=&#34;known-issues&#34;&gt;Known Issues&lt;/h2&gt;
-&lt;p&gt;Issues and fixes are being tracked in &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/13&#34;&gt;this project&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;table class=&#34;table&#34;&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Remontoire 1.3.1&lt;/td&gt;
-            &lt;td&gt;&lt;a href=&#34;../regolith-remontoire-screenshot-131.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-remontoire-screenshot-131.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;
-            &lt;ul&gt;
-            &lt;li&gt;Can render keybindings from i3 over socket or from any file.&lt;/li&gt;
-            &lt;li&gt;Can be configured to display on any screen edge.&lt;/li&gt;
-            &lt;li&gt;Visual updates and bug fixes.&lt;/li&gt;
-            &lt;li&gt;Presentation changeable via CSS.&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;New default look: Lascaille&lt;/td&gt;
-            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-lascaille.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-screenshot-lascaille.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;A new look with &lt;a href=&#34;https://www.jetbrains.com/lp/mono/&#34;&gt;a bolder, tighter typeface&lt;/a&gt; and a &lt;a href=&#34;https://github.com/ayu-theme/ayu-colors&#34;&gt;darker, higher contrast color theme&lt;/a&gt; become Regolith&#39;s default look in 1.4.  Cahuella, and other looks continue to be available and can be installed with a few commands.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;New File Search Dialog&lt;/td&gt;
-            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-file-search.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-screenshot-file-search.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;Based on &lt;a href=&#34;https://github.com/davatorium/rofi-scripts/tree/master/rofi-finder&#34;&gt;Rofi&lt;/a&gt; and &lt;code&gt;mlocate&lt;/code&gt;, users can now quickly find files and launch their default editors from a global dialog.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Faster, Easier Customization&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;Virtually everything exportable from the i3 config can now be overridden directly with Xresources declarations, from changing the meta key to specifying the command that launches the app search dialog.  Additionally, up to 3 user configured programs can be set to be loaded upon start.  All of this is possible without creating a user copy of the i3 config file, but rather by overriding a specific Xresource.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;i3xrocks supports conf.d style configuration&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;The status indicators in the bar can now be installed and configured independently.  This allows for a cleaner dependency model and more efficient runtime characteristics. It also provides future flexibility for user contributed modules and status indicators.  Plus, users can provide their own block descriptors in the user directory to easily override the defaults without having to change the i3 config file.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;New architecture support: &lt;code&gt;arm64&lt;/code&gt;&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;With testing done on a Raspberry Pi 4, Regolith now is installable via PPA when using Ubuntu on arm64 devices with the necessary hardware support.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Rewrite of Rofication&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;Rofication has been rewritten to require less dependencies and be more stable by Regolith contributor @farsil.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;New Ubuntu release support: Focal Fossa&lt;/td&gt;
-            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-focal.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-screenshot-focal.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;Regolith runs as a desktop environment in Canonical&#39;s latest release of Ubuntu: 20.04.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Time and Space Optimizations in ISO release&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;By switching from GDM3 to LightDM, Regolith avoids loading some unnecessary desktop components into RAM, resulting in between 200MB to 300MB savings on cold start.  Additionally, the LiveCD installer is now based on the Xubuntu LiveCD which dramatically lowers the size of the installer and install image of the system[2].  Finally, with more fine-grained control of the bar status blocks, only the blocks you&#39;ve installed will run.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Pluggable Desktop Notification Components&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;Users can now cleanly switch between desktop notification implementations such as dunst and notify-osd, in addition to Rofication without resorting to hacks.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Integrate &lt;code&gt;gnome-terminal&lt;/code&gt; over &lt;code&gt;st-term&lt;/code&gt; by Default&lt;/td&gt;
-            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-gnome-terminal.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-screenshot-gnome-terminal.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;Regolith 1.4 uses &lt;code&gt;gnome-terminal&lt;/code&gt; with a dynamically generated profile to overcome some character encoding and input devices.  &lt;code&gt;st&lt;/code&gt; is still available, simply by installing the &lt;code&gt;regolith-st&lt;/code&gt; package.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Picom (Compton) config can be overriden by user&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;Users can provide their own Picom compositor config in their user directory.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;i3 reload becomes Regolith reload&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;Refreshing the UI (look, colors, fonts, etc.) after making changes is now as easy as &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;r&lt;/span&gt;&lt;/span&gt;.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Polish, polish, polish&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;Just as in previous releases, many tiny fixes and enhancements were added to Regolith in version 1.4.&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;fixes&#34;&gt;Fixes&lt;/h2&gt;
-&lt;p&gt;Have a look at the R1.4 project page for a &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/11&#34;&gt;list of bug fixes&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;1: This does **not** mean that Regolith uses XFCE4 or any other aspect of Xubuntu other than the install image.&lt;/p&gt;
-&lt;p&gt;2: The trade-off is that users need to install more of the software they require after installation.&lt;/p&gt;
-      </description>
-    </item>
-    
-    <item>
       <title>Docs: Advanced</title>
       <link>https://regolith-linux.org/docs/interface/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2702,7 +1588,6 @@ instance=BAT1
 &lt;tr&gt;
 &lt;th&gt;UI Component&lt;/th&gt;
 &lt;th&gt;Purpose&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
 &lt;th&gt;Alternatives&lt;/th&gt;
 &lt;th&gt;Swappable&lt;/th&gt;
 &lt;/tr&gt;
@@ -2713,56 +1598,48 @@ instance=BAT1
 &lt;td&gt;Display System&lt;/td&gt;
 &lt;td&gt;Unknown&lt;/td&gt;
 &lt;td&gt;Unknown&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;i3-gaps&lt;/td&gt;
 &lt;td&gt;Window Manager&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
 &lt;td&gt;i3-wm, others&lt;/td&gt;
 &lt;td&gt;Difficult but possible&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;i3bar&lt;/td&gt;
 &lt;td&gt;Desktop Bar&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;Polybar, lemonbar, many others.&lt;/td&gt;
-&lt;td&gt;Yes, the i3 config file is changed to load a different bar.&lt;/td&gt;
+&lt;td&gt;Polybar, lemonbar, others&lt;/td&gt;
+&lt;td&gt;Yes, by changing the i3 config file.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;i3xrocks&lt;/td&gt;
 &lt;td&gt;Status Indicator Manager&lt;/td&gt;
-&lt;td&gt;i3blocks, barista, many others.&lt;/td&gt;
-&lt;td&gt;Yes, the i3 config file is changed to load a different status program.&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;i3blocks, barista, others&lt;/td&gt;
+&lt;td&gt;Yes, by changing the i3 config file.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Rofication&lt;/td&gt;
 &lt;td&gt;Desktop Notification Manager&lt;/td&gt;
 &lt;td&gt;Dunst, gnome-flashback&lt;/td&gt;
-&lt;td&gt;Yes, the i3 config file is configured to load the Notification backend and Rofi UI, and i3xrocks is configured to load the blocklet.&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Yes, by changing the i3 config file to load the Notification backend and Rofi UI, and configuring i3xrocks to load the blocklet.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Remontoire&lt;/td&gt;
 &lt;td&gt;Keybinding Viewer&lt;/td&gt;
 &lt;td&gt;Conky&lt;/td&gt;
-&lt;td&gt;Yes, the i3 config file is changed to load a different help program.&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Yes, by changing the i3 config file to load a different help program.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;gdm3&lt;/td&gt;
 &lt;td&gt;Login Manager&lt;/td&gt;
-&lt;td&gt;lightdm, sddm, xdm, others.&lt;/td&gt;
+&lt;td&gt;lightdm, sddm, xdm, others&lt;/td&gt;
 &lt;td&gt;This is configured in Ubuntu. Installing an alternative session manager should present a prompt to specify which to use.&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;gnome-flashback&lt;/td&gt;
 &lt;td&gt;Desktop Environment&lt;/td&gt;
 &lt;td&gt;None&lt;/td&gt;
 &lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2811,78 +1688,6 @@ i3-wm.alt: Mod4
 &lt;p&gt;&lt;code&gt;Settings&lt;/code&gt; or gnome-control-panel as it&#39;s also known, is the tool to configure locale, date, display, networking, and various other settings.  Launch it via the app launcher with &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;space&lt;/span&gt;&lt;/span&gt;, type &amp;lsquo;settings&amp;rsquo;, and hit enter to launch the app.  Or, the direct keybinding is &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;c&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h2&gt;
 &lt;p&gt;To dig deeper checkout the section on &lt;a href=&#34;../../customize&#34;&gt;Customization&lt;/a&gt;, find what &lt;a href=&#34;../../howto&#34;&gt;HowTos&lt;/a&gt; are available, or read the &lt;a href=&#34;../../reference/xresources&#34;&gt;Xresource reference&lt;/a&gt;.  Become an i3 power user by reading the &lt;a href=&#34;https://i3wm.org/docs/userguide.html&#34;&gt;user guide&lt;/a&gt;.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: 1.3.1 Release Notes</title>
-      <link>https://regolith-linux.org/docs/reference/releases/regolith-1.3.1-release-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/docs/reference/releases/regolith-1.3.1-release-notes/</guid>
-      <description>
-        
-        
-        &lt;p&gt;R1.3.1 is a quick followup to R1.3 that adds polish and usability features.  Headlining features include a more concise way of overriding Xresource defaults and several enhancements to the Remontoire keybinding viewer.&lt;/p&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;If you maintain your own i3 config file, note that the copy shipped in Regolith 1.3.1 has changed in that the comment format has been modified to be readable by Remontoire (&lt;a href=&#34;https://github.com/regolith-linux/regolith-i3-gaps-config/blob/master/config#L37&#34;&gt;example&lt;/a&gt;).  Without updating your copy i3 config comments, you will not see any keybindings.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;table class=&#34;table&#34;&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Remontoire 1.1.1&lt;/td&gt;
-            &lt;td&gt;&lt;a href=&#34;../regolith-remontoire-screenshot.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-remontoire-screenshot.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;Provides a live view of active i3 keybindings, introduces a machine-readable comment format for i3 config files, and fixes several layout and presentation bugs reported by users.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Ayu Looks&lt;/td&gt;
-            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-ayu-mirage.png&#34;&gt;&lt;img class=&#34;shadow&#34; width=&#34;640px&#34; src=&#34;../regolith-screenshot-ayu-mirage.png&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;The community contributed Ayu themes have been fully integrated into Regolith with updates to package dependencies and configurations.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Rofi Polish&lt;/td&gt;
-            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-rofi-window.png&#34;&gt;&lt;img class=&#34;shadow&#34; width=&#34;640px&#34; src=&#34;../regolith-screenshot-rofi-window.png&#34;&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;Numerous updates to the Rofi themes for all provided looks.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Easier Customization&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;Now, overriding specific Xresource values can be easily done by supplying only the overrides in &lt;code&gt;~/.config/regolith/Xresources&lt;/code&gt; without needing to copying and update any existing files.  Additionally, any Xresource files in &lt;code&gt;~/.config/regolith/Xresources.d&lt;/code&gt; can be referenced without absolute path, enabling easier multi-machine configurations.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Utilize GNOME and &lt;code&gt;update-alternatives&lt;/code&gt; for Default Apps&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;GNOME settings for default browser and &lt;code&gt;update-alternatives&lt;/code&gt; for preferred terminal are now used by Regolith.  No custom configuration changes are required.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Xresource Updates&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;More UI configuration pulled out of component configs and into Xresources provides more flexibility in how custom looks can be.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Locale used for date/time Format&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;For those not using the US date and time formats, the bar clock will now automatically use the GNOME hour format and the &lt;code&gt;locale&lt;/code&gt; &lt;code&gt;LC_TIME&lt;/code&gt; setting to automatically display date and time in the regional form without configuration.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;UI Tweaks and Polish&lt;/td&gt;
-            &lt;td&gt;&lt;a href=&#34;../nord-dark.png&#34;&gt;&lt;img class=&#34;shadow&#34; width=&#34;640px&#34; src=&#34;../nord-dark.png&#34;&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;Many small updates across all UI components to further polish the interface, including a new optional dark background adapted from work by &lt;a href=&#34;https://www.reddit.com/r/unixporn/comments/ehdj6b/i3gaps_nordic_beauty/&#34;&gt;/u/InfernusZ9&lt;/a&gt;.&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;fixes&#34;&gt;Fixes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Debian package dependencies for various Regolith Looks have been fixed.&lt;/li&gt;
-&lt;li&gt;Layout issues with Remontoire have been addressed.&lt;/li&gt;
-&lt;li&gt;Compton configuration cleaned up&lt;/li&gt;
-&lt;/ul&gt;
 
       </description>
     </item>
@@ -2988,99 +1793,6 @@ $ regolith-look refresh
 &lt;p&gt;Of course, any of these packages can be re-added by the user after installation using a variety of tools including the app store.&lt;/p&gt;
 &lt;h3 id=&#34;regolith-13&#34;&gt;Regolith 1.3&lt;/h3&gt;
 &lt;p&gt;For the 1.3 release of Regolith, changes from baseline Ubuntu are &lt;a href=&#34;https://regolith-linux.org/docs/reference/releases/regolith-1.3-release-notes/#iso-generation&#34;&gt;documented here&lt;/a&gt;.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: 1.3 Release Notes</title>
-      <link>https://regolith-linux.org/docs/reference/releases/regolith-1.3-release-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://regolith-linux.org/docs/reference/releases/regolith-1.3-release-notes/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Following R1.2, the 1.3 release focused on usability issues reported by users and a continuing refinement of the desktop environment in general, with a focus on making the system easier for those inexperienced with tiling window managers.&lt;/p&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;table class=&#34;table&#34;&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Cahuella GTK Theme&lt;/td&gt;
-            &lt;td&gt;&lt;img src=&#34;../regolith-screenshot-widgets.png&#34;&gt;&lt;/img&gt;&lt;/td&gt;
-            &lt;td&gt;A new GTK theme was created for Regolith that more closely follows the standard GNOME theme, Adwaita.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Keybindings Dialog&lt;/td&gt;
-            &lt;td&gt;&lt;img src=&#34;../regolith-screenshot-remontoire.png&#34;&gt;&lt;/img&gt;&lt;/td&gt;
-            &lt;td&gt;To allow for a more consistent look and collapsible content for various monitor dimensions, a custom shortcut dialog was developed called Remontoire.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Pluggable Compositors&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;The subsystem providing visual effects, the compositor, can behave differently based on hardware and driver support. Regolith now packages 3 compositor backends: compton-glx (based on Picom), xcompmgr, and none.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;i3-snapshot&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;In office environments it is common to switch between various display configurations (desk, meeting room...).  &lt;code&gt;i3-snapshot&lt;/code&gt; allows the user to quickly save and restore existing window layouts in a session.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;New Rofi theme&lt;/td&gt;
-            &lt;td&gt;&lt;img src=&#34;../regolith-screenshot-rofi.png&#34;&gt;&lt;/img&gt;&lt;/td&gt;
-            &lt;td&gt;Based on &lt;a href=&#34;https://www.reddit.com/r/unixporn/comments/ehdj6b/i3gaps_nordic_beauty/&#34;&gt;work by /u/InfernusZ9&lt;/a&gt;, the Rofi launcher is less distracting.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;New notification UI based on &lt;a href=&#34;https://github.com/DaveDavenport/Rofication&#34;&gt;Rofication&lt;a/&gt;&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;The previous notification UI was a hold over from more traditional desktop environments that prefer to present an on-screen dialog when a notification is received. Because user-focus is paramount, this was changed such that an indicator in the bar displays the number of unread notifications and the user decides when to view them via a keybinding or button click.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Floating Control Panel&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;The &lt;code&gt;gnome-control-center&lt;/code&gt; app can have a hard time adapting to constrained tiled layouts common with &lt;code&gt;i3-wm&lt;/code&gt;. Now when the control panel is loaded, it floats above the existing windows to allow for a quick settings change without impacting other apps.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Clickable Bar Status Actions&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;For convienence, the default blocks on the bar will launch configuration apps for the associated block.  For example, the battery block will launch the power settings control panel, and the notification block will launch the notification viewer.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Discrete and packagable Looks&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;The underlying style framework used by Regolith has been revamped to allow for &#34;looks&#34;: colors, themes, typeface, and other thematic state.  Looks can be switched with a single command.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;New bar status components&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;Network, keybindings, notifications, focused window, and other blocklets have been improved and added.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Build System&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;Build scripts were added and improved to allow for the generation of Regolith packages in an automated fashion, making it easier for others to roll their own.&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Website&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;An entirely new website is launching with R1.3, to integrate more content and make it faster for users to find information.&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;fixes&#34;&gt;Fixes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;i3-gaps-wm: Fix for workspace label bug on startup. Revamping some keybindings based on user feedback.&lt;/li&gt;
-&lt;li&gt;i3xrocks: numerous tweaks and fixes for status indicators.&lt;/li&gt;
-&lt;li&gt;regolith-gnome-flashback: numerous fixes and policy enhancements to session management.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;iso-generation&#34;&gt;ISO Generation&lt;/h2&gt;
-&lt;p&gt;The following commands were applied via the &lt;a href=&#34;https://launchpad.net/cubic&#34;&gt;Cubic tool&lt;/a&gt; to the stock Ubuntu 18.04 and 19.10 installer images to generate the Regolith Install ISO:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository universe &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo add-apt-repository ppa:regolith-linux/release
-$ sudo apt remove aisleriot branding-ubuntu cheese* gnome-mahjongg gnome-sudoku gnome-mines gnome-todo* gnome-video-* libchees* libgnome-games* libreoffice* remmina* rhythmbox* shotwell* thunderbird* totem* ure ubuntu-session ubuntu-web-launchers
-$ apt install regolith-desktop regolith-gdm3-theme
-$ sudo apt autoremove
-$ cp /usr/share/backgrounds/lucas-bellator-C0OD8OM-oM0-unsplash.jpg /usr/share/backgrounds/warty-final-ubuntu.png
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The purpose of removing several packages such as games and libreoffice was to reduce the ISO size.  All packages removed in the ISO are installable via the &lt;code&gt;apt&lt;/code&gt; tool or via the Ubuntu app store.&lt;/p&gt;
 
       </description>
     </item>
@@ -4136,7 +2848,7 @@ Setting up i3xrocks-weather &lt;span style=&#34;color:#ce5c00;font-weight:bold&#
 Monitors: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;
  0: +*eDP-1 1920/309x1080/173+0+0  eDP-1
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In this case, the output name is &lt;code&gt;eDP-1&lt;/code&gt;.  Next add a line like this into a staged copy of your i3 config file:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;workspace &amp;quot;$ws1&amp;quot; output DP1
+&lt;pre&gt;&lt;code&gt;workspace &amp;quot;$ws1&amp;quot; output eDP-1
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Log back in for the changes to take effect.&lt;/p&gt;
 
       </description>
@@ -4159,6 +2871,1171 @@ Monitors: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&
 &lt;p&gt;Another way of setting the wallpaper is by specifying a file path to the image in the Xresource key &lt;code&gt;gnome.wallpaper&lt;/code&gt;.  Upon session load, wallpaper will be set if a image file is specified at this key.  For example, here is how to specify an override to set the wallpaper to the default Ubuntu wallpaper:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ echo &amp;quot;gnome.wallpaper: /usr/share/backgrounds/warty-final-ubuntu.png&amp;quot; &amp;gt; ~/.config/regolith/Xresources
 &lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Launch Default i3 Session</title>
+      <link>https://regolith-linux.org/docs/howto/vanilla-i3-gaps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/docs/howto/vanilla-i3-gaps/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To do so on Ubuntu, run &lt;code&gt;sudo apt install i3-gaps-session&lt;/code&gt; to add an option on login that starts vanilla i3-gaps without regolith.&lt;/p&gt;
+&lt;h2 id=&#34;use-case&#34;&gt;Use Case&lt;/h2&gt;
+&lt;p&gt;This is useful for, say, running an application that does not integrate well with Gnome. For example, Spotify&#39;s unmaintained official Linux client mishandle&#39;s it&#39;s file selection dialogue and crashes when&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. Setting user profile photo
+2. Setting album cover photo
+3. Adding a local directory to the library paths
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;under Gnome and Regolith. Switching to vanilla i3 solves the crash.&lt;/p&gt;
+&lt;h2 id=&#34;source&#34;&gt;Source&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;&#34;&gt;kgilmer&lt;/a&gt;&amp;lsquo;s &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/issues/21#issuecomment-729776535&#34;&gt;comment&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 1.5.1 Release Notes</title>
+      <link>https://regolith-linux.org/docs/reference/releases/regolith-1.5.1-release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/docs/reference/releases/regolith-1.5.1-release-notes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Regolith 1.5.1 is a bug fix release.  The following list contains brief descriptions of fixes and updates per package since the Regolith 1.5 release:&lt;/p&gt;
+&lt;h4 id=&#34;release-notes-for-i3-next-workspace&#34;&gt;Release Notes for i3-next-workspace&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial copy from regolith-i3xrocks-config.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-compositor-picom-glx&#34;&gt;Release Notes for regolith-compositor-picom-glx&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add xrender-sync-fence for better support of nvidia systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-default-settings&#34;&gt;Release Notes for regolith-default-settings&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add breaks declaration to deal w/ ISO upgrade issue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-desktop&#34;&gt;Release Notes for regolith-desktop&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;ship version file with all desktop variants&lt;/li&gt;
+&lt;li&gt;Update version to 1.5.1&lt;/li&gt;
+&lt;li&gt;Add new recommends for rofication status indicator that has been seperated from regolith-rofication&lt;/li&gt;
+&lt;li&gt;Fix virtual package specification.  Use look w/ less dependencies for minimal meta-package.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-ftue&#34;&gt;Release Notes for regolith-ftue&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add some Xresources options for GNOME Terminal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-i3-gaps-config&#34;&gt;Release Notes for regolith-i3-gaps-config&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix build files&lt;/li&gt;
+&lt;li&gt;Fix path to i3-next-workspace&lt;/li&gt;
+&lt;li&gt;Move some non-critical dependencies to Recommends.  Add recommends to i3-next-workspace.  Remove dep on fontawesome.&lt;/li&gt;
+&lt;li&gt;deprecating startnum&lt;/li&gt;
+&lt;li&gt;fix&lt;/li&gt;
+&lt;li&gt;adding a missing logic&lt;/li&gt;
+&lt;li&gt;Fix &amp;lsquo;Carry Window to Next Free&amp;rsquo; binding, remove trailing whitespace. (#31)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-i3xrocks-config&#34;&gt;Release Notes for regolith-i3xrocks-config&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add padding for net-traffic, extensive mocked tests (#101)&lt;/li&gt;
+&lt;li&gt;Migrate rofication status indicator i3xrocks conf file here from regolith-rofication.&lt;/li&gt;
+&lt;li&gt;Remove button handling code as net-traffic cannot use them w/ repeat interval type. (#100)&lt;/li&gt;
+&lt;li&gt;Update net-traffic script to use &amp;lsquo;repeat&amp;rsquo; interval type.&lt;/li&gt;
+&lt;li&gt;Rewrite weather blocklet (#96)&lt;/li&gt;
+&lt;li&gt;Remove todo scripts as migrated to regolith-todo package&lt;/li&gt;
+&lt;li&gt;Fix disk-capacity button clicks, add tests (#98)&lt;/li&gt;
+&lt;li&gt;Change memory rock default full text (#94)&lt;/li&gt;
+&lt;li&gt;Fix name of next-workspace script from last change&lt;/li&gt;
+&lt;li&gt;Remove next-workspace script as it&#39;s moved to it&#39;s own package: i3-next-workspace.&lt;/li&gt;
+&lt;li&gt;format the connected device string using pango same as other rocks (#89)&lt;/li&gt;
+&lt;li&gt;Changed around a few release names&lt;/li&gt;
+&lt;li&gt;Use git-buildpackage to build the deb instead of debuild, use auth for all containers&lt;/li&gt;
+&lt;li&gt;reading from xresources now (#82)&lt;/li&gt;
+&lt;li&gt;Don&#39;t sign packages for now, so the pipeline actually builds&lt;/li&gt;
+&lt;li&gt;Only run packaging on tag releases for now&lt;/li&gt;
+&lt;li&gt;Added tests for temp script and reworked temp script routine&lt;/li&gt;
+&lt;li&gt;Also run the tests on PRs&lt;/li&gt;
+&lt;li&gt;Match example with what the script is looking for (#90)&lt;/li&gt;
+&lt;li&gt;Rewrote net-traffic script, fixes #91 (#92)&lt;/li&gt;
+&lt;li&gt;Add extra location information to weather API request (#88)&lt;/li&gt;
+&lt;li&gt;set BUTTON variable (#93)&lt;/li&gt;
+&lt;li&gt;Added net-traffic tests and GitHub Actions workflow to run tests&lt;/li&gt;
+&lt;li&gt;Switch to a separate container running to ensure we can run our tests&lt;/li&gt;
+&lt;li&gt;Make sure we can actually run the job somewhere&lt;/li&gt;
+&lt;li&gt;Fixed xrescat mock and test execution&lt;/li&gt;
+&lt;li&gt;Fix for button handling of the net-traffic script (#86)&lt;/li&gt;
+&lt;li&gt;Make time interval configurable with Xresource (#87)&lt;/li&gt;
+&lt;li&gt;Restore original behavior of mouse actions on volume (#85)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-rofication&#34;&gt;Release Notes for regolith-rofication&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Another approach to breaking status indicator from base functionality due to python build script mysteries: move the i3xrocks conf.d file to i3xrocks.  Leave python scripts here for the python installer thing.&lt;/li&gt;
+&lt;li&gt;Break status indicator for rofication into separate package: i3xrocks-rofication.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-styles&#34;&gt;Release Notes for regolith-styles&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Check if gnome-terminal is installed before generating profile.  Related to &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/issues/522&#34;&gt;https://github.com/regolith-linux/regolith-desktop/issues/522&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-todo&#34;&gt;Release Notes for regolith-todo&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add i3xrocks dependency in hopes of sidestepping package file conflicts during upgrades&lt;/li&gt;
+&lt;li&gt;Rewrote syntax of todo script, added tests&lt;/li&gt;
+&lt;li&gt;Add td-cli as dependency&lt;/li&gt;
+&lt;li&gt;Package created from regolith-i3xrocks-config&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 1.5 Release Notes</title>
+      <link>https://regolith-linux.org/docs/reference/releases/regolith-1.5-release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/docs/reference/releases/regolith-1.5-release-notes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Regolith R1.5 is a feature release which includes several improvements and optimizations.  To summarize, Regolith 1.5 ships simpler workspace management, a Rofi-based Look switcher, and numerous internal optimizations and cleanup.  Read below for more details.&lt;/p&gt;
+&lt;h2 id=&#34;known-issues&#34;&gt;Known Issues&lt;/h2&gt;
+&lt;p&gt;Issues and fixes are being tracked in &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/13&#34;&gt;this project&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;table class=&#34;table&#34;&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Next Free Workspace&lt;/td&gt;
+            &lt;td colspan=&#34;2&#34;&gt;A typical part of managing workspaces in an i3-based desktop is moving to unused workspaces and then loading some applications. Before this feature, a user has to determine which unused workspace they prefer.  This is done by scanning the list of existing used workspaces to determine an unused one. Now, the system can do this automatically.  The &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;`&lt;/span&gt;&lt;/span&gt; keybinding will move to the next free workspace.  &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;`&lt;/span&gt;&lt;/span&gt; will move the focused window into the next free workspace.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;View and Change Looks via Rofi&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-select-look.png&#34;&gt;&lt;img class=&#34;shadow&#34; width=&#34;640px&#34; src=&#34;../regolith-select-look.png&#34;/&gt;&lt;/td&gt;
+            &lt;td&gt;Looks can be changed now via a Rofi dialog rather than having to configure the Xresource override via the command-line.  To do this, use keybinding &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;alt&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;l&lt;/span&gt;&lt;/span&gt; and then select from the dialog to load a Look.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;GSettings Overrides&lt;/td&gt;            
+            &lt;td colspan=&#34;2&#34;&gt;Regolith now uses &lt;a href=&#34;https://help.gnome.org/admin/system-admin-guide/stable/overrides.html.en&#34;&gt;gsettings overrides&lt;/a&gt; to configure various GNOME settings for use with Regolith.  In previous versions of Regolith, settings were written globally to the user session from within the Regolith startup code.  This could cause issues if the user works in multiple desktop environments.  Now, Regolith GNOME settings are defined in an override file that is only in effect while using a Regolith session.  This allows switching between desktop environments without settings from Regolith impacting other environments.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;New Looks&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a href=&#34;../regolith-dracula.png&#34;&gt;&lt;img class=&#34;shadow p-2&#34; width=&#34;640px&#34; src=&#34;../regolith-dracula.png&#34;/&gt;
+              &lt;a href=&#34;../regolith-gruvbox.png&#34;&gt;&lt;img class=&#34;shadow p-2&#34; width=&#34;640px&#34; src=&#34;../regolith-gruvbox.png&#34;/&gt;
+              &lt;a href=&#34;../regolith-pop-os.png&#34;&gt;&lt;img class=&#34;shadow p-2&#34; width=&#34;640px&#34; src=&#34;../regolith-pop-os.png&#34;/&gt;
+            &lt;/td&gt;
+            &lt;td&gt;Users have contributed some new Looks to Regolith: dracula, gruvbox, and pop-os.  Each of these looks presents a distinctive color palate, typeface, and GTK theme.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;i3-gaps upgraded to 4.18.2&lt;/td&gt;
+            &lt;td colspan=&#34;2&#34;&gt;See i3-gaps &lt;a href=&#34;https://github.com/Airblader/i3/blob/a4a1a44275ea402b25d2d1365e1163e496024358/RELEASE-NOTES-4.18.2&#34;&gt;release notes here&lt;/a&gt;.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;More Refined Customizations&lt;/td&gt;
+            &lt;td colspan=&#34;2&#34;&gt;Numerous small changes allow more granular system customization, such as specifying the temperature unit, custom Compositor settings, and a more comprehensive way of changing i3 keybindings without having to copy the entire config file.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;More Desktop Environment Packages&lt;/td&gt;
+            &lt;td colspan=&#34;2&#34;&gt;The following packages can be installed in place of &lt;code&gt;regolith-desktop&lt;/code&gt; for specific sets of packages based on user needs: &lt;code&gt;regolith-desktop-minimal&lt;/code&gt;, &lt;code&gt;regolith-desktop-standard&lt;/code&gt;, &lt;code&gt;regolith-desktop-mobile&lt;/code&gt;, and &lt;code&gt;regolith-desktop-complete&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;New default compositor: Picom version 8&lt;/td&gt;
+            &lt;td colspan=&#34;2&#34;&gt;See Picom&#39;s &lt;a href=&#34;https://github.com/yshui/picom/releases&#34;&gt;release notes here&lt;/a&gt;.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Remontoire upgraded to version 1.4&lt;/td&gt;
+            &lt;td colspan=&#34;2&#34;&gt;Includes better multi-monitor support and other bug fixes and enhancements.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Optional integration with &lt;b&gt;td-cli&lt;/b&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-td.png&#34;&gt;&lt;img class=&#34;shadow&#34; width=&#34;640px&#34; src=&#34;../regolith-td.png&#34;/&gt;&lt;/td&gt;
+            &lt;td&gt;Access a simple todo app via Rofi.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Documentation of development process.&lt;/td&gt;
+            &lt;td colspan=&#34;2&#34;&gt;The &lt;a href=&#34;../../../policy-and-process/development/&#34;&gt;Regolith development process&lt;/a&gt; is now better documented to enable greater transparency and inclusion.&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;fixes&#34;&gt;Fixes&lt;/h2&gt;
+&lt;p&gt;Have a look at the R1.5 project page for a &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/12&#34;&gt;list of bug fixes&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;changelog-delta-from-regolith-141-to-regolith-15&#34;&gt;Changelog Delta from Regolith 1.4.1 to Regolith 1.5&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;########################################
+# Release Notes for dracula-gtk
+########################################
+dracula-gtk (1.0.1-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Remove unnecessary files
+
+
+dracula-gtk (1.0-1) bionic; urgency=medium
+
+  * [ Ken Gilmer ]
+  * Packaging version add4f8c 
+
+########################################
+# Release Notes for fonts-materialdesignicons-webfont
+########################################
+fonts-materialdesignicons-webfont (1.6.50-3regolith3) bionic; urgency=medium
+
+  * Backporting to bionic for Regolith. 
+
+
+########################################
+# Release Notes for gruvbox-gtk
+########################################
+gruvbox-gtk (1.0.1-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Rename root directory of theme to Gruvbox for consistency w/ other GTK themes.
+  * Add gbp config for package management.
+
+
+gruvbox-gtk (1.0-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * New upstream version 1.0
+
+
+gruvbox-gtk (1.0-1) bionic; urgency=medium
+
+  [ eximus ]
+  * Initial commit
+  * gruvbox theme
+
+
+########################################
+# Release Notes for i3-gaps-wm
+########################################
+i3-gaps-wm (4.18.2-1~regolith2) bionic; urgency=medium
+
+  * Package source from upstream https://github.com/Airblader/i3/releases/tag/4.18.2
+
+
+########################################
+# Release Notes for i3ipc-python
+########################################
+i3ipc-python (2.1.1-1ubuntu1~ppa6) bionic; urgency=medium
+
+  * Update build dependencies hoping to resolve packaing problems. 
+
+
+
+########################################
+# Release Notes for i3xrocks
+########################################
+i3xrocks (1.3.4-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Version bump to match changelog.  Cleanup.
+
+
+i3xrocks (1.3.3-1) bionic; urgency=medium
+
+  [ Will Winder ]
+  * Add optional default resource value.
+  * Minor cleanup.
+  * Free resource allocated by xcb_xrm_resource_get_string
+  * Fix possible truncated resource value.
+
+  [ Ken Gilmer ]
+  * Add gbp config file
+
+
+########################################
+# Release Notes for picom
+########################################
+picom (8-1~1.gbp353272ubuntu1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Remove github files from debian branch.
+
+
+picom (8-1~1.gbp353272) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * New upstream version 8
+
+
+########################################
+# Release Notes for plano-theme
+########################################
+plano-theme (3.36-1-1regolith1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * New upstream version 3.36-1
+
+
+########################################
+# Release Notes for plymouth-theme-regolith
+########################################
+plymouth-theme-regolith (1.0.3-1) focal; urgency=medium
+
+  * Tweaks to config files. 
+
+
+plymouth-theme-regolith (1.0.2-1) focal; urgency=medium
+
+  * Ship grub file. 
+
+
+plymouth-theme-regolith (1.0.1-1) focal; urgency=medium
+
+  * Add package hooks. 
+
+
+
+########################################
+# Release Notes for pop-fonts
+########################################
+pop-fonts (1.0.3~1555617065~18.04~a86eb73) bionic; urgency=medium
+
+  * Auto Build
+
+########################################
+# Release Notes for python3-i3ipc
+########################################
+python3-i3ipc (2.1.1-1ubuntu1~ppa7) bionic; urgency=medium
+
+  * Changes to python version.
+
+
+i3ipc-python (2.1.1-1ubuntu1~ppa6) bionic; urgency=medium
+
+  * Update build dependencies hoping to resolve packaing problems. 
+
+
+i3ipc-python (2.1.1-1ubuntu1~ppa4) eoan; urgency=medium
+
+  * Add python-xlib dependency. 
+
+
+i3ipc-python (2.1.1-1ubuntu1~ppa2) eoan; urgency=medium
+
+  * Initial release from https://github.com/altdesktop/i3ipc-python/archive/v2.1.1.tar.gz.
+
+
+########################################
+# Release Notes for regolith-compositor-compton-glx
+########################################
+regolith-compositor-compton-glx (1.1.0-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Init script will kill pre-existing app instance before starting new. Part of fix for https://github.com/regolith-linux/regolith-desktop/issues/475.
+
+
+regolith-compositor-compton-glx (1.0.10-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix typo in compton config file, found by @gservat.
+
+
+regolith-compositor-compton-glx (1.0.9-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add xrender-sync-fence to handle issue https://github.com/regolith-linux/regolith-desktop/issues/116.
+
+
+regolith-compositor-compton-glx (1.0.8-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Ship config file.
+
+
+regolith-compositor-compton-glx (1.0.7-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add gbp conf file, cleanup.
+
+
+
+########################################
+# Release Notes for regolith-compositor-none
+########################################
+regolith-compositor-none (1.0.3-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add gbp conf file, cleanup.
+
+
+
+########################################
+# Release Notes for regolith-compositor-picom-glx
+########################################
+regolith-compositor-picom-glx (1.1.1-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix typo found in https://github.com/regolith-linux/regolith-compositor-picom-glx/issues/1.
+  * Init script will kill pre-existing app instance before starting new. Part of fix for https://github.com/regolith-linux/regolith-desktop/issues/475.
+
+
+regolith-compositor-picom-glx (1.0.1-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix typo found in 
+  https://github.com/regolith-linux/regolith-compositor-picom-glx/issues/1.
+
+
+regolith-compositor-picom-glx (1.0.0-1) bionic; urgency=medium
+
+  * Initial release
+
+
+########################################
+# Release Notes for regolith-compositor-xcompmgr
+########################################
+regolith-compositor-xcompmgr (1.2.0-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Init script will kill pre-existing app instance before starting new. Part of fix for https://github.com/regolith-linux/regolith-desktop/issues/475.
+
+
+regolith-compositor-xcompmgr (1.1.0-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add ability to override xcompmgr defaults. Fixes https://github.com/regolith-linux/regolith-desktop/issues/382.
+
+
+regolith-compositor-xcompmgr (1.0.3-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add gbp conf file, cleanup.
+
+
+
+########################################
+# Release Notes for regolith-default-settings
+########################################
+regolith-default-settings (1.0-1bionic1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add bionic specific gsettings overrides.
+
+
+regolith-default-settings (1.0-1) focal; urgency=medium
+
+  * Initial release, files moved from package regolith-gnome-flashback.
+
+
+########################################
+# Release Notes for regolith-desktop
+########################################
+regolith-desktop (2.78-1bionic) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Move from compton to picom as default compositor.
+
+
+regolith-desktop (2.75-1bionic) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Change unclutter to regolith-unclutter-fixes to address https://github.com/regolith-linux/speed-ricer/issues/14.
+
+
+regolith-desktop (2.72-1bionic1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Version bump for next DE release
+
+
+regolith-desktop (2.71-1bionic1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Depend on regolith-default-settings to migrate to gsettings overrides.
+  * Update branch name to conform w/ gbp.
+
+
+regolith-desktop (2.68-1bionic1) bionic; urgency=medium
+
+  * Package: Remove postinst to unblock upgrades (#432) 
+
+
+regolith-desktop (2.60-1bionic1) bionic; urgency=medium
+
+  * Package: Remove unclutter-startup, if installed 
+
+
+regolith-desktop (2.59-1bionic1) bionic; urgency=medium
+
+  * Bump version file for R1.4.1 release. 
+
+
+
+########################################
+# Release Notes for regolith-ftue
+########################################
+regolith-ftue (1.0.11-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add gbp config file.
+
+
+########################################
+# Release Notes for regolith-gnome-flashback
+########################################
+regolith-gnome-flashback (2.6.2-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Remove invalid component from desktop session file.
+  * Cleanup
+
+
+regolith-gnome-flashback (2.6.1-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Rename files to make session work.
+
+
+regolith-gnome-flashback (2.6.0-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add gbp config file.
+  * Simply package, model directories in package and remove Makefile.
+  * Update session files to refer to regolith over i3-gnome-flashback.  Experimental.
+
+
+regolith-gnome-flashback (2.5.0-1) bionic; urgency=medium
+
+  * Remove desktop files moved to regolith-default-settings. 
+
+
+regolith-gnome-flashback (2.4.19-1focal1) focal; urgency=medium
+
+  * Fix wallpaper gsettings override. 
+
+
+regolith-gnome-flashback (2.4.18-1focal1) focal; urgency=medium
+
+  * Remove non Regolith i3 config file load logic. 
+
+
+regolith-gnome-flashback (2.4.17-1focal1) focal; urgency=medium
+
+  * Move to gsettings overrides for static dconf changes.
+  * Change session name from i3-gnome to regolith.
+  * Remove wm theme setting.
+
+
+
+########################################
+# Release Notes for regolith-i3-gaps-config
+########################################
+regolith-i3-gaps-config (2.8.0-1) bionic; urgency=medium
+
+  [ Bence Ferdinandy ]
+  * adding bindings for next_on_output and prev_on_output (#29)
+
+
+regolith-i3-gaps-config (2.7.2-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add nm-applet to launch by default. Enables better network connectivity workflow.
+
+
+regolith-i3-gaps-config (2.7.1-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Shorten look-selector to look for rofi menu.
+
+
+regolith-i3-gaps-config (2.7.0-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add launcher for look selector.
+
+
+regolith-i3-gaps-config (2.6.0-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Based on idea from @Ukaszg, extract all keybindings to Xres keys for easy overriding without i3 file copy.  Fixes https://github.com/regolith-linux/regolith-i3-gaps-config/issues/25.
+  * Restart compositor upon i3 restart.  Part of fix for https://github.com/regolith-linux/regolith-desktop/issues/475.
+
+
+regolith-i3-gaps-config (2.5.1-1) bionic; urgency=medium
+
+  [ Moritz Heiber ]
+  * Set tray output to primary by default (#24)
+
+  [ Ken Gilmer ]
+  * Allow the bar mode (dock|hide|invisible) to be specified by xres overrides.
+
+
+regolith-i3-gaps-config (2.5.0-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add keybindings for &#39;next free workspace&#39; feature.
+
+
+regolith-i3-gaps-config (2.4.18-1) bionic; urgency=medium
+
+  [ Will Winder ]
+  * Add missing keybind for moving the workspace with hjkl. (#19)
+
+  [ Jordan Cohen ]
+  * shortcuts for explicit window orientation and hierarchical focusing (#18)
+
+
+regolith-i3-gaps-config (2.4.17-1) bionic; urgency=medium
+
+  [ Markus Bertheau ]
+  * Allow customization of workspace_auto_back_and_forth (#20)
+
+
+regolith-i3-gaps-config (2.4.16-1) bionic; urgency=medium
+
+  [ ukaszg ]
+  * configurable workspace keys (#17)
+
+
+regolith-i3-gaps-config (2.4.15-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Cleanup from lintian warnings.
+
+
+regolith-i3-gaps-config (2.4.14-1) bionic; urgency=medium
+
+  * Take smart-gaps fix from @winder.
+  * Comment cleanup. 
+
+
+
+########################################
+# Release Notes for regolith-i3xrocks-config
+########################################
+regolith-i3xrocks-config (3.2.6-1ubuntu2) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix todo icon from updated material design web icons change
+
+
+regolith-i3xrocks-config (3.2.5-1ubuntu1) bionic; urgency=medium
+
+  [ Rafael Lacerda ]
+  * Fix crash when focused window name is None (#81)
+
+  [ Peter Mahnke ]
+  * Remove decimal places from battery number (#80)
+
+
+regolith-i3xrocks-config (3.2.4-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Temp status indicator can be configured with sensor name via Xres value i3xrocks.temp.key.
+
+
+regolith-i3xrocks-config (3.2.3-1) bionic; urgency=medium
+
+  [ Pedro Kostelec ]
+  * [IMPR] Show aggregated battery percentage (#78)
+
+  [ Ken Gilmer ]
+  * Fix issue found in livecd enviroment w memory script
+
+  [ Pedro Kostelec ]
+  * [FIX] Fixes dissapearing indicator when value is 0 (#79)
+
+
+regolith-i3xrocks-config (3.2.2-1) bionic; urgency=medium
+
+  [ Peter Mahnke ]
+  * Make curl work for special characters (#76)
+
+  [ Ken Gilmer ]
+  * Remove debugging line mistakenly added by me in earlier fix.
+
+
+regolith-i3xrocks-config (3.2.1-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix cpu-usage script
+
+
+regolith-i3xrocks-config (3.2.0-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add ability to specify temperature unit via xres, and fallback to country locale if unspecified. Based on https://github.com/regolith-linux/regolith-desktop/issues/372. (#72)
+
+  [ Joel Hoisko ]
+  * Add option to define a specific media player (#63)
+
+
+regolith-i3xrocks-config (3.1.3-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add ability to override click commands via Xresources. Fixes https://github.com/regolith-linux/regolith-desktop/issues/352.
+
+
+regolith-i3xrocks-config (3.1.2-1) bionic; urgency=medium
+
+  [ Leo Palmer Sunmo ]
+  * Polish up media-player text splitting and pango formatting (#71)
+
+
+regolith-i3xrocks-config (3.1.1-1) bionic; urgency=medium
+
+  [ Vipul Mathur ]
+  * Use `MemAvailable` to indicate memory usage (#70)
+
+
+regolith-i3xrocks-config (3.1.0-1) bionic; urgency=medium
+
+  [ Bence Ferdinandy ]
+  * fixed an error with name somehow being None
+  * adding next-workspace
+
+
+regolith-i3xrocks-config (3.0.34-1) bionic; urgency=medium
+
+  [ Marten Lienen ]
+  * Exit gracefully if the focused window does not have a name (#68)
+
+
+regolith-i3xrocks-config (3.0.33-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * regress debhelper-compat version due to build failure in launchpad.
+
+
+regolith-i3xrocks-config (3.0.32-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Downgrade debhelper version to appease launchpad.
+  * Remove compat file in attempt to appease debuild.
+
+
+regolith-i3xrocks-config (3.0.31-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Downgrade debhelper version to appease launchpad.
+
+
+regolith-i3xrocks-config (3.0.30-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add gbp conf file, cleanup.
+
+
+regolith-i3xrocks-config (3.0.29-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Package: @cheginit&#39;s new todo status indicator based on td-cli. 
+
+
+regolith-i3xrocks-config (3.0.28-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Package: @buck10&#39;s major rework of keyboard-layout.
+
+
+regolith-i3xrocks-config (3.0.27-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Package: Removed verbose output from net-traffic script (#62) 
+
+
+regolith-i3xrocks-config (3.0.26-2) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Update i3xrocks-focused-window-name to use consistent python library name. 
+
+
+regolith-i3xrocks-config (3.0.26-1) bionic; urgency=medium
+
+  [ Taher Chegini ]
+  * Add todo blocklet (#54)
+
+  [ Ken Gilmer ]
+  * Initial upstream branch.
+  * New upstream version 3.0.25
+
+
+regolith-i3xrocks-config (3.0.25-2) bionic; urgency=medium
+
+  * Trying w/ debhelper v11 based on build error. 
+
+
+regolith-i3xrocks-config (3.0.25-1) bionic; urgency=medium
+
+  * Package changes by @moritzheiber:
+  ** Fix button clicks blocklets
+  ** Also fix network bandwidth calculation/shellcheck errors in net-traffic script
+
+
+regolith-i3xrocks-config (3.0.24-1) bionic; urgency=medium
+
+  * Package @moritzheiber&#39;s fixes for disk-capacity and other blocks.
+  * Package @cjohnston1158 additions to net-traffic.
+
+
+regolith-i3xrocks-config (3.0.23-1) bionic; urgency=medium
+
+  * Add info indicator missed when moving to conf.d config.
+
+
+regolith-i3xrocks-config (3.0.22-2) bionic; urgency=medium
+
+  * Fixes to weather status for ambiguous city names and cities of multiple
+    words.
+
+
+########################################
+# Release Notes for regolith-rofi-config
+########################################
+regolith-rofi-config (1.3.1-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix look-selector
+
+
+regolith-rofi-config (1.3.0-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add script to view and select Looks.  Minor cleanup.  Addresses https://github.com/orgs/regolith-linux/projects/12.
+
+
+regolith-rofi-config (1.2.6-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add gbp config file.
+
+
+
+########################################
+# Release Notes for regolith-rofication
+########################################
+regolith-rofication (1.2.3-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Remove scripts that do not apply to user sessions
+
+
+regolith-rofication (1.2.2-2) focal; urgency=medium
+
+  * Add git-buildpackage config
+
+
+########################################
+# Release Notes for regolith-styles
+########################################
+regolith-styles (2.6.13-1ubuntu2) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * More tweaks to icons for material design based looks
+
+
+regolith-styles (2.6.12-1ubuntu1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Update material design icon-based looks to use fonts-materialdesignicons-webfont 1.6 mappings
+
+
+regolith-styles (2.6.11-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add regolith.look Xres entry for currently set look.
+
+
+regolith-styles (2.6.10-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * If Regolith user root Xres file exists, move old copy to tmp instead of aborting.  Sort looks.  Misc cleanup.
+
+
+regolith-styles (2.6.9-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Check a flag before executing gnome-terminal profile script.  Fixes https://github.com/regolith-linux/regolith-desktop/issues/471.
+
+
+regolith-styles (2.6.8-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Update term colors for Dracula for more variance and remove conflict for color 11.  Addresses https://github.com/regolith-linux/regolith-styles/issues/32.
+
+
+regolith-styles (2.6.7-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Change selected item background color to addresss https://github.com/regolith-linux/regolith-styles/issues/23.
+
+
+regolith-styles (2.6.6-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add next-workspace glyph for missing looks.  Change sound, mute, ram glyphs for fontawesome looks.
+
+
+regolith-styles (2.6.5-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix font dependency for pop-os.  Cleanup control file.
+
+
+regolith-styles (2.6.4-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add package for regolith-look-pop-os.
+
+
+regolith-styles (2.6.3-1) bionic; urgency=medium
+
+  [ Aditya Wagh ]
+  * Create Pop!_OS Style (#29)
+
+  [ Ken Gilmer ]
+  * Update gtk theme name for consistency.
+  * Add packaging data for pop-os look.
+
+
+regolith-styles (2.6.2-1) bionic; urgency=medium
+
+  * Specify glyph for next-workspace status indicator for fontawesome and materialdesign.
+
+
+regolith-styles (2.6.1-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Package the dracula look.
+
+
+regolith-styles (2.6.0-1) bionic; urgency=medium
+
+  [ Drew DeVore ]
+  * Create Dracula Theme (#30)
+
+  [ Julius Francisco ]
+  * Remove user specific path (#31)
+
+
+regolith-styles (2.4.27-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix typo in package file.
+
+
+regolith-styles (2.4.26-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix gruvbox missing files on install.
+
+
+regolith-styles (2.4.25-1) bionic; urgency=medium
+
+  [ Ekans ]
+  * Create gruvbox style (#25)
+
+  [ Ken Gilmer ]
+  * Add packaging for gruvbox.
+
+
+regolith-styles (2.4.24-1) bionic; urgency=medium
+
+  [ Chua Hou ]
+  * Balance workspace name by adding space at end (#20)
+
+
+regolith-styles (2.4.23-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add gbp conf file, cleanup.
+
+
+
+########################################
+# Release Notes for regolith-system
+########################################
+regolith-system (1.4.0.4-1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add gbp conf file, cleanup.
+
+
+
+########################################
+# Release Notes for regolith-unclutter-xfixes
+########################################
+regolith-unclutter-xfixes (1.5-2) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix linter warning
+  * Revert &amp;quot;Remove master files&amp;quot;
+
+
+regolith-unclutter-xfixes (1.5-1) disco; urgency=medium
+
+  [ Ken Gilmer ]
+  * Initial release
+
+
+########################################
+# Release Notes for remontoire
+########################################
+remontoire (1.4.0-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Specify font for windows glyph in stylesheet.
+  * Increase buffer to 128Kb to handle larger i3 config files
+  * Add feature to consume for stdin and specify arbitrary string prefix for more config file format support.
+  * Fix window positioning in multi-monitor setups.
+
+
+########################################
+# Release Notes for td-cli
+########################################
+td-cli (1.2.4-7) bionic; urgency=medium
+
+  * Initial release
+
+
+########################################
+# Release Notes for xrescat
+########################################
+xrescat (1.2.1-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Cleanup lintian warnings.
+  * Version bump to appease launchpad
+
+
+xrescat (1.2.0-1) bionic; urgency=medium
+
+  [ Jeremy Coghill ]
+  * added logic to exclude surrounding double quotes from returned strings to allow for the use of leading and trailing spaces in resources. updated version number. updated man page
+
+  [ Ken Gilmer ]
+  * Update README for new double quote handling.  Add gbp config. Cleanup.
+
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 1.4.1 Release Notes</title>
+      <link>https://regolith-linux.org/docs/reference/releases/regolith-1.4.1-release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/docs/reference/releases/regolith-1.4.1-release-notes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Regolith R1.4.1 is a fast follow up to 1.4 that fixes a few serious bugs, detailed on the mailing list &lt;a href=&#34;https://www.freelists.org/post/regolith-linux/Package-Updates-to-Release&#34;&gt;here&lt;/a&gt;.  In addition to the package updates, a new boot animation is provided by the package &lt;code&gt;plymouth-theme-regolith&lt;/code&gt; that is installed by default on the ISO.  The ISO also now excludes a deprecated touchpad driver that was conflicting with Settings.  Existing PPA-based installations can simply get the updates via their typical package update process.  Regolith Linux ISO users can update to R1.4.1 by applying regular package updates and then follow &lt;a href=&#34;../../../howto/update-14-141&#34;&gt;this guide&lt;/a&gt; to perform some manual steps if they have touchpad issues or use encrypted root file systems.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 1.4 Release Notes</title>
+      <link>https://regolith-linux.org/docs/reference/releases/regolith-1.4-release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/docs/reference/releases/regolith-1.4-release-notes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Regolith R1.4 is a major feature release which includes several improvements and optimizations.  Regolith is now smaller and more efficient.  The ISO-based installer is now based from the Xubuntu image, and moves from the gdm3 display manager to LightDM.  This allows for less resource consumption at runtime and dramatically smaller download size[1]. A new look, &lt;code&gt;lascaille&lt;/code&gt; and file search dialog round out the major new features.  Read below for more details.&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;If you maintain your own i3 config file, note that the copy shipped in Regolith 1.4 has changed in that it reads more configuration from Xresources.  The intention of this change is to require a full copy of the i3 config file &lt;b&gt;less often&lt;/b&gt;, by allowing users to customize the system via Xresource overrides instead of copy/edit of the i3 config file.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;For R1.4 in particular @ploum has provided many of the ideas and validation.  Gratitude goes out to Regolith contributors and users @cheginit, @nalderto, @baldrailers, @ivomarino, @Josh-Letts, @LawZava, @SkyyySi, @tomster, @gdeflaux, @appelgriebsch, @farsil, and @MrKovar for their time and attention.  Also thanks to all that helped to test and filed issues for bugs and feature requests!&lt;/p&gt;
+&lt;h2 id=&#34;known-issues&#34;&gt;Known Issues&lt;/h2&gt;
+&lt;p&gt;Issues and fixes are being tracked in &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/13&#34;&gt;this project&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;table class=&#34;table&#34;&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Remontoire 1.3.1&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-remontoire-screenshot-131.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-remontoire-screenshot-131.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;
+            &lt;ul&gt;
+            &lt;li&gt;Can render keybindings from i3 over socket or from any file.&lt;/li&gt;
+            &lt;li&gt;Can be configured to display on any screen edge.&lt;/li&gt;
+            &lt;li&gt;Visual updates and bug fixes.&lt;/li&gt;
+            &lt;li&gt;Presentation changeable via CSS.&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;New default look: Lascaille&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-lascaille.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-screenshot-lascaille.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;A new look with &lt;a href=&#34;https://www.jetbrains.com/lp/mono/&#34;&gt;a bolder, tighter typeface&lt;/a&gt; and a &lt;a href=&#34;https://github.com/ayu-theme/ayu-colors&#34;&gt;darker, higher contrast color theme&lt;/a&gt; become Regolith&#39;s default look in 1.4.  Cahuella, and other looks continue to be available and can be installed with a few commands.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;New File Search Dialog&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-file-search.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-screenshot-file-search.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Based on &lt;a href=&#34;https://github.com/davatorium/rofi-scripts/tree/master/rofi-finder&#34;&gt;Rofi&lt;/a&gt; and &lt;code&gt;mlocate&lt;/code&gt;, users can now quickly find files and launch their default editors from a global dialog.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Faster, Easier Customization&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Virtually everything exportable from the i3 config can now be overridden directly with Xresources declarations, from changing the meta key to specifying the command that launches the app search dialog.  Additionally, up to 3 user configured programs can be set to be loaded upon start.  All of this is possible without creating a user copy of the i3 config file, but rather by overriding a specific Xresource.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;i3xrocks supports conf.d style configuration&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;The status indicators in the bar can now be installed and configured independently.  This allows for a cleaner dependency model and more efficient runtime characteristics. It also provides future flexibility for user contributed modules and status indicators.  Plus, users can provide their own block descriptors in the user directory to easily override the defaults without having to change the i3 config file.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;New architecture support: &lt;code&gt;arm64&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;With testing done on a Raspberry Pi 4, Regolith now is installable via PPA when using Ubuntu on arm64 devices with the necessary hardware support.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Rewrite of Rofication&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Rofication has been rewritten to require less dependencies and be more stable by Regolith contributor @farsil.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;New Ubuntu release support: Focal Fossa&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-focal.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-screenshot-focal.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Regolith runs as a desktop environment in Canonical&#39;s latest release of Ubuntu: 20.04.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Time and Space Optimizations in ISO release&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;By switching from GDM3 to LightDM, Regolith avoids loading some unnecessary desktop components into RAM, resulting in between 200MB to 300MB savings on cold start.  Additionally, the LiveCD installer is now based on the Xubuntu LiveCD which dramatically lowers the size of the installer and install image of the system[2].  Finally, with more fine-grained control of the bar status blocks, only the blocks you&#39;ve installed will run.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Pluggable Desktop Notification Components&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Users can now cleanly switch between desktop notification implementations such as dunst and notify-osd, in addition to Rofication without resorting to hacks.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Integrate &lt;code&gt;gnome-terminal&lt;/code&gt; over &lt;code&gt;st-term&lt;/code&gt; by Default&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;../regolith-screenshot-gnome-terminal.png&#34;&gt;&lt;img class=&#34;shadow&#34; src=&#34;../regolith-screenshot-gnome-terminal.png&#34;/&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Regolith 1.4 uses &lt;code&gt;gnome-terminal&lt;/code&gt; with a dynamically generated profile to overcome some character encoding and input devices.  &lt;code&gt;st&lt;/code&gt; is still available, simply by installing the &lt;code&gt;regolith-st&lt;/code&gt; package.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Picom (Compton) config can be overriden by user&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Users can provide their own Picom compositor config in their user directory.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;i3 reload becomes Regolith reload&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Refreshing the UI (look, colors, fonts, etc.) after making changes is now as easy as &lt;span class=&#34;text-nowrap&#34;&gt;&lt;span class=&#34;badge badge-warning&#34;&gt;super&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;shift&lt;/span&gt; &lt;span class=&#34;badge badge-warning&#34;&gt;r&lt;/span&gt;&lt;/span&gt;.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Polish, polish, polish&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;Just as in previous releases, many tiny fixes and enhancements were added to Regolith in version 1.4.&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;fixes&#34;&gt;Fixes&lt;/h2&gt;
+&lt;p&gt;Have a look at the R1.4 project page for a &lt;a href=&#34;https://github.com/orgs/regolith-linux/projects/11&#34;&gt;list of bug fixes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;1: This does **not** mean that Regolith uses XFCE4 or any other aspect of Xubuntu other than the install image.&lt;/p&gt;
+&lt;p&gt;2: The trade-off is that users need to install more of the software they require after installation.&lt;/p&gt;
       </description>
     </item>
     

@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith 1.5.1 – Releases</title>
+    <title>Regolith 1.5.2 – Releases</title>
     <link>https://regolith-linux.org/pt_pt/docs/reference/releases/</link>
-    <description>Recent content in Releases on Regolith 1.5.1</description>
+    <description>Recent content in Releases on Regolith 1.5.2</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/pt_pt/docs/reference/releases/index.xml" rel="self" type="application/rss+xml" />
@@ -117,6 +117,34 @@
 &lt;li&gt;Rewrote syntax of todo script, added tests&lt;/li&gt;
 &lt;li&gt;Add td-cli as dependency&lt;/li&gt;
 &lt;li&gt;Package created from regolith-i3xrocks-config&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 1.5.2 Release Notes</title>
+      <link>https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.5.2-release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://regolith-linux.org/pt_pt/docs/reference/releases/regolith-1.5.2-release-notes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Regolith 1.5.2 is a bug fix release.  The following list contains brief descriptions of fixes and updates per package since the Regolith 1.5.1 release:&lt;/p&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-compositor-picom-glx&#34;&gt;Release Notes for regolith-compositor-picom-glx&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove manual fade flag passed to compositor in favor of specification in config file.  Allows users to specify fade parameters via config file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-ftue&#34;&gt;Release Notes for regolith-ftue&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Check update flag before changing gnome-terminal.  Allows users to turn gnome-terminal profile generation off.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;release-notes-for-regolith-i3xrocks-config&#34;&gt;Release Notes for regolith-i3xrocks-config&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Added gawk specific testing for temp script (#108)&lt;/li&gt;
+&lt;li&gt;Filter all interfaces associated with VPN traffic while determining default route (#110)&lt;/li&gt;
+&lt;li&gt;Capture error cases involving invalid network device paths and sleep before returning to resolve CPU consuming loop due to  interval type of i3blocks.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>

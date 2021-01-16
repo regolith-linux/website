@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith 1.5.1 – Customize</title>
+    <title>Regolith 1.5.2 – Customize</title>
     <link>https://regolith-linux.org/docs/customize/</link>
-    <description>Recent content in Customize on Regolith 1.5.1</description>
+    <description>Recent content in Customize on Regolith 1.5.2</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/docs/customize/index.xml" rel="self" type="application/rss+xml" />
@@ -197,7 +197,6 @@ $ regolith-look refresh
 &lt;tr&gt;
 &lt;th&gt;UI Component&lt;/th&gt;
 &lt;th&gt;Purpose&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
 &lt;th&gt;Alternatives&lt;/th&gt;
 &lt;th&gt;Swappable&lt;/th&gt;
 &lt;/tr&gt;
@@ -208,56 +207,48 @@ $ regolith-look refresh
 &lt;td&gt;Display System&lt;/td&gt;
 &lt;td&gt;Unknown&lt;/td&gt;
 &lt;td&gt;Unknown&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;i3-gaps&lt;/td&gt;
 &lt;td&gt;Window Manager&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
 &lt;td&gt;i3-wm, others&lt;/td&gt;
 &lt;td&gt;Difficult but possible&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;i3bar&lt;/td&gt;
 &lt;td&gt;Desktop Bar&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;Polybar, lemonbar, many others.&lt;/td&gt;
-&lt;td&gt;Yes, the i3 config file is changed to load a different bar.&lt;/td&gt;
+&lt;td&gt;Polybar, lemonbar, others&lt;/td&gt;
+&lt;td&gt;Yes, by changing the i3 config file.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;i3xrocks&lt;/td&gt;
 &lt;td&gt;Status Indicator Manager&lt;/td&gt;
-&lt;td&gt;i3blocks, barista, many others.&lt;/td&gt;
-&lt;td&gt;Yes, the i3 config file is changed to load a different status program.&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;i3blocks, barista, others&lt;/td&gt;
+&lt;td&gt;Yes, by changing the i3 config file.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Rofication&lt;/td&gt;
 &lt;td&gt;Desktop Notification Manager&lt;/td&gt;
 &lt;td&gt;Dunst, gnome-flashback&lt;/td&gt;
-&lt;td&gt;Yes, the i3 config file is configured to load the Notification backend and Rofi UI, and i3xrocks is configured to load the blocklet.&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Yes, by changing the i3 config file to load the Notification backend and Rofi UI, and configuring i3xrocks to load the blocklet.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Remontoire&lt;/td&gt;
 &lt;td&gt;Keybinding Viewer&lt;/td&gt;
 &lt;td&gt;Conky&lt;/td&gt;
-&lt;td&gt;Yes, the i3 config file is changed to load a different help program.&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Yes, by changing the i3 config file to load a different help program.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;gdm3&lt;/td&gt;
 &lt;td&gt;Login Manager&lt;/td&gt;
-&lt;td&gt;lightdm, sddm, xdm, others.&lt;/td&gt;
+&lt;td&gt;lightdm, sddm, xdm, others&lt;/td&gt;
 &lt;td&gt;This is configured in Ubuntu. Installing an alternative session manager should present a prompt to specify which to use.&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;gnome-flashback&lt;/td&gt;
 &lt;td&gt;Desktop Environment&lt;/td&gt;
 &lt;td&gt;None&lt;/td&gt;
 &lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

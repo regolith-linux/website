@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith 1.5.1 – How To</title>
+    <title>Regolith 1.5.2 – How To</title>
     <link>https://regolith-linux.org/pt_br/docs/howto/</link>
-    <description>Recent content in How To on Regolith 1.5.1</description>
+    <description>Recent content in How To on Regolith 1.5.2</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 04 Jan 2017 00:00:00 +0000</lastBuildDate>
     
@@ -23,7 +23,7 @@
       <description>
         
         
-        &lt;p&gt;Regolith relies on the Xresource system to provide a consolidated interface configuration.  By changing Xresource values, Regolith can be customized in ways such as updating the user interface, specifying custom behaviors, or defining a specific format for the clock.&lt;/p&gt;
+        &lt;p&gt;Regolith relies on the &lt;a href=&#34;https://en.wikipedia.org/wiki/X_resources&#34;&gt;Xresource system&lt;/a&gt; to provide a consolidated interface configuration.  By changing Xresource values, Regolith can be customized in ways such as updating the user interface, specifying custom behaviors, or defining a specific format for the clock.&lt;/p&gt;
 
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
@@ -107,9 +107,9 @@ $ regolith-look refresh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;example---use-alt-instead-of-win-as-super&#34;&gt;Example - Use Alt instead of Win as Super&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm-mod: Mod1&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
 $ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm-alt: Mod4&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then Reload i3 for the change to take effect.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then Reload i3 for the change to take effect.  (Note: On Regolith 1.5 there is an active regression here with a &lt;a href=&#34;https://github.com/regolith-linux/regolith-desktop/issues/504&#34;&gt;temporary fix in the issue&lt;/a&gt;.)&lt;/p&gt;
 &lt;h3 id=&#34;example---launch-nm-applet-when-i3-starts&#34;&gt;Example - Launch &lt;code&gt;nm-applet&lt;/code&gt; when i3 starts&lt;/h3&gt;
-&lt;p&gt;Some users prefer to use the &lt;code&gt;nm-applet&lt;/code&gt; program to configure and manage their wireless network.  i3 config file can be updated to launch any arbitrary program at start time.  But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file.  For this to work, also make sure that the system tray is enabled (see above).&lt;/p&gt;
+&lt;p&gt;Some users prefer to use the &lt;code&gt;nm-applet&lt;/code&gt; program to configure and manage their wireless network.  (NOTE: From Regolith 1.5 &lt;code&gt;nm-applet&lt;/code&gt; is run by default in the background.)  i3 config file can be updated to launch any arbitrary program at start time.  But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file.  For this to work, also make sure that the system tray is enabled (see above).&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;i3-wm.program.1: /usr/bin/nm-applet&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This change requires you to log back in before the change takes effect.&lt;/p&gt;
 
@@ -120,7 +120,7 @@ $ &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#3
 &lt;/div&gt;
 
 &lt;h1 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h1&gt;
-&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configrations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&#34;../../reference/configurations&#34;&gt;reference page for configurations&lt;/a&gt; for more details about config files in Regolith.&lt;/p&gt;
 
       </description>
     </item>
