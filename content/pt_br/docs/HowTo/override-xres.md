@@ -5,7 +5,7 @@ description: >
   Learn how to stage user copies of Regolith configuration files.
 ---
 
-Regolith relies on the Xresource system to provide a consolidated interface configuration.  By changing Xresource values, Regolith can be customized in ways such as updating the user interface, specifying custom behaviors, or defining a specific format for the clock.  
+Regolith relies on the [Xresource system](https://en.wikipedia.org/wiki/X_resources) to provide a consolidated interface configuration.  By changing Xresource values, Regolith can be customized in ways such as updating the user interface, specifying custom behaviors, or defining a specific format for the clock.  
 
 {{% pageinfo %}}
 In Regolith, Xresource values can be changed via two methods: supplying your own Xresource files, and overriding the existing Xresource values.  The latter approach is strongly recommended, as it makes upgrading to newer versions of Regolith less likely to break.  If you copy the Xresource tree completely, you'll need to integrate any breaking changes in future versions manually.
@@ -91,11 +91,11 @@ $ echo "i3-wm-mod: Mod1" >> ~/.config/regolith/Xresources
 $ echo "i3-wm-alt: Mod4" >> ~/.config/regolith/Xresources
 ```
 
-Then Reload i3 for the change to take effect.
+Then Reload i3 for the change to take effect.  (Note: On Regolith 1.5 there is an active regression here with a [temporary fix in the issue](https://github.com/regolith-linux/regolith-desktop/issues/504).)
 
 ### Example - Launch `nm-applet` when i3 starts
 
-Some users prefer to use the `nm-applet` program to configure and manage their wireless network.  i3 config file can be updated to launch any arbitrary program at start time.  But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file.  For this to work, also make sure that the system tray is enabled (see above).
+Some users prefer to use the `nm-applet` program to configure and manage their wireless network.  (NOTE: From Regolith 1.5 `nm-applet` is run by default in the background.)  i3 config file can be updated to launch any arbitrary program at start time.  But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file.  For this to work, also make sure that the system tray is enabled (see above).
 
 ```bash
 $ echo "i3-wm.program.1: /usr/bin/nm-applet" >> ~/.config/regolith/Xresources
@@ -109,4 +109,4 @@ Regolith generates many of these values from a canonical set of definitions.  Se
 
 # Further Reading
 
-See the [reference page for configrations](../../reference/configurations) for more details about config files in Regolith.
+See the [reference page for configurations](../../reference/configurations) for more details about config files in Regolith.
