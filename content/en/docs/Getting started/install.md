@@ -10,14 +10,14 @@ Based on your preferred installation method, follow one of the following two sec
 
 ## Option 1: Regolith Linux via Installer
 
-At this time an [installer for Regolith 1.5](https://github.com/orgs/regolith-linux/projects/15) is not available, however the 1.4.1 installer can be upgraded to 1.5.1.
+At this time an [installer for Regolith 1.5](https://github.com/orgs/regolith-linux/projects/15) is not available, however the 1.4.1 installer can be upgraded to 1.5.2.
 
 1. Download an ISO image of [Regolith R1.4.1](https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1) <i class="fas fa-cloud-download-alt"></i> and then use an OS installation tool such as USB Creator to write the downloaded file into a USB device. Here are Ubuntu guides for performing this action in [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0), [Mac](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), and [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0).
 2. Reboot the computer and select the USB flash drive to boot from.
 3. Install or run the live environment by providing information when prompted during the setup process.  See [this tutorial](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop) to learn more about the installation process.
 4. When prompted, reboot the computer and login to your new Regolith environment!
 
-The system will automatically upgrade to Regolith 1.5.1 with the following commands:
+The system will automatically upgrade to Regolith 1.5.2 with the following commands:
 
 ```bash
 $ sudo apt update && sudo apt dist-upgrade
@@ -41,7 +41,7 @@ From this point, please proceed to the next section, [configuration](../configur
 
 ## Upgrades
 
-### Regolith 1.4.1 -> Regolith 1.5.1
+### Regolith 1.4.1 -> Regolith 1.5.2
 
 If your system already has added the `regolith-linux/release` PPA, then upgrading is just matter of performing an upgrade:
 
@@ -51,7 +51,7 @@ $ sudo apt update && sudo apt dist-upgrade
 
 After performing the update, log back in to your system.  However, if you have staged your own i3 config file or Xresources root, read the below section `Upgrading with Customizations`.
 
-### Regolith 1.0 - 1.2 -> Regolith 1.5.1
+### Regolith 1.0 - 1.2 -> Regolith 1.5.2
 
 To upgrade from Regolith 1.0 - 1.2, the PPA URL must be changed and then new package versions are applied by the package manager:
 ```bash

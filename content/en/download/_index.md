@@ -33,7 +33,7 @@ menu:
 			</th>
     </div>
     <div class="col-sm p-5">
-			<h2><i class="fas fa-download"></i> Regolith Desktop 1.5 PPA</h2>
+			<h2><i class="fas fa-download"></i> Regolith Desktop 1.5.2 PPA</h2>
 			<p>
 					Regolith can be installed in an existing Ubuntu 18.04, 20.04, or 20.10 system by adding a Regolith PPA and installing one of <a href="../docs/getting-started/install/#desktop-packages">the <code>regolith-desktop</code> packages</a>.  Advantages to Regolith via PPA:
 					<ul>
