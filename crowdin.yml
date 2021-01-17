@@ -1,0 +1,14 @@
+"project_id" : "4"
+"base_url" : "https://regolith-linux.crowdin.com"
+
+"preserve_hierarchy": true
+
+"files": [
+  {
+    "source" : "/content/en/**/*.md",
+    "translation" : "/content/%two_letters_code%/**/%original_file_name%",
+    "ignore": [
+      "/content/en/search-index.md",
+    ]
+  }
+]
