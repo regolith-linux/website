@@ -20,6 +20,15 @@ $ sudo apt install i3xrocks-memory
 $ regolith-look refresh
 ```
 
+## Removing a Status Indicator
+
+The apt `purge` command must be used to ensure all files associated with a status indicator are deleted from the system.
+
+```bash
+$ sudo apt purge i3xrocks-memory
+$ regolith-look refresh
+```
+
 # Customization of bar
 
 Each status indicator on the bar is managed by a file.  The filename's sort order maps to the position of the status indicator on the bar.  So for example, a file starting with `10_` will come before a file starting with `20_`.  Within each file contains some information that i3xrocks uses to execute a script that ultimately returns the data you see on the bar.  Some of the status indicators have configuration parameters that can be adjusted to your liking.  For example, if you would prefer that the battery status changes more readily, the polling interval can be updated.  The first thing to do in order to customize the bar is to copy the indicators you wish to see from `/etc/regolith/i3xrocks/conf.d` to `~/.config/regolith/i3xrocks/conf.d`.  Once files have been added into `~/.config/regolith/i3xrocks/conf.d`, i3xrocks will ignore the default files in `/etc/regolith/i3xrocks/conf.d`.  Each file in `~/.config/regolith/i3xrocks/conf.d` can be modified as you see fit.  To change the order of status indicators on the bar, simply change the name of the files to the sort order you prefer.
