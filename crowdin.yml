@@ -5,3 +5,5 @@ files:
     translation: /content/%two_letters_code%/**/%original_file_name%
     ignore:
       - /content/en/search-index.md
+  - source: /i18n/en.toml
+    translation: /i18n/%two_letters_code%.toml
