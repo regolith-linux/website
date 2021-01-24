@@ -12,8 +12,7 @@ Regolith includes a status bar blocklet for accessing `td-cli` directly from the
 sudo apt install i3xrocks-todo
 ```
 
-After installing `td-cli` you can access it via command line using `td`. The full documentation of `td-cli`'s API can be found [online at their repository](https://github.com/darrikonn/td-cli/blob/master/API.md).
-For example, let's create a todo list with a group name of Regolith, set it as the default project, and then add a new task to this group:
+After installing `td-cli` you can access it via command line using `td`. The full documentation of `td-cli`'s API can be found [online at their repository](https://github.com/darrikonn/td-cli/blob/master/API.md). For example, let's create a todo list with a group name of Regolith, set it as the default project, and then add a new task to this group:
 
 ```console
 td ag regolith
