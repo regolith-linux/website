@@ -1,6 +1,6 @@
-+++ title = "Regolith Linux" linkTitle = "Regolith Linux"
-
-+++
+- - -
+title: "Regolith Linux" linkTitle: "Regolith Linux"
+- - -
 
 {{< blocks/cover image_anchor="top" height="full" >}}
 
