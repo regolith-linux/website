@@ -30,11 +30,11 @@ The `xrdb` tool can be used to list the existing `Xresources` values. [There is 
 ```console
 $ xrdb -query
 [...]
-gnome.icon.theme:   Moka
-gnome.terminal.font:    JetBrains Mono 12
-gnome.terminal.scrollbar:   never
-gnome.wallpaper:    /usr/share/backgrounds/ESP_016895_1525_desktop.jpg
-gnome.wm.theme: Ayu-Mirage-Dark
+gnome.icon.theme:	Moka
+gnome.terminal.font:	JetBrains Mono 12
+gnome.terminal.scrollbar:	never
+gnome.wallpaper:	/usr/share/backgrounds/ESP_016895_1525_desktop.jpg
+gnome.wm.theme:	Ayu-Mirage-Dark
 [...]
 ```
 
@@ -66,8 +66,8 @@ $ regolith-look refresh
 
 ```console
 $ xrdb -query | grep position
-i3-wm.bar.position: bottom
-$ echo "i3-wm.bar.position: top" >> ~/.config/regolith/Xresources
+i3-wm.bar.position:	bottom
+$ echo "i3-wm.bar.position:	top" >> ~/.config/regolith/Xresources
 $ regolith-look refresh
 ```
 
@@ -75,15 +75,15 @@ $ regolith-look refresh
 
 ```console
 $ xrdb -query | grep gtk
-gnome.gtk.theme:    Ayu-Mirage-Dark
-$ echo "gnome.gtk.theme:    Adwaita" >> ~/.config/regolith/Xresources
+gnome.gtk.theme:	Ayu-Mirage-Dark
+$ echo "gnome.gtk.theme:	Adwaita" >> ~/.config/regolith/Xresources
 $ regolith-look refresh
 ```
 
 ### Example - Disable the System Tray
 
 ```console
-$ echo "i3-wm.bar.trayoutput:   none" >> ~/.config/regolith/Xresources
+$ echo "i3-wm.bar.trayoutput:	none" >> ~/.config/regolith/Xresources
 $ regolith-look refresh
 ```
 
