@@ -6,15 +6,15 @@ description: >
   Resumo dos métodos de instalação do Regolith.
 ---
 
-This section contains the information necessary to get Regolith running on a computer. There are two primary ways of installing Regolith; via an Ubuntu-based installer and via a Personal Package Archive (PPA). Either of these methods will result in essentially the same user experience, although installing via the Ubuntu installer will result in a package selection that is different from installing vanilla Ubuntu. However by adding and removing specific packages a vanilla Ubuntu system can be configured.
+Esta seção contém as informações necessárias para que o Regolith funcione em um computador. Existem duas formas principais de instalar o Regolith; através de um instalador baseado em Ubuntu e através de um Pacote Pessoal (PPA). Qualquer um desses métodos resultará essencialmente na mesma experiência de usuário, embora a instalação pelo instalador do Ubuntu resulte em uma seleção de pacotes diferente da instalação do Ubuntu vanilla. Porém, adicionando e removendo pacotes específicos, um sistema Ubuntu vanilla pode ser configurado.
 
 ## Pré-requisitos
 
 ### Instalador Ubuntu
 
-- A [modern computer](https://help.ubuntu.com/community/Installation/SystemRequirements) that can boot from a USB flash drive.
-- Free space on a local drive. The installer will allow for managing existing partitions or installing on an empty volume.
-- An internet connection to install updates during and after installation.
+- Um [computador moderno](https://help.ubuntu.com/community/Installation/SystemRequirements) que pode inicializar a partir de um flash drive USB.
+- Espaço livre em uma unidade local. O instalador permitirá gerenciar as partições existentes ou instalar em um volume vazio.
+- Uma conexão com a internet para instalar as atualizações durante e após a instalação.
 - Um monitor com uma resolução mínima de VGA (1024 x 768). O Regolith é otimizado para telas FHD (1920 x 1080).
 - Uma unidade flash USB vazia com pelo menos 4 Gb de espaço de armazenamento.
 
@@ -26,4 +26,4 @@ This section contains the information necessary to get Regolith running on a com
 
 ## Decidindo o método de instalação
 
-If you already have an Ubuntu system of a supported version, than adding Regolith via PPA is the faster and less disruptive method. The Ubuntu installer method is better for starting from scratch, installing into a virtual machine, or just ensuring that any existing software is not conflicting with Regolith. Some users have had issues with getting Regolith to work properly with other Ubuntu derivative desktop environments they've installed on their system. Installing a fresh instance can sidestep these potential issues.
+Se você já possui um sistema Ubuntu de uma versão suportada, adicionar o Regolith via PPA é o método mais rápido e menos disruptivo. O método de instalação do Ubuntu é melhor para começar do zero, instalando em uma máquina virtual, ou apenas garantindo que qualquer software não esteja em conflito com o Regolith. Alguns usuários têm alguns problemas fazer o Regolith funcionar corretamente com outro ambiente desktop derivado do Ubuntu. Instalar uma instância nova pode contornar esses possíveis problemas.
