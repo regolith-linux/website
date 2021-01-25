@@ -7,7 +7,7 @@ description: >
 1. Create or add the following value to your `~/.config/regolith/Xresources` file:
 
 ```console
-gnome.terminal.font:    JetBrains Mono 14
+gnome.terminal.font:	JetBrains Mono 14
 ```
 
 2. Reload the `Xresources` configuration:
