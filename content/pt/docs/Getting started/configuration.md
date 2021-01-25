@@ -1,12 +1,12 @@
 ---
-title: "Configuration"
-linkTitle: "Configuration"
+title: "Configuração"
+linkTitle: "Configuração"
 weight: 4
 description: >
-  Make changes to the way Regolith looks and behaves.
+  Faça alterações na aparência e no comportamento do Regolith.
 ---
 
-## Wallpaper
+## Papel de parede
 
 The wallpaper can be changed via Settings, or {{< keys "super,c" >}}, by going to the Background tab and selecting the preferred image or color.
 
