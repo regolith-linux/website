@@ -15,8 +15,8 @@ This section contains the information necessary to get Regolith running on a com
 - A [modern computer](https://help.ubuntu.com/community/Installation/SystemRequirements) that can boot from a USB flash drive.
 - Free space on a local drive. The installer will allow for managing existing partitions or installing on an empty volume.
 - An internet connection to install updates during and after installation.
-- A monitor with at least VGA (1024 x 768) resolution. Regolith is optimized for FHD (1920 x 1080) screens.
-- An empty USB flash drive with at least 4 Gb of storage space.
+- Um monitor com uma resolução mínima de VGA (1024 x 768). O Regolith é otimizado para telas FHD (1920 x 1080).
+- Uma unidade flash USB vazia com pelo menos 4 Gb de espaço de armazenamento.
 
 ### PPA
 
