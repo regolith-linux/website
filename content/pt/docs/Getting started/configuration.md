@@ -24,7 +24,7 @@ Indicadores de status como carga da CPU, data e hora, notificações, clima e ou
 
 ## Aparências
 
-Colors, wallpaper, window and bar layouts and other visual factors are bundled together in Regolith and called "looks". Looks provide a simple way of changing the entire look of the desktop with a few commands. Like status bar indicators, looks are packaged and are installed and removed like any other software package. By convention, Look packages use the following naming format `regolith-look-<name>`. `apt` or a GUI package manager can be used to search for available looks. The tool `regolith-look` can be used to change looks and refresh the active session with the selected look. Here's an example that switches to the `cahuella` look that shipped by default in Regolith 1.3:
+As cores, o papel de parede, os layouts de janela e da barra, e outros fatores visuais são agrupados no Regolith e chamados de "aparências". Aparências fornecem um jeito simples de mudar a aparência inteira do computador com poucos comandos. Like status bar indicators, looks are packaged and are installed and removed like any other software package. By convention, Look packages use the following naming format `regolith-look-<name>`. `apt` or a GUI package manager can be used to search for available looks. The tool `regolith-look` can be used to change looks and refresh the active session with the selected look. Here's an example that switches to the `cahuella` look that shipped by default in Regolith 1.3:
 
 ```console
 $ apt search ^regolith-look-
@@ -40,7 +40,7 @@ Aparências instaladas também podem ser definidas através da Look Dialog, ativ
 
 ## Teclas de Atalho
 
-A alteração mais comum nos atalhos é da tecla {{< keys "super" >}}. Regolith uses `Xresources` as the canonical source of truth for settings, which are read by various UI components. The table of `Xresources` keys open to user configuration [is available elsewhere]({{< ref "xresources" >}}). To change the default {{< keys "super" >}} binding from the "windows" key to "alt", add the following line to the file `~/.config/regolith/Xresources`:
+A alteração mais comum nos atalhos é da tecla {{< keys "super" >}}. O Regolith usa `Xresources` como fonte da verdade para as configurações, que são lidas por vários componentes da interface do usuário. A tabela de teclas do `Xresources` disponível para o usuário configurar [pode ser encontrada aqui]({{< ref "xresources" >}}). Para alterar o padrão {{< keys "super" >}} da tecla "windows" para "alt", adicione a seguinte linha ao arquivo `~/. onfig/regolith/Xresources`:
 
 ```toml
 i3-wm.mod: Mod1
@@ -59,7 +59,7 @@ O Regolith usa uma variante do gerenciador de janelas i3 chamada [`i3-gaps`](htt
 
 ## Quase todo o resto
 
-The Settings app, or `gnome-control-center` as it's also known, is the tool to configure locale, date, displays, networking and various other settings. Launch it via the app launcher with {{< keys "super,space" >}}, type `settings`, and hit enter to launch the app. The direct keybinding is {{< keys "super,c" >}}.
+Configurações ou `gnome-control-center` como também é conhecido, é a ferramenta para configurar idioma, data, telas, rede e várias outras configurações. Inicie-o pressionando {{< keys "super,space" >}}, digite `configurações`, e clique Enter para abrir o aplicativo. O atalho direto para o aplicativo é {{< keys "super,c" >}}.
 
 ## Leitura adicional
 
