@@ -8,21 +8,21 @@ description: >
 
 ## Papel de parede
 
-The wallpaper can be changed via Settings, or {{< keys "super,c" >}}, by going to the Background tab and selecting the preferred image or color.
+O papel de parede pode ser modificado via Configurações, ou {{< keys "super,c" >}}, indo na tab de Plano de fundo e selecionando a imagem ou cor preferida.
 
 {{< img "images/regolith-screenshot-settings-wallpaper.png" "The background selection in the Settings app">}}
 
-Wallpaper can also be set via [dotfiles](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory) for those that prefer file-based configuration management over GSettings.
+O Papel de parede também pode ser configurado no [dotfiles](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory) para aqueles que preferem gerenciar configurações baseado em arquivo ao invés de GSettings.
 
-Regardless of which style you prefer, you can refer to the [more extensive documentation]({{< ref "/docs/howtos/configure-wallpaper.md" >}}) for additional details.
+Independentemente de qual estilo você prefira, você pode visitar a [documentação mais detalhada]({{< ref "/docs/howtos/configure-wallpaper.md" >}}) para informações adicionais.
 
-## Status Bar Indicators
+## Indicadores da Barra de Status
 
-Status indicators such as CPU load, date and time, notifications, weather, and other system info can be added or removed by installing packages. For example, to show a status indicator for your laptop battery, simply run `sudo apt install i3xrocks-battery` and then refresh the session using `regolith-look refresh`. To find what indicators are available, run `apt search ^i3xrocks-` or search for `i3xrocks-` in your favorite package manager GUI, such as [Synaptic](https://help.ubuntu.com/community/SynapticHowto). There is [more documentation available]({{< ref "/docs/howtos/add-remove-blocklets.md" >}}) for configuring status indicators, also called "blocklets".
+Indicadores de status como carga da CPU, data e hora, notificações, clima e outras informações do sistema podem ser adicionados ou removidos instalando pacotes. Por exemplo, para mostrar um indicador de status para a bateria do notebook, simplesmente execute `sudo install i3xrocks-battery` e atualize a sessão usando `regolith-look update`. Para encontrar quais indicadores estão disponíveis, execute `apt search ^i3xrock-` ou procure por `i3xrock-` no seu gerenciador de pacotes favorito GUI, como o [Sináptica](https://help.ubuntu.com/community/SynapticHowto). Há [mais documentação disponível]({{< ref "/docs/howtos/add-remove-blocklets.md" >}}) para configurar indicadores de status, também chamados de "blocklets".
 
 {{< img "images/regolith-screenshot-synaptic-search.png" "Searching for blocklets in Synaptics" >}}
 
-## Looks
+## Aparências
 
 Colors, wallpaper, window and bar layouts and other visual factors are bundled together in Regolith and called "looks". Looks provide a simple way of changing the entire look of the desktop with a few commands. Like status bar indicators, looks are packaged and are installed and removed like any other software package. By convention, Look packages use the following naming format `regolith-look-<name>`. `apt` or a GUI package manager can be used to search for available looks. The tool `regolith-look` can be used to change looks and refresh the active session with the selected look. Here's an example that switches to the `cahuella` look that shipped by default in Regolith 1.3:
 
@@ -36,31 +36,31 @@ $ regolith-look set cahuella
 $ regolith-look refresh
 ```
 
-Installed Looks may also be set via the Look Dialog, activated via {{< keys "super,alt,l" >}}.
+Aparências instaladas também podem ser definidas através da Look Dialog, ativada através do comando {{< keys "super,alt,l" >}}.
 
-## Keybindings
+## Teclas de Atalho
 
-The most common keybinding change is the {{< keys "super" >}} key. Regolith uses `Xresources` as the canonical source of truth for settings, which are read by various UI components. The table of `Xresources` keys open to user configuration [is available elsewhere]({{< ref "xresources" >}}). To change the default {{< keys "super" >}} binding from the "windows" key to "alt", add the following line to the file `~/.config/regolith/Xresources`:
+A alteração mais comum nos atalhos é da tecla {{< keys "super" >}}. Regolith uses `Xresources` as the canonical source of truth for settings, which are read by various UI components. The table of `Xresources` keys open to user configuration [is available elsewhere]({{< ref "xresources" >}}). To change the default {{< keys "super" >}} binding from the "windows" key to "alt", add the following line to the file `~/.config/regolith/Xresources`:
 
 ```toml
 i3-wm.mod: Mod1
 i3-wm.alt: Mod4
 ```
 
-To change other, more advanced keybindings, creating a user copy of the i3 config file is necessary. We call this process ["staging"]({{< ref "/docs/howtos/stage-configs" >}}).
+Para alterar outros atalhos mais avançadas é necessário criar uma cópia de usuário do arquivo de configuração i3. Chamamos este processo de ["staging"]({{< ref "/docs/howtos/stage-configs" >}}).
 
-**Note**: GNOME also has it's own set of keybindings. When the Regolith session is first initialized, the conflicting GNOME keybindings are removed from the user settings. GNOME keybindings can be managed in the Settings app.
+**Nota**: O GNOME também tem seu próprio conjunto de atalhos. Quando a sessão do Regolith é inicializada pela primeira vez, os atalhos conflitantes de GNOME são removidos das configurações do usuário. Os atalhos do GNOME podem ser gerenciados em Configurações.
 
 {{< img "images/regolith-screenshot-settings-keybindings.png" "GNOME keybindings in the settings dialog">}}
 
-## Window Behavior
+## Comportamento da Janela
 
-Regolith uses an i3 window manager variant called [`i3-gaps`](https://github.com/Airblader/i3). It controls how windows are drawn, how keybindings are configured, some start-up applications and other details. By default, the Regolith configuration file for i3 is located at `/etc/regolith/i3/config`.
+O Regolith usa uma variante do gerenciador de janelas i3 chamada [`i3-gaps`](https://github.com/Airblader/i3). Ele controla como as janelas são desenhadas, como as teclas de atalho são configuradas, alguns aplicativos de início e outros detalhes. Por padrão, o arquivo de configuração do Regolith para i3 está localizado em `/etc/regolith/i3/config`.
 
-## Almost Everything Else
+## Quase todo o resto
 
 The Settings app, or `gnome-control-center` as it's also known, is the tool to configure locale, date, displays, networking and various other settings. Launch it via the app launcher with {{< keys "super,space" >}}, type `settings`, and hit enter to launch the app. The direct keybinding is {{< keys "super,c" >}}.
 
-## Further Reading
+## Leitura adicional
 
-To dig deeper check out the section on [Customization]({{< ref "customize" >}}), find which [Howtos]({{< ref "howtos" >}}) are available, or read the [Xresources reference]({{< ref "docs/Reference/xresources.md" >}}). Become an i3 power user by reading their [user guide](https://i3wm.org/docs/userguide.html).
+Para aprofundar, vá até a seção sobre [Customização]({{< ref "customize" >}}), encontre quais [Howtos]({{< ref "howtos" >}}) estão disponíveis, ou leia a [referência do Xresource]({{< ref "docs/Reference/xresources.md" >}}). Torne-se um usuário avançado do i3 lendo o [guia do usuário](https://i3wm.org/docs/userguide.html).
