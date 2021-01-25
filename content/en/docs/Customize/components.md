@@ -2,7 +2,8 @@
 title: "Components"
 linkTitle: "Components"
 weight: 4
-description: >
+0: >
+
 ---
 
 As previously mentioned, Regolith is a collection of existing open source components that are integrated into a desktop environment. Due to standards regarding the way UI components should communicate and years of integration between components, for the most part is simple to swap out parts of the UI for others.
