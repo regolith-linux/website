@@ -19,7 +19,7 @@ The i3 window manager is not part of GNOME and so it's configuration is not view
 Many things about Regolith can be configured in the i3 config file. It is best to read the [i3 user guide](https://i3wm.org/docs/userguide.html) to understand what and how to modify this file.
 
 {{% pageinfo %}}
-Maintaining a user copy of the i3 config file requires more work when upgrading Regolith, as changes have to managed from the defaults into the user config to support new features in subsequent versions. If possible, it is better to rely on [`Xresources` overrides]({{< ref "/docs/howtos/override-xres" >}}) to customize i3.
+Maintaining a user copy of the i3 config file requires more work when upgrading Regolith, as changes have to managed from the defaults into the user config to support new features in subsequent versions. If possible, it is better to rely on [`Xresources` overrides]({{< ref "/docs/howtos/override-xres" >}}) to customize i3.  
 {{% /pageinfo %}}
 
 ## i3bar
