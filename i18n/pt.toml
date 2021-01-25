@@ -1,14 +1,14 @@
 [interactWithCommunity]
-other = "Interact with the {{ .Site.Title }} project"
+other = "Interaja com o projeto {{ .Site.Title }}"
 
 [partialsCommunityLinksLearnToConnect]
-other = "Learn and Connect"
+other = "Aprenda e Conecte-se"
 
 [partialsCommunityLinksUsingWantToUse]
-other = "Using or want to use {{ .Site.Title }}? Find out more here"
+other = "Usando ou quer usar o {{ .Site.Title }}? Saiba mais aqui"
 
 [partialsCommunityLinksDevelopAndContribute]
-other = "Develop and Contribute"
+other = "Desenvolva e Contribua"
 
 [partialsCommunityLinksWantToGetInvolved]
-other = "If you want to get more involved by contributing to {{ .Site.Title }}, join us here"
+other = "Se você quiser se envolver mais contribuindo para o {{ .Site.Title }}, junte-se a nós aqui"
