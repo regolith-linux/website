@@ -30,6 +30,8 @@ The `xrdb` tool can be used to list the existing `Xresources` values. [There is 
 ```console
 $ xrdb -query
 [...]
+$ xrdb -query
+[...]
 gnome.icon.theme:   Moka
 gnome.terminal.font:    JetBrains Mono 12
 gnome.terminal.scrollbar:   never
