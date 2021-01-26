@@ -14,12 +14,12 @@ In Regolith, `Xresources` values can be changed via two methods: supplying your 
 
 When a Regolith session is started, Xresources are loaded in the following order:
 
-| File                            | Optional | Notes                                                                             |
-| ------------------------------- | -------- | --------------------------------------------------------------------------------- |
-| `~/.Xresources`                 | Y        | Intended for non-Regolith settings                                                |
-| `~/.Xresources-regolith`        | Y        | A global override to replace all Regolith settings                                |
-| `/etc/regolith/styles/root`     | N        | The default Regolith `Xresources` file if `~/.Xresources-regolith` does not exist |
-| `~/.config/regolith/Xresources` | Y        | Applies specific overrides to `Xresources` defaults                               |
+| File                            | Optional | Notes                                                                              |
+| ------------------------------- | -------- | ---------------------------------------------------------------------------------- |
+| `~/. Xresources`                | Y        | Intended for non-Regolith settings                                                 |
+| `~/. Xresources-regolith`       | Y        | A global override to replace all Regolith settings                                 |
+| `/etc/regolith/styles/root`     | N        | The default Regolith `Xresources` file if `~/. Xresources-regolith` does not exist |
+| `~/.config/regolith/Xresources` | Y        | Applies specific overrides to `Xresources` defaults                                |
 
 It is recommended to use `~/.config/regolith/Xresources` for customization as it doesn't require the specification of redundant settings and is easier to maintain over time.
 
