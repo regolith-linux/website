@@ -25,7 +25,7 @@ title: "Regolith Linux" linkTitle: "Regolith Linux"
   </div>
 {{< /blocks/cover >}}
 
-<a name="td-block-1"><h3 class="text-center p-5" >Visual Tour</h3></a>
+<a name="td-block-1"><h3 class="text-center p-5" >Visuelle Tour</h3></a>
 
 <div class="container mt-3">
   <div class="row pb-5">
