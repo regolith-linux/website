@@ -64,4 +64,4 @@ The Settings app (also known as `gnome-control-center`) is the primary interface
 
 ## Further Reading
 
-More keybindings are listed in [Remontoire](https://github.com/regolith-linux/remontoire), the shortcut application. This app is loaded automatically on the first session, but not on successive logins. The window can be toggled at any time by clicking the circled {{< keys "i" >}} icon in the bar, or pressing {{< keys "super,shift,?" >}}.
+More keybindings are listed in [Remontoire](https://github.com/regolith-linux/remontoire), the shortcut application. This app is loaded automatically on the first session, but not on successive logins. The window can be toggled at any time by clicking the circled {{< keys "i" >}} icon in the bar, or pressing {{< keys "super,shift,?" >}}. >}}.
