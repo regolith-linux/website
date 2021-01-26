@@ -53,10 +53,18 @@ $ cat /etc/regolith/styles/ubuntu/root
 ! -- Styles - Colors
 #include "/etc/regolith/styles/ubuntu/color"
 
+! $ cat /etc/regolith/styles/ubuntu/root
+! -- Styles - Colors
+#include "/etc/regolith/styles/ubuntu/color"
+
 ! -- Styles - Fonts
 #include "/etc/regolith/styles/ubuntu/typeface"
 
 ! -- Styles - Theme
+#include "/etc/regolith/styles/ubuntu/theme"
+
+! -- Applications
+! These files map values defined above into specific app settings. -- Styles - Theme
 #include "/etc/regolith/styles/ubuntu/theme"
 
 ! -- Applications
