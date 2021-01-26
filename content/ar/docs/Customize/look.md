@@ -42,7 +42,7 @@ $ regolith-look refresh
 The command will mention that it created a file in your user directory. This file is an `Xresources` file, and it's stored in a specific path such that `i3-gnome-flashback` will look for it upon session start. Let's have a look at the file:
 
 ```console
-$ cat ~/.Xresources-regolith
+$ cat ~/. Xresources-regolith
 #include "/etc/regolith/styles/ubuntu/root"
 ```
 
