@@ -10,7 +10,7 @@ As stated in the [repository's README](https://github.com/regolith-linux/regolit
 
 ## Defines
 
-To maximize the re-use of theme information in Regolith, `Xresources` are divided into two categories of files: definition files and application files. The definition files make heavy use of the `define` directive. They essentially bind an abstract key, such as "blue" or "terminal font" to a literal value, such as `#0000FF` or `Source Code Pro Medium`. In making changes to files, it's expected that these defines will change. The user may wish to specify a different icon set, or typeface, and would do so by modifying or creating a new definition file. Once this file is created, it needs to be referenced by a top-level `Xresources` file in `~/.Xresources-regolith`.
+To maximize the re-use of theme information in Regolith, `Xresources` are divided into two categories of files: definition files and application files. The definition files make heavy use of the `define` directive. They essentially bind an abstract key, such as "blue" or "terminal font" to a literal value, such as `#0000FF` or `Source Code Pro Medium`. In making changes to files, it's expected that these defines will change. The user may wish to specify a different icon set, or typeface, and would do so by modifying or creating a new definition file. Once this file is created, it needs to be referenced by a top-level `Xresources` file in `~/. Xresources-regolith`.
 
 {{% pageinfo %}}
 **Note**: when referencing other files in `Xresources` via the `#include` directive, shortcuts like `$HOME` and `~/` are not available. Absolute paths are required.
@@ -24,10 +24,10 @@ As mentioned previously, a number of `Xresources` are present in `/etc/regolith/
 
 The `/usr/bin/regolith-session-init` script will check for the first Xresources file it finds in the following order:
 
-1. `~/.Xresources-regolith`
+1. `~/. Xresources-regolith`
 2. `/etc/regolith/styles/root`
 
-In addition to a Regolith Xresources file, `~/.Xresources` will also be loaded if it exists upon session start.
+In addition to a Regolith Xresources file, `~/. Xresources` will also be loaded if it exists upon session start.
 
 After loading a root `Xresources` file, the session init script then merges any entries found in the `~/.config/regolith/Xresources` file. This file provides a quick way of simply overriding a few values without having to copy the entire set of resource definitions.
 
@@ -42,7 +42,7 @@ $ regolith-look refresh
 Alternatively, the `xrdb` command can be used to refresh specific `Xresources` files after they have changed. For example, to reload the user `Xresources` file run:
 
 ```console
-$ xrdb -merge ~/.Xresources-regolith
+$ xrdb -merge ~/. Xresources-regolith
 ```
 
 ### Verification
