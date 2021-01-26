@@ -31,6 +31,10 @@ $ apt search ^regolith-look-
 [...]
 regolith-look-cahuella/bionic,now 2.4.9 amd64
 [...]
+$ apt search ^regolith-look-
+[...]
+regolith-look-cahuella/bionic,now 2.4.9 amd64
+[...]
 $ sudo apt install regolith-look-cahuella
 $ regolith-look set cahuella
 $ regolith-look refresh
