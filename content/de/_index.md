@@ -1,22 +1,23 @@
-+++ title = "Regolith Linux" linkTitle = "Regolith Linux"
-
-+++
+---
+title: "Regolith Linux"
+linkTitle: "Regolith Linux"
+---
 
 {{< blocks/cover image_anchor="top" height="full" >}}
 
-<h2 class="m-5">Regolith ist eine moderne Desktop-Umgebung. Schnelleres Arbeiten durch die Reduktion von Durcheinander und Ablenkung. Regolith baut auf Ubuntu, GNOME und i3, einem soliden, konsistenten und breit unterstützten Fundament.</h2>
+<h2 class="m-5">Regolith is a modern desktop environment designed to let you work faster by reducing unnecessary clutter and ceremony. Built on top of Ubuntu, GNOME, and i3, Regolith stands on a well-supported and consistent foundation.</h2>
 
 <div class="row"> <div class="col-sm-8 mb-5">{{< img "images/regolith-screenshot-intro.png" "Regolith Linux" >}}</div>
   <div class="col-sm-4">
     <div class="mx-auto">
     <a class="btn btn-lg btn-secondary mr-3 mb-4 rounded-pill" href="{{< relref ">}}">
-      Hole dir Regolith <i class="fas fa-cloud-download-alt ml-2 "></i>
+      Get Regolith <i class="fas fa-cloud-download-alt ml-2 "></i>
     </a>
     <a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref ">}}">
-     Erfahre mehr <i class="fas fa-book-reader ml-2"></i>
+      Learn More <i class="fas fa-book-reader ml-2"></i>
     </a>
     <a class="btn btn-lg btn-success mr-3 mb-4" href="https://opencollective.com/regolith/donate">
-      Spenden <i class="fas fa-piggy-bank ml-2"></i>
+      Contribute <i class="fas fa-piggy-bank ml-2"></i>
     </a>
 </div>
 </div>
