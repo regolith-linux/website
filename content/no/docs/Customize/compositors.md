@@ -2,8 +2,8 @@
 title: "Compositors"
 linkTitle: "Compositors"
 weight: 3
-description: >
-  Configure visual effects in Regolith.
+description: Configure visual effects in Regolith.
+
 ---
 
 {{% pageinfo %}}
