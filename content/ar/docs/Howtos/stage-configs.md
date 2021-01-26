@@ -32,9 +32,9 @@ $ cp /etc/regolith/i3/config ~/.config/regolith/i3/config
 1. Copy the root Regolith `Xresources` file into your home directory:
 
 ```
-$ cp /etc/regolith/styles/root ~/.Xresources-regolith
+$ cp /etc/regolith/styles/root ~/. Xresources-regolith
 ```
 
 2. Log out and back in. The Regolith session will automatically detect your user-staged file and use that over the default in `/etc/regolith/styles`.
 
-Note that this root file is simply a reference to other styles that are broken down by the thing they are designed to style. For example, if you wish to customize the look of i3, you will need to also copy `/etc/regolith/styles/i3-wm` into your user directory and then update the reference to the new file in your `~/.Xresources-regolith`.
+Note that this root file is simply a reference to other styles that are broken down by the thing they are designed to style. For example, if you wish to customize the look of i3, you will need to also copy `/etc/regolith/styles/i3-wm` into your user directory and then update the reference to the new file in your `~/. Xresources-regolith`.
