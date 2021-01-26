@@ -15,7 +15,7 @@ In Regolith, status indicators are simply small scripts that run once or on an i
 1. Reading values from `Xresources`.
 2. Expressing configuration as a set of files, rather than one single file.
 
-`i3xrocks` is invoked by `i3-wm` from within the i3 config file. Once started, `i3xrocks` reads it's configuration from the files it finds in `/etc/regolith/i3xrocks/conf.d` (or a user directory, see [this reference page](../../reference/configurations/) for details.) The configuration files in `/etc/regolith/i3xrocks/conf.d` describe, per status indicator, the path to the script to execute, the interval by which to run the script, and other variables that the script may need for it's configuration. Where possible, `Xresources` should be used to read configuration from, making updates and customizations more consistent.
+`i3xrocks` is invoked by `i3-wm` from within the i3 config file. Once started, `i3xrocks` reads it's configuration from the files it finds in `/etc/regolith/i3xrocks/conf.d` (or a user directory, see [this reference page](../../reference/configurations/) for details.) The configuration files in `/etc/regolith/i3xrocks/conf.d` describe, per status indicator, the path to the script to execute, the interval by which to run the script, and other variables that the script may need for it's configuration. The configuration files in `/etc/regolith/i3xrocks/conf.d` describe, per status indicator, the path to the script to execute, the interval by which to run the script, and other variables that the script may need for it's configuration. Where possible, `Xresources` should be used to read configuration from, making updates and customizations more consistent.
 
 ## Scripts
 
