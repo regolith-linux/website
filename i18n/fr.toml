@@ -1,10 +1,14 @@
 [interactWithCommunity]
 other = "Impliquez-vous dans le projet {{ .Site.Title }}"
+
 [partialsCommunityLinksLearnToConnect]
 other = "Apprendre et prendre contact"
+
 [partialsCommunityLinksUsingWantToUse]
 other = "Déjà utilisateur ou sur le point de passer à {{ .Site.Title }} ? Pour en savoir plus "
+
 [partialsCommunityLinksDevelopAndContribute]
 other = "Développer et contribuer"
+
 [partialsCommunityLinksWantToGetInvolved]
 other = "Si vous souhaitez vous impliquer en contribuant à {{ .Site.Title }}, rejoignez-nous ici "
