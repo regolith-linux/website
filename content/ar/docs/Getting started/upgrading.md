@@ -32,11 +32,11 @@ After performing these steps, you'll need to log out and back in again.
 
 ### Upgrading with Customizations
 
-When updating from a major or minor version (eg 1.2 to 1.3), it is often the case that new `Xresources` values and other config files have been updated. Existing `Xresources` and config files such as the i3 config file will need to be updated in order for the upgrade to work properly. If you've customized any Regolith config files or created a stand-alone `Xresources` file (e.g. `~/.Xresources-regolith`), these may need to be updated to take the upgraded files into account. A simple approach to doing this is to move them elsewhere, perform the upgrade, and then reintegrate any desired customizations into the new files:
+When updating from a major or minor version (eg 1.2 to 1.3), it is often the case that new `Xresources` values and other config files have been updated. Existing `Xresources` and config files such as the i3 config file will need to be updated in order for the upgrade to work properly. If you've customized any Regolith config files or created a stand-alone `Xresources` file (e.g. `~/. Xresources-regolith`), these may need to be updated to take the upgraded files into account. A simple approach to doing this is to move them elsewhere, perform the upgrade, and then reintegrate any desired customizations into the new files:
 
 ```console
 $ mkdir ~/regolith-backup
-$ mv ~/.Xresources-regolith ~/regolith-backup
+$ mv ~/. Xresources-regolith ~/regolith-backup
 $ mv ~/.config/regolith ~/regolith-backup
 ```
 
