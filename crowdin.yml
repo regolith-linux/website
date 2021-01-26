@@ -6,6 +6,17 @@ files:
     type: fm_md
     ignore:
       - /content/en/search-index.md
+    two_letters_code":
+      zh-CN: zh_CH
+      zh-TW: zh_tw
+      pt-BR: pt_br
+      pt_PT: pt
   - source: /i18n/en.toml
     translation: /i18n/%two_letters_code%.toml
     type: toml
+    two_letters_code":
+      zh-CN: zh_CH
+      zh-TW: zh_tw
+      pt-BR: pt_br
+      pt_PT: pt
+    
