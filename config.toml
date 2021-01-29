@@ -65,61 +65,61 @@ languageName ="English"
 # Weight used for sorting.
 weight = 1
 
-[languages.de]
-title = "Regolith 1.5.1"
-description = "Regolith Linux Webseite"
-contentDir = "content/de"
-languageName ="Deutsch"
-# Weight used for sorting.
-weight = 2
-
-[languages.es]
-title = "Regolith 1.5.1"
-description = "Sitio Web de Regolith Linux"
-contentDir = "content/es"
-languageName ="Español"
-# Weight used for sorting.
-weight = 3
-
-[languages.hu]
-title = "Regolith 1.5.1"
-description = "Regolith Linux Weboldal"
-contentDir = "content/hu"
-languageName ="magyar"
-# Weight used for sorting.
-weight = 4
-
-[languages.fr]
-title = "Regolith 1.5.1"
-description = "Site web de Regolith Linux"
-contentDir = "content/fr"
-languageName ="français"
-# Weight used for sorting.
-weight = 5
-
-[languages.pt_pt]
-title = "Regolith 1.5.1"
-description = "Site Regolith Linux"
-contentDir = "content/pt_pt"
-languageName ="português"
-# Weight used for sorting.
-weight = 6
-
-[languages.pt_br]
-title = "Regolith 1.5.1"
-description = "Site web do Regolith Linux"
-contentDir = "content/pt_br"
-languageName ="português brasileiro"
-# Weight used for sorting.
-weight = 7
-
-[languages.ru]
-title = "Regolith 1.5.1"
-description = "Вебсайт Regolith Linux"
-contentDir = "content/ru"
-languageName ="Russian"
-# Weight used for sorting.
-weight = 8
+# [languages.de]
+# title = "Regolith 1.5.1"
+# description = "Regolith Linux Webseite"
+# contentDir = "content/de"
+# languageName ="Deutsch"
+# # Weight used for sorting.
+# weight = 2
+#
+# [languages.es]
+# title = "Regolith 1.5.1"
+# description = "Sitio Web de Regolith Linux"
+# contentDir = "content/es"
+# languageName ="Español"
+# # Weight used for sorting.
+# weight = 3
+#
+# [languages.hu]
+# title = "Regolith 1.5.1"
+# description = "Regolith Linux Weboldal"
+# contentDir = "content/hu"
+# languageName ="magyar"
+# # Weight used for sorting.
+# weight = 4
+#
+# [languages.fr]
+# title = "Regolith 1.5.1"
+# description = "Site web de Regolith Linux"
+# contentDir = "content/fr"
+# languageName ="français"
+# # Weight used for sorting.
+# weight = 5
+#
+# [languages.pt_pt]
+# title = "Regolith 1.5.1"
+# description = "Site Regolith Linux"
+# contentDir = "content/pt_pt"
+# languageName ="português"
+# # Weight used for sorting.
+# weight = 6
+#
+# [languages.pt_br]
+# title = "Regolith 1.5.1"
+# description = "Site web do Regolith Linux"
+# contentDir = "content/pt_br"
+# languageName ="português brasileiro"
+# # Weight used for sorting.
+# weight = 7
+#
+# [languages.ru]
+# title = "Regolith 1.5.1"
+# description = "Вебсайт Regolith Linux"
+# contentDir = "content/ru"
+# languageName ="Russian"
+# # Weight used for sorting.
+# weight = 8
 
 [markup]
 [markup.goldmark]
@@ -160,8 +160,8 @@ algolia_docsearch = false
 # Enable Lunr.js offline search
 offlineSearch = false
 
-[languages.fr.params]
-version_menu = "Versions"
+# [languages.fr.params]
+# version_menu = "Versions"
 
 # User interface configuration
 [params.ui]
@@ -187,11 +187,11 @@ enable = true
 yes = 'Glad to hear it! Please <a href="https://github.com/regolith-linux/regolith-linux.github.io/issues/new">tell us how we can improve</a>.'
 no = 'Sorry to hear that. Please <a href="https://github.com/regolith-linux/regolith-linux.github.io/issues/new">tell us how we can improve</a>.'
 
-[languages.fr.params.ui.feedback]
-enable = true
-# The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = "Bonne nouvelle ! N'hésitez pas <a href=\"https://github.com/regolith-linux/regolith-linux.github.io/issues/new\">à nous dire quoi améliorer</a>."
-no = "Mince alors ! N'hésitez pas <a href=\"https://github.com/regolith-linux/regolith-linux.github.io/issues/new\">à nous dire quoi améliorer</a>."
+# [languages.fr.params.ui.feedback]
+# enable = true
+# # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
+# yes = "Bonne nouvelle ! N'hésitez pas <a href=\"https://github.com/regolith-linux/regolith-linux.github.io/issues/new\">à nous dire quoi améliorer</a>."
+# no = "Mince alors ! N'hésitez pas <a href=\"https://github.com/regolith-linux/regolith-linux.github.io/issues/new\">à nous dire quoi améliorer</a>."
 
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
@@ -227,39 +227,39 @@ url = "https://regolith-linux.herokuapp.com/"
 icon = "fab fa-slack"
 desc = "Chat with contributors and users"
 
-[languages.fr.params.links]
-# End user relevant links. These will show up on left side of footer and in the community page if you have one.
-[[languages.fr.params.links.user]]
-name = "Liste de diffusion"
-url = "https://www.freelists.org/list/regolith-linux"
-icon = "fa fa-envelope"
-desc = "Être informé des nouvelles fonctionnalités et correctifs"
-[[languages.fr.params.links.user]]
-name ="Twitter"
-url = "https://twitter.com/RegolithL"
-icon = "fab fa-twitter"
-desc = "Suivez-nous sur Twitter pour les dernières nouvelles"
-[[languages.fr.params.links.user]]
-name ="Mastodon"
-url = "https://fosstodon.org/@regolith"
-icon = "fab fa-mastodon"
-desc = "Suivez-nous sur Mastodon pour les dernières nouvelles"
-[[languages.fr.params.links.user]]
-name ="Tickets Github"
-url = "https://github.com/regolith-linux/regolith-desktop/issues"
-icon = "fab fa-github"
-desc = "Parcourir ou créer un nouveau ticket (bug). Proposer une nouvelle fonctionnalité."
-# Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-[[languages.fr.params.links.developer]]
-name = "GitHub"
-url = "https://github.com/regolith-linux"
-icon = "fab fa-github"
-desc = "Le développement c'est par ici !"
-[[languages.fr.params.links.developer]]
-name = "Slack"
-url = "https://regolith-linux.herokuapp.com/"
-icon = "fab fa-slack"
-desc = "Discuster avec les contributeurs et les utilisateurs."
+# [languages.fr.params.links]
+# # End user relevant links. These will show up on left side of footer and in the community page if you have one.
+# [[languages.fr.params.links.user]]
+# name = "Liste de diffusion"
+# url = "https://www.freelists.org/list/regolith-linux"
+# icon = "fa fa-envelope"
+# desc = "Être informé des nouvelles fonctionnalités et correctifs"
+# [[languages.fr.params.links.user]]
+# name ="Twitter"
+# url = "https://twitter.com/RegolithL"
+# icon = "fab fa-twitter"
+# desc = "Suivez-nous sur Twitter pour les dernières nouvelles"
+# [[languages.fr.params.links.user]]
+# name ="Mastodon"
+# url = "https://fosstodon.org/@regolith"
+# icon = "fab fa-mastodon"
+# desc = "Suivez-nous sur Mastodon pour les dernières nouvelles"
+# [[languages.fr.params.links.user]]
+# name ="Tickets Github"
+# url = "https://github.com/regolith-linux/regolith-desktop/issues"
+# icon = "fab fa-github"
+# desc = "Parcourir ou créer un nouveau ticket (bug). Proposer une nouvelle fonctionnalité."
+# # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
+# [[languages.fr.params.links.developer]]
+# name = "GitHub"
+# url = "https://github.com/regolith-linux"
+# icon = "fab fa-github"
+# desc = "Le développement c'est par ici !"
+# [[languages.fr.params.links.developer]]
+# name = "Slack"
+# url = "https://regolith-linux.herokuapp.com/"
+# icon = "fab fa-slack"
+# desc = "Discuster avec les contributeurs et les utilisateurs."
 
 # Versions
 [[params.versions]]
