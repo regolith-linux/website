@@ -11,9 +11,9 @@ files:
       zh-TW: zh_tw
       pt-BR: pt_br
       pt-PT: pt
-  - source: /i18n/en.toml
-    translation: /i18n/%two_letters_code%.toml
-    type: toml
+  - source: /i18n/en.json
+    translation: /i18n/%two_letters_code%.json
+    type: json
     two_letters_code:
       zh-CN: zh_CH
       zh-TW: zh_tw
