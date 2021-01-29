@@ -12,6 +12,8 @@ jobs:
         with:
           submodules: recursive
       - name: Build website
+        env:
+          NODE_PATH: /usr/lib/node_modules
         uses: jakejarvis/hugo-build-action@v0.79.1
         with:
           args: --minify
