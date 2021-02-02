@@ -39,6 +39,8 @@ $ sudo apt install regolith-desktop-standard # or regolith-desktop-mobile for la
 
 From this point, please proceed to the next section, [configuration](../configuration) to learn about the most common changes people like to make to Regolith.
 
+Be aware that if you were running stock i3, that package will be uninstalled and the Regolith session type will replace your i3 session type.  This change can be cleanly reverted if you choose to uninstall Regolith, as a Regolith installation does not look at or alter your configuration for stock i3.
+
 ## Upgrades
 
 ### Regolith 1.4.1 -> Regolith 1.5.2
@@ -134,6 +136,8 @@ $ sudo apt purge regolith-desktop && sudo apt autoremove
 $ sudo add-apt-repository --remove ppa:regolith-linux/release
 ```
 4. You can now safely delete the directory `~/.config/regolith`.
+
+If you are attempting to revert to a stock i3 installation, you will need to uninstall the `i3-gaps` package and reinstall `i3`. 
 
 ## PPA Sources
 
