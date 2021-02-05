@@ -58,68 +58,12 @@ id = "UA-138654070-2"
 
 [languages]
 [languages.en]
-title = "Regolith 1.5.1"
+title = "Regolith 1.5.2"
 description = "Regolith Linux website"
 contentDir = "content/en"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
-
-# [languages.de]
-# title = "Regolith 1.5.1"
-# description = "Regolith Linux Webseite"
-# contentDir = "content/de"
-# languageName ="Deutsch"
-# # Weight used for sorting.
-# weight = 2
-#
-# [languages.es]
-# title = "Regolith 1.5.1"
-# description = "Sitio Web de Regolith Linux"
-# contentDir = "content/es"
-# languageName ="Español"
-# # Weight used for sorting.
-# weight = 3
-#
-# [languages.hu]
-# title = "Regolith 1.5.1"
-# description = "Regolith Linux Weboldal"
-# contentDir = "content/hu"
-# languageName ="magyar"
-# # Weight used for sorting.
-# weight = 4
-#
-# [languages.fr]
-# title = "Regolith 1.5.1"
-# description = "Site web de Regolith Linux"
-# contentDir = "content/fr"
-# languageName ="français"
-# # Weight used for sorting.
-# weight = 5
-#
-# [languages.pt_pt]
-# title = "Regolith 1.5.1"
-# description = "Site Regolith Linux"
-# contentDir = "content/pt_pt"
-# languageName ="português"
-# # Weight used for sorting.
-# weight = 6
-#
-# [languages.pt_br]
-# title = "Regolith 1.5.1"
-# description = "Site web do Regolith Linux"
-# contentDir = "content/pt_br"
-# languageName ="português brasileiro"
-# # Weight used for sorting.
-# weight = 7
-#
-# [languages.ru]
-# title = "Regolith 1.5.1"
-# description = "Вебсайт Regolith Linux"
-# contentDir = "content/ru"
-# languageName ="Russian"
-# # Weight used for sorting.
-# weight = 8
 
 [markup]
 [markup.goldmark]
@@ -263,8 +207,12 @@ desc = "Chat with contributors and users"
 
 # Versions
 [[params.versions]]
-version = "1.5.1"
+version = "1.5.2"
 url = "http://regolith-linux.org"
+
+[[params.versions]]
+version = "1.5.1"
+url = "http://regolith-linux.org/regolith-site-r151/"
 
 [[params.versions]]
 version = "1.5"
