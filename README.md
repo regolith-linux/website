@@ -6,7 +6,7 @@ This site uses the [Hugo static site generator](https://gohugo.io/) and the [Doc
 
 Please ensure you have the following installed:
 
-- Hugo **extended** **>= 0.8.0** (otherwise PostCSS won't work)
+- Hugo **extended** **>= 0.80.0** (otherwise PostCSS won't work)
 - npm
 - git
 
