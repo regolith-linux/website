@@ -3,7 +3,7 @@ title: "1.5.3 Release Notes"
 linkTitle: "1.5.3 Release Notes"
 weight: 1
 description: >
-  Release notes for Regolith 1.5.3.
+  Release notes for Regolith 1.5.3
 ---
 
 Regolith 1.5.3 is a bug fix release.  The following list contains brief descriptions of fixes and updates per package since the Regolith 1.5.2 release:
