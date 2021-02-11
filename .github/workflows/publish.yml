@@ -8,7 +8,6 @@ on:
     - 'crowdin.yml'
     - 'package*.json'
     - 'CONTRIBUTING.md'
-    - 'Gemfile.lock'
     - 'LICENSE'
 
 
