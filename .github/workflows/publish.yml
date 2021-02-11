@@ -3,6 +3,14 @@ on:
   push:
     branches:
       - v2
+    paths-ignore:
+    - 'README.md'
+    - 'crowdin.yml'
+    - 'package*.json'
+    - 'CONTRIBUTING.md'
+    - 'Gemfile.lock'
+    - 'LICENSE'
+
 
 jobs:
   publish:

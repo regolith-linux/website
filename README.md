@@ -23,13 +23,11 @@ $ hugo server
 
 Edit content as needed. If `hugo server` is running then updates are automatically reloaded after committing changes to disk.
 
-### Deploy update
+### Update website on GitHub Pages
 
-Once you're ready to publish, commit your changes and then run the `deploy.sh` script to generate the site and publish it to GitHub. <sub>This requires write access to Regolith's git repo `website`.</sub>
+GitHub Actions on the repository is configured to deploy any and all changes to the `v2` branch automatically, no further action needed. The `CNAME` ([https://www.regolith-linux.org](https://www.regolith-linux.org)) is configured automatically, no need to add it.
 
-```bash
-$ ./deploy "reason for change"
-```
+If you believe that your changes ought to be reviewed by a second party, just open a pull request and have somebody else jump in and cross-check your edits.
 
 ### Shortcodes
 
