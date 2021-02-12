@@ -21,6 +21,7 @@ jobs:
       - name: Build website
         env:
           NODE_PATH: /usr/lib/node_modules
+          HUGO_ENV: production
         uses: jakejarvis/hugo-build-action@v0.79.1
         with:
           args: --minify
