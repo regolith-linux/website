@@ -1,0 +1,17 @@
+{
+  "interactWithCommunity": {
+    "other": "Interact with the {{ .Site.Title }} project"
+  },
+  "partialsCommunityLinksLearnToConnect": {
+    "other": "Learn and Connect"
+  },
+  "partialsCommunityLinksUsingWantToUse": {
+    "other": "Using or want to use {{ .Site.Title }}? Find out more here"
+  },
+  "partialsCommunityLinksDevelopAndContribute": {
+    "other": "Develop and Contribute"
+  },
+  "partialsCommunityLinksWantToGetInvolved": {
+    "other": "If you want to get more involved by contributing to {{ .Site.Title }}, join us here"
+  }
+}
