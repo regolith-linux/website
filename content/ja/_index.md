@@ -5,7 +5,7 @@ linkTitle: "Regolith Linux"
 
 {{< blocks/cover image_anchor="top" height="full" >}}
 
-<h2 class="m-5">Regolith is a modern desktop environment designed to let you work faster by reducing unnecessary clutter and ceremony. Built on top of Ubuntu, GNOME, and i3, Regolith stands on a well-supported and consistent foundation.</h2>
+<h2 class="m-5">レゴリスは開発者のために何よりもシンプルな環境で、より効率のよい作業をしてもらいたく設計された、デスクトップ環境です。 Built on top of Ubuntu, GNOME, and i3, Regolith stands on a well-supported and consistent foundation.</h2>
 
 <div class="row"> <div class="col-sm-8 mb-5">{{< img "images/regolith-screenshot-intro.png" "Regolith Linux" >}}</div>
   <div class="col-sm-4">
@@ -26,16 +26,16 @@ linkTitle: "Regolith Linux"
   </div>
 {{< /blocks/cover >}}
 
-<a name="td-block-1"><h3 class="text-center p-5" >Visual Tour</h3></a>
+<a name="td-block-1"><h3 class="text-center p-5" >ビジュアル</h3></a>
 
 <div class="container mt-3">
   <div class="row pb-5">
-    <div class="col-8 my-auto"><p>Upon first login, an overlay (toggled anytime via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">?</span></span>) presents the most important keybindings used with i3-wm.</p></div>
+    <div class="col-8 my-auto"><p>最初のログイン時にオーバーレイで（ <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">?</span></span>で常にトグル可）i3-wm使用の主要キーバインディングを表示。</p></div>
     <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-remontoire.png" "Shortcuts" >}}</div>
   </div>
   <div class="row pb-5">
     <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-terminal.png" "Single Terminal" >}}</div>
-    <div class="col-8 my-auto"><p>For those that work in the terminal, pressing <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span> is all it takes to get to business.</p></div>    
+    <div class="col-8 my-auto"><p>ターミナルで作業する場合には、<super>-<enter> で移動。</p></div>    
   </div>
   <div class="row pb-5">
     <div class="col-8 my-auto"><p>A single global app launcher is instantly available from anywhere to run your programs via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>.</p></div>
