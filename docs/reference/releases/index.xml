@@ -1,5 +1,5 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith 1.5.3 – Releases</title><link>https://regolith-linux.org/docs/reference/releases/</link><description>Recent content in Releases on Regolith 1.5.3</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://regolith-linux.org/docs/reference/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 1.6 Release Notes</title><link>https://regolith-linux.org/docs/reference/releases/regolith-1.6-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/releases/regolith-1.6-release/</guid><description>
-&lt;p>Regolith R1.5 is a feature release which includes several improvements and optimizations. Regolith 1.6&amp;rsquo;s primary feature is a return of the ISO installation method.&lt;/p>
+&lt;p>Regolith R1.6 is a feature release which includes several improvements and optimizations. Regolith 1.6&amp;rsquo;s primary feature is a return of the ISO installation method.&lt;/p>
 &lt;h2 id="features">Features&lt;/h2>
 &lt;table>
 &lt;thead>
