@@ -1,55 +1,170 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith 1.5.3 – Documentation</title><link>https://regolith-linux.org/docs/</link><description>Recent content in Documentation on Regolith 1.5.3</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://regolith-linux.org/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 1.5.3 Release Notes</title><link>https://regolith-linux.org/docs/reference/releases/regolith-1.5.3-release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/releases/regolith-1.5.3-release-notes/</guid><description>
-&lt;p>Regolith 1.5.3 is a bug fix release. The following list contains brief descriptions of fixes and updates per package since the Regolith 1.5.2 release:&lt;/p>
-&lt;h4 id="release-notes-for-i3xrocks">Release Notes for i3xrocks&lt;/h4>
-&lt;p>i3xrocks (1.3.5-1) bionic; urgency=medium&lt;/p>
-&lt;p>[ Ken Gilmer ]&lt;/p>
-&lt;ul>
-&lt;li>Do not print system file error if user files do not exist. Addresses &lt;a href="https://github.com/regolith-linux/regolith-i3xrocks-config/issues/114">https://github.com/regolith-linux/regolith-i3xrocks-config/issues/114&lt;/a>.&lt;/li>
-&lt;/ul>
-&lt;h4 id="release-notes-for-regolith-desktop">Release Notes for regolith-desktop&lt;/h4>
-&lt;p>regolith-desktop (2.111-1bionic) bionic; urgency=medium&lt;/p>
-&lt;p>[ Ken Gilmer ]&lt;/p>
-&lt;ul>
-&lt;li>Move from i3xrocks-todo to regolith-todo to address &lt;a href="https://github.com/regolith-linux/regolith-todo/issues/6">https://github.com/regolith-linux/regolith-todo/issues/6&lt;/a>. Version bump in version file for 1.5.3.&lt;/li>
-&lt;/ul>
-&lt;h4 id="release-notes-for-regolith-i3xrocks-config">Release Notes for regolith-i3xrocks-config&lt;/h4>
-&lt;p>regolith-i3xrocks-config (3.5.7-1) bionic; urgency=medium&lt;/p>
-&lt;p>[ Ken Gilmer ]&lt;/p>
-&lt;ul>
-&lt;li>remove debugging output flag in net-traffic script&lt;/li>
-&lt;/ul>
-&lt;h4 id="release-notes-for-regolith-styles">Release Notes for regolith-styles&lt;/h4>
-&lt;p>regolith-styles (2.6.16-1) bionic; urgency=medium&lt;/p>
-&lt;p>[ Ken Gilmer ]&lt;/p>
-&lt;ul>
-&lt;li>Tweak to width to better match pixel equivalent at 1080p.&lt;/li>
-&lt;/ul>
-&lt;p>regolith-styles (2.6.15-1) bionic; urgency=medium&lt;/p>
-&lt;p>[ Ken Gilmer ]&lt;/p>
-&lt;ul>
-&lt;li>Use relative width over pixels for better HiDPI support of Rofi dialog. Idea from @eduncan911 in &lt;a href="https://github.com/regolith-linux/regolith-desktop/issues/417">https://github.com/regolith-linux/regolith-desktop/issues/417&lt;/a>.&lt;/li>
-&lt;/ul>
-&lt;h4 id="release-notes-for-regolith-todo">Release Notes for regolith-todo&lt;/h4>
-&lt;p>regolith-todo (1.2.1-1) bionic; urgency=medium&lt;/p>
-&lt;p>[ Ken Gilmer ]&lt;/p>
-&lt;ul>
-&lt;li>Specify that regolith-todo replaces i3xrocks-todo. Addresses &lt;a href="https://github.com/regolith-linux/regolith-todo/issues/6">https://github.com/regolith-linux/regolith-todo/issues/6&lt;/a>.&lt;/li>
-&lt;/ul>
-&lt;h4 id="release-notes-for-remontoire">Release Notes for remontoire&lt;/h4>
-&lt;p>remontoire (1.4.1-1) bionic; urgency=medium&lt;/p>
-&lt;p>[ Mark Stosberg ]&lt;/p>
-&lt;ul>
-&lt;li>Document &lt;code>-i&lt;/code>, &lt;code>-p&lt;/code>. (#11)&lt;/li>
-&lt;/ul>
-&lt;p>[ Michael Vetter ]&lt;/p>
-&lt;ul>
-&lt;li>Add openSUSE install instructions&lt;/li>
-&lt;/ul>
-&lt;p>[ Ken Gilmer ]&lt;/p>
-&lt;ul>
-&lt;li>Add fonts-font-awesome as soft dependency based on reference in CSS file and user feedback. Addresses &lt;a href="https://github.com/regolith-linux/remontoire/issues/16">https://github.com/regolith-linux/remontoire/issues/16&lt;/a>.&lt;/li>
-&lt;li>Cleanup&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Install</title><link>https://regolith-linux.org/docs/getting-started/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/getting-started/install/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith 1.5.3 – Documentation</title><link>https://regolith-linux.org/docs/</link><description>Recent content in Documentation on Regolith 1.5.3</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://regolith-linux.org/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 1.6 Release Notes</title><link>https://regolith-linux.org/docs/reference/releases/regolith-1.6-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/releases/regolith-1.6-release/</guid><description>
+&lt;p>Regolith R1.5 is a feature release which includes several improvements and optimizations. Regolith 1.6&amp;rsquo;s primary feature is a return of the ISO installation method.&lt;/p>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Feature&lt;/th>
+&lt;th>Screenshot&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Return of Regolith Linux ISO&lt;/td>
+&lt;td>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-fcb92ef30a33e211eaf1ce33c94fa31a76900d463090c47a11b9a52d812240b3" class="rounded img-fluid"
+src="https://regolith-linux.org/images/releases/regolith-1.6.0-login_hu42ace144807b6547be692797969dd63e_573960_636x0_resize_catmullrom_2.png" alt="Regolith 1.6 Login Screen" />
+&lt;div class="modal" id="img-modal-fcb92ef30a33e211eaf1ce33c94fa31a76900d463090c47a11b9a52d812240b3">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/releases/regolith-1.6.0-login.png" alt="Regolith 1.6 Login Screen" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/td>
+&lt;td>Up to Regolith 1.4.1, we hand-built each ISO for major version releases. This became too brittle and time intensive, and so work began on &lt;a href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder">build automation to generate the ISO&lt;/a>. This took quite awhile to complete but is &lt;a href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases">now available&lt;/a> for the 1.6 release.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>New Look: Midnight&lt;/td>
+&lt;td>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-c44a4d00e7aa7487a4fed621885138d04d458030e0761d7e41999d599a9a673f" class="rounded img-fluid"
+src="https://regolith-linux.org/images/releases/regolith-look-midnight_hu442da0da95fd2b7003fc8c695163dbe9_1942994_636x0_resize_catmullrom_2.png" alt="Midnight Look" />
+&lt;div class="modal" id="img-modal-c44a4d00e7aa7487a4fed621885138d04d458030e0761d7e41999d599a9a673f">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/releases/regolith-look-midnight.png" alt="Midnight Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/td>
+&lt;td>Fabian (naib864) has provided a distinctive new look with new font, icons, and GTK theme.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>New Look: Solarized Light&lt;/td>
+&lt;td>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-f5745bf07850c7ca2618ca80348874910d65daadfd044fdaea7b1417e16d35f8" class="rounded img-fluid"
+src="https://regolith-linux.org/images/releases/regolith-look-solarized-light_hu915278672350bdc6b8407446ff798318_767036_636x0_resize_catmullrom_2.png" alt="Solarized Light Look" />
+&lt;div class="modal" id="img-modal-f5745bf07850c7ca2618ca80348874910d65daadfd044fdaea7b1417e16d35f8">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/releases/regolith-look-solarized-light.png" alt="Solarized Light Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/td>
+&lt;td>Ricardo Pérez (ricpelo) has provided a solarized light theme.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>New Status Indicator: app-launcher&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>Regolith user Laurent provided the idea to add a status indicator to launch Rofi, and so &lt;code>i3xrocks-app-launcher&lt;/code> was added for those that prefer to use the mouse to launch apps.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="fixes">Fixes&lt;/h2>
+&lt;p>Have a look at &lt;a href="https://github.com/orgs/regolith-linux/projects/12">the R1.6 project page&lt;/a> for a list of bug fixes.&lt;/p>
+&lt;h2 id="changelog-delta-from-regolith-153-to-regolith-16">Changelog Delta from Regolith 1.5.3 to Regolith 1.6&lt;/h2>
+&lt;pre>&lt;code>dracula-gtk (1.1.0-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Add icons to dracula theme
+regolith-desktop (2.122-1bionic) bionic; urgency=medium
+[ Ken Gilmer ]
+* Add app launcher to complete desktop metapackage. Fix unneeded dep on mutter-common.
+regolith-desktop (2.118-1bionic) bionic; urgency=medium
+[ Ken Gilmer ]
+* Version bump to 1.6.0
+regolith-ftue (1.1.2-1) bionic; urgency=medium
+[ Jordan Callicoat ]
+* More Xresources options for GNOME Terminal
+regolith-i3-gaps-config (2.8.6-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* specify default workspace layout mode
+regolith-i3-gaps-config (2.8.5-1) bionic; urgency=medium
+[ Bence Ferdinandy ]
+* adding $mod+s for sound setting (#36)
+[ Ken Gilmer ]
+* Fix urls to howtos. Relates to https://github.com/regolith-linux/regolith-i3-config/pull/1.
+regolith-i3xrocks-config (3.6.3-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Add missing dependency to net-traffic script on iproute2
+regolith-i3xrocks-config (3.6.2-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Fix control file
+* Fix config for app-launcher, remove incorrect interval on next-workspace
+regolith-i3xrocks-config (3.6.1-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Take nicolas-lopez's contribution via gist as microphone status indicator. Related to https://github.com/regolith-linux/regolith-i3xrocks-config/issues/105.
+* Add app launcher status indicator
+regolith-rofication (1.3.2-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Require i3xrocks-rofication to be upgraded first, due to file collision between i3xrocks-rofication and regolith-rofication
+[ Carles Sala ]
+* Close window after deleting the last notification (#8)
+regolith-styles (2.9.2-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Fix color value unparsable by i3
+regolith-styles (2.9.1-1) bionic; urgency=medium
+[ Ricardo Pérez ]
+* Fixes Gtk theme (SolArc-Dark -&amp;gt; SolArc) (#44)
+regolith-styles (2.9.0-1) bionic; urgency=medium
+[ Ricardo Pérez ]
+* New solarized-light theme (#43)
+[ Ken Gilmer ]
+* Package solarlized-light look contribution from @ricpelo
+* Add icon for app launcher shortcut
+regolith-styles (2.8.4-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Revert font specification to original
+regolith-styles (2.8.3-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Add app launcher glyph
+regolith-styles (2.8.2-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Fix font specification for midnight look
+regolith-styles (2.8.1-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* midnight theme package fixes
+regolith-styles (2.8.0-1) bionic; urgency=medium
+[ Fabian ]
+* Add midnight theme (#37)
+[ Ken Gilmer ]
+* Add dependencies to midnight look
+regolith-styles (2.7.1-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Specify different color for indicator to make window orientation indicator visible in dracula. Fixes https://github.com/regolith-linux/regolith-styles/issues/40.
+* Revert to single column mode in lascaille
+* Use accent color for orientation border decoration in lascaille
+regolith-styles (2.7.0-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Rofi app launcher in two columns
+regolith-styles (2.6.17-1) bionic; urgency=medium
+[ HieuTranTH ]
+* dracula: Fix a typo in i3-wm config file (#41)
+* ubuntu: Fix color_base2 incomplete hex code (#42)
+[ Ken Gilmer ]
+* Add highlight to bar for non-active focused windows for better multi-monitor experience (lascaille)
+regolith-system (1.5.3-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Add recommends for Regolith system packages
+regolith-system (1.5.2-1) hirsute; urgency=medium
+[ Ken Gilmer ]
+* remove deprecated dependency
+rofi (1.6.1-1regolith1) bionic; urgency=medium
+* Adapted package metadata from Ubuntu for 1.6.1 release
+ubiquity-slideshow-regolith (168.5-regolith1) focal; urgency=medium
+[ Ken Gilmer ]
+* Update virtual package dependency for focal
+ubiquity-slideshow-regolith (168.4-regolith1) focal; urgency=medium
+[ Ken Gilmer ]
+* Lots of cleanup
+&lt;/code>&lt;/pre></description></item><item><title>Docs: Install</title><link>https://regolith-linux.org/docs/getting-started/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/getting-started/install/</guid><description>
 &lt;p>Based on your preferred installation method, follow one of the following two sections to install Regolith. Unlike previous versions of Regolith, PPA and ISO installs result in different configurations. The PPA install favors coexistence with the existing Ubuntu desktop, while the ISO release optimizes for less resource utilization. Specifically, the ISO install is roughly 1Gb smaller and cold start RAM usage is reduced by about 200Mb as compared to the PPA installation.&lt;/p>
 &lt;h2 id="option-1-regolith-linux-via-installer">Option 1: Regolith Linux via Installer&lt;/h2>
 &lt;p>At this time an &lt;a href="https://github.com/orgs/regolith-linux/projects/15">installer for Regolith 1.5&lt;/a> is not available, however the 1.4.1 installer can be upgraded to 1.5.1.&lt;/p>
@@ -2308,7 +2423,58 @@ src="https://regolith-linux.org/images/regolith-desktop-graph-l2_hub6baaa44380cc
 &lt;td>Optional arguments used by the &lt;code>media-player&lt;/code> i3xrocks block. These arguments are fed straight into &lt;code>playerctl&lt;/code>, eg. setting this value to &lt;code>-p spotify&lt;/code> only makes the bar display/control spotify.&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>Docs: 1.5.2 Release Notes</title><link>https://regolith-linux.org/docs/reference/releases/regolith-1.5.2-release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/releases/regolith-1.5.2-release-notes/</guid><description>
+&lt;/table></description></item><item><title>Docs: 1.5.3 Release Notes</title><link>https://regolith-linux.org/docs/reference/releases/regolith-1.5.3-release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/releases/regolith-1.5.3-release-notes/</guid><description>
+&lt;p>Regolith 1.5.3 is a bug fix release. The following list contains brief descriptions of fixes and updates per package since the Regolith 1.5.2 release:&lt;/p>
+&lt;h4 id="release-notes-for-i3xrocks">Release Notes for i3xrocks&lt;/h4>
+&lt;p>i3xrocks (1.3.5-1) bionic; urgency=medium&lt;/p>
+&lt;p>[ Ken Gilmer ]&lt;/p>
+&lt;ul>
+&lt;li>Do not print system file error if user files do not exist. Addresses &lt;a href="https://github.com/regolith-linux/regolith-i3xrocks-config/issues/114">https://github.com/regolith-linux/regolith-i3xrocks-config/issues/114&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="release-notes-for-regolith-desktop">Release Notes for regolith-desktop&lt;/h4>
+&lt;p>regolith-desktop (2.111-1bionic) bionic; urgency=medium&lt;/p>
+&lt;p>[ Ken Gilmer ]&lt;/p>
+&lt;ul>
+&lt;li>Move from i3xrocks-todo to regolith-todo to address &lt;a href="https://github.com/regolith-linux/regolith-todo/issues/6">https://github.com/regolith-linux/regolith-todo/issues/6&lt;/a>. Version bump in version file for 1.5.3.&lt;/li>
+&lt;/ul>
+&lt;h4 id="release-notes-for-regolith-i3xrocks-config">Release Notes for regolith-i3xrocks-config&lt;/h4>
+&lt;p>regolith-i3xrocks-config (3.5.7-1) bionic; urgency=medium&lt;/p>
+&lt;p>[ Ken Gilmer ]&lt;/p>
+&lt;ul>
+&lt;li>remove debugging output flag in net-traffic script&lt;/li>
+&lt;/ul>
+&lt;h4 id="release-notes-for-regolith-styles">Release Notes for regolith-styles&lt;/h4>
+&lt;p>regolith-styles (2.6.16-1) bionic; urgency=medium&lt;/p>
+&lt;p>[ Ken Gilmer ]&lt;/p>
+&lt;ul>
+&lt;li>Tweak to width to better match pixel equivalent at 1080p.&lt;/li>
+&lt;/ul>
+&lt;p>regolith-styles (2.6.15-1) bionic; urgency=medium&lt;/p>
+&lt;p>[ Ken Gilmer ]&lt;/p>
+&lt;ul>
+&lt;li>Use relative width over pixels for better HiDPI support of Rofi dialog. Idea from @eduncan911 in &lt;a href="https://github.com/regolith-linux/regolith-desktop/issues/417">https://github.com/regolith-linux/regolith-desktop/issues/417&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="release-notes-for-regolith-todo">Release Notes for regolith-todo&lt;/h4>
+&lt;p>regolith-todo (1.2.1-1) bionic; urgency=medium&lt;/p>
+&lt;p>[ Ken Gilmer ]&lt;/p>
+&lt;ul>
+&lt;li>Specify that regolith-todo replaces i3xrocks-todo. Addresses &lt;a href="https://github.com/regolith-linux/regolith-todo/issues/6">https://github.com/regolith-linux/regolith-todo/issues/6&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="release-notes-for-remontoire">Release Notes for remontoire&lt;/h4>
+&lt;p>remontoire (1.4.1-1) bionic; urgency=medium&lt;/p>
+&lt;p>[ Mark Stosberg ]&lt;/p>
+&lt;ul>
+&lt;li>Document &lt;code>-i&lt;/code>, &lt;code>-p&lt;/code>. (#11)&lt;/li>
+&lt;/ul>
+&lt;p>[ Michael Vetter ]&lt;/p>
+&lt;ul>
+&lt;li>Add openSUSE install instructions&lt;/li>
+&lt;/ul>
+&lt;p>[ Ken Gilmer ]&lt;/p>
+&lt;ul>
+&lt;li>Add fonts-font-awesome as soft dependency based on reference in CSS file and user feedback. Addresses &lt;a href="https://github.com/regolith-linux/remontoire/issues/16">https://github.com/regolith-linux/remontoire/issues/16&lt;/a>.&lt;/li>
+&lt;li>Cleanup&lt;/li>
+&lt;/ul></description></item><item><title>Docs: 1.5.2 Release Notes</title><link>https://regolith-linux.org/docs/reference/releases/regolith-1.5.2-release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/releases/regolith-1.5.2-release-notes/</guid><description>
 &lt;p>Regolith 1.5.2 is a bug fix release. The following list contains brief descriptions of fixes and updates per package since the Regolith 1.5.1 release:&lt;/p>
 &lt;h4 id="release-notes-for-regolith-compositor-picom-glx">Release Notes for regolith-compositor-picom-glx&lt;/h4>
 &lt;ul>
@@ -3753,25 +3919,4 @@ instance=BAT0
 interval=30
 instance=BAT1
 &lt;/code>&lt;/pre>&lt;h2 id="further-reading">Further Reading&lt;/h2>
-&lt;p>See the &lt;a href="https://regolith-linux.org/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Switch between Regolith PPAs</title><link>https://regolith-linux.org/docs/howtos/change-ppa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/change-ppa/</guid><description>
-&lt;p>This page describes how to configure the package system to consume Regolith packages between a set of PPAs.&lt;/p>
-&lt;h2 id="regolith-ppas">Regolith PPAs&lt;/h2>
-&lt;p>See this section for &lt;a href="https://regolith-linux.org/docs/getting-started/install/#ppa-sources">a description of each PPA&lt;/a>. By default users will be on the &lt;code>release&lt;/code> PPA which is intended to only be updated upon bug fixes and versioned releases. Here is how to switch to the &lt;code>unstable&lt;/code> PPA, by updating the apt packaging configuration:&lt;/p>
-&lt;ol>
-&lt;li>Remove the existing &lt;code>release&lt;/code> PPA:&lt;/li>
-&lt;/ol>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ sudo add-apt-repository --remove ppa:regolith-linux/release
-&lt;/code>&lt;/pre>&lt;ol start="2">
-&lt;li>Add the new &lt;code>unstable&lt;/code> PPA:&lt;/li>
-&lt;/ol>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ sudo add-apt-repository ppa:regolith-linux/unstable
-$ sudo apt update
-&lt;/code>&lt;/pre>&lt;ol start="3">
-&lt;li>Upgrade packages to the upgraded versions contained in the new PPA:&lt;/li>
-&lt;/ol>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ sudo apt upgrade
-&lt;/code>&lt;/pre>&lt;h3 id="switch-back">Switch Back&lt;/h3>
-&lt;p>To return to the previon configuration, simply follow the steps above but toggle the PPA URIs. So, swap &lt;code>unstable&lt;/code> for &lt;code>release&lt;/code>.&lt;/p>
-&lt;p>Once the PPAs have been switched, to revert any unwanted package updates from the &lt;code>unstable&lt;/code> repository, simply install the specific version you wish to revert to. For example, if &lt;code>regolith-deskop&lt;/code> has version 4 in &lt;code>unstable&lt;/code> and version 3 in &lt;code>release&lt;/code>, you would have been upgraded to version 4 after using the &lt;code>unstable&lt;/code> PPA and taking updates. To revert back to version 3 after swapping back to the &lt;code>release&lt;/code> PPA, tell &lt;code>apt&lt;/code> the specific version you wish to install:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ sudo apt install regolith-desktop=3
-&lt;/code>&lt;/pre>&lt;p>The general form is &lt;code>apt install &amp;lt;package name&amp;gt;=&amp;lt;package version&amp;gt;&lt;/code>. You will be notified by &lt;code>apt&lt;/code> that the operation will result in a downgrade package version.&lt;/p></description></item></channel></rss>
+&lt;p>See the &lt;a href="https://regolith-linux.org/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item></channel></rss>
