@@ -6,7 +6,7 @@ description: >
   Release notes for Regolith 1.6
 ---
 
-Regolith R1.5 is a feature release which includes several improvements and optimizations. Regolith 1.6's primary feature is a return of the ISO installation method.
+Regolith R1.6 is a feature release which includes several improvements and optimizations. Regolith 1.6's primary feature is a return of the ISO installation method.
 
 ## Features
 
