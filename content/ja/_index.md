@@ -30,7 +30,7 @@ linkTitle: "Regolith Linux"
 
 <div class="container mt-3">
   <div class="row pb-5">
-    <div class="col-8 my-auto"><p>最初のログイン時にオーバーレイで（ <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">?</span></span>で常にトグル可）i3-wm使用の主要キーバインディングを表示。</p></div>
+    <div class="col-8 my-auto"><p>最初のログイン時にオーバーレイで（ <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">?</span></span>で常にトグル可）i3-wmで使用される主要キーバインディングを表示。</p></div>
     <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-remontoire.png" "Shortcuts" >}}</div>
   </div>
   <div class="row pb-5">
