@@ -38,36 +38,36 @@ linkTitle: "Regolith Linux"
     <div class="col-8 my-auto"><p>ターミナルで作業する場合には、<super>-<enter> で移動。</p></div>    
   </div>
   <div class="row pb-5">
-    <div class="col-8 my-auto"><p>A single global app launcher is instantly available from anywhere to run your programs via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>.</p></div>
+    <div class="col-8 my-auto"><p><span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span> のグローバルアプリランチャで瞬時にどの画面からも使用しているプログラムを立ち上げ可能。</p></div>
     <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-launcher.png" "Launcher" >}}</div>    
   </div>
   <div class="row pb-5">
     <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-terminals.png" "Terminals" >}}</div>
-    <div class="col-8 my-auto"><p>Need more terminals?  Create layouts on the fly by toggling between horizontal and vertical modes with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">backspace</span></span> followed by <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span>.  Navigate to windows positionally with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">h</span> <span class="badge badge-warning">j</span> <span class="badge badge-warning">k</span> <span class="badge badge-warning">l</span></span>.</p></div>    
+    <div class="col-8 my-auto"><p>Need more terminals?  ターミナルを追加する場合には、垂直レイアウトと平行レイアウトの間をトグルするだけで新しいターミナルの追加ができる。？？？？修正必要？？？まずは<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">backspace</span></span>の後に  Navigate to windows positionally with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">h</span> <span class="badge badge-warning">j</span> <span class="badge badge-warning">k</span> <span class="badge badge-warning">l</span></span>.</p></div>    
   </div>
   <div class="row pb-5">
-    <div class="col-8 my-auto"><p>Toggle floating window mode with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">F</span></span>.  Resize windows with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">r</span></span> and move them around with the mouse by pressing <span class="badge badge-warning">super</span>.</p></div>
+    <div class="col-8 my-auto"><p>？？フローティングウィンドウモードを <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">F</span></span>でトグルする。 <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">r</span></span>でウィンドウのサイズ調整、<span class="text-nowrap"><span class="badge badge-warning">super</span> を押しながらマウスで移動させる。  Resize windows with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">r</span></span> and move them around with the mouse by pressing <span class="badge badge-warning">super</span>.</p></div>
     <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-float.png" "Window Float" >}}</div>    
   </div>
   <div class="row pb-5">
     <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-gnome.png" "GNOME system admin" >}}</div>
-    <div class="col-8 my-auto"><p>Gnome Flashback provides consistent and simple system management. Tweak your UI, auto mount your USB drives, connect to wireless networks. Launch the control panel with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span>.</p></div>    
+    <div class="col-8 my-auto"><p>Gnome Flashbackは一貫したシンプルなシステム環境を提供します。 お使いのUIを調整、USBドライブをオートマウントし、ワイヤレスルーターに接続します。  <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">c</span></span>でコントロールパネルを起動。</p></div>    
   </div>
   <div class="row pb-5">
-    <div class="col-8 my-auto"><p>Easily switch to <a href="https://ethanschoonover.com/solarized">Solarized</a> or other looks with the <code>regolith-look</code> command. Because <b>looks</b> utilize the package manager, you only store theme resources that you're using.</p></div>
+    <div class="col-8 my-auto"><p>Solarized などへの変換は <code>regolith-look</code>を使い簡単に。 regolithルックコマンドを使って、Solarizedなどへの変換がとても簡単。使用しているリソースのみを保存するので？？？？？？？</p></div>
     <div class="col-4 my-auto border rounded p-1">{{< img "images/regolith-screenshot-solarized.png" "Solarized" >}}</div>    
   </div>
   <div class="row pb-5">
     <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-updates.png" "System Updates" >}}</div>
-    <div class="col-8 my-auto"><p>Regolith is built on Ubuntu, providing a system that's up to date and stable.</p></div>    
+    <div class="col-8 my-auto"><p>Ubuntu上に構築されたRegolithは、最新の安定したシステムを提供。</p></div>    
   </div>
   <div class="row pb-5">
-    <div class="col-8 my-auto"><p>Got a lot going on?  Quickly find the window you're looking for via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> or navigate over workspaces with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">[0 - 19]</span></span>.</p></div>
+    <div class="col-8 my-auto"><p>Got a lot going on?  複数ウィンドウ同時進行でも迷子にならない。 <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> もしくは <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">[0 - 19]</span></span>で瞬時に必要なウィンドウを見つける。</p></div>
     <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-window.png" "Shortcuts" >}}</div>    
   </div>
   <div class="row pb-5">
     <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-develop.png" "Window Management" >}}</div>
-    <div class="col-8 my-auto"><p>Waste no space on frivolous UI and take advantage of every pixel without micro-managing your window layouts.</p></div>    
+    <div class="col-8 my-auto"><p>スペースを無駄にしない。全ピクセルを使って作業したい。しかも画面レイアウトに時間を取りたくはない。</p></div>    
   </div>
   <div class="row pb-5">
     <div class="col-8 my-auto"><p>Desktop notifications do not compete for your attention, but rather can be managed via an on-screen dialog by pressing <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">n</span></span>.</p></div>
