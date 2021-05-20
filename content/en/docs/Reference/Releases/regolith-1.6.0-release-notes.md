@@ -16,6 +16,7 @@ Regolith R1.6 is a feature release which includes several improvements and optim
 | New Look: Midnight                     | {{< img "images/releases/regolith-look-midnight.png" "Midnight Look" >}} | Fabian (naib864) has provided a distinctive new look with new font, icons, and GTK theme. |
 | New Look: Solarized Light         | {{< img "images/releases/regolith-look-solarized-light.png" "Solarized Light Look" >}} | Ricardo Pérez (ricpelo) has provided a solarized light theme.
 | New Status Indicator: app-launcher| | Regolith user Laurent provided the idea to add a status indicator to launch Rofi, and so `i3xrocks-app-launcher` was added for those that prefer to use the mouse to launch apps. | 
+| Upgrades to i3-gaps and Rofi | | [i3-gaps is updated to 4.19.1](https://github.com/Airblader/i3/releases/tag/4.19.1) and [Rofi to 1.6.1](https://github.com/davatorium/rofi/releases/tag/1.6.1). | 
 
 ## Fixes
 
