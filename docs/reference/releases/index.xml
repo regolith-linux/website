@@ -66,6 +66,11 @@ src="https://regolith-linux.org/images/releases/regolith-look-solarized-light_hu
 &lt;td>&lt;/td>
 &lt;td>Regolith user Laurent provided the idea to add a status indicator to launch Rofi, and so &lt;code>i3xrocks-app-launcher&lt;/code> was added for those that prefer to use the mouse to launch apps.&lt;/td>
 &lt;/tr>
+&lt;tr>
+&lt;td>Upgrades to i3-gaps and Rofi&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;a href="https://github.com/Airblader/i3/releases/tag/4.19.1">i3-gaps is updated to 4.19.1&lt;/a> and &lt;a href="https://github.com/davatorium/rofi/releases/tag/1.6.1">Rofi to 1.6.1&lt;/a>.&lt;/td>
+&lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h2 id="fixes">Fixes&lt;/h2>
