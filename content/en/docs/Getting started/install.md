@@ -28,7 +28,7 @@ $ sudo apt update && sudo apt dist-upgrade
 1. Add the Regolith release PPA to your system: (See below about [PPA sources](#ppa-sources) for other package archives.)
 
 ```console
-$ sudo add-apt-repository ppa:regolith-linux/release
+$ sudo add-apt-repository -y ppa:regolith-linux/stable
 ```
 
 2. Install the Regolith desktop package ([see below for other desktop packages](#desktop-packages) available):
