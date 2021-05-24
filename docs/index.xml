@@ -790,110 +790,196 @@ and the notification window can be dismissed with
 &lt;span class="badge badge-warning">delete&lt;/span>
 &lt;/span>
 from within the notification menu.&lt;/p></description></item><item><title>Docs: Packages</title><link>https://regolith-linux.org/docs/reference/packages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/packages/</guid><description>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>&lt;strong>Package&lt;/strong>&lt;/th>
-&lt;th>&lt;strong>Description&lt;/strong>&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>i3-snapshot&lt;/td>
-&lt;td>Save and restore window layouts.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>i3xrocks&lt;/td>
-&lt;td>A fork of i3blocks that enables Xresources integration.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-assets&lt;/td>
-&lt;td>An optional package with additional wallpaper.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-builder&lt;/td>
-&lt;td>Scripts and metadata for building and hosting Regolith.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-compositor-compton-glx&lt;/td>
-&lt;td>A compositor configuration for Picom (recently renamed from Compton).&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-compositor-xcompmgr&lt;/td>
-&lt;td>A compositor configuration for xcompmgr.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-compositor-none&lt;/td>
-&lt;td>A compositor configuration for no compositor.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-desktop&lt;/td>
-&lt;td>The legacy (pre 1.5) root meta package for Regolith by which all other default packages are referenced.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-desktop-meta&lt;/td>
-&lt;td>The virtual package from which one of the following desktop packages can be installed into:&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-desktop-standard&lt;/td>
-&lt;td>The baseline desktop package that installs a reasonable subset of all Regolith functionality.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-desktop-complete&lt;/td>
-&lt;td>This installs all possible packages and adds roughly 180Mb to the installation footprint.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-desktop-minimal&lt;/td>
-&lt;td>This package is for system tweakers. Some functionality may be broken with this package, but it allows users to remove more from their system.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-desktop-mobile&lt;/td>
-&lt;td>A slight tweak to the standard package, this adds support for features common on laptops such as batteries.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-gdm3-theme&lt;/td>
-&lt;td>An optional package for an updated login screen.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-gnome-flashback&lt;/td>
-&lt;td>A customization of &lt;code>i3-gnome-flashback&lt;/code> for Regolith. Session init logic lives here.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-i3-gaps-config&lt;/td>
-&lt;td>Regolith&amp;rsquo;s version of the i3 config file.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-i3xrocks-config&lt;/td>
-&lt;td>Configuration for the status indicators in the bar.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-linux.github.io&lt;/td>
-&lt;td>This website.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-rofication&lt;/td>
-&lt;td>A customization of the Rofication project.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-st&lt;/td>
-&lt;td>The st-term with some patches applied.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>regolith-styles&lt;/td>
-&lt;td>Metadata that describes the UI look in Regolith including several binary packages for specific looks.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>remontoire&lt;/td>
-&lt;td>A GTK+ keybinding viewer that integrates with i3.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>xrescat&lt;/td>
-&lt;td>&lt;code>cat&lt;/code> for &lt;code>Xresources&lt;/code>.&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="diving-deeper">Diving Deeper&lt;/h2>
-&lt;p>For those looking for more specifics, a machine-readable form of all packages and branch versions associated with a release are defined in &lt;a href="https://github.com/regolith-linux/regolith-builder">this repo&lt;/a>. For example, R1.3&amp;rsquo;s packages are defined &lt;a href="https://github.com/regolith-linux/regolith-builder/blob/master/package-model-R1.3.json">here&lt;/a>.&lt;/p></description></item><item><title>Docs: Status Indicators</title><link>https://regolith-linux.org/docs/developer/status-indicators/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/developer/status-indicators/</guid><description>
+&lt;p>The Regolith project typically hosts a Git repository for every package not provided by an upstream project. &lt;a href="https://github.com/regolith-linux?q=&amp;amp;type=public&amp;amp;language=&amp;amp;sort=name">This page&lt;/a> lists these repositories and provides details regarding activity, summary of purpose, and last shipped version.&lt;/p></description></item><item><title>Docs: Regolith Looks</title><link>https://regolith-linux.org/docs/reference/looks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/looks/</guid><description>
+&lt;p>Regolith provides several visual styles, known as &amp;ldquo;looks&amp;rdquo;, that can be installed and used. To keep the install size of Regolith low, these looks are installed as Debian packages. By default only one look is shipped with Regolith: Lascaille. Other looks may be installed via the package manager and then loaded via
+&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">alt&lt;/span>
+&lt;span class="badge badge-warning">l&lt;/span>
+&lt;/span>
+.&lt;/p>
+&lt;h2 id="ayu">ayu&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-7d39a7579a21b0c089365eca3661f0068bdc65be050006581183d215595404a3" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/ayu-1.6_hu8a0b5722e2ca5370fd67297070b90b2b_728164_636x0_resize_catmullrom_2.png" alt="Ayu Look" />
+&lt;div class="modal" id="img-modal-7d39a7579a21b0c089365eca3661f0068bdc65be050006581183d215595404a3">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/ayu-1.6.png" alt="Ayu Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-ayu&lt;/code>&lt;/p>
+&lt;h2 id="ayu-dark">ayu-dark&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-6f3fb8bfe5b4b7ffd2dfe992211246b5fc719a7a0f51921145204e199b23521d" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/ayu-dark-1.6_hu8a0b5722e2ca5370fd67297070b90b2b_679040_636x0_resize_catmullrom_2.png" alt="Ayu Dark Look" />
+&lt;div class="modal" id="img-modal-6f3fb8bfe5b4b7ffd2dfe992211246b5fc719a7a0f51921145204e199b23521d">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/ayu-dark-1.6.png" alt="Ayu Dark Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-ayu-dark&lt;/code>&lt;/p>
+&lt;h2 id="ayu-mirage">ayu-mirage&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-350356da44fdfb505b3aa7fba7988bd02cc0d5ca7bd7f70d9e8370002dcf615b" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/ayu-mirage-1.6_hu8a0b5722e2ca5370fd67297070b90b2b_683627_636x0_resize_catmullrom_2.png" alt="Ayu Mirage Look" />
+&lt;div class="modal" id="img-modal-350356da44fdfb505b3aa7fba7988bd02cc0d5ca7bd7f70d9e8370002dcf615b">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/ayu-mirage-1.6.png" alt="Ayu Mirage Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-ayu-mirage&lt;/code>&lt;/p>
+&lt;h2 id="cahuella">cahuella&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-625ea056b630a26c91ca2c9fc0a7c66e47d57758d637a878367e2f6df7626a33" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/cahuella-1.6_hua6ebffb15ba01bbbb74c21e04dee1ba5_718548_636x0_resize_catmullrom_2.png" alt="Cahuella Look" />
+&lt;div class="modal" id="img-modal-625ea056b630a26c91ca2c9fc0a7c66e47d57758d637a878367e2f6df7626a33">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/cahuella-1.6.png" alt="Cahuella Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-cahuella&lt;/code>&lt;/p>
+&lt;h2 id="dracula">dracula&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-b3e78b2abe470eb93604ee1f5af9d76181c11152c753f49852ca0346da562174" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/dracula-1.6_hu8a0b5722e2ca5370fd67297070b90b2b_632867_636x0_resize_catmullrom_2.png" alt="Dracula Look" />
+&lt;div class="modal" id="img-modal-b3e78b2abe470eb93604ee1f5af9d76181c11152c753f49852ca0346da562174">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/dracula-1.6.png" alt="Dracula Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-dracula&lt;/code>&lt;/p>
+&lt;h2 id="gruvbox">gruvbox&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-77fd33da1eceee6cb9db9c902a152d2d4f8d6914e6b1697bcdb02644629638ad" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/gruvbox-1.6_hu8a0b5722e2ca5370fd67297070b90b2b_631993_636x0_resize_catmullrom_2.png" alt="Gruvbox Look" />
+&lt;div class="modal" id="img-modal-77fd33da1eceee6cb9db9c902a152d2d4f8d6914e6b1697bcdb02644629638ad">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/gruvbox-1.6.png" alt="Gruvbox Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-gruvbox&lt;/code>&lt;/p>
+&lt;h2 id="lascaille">lascaille&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-822403edad7dea022b6f70545cd5951a3ce354d08666950a05de62236b5710f4" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/lascaille-1.6_hu8a0b5722e2ca5370fd67297070b90b2b_631330_636x0_resize_catmullrom_2.png" alt="Lascaille Look" />
+&lt;div class="modal" id="img-modal-822403edad7dea022b6f70545cd5951a3ce354d08666950a05de62236b5710f4">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/lascaille-1.6.png" alt="Lascaille Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-lascaille&lt;/code>&lt;/p>
+&lt;h2 id="midnight">midnight&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-a43f3dec891f69f66fb8147442f18ca13f4c42aef06ce325ac486bd837e660fe" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/midnight-1.6_hu479ed8d0eada13c142bdff7ac816343f_572942_636x0_resize_catmullrom_2.png" alt="Midnight Look" />
+&lt;div class="modal" id="img-modal-a43f3dec891f69f66fb8147442f18ca13f4c42aef06ce325ac486bd837e660fe">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/midnight-1.6.png" alt="Midnight Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-midnight&lt;/code>&lt;/p>
+&lt;h2 id="nord">nord&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-5df94c839733b6839189cfb113ae8885ab1bba0a320266d925d5d1c0060587dc" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/nord-1.6_hu4ffdd43ec3d693786c21dc24420c7436_311734_636x0_resize_catmullrom_2.png" alt="Nord Look" />
+&lt;div class="modal" id="img-modal-5df94c839733b6839189cfb113ae8885ab1bba0a320266d925d5d1c0060587dc">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/nord-1.6.png" alt="Nord Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-nord&lt;/code>&lt;/p>
+&lt;h2 id="pop-os">pop-os&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-26e9be4b22f402b80970e9045611ac77577098939541fbdb3a2144d2fee3084c" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/pop-os-1.6_hu5d7c0d9fe8b4247e88f3a24a0603204f_226502_636x0_resize_catmullrom_2.png" alt="Pop OS Look" />
+&lt;div class="modal" id="img-modal-26e9be4b22f402b80970e9045611ac77577098939541fbdb3a2144d2fee3084c">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/pop-os-1.6.png" alt="Pop OS Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-pop-os&lt;/code>&lt;/p>
+&lt;h2 id="solarized-dark">solarized-dark&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-6befa7279a4f0bf38accdd19af0c3baa683ff7f01b0ffa018b70fbefc6adcbbd" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/solarized-dark-1.6_hu7a4ce09270531e8f9fffe10678ba0501_593521_636x0_resize_catmullrom_2.png" alt="Solarized Dark Look" />
+&lt;div class="modal" id="img-modal-6befa7279a4f0bf38accdd19af0c3baa683ff7f01b0ffa018b70fbefc6adcbbd">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/solarized-dark-1.6.png" alt="Solarized Dark Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-solarized-dark&lt;/code>&lt;/p>
+&lt;h2 id="solarized-light">solarized-light&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-e532eb713d6eb8c07c6ba17b12928a1d65dc751bfa7b1e10c2ca836c3a536a82" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/solarized-light-1.6_hu72e279e41c2f5af6b0af63464d31292f_304357_636x0_resize_catmullrom_2.png" alt="Solarized Light Look" />
+&lt;div class="modal" id="img-modal-e532eb713d6eb8c07c6ba17b12928a1d65dc751bfa7b1e10c2ca836c3a536a82">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/solarized-light-1.6.png" alt="Solarized Light Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-solarized-light&lt;/code>&lt;/p>
+&lt;h2 id="ubuntu">ubuntu&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-0b5aeeb41d3216b45f8fc11b7243ffed806c6349d30649a9dec284e3d12482f7" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/ubuntu-1.6_hu25eca3819ad7164da296f64d490b778e_268351_636x0_resize_catmullrom_2.png" alt="Ubuntu Look" />
+&lt;div class="modal" id="img-modal-0b5aeeb41d3216b45f8fc11b7243ffed806c6349d30649a9dec284e3d12482f7">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/ubuntu-1.6.png" alt="Ubuntu Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-ubuntu&lt;/code>&lt;/p></description></item><item><title>Docs: Status Indicators</title><link>https://regolith-linux.org/docs/developer/status-indicators/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/developer/status-indicators/</guid><description>
 &lt;p>The &lt;code>i3bar&lt;/code> is the UI component that is displayed by default at the bottom of the screen. To the left is workspace information. This is built-in to &lt;code>i3bar&lt;/code> as it&amp;rsquo;s designed to be directly integrated with &lt;code>i3-wm&lt;/code>. On the right are various status indicators, which may vary based on which packages are installed. It&amp;rsquo;s common to have the time (&lt;code>i3xrocks-time&lt;/code>), notifications (&lt;code>regolith-rofication&lt;/code>), and network I/O (&lt;code>i3xrocks-net-traffic&lt;/code>). This page describes how to add new status indicators.&lt;/p>
 &lt;h2 id="execution">Execution&lt;/h2>
 &lt;p>In Regolith, status indicators are simply small scripts that run once or on an interval that return text when they complete. This text is interpreted by &lt;code>i3bar&lt;/code> and displayed. The program that executes the scripts is called &lt;code>i3xrocks&lt;/code>. It is a fork of another program, &lt;code>i3blocks&lt;/code> that adds two features that were necessary to support the Regolith desktop environment:&lt;/p>
@@ -3893,35 +3979,4 @@ $ cp /etc/regolith/i3/config ~/.config/regolith/i3/config
 &lt;/code>&lt;/pre>&lt;ol start="2">
 &lt;li>Log out and back in. The Regolith session will automatically detect your user-staged file and use that over the default in &lt;code>/etc/regolith/styles&lt;/code>.&lt;/li>
 &lt;/ol>
-&lt;p>Note that this root file is simply a reference to other styles that are broken down by the thing they are designed to style. For example, if you wish to customize the look of i3, you will need to also copy &lt;code>/etc/regolith/styles/i3-wm&lt;/code> into your user directory and then update the reference to the new file in your &lt;code>~/.Xresources-regolith&lt;/code>.&lt;/p></description></item><item><title>Docs: Support Multiple Batteries</title><link>https://regolith-linux.org/docs/howtos/multiple-batteries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/multiple-batteries/</guid><description>
-&lt;p>Out of the box the primary battery status will be displayed in the i3-bar. For some laptops that have multiple batteries, e.g. ThinkPads, you want to have both batteries displayed:&lt;/p>
-&lt;ol>
-&lt;li>&lt;a href="https://regolith-linux.org/docs/howtos/add-remove-blocklets/#customize-bar">Stage your i3xrocks configuration files&lt;/a>, then open &lt;code>~/.config/regolith/i3xrocks/conf.d/80_battery&lt;/code> in your editor of choice.&lt;/li>
-&lt;li>Find the line that pertains to the battery blocklet:&lt;/li>
-&lt;/ol>
-&lt;pre>&lt;code class="language-conf" data-lang="conf"># Battery indicator
-#
-# Displays total percentage charge left of specified battery.
-[battery]
-interval=30
-# instance=BAT0
-&lt;/code>&lt;/pre>&lt;ol start="3">
-&lt;li>List all the battery instances running on your machine by running:&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-sh" data-lang="sh">ls /sys/class/power_supply/
-&lt;span style="color:#8f5902;font-style:italic"># AC BAT0 BAT1&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="4">
-&lt;li>Update the staged config file to have a new blocklet as such:&lt;/li>
-&lt;/ol>
-&lt;pre>&lt;code class="language-conf" data-lang="conf">...
-# Battery indicator
-#
-# Displays total percentage charge left of specified battery.
-[battery]
-interval=30
-instance=BAT0
-[battery]
-interval=30
-instance=BAT1
-&lt;/code>&lt;/pre>&lt;h2 id="further-reading">Further Reading&lt;/h2>
-&lt;p>See the &lt;a href="https://regolith-linux.org/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item></channel></rss>
+&lt;p>Note that this root file is simply a reference to other styles that are broken down by the thing they are designed to style. For example, if you wish to customize the look of i3, you will need to also copy &lt;code>/etc/regolith/styles/i3-wm&lt;/code> into your user directory and then update the reference to the new file in your &lt;code>~/.Xresources-regolith&lt;/code>.&lt;/p></description></item></channel></rss>
