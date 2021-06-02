@@ -8,7 +8,7 @@ description: >
 
 ## Upgrades
 
-### Regolith 1.4.1 -> Regolith 1.5.1
+### Regolith 1.4.1 -> Regolith 1.6
 
 If your system already has added the `regolith-linux/release` PPA, then upgrading is just matter of performing a regular upgrade:
 
@@ -18,17 +18,9 @@ $ sudo apt update && sudo apt dist-upgrade
 
 After performing the update, log back in to your system. However, if you have staged your own i3 config file or `Xresources` root, read the below section "[Upgrading with Customizations](#upgrading-with-customizations)".
 
-### Regolith 1.0 - 1.2 -> Regolith 1.5.1
+### Regolith 1.0 - 1.2 -> Regolith 1.6
 
-To upgrade from Regolith 1.0 - 1.2, the PPA URL must be changed and then new package versions are applied by the package manager:
-
-```console
-$ sudo add-apt-repository --remove ppa:kgilmer/regolith-stable
-$ sudo add-apt-repository ppa:regolith-linux/release
-$ sudo apt update && sudo apt dist-upgrade
-```
-
-After performing these steps, you'll need to log out and back in again.
+Due to the age between releases, it's recommended to uninstall very old versions of Regolith and follow the general installation instructions to get Regolith 1.6.
 
 ### Upgrading with Customizations
 
