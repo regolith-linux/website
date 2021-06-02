@@ -2513,6 +2513,86 @@ src="https://regolith-linux.org/images/regolith-desktop-graph-l2_hub6baaa44380cc
 &lt;td>i3xrocks.media-player.player-args&lt;/td>
 &lt;td>Optional arguments used by the &lt;code>media-player&lt;/code> i3xrocks block. These arguments are fed straight into &lt;code>playerctl&lt;/code>, eg. setting this value to &lt;code>-p spotify&lt;/code> only makes the bar display/control spotify.&lt;/td>
 &lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.left&lt;/td>
+&lt;td>Optional command to run on left button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.middle&lt;/td>
+&lt;td>Optional command to run on middle button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.right&lt;/td>
+&lt;td>Override command to run on right button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.scrollup&lt;/td>
+&lt;td>Override command to run on scroll up of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.scrolldn&lt;/td>
+&lt;td>Override command to run on scroll down of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.left&lt;/td>
+&lt;td>Optional command to run on left button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.middle&lt;/td>
+&lt;td>Optional command to run on middle button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.right&lt;/td>
+&lt;td>Override command to run on right button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrollup&lt;/td>
+&lt;td>Override command to run on scroll up of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrolldn&lt;/td>
+&lt;td>Override command to run on scroll down of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.disk-capacity&lt;/td>
+&lt;td>Override command to run on disk capacity status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.cpu-usage&lt;/td>
+&lt;td>Override command to run on cpu usage status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.memory&lt;/td>
+&lt;td>Override command to run on memory status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.wifi&lt;/td>
+&lt;td>Override command to run on wifi status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.weather&lt;/td>
+&lt;td>Override command to run on weather status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.left&lt;/td>
+&lt;td>Optional command to run on left button click of media player status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.middle&lt;/td>
+&lt;td>Optional command to run on middle button click of media player status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.right&lt;/td>
+&lt;td>Override command to run on right button click of media player status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.time&lt;/td>
+&lt;td>Override command to run on date time status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.battery&lt;/td>
+&lt;td>Override command to run on battery status indicator.&lt;/td>
+&lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item><item><title>Docs: 1.5.3 Release Notes</title><link>https://regolith-linux.org/docs/reference/releases/regolith-1.5.3-release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/releases/regolith-1.5.3-release-notes/</guid><description>
 &lt;p>Regolith 1.5.3 is a bug fix release. The following list contains brief descriptions of fixes and updates per package since the Regolith 1.5.2 release:&lt;/p>
@@ -3281,7 +3361,7 @@ xrescat (1.2.0-1) bionic; urgency=medium
 [ Ken Gilmer ]
 * Update README for new double quote handling. Add gbp config. Cleanup.
 &lt;/code>&lt;/pre></description></item><item><title>Docs: 1.4.1 Release Notes</title><link>https://regolith-linux.org/docs/reference/releases/regolith-1.4.1-release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/releases/regolith-1.4.1-release-notes/</guid><description>
-&lt;p>Regolith R1.4.1 is a fast follow up to 1.4 that fixes a few serious bugs, &lt;a href="https://www.freelists.org/post/regolith-linux/Package-Updates-to-Release">detailed on the mailing list&lt;/a>. In addition to the package updates, a new boot animation is provided by the package &lt;code>plymouth-theme-regolith&lt;/code> that is installed by default on the ISO. The ISO also now excludes a deprecated &lt;code>touchpad&lt;/code> driver that was conflicting with Settings. Existing PPA-based installations can simply get the updates via their typical package update process. Regolith Linux ISO users can update to R1.4.1 by applying regular package updates and then follow &lt;a href=".https://regolith-linux.org/docs/howtos/update-14-141/">the upgrade guide&lt;/a> to perform some manual steps if they have touchpad issues or use encrypted root file systems.&lt;/p></description></item><item><title>Docs: 1.4 Release Notes</title><link>https://regolith-linux.org/docs/reference/releases/regolith-1.4-release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/releases/regolith-1.4-release-notes/</guid><description>
+&lt;p>Regolith R1.4.1 is a fast follow up to 1.4 that fixes a few serious bugs, &lt;a href="https://www.freelists.org/post/regolith-linux/Package-Updates-to-Release">detailed on the mailing list&lt;/a>. In addition to the package updates, a new boot animation is provided by the package &lt;code>plymouth-theme-regolith&lt;/code> that is installed by default on the ISO. The ISO also now excludes a deprecated &lt;code>touchpad&lt;/code> driver that was conflicting with Settings. Existing PPA-based installations can simply get the updates via their typical package update process. Regolith Linux ISO users can update to R1.4.1 by applying regular package updates.&lt;/p></description></item><item><title>Docs: 1.4 Release Notes</title><link>https://regolith-linux.org/docs/reference/releases/regolith-1.4-release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/releases/regolith-1.4-release-notes/</guid><description>
 &lt;p>Regolith R1.4 is a major feature release which includes several improvements and optimizations. Regolith is now smaller and more efficient. The ISO-based installer is now based from the Xubuntu image, and moves from the gdm3 display manager to LightDM. This allows for less resource consumption at runtime and dramatically smaller download size&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>. A new look, &lt;code>lascaille&lt;/code> and file search dialog round out the major new features. Read below for more details.&lt;/p>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>If you maintain your own i3 config file, note that the copy shipped in Regolith 1.4 has changed in that it reads more configuration from Xresources. The intention of this change is to require a full copy of the i3 config file &lt;b>less often&lt;/b>, by allowing users to customize the system via Xresource overrides instead of copy/edit of the i3 config file.&lt;/p>
@@ -3736,7 +3816,7 @@ src="https://regolith-linux.org/images/regolith-screenshot-settings-region_hu350
 &lt;li>Reload the &lt;code>Xresources&lt;/code> configuration:&lt;/li>
 &lt;/ol>
 &lt;pre>&lt;code class="language-console" data-lang="console">$ regolith-look refresh
-&lt;/code>&lt;/pre>&lt;h1 id="further-reading">Further Reading&lt;/h1>
+&lt;/code>&lt;/pre>&lt;h2 id="further-reading">Further Reading&lt;/h2>
 &lt;p>See the &lt;a href="https://regolith-linux.org/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Change the lock screen program</title><link>https://regolith-linux.org/docs/howtos/change-lockscreen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/change-lockscreen/</guid><description>
 &lt;h3 id="1-configure-gnome-flashback-to-disable-built-in-lockscreen">1. Configure &lt;code>gnome-flashback&lt;/code> to Disable Built-in Lockscreen&lt;/h3>
 &lt;p>By default &lt;code>gnome-flashback&lt;/code> handles the lock screen for Regolith. This can be adjusted by modifying it&amp;rsquo;s configuration via the &lt;code>gsettings&lt;/code> command line program:&lt;/p>
@@ -3812,7 +3892,16 @@ $ apt list &amp;lt;package name&amp;gt; # finds all packages
 &lt;/code>&lt;/pre>&lt;p>To install the battery status indicator, run:&lt;/p>
 &lt;pre>&lt;code class="language-console" data-lang="console">$ sudo apt install i3xrocks-battery
 &lt;/code>&lt;/pre>&lt;h1 id="find-and-install-packages-via-gui-app">Find and Install Packages via GUI app&lt;/h1>
-&lt;p>There are a number of apps that can provide a nice window interface on top of the apt packaging system, for example &lt;code>synaptic&lt;/code>. Refer to the documentation for the tool of your choice to learn how to search for and install packages.&lt;/p></description></item><item><title>Docs: Launch Default i3 Session</title><link>https://regolith-linux.org/docs/howtos/vanilla-i3-gaps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/vanilla-i3-gaps/</guid><description>
+&lt;p>There are a number of apps that can provide a nice window interface on top of the apt packaging system, for example &lt;code>synaptic&lt;/code>. Refer to the documentation for the tool of your choice to learn how to search for and install packages.&lt;/p></description></item><item><title>Docs: Launch an app in a Floating Window</title><link>https://regolith-linux.org/docs/howtos/floating-window/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/floating-window/</guid><description>
+&lt;p>Most X11 applications support a flag &lt;code>--class&lt;/code> to specify the &lt;code>class&lt;/code> under which the application runs. Regolith is configured such that apps with a class of &lt;code>floating_window&lt;/code> will launch with i3&amp;rsquo;s floating window mode.&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;h3 id="gnome-terminal">&lt;code>gnome-terminal&lt;/code>&lt;/h3>
+&lt;p>Launch the terminal in floating mode:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ gnome-terminal --class=floating_window
+&lt;/code>&lt;/pre>&lt;h3 id="firefox">Firefox&lt;/h3>
+&lt;p>Launch Firefox in floating mode:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ firefox --class=floating_window
+&lt;/code>&lt;/pre></description></item><item><title>Docs: Launch Default i3 Session</title><link>https://regolith-linux.org/docs/howtos/vanilla-i3-gaps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/vanilla-i3-gaps/</guid><description>
 &lt;p>To do so on Ubuntu, run &lt;code>sudo apt install i3-gaps-session&lt;/code> to add an option on login that starts vanilla i3-gaps without regolith.&lt;/p>
 &lt;h2 id="use-case">Use Case&lt;/h2>
 &lt;p>This is useful for, say, running an application that does not integrate well with GNOME. For example, Spotify&amp;rsquo;s unmaintained official Linux client mishandles its file selection dialogue and crashes when&lt;/p>
@@ -3952,31 +4041,4 @@ $ echo &amp;quot;i3-wm-alt: Mod4&amp;quot; &amp;gt;&amp;gt; ~/.config/regolith/X
 &lt;pre>&lt;code class="language-console" data-lang="console">$ echo &amp;quot;i3-wm.program.1: /usr/bin/nm-applet&amp;quot; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
 &lt;/code>&lt;/pre>&lt;p>This change requires you to log back in before the change takes effect.&lt;/p>
 &lt;h1 id="further-reading">Further Reading&lt;/h1>
-&lt;p>See the &lt;a href="https://regolith-linux.org/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Stage Config Files</title><link>https://regolith-linux.org/docs/howtos/stage-configs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/stage-configs/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>If you only wish to override or provide new &lt;code>Xresources&lt;/code> values, staging configs is no longer required. Overriding &lt;code>Xresources&lt;/code> value is described in a &lt;a href="https://regolith-linux.org/docs/howtos/override-xres/">separate article&lt;/a>.&lt;/p>
-&lt;/div>
-&lt;p>Regolith uses a number of files in &lt;code>/etc/regolith&lt;/code> to determine the behavior and look of various components. While it&amp;rsquo;s possible to simply edit these files directly, users who do so run the risk of having their configurations overwritten upon future updates. The Debian packaging system should ask users if they wish to take updates or keep the existing files, but this may have unintended side effects if users take partial updates of files. As such Regolith, upon login, will look for user-staged version of configuration files and load those &lt;em>instead of the defaults&lt;/em> if they exist. This is recommended over editing the files in &lt;code>/etc/regolith&lt;/code> directly as it gives the user more control over their configuration. This page describes how to create these files.&lt;/p>
-&lt;p>Depending on what you wish to change, you may need your own copy if the i3 config file, &lt;code>Xresources&lt;/code>, or both. If you&amp;rsquo;re looking to change the way Regolith looks, &lt;code>Xresources&lt;/code> may be all you need. If you want to update or add keybindings or swap out components, you&amp;rsquo;ll most likely need to stage the i3 config file.&lt;/p>
-&lt;h2 id="i3-config">i3 Config&lt;/h2>
-&lt;ol>
-&lt;li>Copy the default Regolith i3 config file into your home directory:&lt;/li>
-&lt;/ol>
-&lt;pre>&lt;code>$ mkdir -p ~/.config/regolith/i3
-$ cp /etc/regolith/i3/config ~/.config/regolith/i3/config
-&lt;/code>&lt;/pre>&lt;ol start="2">
-&lt;li>Log out and back in. The Regolith session will automatically detect your user-staged file and use that over the default in &lt;code>/etc/regolith/i3&lt;/code>.&lt;/li>
-&lt;/ol>
-&lt;h3 id="verify-the-change">Verify the Change&lt;/h3>
-&lt;ol>
-&lt;li>Verify by running &lt;code>i3 --moreversion&lt;/code> and noting the config file that is printed as a result. It should be the copy you just created. If not, be sure the path is correct. It must exactly be &lt;code>~/.config/regolith/i3/config&lt;/code> for Regolith to load it.&lt;/li>
-&lt;/ol>
-&lt;h2 id="regolith-styles">Regolith Styles&lt;/h2>
-&lt;ol>
-&lt;li>Copy the root Regolith &lt;code>Xresources&lt;/code> file into your home directory:&lt;/li>
-&lt;/ol>
-&lt;pre>&lt;code>$ cp /etc/regolith/styles/root ~/.Xresources-regolith
-&lt;/code>&lt;/pre>&lt;ol start="2">
-&lt;li>Log out and back in. The Regolith session will automatically detect your user-staged file and use that over the default in &lt;code>/etc/regolith/styles&lt;/code>.&lt;/li>
-&lt;/ol>
-&lt;p>Note that this root file is simply a reference to other styles that are broken down by the thing they are designed to style. For example, if you wish to customize the look of i3, you will need to also copy &lt;code>/etc/regolith/styles/i3-wm&lt;/code> into your user directory and then update the reference to the new file in your &lt;code>~/.Xresources-regolith&lt;/code>.&lt;/p></description></item></channel></rss>
+&lt;p>See the &lt;a href="https://regolith-linux.org/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item></channel></rss>

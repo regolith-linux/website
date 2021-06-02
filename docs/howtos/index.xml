@@ -82,7 +82,7 @@ src="https://regolith-linux.org/images/regolith-screenshot-settings-region_hu350
 &lt;li>Reload the &lt;code>Xresources&lt;/code> configuration:&lt;/li>
 &lt;/ol>
 &lt;pre>&lt;code class="language-console" data-lang="console">$ regolith-look refresh
-&lt;/code>&lt;/pre>&lt;h1 id="further-reading">Further Reading&lt;/h1>
+&lt;/code>&lt;/pre>&lt;h2 id="further-reading">Further Reading&lt;/h2>
 &lt;p>See the &lt;a href="https://regolith-linux.org/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Change the lock screen program</title><link>https://regolith-linux.org/docs/howtos/change-lockscreen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/change-lockscreen/</guid><description>
 &lt;h3 id="1-configure-gnome-flashback-to-disable-built-in-lockscreen">1. Configure &lt;code>gnome-flashback&lt;/code> to Disable Built-in Lockscreen&lt;/h3>
 &lt;p>By default &lt;code>gnome-flashback&lt;/code> handles the lock screen for Regolith. This can be adjusted by modifying it&amp;rsquo;s configuration via the &lt;code>gsettings&lt;/code> command line program:&lt;/p>
@@ -158,7 +158,16 @@ $ apt list &amp;lt;package name&amp;gt; # finds all packages
 &lt;/code>&lt;/pre>&lt;p>To install the battery status indicator, run:&lt;/p>
 &lt;pre>&lt;code class="language-console" data-lang="console">$ sudo apt install i3xrocks-battery
 &lt;/code>&lt;/pre>&lt;h1 id="find-and-install-packages-via-gui-app">Find and Install Packages via GUI app&lt;/h1>
-&lt;p>There are a number of apps that can provide a nice window interface on top of the apt packaging system, for example &lt;code>synaptic&lt;/code>. Refer to the documentation for the tool of your choice to learn how to search for and install packages.&lt;/p></description></item><item><title>Docs: Launch Default i3 Session</title><link>https://regolith-linux.org/docs/howtos/vanilla-i3-gaps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/vanilla-i3-gaps/</guid><description>
+&lt;p>There are a number of apps that can provide a nice window interface on top of the apt packaging system, for example &lt;code>synaptic&lt;/code>. Refer to the documentation for the tool of your choice to learn how to search for and install packages.&lt;/p></description></item><item><title>Docs: Launch an app in a Floating Window</title><link>https://regolith-linux.org/docs/howtos/floating-window/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/floating-window/</guid><description>
+&lt;p>Most X11 applications support a flag &lt;code>--class&lt;/code> to specify the &lt;code>class&lt;/code> under which the application runs. Regolith is configured such that apps with a class of &lt;code>floating_window&lt;/code> will launch with i3&amp;rsquo;s floating window mode.&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;h3 id="gnome-terminal">&lt;code>gnome-terminal&lt;/code>&lt;/h3>
+&lt;p>Launch the terminal in floating mode:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ gnome-terminal --class=floating_window
+&lt;/code>&lt;/pre>&lt;h3 id="firefox">Firefox&lt;/h3>
+&lt;p>Launch Firefox in floating mode:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ firefox --class=floating_window
+&lt;/code>&lt;/pre></description></item><item><title>Docs: Launch Default i3 Session</title><link>https://regolith-linux.org/docs/howtos/vanilla-i3-gaps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/vanilla-i3-gaps/</guid><description>
 &lt;p>To do so on Ubuntu, run &lt;code>sudo apt install i3-gaps-session&lt;/code> to add an option on login that starts vanilla i3-gaps without regolith.&lt;/p>
 &lt;h2 id="use-case">Use Case&lt;/h2>
 &lt;p>This is useful for, say, running an application that does not integrate well with GNOME. For example, Spotify&amp;rsquo;s unmaintained official Linux client mishandles its file selection dialogue and crashes when&lt;/p>
@@ -300,7 +309,7 @@ $ echo &amp;quot;i3-wm-alt: Mod4&amp;quot; &amp;gt;&amp;gt; ~/.config/regolith/X
 &lt;h1 id="further-reading">Further Reading&lt;/h1>
 &lt;p>See the &lt;a href="https://regolith-linux.org/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Stage Config Files</title><link>https://regolith-linux.org/docs/howtos/stage-configs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/stage-configs/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
-&lt;p>If you only wish to override or provide new &lt;code>Xresources&lt;/code> values, staging configs is no longer required. Overriding &lt;code>Xresources&lt;/code> value is described in a &lt;a href="https://regolith-linux.org/docs/howtos/override-xres/">separate article&lt;/a>.&lt;/p>
+&lt;p>If you only wish to override or provide new &lt;code>Xresources&lt;/code> values, staging configs is not required and not recommended. Overriding &lt;code>Xresources&lt;/code> value is described in a &lt;a href="https://regolith-linux.org/docs/howtos/override-xres/">separate article&lt;/a>.&lt;/p>
 &lt;/div>
 &lt;p>Regolith uses a number of files in &lt;code>/etc/regolith&lt;/code> to determine the behavior and look of various components. While it&amp;rsquo;s possible to simply edit these files directly, users who do so run the risk of having their configurations overwritten upon future updates. The Debian packaging system should ask users if they wish to take updates or keep the existing files, but this may have unintended side effects if users take partial updates of files. As such Regolith, upon login, will look for user-staged version of configuration files and load those &lt;em>instead of the defaults&lt;/em> if they exist. This is recommended over editing the files in &lt;code>/etc/regolith&lt;/code> directly as it gives the user more control over their configuration. This page describes how to create these files.&lt;/p>
 &lt;p>Depending on what you wish to change, you may need your own copy if the i3 config file, &lt;code>Xresources&lt;/code>, or both. If you&amp;rsquo;re looking to change the way Regolith looks, &lt;code>Xresources&lt;/code> may be all you need. If you want to update or add keybindings or swap out components, you&amp;rsquo;ll most likely need to stage the i3 config file.&lt;/p>
@@ -435,16 +444,7 @@ Selecting previously unselected package i3xrocks-weather.
 Preparing to unpack .../i3xrocks-weather_3.0.29-1_amd64.deb ...
 Unpacking i3xrocks-weather (3.0.29-1) ...
 Setting up i3xrocks-weather (3.0.29-1) ...
-&lt;/code>&lt;/pre></description></item><item><title>Docs: Upgrade Regolith Linux 1.4 to 1.4.1</title><link>https://regolith-linux.org/docs/howtos/update-14-141/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/update-14-141/</guid><description>
-&lt;p>If you&amp;rsquo;ve installed Regolith via the ISO, a few minor changes were made to address bugs found in R1.4. Most of the fixes will be installed automatically by applying package updates, however a few items must be performed manually.&lt;/p>
-&lt;h2 id="remove-deprecated-touchpad-driver">Remove deprecated touchpad driver&lt;/h2>
-&lt;p>An obsolete driver was mistakenly included with the Regolith 1.4 ISO install that conflicts with GNOME touchpad settings. Perform these steps to fix the touchpad:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ sudo apt remove xserver-xorg-input-synaptics
-&lt;/code>&lt;/pre>&lt;h2 id="add-regolith-boot-sequence">Add Regolith boot sequence&lt;/h2>
-&lt;p>The ISO release now includes an unbranded boot animation, rather than keeping with the default Ubuntu branded experience. Updating this boot-up theme (also known as a Plymouth theme) also enables users to enter a password if they&amp;rsquo;ve setup an encrypted filesystem.&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ sudo apt install plymouth-theme-regolith
-$ sudo update-alternatives --config default.plymouth
-&lt;/code>&lt;/pre>&lt;p>From the prompt ensure that the Regolith configuration is selected.&lt;/p></description></item><item><title>Docs: Wallpaper Configuration</title><link>https://regolith-linux.org/docs/howtos/configure-wallpaper/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/configure-wallpaper/</guid><description>
+&lt;/code>&lt;/pre></description></item><item><title>Docs: Wallpaper Configuration</title><link>https://regolith-linux.org/docs/howtos/configure-wallpaper/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/configure-wallpaper/</guid><description>
 &lt;p>This page describes how to configure the wallpaper in Regolith, which can either be set via the GNOME Settings, or in dotfiles via &lt;code>Xresources&lt;/code> overrides.&lt;/p>
 &lt;h2 id="gnome-settings">GNOME settings&lt;/h2>
 &lt;p>As is mentioned in the Getting Started section, wallpaper can be set using GNOME Settings. Some Looks specific specific wallpaper that is set to go along with the color theme and other style changes. An &lt;code>Xresources&lt;/code> value can be set to tell Regolith to ignore Look settings and keep which ever wallpaper has been selected via GNOME Settings. The following command will set the &lt;code>gnome.wallpaper&lt;/code> &lt;code>Xresources&lt;/code> key to an empty value, which will prevent Regolith from making any changes:&lt;/p>
