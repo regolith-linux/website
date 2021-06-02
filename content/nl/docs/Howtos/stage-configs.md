@@ -5,7 +5,7 @@ description: >
 ---
 
 {{% pageinfo %}}
-If you only wish to override or provide new `Xresources` values, staging configs is no longer required. Overriding `Xresources` value is described in a [separate article]({{< ref "override-xres" >}}).
+If you only wish to override or provide new `Xresources` values, staging configs is not required and not recommended. Overriding `Xresources` value is described in a [separate article]({{< ref "override-xres" >}}).
 {{% /pageinfo %}}
 
 Regolith uses a number of files in `/etc/regolith` to determine the behavior and look of various components. While it's possible to simply edit these files directly, users who do so run the risk of having their configurations overwritten upon future updates. The Debian packaging system should ask users if they wish to take updates or keep the existing files, but this may have unintended side effects if users take partial updates of files. As such Regolith, upon login, will look for user-staged version of configuration files and load those _instead of the defaults_ if they exist. This is recommended over editing the files in `/etc/regolith` directly as it gives the user more control over their configuration. This page describes how to create these files.
