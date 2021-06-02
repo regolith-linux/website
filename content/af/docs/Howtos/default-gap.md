@@ -20,6 +20,6 @@ In this example we're setting the default gap to 20 pixels.
 $ regolith-look refresh
 ```
 
-# Further Reading
+## Further Reading
 
 See the [reference page for configurations]({{< ref "/docs/Reference/configurations.md" >}}) for more details about config files in Regolith.
