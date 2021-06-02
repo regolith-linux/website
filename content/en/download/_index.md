@@ -27,16 +27,16 @@ menu:
 						<li>Provides more Regolith branding</li>
 					</ul>
 				<a href="https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1">Download the ISO </a> and write it to a USB flash drive to install or test drive Regolith as an operating system.  To learn how, visit the <a class="text-warning"  href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntu installer tutorial</a>.</p>
-				<p>After installation, Regolith can update itself to version 1.5 from the pre-configured <code>release</code> PPA via <code>apt dist-upgrade</code>.</p>
+				<p>After installation, Regolith can update itself to version 1.6 from the pre-configured <code>release</code> PPA via <code>apt dist-upgrade</code>.</p>
 				<div class="d-flex justify-content-center"><a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1">
       Download Regolith 1.4.1<i class="fas fa-cloud-download-alt ml-2 "></i></a><a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
       Learn More <i class="fas fa-book-reader ml-2"></i></a></div>				
 			</th>
     </div>
     <div class="col-sm p-5">
-			<h2><i class="fas fa-download"></i> Regolith Desktop 1.5 PPA</h2>
+			<h2><i class="fas fa-download"></i> Regolith Desktop 1.6 PPA</h2>
 			<p>
-					Regolith can be installed in an existing Ubuntu 18.04, 20.04, or 20.10 system by adding a Regolith PPA and installing one of <a href="../docs/getting-started/install/#desktop-packages">the <code>regolith-desktop</code> packages</a>.  Advantages to Regolith via PPA:
+					Regolith can be installed in an existing Ubuntu 18.04 (Bionic), 20.04 (Focal), or 21.04 (Hirsute) system by adding a Regolith PPA and installing one of <a href="../docs/getting-started/install/#desktop-packages">the <code>regolith-desktop</code> packages</a>.  Advantages to Regolith via PPA:
 					<ul>
 						<li>More compatibility with standard Ubuntu</li>
 						<li>Easy interop with other installed desktop environments</li>

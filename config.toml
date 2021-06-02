@@ -58,7 +58,7 @@ id = "UA-138654070-2"
 
 [languages]
 [languages.en]
-title = "Regolith 1.5.3"
+title = "Regolith 1.6"
 description = "Regolith Linux website"
 contentDir = "content/en"
 languageName ="English"

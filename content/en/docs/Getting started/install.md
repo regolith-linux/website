@@ -10,18 +10,10 @@ Based on your preferred installation method, follow one of the following two sec
 
 ## Option 1: Regolith Linux via Installer
 
-At this time an [installer for Regolith 1.5](https://github.com/orgs/regolith-linux/projects/15) is not available, however the 1.4.1 installer can be upgraded to 1.5.1.
-
-1. Download an ISO image of [Regolith R1.4.1](https://github.com/regolith-linux/regolith-desktop/releases/tag/R1.4.1) <i class="fas fa-cloud-download-alt"></i> and then use an OS installation tool such as USB Creator to write the downloaded file into a USB device. Here are Ubuntu guides for performing this action in [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0), [Mac](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), and [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0).
+1. Download an ISO image of [Regolith R1.6 on Ubuntu 21.04 (Hirsute)](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/tag/release-stable-hirsute-hirsute_standard-1.6.0) <i class="fas fa-cloud-download-alt"></i> or [Regolith R1.6 on Ubuntu 20.04 (Focal)](https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/tag/release-stable-focal-focal_standard-1.6.0) <i class="fas fa-cloud-download-alt"></i>and then use an OS installation tool such as USB Creator to write the downloaded file onto a USB device. Here are Ubuntu guides for performing this action in [Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0), [Mac](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), and [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0).
 2. Reboot the computer and select the USB flash drive to boot from.
 3. Install or run the live environment by providing information when prompted during the setup process. See [this tutorial](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop) to learn more about the installation process.
 4. When prompted, reboot the computer and login to your new Regolith environment!
-
-The system will automatically upgrade to Regolith 1.5.1 with the following commands:
-
-```console
-$ sudo apt update && sudo apt dist-upgrade
-```
 
 ## Option 2: Regolith Desktop via Repository (PPA) {#ppa-install}
 
