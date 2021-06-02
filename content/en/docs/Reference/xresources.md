@@ -149,3 +149,23 @@ The following `Xresources` keys are undefined by default but can be used by user
 | i3-wm.program.notification_ui     | Command to launch from the notification UI keybinding                                                                                                                                               |
 | i3-wm.program.1...i3-wm.program.3 | Optional programs to start with i3                                                                                                                                                                  |
 | i3xrocks.media-player.player-args | Optional arguments used by the `media-player` i3xrocks block. These arguments are fed straight into `playerctl`, eg. setting this value to `-p spotify` only makes the bar display/control spotify. |
+| i3xrocks.action.mic.left | Optional command to run on left button click of microphone status indicator. |
+| i3xrocks.action.mic.middle | Optional command to run on middle button click of microphone status indicator. |
+| i3xrocks.action.mic.right | Override command to run on right button click of microphone status indicator. |
+| i3xrocks.action.mic.scrollup | Override command to run on scroll up of microphone status indicator. |
+| i3xrocks.action.mic.scrolldn | Override command to run on scroll down of microphone status indicator. |
+| i3xrocks.action.volume.left | Optional command to run on left button click of microphone status indicator. |
+| i3xrocks.action.volume.middle | Optional command to run on middle button click of microphone status indicator. |
+| i3xrocks.action.volume.right | Override command to run on right button click of microphone status indicator. |
+| i3xrocks.action.volume.scrollup | Override command to run on scroll up of microphone status indicator. |
+| i3xrocks.action.volume.scrolldn | Override command to run on scroll down of microphone status indicator. |
+| i3xrocks.action.disk-capacity | Override command to run on disk capacity status indicator. |
+| i3xrocks.action.cpu-usage | Override command to run on cpu usage status indicator. |
+| i3xrocks.action.memory | Override command to run on memory status indicator. |
+| i3xrocks.action.wifi | Override command to run on wifi status indicator. |
+| i3xrocks.action.weather | Override command to run on weather status indicator. |
+| i3xrocks.action.media-player.left | Optional command to run on left button click of media player status indicator. |
+| i3xrocks.action.media-player.middle | Optional command to run on middle button click of media player status indicator. |
+| i3xrocks.action.media-player.right | Override command to run on right button click of media player status indicator. |
+| i3xrocks.action.time | Override command to run on date time status indicator. |
+| i3xrocks.action.battery | Override command to run on battery status indicator. |
