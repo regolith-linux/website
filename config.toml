@@ -208,8 +208,11 @@ desc = "Chat with contributors and users"
 
 # Versions
 [[params.versions]]
-version = "1.5.3"
+version = "1.6"
 url = "http://regolith-linux.org"
+
+version = "1.5.3"
+url = "https://regolith-linux.github.io/regolith-site-r153/"
 
 [[params.versions]]
 version = "1.5.2"
