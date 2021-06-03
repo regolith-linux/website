@@ -96,6 +96,9 @@ regolith-i3-gaps-config (2.8.5-1) bionic; urgency=medium
 * adding $mod+s for sound setting (#36)
 [ Ken Gilmer ]
 * Fix urls to howtos. Relates to https://github.com/regolith-linux/regolith-i3-config/pull/1.
+regolith-i3xrocks-config (3.6.4-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Remove invalid Xresource key segment from microphone block
 regolith-i3xrocks-config (3.6.3-1) bionic; urgency=medium
 [ Ken Gilmer ]
 * Add missing dependency to net-traffic script on iproute2
@@ -107,11 +110,29 @@ regolith-i3xrocks-config (3.6.1-1) bionic; urgency=medium
 [ Ken Gilmer ]
 * Take nicolas-lopez's contribution via gist as microphone status indicator. Related to https://github.com/regolith-linux/regolith-i3xrocks-config/issues/105.
 * Add app launcher status indicator
+regolith-rofication (1.3.3-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Remove debug logs that show up in /var/log/syslog (#9)
 regolith-rofication (1.3.2-1) bionic; urgency=medium
 [ Ken Gilmer ]
 * Require i3xrocks-rofication to be upgraded first, due to file collision between i3xrocks-rofication and regolith-rofication
 [ Carles Sala ]
 * Close window after deleting the last notification (#8)
+regolith-styles (2.9.7-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Rename midnight look background file to avoid collision w/ ubuntu-wallpapers-focal.
+regolith-styles (2.9.6-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Another attempt to fix pop-os wallpaper reference
+regolith-styles (2.9.5-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Fix pop os gnome settings
+regolith-styles (2.9.4-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Fix pop-os background. Change image filename to avoid conflicts
+regolith-styles (2.9.3-1) bionic; urgency=medium
+[ Ken Gilmer ]
+* Add background image missing from midnight theme
 regolith-styles (2.9.2-1) bionic; urgency=medium
 [ Ken Gilmer ]
 * Fix color value unparsable by i3
@@ -124,9 +145,6 @@ regolith-styles (2.9.0-1) bionic; urgency=medium
 [ Ken Gilmer ]
 * Package solarlized-light look contribution from @ricpelo
 * Add icon for app launcher shortcut
-regolith-styles (2.8.4-1) bionic; urgency=medium
-[ Ken Gilmer ]
-* Revert font specification to original
 regolith-styles (2.8.3-1) bionic; urgency=medium
 [ Ken Gilmer ]
 * Add app launcher glyph
@@ -166,9 +184,6 @@ rofi (1.6.1-1regolith1) bionic; urgency=medium
 ubiquity-slideshow-regolith (168.5-regolith1) focal; urgency=medium
 [ Ken Gilmer ]
 * Update virtual package dependency for focal
-ubiquity-slideshow-regolith (168.4-regolith1) focal; urgency=medium
-[ Ken Gilmer ]
-* Lots of cleanup
 &lt;/code>&lt;/pre></description></item><item><title>Docs: Install</title><link>https://regolith-linux.org/docs/getting-started/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/getting-started/install/</guid><description>
 &lt;p>Based on your preferred installation method, follow one of the following two sections to install Regolith. Unlike previous versions of Regolith, PPA and ISO installs result in different configurations. The PPA install favors coexistence with the existing Ubuntu desktop, while the ISO release optimizes for less resource utilization. Specifically, the ISO install is roughly 1Gb smaller and cold start RAM usage is reduced by about 200Mb as compared to the PPA installation.&lt;/p>
 &lt;h2 id="option-1-regolith-linux-via-installer">Option 1: Regolith Linux via Installer&lt;/h2>
