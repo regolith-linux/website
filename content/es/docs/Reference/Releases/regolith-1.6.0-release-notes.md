@@ -30,33 +30,25 @@ dracula-gtk (1.1.0-1) bionic; urgency=medium
   [ Ken Gilmer ]
   * Add icons to dracula theme
 
-
-
 regolith-desktop (2.122-1bionic) bionic; urgency=medium
 
   [ Ken Gilmer ]
   * Add app launcher to complete desktop metapackage. Fix unneeded dep on mutter-common.
-
 
 regolith-desktop (2.118-1bionic) bionic; urgency=medium
 
   [ Ken Gilmer ]
   * Version bump to 1.6.0
 
-
-
 regolith-ftue (1.1.2-1) bionic; urgency=medium
 
   [ Jordan Callicoat ]
   * More Xresources options for GNOME Terminal
 
-
-
 regolith-i3-gaps-config (2.8.6-1) bionic; urgency=medium
 
   [ Ken Gilmer ]
   * specify default workspace layout mode
-
 
 regolith-i3-gaps-config (2.8.5-1) bionic; urgency=medium
 
@@ -66,13 +58,15 @@ regolith-i3-gaps-config (2.8.5-1) bionic; urgency=medium
   [ Ken Gilmer ]
   * Fix urls to howtos. Relates to https://github.com/regolith-linux/regolith-i3-config/pull/1.
 
+regolith-i3xrocks-config (3.6.4-1) bionic; urgency=medium
 
+  [ Ken Gilmer ]
+  * Remove invalid Xresource key segment from microphone block
 
 regolith-i3xrocks-config (3.6.3-1) bionic; urgency=medium
 
   [ Ken Gilmer ]
   * Add missing dependency to net-traffic script on iproute2
-
 
 regolith-i3xrocks-config (3.6.2-1) bionic; urgency=medium
 
@@ -80,14 +74,16 @@ regolith-i3xrocks-config (3.6.2-1) bionic; urgency=medium
   * Fix control file
   * Fix config for app-launcher, remove incorrect interval on next-workspace
 
-
 regolith-i3xrocks-config (3.6.1-1) bionic; urgency=medium
 
   [ Ken Gilmer ]
   * Take nicolas-lopez's contribution via gist as microphone status indicator.  Related to https://github.com/regolith-linux/regolith-i3xrocks-config/issues/105.
   * Add app launcher status indicator
 
+regolith-rofication (1.3.3-1) bionic; urgency=medium
 
+  [ Ken Gilmer ]
+  * Remove debug logs that show up in /var/log/syslog (#9)
 
 regolith-rofication (1.3.2-1) bionic; urgency=medium
 
@@ -97,19 +93,40 @@ regolith-rofication (1.3.2-1) bionic; urgency=medium
   [ Carles Sala ]
   * Close window after deleting the last notification (#8)
 
+regolith-styles (2.9.7-1) bionic; urgency=medium
 
+  [ Ken Gilmer ]
+  * Rename midnight look background file to avoid collision w/ ubuntu-wallpapers-focal.
+
+regolith-styles (2.9.6-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Another attempt to fix pop-os wallpaper reference
+
+regolith-styles (2.9.5-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix pop os gnome settings
+
+regolith-styles (2.9.4-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix pop-os background. Change image filename to avoid conflicts
+
+regolith-styles (2.9.3-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add background image missing from midnight theme
 
 regolith-styles (2.9.2-1) bionic; urgency=medium
 
   [ Ken Gilmer ]
   * Fix color value unparsable by i3
 
-
 regolith-styles (2.9.1-1) bionic; urgency=medium
 
   [ Ricardo Pérez ]
   * Fixes Gtk theme (SolArc-Dark -> SolArc) (#44)
-
 
 regolith-styles (2.9.0-1) bionic; urgency=medium
 
@@ -120,30 +137,20 @@ regolith-styles (2.9.0-1) bionic; urgency=medium
   * Package solarlized-light look contribution from @ricpelo
   * Add icon for app launcher shortcut
 
-
-regolith-styles (2.8.4-1) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Revert font specification to original
-
-
 regolith-styles (2.8.3-1) bionic; urgency=medium
 
   [ Ken Gilmer ]
   * Add app launcher glyph
-
 
 regolith-styles (2.8.2-1) bionic; urgency=medium
 
   [ Ken Gilmer ]
   * Fix font specification for midnight look
 
-
 regolith-styles (2.8.1-1) bionic; urgency=medium
 
   [ Ken Gilmer ]
   * midnight theme package fixes
-
 
 regolith-styles (2.8.0-1) bionic; urgency=medium
 
@@ -153,7 +160,6 @@ regolith-styles (2.8.0-1) bionic; urgency=medium
   [ Ken Gilmer ]
   * Add dependencies to midnight look
 
-
 regolith-styles (2.7.1-1) bionic; urgency=medium
 
   [ Ken Gilmer ]
@@ -161,12 +167,10 @@ regolith-styles (2.7.1-1) bionic; urgency=medium
   * Revert to single column mode in lascaille
   * Use accent color for orientation border decoration in lascaille
 
-
 regolith-styles (2.7.0-1) bionic; urgency=medium
 
   [ Ken Gilmer ]
   * Rofi app launcher in two columns
-
 
 regolith-styles (2.6.17-1) bionic; urgency=medium
 
@@ -177,35 +181,23 @@ regolith-styles (2.6.17-1) bionic; urgency=medium
   [ Ken Gilmer ]
   * Add highlight to bar for non-active focused windows for better multi-monitor experience (lascaille)
 
-
-
 regolith-system (1.5.3-1) bionic; urgency=medium
 
   [ Ken Gilmer ]
   * Add recommends for Regolith system packages
-
 
 regolith-system (1.5.2-1) hirsute; urgency=medium
 
   [ Ken Gilmer ]
   * remove deprecated dependency
 
-
-
 rofi (1.6.1-1regolith1) bionic; urgency=medium
 
   * Adapted package metadata from Ubuntu for 1.6.1 release 
-
-
 
 ubiquity-slideshow-regolith (168.5-regolith1) focal; urgency=medium
 
   [ Ken Gilmer ]
   * Update virtual package dependency for focal
 
-
-ubiquity-slideshow-regolith (168.4-regolith1) focal; urgency=medium
-
-  [ Ken Gilmer ]
-  * Lots of cleanup
 ```
