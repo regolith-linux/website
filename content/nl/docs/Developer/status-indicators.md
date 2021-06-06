@@ -43,7 +43,7 @@ Before we saw the output of the time script. Let's deconstruct it:
 ><span font_desc="JetBrains Mono Medium 13" color="#E6E1CF"> 05/30 19:06 </span>
 ```
 
-The first span block defines the icon of the status indicator. Notice how it does not specify a font. This is because, without a font specification, the default is used. In the case of Regolith looks, the default font is whatever icon font is specified in `Xresources`. In Regolith 1.4.1 and 1.5, [the default look is `lascaille`](https://github.com/regolith-linux/regolith-styles/blob/master/Xresources/root) and [the icon font is `fonts-materialdesignicons-webfont`](https://github.com/regolith-linux/regolith-styles/blob/master/lascaille/typeface#L2).
+The first span block defines the icon of the status indicator. Notice how it does not specify a font. This is because, without a font specification, the default is used. In the case of Regolith looks, the default font is whatever icon font is specified in `Xresources`. In Regolith 1.4.1 - 1.6, [the default look is `lascaille`](https://github.com/regolith-linux/regolith-styles/blob/master/Xresources/root) and [the icon font is `fonts-materialdesignicons-webfont`](https://github.com/regolith-linux/regolith-styles/blob/master/lascaille/typeface#L2).
 
 The color is [read from `Xresources` in the script](https://github.com/regolith-linux/regolith-i3xrocks-config/blob/master/scripts/time#L38), rather than hardcoded. This allows the look of the status indicator to match the installed user's look.
 
