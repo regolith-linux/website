@@ -1,17 +1,17 @@
 {
   "interactWithCommunity": {
-    "other": "Interact with the {{ .Site.Title }} project"
+    "other": "{{ .Site.Title }}プロジェクトに関わる"
   },
   "partialsCommunityLinksLearnToConnect": {
-    "other": "Learn and Connect"
+    "other": "学ぶ、繋がる"
   },
   "partialsCommunityLinksUsingWantToUse": {
-    "other": "Using or want to use {{ .Site.Title }}? Find out more here"
+    "other": "{{ .Site.Title }}を使っている、または使いたいですか？ここでさらなる発見をしましょう"
   },
   "partialsCommunityLinksDevelopAndContribute": {
-    "other": "Develop and Contribute"
+    "other": "開発と貢献"
   },
   "partialsCommunityLinksWantToGetInvolved": {
-    "other": "If you want to get more involved by contributing to {{ .Site.Title }}, join us here"
+    "other": "{{ .Site.Title }}に貢献してもっと関わりたければ、こちらに参加してください"
   }
 }
