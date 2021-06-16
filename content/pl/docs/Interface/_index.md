@@ -1,15 +1,15 @@
 ---
-title: "The Interface"
-linkTitle: "Interface"
+title: "Interfejs"
+linkTitle: "Interfejs"
 weight: 3
 description: >
-  Details about the Regolith interface
+  Szczegóły dotyczące interfejsu Regolit
 ---
 
-The Regolith UI is composed of the following independent open source projects, and their respective transitive dependencies:
+Interfejs użytkownika Regolit składa się z niezależnych projektów open source oraz respektuje międzynarodowe uwarunkowania:
 
-- XOrg X11 display server
-- `i3-gaps` window manager
+- Serwer okien XOrg X11
+- `i3-gaps` menedżer okien
 - Rofi application launcher
 - `i3bar` bar
 - `i3xrocks` bar script scheduler, based on i3blocks
