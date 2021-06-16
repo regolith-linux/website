@@ -1,16 +1,16 @@
 ---
-title: "Getting Started"
-linkTitle: "Getting Started"
+title: "Pierwsze kroki"
+linkTitle: "Wprowadzenie"
 weight: 2
 description: >
-  Summary of installation methods for Regolith.
+  Streszczenie metod instalacji Regolit.
 ---
 
-This section contains the information necessary to get Regolith running on a computer. There are two primary ways of installing Regolith; via an Ubuntu-based installer and via a Personal Package Archive (PPA). Either of these methods will result in essentially the same user experience, although installing via the Ubuntu installer will result in a package selection that is different from installing vanilla Ubuntu. However by adding and removing specific packages a vanilla Ubuntu system can be configured.
+Ta sekcja zawiera informacje niezbędne do uruchomienia Regolit na komputerze. There are two primary ways of installing Regolith; via an Ubuntu-based installer and via a Personal Package Archive (PPA). Either of these methods will result in essentially the same user experience, although installing via the Ubuntu installer will result in a package selection that is different from installing vanilla Ubuntu. However by adding and removing specific packages a vanilla Ubuntu system can be configured.
 
 ## Prerequisites
 
-### Ubuntu Installer
+### Instalator Ubuntu
 
 - A [modern computer](https://help.ubuntu.com/community/Installation/SystemRequirements) that can boot from a USB flash drive.
 - Free space on a local drive. The installer will allow for managing existing partitions or installing on an empty volume.
