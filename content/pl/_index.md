@@ -1,5 +1,5 @@
 ---
-title: "Regolith Linux"
+title: "Regolit Linux"
 linkTitle: "Regolith Linux"
 ---
 
@@ -43,7 +43,7 @@ linkTitle: "Regolith Linux"
   </div>
   <div class="row pb-5">
     <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-terminals.png" "Terminals" >}}</div>
-    <div class="col-8 my-auto"><p>Need more terminals?  Create layouts on the fly by toggling between horizontal and vertical modes with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">backspace</span></span> followed by <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span>.  Navigate to windows positionally with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">h</span> <span class="badge badge-warning">j</span> <span class="badge badge-warning">k</span> <span class="badge badge-warning">l</span></span>.</p></div>    
+    <div class="col-8 my-auto"><p>Potrzebujesz więcej terminali?  Create layouts on the fly by toggling between horizontal and vertical modes with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">backspace</span></span> followed by <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span>.  Navigate to windows positionally with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">h</span> <span class="badge badge-warning">j</span> <span class="badge badge-warning">k</span> <span class="badge badge-warning">l</span></span>.</p></div>    
   </div>
   <div class="row pb-5">
     <div class="col-8 my-auto"><p>Toggle floating window mode with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">F</span></span>.  Resize windows with <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">r</span></span> and move them around with the mouse by pressing <span class="badge badge-warning">super</span>.</p></div>

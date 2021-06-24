@@ -1,17 +1,17 @@
 {
   "interactWithCommunity": {
-    "other": "Interact with the {{ .Site.Title }} project"
+    "other": "Współpracuj ze społecznością {{ .Site.Title }}"
   },
   "partialsCommunityLinksLearnToConnect": {
-    "other": "Learn and Connect"
+    "other": "Nauka i sieć"
   },
   "partialsCommunityLinksUsingWantToUse": {
     "other": "Using or want to use {{ .Site.Title }}? Find out more here"
   },
   "partialsCommunityLinksDevelopAndContribute": {
-    "other": "Develop and Contribute"
+    "other": "Programuj i weź udział"
   },
   "partialsCommunityLinksWantToGetInvolved": {
-    "other": "If you want to get more involved by contributing to {{ .Site.Title }}, join us here"
+    "other": "Jeśli chcesz być bardziej zaangażowany w {{ .Site.Title }} dołącz do nas"
   }
 }

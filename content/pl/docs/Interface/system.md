@@ -1,6 +1,6 @@
 ---
-title: "System Configuration"
-linkTitle: "System Configuration"
+title: "Konfiguracja systemu"
+linkTitle: "Konfiguracja systemu"
 weight: 3
 description: >
   Learn how to change settings in the Regolith desktop
@@ -26,10 +26,10 @@ Maintaining a user copy of the i3 config file requires more work when upgrading 
 
 The i3bar configuration is defined in the i3 config file listed directly above, but the i3bar has it's own configuration for status items. To change which information is displayed in the bar, the config directory is `/etc/regolith/i3xrocks/conf.d`. There is one file in this directory for every status item, plus `01_setup`. The prefixed number defines the order in which the blocks are displayed on the bar. We maintain a [separate documentation]({{< ref "/docs/howtos/add-remove-blocklets" >}}) on how to customize and switch around the indicators on the bar.
 
-## Look
+## Wygląd
 
 The look of Regolith is configured via `Xresources`, that live in `/etc/regolith/styles/`. This topic is covered in detail in the [Customize]({{< ref "/docs/customize" >}}) section of the documentation.
 
-## Session
+## Sesja
 
 When Regolith is initially loaded, a script is run that configures the system and launches `i3-wm`. While it is not recommended to modify this script, it can provide details about how Regolith is structured and what policy it implements when loading configuration. This file is readable at `/usr/bin/i3-gnome-flashback`. In fact, this script could be considered the initial seed of the Regolith project and was taken from the [i3-gnome-flashback](https://github.com/deuill/i3-gnome-flashback) project.

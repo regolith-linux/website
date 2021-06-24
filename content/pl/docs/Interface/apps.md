@@ -8,7 +8,7 @@ description: >
 
 As mentioned in the [Getting Started]({{< ref "/docs/getting started/basics" >}}) section, {{< keys "super,space">}} causes i3 to execute "Rofi" to present a list of apps. Once launched, the application selected will open a window on the currently active workspace. If other windows are already present on this workspace, they will be resized to allow the new window to also be placed without overlapping or otherwise obstructing the existing windows.
 
-## Window Layout
+## Układ okna
 
 {{< keys "super,backspace" >}} can be used to toggle between horizontal and vertical layout modes, which will apply to the _next launched application_. In this way, windows in a workspace can divide the screen into portions relative to the desired importance of the user. A blue border will appear on the bottom or right of the window to indicate the current layout mode.
 
@@ -18,6 +18,6 @@ Windows can also be directly moved to other workspaces. The bar will indicate al
 
 Users can navigate to windows via {{< keys "super,[0-9]" >}} but can also directly navigate to a specific window with {{< keys "super,ctrl,space" >}}.
 
-## Quit an Application
+## Wyjście z Programu
 
 Any application can be safely closed via {{< keys "super,shift,q" >}}. Crashed or otherwise unresponsive apps can be killed via {{< keys "super,alt,q" >}}.
