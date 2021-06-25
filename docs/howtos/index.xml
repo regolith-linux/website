@@ -452,4 +452,7 @@ Setting up i3xrocks-weather (3.0.29-1) ...
 &lt;/code>&lt;/pre>&lt;h2 id="xresources">Xresources&lt;/h2>
 &lt;p>Another way of setting the wallpaper is by specifying a file path to the image in the &lt;code>Xresources&lt;/code> key &lt;code>gnome.wallpaper&lt;/code>. Upon session load, wallpaper will be set if a image file is specified at this key. For example, here is how to specify an override to set the wallpaper to the default Ubuntu wallpaper:&lt;/p>
 &lt;pre>&lt;code class="language-console" data-lang="console">$ echo &amp;quot;gnome.wallpaper: /usr/share/backgrounds/warty-final-ubuntu.png&amp;quot; &amp;gt; ~/.config/regolith/Xresources
+&lt;/code>&lt;/pre>&lt;h2 id="disable-all-wallpaper-handling">Disable all Wallpaper Handling&lt;/h2>
+&lt;p>Regolith can be configured to ignore wallpaper. To do this set the &lt;code>gnome.wallpaper&lt;/code> Xresource value to empty as specified above and then configure &lt;code>gnome-flashback&lt;/code> to not manage the desktop:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ gsettings set org.gnome.gnome-flashback.desktop draw-background false
 &lt;/code>&lt;/pre></description></item></channel></rss>
