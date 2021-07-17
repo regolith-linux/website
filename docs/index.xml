@@ -3883,7 +3883,15 @@ i3-wm.workspace.03.name: 3: Chat
 &lt;li>Example: &lt;code>Menlo, Consolas, DejaVu Sans Mono, monospace, Material Design Icons&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;h1 id="further-reading">Further Reading&lt;/h1>
-&lt;p>See the &lt;a href="https://regolith-linux.org/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Find and Install Packages</title><link>https://regolith-linux.org/docs/howtos/find-install-packages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/find-install-packages/</guid><description>
+&lt;p>See the &lt;a href="https://regolith-linux.org/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Disable Mouse Hiding (unclutter)</title><link>https://regolith-linux.org/docs/howtos/disable-unclutter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/disable-unclutter/</guid><description>
+&lt;p>By default the mouse cursor disappears if unused for a few seconds. If you prefer that the mouse cursor always remains visible on the screen, follow these steps:&lt;/p>
+&lt;ol>
+&lt;li>Specify an empty value for the unclutter launcher program with an Xresources override:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ echo &amp;quot;i3-wm.program.unclutter: :&amp;quot; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;li>Log out and back in for changes to take effect.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Find and Install Packages</title><link>https://regolith-linux.org/docs/howtos/find-install-packages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/find-install-packages/</guid><description>
 &lt;p>Regolith is a Debian-based system. Debian packaging tools can be used to find and install packages.&lt;/p>
 &lt;h1 id="find-package-via-the-command-line">Find package via the command line&lt;/h1>
 &lt;p>The &lt;code>apt&lt;/code> command can be used to query installed or all packages:&lt;/p>
@@ -3962,91 +3970,4 @@ bindsym $mod+$i3-wm.bindsym.1 exec --no-startup-id &amp;quot;$i3-wm.bindsym.prog
 &lt;/code>&lt;/pre>&lt;p>Then, add the followings to your &lt;code>Xresources&lt;/code> file:&lt;/p>
 &lt;pre>&lt;code class="language-console" data-lang="console">i3-wm.bindsym.1: Ctrl+d
 i3-wm.bindsym.program.1: /usr/bin/gnome-terminal --class=floating_window -e 'td --interactive'
-&lt;/code>&lt;/pre></description></item><item><title>Docs: Override Xresources</title><link>https://regolith-linux.org/docs/howtos/override-xres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/override-xres/</guid><description>
-&lt;p>Regolith relies on the &lt;a href="https://en.wikipedia.org/wiki/X_resources">Xresources system&lt;/a> to provide a consolidated interface configuration. By changing &lt;code>Xresources&lt;/code> values, Regolith can be customized in ways such as updating the user interface, specifying custom behaviors, or defining a specific format for some of the blocklets on the bar.&lt;/p>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>In Regolith, &lt;code>Xresources&lt;/code> values can be changed via two methods: supplying your own &lt;code>Xresources&lt;/code> files, and overriding the existing &lt;code>Xresources&lt;/code> values. The latter approach is strongly recommended, as it makes upgrading to newer versions of Regolith less likely to break your customizations. If you copy the &lt;code>Xresources&lt;/code> tree completely you&amp;rsquo;ll need to integrate any breaking changes in future versions manually.&lt;/p>
-&lt;/div>
-&lt;h2 id="initialization">Initialization&lt;/h2>
-&lt;p>When a Regolith session is started, Xresources are loaded in the following order:&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>File&lt;/th>
-&lt;th>Optional&lt;/th>
-&lt;th>Notes&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;code>~/.Xresources&lt;/code>&lt;/td>
-&lt;td>Y&lt;/td>
-&lt;td>Intended for non-Regolith settings&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;code>~/.Xresources-regolith&lt;/code>&lt;/td>
-&lt;td>Y&lt;/td>
-&lt;td>A global override to replace all Regolith settings&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;code>/etc/regolith/styles/root&lt;/code>&lt;/td>
-&lt;td>N&lt;/td>
-&lt;td>The default Regolith &lt;code>Xresources&lt;/code> file if &lt;code>~/.Xresources-regolith&lt;/code> does not exist&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;code>~/.config/regolith/Xresources&lt;/code>&lt;/td>
-&lt;td>Y&lt;/td>
-&lt;td>Applies specific overrides to &lt;code>Xresources&lt;/code> defaults&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>It is recommended to use &lt;code>~/.config/regolith/Xresources&lt;/code> for customization as it doesn&amp;rsquo;t require the specification of redundant settings and is easier to maintain over time.&lt;/p>
-&lt;h2 id="determining-which-values-can-be-changed">Determining which values can be changed&lt;/h2>
-&lt;p>The &lt;code>xrdb&lt;/code> tool can be used to list the existing &lt;code>Xresources&lt;/code> values. &lt;a href="https://regolith-linux.org/docs/reference/xresources/">There is a number of existing overrides&lt;/a> in the R1.4.1 release:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ xrdb -query
-[...]
-gnome.icon.theme: Moka
-gnome.terminal.font: JetBrains Mono 12
-gnome.terminal.scrollbar: never
-gnome.wallpaper: /usr/share/backgrounds/ESP_016895_1525_desktop.jpg
-gnome.wm.theme: Ayu-Mirage-Dark
-[...]
-&lt;/code>&lt;/pre>&lt;h2 id="examples">Examples&lt;/h2>
-&lt;p>Note that the commands presented below append text to a file, so running the command more than once will result in duplicate entires.&lt;/p>
-&lt;h3 id="example---update-the-ui-for-high-dpi-screens">Example - Update the UI for High DPI Screens&lt;/h3>
-&lt;p>By using the &lt;code>~/.config/regolith/Xresources&lt;/code> override file, we will only need to specify the values we wish to change. The &lt;code>xrdb&lt;/code> tool can be used to determine what current values are set to.&lt;/p>
-&lt;ol>
-&lt;li>Create or add the following value to your &lt;code>~/.config/regolith/Xresources&lt;/code> file:&lt;/li>
-&lt;/ol>
-&lt;pre>&lt;code class="language-console" data-lang="console">Xft.dpi: 192
-&lt;/code>&lt;/pre>&lt;ol start="2">
-&lt;li>Reload the &lt;code>Xresources&lt;/code> configuration:&lt;/li>
-&lt;/ol>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ regolith-look refresh
-&lt;/code>&lt;/pre>&lt;ol start="3">
-&lt;li>Open a new terminal to see the change take effect.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;code>192&lt;/code> is just an example value, please adjust as needed.&lt;/p>
-&lt;h3 id="example---change-i3-bar-position">Example - Change i3 bar position&lt;/h3>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ xrdb -query | grep position
-i3-wm.bar.position: bottom
-$ echo &amp;quot;i3-wm.bar.position: top&amp;quot; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
-$ regolith-look refresh
-&lt;/code>&lt;/pre>&lt;h3 id="example---change-gtk-theme">Example - Change GTK Theme&lt;/h3>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ xrdb -query | grep gtk
-gnome.gtk.theme: Ayu-Mirage-Dark
-$ echo &amp;quot;gnome.gtk.theme: Adwaita&amp;quot; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
-$ regolith-look refresh
-&lt;/code>&lt;/pre>&lt;h3 id="example---disable-the-system-tray">Example - Disable the System Tray&lt;/h3>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ echo &amp;quot;i3-wm.bar.trayoutput: none&amp;quot; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
-$ regolith-look refresh
-&lt;/code>&lt;/pre>&lt;h3 id="example---use-alt-instead-of-win-as-super">Example - Use Alt instead of Win as Super&lt;/h3>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ echo &amp;quot;i3-wm-mod: Mod1&amp;quot; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
-$ echo &amp;quot;i3-wm-alt: Mod4&amp;quot; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
-&lt;/code>&lt;/pre>&lt;p>Then Reload i3 for the change to take effect (on Regolith 1.5+ there is an active regression here with a &lt;a href="https://github.com/regolith-linux/regolith-desktop/issues/504">temporary fix in the issue&lt;/a>)&lt;/p>
-&lt;h3 id="example---launch-nm-applet-when-i3-starts">Example - Launch &lt;code>nm-applet&lt;/code> when i3 starts&lt;/h3>
-&lt;p>Some users prefer to use the &lt;code>nm-applet&lt;/code> program to configure and manage their wireless network (from Regolith 1.5 onwards &lt;code>nm-applet&lt;/code> is run by default in the background). i3 config file can be updated to launch any arbitrary program at start time. But, rather than copying the whole file, we can supply up to 3 programs via Xresources without having to change the i3 config file. For this to work, also make sure that the system tray is enabled (see above).&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ echo &amp;quot;i3-wm.program.1: /usr/bin/nm-applet&amp;quot; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
-&lt;/code>&lt;/pre>&lt;p>This change requires you to log back in before the change takes effect.&lt;/p>
-&lt;h1 id="further-reading">Further Reading&lt;/h1>
-&lt;p>See the &lt;a href="https://regolith-linux.org/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item></channel></rss>
+&lt;/code>&lt;/pre></description></item></channel></rss>

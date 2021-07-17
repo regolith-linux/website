@@ -141,7 +141,15 @@ i3-wm.workspace.03.name: 3: Chat
 &lt;li>Example: &lt;code>Menlo, Consolas, DejaVu Sans Mono, monospace, Material Design Icons&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;h1 id="further-reading">Further Reading&lt;/h1>
-&lt;p>See the &lt;a href="https://regolith-linux.org/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Find and Install Packages</title><link>https://regolith-linux.org/docs/howtos/find-install-packages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/find-install-packages/</guid><description>
+&lt;p>See the &lt;a href="https://regolith-linux.org/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Disable Mouse Hiding (unclutter)</title><link>https://regolith-linux.org/docs/howtos/disable-unclutter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/disable-unclutter/</guid><description>
+&lt;p>By default the mouse cursor disappears if unused for a few seconds. If you prefer that the mouse cursor always remains visible on the screen, follow these steps:&lt;/p>
+&lt;ol>
+&lt;li>Specify an empty value for the unclutter launcher program with an Xresources override:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ echo &amp;quot;i3-wm.program.unclutter: :&amp;quot; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;li>Log out and back in for changes to take effect.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Find and Install Packages</title><link>https://regolith-linux.org/docs/howtos/find-install-packages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/find-install-packages/</guid><description>
 &lt;p>Regolith is a Debian-based system. Debian packaging tools can be used to find and install packages.&lt;/p>
 &lt;h1 id="find-package-via-the-command-line">Find package via the command line&lt;/h1>
 &lt;p>The &lt;code>apt&lt;/code> command can be used to query installed or all packages:&lt;/p>
