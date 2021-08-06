@@ -1,6 +1,6 @@
 ---
-title: "Look"
-linkTitle: "Look"
+title: "Wygląd"
+linkTitle: "Wygląd"
 weight: 1
 description: >
   Regolith Looks
