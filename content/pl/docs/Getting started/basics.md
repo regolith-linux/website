@@ -46,7 +46,7 @@ The terminal is a special application that has its own keybinding, {{< keys "sup
 
 The preferred browser is also special and can be launched with {{< keys "super,shift,enter" >}}.
 
-## Quit an Application
+## Wyjście z Programu
 
 {{< keys "super,shift,q" >}} will quit the focused application. For misbehaving apps, {{< keys "super,alt,q" >}} will force quit the focused application, but note that any unsaved data will likely be lost.
 
