@@ -11,7 +11,7 @@ Regolith, as a set of independent open-source components, lacks a uniform config
 In addition to the content in this section, refer to the [tutorials]({{< ref "howtos" >}}) for step-by-step examples of how to customize Regolith.
 {{% /pageinfo %}}
 
-## Look
+## Wygląd
 
 The highest level change in the way Regolith looks is called a "look". This ties together color, typeface, GTK theme and icons into a packageable unit known as a `look`. A few looks ship in the Regolith PPA, the default for R1.4 being called `lascaille`. Regolith Looks can be installed from the package manager. The official Looks follow the naming convention of `regolith-look-<look-name>`. Installed Regolith looks can easily be set via the Look dialog through {{< keys "super,alt,l" >}}.
 
