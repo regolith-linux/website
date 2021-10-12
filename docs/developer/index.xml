@@ -88,7 +88,7 @@ each script &lt;strong>must&lt;/strong> end with a linefeed!&lt;/p>
 &lt;h2 id="further-reading">Further Reading&lt;/h2>
 &lt;p>As &lt;code>i3xrocks&lt;/code> is based on &lt;code>i3blocks&lt;/code>, with a few minor additions, it is safe to use the &lt;a href="https://github.com/vivien/i3blocks">excellent and extensive documentation&lt;/a> available for the project. Just keep in mind the modular configuration files and that you can reference &lt;code>Xresources&lt;/code> keys directly from the configuration files.&lt;/p></description></item><item><title>Docs: Packaging</title><link>https://regolith-linux.org/docs/developer/packaging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/developer/packaging/</guid><description>
 &lt;p>Regolith is distributed as a set of interrelated Debian packages. As of Regolith 1.5, there are packages for 3 releases of Ubuntu:
-bionic, focal, groovy
+bionic, focal, hirsute
 . This page describes how code changes can be packaged such that users will get the updated code.&lt;/p>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>Debian is the packaging format and system used by Regolith. Just like Debian, Ubuntu, and other Debian-based systems, the tools and workflow used to develop and update Regolith packages works in the same manner as those system. The general process:&lt;/p>

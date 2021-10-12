@@ -1,0 +1,1102 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith – Reference</title><link>https://regolith-linux.org/ja/docs/reference/</link><description>Recent content in Reference on Regolith</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://regolith-linux.org/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Keybindings</title><link>https://regolith-linux.org/ja/docs/reference/keybindings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/ja/docs/reference/keybindings/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Action&lt;/th>
+&lt;th>Key Binding&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchApplication"> Launch - Application &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> Space&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchBrowser"> Launch - Browser &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> Enter&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchCommand"> Launch - Command &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> Space&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchFileBrowser"> Launch - File Browser &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> n&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchFileSearch"> Launch - File Search &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> Space&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchNotificationViewer"> Launch - Notification Viewer &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> n&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchTerminal"> Launch - Terminal &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> Enter&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#LaunchThisDialog"> Launch - This Dialog &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> ?&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyBluetoothSettings"> Modify - Bluetooth Settings &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> b&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyCarryWindowtoWorkspace1-10"> Modify - Carry Window to Workspace 1 - 10&lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> 0..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyCarryWindowtoWorkspace11-19"> Modify - Carry Window to Workspace 11 - 19 &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> &lt;code>Ctrl&lt;/code> 1..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyContainingWorkspace"> Modify - Containing Workspace &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> &lt;code>Shift&lt;/code> ↑ ↓ ← →&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyDisplaySettings"> Modify - Display Settings &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> d&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyLoadWindowLayout"> Modify - Load Window Layout &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> .&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyMoveWindowtoWorkspace1-10"> Modify - Move Window to Workspace 1 - 10 &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> 0..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyMoveWindowtoWorkspace11-19"> Modify - Move Window to Workspace 11 - 19&lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> &lt;code>Shift&lt;/code> 1..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyMovetoScratchpad"> Modify - Move to Scratchpad &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> m&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyNextWindowOrientation"> Modify - Next Window Orientation &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> Backspace&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifySaveWindowLayout"> Modify - Save Window Layout &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> ,&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifySettings"> Modify - Settings &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> c&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyTile/FloatFocusToggle"> Modify - Tile/Float Focus Toggle &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> t&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyToggleBar"> Modify - Toggle Bar &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> i&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyWifiSettings"> Modify - Wifi Settings &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> w&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyWindowFloatingToggle"> Modify - Window Floating Toggle &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> f&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyWindowFullscreenToggle"> Modify - Window Fullscreen Toggle &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> f&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyWindowLayoutMode"> Modify - Window Layout Mode &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> t&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyWindowPosition"> Modify - Window Position &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> k j h l&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ModifyWindowPosition"> Modify - Window Position &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> ↑ ↓ ← →&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateNextWorkspace"> Navigate - Next Workspace &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> Tab&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateNextWorkspace"> Navigate - Next Workspace &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> →&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigatePreviousWorkspace"> Navigate - Previous Workspace &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> ←&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigatePreviousWorkspace"> Navigate - Previous Workspace &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> Tab&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateRelativeWindow"> Navigate - Relative Window &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> k j h l&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateRelativeWindow"> Navigate - Relative Window &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> ↑ ↓ ← →&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateScratchpad"> Navigate - Scratchpad &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> a&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateWindowbyName"> Navigate - Window by Name &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> Space&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateWorkspace11-19"> Navigate - Workspace 11 - 19 &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> 1..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#NavigateWorkspaces1-10"> Navigate - Workspaces 1-10 &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> 0..9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#ResizeEnterResizeMode"> Resize - Enter Resize Mode &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> r&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionExitApp"> Session - Exit App &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> q&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionLockScreen"> Session - Lock Screen &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> Escape&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionLogout"> Session - Logout &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> e&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionPowerDown"> Session - Power Down &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> p&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionReboot"> Session - Reboot &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> b&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionRefreshSession"> Session - Refresh Session &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> r&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionReloadi3Config"> Session - Reload i3 Config &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> c&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionRestarti3"> Session - Restart i3 &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Ctrl&lt;/code> r&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionSleep"> Session - Sleep &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Shift&lt;/code> s&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#SessionTerminateApp"> Session - Terminate App &lt;/a>&lt;/td>
+&lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> q&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Docs: Config Files</title><link>https://regolith-linux.org/ja/docs/reference/configurations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/ja/docs/reference/configurations/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>Component&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Default Config&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>User Config&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Notes&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>i3-gaps&lt;/td>
+&lt;td>&lt;code>/etc/regolith/i3/config&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith/i3/config&lt;/code>&lt;/td>
+&lt;td>In Regolith versions prior to 1.2 this file was in another directory.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xresources&lt;/td>
+&lt;td>&lt;code>/etc/regolith/styles/root&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.Xresources-regolith&lt;/code> (Global override)&lt;br/>&lt;code>~/.config/regolith/Xresources&lt;/code> (Override)&lt;br/>&lt;code>~/.config/regolith/Xresources.d&lt;/code> (User files)&lt;/td>
+&lt;td>&lt;code>~/.Xresources&lt;/code> is also loaded but intended for properties that may also be required in other desktop sessions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Rofi&lt;/td>
+&lt;td>&lt;code>/etc/regolith/styles/lascaille/rofi.rasi&lt;/code>&lt;/td>
+&lt;td>Defined in the &lt;code>theme&lt;/code> style file.&lt;/td>
+&lt;td>This can also be overridden directly in the i3 file if preferred.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Bar Workspace Labels&lt;/td>
+&lt;td>&lt;code>/etc/regolith/styles/i3-wm&lt;/code>&lt;/td>
+&lt;td>User defined&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Bar status indicators&lt;/td>
+&lt;td>&lt;code>/etc/regolith/i3xrocks/conf.d&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith/i3xrocks/conf.d&lt;/code>&lt;/td>
+&lt;td>Each block has it&amp;rsquo;s own file. Filename determines ordering.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Picom (Compton) Compositor&lt;/td>
+&lt;td>&lt;code>/etc/regolith/picom/config&lt;/code>&lt;/td>
+&lt;td>&lt;code>~/.config/regolith/picom/config&lt;/code>&lt;/td>
+&lt;td>User config added in 1.5. Each compositor has it&amp;rsquo;s own independent config file, but the default is &lt;code>Picom&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>LightDM GTK Greeter&lt;/td>
+&lt;td>&lt;code>/usr/share/lightdm/lightdm-gtk-greeter.conf.d/02_regolith.conf&lt;/code>&lt;/td>
+&lt;td>N/A&lt;/td>
+&lt;td>This file only exists if the &lt;code>regolith-lightdm-config&lt;/code> package is installed.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="load-sequence">Load Sequence&lt;/h2>
+&lt;p>Upon session start, Regolith loads configuration files in the following order:&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>/usr/bin/i3-gnome-flashback&lt;/code> executes after successful login&lt;/li>
+&lt;li>Load &lt;code>Xresources&lt;/code> file &lt;code>~/.Xresources&lt;/code> if it exists.&lt;/li>
+&lt;li>Load &lt;code>Xresources&lt;/code> file &lt;code>~/.Xresources-regolith&lt;/code> if it exists.&lt;/li>
+&lt;li>Merge any values from file &lt;code>~/.config/regolith/Xresources&lt;/code> if it exists.&lt;/li>
+&lt;li>If first time session has loaded, initialize system.&lt;/li>
+&lt;li>Compare current &lt;code>Xresources&lt;/code> db against last saved hash, if different, reload GNOME settings from Xresources.&lt;/li>
+&lt;li>Execute i3 with first config file found from following list: &lt;code>~/.config/regolith/i3/config&lt;/code>, &lt;code>/etc/regolith/i3/config&lt;/code>, &lt;code>/etc/i3/config&lt;/code>.&lt;/li>
+&lt;li>i3 executes the UI components &lt;a href="https://github.com/davatorium/rofi">Rofi&lt;/a>, &lt;a href="https://github.com/regolith-linux/i3xrocks">i3xrocks&lt;/a>, &lt;a href="https://github.com/Airblader/unclutter-xfixes">unclutter&lt;/a>, regolith-compositor, &lt;a href="">Rofication&lt;/a>, and &lt;a href="https://github.com/regolith-linux/regolith-ftue">regolith-ftue&lt;/a>.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Packages</title><link>https://regolith-linux.org/ja/docs/reference/packages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/ja/docs/reference/packages/</guid><description>
+&lt;p>The Regolith project typically hosts a Git repository for every package not provided by an upstream project. &lt;a href="https://github.com/regolith-linux?q=&amp;amp;type=public&amp;amp;language=&amp;amp;sort=name">This page&lt;/a> lists these repositories and provides details regarding activity, summary of purpose, and last shipped version.&lt;/p></description></item><item><title>Docs: Regolith Looks</title><link>https://regolith-linux.org/ja/docs/reference/looks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/ja/docs/reference/looks/</guid><description>
+&lt;p>Regolith provides several visual styles, known as &amp;ldquo;looks&amp;rdquo;, that can be installed and used. To keep the install size of Regolith low, these looks are installed as Debian packages. By default only one look is shipped with Regolith: Lascaille. Other looks may be installed via the package manager and then loaded via
+&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">alt&lt;/span>
+&lt;span class="badge badge-warning">l&lt;/span>
+&lt;/span>
+.&lt;/p>
+&lt;h2 id="ayu">ayu&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-7d39a7579a21b0c089365eca3661f0068bdc65be050006581183d215595404a3" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/ayu-1.6_hu8a0b5722e2ca5370fd67297070b90b2b_728164_636x0_resize_catmullrom_2.png" alt="Ayu Look" />
+&lt;div class="modal" id="img-modal-7d39a7579a21b0c089365eca3661f0068bdc65be050006581183d215595404a3">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/ayu-1.6.png" alt="Ayu Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-ayu&lt;/code>&lt;/p>
+&lt;h2 id="ayu-dark">ayu-dark&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-6f3fb8bfe5b4b7ffd2dfe992211246b5fc719a7a0f51921145204e199b23521d" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/ayu-dark-1.6_hu8a0b5722e2ca5370fd67297070b90b2b_679040_636x0_resize_catmullrom_2.png" alt="Ayu Dark Look" />
+&lt;div class="modal" id="img-modal-6f3fb8bfe5b4b7ffd2dfe992211246b5fc719a7a0f51921145204e199b23521d">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/ayu-dark-1.6.png" alt="Ayu Dark Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-ayu-dark&lt;/code>&lt;/p>
+&lt;h2 id="ayu-mirage">ayu-mirage&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-350356da44fdfb505b3aa7fba7988bd02cc0d5ca7bd7f70d9e8370002dcf615b" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/ayu-mirage-1.6_hu8a0b5722e2ca5370fd67297070b90b2b_683627_636x0_resize_catmullrom_2.png" alt="Ayu Mirage Look" />
+&lt;div class="modal" id="img-modal-350356da44fdfb505b3aa7fba7988bd02cc0d5ca7bd7f70d9e8370002dcf615b">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/ayu-mirage-1.6.png" alt="Ayu Mirage Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-ayu-mirage&lt;/code>&lt;/p>
+&lt;h2 id="cahuella">cahuella&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-625ea056b630a26c91ca2c9fc0a7c66e47d57758d637a878367e2f6df7626a33" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/cahuella-1.6_hua6ebffb15ba01bbbb74c21e04dee1ba5_718548_636x0_resize_catmullrom_2.png" alt="Cahuella Look" />
+&lt;div class="modal" id="img-modal-625ea056b630a26c91ca2c9fc0a7c66e47d57758d637a878367e2f6df7626a33">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/cahuella-1.6.png" alt="Cahuella Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-cahuella&lt;/code>&lt;/p>
+&lt;h2 id="dracula">dracula&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-b3e78b2abe470eb93604ee1f5af9d76181c11152c753f49852ca0346da562174" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/dracula-1.6_hu8a0b5722e2ca5370fd67297070b90b2b_632867_636x0_resize_catmullrom_2.png" alt="Dracula Look" />
+&lt;div class="modal" id="img-modal-b3e78b2abe470eb93604ee1f5af9d76181c11152c753f49852ca0346da562174">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/dracula-1.6.png" alt="Dracula Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-dracula&lt;/code>&lt;/p>
+&lt;h2 id="gruvbox">gruvbox&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-77fd33da1eceee6cb9db9c902a152d2d4f8d6914e6b1697bcdb02644629638ad" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/gruvbox-1.6_hu8a0b5722e2ca5370fd67297070b90b2b_631993_636x0_resize_catmullrom_2.png" alt="Gruvbox Look" />
+&lt;div class="modal" id="img-modal-77fd33da1eceee6cb9db9c902a152d2d4f8d6914e6b1697bcdb02644629638ad">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/gruvbox-1.6.png" alt="Gruvbox Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-gruvbox&lt;/code>&lt;/p>
+&lt;h2 id="lascaille">lascaille&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-822403edad7dea022b6f70545cd5951a3ce354d08666950a05de62236b5710f4" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/lascaille-1.6_hu8a0b5722e2ca5370fd67297070b90b2b_631330_636x0_resize_catmullrom_2.png" alt="Lascaille Look" />
+&lt;div class="modal" id="img-modal-822403edad7dea022b6f70545cd5951a3ce354d08666950a05de62236b5710f4">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/lascaille-1.6.png" alt="Lascaille Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-lascaille&lt;/code>&lt;/p>
+&lt;h2 id="midnight">midnight&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-a43f3dec891f69f66fb8147442f18ca13f4c42aef06ce325ac486bd837e660fe" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/midnight-1.6_hu479ed8d0eada13c142bdff7ac816343f_572942_636x0_resize_catmullrom_2.png" alt="Midnight Look" />
+&lt;div class="modal" id="img-modal-a43f3dec891f69f66fb8147442f18ca13f4c42aef06ce325ac486bd837e660fe">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/midnight-1.6.png" alt="Midnight Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-midnight&lt;/code>&lt;/p>
+&lt;h2 id="nord">nord&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-5df94c839733b6839189cfb113ae8885ab1bba0a320266d925d5d1c0060587dc" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/nord-1.6_hu4ffdd43ec3d693786c21dc24420c7436_311734_636x0_resize_catmullrom_2.png" alt="Nord Look" />
+&lt;div class="modal" id="img-modal-5df94c839733b6839189cfb113ae8885ab1bba0a320266d925d5d1c0060587dc">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/nord-1.6.png" alt="Nord Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-nord&lt;/code>&lt;/p>
+&lt;h2 id="pop-os">pop-os&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-26e9be4b22f402b80970e9045611ac77577098939541fbdb3a2144d2fee3084c" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/pop-os-1.6_hu5d7c0d9fe8b4247e88f3a24a0603204f_226502_636x0_resize_catmullrom_2.png" alt="Pop OS Look" />
+&lt;div class="modal" id="img-modal-26e9be4b22f402b80970e9045611ac77577098939541fbdb3a2144d2fee3084c">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/pop-os-1.6.png" alt="Pop OS Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-pop-os&lt;/code>&lt;/p>
+&lt;h2 id="solarized-dark">solarized-dark&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-6befa7279a4f0bf38accdd19af0c3baa683ff7f01b0ffa018b70fbefc6adcbbd" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/solarized-dark-1.6_hu7a4ce09270531e8f9fffe10678ba0501_593521_636x0_resize_catmullrom_2.png" alt="Solarized Dark Look" />
+&lt;div class="modal" id="img-modal-6befa7279a4f0bf38accdd19af0c3baa683ff7f01b0ffa018b70fbefc6adcbbd">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/solarized-dark-1.6.png" alt="Solarized Dark Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-solarized-dark&lt;/code>&lt;/p>
+&lt;h2 id="solarized-light">solarized-light&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-e532eb713d6eb8c07c6ba17b12928a1d65dc751bfa7b1e10c2ca836c3a536a82" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/solarized-light-1.6_hu72e279e41c2f5af6b0af63464d31292f_304357_636x0_resize_catmullrom_2.png" alt="Solarized Light Look" />
+&lt;div class="modal" id="img-modal-e532eb713d6eb8c07c6ba17b12928a1d65dc751bfa7b1e10c2ca836c3a536a82">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/solarized-light-1.6.png" alt="Solarized Light Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-solarized-light&lt;/code>&lt;/p>
+&lt;h2 id="ubuntu">ubuntu&lt;/h2>
+&lt;p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-0b5aeeb41d3216b45f8fc11b7243ffed806c6349d30649a9dec284e3d12482f7" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gallery/ubuntu-1.6_hu25eca3819ad7164da296f64d490b778e_268351_636x0_resize_catmullrom_2.png" alt="Ubuntu Look" />
+&lt;div class="modal" id="img-modal-0b5aeeb41d3216b45f8fc11b7243ffed806c6349d30649a9dec284e3d12482f7">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gallery/ubuntu-1.6.png" alt="Ubuntu Look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+Debian package: &lt;code>regolith-look-ubuntu&lt;/code>&lt;/p></description></item><item><title>Docs: Xresources</title><link>https://regolith-linux.org/ja/docs/reference/xresources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/ja/docs/reference/xresources/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;code>Xresources&lt;/code> Key&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>St.color0 - St.color15&lt;/td>
+&lt;td>Color definitions for terminal&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>St.font&lt;/td>
+&lt;td>Font definition for st-term&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xcursor.size&lt;/td>
+&lt;td>X cursor size&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xcursor.theme&lt;/td>
+&lt;td>X cursor theme&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xft.antialias&lt;/td>
+&lt;td>X anti-alias flag&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xft.dpi&lt;/td>
+&lt;td>X DPI setting&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xft.hinting&lt;/td>
+&lt;td>X hinting&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xft.hintstyle&lt;/td>
+&lt;td>X hint style&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Xft.rgba&lt;/td>
+&lt;td>X rgb setting&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.gtk.theme&lt;/td>
+&lt;td>GTK Theme&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.icon.theme&lt;/td>
+&lt;td>GTK Icon Theme&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.audible-bell&lt;/td>
+&lt;td>Enables audible bell in gnome-terminal (&lt;code>true | false&lt;/code>)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.background-transparency-percent&lt;/td>
+&lt;td>Background transparency value for gnome-terminal (&lt;code>0 - 100&lt;/code>). See also &lt;code>gnome.terminal.use-transparent-background&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.font&lt;/td>
+&lt;td>Font definition for gnome-terminal&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.scrollbar&lt;/td>
+&lt;td>Flag to enable/disable scrollbar (&lt;code>never | always&lt;/code>)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.terminal.use-transparent-background&lt;/td>
+&lt;td>Enables transparent background in gnome-terminal (&lt;code>true | false&lt;/code>). See also &lt;code>gnome.terminal.background-transparency-percent&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.wallpaper&lt;/td>
+&lt;td>GNOME Wallpaper (can be overridden in Settings)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gnome.wm.theme&lt;/td>
+&lt;td>GNOME Window Manager Theme (unused)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.alt&lt;/td>
+&lt;td>Key mapping for Alt key. See the &lt;a href="https://i3wm.org/docs/userguide.html#_using_i3">i3 User Guide&lt;/a> for details.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.background.color&lt;/td>
+&lt;td>Bar Background Color&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.font&lt;/td>
+&lt;td>Bar Font&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.position&lt;/td>
+&lt;td>Bar Screen Position&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.separator.color&lt;/td>
+&lt;td>Color of seperator between blocks&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.statusline.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.trayoutput&lt;/td>
+&lt;td>Enable or disable the &lt;a href="https://i3wm.org/docs/userguide.html#_tray_output">app tray&lt;/a> in i3bar&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.active.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.active.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.active.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.focused.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.focused.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.focused.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.inactive.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.inactive.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.inactive.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.urgent.background.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.urgent.border.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.bar.workspace.urgent.text.color&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused_inactive.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused_inactive.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused_inactive.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused_inactive.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.focused_inactive.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.unfocused.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.unfocused.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.unfocused.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.unfocused.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.unfocused.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.urgent.color.background&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.urgent.color.border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.urgent.color.child_border&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.urgent.color.indicator&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.client.urgent.color.text&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.floatingwindow.border.size&lt;/td>
+&lt;td>Window border size in pixels for floating windows&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.font&lt;/td>
+&lt;td>Window manager font&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.gaps.inner.size&lt;/td>
+&lt;td>Default gap size between windows in pixels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.gaps.outer.size&lt;/td>
+&lt;td>Default gap size at screen edge in pixels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.mod&lt;/td>
+&lt;td>Key mapping for Super key. See the &lt;a href="https://i3wm.org/docs/userguide.html#_using_i3">i3 User Guide&lt;/a> for details.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.window.border.size&lt;/td>
+&lt;td>Default border size in pixels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.workspace.01.name .. i3-wm.workspace.19.name&lt;/td>
+&lt;td>Workspace Labels&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.workspace.01.key .. i3-wm.workspace.10.key&lt;/td>
+&lt;td>Workspace Shortucts&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.left&lt;/td>
+&lt;td>Command to execute when volume indicator is left clicked (default: none)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.middle&lt;/td>
+&lt;td>Command to execute when volume indicator is middle clicked (default: none)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.right&lt;/td>
+&lt;td>Command to execute when volume indicator is right clicked (default: mute through amixer)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrollup&lt;/td>
+&lt;td>Command to execute when scroll wheel up is used on volume indicator (default: increase volume through amixer)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrolldn&lt;/td>
+&lt;td>Command to execute when scroll wheel down is used on volume indicator (default: decrease volume through amixer)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.error.color&lt;/td>
+&lt;td>Color for bar module in error mode&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery0&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery100&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery20&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery50&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.battery80&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batteryac&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batterycharging&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.batteryunknown&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.capslock&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.color&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.cpu&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.disk&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.dn&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.help&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mediapaused&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mediaplaying&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.memory&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.mute&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.error&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.none&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.notify.some&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.numlock&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.off&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.on&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.sound&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.thermometer&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.time&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.up&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.wifi&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.label.wired&lt;/td>
+&lt;td>Bar icon glyph&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.nominal&lt;/td>
+&lt;td>Default bar icon color&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.value.color&lt;/td>
+&lt;td>Color of numerical value in bar module&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.value.font&lt;/td>
+&lt;td>Font for numerical value in bar module&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.warning&lt;/td>
+&lt;td>Warning color for bar module&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.drun-display-format&lt;/td>
+&lt;td>Fields to render in drun mode in Rofi&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.icon-theme&lt;/td>
+&lt;td>Rofi icon theme&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.font&lt;/td>
+&lt;td>Rofi font&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.modi&lt;/td>
+&lt;td>Rofi modes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.show-icons&lt;/td>
+&lt;td>true if the Rofi dialog should render app icons, false otherwise&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.theme&lt;/td>
+&lt;td>Path to the Rofi theme file&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.window-format&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h1 id="optional-xresources-keys">Optional &lt;code>Xresources&lt;/code> keys&lt;/h1>
+&lt;p>The following &lt;code>Xresources&lt;/code> keys are undefined by default but can be used by users to change behavior as desired.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;code>Xresources&lt;/code> Key&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>rofi.search.help&lt;/td>
+&lt;td>Show help text on the file search dialog, defaults to &lt;code>true&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rofi.search.limit&lt;/td>
+&lt;td>Total number of items to return from an &lt;code>mlocate&lt;/code> search, default: 64&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.gaps.focus_follows_mouse&lt;/td>
+&lt;td>The window under the mouse has focus if enabled&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.launcher.app&lt;/td>
+&lt;td>Command i3 executes from the app launcher keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.launcher.cmd&lt;/td>
+&lt;td>Command i3 executes from the command launcher keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.launcher.window&lt;/td>
+&lt;td>Command i3 executes for the window navigation keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.help&lt;/td>
+&lt;td>Command to launch from the help keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.file_search&lt;/td>
+&lt;td>Command to launch from the file search keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.refresh_ui&lt;/td>
+&lt;td>Command to launch from the session refresh keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.logout&lt;/td>
+&lt;td>Command to launch from the logout keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.reboot&lt;/td>
+&lt;td>Command to launch from the reboot keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.shutdown&lt;/td>
+&lt;td>Command to launch from the shutdown keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.lock&lt;/td>
+&lt;td>Command to launch from the lock screen keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.sleep&lt;/td>
+&lt;td>Command to launch from the sleep keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.settings&lt;/td>
+&lt;td>Command to launch from the Control Panel keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.display&lt;/td>
+&lt;td>Command to launch from the Display Settings keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.wifi&lt;/td>
+&lt;td>Command to launch from the Wifi Settings keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.bluetooth&lt;/td>
+&lt;td>Command to launch from the Bluetooth Settings keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.files&lt;/td>
+&lt;td>Command to launch from the file browser keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.notification_ui&lt;/td>
+&lt;td>Command to launch from the notification UI keybinding&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3-wm.program.1&amp;hellip;i3-wm.program.3&lt;/td>
+&lt;td>Optional programs to start with i3&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.media-player.player-args&lt;/td>
+&lt;td>Optional arguments used by the &lt;code>media-player&lt;/code> i3xrocks block. These arguments are fed straight into &lt;code>playerctl&lt;/code>, eg. setting this value to &lt;code>-p spotify&lt;/code> only makes the bar display/control spotify.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.left&lt;/td>
+&lt;td>Optional command to run on left button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.middle&lt;/td>
+&lt;td>Optional command to run on middle button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.right&lt;/td>
+&lt;td>Override command to run on right button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.scrollup&lt;/td>
+&lt;td>Override command to run on scroll up of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.mic.scrolldn&lt;/td>
+&lt;td>Override command to run on scroll down of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.left&lt;/td>
+&lt;td>Optional command to run on left button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.middle&lt;/td>
+&lt;td>Optional command to run on middle button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.right&lt;/td>
+&lt;td>Override command to run on right button click of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrollup&lt;/td>
+&lt;td>Override command to run on scroll up of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.volume.scrolldn&lt;/td>
+&lt;td>Override command to run on scroll down of microphone status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.disk-capacity&lt;/td>
+&lt;td>Override command to run on disk capacity status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.cpu-usage&lt;/td>
+&lt;td>Override command to run on cpu usage status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.memory&lt;/td>
+&lt;td>Override command to run on memory status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.wifi&lt;/td>
+&lt;td>Override command to run on wifi status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.weather&lt;/td>
+&lt;td>Override command to run on weather status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.left&lt;/td>
+&lt;td>Optional command to run on left button click of media player status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.middle&lt;/td>
+&lt;td>Optional command to run on middle button click of media player status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.media-player.right&lt;/td>
+&lt;td>Override command to run on right button click of media player status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.time&lt;/td>
+&lt;td>Override command to run on date time status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.action.battery&lt;/td>
+&lt;td>Override command to run on battery status indicator.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Docs: Releases</title><link>https://regolith-linux.org/ja/docs/reference/releases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/ja/docs/reference/releases/</guid><description>
+&lt;p>Release notes and other version-specific content can be found here.&lt;/p></description></item></channel></rss>

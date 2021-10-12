@@ -1397,7 +1397,7 @@ icon in the bar, or pressing
 &lt;li>&lt;strong>Contributing RFCs&lt;/strong>: For new features, it is recommended to create a &amp;ldquo;request for comment&amp;rdquo; issue (&lt;a href="https://github.com/regolith-linux/regolith-i3-gaps-config/issues/6">example&lt;/a>) and allow some time for user feedback. These RfCs will be advertised via the mailing list and official Twitter account.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Packaging</title><link>https://regolith-linux.org/docs/developer/packaging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/developer/packaging/</guid><description>
 &lt;p>Regolith is distributed as a set of interrelated Debian packages. As of Regolith 1.5, there are packages for 3 releases of Ubuntu:
-bionic, focal, groovy
+bionic, focal, hirsute
 . This page describes how code changes can be packaged such that users will get the updated code.&lt;/p>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>Debian is the packaging format and system used by Regolith. Just like Debian, Ubuntu, and other Debian-based systems, the tools and workflow used to develop and update Regolith packages works in the same manner as those system. The general process:&lt;/p>

@@ -1,0 +1,154 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Regolith – Developer</title><link>https://regolith-linux.org/ja/docs/developer/</link><description>Recent content in Developer on Regolith</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://regolith-linux.org/ja/docs/developer/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Looks</title><link>https://regolith-linux.org/ja/docs/developer/looks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/ja/docs/developer/looks/</guid><description>
+&lt;p>Looks are a combination of &lt;code>Xresources&lt;/code> definitions and associated resources such as wallpapers, GTK themes, and icons that as a whole provide the user with a distinctive user interface, all expressed as a collection of files. The default looks that ship with Regolith are natural starting points for creating new ones, but it&amp;rsquo;s also possible to start from scratch as long as the required &lt;code>Xresources&lt;/code> entries are defined. Ideally, looks are packaged as Debian packages with all required resources either provided by the look or added as a package dependency. By using the OS packaging system, required files and resources are ensured to be installed and available.&lt;/p>
+&lt;h2 id="required-files">Required Files&lt;/h2>
+&lt;p>Starting from scratch, the only mandatory file for a Look as a single &lt;code>Xresources&lt;/code> definition file. This file must specify entries for Regolith&amp;rsquo;s required values, &lt;a href="https://regolith-linux.org/ja/docs/reference/xresources/">defined on this page&lt;/a>. However, it&amp;rsquo;s recommended to simply copy an existing look as a basis for customization, due to the compositional nature that Looks use.&lt;/p>
+&lt;h3 id="suggested-file-layout">Suggested File Layout&lt;/h3>
+&lt;p>It is suggested that a look be installed in &lt;code>/etc/regolith/styles/&amp;lt;look name&amp;gt;&lt;/code> and that the primary (or only) &lt;code>Xresources&lt;/code> file is named &lt;code>root&lt;/code>. Existing Regolith Looks decompose the &lt;code>Xresources&lt;/code> into types of resources and any config specific to a UI component. For example the &amp;ldquo;Cahuella&amp;rdquo; Look provides definitions for GNOME (theme), color, and typeface and a specific theme for &amp;ldquo;Rofi&amp;rdquo; since it&amp;rsquo;s configuration cannot be completely expressed via &lt;code>Xresources&lt;/code> key/value pairs:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ find /etc/regolith/styles/cahuella -type f
+/etc/regolith/styles/cahuella/theme
+/etc/regolith/styles/cahuella/color
+/etc/regolith/styles/cahuella/typeface
+/etc/regolith/styles/cahuella/root
+/etc/regolith/styles/cahuella/rofi.rasi
+&lt;/code>&lt;/pre>&lt;h2 id="initialization">Initialization&lt;/h2>
+&lt;p>When the Regolith session loads upon login, the initialization script looks &lt;a href="https://regolith-linux.org/ja/docs/customize/styles/#loading-order">in a few places&lt;/a> for &lt;code>Xresources&lt;/code> file definitions. The &lt;code>regolith-look&lt;/code> tool provides the ability for users to change looks by creating an &lt;code>Xresources&lt;/code> file that simply redirects to another file via the &lt;code>#include&lt;/code> directive provided by the &lt;code>Xresources&lt;/code> subsystem. In this way, a Look is enabled in Regolith by providing this link between a well-known &lt;code>Xresources&lt;/code> file entry point to the files specific to the custom Look.&lt;/p>
+&lt;h2 id="packaging">Packaging&lt;/h2>
+&lt;p>The ideal user experience is to install a look via a package manager tool and then using the &lt;code>regolith-look&lt;/code> tool to set it. For example:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ sudo apt install regolith-look-ubuntu
+$ regolith-look set ubuntu
+$ regolith-look refresh
+&lt;/code>&lt;/pre>&lt;p>In order to achieve this flow, all runtime dependencies (fonts, GTK themes, wallpapers, etc.) must be included in the package or defined as a Debian package dependency in a &lt;code>debian/control&lt;/code> file. See the &lt;a href="https://github.com/regolith-linux/regolith-styles/tree/master/debian">&lt;code>regolith-styles&lt;/code> package&lt;/a> for further information on Debian metadata. If you&amp;rsquo;re new to Debian packaging, here is &lt;a href="https://wiki.debian.org/BuildingTutorial">an introduction&lt;/a>.&lt;/p>
+&lt;h2 id="testing">Testing&lt;/h2>
+&lt;p>Once you have a Look ready for testing, copy the containing directory for your files into &lt;code>/etc/regolith/styles&lt;/code>, for example for a Look called &lt;code>orange&lt;/code>, you may have this file layout:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">/etc/regolith/styles/orange/theme
+/etc/regolith/styles/orange/color
+/etc/regolith/styles/orange/typeface
+/etc/regolith/styles/orange/root
+/etc/regolith/styles/orange/rofi.rasi
+&lt;/code>&lt;/pre>&lt;p>Then run &lt;code>regolith-look set orange &amp;amp;&amp;amp; regolith-look refresh&lt;/code>. The UI should be updated with your new look.&lt;/p></description></item><item><title>Docs: Status Indicators</title><link>https://regolith-linux.org/ja/docs/developer/status-indicators/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/ja/docs/developer/status-indicators/</guid><description>
+&lt;p>The &lt;code>i3bar&lt;/code> is the UI component that is displayed by default at the bottom of the screen. To the left is workspace information. This is built-in to &lt;code>i3bar&lt;/code> as it&amp;rsquo;s designed to be directly integrated with &lt;code>i3-wm&lt;/code>. On the right are various status indicators, which may vary based on which packages are installed. It&amp;rsquo;s common to have the time (&lt;code>i3xrocks-time&lt;/code>), notifications (&lt;code>regolith-rofication&lt;/code>), and network I/O (&lt;code>i3xrocks-net-traffic&lt;/code>). This page describes how to add new status indicators.&lt;/p>
+&lt;h2 id="execution">Execution&lt;/h2>
+&lt;p>In Regolith, status indicators are simply small scripts that run once or on an interval that return text when they complete. This text is interpreted by &lt;code>i3bar&lt;/code> and displayed. The program that executes the scripts is called &lt;code>i3xrocks&lt;/code>. It is a fork of another program, &lt;code>i3blocks&lt;/code> that adds two features that were necessary to support the Regolith desktop environment:&lt;/p>
+&lt;ol>
+&lt;li>Reading values from &lt;code>Xresources&lt;/code>.&lt;/li>
+&lt;li>Expressing configuration as a set of files, rather than one single file.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>i3xrocks&lt;/code> is invoked by &lt;code>i3-wm&lt;/code> from within the i3 config file. Once started, &lt;code>i3xrocks&lt;/code> reads it&amp;rsquo;s configuration from the files it finds in &lt;code>/etc/regolith/i3xrocks/conf.d&lt;/code> (or a user directory, see &lt;a href="../../reference/configurations/">this reference page&lt;/a> for details.) The configuration files in &lt;code>/etc/regolith/i3xrocks/conf.d&lt;/code> describe, per status indicator, the path to the script to execute, the interval by which to run the script, and other variables that the script may need for it&amp;rsquo;s configuration. Where possible, &lt;code>Xresources&lt;/code> should be used to read configuration from, making updates and customizations more consistent.&lt;/p>
+&lt;h2 id="scripts">Scripts&lt;/h2>
+&lt;p>The scripts that run are typically stored at &lt;code>/usr/share/i3xrocks/&lt;/code> and are generally executable from the command line. For example:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ /usr/share/i3xrocks/time
+&amp;lt;span color=&amp;quot;#E6E1CF&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span font_desc=&amp;quot;JetBrains Mono Medium 13&amp;quot; color=&amp;quot;#E6E1CF&amp;quot;&amp;gt; 05/30 19:06 &amp;lt;/span&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>You&amp;rsquo;ll notice here some HTML-like formatting, and then the actual date and time. The structure of the data returned by the script can be any text, but to maintain a consistent look in Regolith we use the following convention:&lt;/p>
+&lt;pre>&lt;code>&amp;lt;icon&amp;gt; &amp;lt;text&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>The icon is represented by a font icon, or, a font that typically contains symbols rather than text. By default Regolith uses the &lt;code>fonts-materialdesignicons-webfont&lt;/code> and other looks use &lt;code>fonts-font-awesome&lt;/code>. The particular font and character used by the icon is defined by &lt;code>regolith-look&lt;/code> &lt;code>Xresources&lt;/code> definitions. For example, by default the icon for time is &lt;a href="https://github.com/regolith-linux/regolith-styles/blob/master/lascaille/typeface#L22">defined here&lt;/a>. When providing your own icon, you can just use one from the installed font for your preferred look, or create a PR in the &lt;code>regolith-styles&lt;/code> repo to include your new icon (with a &lt;code>Xresources&lt;/code> name) for other users.&lt;/p>
+&lt;h2 id="output">Output&lt;/h2>
+&lt;p>Before we saw the output of the time script. Let&amp;rsquo;s deconstruct it:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">span&lt;/span> &lt;span style="color:#c4a000">color&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;#E6E1CF&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">span&lt;/span>
+&lt;span style="color:#000;font-weight:bold">&amp;gt;&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">span&lt;/span> &lt;span style="color:#c4a000">font_desc&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;JetBrains Mono Medium 13&amp;#34;&lt;/span> &lt;span style="color:#c4a000">color&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;#E6E1CF&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span> 05/30 19:06 &lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">span&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The first span block defines the icon of the status indicator. Notice how it does not specify a font. This is because, without a font specification, the default is used. In the case of Regolith looks, the default font is whatever icon font is specified in &lt;code>Xresources&lt;/code>. In Regolith 1.4.1 - 1.6, &lt;a href="https://github.com/regolith-linux/regolith-styles/blob/master/Xresources/root">the default look is &lt;code>lascaille&lt;/code>&lt;/a> and &lt;a href="https://github.com/regolith-linux/regolith-styles/blob/master/lascaille/typeface#L2">the icon font is &lt;code>fonts-materialdesignicons-webfont&lt;/code>&lt;/a>.&lt;/p>
+&lt;p>The color is &lt;a href="https://github.com/regolith-linux/regolith-i3xrocks-config/blob/master/scripts/time#L38">read from &lt;code>Xresources&lt;/code> in the script&lt;/a>, rather than hardcoded. This allows the look of the status indicator to match the installed user&amp;rsquo;s look.&lt;/p>
+&lt;p>The second &lt;code>&amp;lt;span&amp;gt;&lt;/code> block contains the textual status information. Again we have a color (coming from &lt;code>Xresources&lt;/code>), but also now a font. This is the secondary font passed to &lt;code>i3bar&lt;/code> in the &lt;code>i3-wm&lt;/code> config file. It also comes from Xresources. In general, to load icon character, the icon font and text font, as well as the colors, use the &lt;code>xrescat&lt;/code> program with the appropriate keys. For the time script it is this:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#000">LABEL_ICON&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">icon&lt;/span>&lt;span style="color:#204a87;font-weight:bold">:-$(&lt;/span>xrescat i3xrocks.label.time &lt;span style="color:#204a87;font-weight:bold">)&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>
+&lt;span style="color:#000">LABEL_COLOR&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">label_color&lt;/span>&lt;span style="color:#204a87;font-weight:bold">:-$(&lt;/span>xrescat i3xrocks.label.color &lt;span style="color:#4e9a06">&amp;#34;#7B8394&amp;#34;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">)&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>
+&lt;span style="color:#000">VALUE_COLOR&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">color&lt;/span>&lt;span style="color:#204a87;font-weight:bold">:-$(&lt;/span>xrescat i3xrocks.value.color &lt;span style="color:#4e9a06">&amp;#34;#D8DEE9&amp;#34;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">)&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>
+&lt;span style="color:#000">VALUE_FONT&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">font&lt;/span>&lt;span style="color:#204a87;font-weight:bold">:-$(&lt;/span>xrescat i3xrocks.value.font &lt;span style="color:#4e9a06">&amp;#34;Source Code Pro Medium 13&amp;#34;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">)&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Note&lt;/strong>: the 3rd parameter to &lt;code>i3xrocks&lt;/code> is a default value in the case that the key is undefined at runtime.&lt;/p>
+&lt;h2 id="buttons">Buttons&lt;/h2>
+&lt;p>Status indicators can optionally perform actions when users click on them on the bar. To do this, test if the &lt;code>BUTTON&lt;/code> variable has been set, and of so act accordingly. In the case of &lt;code>time&lt;/code>, clicking the status causes the date/time preference dialog from &amp;ldquo;GNOME Control Center&amp;rdquo; to be loaded:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;x&lt;/span>&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">BUTTON&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">==&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;x1&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">then&lt;/span>
+/usr/bin/i3-msg -q &lt;span style="color:#204a87">exec&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;/usr/bin/gnome-control-center --class=floating_window datetime&amp;#34;&lt;/span>
+&lt;span style="color:#204a87;font-weight:bold">fi&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="confd-scripts">&lt;code>conf.d&lt;/code> Scripts&lt;/h2>
+&lt;p>Once the script that generates the status text is ready, another configuration file is needed to tell &lt;code>i3xrocks&lt;/code> to execute the script. This file should start with a number between 10 - 100 signifying where by default it should be positioned on the bar (bigger numbers are farther to the right.), and then the name of the script. Looking again at the time config block (in &lt;code>/etc/regolith/i3xrocks/conf.d/90_time&lt;/code>):&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">&lt;span style="color:#8f5902;font-style:italic"># Date Time&lt;/span>
+&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#000">time&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;span style="color:#000">interval&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">10&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>
+&lt;span class="badge badge-primary">IMPORTANT&lt;/span>
+each script &lt;strong>must&lt;/strong> end with a linefeed!&lt;/p>
+&lt;p>By default, &lt;code>i3xrocks&lt;/code> is configured to look in the &lt;code>/usr/share/i3xrocks&lt;/code> directory for scripts. So &lt;code>[time]&lt;/code> tells i3rocks to execute a script &lt;code>/usr/share/i3xrocks/time&lt;/code>. The interval is used to know when to call the script, on a timer. See the &lt;code>i3blocks&lt;/code> documentation for more fields and details about this configuration format.&lt;/p>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;h3 id="file-count">File Count&lt;/h3>
+&lt;p>To create a script that counts the number of text files in the &lt;code>/tmp&lt;/code> directory, the command we could use is &lt;code>ls /tmp | wc -l&lt;/code>. This returns a number of files and directories. We can make a script (&lt;code>/usr/share/i3xrocks/tmp-count&lt;/code>) with the correct formatting like so:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#8f5902;font-style:italic">#!/bin/bash
+&lt;/span>&lt;span style="color:#8f5902;font-style:italic">&lt;/span>
+&lt;span style="color:#204a87">set&lt;/span> -Eeu -o pipefail
+&lt;span style="color:#000">LABEL_ICON&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">icon&lt;/span>&lt;span style="color:#204a87;font-weight:bold">:-$(&lt;/span>xrescat i3xrocks.label.tmpfilecount T&lt;span style="color:#204a87;font-weight:bold">)&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>
+&lt;span style="color:#000">LABEL_COLOR&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">label_color&lt;/span>&lt;span style="color:#204a87;font-weight:bold">:-$(&lt;/span>xrescat i3xrocks.label.color &lt;span style="color:#4e9a06">&amp;#34;#7B8394&amp;#34;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">)&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>
+&lt;span style="color:#000">VALUE_COLOR&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">color&lt;/span>&lt;span style="color:#204a87;font-weight:bold">:-$(&lt;/span>xrescat i3xrocks.value.color &lt;span style="color:#4e9a06">&amp;#34;#D8DEE9&amp;#34;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">)&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>
+&lt;span style="color:#000">VALUE_FONT&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">font&lt;/span>&lt;span style="color:#204a87;font-weight:bold">:-$(&lt;/span>xrescat i3xrocks.value.font &lt;span style="color:#4e9a06">&amp;#34;Source Code Pro Medium 13&amp;#34;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">)&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>
+&lt;span style="color:#000">COUNT&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87;font-weight:bold">$(&lt;/span>ls /tmp &lt;span style="color:#000;font-weight:bold">|&lt;/span> wc -l&lt;span style="color:#204a87;font-weight:bold">)&lt;/span>
+&lt;span style="color:#204a87">echo&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;span color=\&amp;#34;&lt;/span>&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">LABEL_COLOR&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>&lt;span style="color:#4e9a06">\&amp;#34;&amp;gt;&lt;/span>&lt;span style="color:#000">$LABEL_ICON&lt;/span>&lt;span style="color:#4e9a06">&amp;lt;/span&amp;gt;&amp;lt;span font_desc=\&amp;#34;&lt;/span>&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">VALUE_FONT&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>&lt;span style="color:#4e9a06">\&amp;#34; color=\&amp;#34;&lt;/span>&lt;span style="color:#4e9a06">${&lt;/span>&lt;span style="color:#000">VALUE_COLOR&lt;/span>&lt;span style="color:#4e9a06">}&lt;/span>&lt;span style="color:#4e9a06">\&amp;#34;&amp;gt;&lt;/span>&lt;span style="color:#000">$COUNT&lt;/span>&lt;span style="color:#4e9a06">&amp;lt;/span&amp;gt;&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Notice how &lt;code>LABEL_ICON&lt;/code> has a new key name ending with &lt;code>tmpfilecount&lt;/code> and a default value of &lt;code>T&lt;/code>. Until/unless &lt;code>regolith-styles&lt;/code> is updated as mentioned above to include this new key, general users will not have &lt;code>i3xrocks.label.tmpfilecount&lt;/code> defined in their system, so the fallback of &lt;code>T&lt;/code> will be used.&lt;/p>
+&lt;p>Next we need a configuration script (&lt;code>/etc/regolith/i3xrocks/conf.d/50_tmp-count&lt;/code>) that integrates our status script into the desktop:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">&lt;span style="color:#8f5902;font-style:italic"># File Count in /tmp&lt;/span>
+&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#000">tmp&lt;/span>&lt;span style="color:#a40000">-&lt;/span>&lt;span style="color:#000">count&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;span style="color:#000">interval&lt;/span>&lt;span style="color:#000;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">60&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>This config file will render roughly in the middle of the right side of the bar and will be updated every minute.&lt;/p>
+&lt;h2 id="further-reading">Further Reading&lt;/h2>
+&lt;p>As &lt;code>i3xrocks&lt;/code> is based on &lt;code>i3blocks&lt;/code>, with a few minor additions, it is safe to use the &lt;a href="https://github.com/vivien/i3blocks">excellent and extensive documentation&lt;/a> available for the project. Just keep in mind the modular configuration files and that you can reference &lt;code>Xresources&lt;/code> keys directly from the configuration files.&lt;/p></description></item><item><title>Docs: Packaging</title><link>https://regolith-linux.org/ja/docs/developer/packaging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/ja/docs/developer/packaging/</guid><description>
+&lt;p>Regolith is distributed as a set of interrelated Debian packages. As of Regolith 1.5, there are packages for 3 releases of Ubuntu:
+bionic, focal, hirsute
+. This page describes how code changes can be packaged such that users will get the updated code.&lt;/p>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Debian is the packaging format and system used by Regolith. Just like Debian, Ubuntu, and other Debian-based systems, the tools and workflow used to develop and update Regolith packages works in the same manner as those system. The general process:&lt;/p>
+&lt;ol>
+&lt;li>Produce some code change against an existing package. In Regolith, generally there is a repo for each package, but in some cases one repo may host several source or binary packages.&lt;/li>
+&lt;li>Update the Debian metadata related to the change. This may just be a &lt;code>changelog&lt;/code> entry, or could be more complex such as a new binary package, additional runtime dependencies, or updates to the build files which generate the executable code.&lt;/li>
+&lt;li>Do local testing and then push updates to GitHub.&lt;/li>
+&lt;li>Use a build script to generate the source package files.&lt;/li>
+&lt;li>Upload the source package to launchpad.net, so it can be built and hosted on the Regolith &lt;code>unstable&lt;/code> (or &lt;code>experimental&lt;/code> depending on the level of change) PPA&lt;/li>
+&lt;li>Test the package once it&amp;rsquo;s been uploaded on a Regolith system.&lt;/li>
+&lt;li>Once testing is complete, the package is promoted to &lt;code>stable&lt;/code> and then eventually &lt;code>release&lt;/code>.&lt;/li>
+&lt;/ol>
+&lt;h3 id="basic-packages-vs-gbp-packages">Basic Packages vs &lt;code>gbp&lt;/code> Packages&lt;/h3>
+&lt;p>Until recently, packaging was done manually in that no scripts were used. Recently, we&amp;rsquo;ve been moving to using the &lt;code>gbp&lt;/code> tool which provides some nice productivity enhancements when packaging with git repositories. Branch names may differ based on if the package in question has been migrated yet.&lt;/p>
+&lt;h3 id="branch-conventions">Branch Conventions&lt;/h3>
+&lt;ul>
+&lt;li>If a package contains the package source and the debian metadata, then &lt;code>master&lt;/code> represents the development branch. The Ubuntu version associated with a changelog entry is always the oldest supported, currently &lt;code>bionic&lt;/code>. This is to comply with launchpad.net&amp;rsquo;s package copy policy.&lt;/li>
+&lt;li>If a package varies from one Ubuntu release to another, then branches are created for each required version, except for the most recent, which is &lt;code>master&lt;/code>. Example branches:&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>bionic
+eoan
+master
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>If a package requires some github integration such that the package cannot be cleanly built on &lt;code>master&lt;/code>, then a branch &lt;code>debian&lt;/code> is used specifically for the package.&lt;/li>
+&lt;/ul>
+&lt;h3 id="prerequisites">Prerequisites&lt;/h3>
+&lt;ol>
+&lt;li>In order to build packages locally, the debian build tools will need to installed. It is necessary to understand these tools, and how they work together to produce and verify a package. Read &lt;a href="https://packaging.ubuntu.com/html/">the guides here&lt;/a> and install the software they specify.&lt;/li>
+&lt;li>To push to a Regolith PPA, you will need to become an official contributor and have your keys added to the launchpad account to enable you to push updates. This is not necessary however to push to your own PPA. &lt;a href="https://askubuntu.com/questions/71510/how-do-i-create-a-ppa">Check here to learn how to create your own PPA&lt;/a>.&lt;/li>
+&lt;/ol>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;h3 id="add-comment-to-i3-config">Add comment to i3 config&lt;/h3>
+&lt;h4 id="1-checkout-the-regolith-i3-gaps-package">1. Checkout the &lt;code>regolith-i3-gaps&lt;/code> package:&lt;/h4>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ git clone https://github.com/regolith-linux/regolith-i3-gaps-config.git
+$ cd regolith-i3-gaps-config
+&lt;/code>&lt;/pre>&lt;h4 id="2-make-a-change">2. Make a change:&lt;/h4>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ echo &amp;quot;# Here is my comment at the end&amp;quot; &amp;gt;&amp;gt; config
+&lt;/code>&lt;/pre>&lt;h4 id="3-update-the-changelog-to-bump-the-version-and-describe-your-change">3. Update the changelog to bump the version and describe your change:&lt;/h4>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ dch
+&lt;/code>&lt;/pre>&lt;p>This will load an editor and create a new changelog entry. Here is what I added, yours will differ based on identity and configuration:&lt;/p>
+&lt;pre>&lt;code>regolith-i3-gaps-config (2.4.15-1) bionic; urgency=medium
+* Added comment to i3 config file.
+-- Regolith Linux &amp;lt;regolith.linux@gmail.com&amp;gt; Sat, 30 May 2020 20:10:27 -0700
+&lt;/code>&lt;/pre>&lt;h4 id="4-commit-and-push-the-change-to-the-git-repository">4. Commit and push the change to the git repository:&lt;/h4>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ git commit -am &amp;quot;Added comment to i3 config file.&amp;quot;
+$ git push origin
+&lt;/code>&lt;/pre>&lt;h4 id="5-a-shell-scripthttpsgithubcomregolith-linuxregolith-builderblobmasterbuildsh-is-used-to-build-the-source-package-for-uploading-to-launchpadnet">5. A &lt;a href="https://github.com/regolith-linux/regolith-builder/blob/master/build.sh">shell script&lt;/a> is used to build the source package for uploading to launchpad.net:&lt;/h4>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ cd ..
+$ git clone https://github.com/regolith-linux/regolith-builder.git
+$ cd regolith-builder
+$ ./build.sh package-model-R1.4.2.json ppa:regolith-linux/ubuntu/unstable /tmp regolith-i3-gaps-config
+&lt;/code>&lt;/pre>&lt;p>After this script completes, the source package will be uploaded to launchpad.net for inclusion into the &lt;code>unstable&lt;/code> PPA.&lt;/p>
+&lt;h4 id="6-verification">6. Verification&lt;/h4>
+&lt;p>Go to the &lt;a href="https://launchpad.net/~regolith-linux/+archive/ubuntu/unstable">launchpad.net PPA page&lt;/a> to see the current status of the upload. It typically takes 10 - 30 minutes for a package update to complete.&lt;/p>
+&lt;h4 id="summary">Summary&lt;/h4>
+&lt;p>Once packaging building completes successfully, the binary packages will be available for users to download during any automatic or manual update process.&lt;/p></description></item><item><title>Docs: Design</title><link>https://regolith-linux.org/ja/docs/developer/design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/ja/docs/developer/design/</guid><description>
+&lt;ul>
+&lt;li>The &lt;strong>user&amp;rsquo;s application&lt;/strong> is of greater importance than any feature or facility of the desktop environment.&lt;/li>
+&lt;li>Regolith branding should be enough to afford a &lt;strong>cohesive identity&lt;/strong> to the user and nothing more.&lt;/li>
+&lt;li>&lt;strong>Small pieces that can combine into bigger pieces&lt;/strong> is better than larger, monolithic pieces.&lt;/li>
+&lt;li>&lt;strong>Typography is the keystone&lt;/strong> of the appearance of the system.&lt;/li>
+&lt;li>&lt;strong>Less is more&lt;/strong>. The ideal system is no system.&lt;/li>
+&lt;/ul></description></item></channel></rss>
