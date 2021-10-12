@@ -65,6 +65,23 @@ languageName ="English"
 # Weight used for sorting.
 weight = 1
 
+[languages.ja]
+title = "Regolith"
+description = "Regolith Linux"
+contentDir = "content/ja"
+languageName ="日本語"
+# Weight used for sorting.
+weight = 2
+
+[languages.pl]
+title = "Regolith"
+description = "Regolith Linux"
+contentDir = "content/pl"
+languageName ="Polskie"
+# Weight used for sorting.
+weight = 3
+
+
 [markup]
 [markup.goldmark]
 [markup.goldmark.renderer]
@@ -81,7 +98,7 @@ images = ["https://regolith-linux.org/screenshot-remontoire.png"]
 copyright = "Regolith Project"
 privacy_policy = "https://regolith-linux.org/docs/policy-and-process/privacy/"
 
-supported_versions = { bionic = "18.04", focal = "20.04", groovy = "20.10" }
+supported_versions = { bionic = "18.04", focal = "20.04", hirsute = "21.04" }
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.

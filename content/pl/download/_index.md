@@ -35,7 +35,7 @@ menu:
                 Download Regolith 1.6 (20.04 UEFI) <i class="fas fa-cloud-download-alt ml-2 "></i></a>
                 <a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/release-release-focal-focal_legacy_boot-1.6.0/Regolith_1.6.0_focal.iso">
                 Download Regolith 1.6 (20.04 BIOS)<i class="fas fa-cloud-download-alt ml-2 "></i></a>
-                <a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref ">}}">
+                <a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
                 Learn More <i class="fas fa-book-reader ml-2"></i></a>
                 </ul>
             </div>              
