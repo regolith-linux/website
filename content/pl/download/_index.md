@@ -44,12 +44,12 @@ menu:
     <div class="col-sm p-5">
             <h2><i class="fas fa-download"></i> Regolith Desktop 1.6 PPA</h2>
             <p>
-                    Regolith can be installed in an existing Ubuntu 18.04 (Bionic), 20.04 (Focal), or 21.04 (Hirsute) system by adding a Regolith PPA and installing one of <a href="../docs/getting-started/install/#desktop-packages">the <code>regolith-desktop</code> packages</a>.  Advantages to Regolith via PPA:
+                    Regolith może być zainstalowany w istniejącym Ubuntu 18.04 (Bionic), 20.04 (Focal) lub 21.04 (Hirsute) dodając Regolith PPA i instalując jeden z <a href="../docs/getting-started/install/#desktop-packages">pakietów <code>regolith-desktop</code></a>.  Zalety zainstalowania Regolith za pośrednictwem PPA:
                     <ul>
-                        <li>More compatibility with standard Ubuntu</li>
-                        <li>Easy interop with other installed desktop environments</li>
-                        <li>Keep existing system installation</li>
-                        <li>Easy to remove and return to other desktop environments</li>
+                        <li>Większa kompatybilność ze standardowym Ubuntu</li>
+                        <li>Lepsza interoperacyjność z innymi zainstalowanymi środowiskami graficznymi</li>
+                        <li>Zachowuje istniejącą instalację systemu</li>
+                        <li>Łatwe usuwanie i powrót do innych środowisk graficznych</li>
                     </ul>
                     <p>To install the standard variant of Regolith Desktop from the <code>release</code> PPA:
                     <pre class="border rounded p-2">
