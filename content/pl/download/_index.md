@@ -1,6 +1,6 @@
 ---
-title: "Download"
-linkTitle: "Download"
+title: "Pobierz"
+linkTitle: "Pobierz"
 weight: 20
 menu:
   main:
@@ -10,7 +10,7 @@ menu:
 <div class="container text-center pt-5 mt-5">
     <div class="row">
         <div class="col col-md-auto"><h1><i class="fas fa-cloud-download-alt"></i></h1></div>
-        <div class="col"><p>Regolith is available as a <b>stand-alone ISO</b> that can be installed as a complete Linux operating system, and as a "<b>personal package archive</b>" (PPA) that installs the Regolith desktop into an existing Ubuntu 18.04, 20.04, or 21.04 system.  This page provides a quick start for installs and upgrades but <a href="../docs/getting-started/install">more detailed documentation</a> is available.</p>
+        <div class="col"><p>Regolith jest dostępny jako <b>samodzielny obraz ISO</b>, który może być zainstalowany jako kompletny system operacyjny systemu Linux lub jako "<b>osobiste archiwum pakietów</b>" (PPA), które instaluje pulpit Regolith w zainstalowanym już Ubuntu 18.04, 20.04 lub 21.04.  This page provides a quick start for installs and upgrades but <a href="../docs/getting-started/install">more detailed documentation</a> is available.</p>
         </div>
     </div>
 </div>
@@ -20,9 +20,9 @@ menu:
     <div class="col-sm p-5">
                 <h2><i class="fas fa-compact-disc"></i> Regolith Linux 1.6 ISO</h2>
                 <p>
-                    Regolith can be installed as a stand-alone operating system, and is a good option for the following scenarios:
+                    Regolith może zostać zainstalowany jako samodzielny system operacyjny i stanowi dobrą opcję dla następujących zastosowań:
                     <ul>
-                        <li>Minimal system, small install size, less RAM usage</li>
+                        <li>Minimalny system, mały rozmiar instalacji, mniejsze użycie pamięci RAM</li>
                         <li>Once installed, all defaults and packages are in a known good state</li>
                         <li>Provides more Regolith branding</li>
                     </ul>
