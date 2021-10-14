@@ -724,61 +724,7 @@ $ rm -Rf ~/.config/regolith/flags
 &lt;td>&lt;code>⊞ Win&lt;/code> &lt;code>Alt&lt;/code> q&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>Docs: Look</title><link>https://regolith-linux.org/pl/docs/customize/look/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/customize/look/</guid><description>
-&lt;p>Looks provided by Regolith have the package prefix &lt;code>regolith-look-&lt;/code>. For example, another look sporting the &amp;ldquo;Solarized&amp;rdquo; color palette and a different GTK theme and icon set is called &lt;code>regolith-look-solarized-dark&lt;/code>.&lt;/p>
-&lt;h2 id="finding-looks">Finding Looks&lt;/h2>
-&lt;p>All &lt;code>look&lt;/code> packages using this naming scheme can be found via the following command:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ apt search ^regolith-look-
-&lt;/code>&lt;/pre>&lt;h2 id="installing-a-look">Installing a Look&lt;/h2>
-&lt;p>Looks can be installed via &lt;code>apt&lt;/code> or with any tool that can install Debian packages on the system, such as &lt;code>synaptic&lt;/code>. For example, this command will install the &lt;code>Ubuntu&lt;/code> look:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ sudo apt install regolith-look-ubuntu
-&lt;/code>&lt;/pre>&lt;p>If you pay attention to the output of &lt;code>apt&lt;/code> you may notice that in addition to installing the look, &lt;code>fonts-font-awesome&lt;/code> will also be installed. As a feature, looks are able to depend on any resources or artifacts they require as packages. This ensures that once a &lt;code>look&lt;/code> is installed, the user does not need to care about what other things that &lt;code>look&lt;/code> make require to function properly. It&amp;rsquo;s taken care of by the package manager.&lt;/p>
-&lt;h2 id="switching-to-a-look">Switching to a Look&lt;/h2>
-&lt;p>Once a &lt;code>look&lt;/code> has been installed,
-&lt;span class="text-nowrap">
-&lt;span class="badge badge-warning">super&lt;/span>
-&lt;span class="badge badge-warning">alt&lt;/span>
-&lt;span class="badge badge-warning">l&lt;/span>
-&lt;/span>
-will bring up a dialog in which a Look can be set from all that are installed.&lt;/p>
-&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-57f7f2a306941a587c4ff7c1f7f14891ecb594254eb00e2574ed8ff142285db3" class="rounded img-fluid"
-src="https://regolith-linux.org/images/regolith-select-look_hu0072e1a729bbceaae2457311ea01b479_3045009_636x0_resize_catmullrom_2.png" alt="Dialog to select a look" />
-&lt;div class="modal" id="img-modal-57f7f2a306941a587c4ff7c1f7f14891ecb594254eb00e2574ed8ff142285db3">
-&lt;div class="modal-dialog modal-xl modal-dialog-centered">
-&lt;div class="modal-content rounded">
-&lt;div class="modal-body">
-&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/regolith-select-look.png" alt="Dialog to select a look" />
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;p>Setting looks via the command line is also supported. A utility command called &lt;code>regolith-look&lt;/code> can be used to enable it. To enable the &lt;code>ubuntu&lt;/code> look installed in the previous step, try the following:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ regolith-look set ubuntu
-$ regolith-look refresh
-&lt;/code>&lt;/pre>&lt;p>The command will mention that it created a file in your user directory. This file is an &lt;code>Xresources&lt;/code> file, and it&amp;rsquo;s stored in a specific path such that &lt;code>i3-gnome-flashback&lt;/code> will look for it upon session start. Let&amp;rsquo;s have a look at the file:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ cat ~/.Xresources-regolith
-#include &amp;quot;/etc/regolith/styles/ubuntu/root&amp;quot;
-&lt;/code>&lt;/pre>&lt;p>In essence, our &lt;code>Xresources&lt;/code> file is simply pointing to another &lt;code>Xresources&lt;/code> file. Lets look there:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ cat /etc/regolith/styles/ubuntu/root
-! -- Styles - Colors
-#include &amp;quot;/etc/regolith/styles/ubuntu/color&amp;quot;
-! -- Styles - Fonts
-#include &amp;quot;/etc/regolith/styles/ubuntu/typeface&amp;quot;
-! -- Styles - Theme
-#include &amp;quot;/etc/regolith/styles/ubuntu/theme&amp;quot;
-! -- Applications
-! These files map values defined above into specific app settings.
-#include &amp;quot;/etc/regolith/styles/st-term&amp;quot;
-#include &amp;quot;/etc/regolith/styles/i3-wm&amp;quot;
-#include &amp;quot;/etc/regolith/styles/i3xrocks&amp;quot;
-#include &amp;quot;/etc/regolith/styles/rofi&amp;quot;
-#include &amp;quot;/etc/regolith/styles/gnome&amp;quot;
-&lt;/code>&lt;/pre>&lt;p>Here we can see that there are separate &lt;code>Xresources&lt;/code> files that define color, typeface and theme (icon, GTK), and these are loaded and then applied to the UI components integrated by Regolith: st (terminal), i3-wm, i3xrocks, rofi, and GNOME.&lt;/p>
-&lt;h2 id="refreshing-a-look">Refreshing a Look&lt;/h2>
-&lt;p>There may be times that the UI of the system and the Regolith look get out of sync. For example, if a program sets the wallpaper or icon theme externally, this will not be reflected in the &lt;code>Xresources&lt;/code> settings. Regolith will only update itself upon login if it detects of &lt;code>Xresources&lt;/code> changes have been made. If you wish to force Regolith to reload the UI based on the &lt;code>Xresources&lt;/code> settings, run:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">$ regolith-look refresh
-&lt;/code>&lt;/pre>&lt;h2 id="learning-more">Learning More&lt;/h2>
-&lt;p>To dig deeper, read about &lt;code>Styles&lt;/code> on the following page and have a look at the &lt;a href="https://github.com/regolith-linux/regolith-styles">&lt;code>regolith-styles&lt;/code> README&lt;/a>.&lt;/p></description></item><item><title>Docs: Looks</title><link>https://regolith-linux.org/pl/docs/developer/looks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/developer/looks/</guid><description>
+&lt;/table></description></item><item><title>Docs: Looks</title><link>https://regolith-linux.org/pl/docs/developer/looks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/developer/looks/</guid><description>
 &lt;p>Looks are a combination of &lt;code>Xresources&lt;/code> definitions and associated resources such as wallpapers, GTK themes, and icons that as a whole provide the user with a distinctive user interface, all expressed as a collection of files. The default looks that ship with Regolith are natural starting points for creating new ones, but it&amp;rsquo;s also possible to start from scratch as long as the required &lt;code>Xresources&lt;/code> entries are defined. Ideally, looks are packaged as Debian packages with all required resources either provided by the look or added as a package dependency. By using the OS packaging system, required files and resources are ensured to be installed and available.&lt;/p>
 &lt;h2 id="required-files">Required Files&lt;/h2>
 &lt;p>Starting from scratch, the only mandatory file for a Look as a single &lt;code>Xresources&lt;/code> definition file. This file must specify entries for Regolith&amp;rsquo;s required values, &lt;a href="https://regolith-linux.org/pl/docs/reference/xresources/">defined on this page&lt;/a>. However, it&amp;rsquo;s recommended to simply copy an existing look as a basis for customization, due to the compositional nature that Looks use.&lt;/p>
@@ -805,8 +751,7 @@ $ regolith-look refresh
 /etc/regolith/styles/orange/typeface
 /etc/regolith/styles/orange/root
 /etc/regolith/styles/orange/rofi.rasi
-&lt;/code>&lt;/pre>&lt;p>Then run &lt;code>regolith-look set orange &amp;amp;&amp;amp; regolith-look refresh&lt;/code>. The UI should be updated with your new look.&lt;/p></description></item><item><title>Docs: Privacy</title><link>https://regolith-linux.org/pl/docs/policy-and-process/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/policy-and-process/privacy/</guid><description>
-&lt;p>There is nothing in Regolith Linux itself that collects any user data, either anonymously or otherwise. Because Regolith is a customization of Ubuntu Linux, any data collection that Ubuntu is doing will also be performed by Regolith Linux. This website has vanilla Google Analytics integration. Anonymity is a feature.&lt;/p></description></item><item><title>Docs: Working with Applications</title><link>https://regolith-linux.org/pl/docs/interface/apps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/interface/apps/</guid><description>
+&lt;/code>&lt;/pre>&lt;p>Then run &lt;code>regolith-look set orange &amp;amp;&amp;amp; regolith-look refresh&lt;/code>. The UI should be updated with your new look.&lt;/p></description></item><item><title>Docs: Praca z aplikacjami</title><link>https://regolith-linux.org/pl/docs/interface/apps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/interface/apps/</guid><description>
 &lt;p>As mentioned in the &lt;a href="https://regolith-linux.org/pl/docs/getting-started/basics/">Getting Started&lt;/a> section,
 &lt;span class="text-nowrap">
 &lt;span class="badge badge-warning">super&lt;/span>
@@ -880,7 +825,62 @@ but can also directly navigate to a specific window with
 &lt;span class="badge badge-warning">alt&lt;/span>
 &lt;span class="badge badge-warning">q&lt;/span>
 &lt;/span>
-.&lt;/p></description></item><item><title>Docs: Config Files</title><link>https://regolith-linux.org/pl/docs/reference/configurations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/reference/configurations/</guid><description>
+.&lt;/p></description></item><item><title>Docs: Privacy</title><link>https://regolith-linux.org/pl/docs/policy-and-process/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/policy-and-process/privacy/</guid><description>
+&lt;p>There is nothing in Regolith Linux itself that collects any user data, either anonymously or otherwise. Because Regolith is a customization of Ubuntu Linux, any data collection that Ubuntu is doing will also be performed by Regolith Linux. This website has vanilla Google Analytics integration. Anonymity is a feature.&lt;/p></description></item><item><title>Docs: Wygląd</title><link>https://regolith-linux.org/pl/docs/customize/look/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/customize/look/</guid><description>
+&lt;p>Looks provided by Regolith have the package prefix &lt;code>regolith-look-&lt;/code>. For example, another look sporting the &amp;ldquo;Solarized&amp;rdquo; color palette and a different GTK theme and icon set is called &lt;code>regolith-look-solarized-dark&lt;/code>.&lt;/p>
+&lt;h2 id="finding-looks">Finding Looks&lt;/h2>
+&lt;p>All &lt;code>look&lt;/code> packages using this naming scheme can be found via the following command:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ apt search ^regolith-look-
+&lt;/code>&lt;/pre>&lt;h2 id="installing-a-look">Installing a Look&lt;/h2>
+&lt;p>Looks can be installed via &lt;code>apt&lt;/code> or with any tool that can install Debian packages on the system, such as &lt;code>synaptic&lt;/code>. For example, this command will install the &lt;code>Ubuntu&lt;/code> look:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ sudo apt install regolith-look-ubuntu
+&lt;/code>&lt;/pre>&lt;p>If you pay attention to the output of &lt;code>apt&lt;/code> you may notice that in addition to installing the look, &lt;code>fonts-font-awesome&lt;/code> will also be installed. As a feature, looks are able to depend on any resources or artifacts they require as packages. This ensures that once a &lt;code>look&lt;/code> is installed, the user does not need to care about what other things that &lt;code>look&lt;/code> make require to function properly. It&amp;rsquo;s taken care of by the package manager.&lt;/p>
+&lt;h2 id="switching-to-a-look">Switching to a Look&lt;/h2>
+&lt;p>Once a &lt;code>look&lt;/code> has been installed,
+&lt;span class="text-nowrap">
+&lt;span class="badge badge-warning">super&lt;/span>
+&lt;span class="badge badge-warning">alt&lt;/span>
+&lt;span class="badge badge-warning">l&lt;/span>
+&lt;/span>
+will bring up a dialog in which a Look can be set from all that are installed.&lt;/p>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-57f7f2a306941a587c4ff7c1f7f14891ecb594254eb00e2574ed8ff142285db3" class="rounded img-fluid"
+src="https://regolith-linux.org/images/regolith-select-look_hu0072e1a729bbceaae2457311ea01b479_3045009_636x0_resize_catmullrom_2.png" alt="Dialog to select a look" />
+&lt;div class="modal" id="img-modal-57f7f2a306941a587c4ff7c1f7f14891ecb594254eb00e2574ed8ff142285db3">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/regolith-select-look.png" alt="Dialog to select a look" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>Setting looks via the command line is also supported. A utility command called &lt;code>regolith-look&lt;/code> can be used to enable it. To enable the &lt;code>ubuntu&lt;/code> look installed in the previous step, try the following:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ regolith-look set ubuntu
+$ regolith-look refresh
+&lt;/code>&lt;/pre>&lt;p>The command will mention that it created a file in your user directory. This file is an &lt;code>Xresources&lt;/code> file, and it&amp;rsquo;s stored in a specific path such that &lt;code>i3-gnome-flashback&lt;/code> will look for it upon session start. Let&amp;rsquo;s have a look at the file:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ cat ~/.Xresources-regolith
+#include &amp;quot;/etc/regolith/styles/ubuntu/root&amp;quot;
+&lt;/code>&lt;/pre>&lt;p>In essence, our &lt;code>Xresources&lt;/code> file is simply pointing to another &lt;code>Xresources&lt;/code> file. Lets look there:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ cat /etc/regolith/styles/ubuntu/root
+! -- Styles - Colors
+#include &amp;quot;/etc/regolith/styles/ubuntu/color&amp;quot;
+! -- Styles - Fonts
+#include &amp;quot;/etc/regolith/styles/ubuntu/typeface&amp;quot;
+! -- Styles - Theme
+#include &amp;quot;/etc/regolith/styles/ubuntu/theme&amp;quot;
+! -- Applications
+! These files map values defined above into specific app settings.
+#include &amp;quot;/etc/regolith/styles/st-term&amp;quot;
+#include &amp;quot;/etc/regolith/styles/i3-wm&amp;quot;
+#include &amp;quot;/etc/regolith/styles/i3xrocks&amp;quot;
+#include &amp;quot;/etc/regolith/styles/rofi&amp;quot;
+#include &amp;quot;/etc/regolith/styles/gnome&amp;quot;
+&lt;/code>&lt;/pre>&lt;p>Here we can see that there are separate &lt;code>Xresources&lt;/code> files that define color, typeface and theme (icon, GTK), and these are loaded and then applied to the UI components integrated by Regolith: st (terminal), i3-wm, i3xrocks, rofi, and GNOME.&lt;/p>
+&lt;h2 id="refreshing-a-look">Refreshing a Look&lt;/h2>
+&lt;p>There may be times that the UI of the system and the Regolith look get out of sync. For example, if a program sets the wallpaper or icon theme externally, this will not be reflected in the &lt;code>Xresources&lt;/code> settings. Regolith will only update itself upon login if it detects of &lt;code>Xresources&lt;/code> changes have been made. If you wish to force Regolith to reload the UI based on the &lt;code>Xresources&lt;/code> settings, run:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ regolith-look refresh
+&lt;/code>&lt;/pre>&lt;h2 id="learning-more">Learning More&lt;/h2>
+&lt;p>To dig deeper, read about &lt;code>Styles&lt;/code> on the following page and have a look at the &lt;a href="https://github.com/regolith-linux/regolith-styles">&lt;code>regolith-styles&lt;/code> README&lt;/a>.&lt;/p></description></item><item><title>Docs: Config Files</title><link>https://regolith-linux.org/pl/docs/reference/configurations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/reference/configurations/</guid><description>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -1429,7 +1429,7 @@ src="https://regolith-linux.org/images/regolith-file-search_hu49064f74a175883fd9
 &lt;span class="badge badge-warning">enter&lt;/span>
 &lt;/span>
 .&lt;/p>
-&lt;h2 id="quit-an-application">Quit an Application&lt;/h2>
+&lt;h2 id="wyjście-z-programu">Wyjście z Programu&lt;/h2>
 &lt;p>
 &lt;span class="text-nowrap">
 &lt;span class="badge badge-warning">super&lt;/span>
@@ -1550,8 +1550,6 @@ icon in the bar, or pressing
 &lt;p>Click &lt;a href="https://regolith-linux.herokuapp.com/">this link&lt;/a> to join our Slack channel, which allows you to communicate with the developers of Regolith and other users. Here is where we brainstorm about new features, ways to improve current features, and fix bugs.&lt;/p>
 &lt;h2 id="testing-fixes-and-features">Testing Fixes and Features&lt;/h2>
 &lt;p>When bugs are reported by users, we try to have them verify the fix before enabling the update for everyone. Switching to the &lt;code>unstable&lt;/code> PPA is necessary for Ubuntu to see that a new version of a package is available for testing a new fix or feature. Once the update has been verified to resolve the problem and not cause any other bugs, it is promoted to the &lt;code>stable&lt;/code> PPA for general consumption by Regolith users. We have &lt;a href="https://regolith-linux.org/pl/docs/policy-and-process/updates/#package-promotion">a separate section&lt;/a> which explains the process of package promotion in more detail, and &lt;a href="https://regolith-linux.org/pl/docs/howtos/change-ppa/">a section&lt;/a> about switching between PPAs to test changes.&lt;/p>
-&lt;h2 id="switching-between-ppas">Switching between PPAs&lt;/h2>
-&lt;p>When bugs are reported by users, we try to have them verify the fix before enabling the update for everyone. Switching to the &lt;code>unstable&lt;/code> PPA is necessary for testing a new fix or feature before it becomes available to the general population via an automatic update. See this section for more details on package promotion.&lt;/p>
 &lt;h2 id="official-regolith-contributors">Official Regolith Contributors&lt;/h2>
 &lt;p>Those that have shown aptitude and desire to help others, fix bugs, or add features to Regolith may be invited to become an official contributor. Official contributors have more abilities with Regolith source repositories and have a high level of trust and agency.&lt;/p>
 &lt;h3 id="tasks">Tasks&lt;/h3>
@@ -3935,7 +3933,15 @@ i3-wm.workspace.03.name: 3: Chat
 &lt;li>Example: &lt;code>Menlo, Consolas, DejaVu Sans Mono, monospace, Material Design Icons&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;h1 id="further-reading">Further Reading&lt;/h1>
-&lt;p>See the &lt;a href="https://regolith-linux.org/pl/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Find and Install Packages</title><link>https://regolith-linux.org/pl/docs/howtos/find-install-packages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/howtos/find-install-packages/</guid><description>
+&lt;p>See the &lt;a href="https://regolith-linux.org/pl/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Disable Mouse Hiding (unclutter)</title><link>https://regolith-linux.org/pl/docs/howtos/disable-unclutter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/howtos/disable-unclutter/</guid><description>
+&lt;p>By default the mouse cursor disappears if unused for a few seconds. If you prefer that the mouse cursor always remains visible on the screen, follow these steps:&lt;/p>
+&lt;ol>
+&lt;li>Specify an empty value for the unclutter launcher program with an Xresources override:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ echo &amp;quot;i3-wm.program.unclutter: :&amp;quot; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;li>Log out and back in for changes to take effect.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Find and Install Packages</title><link>https://regolith-linux.org/pl/docs/howtos/find-install-packages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/howtos/find-install-packages/</guid><description>
 &lt;p>Regolith is a Debian-based system. Debian packaging tools can be used to find and install packages.&lt;/p>
 &lt;h1 id="find-package-via-the-command-line">Find package via the command line&lt;/h1>
 &lt;p>The &lt;code>apt&lt;/code> command can be used to query installed or all packages:&lt;/p>
@@ -3971,46 +3977,4 @@ $ apt list &amp;lt;package name&amp;gt; # finds all packages
 &lt;li>Adding a local directory to the library paths&lt;/li>
 &lt;/ol>
 &lt;p>under GNOME and Regolith. Switching to vanilla i3 solves the crash.&lt;/p>
-&lt;p>&lt;em>Source: &lt;a href="https://github.com/regolith-linux/regolith-desktop/issues/21#issuecomment-729776535">Ken&amp;rsquo;s comment on the relevant issue on GitHub&lt;/a>.&lt;/em>&lt;/p></description></item><item><title>Docs: Manage a To-Do List</title><link>https://regolith-linux.org/pl/docs/howtos/tdcli-blocklet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/howtos/tdcli-blocklet/</guid><description>
-&lt;p>&lt;a href="https://github.com/darrikonn/td-cli">&lt;code>td-cli&lt;/code>&lt;/a> is a command line todo manager written in Python3 for organizing todo lists across multiple projects.&lt;/p>
-&lt;p>Regolith includes a status bar blocklet for accessing &lt;code>td-cli&lt;/code> directly from the bar. It can be installed as follows:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">sudo apt install i3xrocks-todo
-&lt;/code>&lt;/pre>&lt;p>After installing &lt;code>td-cli&lt;/code> you can access it via command line using &lt;code>td&lt;/code>. The full documentation of &lt;code>td-cli&lt;/code>&amp;rsquo;s API can be found &lt;a href="https://github.com/darrikonn/td-cli/blob/master/API.md">online at their repository&lt;/a>. For example, let&amp;rsquo;s create a todo list with a group name of Regolith, set it as the default project, and then add a new task to this group:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">td ag regolith
-td g regolith p
-td a &amp;quot;Write a Howto for td-cli&amp;quot;
-&lt;/code>&lt;/pre>&lt;p>Now, if you click on the &lt;code>td-cli&lt;/code> blocklet (on the left of the time blocklet in the figure below) a floating terminal opens up with an interactive instance of &lt;code>td-cli&lt;/code>:&lt;/p>
-&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-bc95f0df8a9399c12d60c6c02762b70a6bf737f8d00de2e7b5482d9648b0d32e" class="rounded img-fluid"
-src="https://regolith-linux.org/images/tdcli_hu777880323f4f6f4c3f68a5087e4cba8c_7166_636x0_resize_catmullrom_2.png" alt="The td-cli indicator on the i3 bar" />
-&lt;div class="modal" id="img-modal-bc95f0df8a9399c12d60c6c02762b70a6bf737f8d00de2e7b5482d9648b0d32e">
-&lt;div class="modal-dialog modal-xl modal-dialog-centered">
-&lt;div class="modal-content rounded">
-&lt;div class="modal-body">
-&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/tdcli.png" alt="The td-cli indicator on the i3 bar" />
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-3769fe050f571424c291233027e22c2db94659613213c9d4dc80a8a55e04cf07" class="rounded img-fluid"
-src="https://regolith-linux.org/images/tdcli_window_hu16c3bd0894e2efb0c45444a7970c083a_23738_636x0_resize_catmullrom_2.png" alt="The td-cli pop-out window" />
-&lt;div class="modal" id="img-modal-3769fe050f571424c291233027e22c2db94659613213c9d4dc80a8a55e04cf07">
-&lt;div class="modal-dialog modal-xl modal-dialog-centered">
-&lt;div class="modal-content rounded">
-&lt;div class="modal-body">
-&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/tdcli_window.png" alt="The td-cli pop-out window" />
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;p>You can set this blocklet to only show number of uncompleted tasks in the bar by setting the following key in your &lt;code>Xresource&lt;/code> file, for example, &lt;code>~/.config/regolith/Xresources&lt;/code>:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">i3xrocks.todo.uncompleted: true
-&lt;/code>&lt;/pre>&lt;p>By default, this key is set to &lt;code>false&lt;/code>. Moreover, you can add a keybinding for accessing &lt;code>td-cli&lt;/code> via a floating terminal by adding the following line to your &lt;code>i3&lt;/code> config file, for example, &lt;code>~/.config/regolith/i3/config&lt;/code>:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">bindsym $mod+Ctrl+d exec --no-startup-id &amp;quot;/usr/bin/gnome-terminal --class=floating_window -e 'td --interactive'&amp;quot;
-&lt;/code>&lt;/pre>&lt;p>Alternatively, you add these lines to your &lt;code>i3&lt;/code> config file, first:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">set_from_resource $i3-wm.bindsym.1 i3-wm.bindsym.1 :
-set_from_resource $i3-wm.bindsym.program.1 i3-wm.bindsym.program.1 :
-bindsym $mod+$i3-wm.bindsym.1 exec --no-startup-id &amp;quot;$i3-wm.bindsym.program.1&amp;quot;
-&lt;/code>&lt;/pre>&lt;p>Then, add the followings to your &lt;code>Xresources&lt;/code> file:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">i3-wm.bindsym.1: Ctrl+d
-i3-wm.bindsym.program.1: /usr/bin/gnome-terminal --class=floating_window -e 'td --interactive'
-&lt;/code>&lt;/pre></description></item></channel></rss>
+&lt;p>&lt;em>Source: &lt;a href="https://github.com/regolith-linux/regolith-desktop/issues/21#issuecomment-729776535">Ken&amp;rsquo;s comment on the relevant issue on GitHub&lt;/a>.&lt;/em>&lt;/p></description></item></channel></rss>

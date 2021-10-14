@@ -141,7 +141,15 @@ i3-wm.workspace.03.name: 3: Chat
 &lt;li>Example: &lt;code>Menlo, Consolas, DejaVu Sans Mono, monospace, Material Design Icons&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;h1 id="further-reading">Further Reading&lt;/h1>
-&lt;p>See the &lt;a href="https://regolith-linux.org/pl/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Find and Install Packages</title><link>https://regolith-linux.org/pl/docs/howtos/find-install-packages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/howtos/find-install-packages/</guid><description>
+&lt;p>See the &lt;a href="https://regolith-linux.org/pl/docs/reference/configurations/">reference page for configurations&lt;/a> for more details about config files in Regolith.&lt;/p></description></item><item><title>Docs: Disable Mouse Hiding (unclutter)</title><link>https://regolith-linux.org/pl/docs/howtos/disable-unclutter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/howtos/disable-unclutter/</guid><description>
+&lt;p>By default the mouse cursor disappears if unused for a few seconds. If you prefer that the mouse cursor always remains visible on the screen, follow these steps:&lt;/p>
+&lt;ol>
+&lt;li>Specify an empty value for the unclutter launcher program with an Xresources override:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ echo &amp;quot;i3-wm.program.unclutter: :&amp;quot; &amp;gt;&amp;gt; ~/.config/regolith/Xresources
+&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;li>Log out and back in for changes to take effect.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Find and Install Packages</title><link>https://regolith-linux.org/pl/docs/howtos/find-install-packages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/howtos/find-install-packages/</guid><description>
 &lt;p>Regolith is a Debian-based system. Debian packaging tools can be used to find and install packages.&lt;/p>
 &lt;h1 id="find-package-via-the-command-line">Find package via the command line&lt;/h1>
 &lt;p>The &lt;code>apt&lt;/code> command can be used to query installed or all packages:&lt;/p>
@@ -452,7 +460,31 @@ Setting up i3xrocks-weather (3.0.29-1) ...
 &lt;p>The ISO release now includes an unbranded boot animation, rather than keeping with the default Ubuntu branded experience. Updating this boot-up theme (also known as a Plymouth theme) also enables users to enter a password if they&amp;rsquo;ve setup an encrypted filesystem.&lt;/p>
 &lt;pre>&lt;code class="language-console" data-lang="console">$ sudo apt install plymouth-theme-regolith
 $ sudo update-alternatives --config default.plymouth
-&lt;/code>&lt;/pre>&lt;p>From the prompt ensure that the Regolith configuration is selected.&lt;/p></description></item><item><title>Docs: Wallpaper Configuration</title><link>https://regolith-linux.org/pl/docs/howtos/configure-wallpaper/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/howtos/configure-wallpaper/</guid><description>
+&lt;/code>&lt;/pre>&lt;p>From the prompt ensure that the Regolith configuration is selected.&lt;/p></description></item><item><title>Docs: Verify behavior against upstream</title><link>https://regolith-linux.org/pl/docs/howtos/gnome-flashback-session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/howtos/gnome-flashback-session/</guid><description>
+&lt;p>Regolith is composed of several existing open-source projects plus some additional custom packages. Sometimes when a bug is found in Regolith, actually it&amp;rsquo;s a bug in an upstream project. Determining the source of bugs is a first step in getting them fixed.&lt;/p>
+&lt;h2 id="check-gnome-flashback">Check &lt;code>gnome-flashback&lt;/code>&lt;/h2>
+&lt;p>Most of Regolith&amp;rsquo;s GNOME support comes from the &lt;code>gnome-flashback&lt;/code> project. To run a &lt;code>gnome-flashback&lt;/code> session, install the session and log back in to your account after selecting that session from the login screen.&lt;/p>
+&lt;ol>
+&lt;li>Install the &lt;code>gnome-session-flashback&lt;/code> session:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-console" data-lang="console">sudo apt install gnome-session-flashback
+&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;li>Restart your computer and then select the &lt;code>GNOME Flashback (Metacity)&lt;/code> session as shown here:&lt;/li>
+&lt;/ol>
+&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-1181d032219f26accae58f7d845e1804a4811d3dddaa04a050d147dce51d37f4" class="rounded img-fluid"
+src="https://regolith-linux.org/images/gnome-flashback-session-login_huff02fbf5e4a91f0a4b5f6a4b3a056703_26820_636x0_resize_catmullrom_2.png" alt="" />
+&lt;div class="modal" id="img-modal-1181d032219f26accae58f7d845e1804a4811d3dddaa04a050d147dce51d37f4">
+&lt;div class="modal-dialog modal-xl modal-dialog-centered">
+&lt;div class="modal-content rounded">
+&lt;div class="modal-body">
+&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/gnome-flashback-session-login.png" alt="" />
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;ol start="3">
+&lt;li>Verify your behavior against Regolith. If the problematic behavior also exists in &lt;code>gnome-flashback&lt;/code> then the bug is likely there. If the bug does not exist in the &lt;code>gnome-flashback&lt;/code> then it&amp;rsquo;s likely to be in Regolith.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Wallpaper Configuration</title><link>https://regolith-linux.org/pl/docs/howtos/configure-wallpaper/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/pl/docs/howtos/configure-wallpaper/</guid><description>
 &lt;p>This page describes how to configure the wallpaper in Regolith, which can either be set via the GNOME Settings, or in dotfiles via &lt;code>Xresources&lt;/code> overrides.&lt;/p>
 &lt;h2 id="gnome-settings">GNOME settings&lt;/h2>
 &lt;p>As is mentioned in the Getting Started section, wallpaper can be set using GNOME Settings. Some Looks specific specific wallpaper that is set to go along with the color theme and other style changes. An &lt;code>Xresources&lt;/code> value can be set to tell Regolith to ignore Look settings and keep which ever wallpaper has been selected via GNOME Settings. The following command will set the &lt;code>gnome.wallpaper&lt;/code> &lt;code>Xresources&lt;/code> key to an empty value, which will prevent Regolith from making any changes:&lt;/p>
@@ -460,4 +492,7 @@ $ sudo update-alternatives --config default.plymouth
 &lt;/code>&lt;/pre>&lt;h2 id="xresources">Xresources&lt;/h2>
 &lt;p>Another way of setting the wallpaper is by specifying a file path to the image in the &lt;code>Xresources&lt;/code> key &lt;code>gnome.wallpaper&lt;/code>. Upon session load, wallpaper will be set if a image file is specified at this key. For example, here is how to specify an override to set the wallpaper to the default Ubuntu wallpaper:&lt;/p>
 &lt;pre>&lt;code class="language-console" data-lang="console">$ echo &amp;quot;gnome.wallpaper: /usr/share/backgrounds/warty-final-ubuntu.png&amp;quot; &amp;gt; ~/.config/regolith/Xresources
+&lt;/code>&lt;/pre>&lt;h2 id="disable-all-wallpaper-handling">Disable all Wallpaper Handling&lt;/h2>
+&lt;p>Regolith can be configured to ignore wallpaper. To do this set the &lt;code>gnome.wallpaper&lt;/code> Xresource value to empty as specified above and then configure &lt;code>gnome-flashback&lt;/code> to not manage the desktop:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">$ gsettings set org.gnome.gnome-flashback.desktop draw-background false
 &lt;/code>&lt;/pre></description></item></channel></rss>
