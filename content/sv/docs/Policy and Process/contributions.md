@@ -20,10 +20,6 @@ Click [this link](https://regolith-linux.herokuapp.com/) to join our Slack chann
 
 When bugs are reported by users, we try to have them verify the fix before enabling the update for everyone. Switching to the `unstable` PPA is necessary for Ubuntu to see that a new version of a package is available for testing a new fix or feature. Once the update has been verified to resolve the problem and not cause any other bugs, it is promoted to the `stable` PPA for general consumption by Regolith users. We have [a separate section]({{< ref "/docs/Policy and Process/updates.md#package-promotion" >}}) which explains the process of package promotion in more detail, and [a section]({{< ref "/docs/Howtos/change-ppa.md" >}}) about switching between PPAs to test changes.
 
-## Switching between PPAs
-
-When bugs are reported by users, we try to have them verify the fix before enabling the update for everyone. Switching to the `unstable` PPA is necessary for testing a new fix or feature before it becomes available to the general population via an automatic update. See this section for more details on package promotion.
-
 ## Official Regolith Contributors
 
 Those that have shown aptitude and desire to help others, fix bugs, or add features to Regolith may be invited to become an official contributor. Official contributors have more abilities with Regolith source repositories and have a high level of trust and agency.

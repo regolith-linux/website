@@ -1,9 +1,9 @@
 ---
-title: "Working with Applications"
-linkTitle: "Working with Applications"
+title: "Praca z aplikacjami"
+linkTitle: "Praca z Aplikacji"
 weight: 1
 description: >
-  Concepts and tips for working with apps in Regolith
+  Koncepcje i wskazówki dotyczące pracy z aplikacjami w Regolith
 ---
 
 As mentioned in the [Getting Started]({{< ref "/docs/getting started/basics" >}}) section, {{< keys "super,space">}} causes i3 to execute "Rofi" to present a list of apps. Once launched, the application selected will open a window on the currently active workspace. If other windows are already present on this workspace, they will be resized to allow the new window to also be placed without overlapping or otherwise obstructing the existing windows.

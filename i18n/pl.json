@@ -6,7 +6,7 @@
     "other": "Nauka i sieć"
   },
   "partialsCommunityLinksUsingWantToUse": {
-    "other": "Using or want to use {{ .Site.Title }}? Find out more here"
+    "other": "Używasz lub chcesz użyć {{ .Site.Title }}? Dowiedz się więcej tutaj"
   },
   "partialsCommunityLinksDevelopAndContribute": {
     "other": "Programuj i weź udział"

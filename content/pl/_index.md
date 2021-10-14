@@ -1,6 +1,6 @@
 ---
 title: "Regolit Linux"
-linkTitle: "Regolith Linux"
+linkTitle: "Regolit Linux"
 ---
 
 {{< blocks/cover image_anchor="top" height="full" >}}
