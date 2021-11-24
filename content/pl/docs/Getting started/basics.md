@@ -14,7 +14,7 @@ Most keybindings you'll be using with Regolith start with the {{< keys "super" >
 
 ## Launchers
 
-Regolith provides several launchers are a primary way of interacting with your system. Each of these launchers has a consistent look and feel but provides access to a specific entity. Default launchers are provided for applications {{< keys "super,space" >}}, commands {{< keys "super,shift,space" >}}, notifications {{< keys "super,n" >}}, windows {{< keys "super,ctrl,space" >}}, and files {{< keys "super,alt,space" >}}.
+Regolith provides several launchers as the primary way of interacting with your system. Each of these launchers has a consistent look and feel but provides access to a specific entity. Default launchers are provided for applications {{< keys "super,space" >}}, commands {{< keys "super,shift,space" >}}, notifications {{< keys "super,n" >}}, windows {{< keys "super,ctrl,space" >}}, and files {{< keys "super,alt,space" >}}.
 
 ### Launch an Application
 
