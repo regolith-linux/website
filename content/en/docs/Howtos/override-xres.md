@@ -90,8 +90,8 @@ $ regolith-look refresh
 ### Example - Use Alt instead of Win as Super
 
 ```console
-$ echo "i3-wm-mod: Mod1" >> ~/.config/regolith/Xresources
-$ echo "i3-wm-alt: Mod4" >> ~/.config/regolith/Xresources
+$ echo "i3-wm.mod: Mod1" >> ~/.config/regolith/Xresources
+$ echo "i3-wm.alt: Mod4" >> ~/.config/regolith/Xresources
 ```
 
 Then Reload i3 for the change to take effect (on Regolith 1.5+ there is an active regression here with a [temporary fix in the issue](https://github.com/regolith-linux/regolith-desktop/issues/504))
