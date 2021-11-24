@@ -1,4 +1,8 @@
-# How to Hide i3-bar by default
+---
+title: "How to Hide i3-bar by default"
+description: >
+  Hide i3-bar by default
+---
 
 Add the line
 ```
