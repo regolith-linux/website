@@ -10,10 +10,10 @@ linkTitle: "Regolit Linux"
 <div class="row"> <div class="col-sm-8 mb-5">{{< img "images/regolith-screenshot-intro.png" "Regolith Linux" >}}</div>
   <div class="col-sm-4">
     <div class="mx-auto">
-    <a class="btn btn-lg btn-secondary mr-3 mb-4 rounded-pill" href="{{< ref ">}}">
+    <a class="btn btn-lg btn-secondary mr-3 mb-4 rounded-pill" href="{{< ref "/download" >}}">
       Get Regolith <i class="fas fa-cloud-download-alt ml-2 "></i>
     </a>
-    <a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< ref ">}}">
+    <a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< ref "/docs" >}}">
       Learn More <i class="fas fa-book-reader ml-2"></i>
     </a>
     <a class="btn btn-lg btn-success mr-3 mb-4" href="https://opencollective.com/regolith/donate">
