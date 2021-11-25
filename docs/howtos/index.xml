@@ -166,7 +166,11 @@ $ apt list &amp;lt;package name&amp;gt; # finds all packages
 &lt;/code>&lt;/pre>&lt;p>To install the battery status indicator, run:&lt;/p>
 &lt;pre>&lt;code class="language-console" data-lang="console">$ sudo apt install i3xrocks-battery
 &lt;/code>&lt;/pre>&lt;h1 id="find-and-install-packages-via-gui-app">Find and Install Packages via GUI app&lt;/h1>
-&lt;p>There are a number of apps that can provide a nice window interface on top of the apt packaging system, for example &lt;code>synaptic&lt;/code>. Refer to the documentation for the tool of your choice to learn how to search for and install packages.&lt;/p></description></item><item><title>Docs: Launch an app in a Floating Window</title><link>https://regolith-linux.org/docs/howtos/floating-window/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/floating-window/</guid><description>
+&lt;p>There are a number of apps that can provide a nice window interface on top of the apt packaging system, for example &lt;code>synaptic&lt;/code>. Refer to the documentation for the tool of your choice to learn how to search for and install packages.&lt;/p></description></item><item><title>Docs: How to Hide i3-bar by default</title><link>https://regolith-linux.org/docs/howtos/hide-i3-bar-by-default/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/hide-i3-bar-by-default/</guid><description>
+&lt;p>Add the line&lt;/p>
+&lt;pre>&lt;code>i3-wm.bar.mode: hide
+&lt;/code>&lt;/pre>&lt;p>to &lt;code>$HOME/.config/regolith/Xresources&lt;/code> file.
+The next time you log in the bar should be hidden by default.&lt;/p></description></item><item><title>Docs: Launch an app in a Floating Window</title><link>https://regolith-linux.org/docs/howtos/floating-window/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/floating-window/</guid><description>
 &lt;p>Most X11 applications support a flag &lt;code>--class&lt;/code> to specify the &lt;code>class&lt;/code> under which the application runs. Regolith is configured such that apps with a class of &lt;code>floating_window&lt;/code> will launch with i3&amp;rsquo;s floating window mode.&lt;/p>
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="gnome-terminal">&lt;code>gnome-terminal&lt;/code>&lt;/h3>

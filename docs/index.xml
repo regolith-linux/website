@@ -3906,7 +3906,11 @@ $ apt list &amp;lt;package name&amp;gt; # finds all packages
 &lt;/code>&lt;/pre>&lt;p>To install the battery status indicator, run:&lt;/p>
 &lt;pre>&lt;code class="language-console" data-lang="console">$ sudo apt install i3xrocks-battery
 &lt;/code>&lt;/pre>&lt;h1 id="find-and-install-packages-via-gui-app">Find and Install Packages via GUI app&lt;/h1>
-&lt;p>There are a number of apps that can provide a nice window interface on top of the apt packaging system, for example &lt;code>synaptic&lt;/code>. Refer to the documentation for the tool of your choice to learn how to search for and install packages.&lt;/p></description></item><item><title>Docs: Launch an app in a Floating Window</title><link>https://regolith-linux.org/docs/howtos/floating-window/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/floating-window/</guid><description>
+&lt;p>There are a number of apps that can provide a nice window interface on top of the apt packaging system, for example &lt;code>synaptic&lt;/code>. Refer to the documentation for the tool of your choice to learn how to search for and install packages.&lt;/p></description></item><item><title>Docs: How to Hide i3-bar by default</title><link>https://regolith-linux.org/docs/howtos/hide-i3-bar-by-default/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/hide-i3-bar-by-default/</guid><description>
+&lt;p>Add the line&lt;/p>
+&lt;pre>&lt;code>i3-wm.bar.mode: hide
+&lt;/code>&lt;/pre>&lt;p>to &lt;code>$HOME/.config/regolith/Xresources&lt;/code> file.
+The next time you log in the bar should be hidden by default.&lt;/p></description></item><item><title>Docs: Launch an app in a Floating Window</title><link>https://regolith-linux.org/docs/howtos/floating-window/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/floating-window/</guid><description>
 &lt;p>Most X11 applications support a flag &lt;code>--class&lt;/code> to specify the &lt;code>class&lt;/code> under which the application runs. Regolith is configured such that apps with a class of &lt;code>floating_window&lt;/code> will launch with i3&amp;rsquo;s floating window mode.&lt;/p>
 &lt;h2 id="examples">Examples&lt;/h2>
 &lt;h3 id="gnome-terminal">&lt;code>gnome-terminal&lt;/code>&lt;/h3>
@@ -3925,47 +3929,4 @@ $ apt list &amp;lt;package name&amp;gt; # finds all packages
 &lt;li>Adding a local directory to the library paths&lt;/li>
 &lt;/ol>
 &lt;p>under GNOME and Regolith. Switching to vanilla i3 solves the crash.&lt;/p>
-&lt;p>&lt;em>Source: &lt;a href="https://github.com/regolith-linux/regolith-desktop/issues/21#issuecomment-729776535">Ken&amp;rsquo;s comment on the relevant issue on GitHub&lt;/a>.&lt;/em>&lt;/p></description></item><item><title>Docs: Manage a To-Do List</title><link>https://regolith-linux.org/docs/howtos/tdcli-blocklet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/howtos/tdcli-blocklet/</guid><description>
-&lt;p>&lt;a href="https://github.com/darrikonn/td-cli">&lt;code>td-cli&lt;/code>&lt;/a> is a command line todo manager written in Python3 for organizing todo lists across multiple projects.&lt;/p>
-&lt;p>Regolith includes a status bar blocklet for accessing &lt;code>td-cli&lt;/code> directly from the bar. It can be installed as follows:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">sudo apt install i3xrocks-todo
-&lt;/code>&lt;/pre>&lt;p>After installing &lt;code>td-cli&lt;/code> you can access it via command line using &lt;code>td&lt;/code>. The full documentation of &lt;code>td-cli&lt;/code>&amp;rsquo;s API can be found &lt;a href="https://github.com/darrikonn/td-cli/blob/master/API.md">online at their repository&lt;/a>.
-For example, let&amp;rsquo;s create a todo list with a group name of Regolith, set it as the default project, and then add a new task to this group:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">td ag regolith
-td g regolith p
-td a &amp;quot;Write a Howto for td-cli&amp;quot;
-&lt;/code>&lt;/pre>&lt;p>Now, if you click on the &lt;code>td-cli&lt;/code> blocklet (on the left of the time blocklet in the figure below) a floating terminal opens up with an interactive instance of &lt;code>td-cli&lt;/code>:&lt;/p>
-&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-bc95f0df8a9399c12d60c6c02762b70a6bf737f8d00de2e7b5482d9648b0d32e" class="rounded img-fluid"
-src="https://regolith-linux.org/images/tdcli_hu777880323f4f6f4c3f68a5087e4cba8c_7166_636x0_resize_catmullrom_2.png" alt="The td-cli indicator on the i3 bar" />
-&lt;div class="modal" id="img-modal-bc95f0df8a9399c12d60c6c02762b70a6bf737f8d00de2e7b5482d9648b0d32e">
-&lt;div class="modal-dialog modal-xl modal-dialog-centered">
-&lt;div class="modal-content rounded">
-&lt;div class="modal-body">
-&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/tdcli.png" alt="The td-cli indicator on the i3 bar" />
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;img data-toggle="modal" data-backdrop="false" data-target="#img-modal-3769fe050f571424c291233027e22c2db94659613213c9d4dc80a8a55e04cf07" class="rounded img-fluid"
-src="https://regolith-linux.org/images/tdcli_window_hu16c3bd0894e2efb0c45444a7970c083a_23738_636x0_resize_catmullrom_2.png" alt="The td-cli pop-out window" />
-&lt;div class="modal" id="img-modal-3769fe050f571424c291233027e22c2db94659613213c9d4dc80a8a55e04cf07">
-&lt;div class="modal-dialog modal-xl modal-dialog-centered">
-&lt;div class="modal-content rounded">
-&lt;div class="modal-body">
-&lt;img class="img-fluid" data-dismiss="modal" src="https://regolith-linux.org/images/tdcli_window.png" alt="The td-cli pop-out window" />
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;p>You can set this blocklet to only show number of uncompleted tasks in the bar by setting the following key in your &lt;code>Xresource&lt;/code> file, for example, &lt;code>~/.config/regolith/Xresources&lt;/code>:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">i3xrocks.todo.uncompleted: true
-&lt;/code>&lt;/pre>&lt;p>By default, this key is set to &lt;code>false&lt;/code>. Moreover, you can add a keybinding for accessing &lt;code>td-cli&lt;/code> via a floating terminal by adding the following line to your &lt;code>i3&lt;/code> config file, for example, &lt;code>~/.config/regolith/i3/config&lt;/code>:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">bindsym $mod+Ctrl+d exec --no-startup-id &amp;quot;/usr/bin/gnome-terminal --class=floating_window -e 'td --interactive'&amp;quot;
-&lt;/code>&lt;/pre>&lt;p>Alternatively, you add these lines to your &lt;code>i3&lt;/code> config file, first:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">set_from_resource $i3-wm.bindsym.1 i3-wm.bindsym.1 :
-set_from_resource $i3-wm.bindsym.program.1 i3-wm.bindsym.program.1 :
-bindsym $mod+$i3-wm.bindsym.1 exec --no-startup-id &amp;quot;$i3-wm.bindsym.program.1&amp;quot;
-&lt;/code>&lt;/pre>&lt;p>Then, add the followings to your &lt;code>Xresources&lt;/code> file:&lt;/p>
-&lt;pre>&lt;code class="language-console" data-lang="console">i3-wm.bindsym.1: Ctrl+d
-i3-wm.bindsym.program.1: /usr/bin/gnome-terminal --class=floating_window -e 'td --interactive'
-&lt;/code>&lt;/pre></description></item></channel></rss>
+&lt;p>&lt;em>Source: &lt;a href="https://github.com/regolith-linux/regolith-desktop/issues/21#issuecomment-729776535">Ken&amp;rsquo;s comment on the relevant issue on GitHub&lt;/a>.&lt;/em>&lt;/p></description></item></channel></rss>
