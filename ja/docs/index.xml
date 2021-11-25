@@ -1312,7 +1312,7 @@ but keep in mind that you can change which physical button
 &lt;/span>
 maps to in your configuration if you choose to.&lt;/p>
 &lt;h2 id="launchers">Launchers&lt;/h2>
-&lt;p>Regolith provides several launchers are a primary way of interacting with your system. Each of these launchers has a consistent look and feel but provides access to a specific entity. Default launchers are provided for applications
+&lt;p>Regolith provides several launchers as the primary way of interacting with your system. Each of these launchers has a consistent look and feel but provides access to a specific entity. Default launchers are provided for applications
 &lt;span class="text-nowrap">
 &lt;span class="badge badge-warning">super&lt;/span>
 &lt;span class="badge badge-warning">space&lt;/span>
