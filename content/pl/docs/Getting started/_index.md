@@ -26,4 +26,4 @@ Ta sekcja zawiera informacje niezbędne do uruchomienia Regolit na komputerze. T
 
 ## Deciding on Installation Method
 
-If you already have an Ubuntu system of a supported version, than adding Regolith via PPA is the faster and less disruptive method. The Ubuntu installer method is better for starting from scratch, installing into a virtual machine, or just ensuring that any existing software is not conflicting with Regolith. Some users have had issues with getting Regolith to work properly with other Ubuntu derivative desktop environments they've installed on their system. Installing a fresh instance can sidestep these potential issues.
+If you already have an Ubuntu system of a supported version, then adding Regolith via PPA is the faster and less disruptive method. The Ubuntu installer method is better for starting from scratch, installing into a virtual machine, or just ensuring that any existing software is not conflicting with Regolith. Some users have had issues with getting Regolith to work properly with other Ubuntu derivative desktop environments they've installed on their system. Installing a fresh instance can sidestep these potential issues.
