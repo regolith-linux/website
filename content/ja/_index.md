@@ -5,7 +5,7 @@ linkTitle: "Regolith Linux"
 
 {{< blocks/cover image_anchor="top" height="full" >}}
 
-<h2 class="m-5">Regolithは、不必要なものを減らし、より迅速的に作業できるように設計された最新のデスクトップ環境です。Ubuntu、Gnome、i3の上に構築されたRegolithは、十分にサポートされ、一貫した基盤の上に立っています。</h2>
+<h2 class="m-5">Regolithは、不必要なものを減らし、より迅速的に作業できるように設計された最新のデスクトップ環境です。Ubuntu、Gnome、i3の上に構築されたRegolithは、十分にサポートされ、一貫した基盤の上に成り立っています。</h2>
 
 <div class="row"> <div class="col-sm-8 mb-5">{{< img "images/regolith-screenshot-intro.png" "Regolith Linux" >}}</div>
   <div class="col-sm-4">
