@@ -1,5 +1,6 @@
 ---
 title: 関わる
+linkTitle: Interact
 menu:
   main:
     weight: 40

@@ -35,7 +35,7 @@ linkTitle: "Regolith Linux"
   </div>
   <div class="row pb-5">
     <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-terminal.png" "Single Terminal" >}}</div>
-    <div class="col-8 my-auto"><p>ターミナルで作業する人は、<span class="text-nowrap"><span class="badge badge-warning">super</span><span class="text-nowrap"><span class="badge badge-warning">enter</span> を押すだけで作業に取り掛かることができます。</p></div>    
+    <div class="col-8 my-auto"><p>ターミナルで作業する人は、<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="text-nowrap"><span class="badge badge-warning">enter</span> を押すだけで作業に取り掛かることができます。</p></div>    
   </div>
   <div class="row pb-5">
     <div class="col-8 my-auto"><p>単一のグローバルアプリランチャーがどこからでも瞬時に利用でき、<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span> を介してプログラムを実行することができます。</p></div>
@@ -43,7 +43,7 @@ linkTitle: "Regolith Linux"
   </div>
   <div class="row pb-5">
     <div class="col-4 my-auto border rounded p-1">{{< img "images/screenshot-terminals.png" "Terminals" >}}</div>
-    <div class="col-8 my-auto"><p>もっとターミナルが必要ですか?<span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">backspace</span></span> と <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span> で水平・垂直モードを切り替えて、その場でレイアウトを作成できます。 <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">h</span> <span class="badge badge-warning">j</span> <span class="badge badge-warning">k</span> <span class="badge badge-warning">l</span></span>でウィンドウの位置を移動できます。</p></div>    
+    <div class="col-8 my-auto"><p>もっとターミナルが必要ですか? <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">backspace</span></span> と <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">enter</span></span> で水平・垂直モードを切り替えて、その場でレイアウトを作成できます。 <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">h</span> <span class="badge badge-warning">j</span> <span class="badge badge-warning">k</span> <span class="badge badge-warning">l</span></span>でウィンドウの位置を移動できます。</p></div>    
   </div>
   <div class="row pb-5">
     <div class="col-8 my-auto"><p><span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">F</span></span>でフローティングモードをトグルします。 <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">r</span></span>でウィンドウのサイズを変更し、<span class="text-nowrap"><span class="badge badge-warning">super</span> を押しながらマウスで移動させることができます。</p></div>
