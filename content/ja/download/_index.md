@@ -1,5 +1,5 @@
 ---
-title: "Download"
+title: "ダウンロード"
 linkTitle: "Download"
 weight: 20
 menu:
@@ -20,7 +20,7 @@ menu:
     <div class="col-sm p-5">
                 <h2><i class="fas fa-compact-disc"></i> Regolith Linux 1.6 ISO</h2>
                 <p>
-                    Regolith can be installed as a stand-alone operating system, and is a good option for the following scenarios:
+                    Regolithはスタンドアローンオペレーティングシステムとしてインストールでき、以下のような場合に有効な選択肢です:
                     <ul>
                         <li>Minimal system, small install size, less RAM usage</li>
                         <li>Once installed, all defaults and packages are in a known good state</li>
@@ -30,13 +30,13 @@ menu:
                 <div class="d-flex justify-content-center">
                 <ul>
                 <a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/release-release-hirsute-hirsute_standard-1.6.0/Regolith_1.6.0_hirsute.iso">
-                Download Regolith 1.6 (21.04)<i class="fas fa-cloud-download-alt ml-2 "></i></a>
+                Regolith 1.6 (21.04)をダウンロード<i class="fas fa-cloud-download-alt ml-2 "></i></a>
                 <a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/release-release-focal-focal_standard-1.6.0/Regolith_1.6.0_focal.iso">
-                Download Regolith 1.6 (20.04 UEFI) <i class="fas fa-cloud-download-alt ml-2 "></i></a>
+                Regolith 1.6 (20.04 UEFI)をダウンロード <i class="fas fa-cloud-download-alt ml-2 "></i></a>
                 <a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/release-release-focal-focal_legacy_boot-1.6.0/Regolith_1.6.0_focal.iso">
-                Download Regolith 1.6 (20.04 BIOS)<i class="fas fa-cloud-download-alt ml-2 "></i></a>
+                Regolith 1.6 (20.04 BIOS)をダウンロード<i class="fas fa-cloud-download-alt ml-2 "></i></a>
                 <a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
-                Learn More <i class="fas fa-book-reader ml-2"></i></a>
+                詳細はこちら <i class="fas fa-book-reader ml-2"></i></a>
                 </ul>
             </div>              
             </th>
@@ -55,7 +55,7 @@ menu:
                     <pre class="border rounded p-2">
 $ sudo add-apt-repository ppa:regolith-linux/release
 $ sudo apt install regolith-desktop-standard</pre>
-                    </p>Learn more about <a href="https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories">adding PPAs here</a>, and more about <a href="../docs/getting-started/install/#ppa-sources">PPAs that Regolith provides here</a>
+                    </p>PPAの追加の詳細については<a href="https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories">こちら</a>をご覧ください。Regolithが提供するPPAの詳細については<a href="../docs/getting-started/install/#ppa-sources">こちら</a>を御覧ください。
                 </p>
     </div>
   </div>
