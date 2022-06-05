@@ -47,12 +47,12 @@ can be used to move back and forth between active workspaces.&lt;/p>
 &lt;span class="badge badge-warning">[0-9]&lt;/span>
 &lt;/span>
 will cause the currently focused window to be moved to the workspace number selected.&lt;/p>
-&lt;p>Users can navigate to windows via
+&lt;p>Users can navigate to a workspace with
 &lt;span class="text-nowrap">
 &lt;span class="badge badge-warning">super&lt;/span>
 &lt;span class="badge badge-warning">[0-9]&lt;/span>
 &lt;/span>
-but can also directly navigate to a specific window with
+and can navigate to a specific window with
 &lt;span class="text-nowrap">
 &lt;span class="badge badge-warning">super&lt;/span>
 &lt;span class="badge badge-warning">ctrl&lt;/span>
