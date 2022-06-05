@@ -16,7 +16,7 @@ In addition to toggling layout orientation, existing windows can be moved relati
 
 Windows can also be directly moved to other workspaces. The bar will indicate all active workspaces as well as the currently focused workspace. {{< keys "super,shift,[0-9]" >}} will cause the currently focused window to be moved to the workspace number selected.
 
-Users can navigate to windows via {{< keys "super,[0-9]" >}} but can also directly navigate to a specific window with {{< keys "super,ctrl,space" >}}.
+Users can navigate to a workspace with {{< keys "super,[0-9]" >}} and can navigate to a specific window with {{< keys "super,ctrl,space" >}}.
 
 ## Quit an Application
 
