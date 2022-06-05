@@ -801,7 +801,15 @@ and the notification window can be dismissed with
 &lt;span class="badge badge-warning">shift&lt;/span>
 &lt;span class="badge badge-warning">delete&lt;/span>
 &lt;/span>
-from within the notification menu.&lt;/p></description></item><item><title>Docs: Packages</title><link>https://regolith-linux.org/docs/reference/packages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/packages/</guid><description>
+from within the notification menu.&lt;/p>
+&lt;h2 id="notification-sorting">Notification sorting&lt;/h2>
+&lt;p>By default notifications are sorted by reverse order of creation (newest notification first).&lt;/p>
+&lt;p>It is possible to customize notification sort order by setting the &lt;code>i3xrocks.notify.sort.by&lt;/code> in your &lt;code>Xresources&lt;/code> file. This value contains a space separated list of field to sort the notifications on. If a field is preceded by a &lt;code>!&lt;/code>, it will be sorted by descending order.&lt;/p>
+&lt;p>To sort notifications from oldest to newest, add the following line to your &lt;code>~/.config/regolith/Xresources&lt;/code> file:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">i3xrocks.notify.sort.by: timestamp
+&lt;/code>&lt;/pre>&lt;p>To sort notification first by urgency (from critical to low) then be reverse order of creation (newest notification first), add the following line to your &lt;code>~/.config/regolith/Xresources&lt;/code> file:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">i3xrocks.notify.sort.by: !urgency !timestamp
+&lt;/code>&lt;/pre></description></item><item><title>Docs: Packages</title><link>https://regolith-linux.org/docs/reference/packages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/packages/</guid><description>
 &lt;p>The Regolith project typically hosts a Git repository for every package not provided by an upstream project. &lt;a href="https://github.com/regolith-linux?q=&amp;amp;type=public&amp;amp;language=&amp;amp;sort=name">This page&lt;/a> lists these repositories and provides details regarding activity, summary of purpose, and last shipped version.&lt;/p></description></item><item><title>Docs: Regolith Looks</title><link>https://regolith-linux.org/docs/reference/looks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/looks/</guid><description>
 &lt;p>Regolith provides several visual styles, known as &amp;ldquo;looks&amp;rdquo;, that can be installed and used. To keep the install size of Regolith low, these looks are installed as Debian packages. By default only one look is shipped with Regolith: Lascaille. Other looks may be installed via the package manager and then loaded via
 &lt;span class="text-nowrap">
@@ -2598,6 +2606,10 @@ src="https://regolith-linux.org/images/regolith-desktop-graph-l2_hub6baaa44380cc
 &lt;tr>
 &lt;td>i3xrocks.action.battery&lt;/td>
 &lt;td>Override command to run on battery status indicator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.notify.sort.by&lt;/td>
+&lt;td>Override rofication notification sort order.&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item><item><title>Docs: 1.5.3 Release Notes</title><link>https://regolith-linux.org/docs/reference/releases/regolith-1.5.3-release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/releases/regolith-1.5.3-release-notes/</guid><description>

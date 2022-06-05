@@ -1210,6 +1210,10 @@ Debian package: &lt;code>regolith-look-ubuntu&lt;/code>&lt;/p></description></it
 &lt;td>i3xrocks.action.battery&lt;/td>
 &lt;td>Override command to run on battery status indicator.&lt;/td>
 &lt;/tr>
+&lt;tr>
+&lt;td>i3xrocks.notify.sort.by&lt;/td>
+&lt;td>Override rofication notification sort order.&lt;/td>
+&lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item><item><title>Docs: Releases</title><link>https://regolith-linux.org/docs/reference/releases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/reference/releases/</guid><description>
 &lt;p>Release notes and other version-specific content can be found here.&lt;/p></description></item></channel></rss>

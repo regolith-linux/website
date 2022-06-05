@@ -93,7 +93,15 @@ and the notification window can be dismissed with
 &lt;span class="badge badge-warning">shift&lt;/span>
 &lt;span class="badge badge-warning">delete&lt;/span>
 &lt;/span>
-from within the notification menu.&lt;/p></description></item><item><title>Docs: System Configuration</title><link>https://regolith-linux.org/docs/interface/system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/interface/system/</guid><description>
+from within the notification menu.&lt;/p>
+&lt;h2 id="notification-sorting">Notification sorting&lt;/h2>
+&lt;p>By default notifications are sorted by reverse order of creation (newest notification first).&lt;/p>
+&lt;p>It is possible to customize notification sort order by setting the &lt;code>i3xrocks.notify.sort.by&lt;/code> in your &lt;code>Xresources&lt;/code> file. This value contains a space separated list of field to sort the notifications on. If a field is preceded by a &lt;code>!&lt;/code>, it will be sorted by descending order.&lt;/p>
+&lt;p>To sort notifications from oldest to newest, add the following line to your &lt;code>~/.config/regolith/Xresources&lt;/code> file:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">i3xrocks.notify.sort.by: timestamp
+&lt;/code>&lt;/pre>&lt;p>To sort notification first by urgency (from critical to low) then be reverse order of creation (newest notification first), add the following line to your &lt;code>~/.config/regolith/Xresources&lt;/code> file:&lt;/p>
+&lt;pre>&lt;code class="language-console" data-lang="console">i3xrocks.notify.sort.by: !urgency !timestamp
+&lt;/code>&lt;/pre></description></item><item><title>Docs: System Configuration</title><link>https://regolith-linux.org/docs/interface/system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://regolith-linux.org/docs/interface/system/</guid><description>
 &lt;h2 id="gnome-control-center-also-known-as-settings">GNOME Control Center (also known as &amp;ldquo;Settings&amp;rdquo;).&lt;/h2>
 &lt;p>A key difference between Regolith and other environments described as minimal is the integration of the GNOME settings backend. This provides a well-tested, consistent, and friendly way of configuring your environment and operating system. To load the settings app, launch &amp;ldquo;Settings&amp;rdquo; from Rofi or press
 &lt;span class="text-nowrap">
