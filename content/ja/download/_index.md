@@ -1,5 +1,5 @@
 ---
-title: "Download"
+title: "ダウンロード"
 linkTitle: "Download"
 weight: 20
 menu:
@@ -10,7 +10,7 @@ menu:
 <div class="container text-center pt-5 mt-5">
     <div class="row">
         <div class="col col-md-auto"><h1><i class="fas fa-cloud-download-alt"></i></h1></div>
-        <div class="col"><p>Regolith is available as a <b>stand-alone ISO</b> that can be installed as a complete Linux operating system, and as a "<b>personal package archive</b>" (PPA) that installs the Regolith desktop into an existing Ubuntu 18.04, 20.04, or 21.04 system.  This page provides a quick start for installs and upgrades but <a href="../docs/getting-started/install">more detailed documentation</a> is available.</p>
+        <div class="col"><p>Regolithは、完全なLinuxオペレーティングシステムとしてインストールできる<b>スタンドアローンISO</b>と、既存のUbuntu 18.04、20.04、21.04システムにRegolith Desktopをインストールする"<b>Personal Package Archive</b>"（PPA）として提供されています。このページでは、インストールとアップグレードのクイックスタートを提供していますが、<a href="../docs/getting-started/install">より詳細なドキュメント</a>が用意されています。</p>
         </div>
     </div>
 </div>
@@ -20,23 +20,24 @@ menu:
     <div class="col-sm p-5">
                 <h2><i class="fas fa-compact-disc"></i> Regolith Linux 1.6 ISO</h2>
                 <p>
-                    Regolith can be installed as a stand-alone operating system, and is a good option for the following scenarios:
+                    Regolithはスタンドアローンオペレーティングシステムとしてインストールでき、以下のような場合に有効な選択肢です:
                     <ul>
-                        <li>Minimal system, small install size, less RAM usage</li>
-                        <li>Once installed, all defaults and packages are in a known good state</li>
-                        <li>Provides more Regolith branding</li>
+                        <li>最小限のシステム、小さなインストールサイズ、少ないRAM使用量</li>
+                        <li>一度インストールすれば、すべてのデフォルトとパッケージは良好な状態に</li>
+                        <li>Regolithのブランド力の強化</li>
                     </ul>
-                Download the ISO and write it to a USB flash drive to install or test drive Regolith as an operating system.  To learn how, visit the <a class="text-warning"  href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntu installer tutorial</a>. All releases are <a href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases">available on GitHub</a> including file hashes.</p>         
+                ISOをダウンロードしてUSBメモリに書き込むことで、OSとしてRegolithをインストールしたり、テストしたりすることができます。インストール方法は、<a class="text-warning"  href="https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop">Ubuntuインストーラのチュートリアル</a>をご覧ください。すべてのリリースはファイルハッシュを含めて<a href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases">GitHubで公開</a>されています。
+</p>         
                 <div class="d-flex justify-content-center">
                 <ul>
                 <a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/release-release-hirsute-hirsute_standard-1.6.0/Regolith_1.6.0_hirsute.iso">
-                Download Regolith 1.6 (21.04)<i class="fas fa-cloud-download-alt ml-2 "></i></a>
+                Regolith 1.6 (21.04) をダウンロード<i class="fas fa-cloud-download-alt ml-2 "></i></a>
                 <a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/release-release-focal-focal_standard-1.6.0/Regolith_1.6.0_focal.iso">
-                Download Regolith 1.6 (20.04 UEFI) <i class="fas fa-cloud-download-alt ml-2 "></i></a>
+                Regolith 1.6 (20.04 UEFI) をダウンロード <i class="fas fa-cloud-download-alt ml-2 "></i></a>
                 <a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/regolith-linux/regolith-ubuntu-iso-builder/releases/download/release-release-focal-focal_legacy_boot-1.6.0/Regolith_1.6.0_focal.iso">
-                Download Regolith 1.6 (20.04 BIOS)<i class="fas fa-cloud-download-alt ml-2 "></i></a>
+                Regolith 1.6 (20.04 BIOS) をダウンロード<i class="fas fa-cloud-download-alt ml-2 "></i></a>
                 <a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
-                Learn More <i class="fas fa-book-reader ml-2"></i></a>
+                詳細はこちら <i class="fas fa-book-reader ml-2"></i></a>
                 </ul>
             </div>              
             </th>
@@ -44,18 +45,18 @@ menu:
     <div class="col-sm p-5">
             <h2><i class="fas fa-download"></i> Regolith Desktop 1.6 PPA</h2>
             <p>
-                    Regolith can be installed in an existing Ubuntu 18.04 (Bionic), 20.04 (Focal), or 21.04 (Hirsute) system by adding a Regolith PPA and installing one of <a href="../docs/getting-started/install/#desktop-packages">the <code>regolith-desktop</code> packages</a>.  Advantages to Regolith via PPA:
+                    Regolithは、Regolith PPAを追加し、<a href="../docs/getting-started/install/#desktop-packages"><code>regolith-desktop</code> パッケージ</a>をインストールすることで、既存の Ubuntu 18.04(Bionic)、Ubuntu 20.04(Focal)、または Ubuntu 21.04(Hirsute)システムにインストールできます。以下がPPAを利用したRegolithの利点です:
                     <ul>
-                        <li>More compatibility with standard Ubuntu</li>
-                        <li>Easy interop with other installed desktop environments</li>
-                        <li>Keep existing system installation</li>
-                        <li>Easy to remove and return to other desktop environments</li>
+                        <li>標準のUbuntuとの互換性の向上</li>
+                        <li>インストールされている他のデスクトップ環境との簡単な相互運用</li>
+                        <li>既存のシステムインストールの維持</li>
+                        <li>削除及び他デスクトップ環境への移行のしやすさ</li>
                     </ul>
-                    <p>To install the standard variant of Regolith Desktop from the <code>release</code> PPA:
+                    <p>Regolith Desktopの標準バージョンを <code>release</code> PPAからインストールする場合:
                     <pre class="border rounded p-2">
 $ sudo add-apt-repository ppa:regolith-linux/release
 $ sudo apt install regolith-desktop-standard</pre>
-                    </p>Learn more about <a href="https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories">adding PPAs here</a>, and more about <a href="../docs/getting-started/install/#ppa-sources">PPAs that Regolith provides here</a>
+                    </p>PPAの追加の詳細については<a href="https://help.ubuntu.com/community/Repositories/CommandLine#Adding_Launchpad_PPA_Repositories">こちら</a>をご覧ください。Regolithが提供するPPAの詳細については<a href="../docs/getting-started/install/#ppa-sources">こちら</a>をご覧ください。
                 </p>
     </div>
   </div>
