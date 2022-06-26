@@ -5,7 +5,9 @@ linkTitle: "Regolith Linux"
 
 {{< blocks/cover image_anchor="top" height="full" >}}
 
-<h2 class="m-5">レゴリスは開発者のために何よりもシンプルな環境で、より効率のよい作業をしてもらいたく設計された、デスクトップ環境です。 Built on top of Ubuntu, GNOME, and i3, Regolith stands on a well-supported and consistent foundation.</h2>
+<h2 class="m-5">The Regolith Desktop project has moved to <a href="https://regolith-desktop.com">a new website for the 2.0 release</a>.</h2>
+
+<h4 class="m-5">レゴリスは開発者のために何よりもシンプルな環境で、より効率のよい作業をしてもらいたく設計された、デスクトップ環境です。 Built on top of Ubuntu, GNOME, and i3, Regolith stands on a well-supported and consistent foundation.</h4>
 
 <div class="row"> <div class="col-sm-8 mb-5">{{< img "images/regolith-screenshot-intro.png" "Regolith Linux" >}}</div>
   <div class="col-sm-4">
