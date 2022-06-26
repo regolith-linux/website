@@ -11,3 +11,21 @@ Regolith 1.3 introduces the integration of [Rofication](https://github.com/DaveD
 ## Managing Notifications
 
 Next to the bell icon in the bar is the current number of notifications. To view and delete them, select {{< keys "super,n" >}} and a menu will load. Notifications can be read and then deleted with {{< keys "delete" >}} and the notification window can be dismissed with {{< keys "Esc" >}}. All low-priority notifications can be deleted at once with {{< keys "shift,delete" >}} from within the notification menu.
+
+## Notification sorting
+
+By default notifications are sorted by reverse order of creation (newest notification first).
+
+It is possible to customize notification sort order by setting the `i3xrocks.notify.sort.by` in your `Xresources` file. This value contains a space separated list of field to sort the notifications on. If a field is preceded by a `!`, it will be sorted by descending order.
+
+To sort notifications from oldest to newest, add the following line to your `~/.config/regolith/Xresources` file:
+
+```console
+i3xrocks.notify.sort.by: timestamp
+```
+
+To sort notification first by urgency (from critical to low) then be reverse order of creation (newest notification first), add the following line to your `~/.config/regolith/Xresources` file:
+
+```console
+i3xrocks.notify.sort.by: !urgency !timestamp
+```
