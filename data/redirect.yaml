@@ -1,0 +1,119 @@
+# This site is retired: every page sends the reader to regolith-desktop.com.
+# See layouts/partials/hooks/head-end.html.
+#
+# pages: every path this site publishes (without the /ja or /pl prefix),
+# mapped to the closest page of the new site. A path that isn't listed,
+# such as an old link to a page that no longer exists, goes where its
+# closest listed parent goes (in the end, the new home page).
+#
+# ja: the pages of the new site that have a Japanese version. Japanese
+# readers go to those; for every other page, and for Polish readers, the
+# English page.
+
+site: https://regolith-desktop.com
+
+pages:
+  /: /
+  /docs/: /docs/
+  /docs/overview/: /docs/
+  /download/: /docs/using-regolith/install/
+  /interact/: /community/
+  /regolith_2/: /
+  /search/: /
+
+  /docs/getting-started/: /docs/getting-started/
+  /docs/getting-started/install/: /docs/using-regolith/install/
+  /docs/getting-started/basics/: /docs/using-regolith/basics/
+  /docs/getting-started/configuration/: /docs/using-regolith/configuration/
+  /docs/getting-started/upgrading/: /docs/using-regolith/install/#upgrading-from-2x-to-3x
+
+  /docs/interface/: /docs/using-regolith/basics/
+  /docs/interface/apps/: /docs/using-regolith/basics/
+  /docs/interface/notifications/: /docs/using-regolith/basics/#manage-notifications
+  /docs/interface/system/: /docs/using-regolith/basics/#configuring-the-system
+  /docs/interface/advanced/: /docs/using-regolith/configuration/
+
+  /docs/customize/: /docs/using-regolith/configuration/
+  /docs/customize/look/: /docs/using-regolith/configuration/#looks-1
+  /docs/customize/styles/: /docs/reference/xresources/
+  /docs/customize/compositors/: /docs/howtos/customize-compositor/
+  /docs/customize/components/: /docs/using-regolith/configuration/
+  /docs/customize/packages/: /docs/howtos/find-install-packages/
+
+  /docs/howtos/: /docs/howtos/
+  /docs/howtos/add-remove-blocklets/: /docs/howtos/add-remove-blocklets/
+  /docs/howtos/change-lockscreen/: /docs/howtos/change-lockscreen/
+  /docs/howtos/change-ppa/: /docs/using-regolith/install/
+  /docs/howtos/change-terminal/: /docs/howtos/change-terminal/
+  /docs/howtos/change-workspace-icons/: /docs/howtos/change-workspace-icons/
+  /docs/howtos/configure-wallpaper/: /docs/howtos/change-background/
+  /docs/howtos/default-gap/: /docs/howtos/default-gap/
+  /docs/howtos/disable-unclutter/: /docs/howtos/disable-unclutter/
+  /docs/howtos/find-install-packages/: /docs/howtos/find-install-packages/
+  /docs/howtos/floating-window/: /docs/howtos/floating-window/
+  /docs/howtos/gnome-flashback-session/: /docs/howtos/gnome-flashback-session/
+  /docs/howtos/hide-i3-bar-by-default/: /docs/howtos/hide-i3-bar-by-default/
+  /docs/howtos/install-from-unstable/: /docs/using-regolith/install/#repo-suites-and-components
+  /docs/howtos/multiple-batteries/: /docs/howtos/multiple-batteries/
+  /docs/howtos/override-xres/: /docs/howtos/override-xres/
+  /docs/howtos/replace-notification-system/: /docs/howtos/replace-notification-system/
+  /docs/howtos/stage-configs/: /docs/howtos/stage-configs/
+  /docs/howtos/tdcli-blocklet/: /docs/howtos/
+  /docs/howtos/terminal-font/: /docs/howtos/terminal-font/
+  /docs/howtos/time-format/: /docs/howtos/time-format/
+  /docs/howtos/update-14-141/: /docs/reference/releases/regolith-1.4.1-release-notes/
+  /docs/howtos/vanilla-i3-gaps/: /docs/howtos/
+  /docs/howtos/workspace-on-output/: /docs/howtos/workspace-on-output/
+
+  /docs/reference/: /docs/reference/
+  /docs/reference/configurations/: /docs/reference/configurations/
+  /docs/reference/keybindings/: /docs/reference/keybindings/
+  /docs/reference/looks/: /docs/using-regolith/configuration/#looks-1
+  /docs/reference/packages/: /docs/reference/build-system/#packages
+  /docs/reference/xresources/: /docs/reference/xresources/
+  /docs/reference/releases/: /docs/reference/releases/
+  /docs/reference/releases/regolith-1.3-release-notes/: /docs/reference/releases/regolith-1.3-release-notes/
+  /docs/reference/releases/regolith-1.3.1-release-notes/: /docs/reference/releases/regolith-1.3.1-release-notes/
+  /docs/reference/releases/regolith-1.4-release-notes/: /docs/reference/releases/regolith-1.4-release-notes/
+  /docs/reference/releases/regolith-1.4.1-release-notes/: /docs/reference/releases/regolith-1.4.1-release-notes/
+  /docs/reference/releases/regolith-1.5-release-notes/: /docs/reference/releases/regolith-1.5-release-notes/
+  /docs/reference/releases/regolith-1.5.1-release-notes/: /docs/reference/releases/regolith-1.5.1-release-notes/
+  /docs/reference/releases/regolith-1.5.2-release-notes/: /docs/reference/releases/regolith-1.5.2-release-notes/
+  /docs/reference/releases/regolith-1.5.3-release-notes/: /docs/reference/releases/regolith-1.5.3-release-notes/
+  /docs/reference/releases/regolith-1.6-release/: /docs/reference/releases/regolith-1.6.0-release-notes/
+  /docs/reference/releases/regolith-1.6.0-release-notes/: /docs/reference/releases/regolith-1.6.0-release-notes/
+
+  /docs/developer/: /docs/reference/build-system/
+  /docs/developer/design/: /docs/reference/
+  /docs/developer/looks/: /docs/reference/xresources/
+  /docs/developer/packaging/: /docs/reference/build-system/
+  /docs/developer/status-indicators/: /docs/reference/i3xrocks/
+
+  /docs/policy-and-process/: /community/
+  /docs/policy-and-process/contributions/: /community/#development
+  /docs/policy-and-process/development/: /community/#development
+  /docs/policy-and-process/privacy/: /community/
+  /docs/policy-and-process/support/: /community/#discussion-and-help
+  /docs/policy-and-process/updates/: /docs/using-regolith/install/#release-change-policy
+
+ja:
+  - /
+  - /community/
+  - /docs/
+  - /docs/getting-started/
+  - /docs/getting-started/compatibility/
+  - /docs/howtos/
+  - /docs/howtos/add-remove-blocklets/
+  - /docs/howtos/customize-compositor/
+  - /docs/howtos/customize-i3-configuration/
+  - /docs/howtos/override-xres/
+  - /docs/howtos/stage-configs/
+  - /docs/reference/
+  - /docs/reference/configurations/
+  - /docs/reference/releases/
+  - /docs/reference/xresources/
+  - /docs/using-regolith/
+  - /docs/using-regolith/basics/
+  - /docs/using-regolith/configuration/
+  - /docs/using-regolith/first-launch/
+  - /docs/using-regolith/install/

@@ -1,0 +1,19 @@
+{{- /*
+  The page of regolith-desktop.com that a path of this site redirects to
+  (data/redirect.yaml). Used by hooks/head-end.html and alias.html; the
+  script in hooks/head-end.html does the same in the browser.
+*/ -}}
+{{- $redirect := site.Data.redirect -}}
+{{- $path := . -}}
+{{- $lang := "en" -}}
+{{- range slice "ja" "pl" -}}
+  {{- if hasPrefix $path (printf "/%s/" .) -}}
+    {{- $lang = . -}}
+    {{- $path = strings.TrimPrefix (printf "/%s" .) $path -}}
+  {{- end -}}
+{{- end -}}
+{{- $page := index $redirect.pages $path | default "/" -}}
+{{- if and (eq $lang "ja") (in $redirect.ja (index (split $page "#") 0)) -}}
+  {{- $page = printf "/ja%s" $page -}}
+{{- end -}}
+{{- return printf "%s%s" $redirect.site $page -}}

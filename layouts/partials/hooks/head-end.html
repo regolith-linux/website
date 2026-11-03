@@ -1,3 +1,54 @@
+{{- /*
+  This site is retired. Every page, and the 404 page that GitHub Pages
+  serves for every other path, sends the reader to the matching page of
+  regolith-desktop.com (data/redirect.yaml), or to its home page.
+
+  - The script handles any path. An old link to a page that no longer
+    exists goes to the page of its closest parent, or to the home page.
+    The #fragment is kept when the page itself is found.
+  - The meta refresh and the canonical link do the same for each page this
+    site publishes, for readers and crawlers without JavaScript. The 404
+    page can't know the path, so without JavaScript it goes to the home
+    page.
+*/ -}}
+{{- $redirect := site.Data.redirect -}}
+{{- $target := partial "redirect-target.html" (cond (eq .Kind "404") "/" .RelPermalink) -}}
+<script>
+(function () {
+  var pages = {{ $redirect.pages | jsonify | safeJS }};
+  var ja = {{ $redirect.ja | jsonify | safeJS }};
+  var path = location.pathname.toLowerCase().replace(/index\.html$/, "");
+  var lang = "";
+  var m = path.match(/^\/(en|ja|pl)(\/.*)?$/);
+  if (m) {
+    lang = m[1];
+    path = m[2] || "/";
+  }
+  if (path.charAt(path.length - 1) !== "/") {
+    path += "/";
+  }
+  var hash = location.hash;
+  // A path this site doesn't have goes to its closest listed parent.
+  while (path && !pages.hasOwnProperty(path)) {
+    path = path.replace(/[^\/]*\/$/, "");
+    hash = "";
+  }
+  var page = pages[path] || "/";
+  if (lang === "ja" && ja.indexOf(page.split("#")[0]) >= 0) {
+    page = "/ja" + page;
+  }
+  if (page.indexOf("#") < 0) {
+    page += hash;
+  }
+  location.replace({{ $redirect.site }} + page);
+})();
+</script>
+{{- if eq .Kind "404" }}
+<noscript><meta http-equiv="refresh" content="0; url={{ $target }}"></noscript>
+{{- else }}
+<meta http-equiv="refresh" content="0; url={{ $target }}">
+{{- end }}
+<link rel="canonical" href="{{ $target }}">
 <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
 />
