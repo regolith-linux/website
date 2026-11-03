@@ -1,0 +1,3 @@
+{{- /* Hugo's alias pages go straight to the new site too. */ -}}
+{{- $target := partial "redirect-target.html" ((urls.Parse .Permalink).Path | default "/") -}}
+<!DOCTYPE html><html><head><title>{{ $target }}</title><link rel="canonical" href="{{ $target }}"><meta name="robots" content="noindex"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url={{ $target }}"></head></html>
